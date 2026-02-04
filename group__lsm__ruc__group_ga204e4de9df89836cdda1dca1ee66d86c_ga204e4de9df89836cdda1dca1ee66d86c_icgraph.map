@@ -1,0 +1,12 @@
+<map id="module_sf_ruclsm::snowtemp" name="module_sf_ruclsm::snowtemp">
+<area shape="rect" id="Node000001" title="This subroutine solves energy bugdget equation and heat diffusion equation to obtain snow and soil te..." alt="" coords="880,5,1075,31"/>
+<area shape="rect" id="Node000002" href="$group__lsm__ruc__group_gaecd085e0caf317dfb807e576fd426dec.html#gaecd085e0caf317dfb807e576fd426dec" title="This subroutine is called for snow covered areas of land. It solves energy and moisture budgets on th..." alt="" coords="645,5,832,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="862,18,832,21,832,16,867,18"/>
+<area shape="rect" id="Node000003" href="$group__lsm__ruc__group_gad9dd50472f87539dfaccb42d5495f831.html#gad9dd50472f87539dfaccb42d5495f831" title="This subroutine solves energy and moisture budgets." alt="" coords="422,5,597,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="627,18,598,21,598,16,633,18"/>
+<area shape="rect" id="Node000004" href="$namespacelsm__ruc_affabfffd45a10349230af3cd4fc7cdeb.html#affabfffd45a10349230af3cd4fc7cdeb" title=" " alt="" coords="5,5,152,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="406,21,152,21,152,16,407,16"/>
+<area shape="rect" id="Node000005" href="$group__lsm__ruc__group_ga919051c947b9bd7272399d4b681ba2a8.html#ga919051c947b9bd7272399d4b681ba2a8" title="The RUN LSM model is described in Smirnova et al.(1997) smirnova_1997 and Smirnova et al...." alt="" coords="200,31,374,56"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="410,30,375,36,374,31,404,30"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="182,31,152,30,152,24,187,31"/>
+</map>

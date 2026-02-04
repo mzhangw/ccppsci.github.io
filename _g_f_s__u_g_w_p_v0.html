@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: Unified Gravity Wave Physics (GWP) Scheme - Version 0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_g_f_s__u_g_w_p_v0.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Unified Gravity Wave Physics (GWP) Scheme - Version 0 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1 class="doxsection"><a class="anchor" id="des_UGWP"></a>
+Description</h1>
+<p>Gravity waves (GWs) are generated by a variety of sources in the atmosphere including orographic GWs (OGWs; quasi-stationary waves) and non-orographic GWs (NGWs; non-stationary oscillations). When the Version 0 of the Unified Gravity Wave Physics (UGWP v0) is invoked, the subgrid OGWs and NGWs are parameterized. For the subgrid-scale parameterization of OGWs, the UGWP invokes a separate scheme, the <a class="el" href="_g_f_s__g_w_d_p_s.html" title="GFS Orographic Gravity Wave Drag Scheme">GFS Orographic Gravity Wave Drag Scheme</a>, which is used in the operational Global Forecast System (GFS) version 15.</p>
+<p>The NGW physics scheme parameterizes the effects of non-stationary waves unresolved by dynamical cores. These non-stationary oscillations with periods bounded by Coriolis and Brunt-Väisälä frequencies and typical horizontal scales from tens to several hundreds of kilometers, are forced by the imbalance of convective and frontal/jet dynamics in the troposphere and lower stratosphere (Fritts 1984 <a class="el" href="citelist.html#CITEREF_fritts_1984">[64]</a>; Alexander et al. 2010 <a class="el" href="citelist.html#CITEREF_alexander_et_al_2010">[2]</a>; Plougonven and Zhang 2014 <a class="el" href="citelist.html#CITEREF_plougonven_and_zhang_2014">[167]</a>). The NGWs propagate upwards and the amplitudes exponentially grow with altitude until instability and breaking of waves occur. Convective and dynamical instability induced by GWs with large amplitudes can trigger production of small-scale turbulence and self-destruction of waves. The latter process in the theory of atmospheric GWs is frequently referred as the wave saturation (Lindzen 1981 <a class="el" href="citelist.html#CITEREF_lindzen_1981">[123]</a>; Weinstock 1984 <a class="el" href="citelist.html#CITEREF_weinstock_1984">[198]</a>; Fritts 1984 <a class="el" href="citelist.html#CITEREF_fritts_1984">[64]</a>). Herein, “saturation” or "breaking" refers to any processes that act to reduce wave amplitudes due to instabilities and/or interactions arising from large-amplitude perturbations limiting the exponential growth of GWs with height. Background dissipation processes such as molecular diffusion and radiative cooling, in contrast, act independently of GW amplitudes. In the middle atmosphere, impacts of NGW saturation (or breaking) and dissipation on the large-scale circulation, mixing, and transport have been acknowledged in the physics of global weather and climate models after pioneering studies by Lindzen 1981 <a class="el" href="citelist.html#CITEREF_lindzen_1981">[123]</a> and Holton 1983 <a class="el" href="citelist.html#CITEREF_holton_1983">[94]</a>. Comprehensive reviews on the physics of NGWs and OGWs in climate and weather models have been discussted in Alexander et al. 2010 <a class="el" href="citelist.html#CITEREF_alexander_et_al_2010">[2]</a>, Geller et al. 2013 <a class="el" href="citelist.html#CITEREF_geller_et_al_2013">[70]</a>, and Garcia et al. 2017 <a class="el" href="citelist.html#CITEREF_garcia_et_al_2017">[67]</a>. They are formulated using different aspects of the nonlinear and linear propagation, instability, breaking and dissipation of waves along with different specifications of GW sources (Garcia et al. 2007 <a class="el" href="citelist.html#CITEREF_garcia_et_al_2007">[66]</a>; Richter et al 2010 <a class="el" href="citelist.html#CITEREF_richter_et_al_2010">[170]</a>; Eckermann et al. 2009 <a class="el" href="citelist.html#CITEREF_eckermann_et_al_2009">[48]</a>; Eckermann 2011 <a class="el" href="citelist.html#CITEREF_eckermann_2011">[49]</a>; Lott et al. 2012 <a class="el" href="citelist.html#CITEREF_lott_et_al_2012">[129]</a>).</p>
+<p>Several studies have demonstrated the importance of NGW physics to improve model predictions in the stratosphere and upper atmosphere (Alexander et al. 2010 <a class="el" href="citelist.html#CITEREF_alexander_et_al_2010">[2]</a>; Geller et al. 2013). In order to describe the effects of unresolved GWs in global forecast models, the representation of subgrid OGWs and NGWs has been implemented in the self-consistent manner using the UGWP framework.</p>
+<p>The concept of UGWP was first proposed and implemented in the Unified Forecast System (UFS)with model top at different levels by scientists from the University of Colorado Cooperative Institute for Research in the Environmental Sciences (CIRES) at NOAA's Space Weather Prediction Center (SWPC) and from NOAA's Environmental Modeling Center (EMC) (Alpert et al. 2019 <a class="el" href="citelist.html#CITEREF_alpert_et_al_2019">[4]</a>; Yudin et al. 2016 <a class="el" href="citelist.html#CITEREF_yudin_et_al_2016">[207]</a>; Yudin et al. 2018 <a class="el" href="citelist.html#CITEREF_yudin_et_al_2018">[208]</a>). The UGWP considers identical GW propagation solvers for OGWs and NGWs with different approaches for specification of subgrid wave sources. The current set of the input and control paramters for UGWP version 0 (UGWP v0) enables options for GW effects, including momentum deposition (also called GW drag), heat deposition, and mixing by eddy viscosity, conductivity and diffusion; however, note that the eddy mixing effects induced by instability of GWs are not activated in this version.</p>
+<p>Namelist paramters control the number of directional azimuths in which waves can propagate, number of waves in a single direction, and the level above the surface at which NGWs can be launched. Among the input parameters, the GW efficiency factors reflect intermittency of wave excitation. They should vary with horizontal resolution, reflecting the capability of the dynamical core to resolve mesoscale wave activity with the enhancement of model resolution.</p>
+<p>Prescribed distributions for vertical momentum flux (VMF) of NGWs have been employed in global numerical weather prediction and reanalysis models to ease tuning of GW schemes to the climatology of the middle atmosphere dynamics in the absence of the global wind data above about 35 km (Eckermann et al. 2009 <a class="el" href="citelist.html#CITEREF_eckermann_et_al_2009">[48]</a>; Molod et al. 2015 <a class="el" href="citelist.html#CITEREF_molod_et_al_2015">[144]</a>). These distributions of VMF qualitatively describe the general features of the latitudinal and seasonal variations of the global GW activity in the lower stratosphere, observed from the ground and space (Ern et al. 2018 <a class="el" href="citelist.html#CITEREF_ern_et_al_2018">[53]</a>). Subgrid GW sources can also be parameterized to respond to year-to-year variations of solar input and anthropogenic emissions (Richter et al 2010 <a class="el" href="citelist.html#CITEREF_richter_et_al_2010">[170]</a>; 2014 <a class="el" href="citelist.html#CITEREF_richter_et_al_2014">[171]</a>).</p>
+<p>Note that in UGWP v0, the momentum and heat deposition due to GW breaking and dissipation have been tested in the multi-year simulations and medium-range forecasts using a configuration of the UFS weather model using 127 levels with model top at approximately 80 km.</p>
+<p>Along with the GW heat and momentum depositions, GW eddy mixing is an important element of the Whole Atmosphere Model (WAM) physics, as shown in WAM simulations with the spectral dynamics (Yudin et al. 2018 <a class="el" href="citelist.html#CITEREF_yudin_et_al_2018">[208]</a>). The impact of eddy mixing effects in the middle and upper atmosphere, which is not included in this version, need to be tested, evaluated, and orchestrated with the representation of the subgrid turbulent diffusion and the numerical dissipation.</p>
+<p>The representation of subgrid GWs is particularly important for WAMs that extend into the thermosphere (top lid at ~600 km). In the mesosphere and thermosphere, the background attenuation of subgrid waves due to molecular and turbulent diffusion, radiative damping and ion drag will be the additional mechanism of NGW and OGW dissipation along with convective and dynamical instability of waves described by the linear (Lindzen 1981 <a class="el" href="citelist.html#CITEREF_lindzen_1981">[123]</a>) and nonlinear (Weinstock 1984 <a class="el" href="citelist.html#CITEREF_weinstock_1984">[198]</a>; Hines 1997 <a class="el" href="citelist.html#CITEREF_hines_1997">[91]</a>) saturation theories.</p>
+<h1 class="doxsection"><a class="anchor" id="ugwp_updates"></a>
+CCPP Physics Updates</h1>
+<dl class="section version"><dt>Version</dt><dd>CCPP-SCM v7.0.0</dd></dl>
+<p>We have added optional diagnostic outputs for the various tendencies supplied by the UGWP. They can be switched on by setting the two following input namelist variables equal to “.true.”: <code class="param">ldiag3d</code> and <code class="param">ldiag_ugwp</code>.</p>
+<p>The optional diagnostic outputs are:</p><ul>
+<li><b>dws3dt_ogw:</b> time-averaged wind speed tendency due to mesoscale gravity wave drag</li>
+<li><b>dws3dt_obl:</b> time-averaged wind speed tendency due to blocking drag</li>
+<li><b>dws3dt_oss:</b> time-averaged wind speed tendency due to small-scale gravity wave drag</li>
+<li><b>dws3dt_ofd:</b> time-averaged wind speed tendency due to turbulent orographic form drag</li>
+<li><b>ldu3dt_ogw:</b> time-averaged x wind tendency due to mesoscale orographic gravity wave drag</li>
+<li><b>ldu3dt_obl:</b> time-averaged x wind tendency due to blocking drag</li>
+<li><b>ldu3dt_oss:</b> time-averaged x wind tendency due to small scale gravity wave drag</li>
+<li><b>ldu3dt_ofd:</b> time-averaged x wind tendency due to form drag</li>
+<li><b>ldu3dt_ngw:</b> time-averaged u momentum tendency due to non-stationary gravity wave drag</li>
+<li><b>ldv3dt_ngw:</b> time-averaged v momentum tendency due to non-stationary gravity wave drag</li>
+<li><b>ldt3dt_ngw:</b> time-averaged temperature tendency due to non-stationary gravity wave drag</li>
+<li><b>dudt_ogw:</b> instantaneous x wind tendency from mesoscale orographic gravity wave drag</li>
+<li><b>dvdt_ogw:</b> instantaneous y wind tendency from mesoscale orographic gravity wave drag</li>
+<li><b>dudt_obl:</b> instantaneous x wind tendency from blocking drag</li>
+<li><b>dvdt_obl:</b> instantaneous y wind tendency from blocking drag</li>
+<li><b>dudt_oss:</b> instantaneous x wind tendency from small scale GWD</li>
+<li><b>dvdt_oss:</b> instantaneous y wind tendency from small scale GWD</li>
+<li><b>dudt_ofd:</b> instantaneous x wind tendency from form drag</li>
+<li><b>dvdt_ofd:</b> instantaneous y wind tendency from form drag</li>
+<li><b>du_ogwcol:</b> instantaneous integrated x momentum flux from mesoscale orographic gravity wave drag</li>
+<li><b>dv_ogwcol:</b> instantaneous integrated y momentum flux from mesoscale orographic gravity wave drag</li>
+<li><b>du_oblcol:</b> instantaneous integrated x momentum flux from blocking drag</li>
+<li><b>dv_oblcol:</b> instantaneous integrated y momentum flux from blocking drag</li>
+<li><b>du_osscol:</b> instantaneous integrated x momentum flux from small scale gwd</li>
+<li><b>dv_osscol:</b> instantaneous integrated y momentum flux from small scale gwd</li>
+<li><b>du_ofdcol:</b> instantaneous integrated x momentum flux from form drag</li>
+<li><b>dv_ofdcol:</b> instantaneous integrated y momentum flux from form drag</li>
+<li><b>du3_ogwcol:</b> time-averaged surface x momentum flux from mesoscale orographic gravity wave drag</li>
+<li><b>dv3_ogwcol:</b> time-averaged surface y momentum flux from mesoscale orographic gravity wave drag</li>
+<li><b>du3_oblcol:</b> time-averaged surface x momentum flux from blocking drag</li>
+<li><b>dv3_oblcol:</b> time-averaged surface y momentum flux from blocking drag</li>
+<li><b>du3_osscol:</b> time-averaged surface x momentum flux from small scale gravity wave drag</li>
+<li><b>dv3_osscol:</b> time-averaged surface y momentum flux from small scale gravity wave drag</li>
+<li><b>du3_ofdcol:</b> time-averaged surface x momentum flux from form drag</li>
+<li><b>dv3_ofdcol:</b> time-averaged surface y momentum flux from form drag</li>
+</ul>
+<p>Note that the relevant diag_table entries for these variables are included in: ufs-weather-model/tests/parm/diag_table/diag_table_rap</p>
+<h1 class="doxsection"><a class="anchor" id="intra_UGWPv0"></a>
+Intraphysics Communication</h1>
+<ul>
+<li><a class="el" href="namespacecires__ugwp_a79e2ff37434fd5d1e820a02807c20f5e.html#arg_table_cires_ugwp_run" title="Argument Table">Argument Table</a></li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="gen_al_ugwpv0"></a>
+General Algorithm</h1>
+<ul>
+<li><a class="el" href="namespacecires__ugwp_a79e2ff37434fd5d1e820a02807c20f5e.html#gen_cires_ugwp" title="CIRES UGWP V0 Scheme General Algorithm">CIRES UGWP V0 Scheme General Algorithm</a> </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

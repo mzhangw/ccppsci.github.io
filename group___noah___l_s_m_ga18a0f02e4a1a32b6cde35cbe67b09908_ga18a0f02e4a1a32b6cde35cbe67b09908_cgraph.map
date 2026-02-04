@@ -1,0 +1,15 @@
+<map id="alcalc" name="alcalc">
+<area shape="rect" id="Node000001" title="This subroutine calculates albedo including snow effect (0 &#45;&gt; 1)." alt="" coords="5,104,61,130"/>
+<area shape="rect" id="Node000002" href="$group___noah_m_p___l_s_m_ga9d5adb20aca5b72a7e126136088e20d1.html#ga9d5adb20aca5b72a7e126136088e20d1" title="surface albedos. also fluxes (per unit incoming direct and diffuse radiation) reflected,..." alt="" coords="109,104,168,130"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,114,95,115,91,119,62,119"/>
+<area shape="rect" id="Node000003" href="$group___noah_m_p___l_s_m_ga497b40d27709666f17da3e555f8628a1.html#ga497b40d27709666f17da3e555f8628a1" title="ground surface albedo" alt="" coords="231,5,308,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="149,102,177,72,214,40,224,37,219,40,218,44,180,76,152,106"/>
+<area shape="rect" id="Node000004" href="$group___noah_m_p___l_s_m_ga748c587c5dc0a38a1793042e92952d43.html#ga748c587c5dc0a38a1793042e92952d43" title=" " alt="" coords="230,55,310,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="167,103,222,85,217,88,169,108"/>
+<area shape="rect" id="Node000005" href="$group___noah_m_p___l_s_m_ga238debe3053962b0b33a5e846e333701.html#ga238debe3053962b0b33a5e846e333701" title="bats snow surface albedo" alt="" coords="219,104,320,130"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="168,114,206,116,201,118,169,119"/>
+<area shape="rect" id="Node000006" href="$group___noah_m_p___l_s_m_ga2ea2346edd6f426f30dcc99085def5cf.html#ga2ea2346edd6f426f30dcc99085def5cf" title="class snow surface albedo" alt="" coords="216,153,323,179"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="168,125,222,147,217,148,168,130"/>
+<area shape="rect" id="Node000007" href="$group___noah_m_p___l_s_m_gaa737a61978bde4dc6363e11263999769.html#gaa737a61978bde4dc6363e11263999769" title="use two&#45;stream approximation of Dickinson (1983) adv geophysics 25: 305&#45;353 and sellers (1985) int j ..." alt="" coords="228,203,311,228"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="151,127,180,158,218,189,224,196,219,195,214,194,177,162,150,132"/>
+</map>

@@ -1,0 +1,25 @@
+<map id="module_sf_ruclsm::vilka" name="module_sf_ruclsm::vilka">
+<area shape="rect" id="Node000001" title="This subroutine finds the solution of energy budget at the surface from the pre&#45;computed table of sat..." alt="" coords="1132,83,1294,108"/>
+<area shape="rect" id="Node000002" href="$group__lsm__ruc__group_ga272369b99aa473b1f4faed9fd3fe17fe.html#ga272369b99aa473b1f4faed9fd3fe17fe" title="This subroutine is called for sea ice without accumulated snow on its surface. it solves heat diffusi..." alt="" coords="659,5,818,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1169,75,1129,61,1083,47,1014,35,944,27,819,20,819,15,945,21,1015,29,1085,42,1131,56,1174,76"/>
+<area shape="rect" id="Node000006" href="$group__lsm__ruc__group_ga59cfce62a9e7a8c642e767ea7548b7c9.html#ga59cfce62a9e7a8c642e767ea7548b7c9" title="This subroutine is called for sea ice with accumulated snow on its surface. It solves energy budget o..." alt="" coords="880,57,1084,83"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="1114,85,1084,84,1084,79,1120,85"/>
+<area shape="rect" id="Node000007" href="$group__lsm__ruc__group_ga204e4de9df89836cdda1dca1ee66d86c.html#ga204e4de9df89836cdda1dca1ee66d86c" title="This subroutine solves energy bugdget equation and heat diffusion equation to obtain snow and soil te..." alt="" coords="884,107,1080,132"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="1119,105,1080,112,1080,107,1114,106"/>
+<area shape="rect" id="Node000009" href="$group__lsm__ruc__group_gafc7d78906732947d1ac00ca46d7e8147.html#gafc7d78906732947d1ac00ca46d7e8147" title="This subroutine solves energy budget equation and heat diffusion equation." alt="" coords="890,156,1074,182"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="1169,114,1085,147,1046,158,1045,153,1083,142,1164,115"/>
+<area shape="rect" id="Node000003" href="$group__lsm__ruc__group_gad9dd50472f87539dfaccb42d5495f831.html#gad9dd50472f87539dfaccb42d5495f831" title="This subroutine solves energy and moisture budgets." alt="" coords="422,81,597,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="686,36,552,83,550,78,680,37"/>
+<area shape="rect" id="Node000004" href="$namespacelsm__ruc_affabfffd45a10349230af3cd4fc7cdeb.html#affabfffd45a10349230af3cd4fc7cdeb" title=" " alt="" coords="5,81,152,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="405,97,152,97,152,92,407,92"/>
+<area shape="rect" id="Node000005" href="$group__lsm__ruc__group_ga919051c947b9bd7272399d4b681ba2a8.html#ga919051c947b9bd7272399d4b681ba2a8" title="The RUN LSM model is described in Smirnova et al.(1997) smirnova_1997 and Smirnova et al...." alt="" coords="200,107,374,132"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="404,106,375,112,374,107,409,105"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="182,108,152,106,152,100,187,106"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="861,76,598,92,598,87,867,76"/>
+<area shape="rect" id="Node000008" href="$group__lsm__ruc__group_gaecd085e0caf317dfb807e576fd426dec.html#gaecd085e0caf317dfb807e576fd426dec" title="This subroutine is called for snow covered areas of land. It solves energy and moisture budgets on th..." alt="" coords="645,107,832,132"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="866,120,832,122,832,117,871,119"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="627,108,598,107,598,101,633,107"/>
+<area shape="rect" id="Node000010" href="$group__lsm__ruc__group_gaec10146a1f142cfc8ec2126fa1d54702.html#gaec10146a1f142cfc8ec2126fa1d54702" title="This subroutine calculates energy and moisture budget for vegetated surfaces without snow,..." alt="" coords="661,156,816,182"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="871,169,817,171,817,166,877,169"/>
+<area shape="poly" id="edge13_Node000010_Node000003" title=" " alt="" coords="665,151,644,147,543,110,544,105,646,142,670,152"/>
+</map>

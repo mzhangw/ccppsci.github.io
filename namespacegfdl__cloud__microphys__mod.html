@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: gfdl_cloud_microphys_mod Module Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('namespacegfdl__cloud__microphys__mod.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">gfdl_cloud_microphys_mod Module Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>This module contains the column GFDL Cloud microphysics scheme.  
+</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions/Subroutines</h2></td></tr>
+<tr class="memitem:gab96ce7bbe8889ca0845652ef6df3ea14" id="r_gab96ce7bbe8889ca0845652ef6df3ea14"><td class="memItemLeft">subroutine, public&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_gab96ce7bbe8889ca0845652ef6df3ea14.html#gab96ce7bbe8889ca0845652ef6df3ea14">gfdl_cloud_microphys_mod_driver</a> (iis, iie, jjs, jje, kks, kke, ktop, kbot, qv, ql, qr, qi, qs, qg, qa, qn, qv_dt, ql_dt, qr_dt, qi_dt, qs_dt, qg_dt, qa_dt, pt_dt, pt, w, uin, vin, udt, vdt, dz, delp, area, dt_in, land, rain, snow, ice, graupel, hydrostatic, phys_hydrostatic, p, lradar, refl_10cm, reset, pfils, pflls)</td></tr>
+<tr class="memdesc:gab96ce7bbe8889ca0845652ef6df3ea14"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine is the driver of the GFDL cloud microphysics.  <br /></td></tr>
+<tr class="memitem:ga9a157f35f4472577a555978027d97c65" id="r_ga9a157f35f4472577a555978027d97c65"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_ga9a157f35f4472577a555978027d97c65.html#ga9a157f35f4472577a555978027d97c65">mpdrv</a> (hydrostatic, uin, vin, w, delp, pt, qv, ql, qr, qi, qs, qg, qa, qn, dz, is, ie, js, je, ks, ke, ktop, kbot, j, dt_in, ntimes, rain, snow, graupel, ice, m2_rain, m2_sol, cond, area1, land, u_dt, v_dt, pt_dt, qv_dt, ql_dt, qr_dt, qi_dt, qs_dt, qg_dt, qa_dt, w_var, vt_r, vt_s, vt_g, vt_i, qn2)</td></tr>
+<tr class="memdesc:ga9a157f35f4472577a555978027d97c65"><td class="mdescLeft">&#160;</td><td class="mdescRight">GFDL cloud microphysics, major program, and is based on Lin et al.(1983) <a class="el" href="citelist.html#CITEREF_lin_et_al_1983">[120]</a> and Rutledge and Hobbs (1984) <a class="el" href="citelist.html#CITEREF_rutledge_and_hobbs_1984">[173]</a>.  <br /></td></tr>
+<tr class="memitem:gae04747b6ac095f189c2e9b92a93f2256" id="r_gae04747b6ac095f189c2e9b92a93f2256"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_gae04747b6ac095f189c2e9b92a93f2256.html#gae04747b6ac095f189c2e9b92a93f2256">sedi_heat</a> (ktop, kbot, dm, m1, dz, tz, qv, ql, qr, qi, qs, qg, cw)</td></tr>
+<tr class="memdesc:gae04747b6ac095f189c2e9b92a93f2256"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates sedimentation of heat.  <br /></td></tr>
+<tr class="memitem:gacc8783950135d8875dbfe23ef5013c76" id="r_gacc8783950135d8875dbfe23ef5013c76"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_gacc8783950135d8875dbfe23ef5013c76.html#gacc8783950135d8875dbfe23ef5013c76">warm_rain</a> (dt, ktop, kbot, dp, dz, tz, qv, ql, qr, qi, qs, qg, den, denfac, ccn, c_praut, rh_rain, vtr, r1, m1_rain, w1, h_var)</td></tr>
+<tr class="memdesc:gacc8783950135d8875dbfe23ef5013c76"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine includes warm rain cloud microphysics.  <br /></td></tr>
+<tr class="memitem:ga6c69bf161f1301a1733d4cf1665d5b59" id="r_ga6c69bf161f1301a1733d4cf1665d5b59"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_ga6c69bf161f1301a1733d4cf1665d5b59.html#ga6c69bf161f1301a1733d4cf1665d5b59">revap_racc</a> (ktop, kbot, dt, tz, qv, ql, qr, qi, qs, qg, den, denfac, rh_rain, h_var)</td></tr>
+<tr class="memdesc:ga6c69bf161f1301a1733d4cf1665d5b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates evaporation of rain and accretion of rain.  <br /></td></tr>
+<tr class="memitem:ga60295ecd2dc7ed890e0c643d562862b6" id="r_ga60295ecd2dc7ed890e0c643d562862b6"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_ga60295ecd2dc7ed890e0c643d562862b6.html#ga60295ecd2dc7ed890e0c643d562862b6">linear_prof</a> (km, q, dm, z_var, h_var)</td></tr>
+<tr class="memdesc:ga60295ecd2dc7ed890e0c643d562862b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of vertical subgrid variability used for cloud ice and cloud water autoconversion.  <br /></td></tr>
+<tr class="memitem:ga6d4a8494f1530ef44e39c61be5d819fe" id="r_ga6d4a8494f1530ef44e39c61be5d819fe"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_ga6d4a8494f1530ef44e39c61be5d819fe.html#ga6d4a8494f1530ef44e39c61be5d819fe">icloud</a> (ktop, kbot, tzk, p1, qvk, qlk, qrk, qik, qsk, qgk, dp1, den, denfac, vts, vtg, vtr, qak, rh_adj, rh_rain, dts, h_var)</td></tr>
+<tr class="memdesc:ga6d4a8494f1530ef44e39c61be5d819fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine includes cloud ice microphysics processes.  <br /></td></tr>
+<tr class="memitem:gaec9761c5fe1374e1d8f8f18dec3b879c" id="r_gaec9761c5fe1374e1d8f8f18dec3b879c"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_gaec9761c5fe1374e1d8f8f18dec3b879c.html#gaec9761c5fe1374e1d8f8f18dec3b879c">subgrid_z_proc</a> (ktop, kbot, p1, den, denfac, dts, rh_adj, tz, qv, ql, qr, qi, qs, qg, qa, h_var, rh_rain)</td></tr>
+<tr class="memdesc:gaec9761c5fe1374e1d8f8f18dec3b879c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates temperature sentive high vertical resolution processes.  <br /></td></tr>
+<tr class="memitem:ga77aecedeec21635795414346d2a79070" id="r_ga77aecedeec21635795414346d2a79070"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_ga77aecedeec21635795414346d2a79070.html#ga77aecedeec21635795414346d2a79070">revap_rac1</a> (hydrostatic, is, ie, dt, tz, qv, ql, qr, qi, qs, qg, den, hvar)</td></tr>
+<tr class="memdesc:ga77aecedeec21635795414346d2a79070"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates rain evaporation.  <br /></td></tr>
+<tr class="memitem:ga79e5f6ea8f5040ab16033081b9a64cb7" id="r_ga79e5f6ea8f5040ab16033081b9a64cb7"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_ga79e5f6ea8f5040ab16033081b9a64cb7.html#ga79e5f6ea8f5040ab16033081b9a64cb7">terminal_fall</a> (dtm, ktop, kbot, tz, qv, ql, qr, qg, qs, qi, dz, dp, den, vtg, vts, vti, r1, g1, s1, i1, m1_sol, w1)</td></tr>
+<tr class="memdesc:ga79e5f6ea8f5040ab16033081b9a64cb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The subroutine 'terminal_fall' computes terminal fall speed.  <br /></td></tr>
+<tr class="memitem:ga6888d7e95c34f76ecd432293eea9723f" id="r_ga6888d7e95c34f76ecd432293eea9723f"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_ga6888d7e95c34f76ecd432293eea9723f.html#ga6888d7e95c34f76ecd432293eea9723f">check_column</a> (ktop, kbot, q, no_fall)</td></tr>
+<tr class="memdesc:ga6888d7e95c34f76ecd432293eea9723f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The subroutine 'check_column' checks if the water species is large enough to fall.  <br /></td></tr>
+<tr class="memitem:ga2f6f4139188eb18db6c84ac21f19f07b" id="r_ga2f6f4139188eb18db6c84ac21f19f07b"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_ga2f6f4139188eb18db6c84ac21f19f07b.html#ga2f6f4139188eb18db6c84ac21f19f07b">implicit_fall</a> (dt, ktop, kbot, ze, vt, dp, q, precip, m1)</td></tr>
+<tr class="memdesc:ga2f6f4139188eb18db6c84ac21f19f07b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The subroutine computes the time-implicit monotonic fall scheme.  <br /></td></tr>
+<tr class="memitem:gabfcb03d4ab831c5f0a879b75b2cf4e01" id="r_gabfcb03d4ab831c5f0a879b75b2cf4e01"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_gabfcb03d4ab831c5f0a879b75b2cf4e01.html#gabfcb03d4ab831c5f0a879b75b2cf4e01">lagrangian_fall_ppm</a> (ktop, kbot, zs, ze, zt, dp, q, precip, m1, mono)</td></tr>
+<tr class="memdesc:gabfcb03d4ab831c5f0a879b75b2cf4e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lagrangian scheme.  <br /></td></tr>
+<tr class="memitem:gaeaa05a4c1310e5a546cadd40f1c66c42" id="r_gaeaa05a4c1310e5a546cadd40f1c66c42"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_gaeaa05a4c1310e5a546cadd40f1c66c42.html#gaeaa05a4c1310e5a546cadd40f1c66c42">cs_profile</a> (a4, del, km, do_mono)</td></tr>
+<tr class="memitem:ga4551eade22b554cea965dc3efbe63ce4" id="r_ga4551eade22b554cea965dc3efbe63ce4"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_ga4551eade22b554cea965dc3efbe63ce4.html#ga4551eade22b554cea965dc3efbe63ce4">cs_limiters</a> (km, a4)</td></tr>
+<tr class="memdesc:ga4551eade22b554cea965dc3efbe63ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine perform positive definite constraint.  <br /></td></tr>
+<tr class="memitem:ga6833974ce0d83438376d15e3dc710721" id="r_ga6833974ce0d83438376d15e3dc710721"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_ga6833974ce0d83438376d15e3dc710721.html#ga6833974ce0d83438376d15e3dc710721">fall_speed</a> (ktop, kbot, den, qs, qi, qg, ql, tk, vts, vti, vtg)</td></tr>
+<tr class="memdesc:ga6833974ce0d83438376d15e3dc710721"><td class="mdescLeft">&#160;</td><td class="mdescRight">The subroutine calculates vertical fall speed of snow/ice/graupel.  <br /></td></tr>
+<tr class="memitem:ga9b7449b48c0d7ba5eab0eba122908d51" id="r_ga9b7449b48c0d7ba5eab0eba122908d51"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_ga9b7449b48c0d7ba5eab0eba122908d51.html#ga9b7449b48c0d7ba5eab0eba122908d51">setupm</a></td></tr>
+<tr class="memdesc:ga9b7449b48c0d7ba5eab0eba122908d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">The subroutine sets up gfdl cloud microphysics parameters.  <br /></td></tr>
+<tr class="memitem:gacb9663cee42bc7d8c26e24ea3a400212" id="r_gacb9663cee42bc7d8c26e24ea3a400212"><td class="memItemLeft">subroutine, public&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_gacb9663cee42bc7d8c26e24ea3a400212.html#gacb9663cee42bc7d8c26e24ea3a400212">gfdl_cloud_microphys_mod_init</a> (me, master, nlunit, input_nml_file, logunit, fn_nml, errmsg, errflg)</td></tr>
+<tr class="memdesc:gacb9663cee42bc7d8c26e24ea3a400212"><td class="mdescLeft">&#160;</td><td class="mdescRight">The subroutine 'gfdl_cloud_microphys_init' initializes the GFDL cloud microphysics.  <br /></td></tr>
+<tr class="memitem:gaa396bb16135a2b26d6c8ca7d659f0b0a" id="r_gaa396bb16135a2b26d6c8ca7d659f0b0a"><td class="memItemLeft">subroutine, public&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_gaa396bb16135a2b26d6c8ca7d659f0b0a.html#gaa396bb16135a2b26d6c8ca7d659f0b0a">gfdl_cloud_microphys_mod_end</a> ()</td></tr>
+<tr class="memdesc:gaa396bb16135a2b26d6c8ca7d659f0b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The subroutine 'gfdl_cloud_microphys_init' terminates the GFDL cloud microphysics.  <br /></td></tr>
+<tr class="memitem:gae73658e16d99bd2fd887547ba13c0489" id="r_gae73658e16d99bd2fd887547ba13c0489"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_gae73658e16d99bd2fd887547ba13c0489.html#gae73658e16d99bd2fd887547ba13c0489">setup_con</a></td></tr>
+<tr class="memdesc:gae73658e16d99bd2fd887547ba13c0489"><td class="mdescLeft">&#160;</td><td class="mdescRight">The subroutine 'setup_con' sets up constants and calls 'qsmith_init'.  <br /></td></tr>
+<tr class="memitem:ga0c6e8d13d0224e3b40bcbabdbab7f0ba" id="r_ga0c6e8d13d0224e3b40bcbabdbab7f0ba"><td class="memItemLeft">real function&#160;</td><td class="memItemRight"><a class="el" href="group__gfdlmp_ga0c6e8d13d0224e3b40bcbabdbab7f0ba.html#ga0c6e8d13d0224e3b40bcbabdbab7f0ba">acr3d</a> (v1, v2, q1, q2, c, cac, rho)</td></tr>
+<tr class="memdesc:ga0c6e8d13d0224e3b40bcbabdbab7f0ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function is an accretion function (Lin et al.(1983) <a class="el" href="citelist.html#CITEREF_lin_et_al_1983">[120]</a> ).  <br /></td></tr>
+<tr class="memitem:gad0c3fa84c0f00f8d0106a40b45d84925" id="r_gad0c3fa84c0f00f8d0106a40b45d84925"><td class="memItemLeft">real function&#160;</td><td class="memItemRight"><a class="el" href="group__gfdlmp_gad0c3fa84c0f00f8d0106a40b45d84925.html#gad0c3fa84c0f00f8d0106a40b45d84925">smlt</a> (tc, dqs, qsrho, psacw, psacr, c, rho, rhofac)</td></tr>
+<tr class="memdesc:gad0c3fa84c0f00f8d0106a40b45d84925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Melting of snow function (Lin et al.(1983) <a class="el" href="citelist.html#CITEREF_lin_et_al_1983">[120]</a>) note: psacw and psacr must be calc before smlt is called.  <br /></td></tr>
+<tr class="memitem:ace45f86c746664b3737607705d345f14" id="r_ace45f86c746664b3737607705d345f14"><td class="memItemLeft">real function&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_ace45f86c746664b3737607705d345f14.html#ace45f86c746664b3737607705d345f14">gmlt</a> (tc, dqs, qgrho, pgacw, pgacr, c, rho)</td></tr>
+<tr class="memdesc:ace45f86c746664b3737607705d345f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Melting of graupel function (Eq.(47) in Lin et al. 1983 <a class="el" href="citelist.html#CITEREF_lin_et_al_1983">[120]</a>) <br  />
+ note: \(P_{gacw}\) and \(P_{gacr}\) must be calculated before gmlt is called.  <br /></td></tr>
+<tr class="memitem:gac22a96714d2fdfba424e9b29c460874e" id="r_gac22a96714d2fdfba424e9b29c460874e"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_gac22a96714d2fdfba424e9b29c460874e.html#gac22a96714d2fdfba424e9b29c460874e">qsmith_init</a></td></tr>
+<tr class="memdesc:gac22a96714d2fdfba424e9b29c460874e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The subroutine 'qsmith_init' initializes lookup tables for saturation water vapor pressure for the following utility routines that are designed to return qs consistent with the assumptions in FV3.  <br /></td></tr>
+<tr class="memitem:ga6dce09bb764ce09d571eb55783abcf48" id="r_ga6dce09bb764ce09d571eb55783abcf48"><td class="memItemLeft">real function&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_ga6dce09bb764ce09d571eb55783abcf48.html#ga6dce09bb764ce09d571eb55783abcf48">wqs1</a> (ta, den)</td></tr>
+<tr class="memdesc:ga6dce09bb764ce09d571eb55783abcf48"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function 'wqs1' returns the saturation vapor pressure over pure liquid water for a given temperature and air density.  <br /></td></tr>
+<tr class="memitem:acd40e84031a4f81c06cfdec3749ddb21" id="r_acd40e84031a4f81c06cfdec3749ddb21"><td class="memItemLeft">real function&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_acd40e84031a4f81c06cfdec3749ddb21.html#acd40e84031a4f81c06cfdec3749ddb21">wqs2</a> (ta, den, dqdt)</td></tr>
+<tr class="memdesc:acd40e84031a4f81c06cfdec3749ddb21"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function 'wqs2' returns the saturation vapor pressure over pure liquid water for a given temperature and air density, as well as the analytic dqs/dT: rate of change of saturation vapor pressure WRT temperature.  <br /></td></tr>
+<tr class="memitem:a16c950e69cbc44e56359353d65e15d28" id="r_a16c950e69cbc44e56359353d65e15d28"><td class="memItemLeft">real function&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a16c950e69cbc44e56359353d65e15d28.html#a16c950e69cbc44e56359353d65e15d28">wet_bulb</a> (q, t, den)</td></tr>
+<tr class="memdesc:a16c950e69cbc44e56359353d65e15d28"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function 'wet_bulb' uses 'wqs2' to compute the wet-bulb temperature from the mixing ratio and the temperature.  <br /></td></tr>
+<tr class="memitem:a73aeb817d78dd5fdbf17764b7af1b4c5" id="r_a73aeb817d78dd5fdbf17764b7af1b4c5"><td class="memItemLeft">real function&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a73aeb817d78dd5fdbf17764b7af1b4c5.html#a73aeb817d78dd5fdbf17764b7af1b4c5">iqs1</a> (ta, den)</td></tr>
+<tr class="memdesc:a73aeb817d78dd5fdbf17764b7af1b4c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function 'iqs1' computes the saturated specific humidity for table iii.  <br /></td></tr>
+<tr class="memitem:aeeacb47d6755ef5fb20c91730fdde795" id="r_aeeacb47d6755ef5fb20c91730fdde795"><td class="memItemLeft">real function&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_aeeacb47d6755ef5fb20c91730fdde795.html#aeeacb47d6755ef5fb20c91730fdde795">iqs2</a> (ta, den, dqdt)</td></tr>
+<tr class="memdesc:aeeacb47d6755ef5fb20c91730fdde795"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function 'iqs2' computes the gradient of saturated specific humidity for table iii.  <br /></td></tr>
+<tr class="memitem:a964ad7f43d3025989e4607a4fd0f40c2" id="r_a964ad7f43d3025989e4607a4fd0f40c2"><td class="memItemLeft">real function&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a964ad7f43d3025989e4607a4fd0f40c2.html#a964ad7f43d3025989e4607a4fd0f40c2">qs1d_moist</a> (ta, qv, pa, dqdt)</td></tr>
+<tr class="memdesc:a964ad7f43d3025989e4607a4fd0f40c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function 'qs1d_moist' computes the gradient of saturated specific humidity for table iii.  <br /></td></tr>
+<tr class="memitem:a3b51c6a4a4b42405db18e74ddbae60c8" id="r_a3b51c6a4a4b42405db18e74ddbae60c8"><td class="memItemLeft">real function&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a3b51c6a4a4b42405db18e74ddbae60c8.html#a3b51c6a4a4b42405db18e74ddbae60c8">wqsat2_moist</a> (ta, qv, pa, dqdt)</td></tr>
+<tr class="memdesc:a3b51c6a4a4b42405db18e74ddbae60c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function 'wqsat2_moist' computes the saturated specific humidity for pure liquid water , as well as des/dT.  <br /></td></tr>
+<tr class="memitem:ae66e1fd925f07d8641b70a25e7cf435a" id="r_ae66e1fd925f07d8641b70a25e7cf435a"><td class="memItemLeft">real function&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_ae66e1fd925f07d8641b70a25e7cf435a.html#ae66e1fd925f07d8641b70a25e7cf435a">wqsat_moist</a> (ta, qv, pa)</td></tr>
+<tr class="memdesc:ae66e1fd925f07d8641b70a25e7cf435a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function 'wqsat_moist' computes the saturated specific humidity for pure liquid water.  <br /></td></tr>
+<tr class="memitem:aadf83b88cc19945992197186c2092f31" id="r_aadf83b88cc19945992197186c2092f31"><td class="memItemLeft">real function&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_aadf83b88cc19945992197186c2092f31.html#aadf83b88cc19945992197186c2092f31">qs1d_m</a> (ta, qv, pa)</td></tr>
+<tr class="memdesc:aadf83b88cc19945992197186c2092f31"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function 'qs1d_m' computes the saturated specific humidity for table iii.  <br /></td></tr>
+<tr class="memitem:a3f08c718c2e2586687531a96e65b14c8" id="r_a3f08c718c2e2586687531a96e65b14c8"><td class="memItemLeft">real function&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a3f08c718c2e2586687531a96e65b14c8.html#a3f08c718c2e2586687531a96e65b14c8">d_sat</a> (ta, den)</td></tr>
+<tr class="memdesc:a3f08c718c2e2586687531a96e65b14c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function 'd_sat' computes the difference in saturation vapor * density * between water and ice.  <br /></td></tr>
+<tr class="memitem:ab17544f06f54f4cd661c68880b6a9bc3" id="r_ab17544f06f54f4cd661c68880b6a9bc3"><td class="memItemLeft">real function&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_ab17544f06f54f4cd661c68880b6a9bc3.html#ab17544f06f54f4cd661c68880b6a9bc3">esw_table</a> (ta)</td></tr>
+<tr class="memdesc:ab17544f06f54f4cd661c68880b6a9bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function 'esw_table' computes the saturated water vapor pressure for table ii.  <br /></td></tr>
+<tr class="memitem:ae19534c8c7e543e8124fbd064a0824e3" id="r_ae19534c8c7e543e8124fbd064a0824e3"><td class="memItemLeft">real function&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_ae19534c8c7e543e8124fbd064a0824e3.html#ae19534c8c7e543e8124fbd064a0824e3">es2_table</a> (ta)</td></tr>
+<tr class="memdesc:ae19534c8c7e543e8124fbd064a0824e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function 'es2_table' computes the saturated water vapor pressure for table iii.  <br /></td></tr>
+<tr class="memitem:ga00e13cf0ac56f755d8310c3d50623f32" id="r_ga00e13cf0ac56f755d8310c3d50623f32"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_ga00e13cf0ac56f755d8310c3d50623f32.html#ga00e13cf0ac56f755d8310c3d50623f32">esw_table1d</a> (ta, es, n)</td></tr>
+<tr class="memdesc:ga00e13cf0ac56f755d8310c3d50623f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">The subroutine 'esw_table1d' computes the saturated water vapor pressure for table ii.  <br /></td></tr>
+<tr class="memitem:gaf27bd7f1263f90bc2cc0e9cdb8ae0be7" id="r_gaf27bd7f1263f90bc2cc0e9cdb8ae0be7"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_gaf27bd7f1263f90bc2cc0e9cdb8ae0be7.html#gaf27bd7f1263f90bc2cc0e9cdb8ae0be7">es2_table1d</a> (ta, es, n)</td></tr>
+<tr class="memdesc:gaf27bd7f1263f90bc2cc0e9cdb8ae0be7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The subroutine 'es3_table1d' computes the saturated water vapor pressure for table iii.  <br /></td></tr>
+<tr class="memitem:gaa1f0870e9066e66b3609139abaf67e6a" id="r_gaa1f0870e9066e66b3609139abaf67e6a"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_gaa1f0870e9066e66b3609139abaf67e6a.html#gaa1f0870e9066e66b3609139abaf67e6a">es3_table1d</a> (ta, es, n)</td></tr>
+<tr class="memdesc:gaa1f0870e9066e66b3609139abaf67e6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The subroutine 'es3_table1d' computes the saturated water vapor pressure for table iv.  <br /></td></tr>
+<tr class="memitem:gad400136557e150361b753efa60a42d71" id="r_gad400136557e150361b753efa60a42d71"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_gad400136557e150361b753efa60a42d71.html#gad400136557e150361b753efa60a42d71">qs_tablew</a> (n)</td></tr>
+<tr class="memdesc:gad400136557e150361b753efa60a42d71"><td class="mdescLeft">&#160;</td><td class="mdescRight">saturation water vapor pressure table ii  <br /></td></tr>
+<tr class="memitem:ga60322d5daf9ba9251ef2ed8c43d44fd2" id="r_ga60322d5daf9ba9251ef2ed8c43d44fd2"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_ga60322d5daf9ba9251ef2ed8c43d44fd2.html#ga60322d5daf9ba9251ef2ed8c43d44fd2">qs_table2</a> (n)</td></tr>
+<tr class="memdesc:ga60322d5daf9ba9251ef2ed8c43d44fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">saturation water vapor pressure table iii  <br /></td></tr>
+<tr class="memitem:ga21d253eb6564b469a272e71bbd227e6d" id="r_ga21d253eb6564b469a272e71bbd227e6d"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_ga21d253eb6564b469a272e71bbd227e6d.html#ga21d253eb6564b469a272e71bbd227e6d">qs_table3</a> (n)</td></tr>
+<tr class="memdesc:ga21d253eb6564b469a272e71bbd227e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">saturation water vapor pressure table iv  <br /></td></tr>
+<tr class="memitem:gae5ced87ab84a21adee27e447c7a5ce6b" id="r_gae5ced87ab84a21adee27e447c7a5ce6b"><td class="memItemLeft">real function&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_gae5ced87ab84a21adee27e447c7a5ce6b.html#gae5ced87ab84a21adee27e447c7a5ce6b">qs_blend</a> (t, p, q)</td></tr>
+<tr class="memdesc:gae5ced87ab84a21adee27e447c7a5ce6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function 'qs_blend' computes the saturated specific humidity with a blend of water and ice depending on the temperature.  <br /></td></tr>
+<tr class="memitem:ga18d5c58ee290deae68744c2bec32c4c5" id="r_ga18d5c58ee290deae68744c2bec32c4c5"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_ga18d5c58ee290deae68744c2bec32c4c5.html#ga18d5c58ee290deae68744c2bec32c4c5">qs_table</a> (n)</td></tr>
+<tr class="memdesc:ga18d5c58ee290deae68744c2bec32c4c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">saturation water vapor pressure table i  <br /></td></tr>
+<tr class="memitem:ga3bfa36c95ccd846ef06a711e29ae5c62" id="r_ga3bfa36c95ccd846ef06a711e29ae5c62"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_ga3bfa36c95ccd846ef06a711e29ae5c62.html#ga3bfa36c95ccd846ef06a711e29ae5c62">qsmith</a> (im, km, ks, t, p, q, qs, dqdt)</td></tr>
+<tr class="memdesc:ga3bfa36c95ccd846ef06a711e29ae5c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function 'qsmith' computes the saturated specific humidity with a blend of water and ice depending on the temperature in 3D.  <br /></td></tr>
+<tr class="memitem:ga95934cf5da8077b833820fa000e4b351" id="r_ga95934cf5da8077b833820fa000e4b351"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_ga95934cf5da8077b833820fa000e4b351.html#ga95934cf5da8077b833820fa000e4b351">neg_adj</a> (ktop, kbot, pt, dp, qv, ql, qr, qi, qs, qg)</td></tr>
+<tr class="memdesc:ga95934cf5da8077b833820fa000e4b351"><td class="mdescLeft">&#160;</td><td class="mdescRight">The subroutine 'neg_adj' fixes negative water species.  <br /></td></tr>
+<tr class="memitem:ga011cbd07504027364ebd0314c825f44a" id="r_ga011cbd07504027364ebd0314c825f44a"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_ga011cbd07504027364ebd0314c825f44a.html#ga011cbd07504027364ebd0314c825f44a">interpolate_z</a> (is, ie, js, je, km, zl, hgt, a3, a2)</td></tr>
+<tr class="memdesc:ga011cbd07504027364ebd0314c825f44a"><td class="mdescLeft">&#160;</td><td class="mdescRight">quick local sum algorithm  <br /></td></tr>
+<tr class="memitem:ga41eef6d7073ac6722450667b8394cf13" id="r_ga41eef6d7073ac6722450667b8394cf13"><td class="memItemLeft">subroutine, public&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_ga41eef6d7073ac6722450667b8394cf13.html#ga41eef6d7073ac6722450667b8394cf13">cloud_diagnosis</a> (is, ie, ks, ke, den, delp, lsm, qmw, qmi, qmr, qms, qmg, t, rew, rei, rer, res, reg)</td></tr>
+<tr class="memdesc:ga41eef6d7073ac6722450667b8394cf13"><td class="mdescLeft">&#160;</td><td class="mdescRight">The subroutine 'cloud_diagnosis' diagnoses the radius of cloud species.  <br /></td></tr>
+<tr class="memitem:ga225a9c1fcb87a537acc267db323d1c11" id="r_ga225a9c1fcb87a537acc267db323d1c11"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__gfdl__cloud__mp_ga225a9c1fcb87a537acc267db323d1c11.html#ga225a9c1fcb87a537acc267db323d1c11">refl10cm_gfdl</a> (qv1d, qr1d, qs1d, qg1d, t1d, p1d, dbz, kts, kte, ii, jj, melti)</td></tr>
+<tr class="memdesc:ga225a9c1fcb87a537acc267db323d1c11"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates radar reflectivity.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a131225b53d4a910e0cf64ca2d358b109" id="r_a131225b53d4a910e0cf64ca2d358b109"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a131225b53d4a910e0cf64ca2d358b109.html#a131225b53d4a910e0cf64ca2d358b109">missing_value</a> = - 1.e10</td></tr>
+<tr class="memitem:a5160df9068ea916b5be5db323ccb84e1" id="r_a5160df9068ea916b5be5db323ccb84e1"><td class="memItemLeft">logical&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a5160df9068ea916b5be5db323ccb84e1.html#a5160df9068ea916b5be5db323ccb84e1">module_is_initialized</a> = .false.</td></tr>
+<tr class="memitem:a85a37f008ca8a5a48fae3b206b155291" id="r_a85a37f008ca8a5a48fae3b206b155291"><td class="memItemLeft">logical&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a85a37f008ca8a5a48fae3b206b155291.html#a85a37f008ca8a5a48fae3b206b155291">qsmith_tables_initialized</a> = .false.</td></tr>
+<tr class="memitem:ae042e9259823a76f8e0568bb9a65929c" id="r_ae042e9259823a76f8e0568bb9a65929c"><td class="memItemLeft">character(len=20)&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_ae042e9259823a76f8e0568bb9a65929c.html#ae042e9259823a76f8e0568bb9a65929c">mod_name</a> = '<a class="el" href="namespacegfdl__cloud__microphys.html">gfdl_cloud_microphys</a>'</td></tr>
+<tr class="memitem:a1306c3472d3801628e711ed89c9f4f79" id="r_a1306c3472d3801628e711ed89c9f4f79"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a1306c3472d3801628e711ed89c9f4f79.html#a1306c3472d3801628e711ed89c9f4f79">n0r</a> = 8.0e6</td></tr>
+<tr class="memitem:ac4868ad4c5e670a0814f347d24b264f4" id="r_ac4868ad4c5e670a0814f347d24b264f4"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_ac4868ad4c5e670a0814f347d24b264f4.html#ac4868ad4c5e670a0814f347d24b264f4">n0s</a> = 3.0e6</td></tr>
+<tr class="memitem:a80281c921b5a3dc20459ac4b46feca75" id="r_a80281c921b5a3dc20459ac4b46feca75"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a80281c921b5a3dc20459ac4b46feca75.html#a80281c921b5a3dc20459ac4b46feca75">n0g</a> = 4.0e6</td></tr>
+<tr class="memitem:a8a439d676fdbd76477d3cd68816c39fb" id="r_a8a439d676fdbd76477d3cd68816c39fb"><td class="memItemLeft">real, parameter, public&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a8a439d676fdbd76477d3cd68816c39fb.html#a8a439d676fdbd76477d3cd68816c39fb">rhos</a> = 0.1e3</td></tr>
+<tr class="memitem:a42e737e9e98ab779ea83aa4a81995678" id="r_a42e737e9e98ab779ea83aa4a81995678"><td class="memItemLeft">real, parameter, public&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a42e737e9e98ab779ea83aa4a81995678.html#a42e737e9e98ab779ea83aa4a81995678">rhog</a> = 0.4e3</td></tr>
+<tr class="memitem:a0a6b1d1ad2979e85b79894eff3b62541" id="r_a0a6b1d1ad2979e85b79894eff3b62541"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a0a6b1d1ad2979e85b79894eff3b62541.html#a0a6b1d1ad2979e85b79894eff3b62541">grav</a> = 9.80665</td></tr>
+<tr class="memdesc:a0a6b1d1ad2979e85b79894eff3b62541"><td class="mdescLeft">&#160;</td><td class="mdescRight">gfs: acceleration due to gravity  <br /></td></tr>
+<tr class="memitem:a5fcbd9305bbbcdcc463823bee215f523" id="r_a5fcbd9305bbbcdcc463823bee215f523"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a5fcbd9305bbbcdcc463823bee215f523.html#a5fcbd9305bbbcdcc463823bee215f523">rdgas</a> = 287.05</td></tr>
+<tr class="memdesc:a5fcbd9305bbbcdcc463823bee215f523"><td class="mdescLeft">&#160;</td><td class="mdescRight">gfs: gas constant for dry air  <br /></td></tr>
+<tr class="memitem:a10e642aaea88c7dcc9e132bf071326df" id="r_a10e642aaea88c7dcc9e132bf071326df"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a10e642aaea88c7dcc9e132bf071326df.html#a10e642aaea88c7dcc9e132bf071326df">rvgas</a> = 461.50</td></tr>
+<tr class="memdesc:a10e642aaea88c7dcc9e132bf071326df"><td class="mdescLeft">&#160;</td><td class="mdescRight">gfs: gas constant for water vapor  <br /></td></tr>
+<tr class="memitem:a761f7a54a261226e413a79bdef032096" id="r_a761f7a54a261226e413a79bdef032096"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a761f7a54a261226e413a79bdef032096.html#a761f7a54a261226e413a79bdef032096">cp_air</a> = 1004.6</td></tr>
+<tr class="memdesc:a761f7a54a261226e413a79bdef032096"><td class="mdescLeft">&#160;</td><td class="mdescRight">gfs: heat capacity of dry air at constant pressure  <br /></td></tr>
+<tr class="memitem:af84ac9b2b29e252682290fc721483ab6" id="r_af84ac9b2b29e252682290fc721483ab6"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_af84ac9b2b29e252682290fc721483ab6.html#af84ac9b2b29e252682290fc721483ab6">hlv</a> = 2.5e6</td></tr>
+<tr class="memdesc:af84ac9b2b29e252682290fc721483ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">gfs: latent heat of evaporation  <br /></td></tr>
+<tr class="memitem:a28cc1d77aac9c6acbe1df64d6e05b2e9" id="r_a28cc1d77aac9c6acbe1df64d6e05b2e9"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a28cc1d77aac9c6acbe1df64d6e05b2e9.html#a28cc1d77aac9c6acbe1df64d6e05b2e9">hlf</a> = 3.3358e5</td></tr>
+<tr class="memdesc:a28cc1d77aac9c6acbe1df64d6e05b2e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">gfs: latent heat of fusion  <br /></td></tr>
+<tr class="memitem:af6f88d6393ce44ebd1a2667c6763fcd3" id="r_af6f88d6393ce44ebd1a2667c6763fcd3"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_af6f88d6393ce44ebd1a2667c6763fcd3.html#af6f88d6393ce44ebd1a2667c6763fcd3">pi</a> = 3.1415926535897931</td></tr>
+<tr class="memdesc:af6f88d6393ce44ebd1a2667c6763fcd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">gfs: ratio of circle circumference to diameter  <br /></td></tr>
+<tr class="memitem:acba90c006590aed2fcca6f3c2243139f" id="r_acba90c006590aed2fcca6f3c2243139f"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_acba90c006590aed2fcca6f3c2243139f.html#acba90c006590aed2fcca6f3c2243139f">cp_vap</a> = 4.0 * <a class="el" href="namespacegfdl__cloud__microphys__mod_a10e642aaea88c7dcc9e132bf071326df.html#a10e642aaea88c7dcc9e132bf071326df">rvgas</a></td></tr>
+<tr class="memdesc:acba90c006590aed2fcca6f3c2243139f"><td class="mdescLeft">&#160;</td><td class="mdescRight">1846.0, heat capacity of water vapore at constnat pressure  <br /></td></tr>
+<tr class="memitem:ada1c9752c65359dc42c082f50181c813" id="r_ada1c9752c65359dc42c082f50181c813"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_ada1c9752c65359dc42c082f50181c813.html#ada1c9752c65359dc42c082f50181c813">cv_air</a> = <a class="el" href="namespacegfdl__cloud__microphys__mod_a761f7a54a261226e413a79bdef032096.html#a761f7a54a261226e413a79bdef032096">cp_air</a> - <a class="el" href="namespacegfdl__cloud__microphys__mod_a5fcbd9305bbbcdcc463823bee215f523.html#a5fcbd9305bbbcdcc463823bee215f523">rdgas</a></td></tr>
+<tr class="memdesc:ada1c9752c65359dc42c082f50181c813"><td class="mdescLeft">&#160;</td><td class="mdescRight">717.55, heat capacity of dry air at constant volume  <br /></td></tr>
+<tr class="memitem:a6ad6b5acfc5f8d4eaf7b692f38088c4f" id="r_a6ad6b5acfc5f8d4eaf7b692f38088c4f"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a6ad6b5acfc5f8d4eaf7b692f38088c4f.html#a6ad6b5acfc5f8d4eaf7b692f38088c4f">cv_vap</a> = 3.0 * <a class="el" href="namespacegfdl__cloud__microphys__mod_a10e642aaea88c7dcc9e132bf071326df.html#a10e642aaea88c7dcc9e132bf071326df">rvgas</a></td></tr>
+<tr class="memdesc:a6ad6b5acfc5f8d4eaf7b692f38088c4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">1384.5, heat capacity of water vapor at constant volume  <br /></td></tr>
+<tr class="memitem:a29b88c5bd17f51d54fd0ff23aa1cd775" id="r_a29b88c5bd17f51d54fd0ff23aa1cd775"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a29b88c5bd17f51d54fd0ff23aa1cd775.html#a29b88c5bd17f51d54fd0ff23aa1cd775">c_ice</a> = 1972.0</td></tr>
+<tr class="memdesc:a29b88c5bd17f51d54fd0ff23aa1cd775"><td class="mdescLeft">&#160;</td><td class="mdescRight">gfdl: heat capacity of ice at - 15 deg c  <br /></td></tr>
+<tr class="memitem:aaaa52b355c3ea7e30f8b7a9ad00afad1" id="r_aaaa52b355c3ea7e30f8b7a9ad00afad1"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_aaaa52b355c3ea7e30f8b7a9ad00afad1.html#aaaa52b355c3ea7e30f8b7a9ad00afad1">c_liq</a> = 4185.5</td></tr>
+<tr class="memdesc:aaaa52b355c3ea7e30f8b7a9ad00afad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">gfdl: heat capacity of water at 15 deg c  <br /></td></tr>
+<tr class="memitem:a220ce49135d873a17a031f6478e18c77" id="r_a220ce49135d873a17a031f6478e18c77"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a220ce49135d873a17a031f6478e18c77.html#a220ce49135d873a17a031f6478e18c77">eps</a> = <a class="el" href="namespacegfdl__cloud__microphys__mod_a5fcbd9305bbbcdcc463823bee215f523.html#a5fcbd9305bbbcdcc463823bee215f523">rdgas</a> / <a class="el" href="namespacegfdl__cloud__microphys__mod_a10e642aaea88c7dcc9e132bf071326df.html#a10e642aaea88c7dcc9e132bf071326df">rvgas</a></td></tr>
+<tr class="memdesc:a220ce49135d873a17a031f6478e18c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">0.6219934995  <br /></td></tr>
+<tr class="memitem:a07bb0cdc52880b1b86c603b6403d63ba" id="r_a07bb0cdc52880b1b86c603b6403d63ba"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a07bb0cdc52880b1b86c603b6403d63ba.html#a07bb0cdc52880b1b86c603b6403d63ba">zvir</a> = <a class="el" href="namespacegfdl__cloud__microphys__mod_a10e642aaea88c7dcc9e132bf071326df.html#a10e642aaea88c7dcc9e132bf071326df">rvgas</a> / <a class="el" href="namespacegfdl__cloud__microphys__mod_a5fcbd9305bbbcdcc463823bee215f523.html#a5fcbd9305bbbcdcc463823bee215f523">rdgas</a> - 1.</td></tr>
+<tr class="memdesc:a07bb0cdc52880b1b86c603b6403d63ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">0.6077338443  <br /></td></tr>
+<tr class="memitem:a33dc41463dde04e1cb18eccf7d364051" id="r_a33dc41463dde04e1cb18eccf7d364051"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a33dc41463dde04e1cb18eccf7d364051.html#a33dc41463dde04e1cb18eccf7d364051">t_ice</a> = 273.16</td></tr>
+<tr class="memdesc:a33dc41463dde04e1cb18eccf7d364051"><td class="mdescLeft">&#160;</td><td class="mdescRight">freezing temperature  <br /></td></tr>
+<tr class="memitem:a83abb7622c4a818fab2df8236b4195bc" id="r_a83abb7622c4a818fab2df8236b4195bc"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a83abb7622c4a818fab2df8236b4195bc.html#a83abb7622c4a818fab2df8236b4195bc">table_ice</a> = 273.16</td></tr>
+<tr class="memdesc:a83abb7622c4a818fab2df8236b4195bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">freezing point for qs table  <br /></td></tr>
+<tr class="memitem:a2c9b91013804b932a485463d54c2e6df" id="r_a2c9b91013804b932a485463d54c2e6df"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a2c9b91013804b932a485463d54c2e6df.html#a2c9b91013804b932a485463d54c2e6df">e00</a> = 611.21</td></tr>
+<tr class="memdesc:a2c9b91013804b932a485463d54c2e6df"><td class="mdescLeft">&#160;</td><td class="mdescRight">ifs: saturation vapor pressure at 0 deg c  <br /></td></tr>
+<tr class="memitem:adf4e34fa27a6c63b13f590c25afe14ab" id="r_adf4e34fa27a6c63b13f590c25afe14ab"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_adf4e34fa27a6c63b13f590c25afe14ab.html#adf4e34fa27a6c63b13f590c25afe14ab">dc_vap</a> = <a class="el" href="namespacegfdl__cloud__microphys__mod_acba90c006590aed2fcca6f3c2243139f.html#acba90c006590aed2fcca6f3c2243139f">cp_vap</a> - <a class="el" href="namespacegfdl__cloud__microphys__mod_aaaa52b355c3ea7e30f8b7a9ad00afad1.html#aaaa52b355c3ea7e30f8b7a9ad00afad1">c_liq</a></td></tr>
+<tr class="memitem:abcb3366ebb4e46d71912d07af4d554cc" id="r_abcb3366ebb4e46d71912d07af4d554cc"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_abcb3366ebb4e46d71912d07af4d554cc.html#abcb3366ebb4e46d71912d07af4d554cc">dc_ice</a> = <a class="el" href="namespacegfdl__cloud__microphys__mod_aaaa52b355c3ea7e30f8b7a9ad00afad1.html#aaaa52b355c3ea7e30f8b7a9ad00afad1">c_liq</a> - <a class="el" href="namespacegfdl__cloud__microphys__mod_a29b88c5bd17f51d54fd0ff23aa1cd775.html#a29b88c5bd17f51d54fd0ff23aa1cd775">c_ice</a></td></tr>
+<tr class="memdesc:abcb3366ebb4e46d71912d07af4d554cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">2213.5, isobaric heating / colling  <br /></td></tr>
+<tr class="memitem:a87058d34dd97c90e2fbcd40d9f652de4" id="r_a87058d34dd97c90e2fbcd40d9f652de4"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a87058d34dd97c90e2fbcd40d9f652de4.html#a87058d34dd97c90e2fbcd40d9f652de4">hlv0</a> = <a class="el" href="namespacegfdl__cloud__microphys__mod_af84ac9b2b29e252682290fc721483ab6.html#af84ac9b2b29e252682290fc721483ab6">hlv</a></td></tr>
+<tr class="memdesc:a87058d34dd97c90e2fbcd40d9f652de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">gfs: evaporation latent heat coefficient at 0 deg c  <br /></td></tr>
+<tr class="memitem:a894f7a60fb64d8304aa48b31c119f15a" id="r_a894f7a60fb64d8304aa48b31c119f15a"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a894f7a60fb64d8304aa48b31c119f15a.html#a894f7a60fb64d8304aa48b31c119f15a">hlf0</a> = <a class="el" href="namespacegfdl__cloud__microphys__mod_a28cc1d77aac9c6acbe1df64d6e05b2e9.html#a28cc1d77aac9c6acbe1df64d6e05b2e9">hlf</a></td></tr>
+<tr class="memdesc:a894f7a60fb64d8304aa48b31c119f15a"><td class="mdescLeft">&#160;</td><td class="mdescRight">gfs: fussion latent heat coefficient at 0 deg c  <br /></td></tr>
+<tr class="memitem:ab5d99f12e6c4e172b631273188caf9a6" id="r_ab5d99f12e6c4e172b631273188caf9a6"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_ab5d99f12e6c4e172b631273188caf9a6.html#ab5d99f12e6c4e172b631273188caf9a6">lv0</a> = <a class="el" href="namespacegfdl__cloud__microphys__mod_a87058d34dd97c90e2fbcd40d9f652de4.html#a87058d34dd97c90e2fbcd40d9f652de4">hlv0</a> - <a class="el" href="namespacegfdl__cloud__microphys__mod_adf4e34fa27a6c63b13f590c25afe14ab.html#adf4e34fa27a6c63b13f590c25afe14ab">dc_vap</a> * <a class="el" href="namespacegfdl__cloud__microphys__mod_a33dc41463dde04e1cb18eccf7d364051.html#a33dc41463dde04e1cb18eccf7d364051">t_ice</a></td></tr>
+<tr class="memdesc:ab5d99f12e6c4e172b631273188caf9a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">3.13905782e6, evaporation latent heat coefficient at 0 deg k  <br /></td></tr>
+<tr class="memitem:acd008210283be60cfa69b4573b226430" id="r_acd008210283be60cfa69b4573b226430"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_acd008210283be60cfa69b4573b226430.html#acd008210283be60cfa69b4573b226430">li00</a> = <a class="el" href="namespacegfdl__cloud__microphys__mod_a894f7a60fb64d8304aa48b31c119f15a.html#a894f7a60fb64d8304aa48b31c119f15a">hlf0</a> - <a class="el" href="namespacegfdl__cloud__microphys__mod_abcb3366ebb4e46d71912d07af4d554cc.html#abcb3366ebb4e46d71912d07af4d554cc">dc_ice</a> * <a class="el" href="namespacegfdl__cloud__microphys__mod_a33dc41463dde04e1cb18eccf7d364051.html#a33dc41463dde04e1cb18eccf7d364051">t_ice</a></td></tr>
+<tr class="memitem:a2ad40ef8d444d41e73115d6c9b8db2ac" id="r_a2ad40ef8d444d41e73115d6c9b8db2ac"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a2ad40ef8d444d41e73115d6c9b8db2ac.html#a2ad40ef8d444d41e73115d6c9b8db2ac">d2ice</a> = <a class="el" href="namespacegfdl__cloud__microphys__mod_adf4e34fa27a6c63b13f590c25afe14ab.html#adf4e34fa27a6c63b13f590c25afe14ab">dc_vap</a> + <a class="el" href="namespacegfdl__cloud__microphys__mod_abcb3366ebb4e46d71912d07af4d554cc.html#abcb3366ebb4e46d71912d07af4d554cc">dc_ice</a></td></tr>
+<tr class="memitem:a9c003f98ec89a1e24eb8100da3d9b790" id="r_a9c003f98ec89a1e24eb8100da3d9b790"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a9c003f98ec89a1e24eb8100da3d9b790.html#a9c003f98ec89a1e24eb8100da3d9b790">li2</a> = <a class="el" href="namespacegfdl__cloud__microphys__mod_ab5d99f12e6c4e172b631273188caf9a6.html#ab5d99f12e6c4e172b631273188caf9a6">lv0</a> + <a class="el" href="namespacegfdl__cloud__microphys__mod_acd008210283be60cfa69b4573b226430.html#acd008210283be60cfa69b4573b226430">li00</a></td></tr>
+<tr class="memdesc:a9c003f98ec89a1e24eb8100da3d9b790"><td class="mdescLeft">&#160;</td><td class="mdescRight">2.86799816e6, sublimation latent heat coefficient at 0 deg k  <br /></td></tr>
+<tr class="memitem:aa13d7530a968cfdf5837081bebbb13f4" id="r_aa13d7530a968cfdf5837081bebbb13f4"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_aa13d7530a968cfdf5837081bebbb13f4.html#aa13d7530a968cfdf5837081bebbb13f4">qrmin</a> = 1.e-8</td></tr>
+<tr class="memdesc:aa13d7530a968cfdf5837081bebbb13f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">min value for rain  <br /></td></tr>
+<tr class="memitem:a2e25d81829ebe573fd0b06ded71c8719" id="r_a2e25d81829ebe573fd0b06ded71c8719"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a2e25d81829ebe573fd0b06ded71c8719.html#a2e25d81829ebe573fd0b06ded71c8719">qvmin</a> = 1.e-20</td></tr>
+<tr class="memdesc:a2e25d81829ebe573fd0b06ded71c8719"><td class="mdescLeft">&#160;</td><td class="mdescRight">min value for water vapor (treated as zero)  <br /></td></tr>
+<tr class="memitem:afb28c2892bb33b3e59666145a0443e4c" id="r_afb28c2892bb33b3e59666145a0443e4c"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_afb28c2892bb33b3e59666145a0443e4c.html#afb28c2892bb33b3e59666145a0443e4c">qcmin</a> = 1.e-12</td></tr>
+<tr class="memdesc:afb28c2892bb33b3e59666145a0443e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">min value for cloud condensates  <br /></td></tr>
+<tr class="memitem:a7a53f4a63512984af3ca34d4c3fab0e9" id="r_a7a53f4a63512984af3ca34d4c3fab0e9"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a7a53f4a63512984af3ca34d4c3fab0e9.html#a7a53f4a63512984af3ca34d4c3fab0e9">vr_min</a> = 1.e-3</td></tr>
+<tr class="memdesc:a7a53f4a63512984af3ca34d4c3fab0e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">min fall speed for rain  <br /></td></tr>
+<tr class="memitem:ae2b2d29c3c97e754c262751b254cdbbe" id="r_ae2b2d29c3c97e754c262751b254cdbbe"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_ae2b2d29c3c97e754c262751b254cdbbe.html#ae2b2d29c3c97e754c262751b254cdbbe">vf_min</a> = 1.e-5</td></tr>
+<tr class="memdesc:ae2b2d29c3c97e754c262751b254cdbbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">min fall speed for cloud ice, snow, graupel  <br /></td></tr>
+<tr class="memitem:a761f9632f2a7c3f7e27794bb6e22872d" id="r_a761f9632f2a7c3f7e27794bb6e22872d"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a761f9632f2a7c3f7e27794bb6e22872d.html#a761f9632f2a7c3f7e27794bb6e22872d">dz_min</a> = 1.e-2</td></tr>
+<tr class="memdesc:a761f9632f2a7c3f7e27794bb6e22872d"><td class="mdescLeft">&#160;</td><td class="mdescRight">use for correcting flipped height  <br /></td></tr>
+<tr class="memitem:a63167acff443a4112c67d83e377e4210" id="r_a63167acff443a4112c67d83e377e4210"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a63167acff443a4112c67d83e377e4210.html#a63167acff443a4112c67d83e377e4210">sfcrho</a> = 1.2</td></tr>
+<tr class="memdesc:a63167acff443a4112c67d83e377e4210"><td class="mdescLeft">&#160;</td><td class="mdescRight">surface air density  <br /></td></tr>
+<tr class="memitem:a208257c7e0033271fca19ccc8cf288bf" id="r_a208257c7e0033271fca19ccc8cf288bf"><td class="memItemLeft">real, parameter, public&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a208257c7e0033271fca19ccc8cf288bf.html#a208257c7e0033271fca19ccc8cf288bf">rhor</a> = 1.e3</td></tr>
+<tr class="memdesc:a208257c7e0033271fca19ccc8cf288bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">density of rain water, lin83  <br /></td></tr>
+<tr class="memitem:ae04e8ac0ab61f0c202ddcb518b995837" id="r_ae04e8ac0ab61f0c202ddcb518b995837"><td class="memItemLeft">real, parameter, public&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_ae04e8ac0ab61f0c202ddcb518b995837.html#ae04e8ac0ab61f0c202ddcb518b995837">rnzr</a> = 8.0e6</td></tr>
+<tr class="memitem:a723f4fa1c469cf7e2b6a6c55bd510591" id="r_a723f4fa1c469cf7e2b6a6c55bd510591"><td class="memItemLeft">real, parameter, public&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a723f4fa1c469cf7e2b6a6c55bd510591.html#a723f4fa1c469cf7e2b6a6c55bd510591">rnzs</a> = 3.0e6</td></tr>
+<tr class="memitem:a937871c56d237c7eadcc4f837cc178a2" id="r_a937871c56d237c7eadcc4f837cc178a2"><td class="memItemLeft">real, parameter, public&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a937871c56d237c7eadcc4f837cc178a2.html#a937871c56d237c7eadcc4f837cc178a2">rnzg</a> = 4.0e6</td></tr>
+<tr class="memitem:a1da846fcc2e2f81ab478ce4861d2d4c7" id="r_a1da846fcc2e2f81ab478ce4861d2d4c7"><td class="memItemLeft">real, parameter, public&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a1da846fcc2e2f81ab478ce4861d2d4c7.html#a1da846fcc2e2f81ab478ce4861d2d4c7">rnzh</a> = 4.0e4</td></tr>
+<tr class="memitem:ad4fbe227d0715d3fed09e275c53bf07f" id="r_ad4fbe227d0715d3fed09e275c53bf07f"><td class="memItemLeft">real, parameter, public&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_ad4fbe227d0715d3fed09e275c53bf07f.html#ad4fbe227d0715d3fed09e275c53bf07f">rhoh</a> = 0.917e3</td></tr>
+<tr class="memitem:a8cb901bff4f5e68cf3ddf25671c86ea8" id="r_a8cb901bff4f5e68cf3ddf25671c86ea8"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a8cb901bff4f5e68cf3ddf25671c86ea8.html#a8cb901bff4f5e68cf3ddf25671c86ea8">cracs</a></td></tr>
+<tr class="memitem:a76cfaa68a6e8e059472ea8dbf1e6d7d3" id="r_a76cfaa68a6e8e059472ea8dbf1e6d7d3"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a76cfaa68a6e8e059472ea8dbf1e6d7d3.html#a76cfaa68a6e8e059472ea8dbf1e6d7d3">csacr</a></td></tr>
+<tr class="memitem:ae7ee227f2851ee5eb59f1de24fc891eb" id="r_ae7ee227f2851ee5eb59f1de24fc891eb"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_ae7ee227f2851ee5eb59f1de24fc891eb.html#ae7ee227f2851ee5eb59f1de24fc891eb">cgacr</a></td></tr>
+<tr class="memitem:acdf1b69745568efd727304ccfc2cb441" id="r_acdf1b69745568efd727304ccfc2cb441"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_acdf1b69745568efd727304ccfc2cb441.html#acdf1b69745568efd727304ccfc2cb441">cgacs</a></td></tr>
+<tr class="memitem:a41bcf00aacda3bc2719641673f60d431" id="r_a41bcf00aacda3bc2719641673f60d431"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a41bcf00aacda3bc2719641673f60d431.html#a41bcf00aacda3bc2719641673f60d431">csacw</a></td></tr>
+<tr class="memitem:a5523bdc77ffec86afa49fb252486b337" id="r_a5523bdc77ffec86afa49fb252486b337"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a5523bdc77ffec86afa49fb252486b337.html#a5523bdc77ffec86afa49fb252486b337">craci</a></td></tr>
+<tr class="memitem:aea4cf39d132709fe603854bec9a8a21b" id="r_aea4cf39d132709fe603854bec9a8a21b"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_aea4cf39d132709fe603854bec9a8a21b.html#aea4cf39d132709fe603854bec9a8a21b">csaci</a></td></tr>
+<tr class="memitem:a1987668c902cb2aa457fcb2bd84cdef8" id="r_a1987668c902cb2aa457fcb2bd84cdef8"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a1987668c902cb2aa457fcb2bd84cdef8.html#a1987668c902cb2aa457fcb2bd84cdef8">cgacw</a></td></tr>
+<tr class="memitem:ae8bdd2563cce5a2fb0340fff2cbd718f" id="r_ae8bdd2563cce5a2fb0340fff2cbd718f"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_ae8bdd2563cce5a2fb0340fff2cbd718f.html#ae8bdd2563cce5a2fb0340fff2cbd718f">cgaci</a></td></tr>
+<tr class="memitem:a01168e3ef09778e0ab6469da426ad778" id="r_a01168e3ef09778e0ab6469da426ad778"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a01168e3ef09778e0ab6469da426ad778.html#a01168e3ef09778e0ab6469da426ad778">cracw</a></td></tr>
+<tr class="memdesc:a01168e3ef09778e0ab6469da426ad778"><td class="mdescLeft">&#160;</td><td class="mdescRight">constants for accretions  <br /></td></tr>
+<tr class="memitem:a20f90b5b4941f07f3a513bce315e33c6" id="r_a20f90b5b4941f07f3a513bce315e33c6"><td class="memItemLeft">real, dimension(3, 4)&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a20f90b5b4941f07f3a513bce315e33c6.html#a20f90b5b4941f07f3a513bce315e33c6">acco</a></td></tr>
+<tr class="memdesc:a20f90b5b4941f07f3a513bce315e33c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">constants for accretions  <br /></td></tr>
+<tr class="memitem:a2fd68defdc216bfc71e6fce05ed5db87" id="r_a2fd68defdc216bfc71e6fce05ed5db87"><td class="memItemLeft">real, dimension(5)&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a2fd68defdc216bfc71e6fce05ed5db87.html#a2fd68defdc216bfc71e6fce05ed5db87">cssub</a></td></tr>
+<tr class="memitem:a0c648441ab1cf248d97b067a29061837" id="r_a0c648441ab1cf248d97b067a29061837"><td class="memItemLeft">real, dimension(5)&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a0c648441ab1cf248d97b067a29061837.html#a0c648441ab1cf248d97b067a29061837">cgsub</a></td></tr>
+<tr class="memitem:ac457d790173a91ff1a03b945ad7e963a" id="r_ac457d790173a91ff1a03b945ad7e963a"><td class="memItemLeft">real, dimension(5)&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_ac457d790173a91ff1a03b945ad7e963a.html#ac457d790173a91ff1a03b945ad7e963a">crevp</a></td></tr>
+<tr class="memitem:a29b60e166f2e81c30d679d3837fe389f" id="r_a29b60e166f2e81c30d679d3837fe389f"><td class="memItemLeft">real, dimension(2)&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a29b60e166f2e81c30d679d3837fe389f.html#a29b60e166f2e81c30d679d3837fe389f">cgfr</a></td></tr>
+<tr class="memitem:a5fcecef83acee95a5ab5f4384386f604" id="r_a5fcecef83acee95a5ab5f4384386f604"><td class="memItemLeft">real, dimension(5)&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a5fcecef83acee95a5ab5f4384386f604.html#a5fcecef83acee95a5ab5f4384386f604">csmlt</a></td></tr>
+<tr class="memitem:a64133fa272db743932cf601b5b30e657" id="r_a64133fa272db743932cf601b5b30e657"><td class="memItemLeft">real, dimension(5)&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a64133fa272db743932cf601b5b30e657.html#a64133fa272db743932cf601b5b30e657">cgmlt</a></td></tr>
+<tr class="memitem:a0d5897e0145ee196ca7feff297f6ab00" id="r_a0d5897e0145ee196ca7feff297f6ab00"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a0d5897e0145ee196ca7feff297f6ab00.html#a0d5897e0145ee196ca7feff297f6ab00">es0</a></td></tr>
+<tr class="memitem:a205e82da88c1b5e5cc625284da8b2285" id="r_a205e82da88c1b5e5cc625284da8b2285"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a205e82da88c1b5e5cc625284da8b2285.html#a205e82da88c1b5e5cc625284da8b2285">ces0</a></td></tr>
+<tr class="memitem:ae445eed56f9c161351f63c657e1ba3b6" id="r_ae445eed56f9c161351f63c657e1ba3b6"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_ae445eed56f9c161351f63c657e1ba3b6.html#ae445eed56f9c161351f63c657e1ba3b6">pie</a></td></tr>
+<tr class="memitem:a8a489f3df616f379035b5a231cd0975c" id="r_a8a489f3df616f379035b5a231cd0975c"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a8a489f3df616f379035b5a231cd0975c.html#a8a489f3df616f379035b5a231cd0975c">rgrav</a></td></tr>
+<tr class="memitem:a829f4ea2e3dfa59f64ecd6f84034e9f1" id="r_a829f4ea2e3dfa59f64ecd6f84034e9f1"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a829f4ea2e3dfa59f64ecd6f84034e9f1.html#a829f4ea2e3dfa59f64ecd6f84034e9f1">fac_rc</a></td></tr>
+<tr class="memitem:a3f5ec546e6560c8dfb0574aae5f0d289" id="r_a3f5ec546e6560c8dfb0574aae5f0d289"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a3f5ec546e6560c8dfb0574aae5f0d289.html#a3f5ec546e6560c8dfb0574aae5f0d289">c_air</a></td></tr>
+<tr class="memitem:af9b27836b2dfc2958788d4a21ab13827" id="r_af9b27836b2dfc2958788d4a21ab13827"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_af9b27836b2dfc2958788d4a21ab13827.html#af9b27836b2dfc2958788d4a21ab13827">c_vap</a></td></tr>
+<tr class="memitem:a4be7564fce52f9030b37ad9bd7b398cd" id="r_a4be7564fce52f9030b37ad9bd7b398cd"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a4be7564fce52f9030b37ad9bd7b398cd.html#a4be7564fce52f9030b37ad9bd7b398cd">lati</a></td></tr>
+<tr class="memitem:aaa6daa9e80084f53c60139ca3f60ecce" id="r_aaa6daa9e80084f53c60139ca3f60ecce"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_aaa6daa9e80084f53c60139ca3f60ecce.html#aaa6daa9e80084f53c60139ca3f60ecce">latv</a></td></tr>
+<tr class="memitem:ab4cc55bb3f240617f36a7a158a667ec8" id="r_ab4cc55bb3f240617f36a7a158a667ec8"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_ab4cc55bb3f240617f36a7a158a667ec8.html#ab4cc55bb3f240617f36a7a158a667ec8">lats</a></td></tr>
+<tr class="memitem:a2427784b417202f3b5a2c61364ed604c" id="r_a2427784b417202f3b5a2c61364ed604c"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a2427784b417202f3b5a2c61364ed604c.html#a2427784b417202f3b5a2c61364ed604c">lat2</a></td></tr>
+<tr class="memitem:aecf0c5adc8a93d949c3ff380f51dacd7" id="r_aecf0c5adc8a93d949c3ff380f51dacd7"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_aecf0c5adc8a93d949c3ff380f51dacd7.html#aecf0c5adc8a93d949c3ff380f51dacd7">lcp</a></td></tr>
+<tr class="memitem:a7b21183f2cf3ae202b01d9fb1d49a187" id="r_a7b21183f2cf3ae202b01d9fb1d49a187"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a7b21183f2cf3ae202b01d9fb1d49a187.html#a7b21183f2cf3ae202b01d9fb1d49a187">icp</a></td></tr>
+<tr class="memitem:a0e958e185a159dfde506c8806291b06b" id="r_a0e958e185a159dfde506c8806291b06b"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a0e958e185a159dfde506c8806291b06b.html#a0e958e185a159dfde506c8806291b06b">tcp</a></td></tr>
+<tr class="memdesc:a0e958e185a159dfde506c8806291b06b"><td class="mdescLeft">&#160;</td><td class="mdescRight">used in Bigg mechanism and wet bulk  <br /></td></tr>
+<tr class="memitem:ae4fae204bf5891b4b7cabdb4c3921a68" id="r_ae4fae204bf5891b4b7cabdb4c3921a68"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_ae4fae204bf5891b4b7cabdb4c3921a68.html#ae4fae204bf5891b4b7cabdb4c3921a68">d0_vap</a></td></tr>
+<tr class="memdesc:ae4fae204bf5891b4b7cabdb4c3921a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">the same as dc_vap, except that cp_vap can be cp_vap or cv_vap  <br /></td></tr>
+<tr class="memitem:a20a1f068e95671e1fa520799851edca0" id="r_a20a1f068e95671e1fa520799851edca0"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a20a1f068e95671e1fa520799851edca0.html#a20a1f068e95671e1fa520799851edca0">lv00</a></td></tr>
+<tr class="memdesc:a20a1f068e95671e1fa520799851edca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">the same as lv0, except that cp_vap can be cp_vap or cv_vap  <br /></td></tr>
+<tr class="memitem:a57d6f4f1baa7b12910906f41567ed865" id="r_a57d6f4f1baa7b12910906f41567ed865"><td class="memItemLeft">logical&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a57d6f4f1baa7b12910906f41567ed865.html#a57d6f4f1baa7b12910906f41567ed865">do_setup</a> = .true.</td></tr>
+<tr class="memdesc:a57d6f4f1baa7b12910906f41567ed865"><td class="mdescLeft">&#160;</td><td class="mdescRight">setup constants and parameters  <br /></td></tr>
+<tr class="memitem:afc2d73e95b005f53908f07c102cfabcc" id="r_afc2d73e95b005f53908f07c102cfabcc"><td class="memItemLeft">logical&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_afc2d73e95b005f53908f07c102cfabcc.html#afc2d73e95b005f53908f07c102cfabcc">p_nonhydro</a> = .false.</td></tr>
+<tr class="memdesc:afc2d73e95b005f53908f07c102cfabcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform hydrosatic adjustment on air density  <br /></td></tr>
+<tr class="memitem:ab87745011af03fa13e82eb1d58ff286c" id="r_ab87745011af03fa13e82eb1d58ff286c"><td class="memItemLeft">real, dimension(:), allocatable&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_ab87745011af03fa13e82eb1d58ff286c.html#ab87745011af03fa13e82eb1d58ff286c">table</a></td></tr>
+<tr class="memitem:ad4b2fc38cb536a1187ea8cf050273827" id="r_ad4b2fc38cb536a1187ea8cf050273827"><td class="memItemLeft">real, dimension(:), allocatable&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_ad4b2fc38cb536a1187ea8cf050273827.html#ad4b2fc38cb536a1187ea8cf050273827">table2</a></td></tr>
+<tr class="memitem:a7c4ceee1ad3a485538bf198e86aa5802" id="r_a7c4ceee1ad3a485538bf198e86aa5802"><td class="memItemLeft">real, dimension(:), allocatable&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a7c4ceee1ad3a485538bf198e86aa5802.html#a7c4ceee1ad3a485538bf198e86aa5802">table3</a></td></tr>
+<tr class="memitem:a739b100a3edab0a5f8997c2e6dded0e5" id="r_a739b100a3edab0a5f8997c2e6dded0e5"><td class="memItemLeft">real, dimension(:), allocatable&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a739b100a3edab0a5f8997c2e6dded0e5.html#a739b100a3edab0a5f8997c2e6dded0e5">tablew</a></td></tr>
+<tr class="memitem:abc8424f2e6b5d4b0000aacecd84c5e57" id="r_abc8424f2e6b5d4b0000aacecd84c5e57"><td class="memItemLeft">real, dimension(:), allocatable&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_abc8424f2e6b5d4b0000aacecd84c5e57.html#abc8424f2e6b5d4b0000aacecd84c5e57">des</a></td></tr>
+<tr class="memitem:acc28fcaef66644d2b3346433658eaf84" id="r_acc28fcaef66644d2b3346433658eaf84"><td class="memItemLeft">real, dimension(:), allocatable&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_acc28fcaef66644d2b3346433658eaf84.html#acc28fcaef66644d2b3346433658eaf84">des2</a></td></tr>
+<tr class="memitem:aaf185f6ffca92f26cd9e764b366b2fc6" id="r_aaf185f6ffca92f26cd9e764b366b2fc6"><td class="memItemLeft">real, dimension(:), allocatable&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_aaf185f6ffca92f26cd9e764b366b2fc6.html#aaf185f6ffca92f26cd9e764b366b2fc6">des3</a></td></tr>
+<tr class="memitem:adb094e751e31b5b2f63ff22217649af3" id="r_adb094e751e31b5b2f63ff22217649af3"><td class="memItemLeft">real, dimension(:), allocatable&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_adb094e751e31b5b2f63ff22217649af3.html#adb094e751e31b5b2f63ff22217649af3">desw</a></td></tr>
+<tr class="memitem:afbc4de29daa9180637debca719b04f4a" id="r_afbc4de29daa9180637debca719b04f4a"><td class="memItemLeft">logical&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_afbc4de29daa9180637debca719b04f4a.html#afbc4de29daa9180637debca719b04f4a">tables_are_initialized</a> = .false.</td></tr>
+<tr class="memitem:af42003bd5513dc4e35cba9c823edd075" id="r_af42003bd5513dc4e35cba9c823edd075"><td class="memItemLeft">real, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_af42003bd5513dc4e35cba9c823edd075.html#af42003bd5513dc4e35cba9c823edd075">dt_fr</a> = 8.</td></tr>
+<tr class="memdesc:af42003bd5513dc4e35cba9c823edd075"><td class="mdescLeft">&#160;</td><td class="mdescRight">homogeneous freezing of all cloud water at t_wfr - dt_fr  <br /></td></tr>
+<tr class="memitem:a6592c44ed65fd73f3fb58187e9466b51" id="r_a6592c44ed65fd73f3fb58187e9466b51"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a6592c44ed65fd73f3fb58187e9466b51.html#a6592c44ed65fd73f3fb58187e9466b51">p_min</a> = 100.</td></tr>
+<tr class="memdesc:a6592c44ed65fd73f3fb58187e9466b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">minimum pressure (pascal) for mp to operate  <br /></td></tr>
+<tr class="memitem:a106cf6899b0bc78f051b31828d0b1548" id="r_a106cf6899b0bc78f051b31828d0b1548"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a106cf6899b0bc78f051b31828d0b1548.html#a106cf6899b0bc78f051b31828d0b1548">log_10</a></td></tr>
+<tr class="memitem:a33993193531d26729350bb023a1631e4" id="r_a33993193531d26729350bb023a1631e4"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a33993193531d26729350bb023a1631e4.html#a33993193531d26729350bb023a1631e4">tice0</a></td></tr>
+<tr class="memitem:a1a27d3264acf4759e91e552124af857c" id="r_a1a27d3264acf4759e91e552124af857c"><td class="memItemLeft">real&#160;</td><td class="memItemRight"><a class="el" href="namespacegfdl__cloud__microphys__mod_a1a27d3264acf4759e91e552124af857c.html#a1a27d3264acf4759e91e552124af857c">t_wfr</a></td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespacegfdl__cloud__microphys__mod.html">gfdl_cloud_microphys_mod</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

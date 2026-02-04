@@ -1,0 +1,5 @@
+<map id="module_sf_ruclsm::sice" name="module_sf_ruclsm::sice">
+<area shape="rect" id="Node000001" title="This subroutine is called for sea ice without accumulated snow on its surface. it solves heat diffusi..." alt="" coords="5,5,165,31"/>
+<area shape="rect" id="Node000002" href="$group__lsm__ruc__group_ga03c426be3516bfb046dfd57c1b89dbbe.html#ga03c426be3516bfb046dfd57c1b89dbbe" title="This subroutine finds the solution of energy budget at the surface from the pre&#45;computed table of sat..." alt="" coords="213,5,375,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,16,200,18,194,18,165,21"/>
+</map>

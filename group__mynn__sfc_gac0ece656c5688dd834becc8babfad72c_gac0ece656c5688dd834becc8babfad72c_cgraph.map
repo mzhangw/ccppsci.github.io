@@ -1,0 +1,79 @@
+<map id="module_sf_mynn::sfclay_mynn" name="module_sf_mynn::sfclay_mynn">
+<area shape="rect" id="Node000001" title="This subroutine." alt="" coords="5,553,208,579"/>
+<area shape="rect" id="Node000002" href="$group__mynn__sfc_ga51403acc4b5f2876fedbb82b29a2dc2e.html#ga51403acc4b5f2876fedbb82b29a2dc2e" title="This subroutine calculates u*, z/L, and the exchange coefficients which are passed to subsequent sche..." alt="" coords="256,553,472,579"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,564,242,564,238,568,210,568"/>
+<area shape="rect" id="Node000003" href="$group__mynn__sfc_ga4b25c539d21bd439596f5a9adba12a47.html#ga4b25c539d21bd439596f5a9adba12a47" title="This is taken from Andreas (2002; J. of Hydromet) and Andreas et al. (2005; BLM)." alt="" coords="531,5,740,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="362,552,363,465,369,400,380,327,398,249,426,173,466,102,490,69,518,40,524,38,521,42,522,44,494,73,470,105,431,175,403,251,385,328,374,401,368,465,367,553"/>
+<area shape="rect" id="Node000004" href="$group__mynn__sfc_ga24752a5f2d97dbfa6653a4a2e09dd452.html#ga24752a5f2d97dbfa6653a4a2e09dd452" title="This version of Charnock&#39;s relation employs a varying Charnock parameter, similar to COARE3...." alt="" coords="528,55,744,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="362,552,367,473,374,414,386,348,405,278,433,210,470,146,493,117,518,91,526,87,523,91,522,95,497,121,474,149,437,212,410,280,391,349,379,415,372,473,368,553"/>
+<area shape="rect" id="Node000005" href="$group__mynn__sfc_ga6f58970b26a345173a4b938ce79986a1.html#ga6f58970b26a345173a4b938ce79986a1" title=" " alt="" coords="556,104,715,145"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="363,552,372,483,396,376,416,317,442,259,476,204,518,156,543,141,540,145,522,160,480,207,447,261,421,319,401,378,377,484,369,554"/>
+<area shape="rect" id="Node000006" href="$group__mynn__sfc_gae5186e30771524f661b8506fcc83f7a8.html#gae5186e30771524f661b8506fcc83f7a8" title="This version of Charnock&#39;s relation employs a varying Charnock parameter, taken from COARE 3...." alt="" coords="554,170,717,210"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="365,552,377,493,404,404,424,355,449,306,481,261,518,221,541,208,538,212,522,226,485,264,454,309,429,357,409,405,382,494,370,554"/>
+<area shape="rect" id="Node000007" href="$group__mynn__sfc_gafae928cdee7c24f2ec11f10708193792.html#gafae928cdee7c24f2ec11f10708193792" title="This formulation for thermal and moisture roughness length (Zt and Zq) as a function of the roughness..." alt="" coords="556,235,715,276"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="366,552,382,502,412,431,432,392,457,353,485,318,518,287,544,273,540,277,522,291,489,321,461,357,437,394,417,433,387,504,371,554"/>
+<area shape="rect" id="Node000008" href="$group__mynn__sfc_ga4b9bb922e616c8c76bf1f117db9bdd4b.html#ga4b9bb922e616c8c76bf1f117db9bdd4b" title="This formulation for thermal and moisture roughness length (Zt and Zq) as a function of the roughness..." alt="" coords="556,300,715,341"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="369,552,388,512,420,458,464,400,490,374,519,351,543,339,540,343,521,355,494,378,468,404,425,461,393,515,373,554"/>
+<area shape="rect" id="Node000009" href="$group__mynn__sfc_gabcddba37d2f63570c5487a832d6d0808.html#gabcddba37d2f63570c5487a832d6d0808" title="This formulation for the thermal and moisture roughness lengths (Zt and Zq) relates them to Z0 via th..." alt="" coords="536,365,736,391"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="371,551,394,520,427,479,469,437,519,401,535,395,531,399,521,406,473,441,431,483,398,523,376,554"/>
+<area shape="rect" id="Node000010" href="$group__mynn__sfc_ga8132bf9ce581779f82f4118e8a275013.html#ga8132bf9ce581779f82f4118e8a275013" title=" " alt="" coords="562,415,709,456"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="381,551,441,510,519,466,550,456,546,460,521,471,443,514,385,555"/>
+<area shape="rect" id="Node000011" href="$group__mynn__sfc_gaaa5898e1b7cca87a6682f85defb5c2e9.html#gaaa5898e1b7cca87a6682f85defb5c2e9" title=" " alt="" coords="562,480,709,521"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="419,551,549,520,545,524,422,555"/>
+<area shape="rect" id="Node000014" href="$group__mynn__sfc_gaf86498f1d153a9a81a209266b298268f.html#gaf86498f1d153a9a81a209266b298268f" title=" " alt="" coords="562,546,709,586"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="471,564,549,565,544,568,473,569"/>
+<area shape="rect" id="Node000015" href="$group__mynn__sfc_ga16135fde36dbe926afe4a8883ded1d1d.html#ga16135fde36dbe926afe4a8883ded1d1d" title=" " alt="" coords="562,611,709,652"/>
+<area shape="poly" id="edge14_Node000002_Node000015" title=" " alt="" coords="420,577,550,609,545,612,421,582"/>
+<area shape="rect" id="Node000018" href="$group__mynn__sfc_ga313671969a16aee828efb31d353b213c.html#ga313671969a16aee828efb31d353b213c" title="This subroutine returns a more robust z/L that best matches the z/L from Hogstrom (1996) for unstable..." alt="" coords="568,676,703,717"/>
+<area shape="poly" id="edge17_Node000002_Node000018" title=" " alt="" coords="382,577,443,618,521,661,556,676,551,677,519,666,441,623,383,582"/>
+<area shape="rect" id="Node000019" href="$group__mynn__sfc_ga2a33b37b24c6050511f00967992ece58.html#ga2a33b37b24c6050511f00967992ece58" title=" " alt="" coords="560,766,712,806"/>
+<area shape="poly" id="edge18_Node000002_Node000019" title=" " alt="" coords="375,577,435,646,476,688,522,727,573,758,568,759,518,731,472,692,431,650,375,582"/>
+<area shape="rect" id="Node000022" href="$group__mynn__sfc_ga6e10bc7bd36fcdbf2b555f49396c9eec.html#ga6e10bc7bd36fcdbf2b555f49396c9eec" title=" " alt="" coords="560,855,712,896"/>
+<area shape="poly" id="edge24_Node000002_Node000022" title=" " alt="" coords="370,577,392,622,423,685,467,754,493,787,522,816,567,848,561,848,518,820,489,790,463,757,419,688,387,625,370,582"/>
+<area shape="rect" id="Node000025" href="$group__mynn__sfc_ga454633ed81c49d8e9468a102612e38d1.html#ga454633ed81c49d8e9468a102612e38d1" title="look&#45;up table functions &#45; or, if beyond &#45;10 &lt; z/L &lt; 10, recalculate" alt="" coords="558,944,714,985"/>
+<area shape="poly" id="edge30_Node000002_Node000025" title=" " alt="" coords="368,577,385,636,413,723,434,771,458,819,488,864,522,906,541,922,563,937,558,937,537,926,518,909,483,868,454,821,429,773,408,724,380,638,367,582"/>
+<area shape="rect" id="Node000028" href="$group__mynn__sfc_ga885118af5fa22eb8e00039c531ddd8db.html#ga885118af5fa22eb8e00039c531ddd8db" title=" " alt="" coords="558,1034,714,1074"/>
+<area shape="poly" id="edge36_Node000002_Node000028" title=" " alt="" coords="367,577,379,650,404,759,424,821,450,883,482,942,522,995,540,1011,561,1026,556,1026,536,1015,518,999,478,945,445,885,419,823,399,761,374,651,366,582"/>
+<area shape="rect" id="Node000031" href="$group__mynn__sfc_ga9ab0b939197c07ac6ef3cae7acee13a5.html#ga9ab0b939197c07ac6ef3cae7acee13a5" title="This formulation for roughness length was designed account for. wave steepness." alt="" coords="556,1099,716,1140"/>
+<area shape="poly" id="edge42_Node000002_Node000031" title=" " alt="" coords="366,577,370,665,376,728,388,800,407,876,434,952,472,1022,495,1055,522,1084,544,1102,539,1101,518,1088,491,1058,468,1025,429,954,402,878,383,801,371,729,365,665,364,582"/>
+<area shape="rect" id="Node000032" href="$group__mynn__sfc_ga259ab52e1c191830559f851230ca17d9.html#ga259ab52e1c191830559f851230ca17d9" title="This is a modified version of Yang et al (2002 QJRMS, 2008 JAMC) and Chen et al (2010,..." alt="" coords="540,1164,731,1190"/>
+<area shape="poly" id="edge43_Node000002_Node000032" title=" " alt="" coords="367,577,385,690,417,863,438,954,463,1037,491,1105,506,1131,522,1150,529,1158,524,1157,518,1153,502,1134,486,1107,458,1039,433,955,412,864,380,691,366,582"/>
+<area shape="rect" id="Node000033" href="$group__mynn__sfc_gac8b632de4cd0fcd7e8dfa9a943edaec4.html#gac8b632de4cd0fcd7e8dfa9a943edaec4" title="This subroutine returns the thermal and moisture roughness lengths from Zilitinkevich (1995) and Zili..." alt="" coords="520,1213,751,1239"/>
+<area shape="poly" id="edge44_Node000002_Node000033" title=" " alt="" coords="367,577,383,699,414,887,435,986,460,1077,489,1151,505,1179,522,1200,524,1204,519,1203,518,1204,501,1182,484,1154,455,1079,429,987,408,888,378,699,366,582"/>
+<area shape="rect" id="Node000012" href="$group__mynn__sfc_gaeb3eb0de61ef2d256cf8b8c53cd99d79.html#gaeb3eb0de61ef2d256cf8b8c53cd99d79" title="add fitted z0,zt curves for hurricane application (used in HWRF/HMON) Weiguo Wang,..." alt="" coords="799,443,992,468"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="708,486,805,470,801,473,711,490"/>
+<area shape="rect" id="Node000013" href="$group__mynn__sfc_ga784c4ee38a178b60dc3b77cb975d01fc.html#ga784c4ee38a178b60dc3b77cb975d01fc" title="Calculate areodynamical roughness over water with input 10&#45;m wind For low&#45;to&#45;moderate winds,..." alt="" coords="799,492,992,518"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="708,499,786,502,781,504,710,504"/>
+<area shape="rect" id="Node000016" href="$group__mynn__sfc_ga88ef473ba576cf88e7848dc3734c11c8.html#ga88ef473ba576cf88e7848dc3734c11c8" title="Calculate scalar roughness over water with input 10&#45;m wind For low&#45;to&#45;moderate winds,..." alt="" coords="803,549,988,575"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="708,609,799,584,828,578,823,581,800,589,710,613"/>
+<area shape="rect" id="Node000017" href="$group__mynn__sfc_ga13aa942a8049528849034aa65d68de58.html#ga13aa942a8049528849034aa65d68de58" title="Calculate scalar roughness over water with input 10&#45;m wind For low&#45;to&#45;moderate winds,..." alt="" coords="803,599,988,624"/>
+<area shape="poly" id="edge16_Node000015_Node000017" title=" " alt="" coords="708,623,789,619,785,621,710,628"/>
+<area shape="poly" id="edge19_Node000019_Node000019" title=" " alt="" coords="587,765,585,756,593,747,610,741,636,739,664,742,682,750,677,751,662,747,636,744,611,746,596,751,590,757,592,766"/>
+<area shape="rect" id="Node000020" href="$group__mynn__sfc_ga214373cdd64d666866d4c818b57a47ec.html#ga214373cdd64d666866d4c818b57a47ec" title=" " alt="" coords="819,672,972,713"/>
+<area shape="poly" id="edge20_Node000019_Node000020" title=" " alt="" coords="692,763,798,724,822,717,818,720,800,729,694,768"/>
+<area shape="rect" id="Node000021" href="$group__mynn__sfc_ga2186e04d782df51218fbd03d31517fc8.html#ga2186e04d782df51218fbd03d31517fc8" title=" " alt="" coords="819,762,972,802"/>
+<area shape="poly" id="edge22_Node000019_Node000021" title=" " alt="" coords="712,782,806,783,801,785,713,788"/>
+<area shape="poly" id="edge21_Node000020_Node000020" title=" " alt="" coords="847,671,844,662,852,653,870,648,896,646,923,648,942,657,936,657,922,653,895,651,871,653,855,658,850,664,852,673"/>
+<area shape="poly" id="edge23_Node000021_Node000021" title=" " alt="" coords="847,760,844,752,852,743,870,737,896,735,923,738,942,746,936,747,922,743,895,740,871,742,855,747,850,753,852,762"/>
+<area shape="poly" id="edge25_Node000022_Node000022" title=" " alt="" coords="587,854,585,845,593,836,610,830,636,829,664,831,682,839,677,840,662,836,636,834,611,836,596,841,590,846,592,855"/>
+<area shape="rect" id="Node000023" href="$group__mynn__sfc_gae46cc20c17ea15f5c9f5610ab6942073.html#gae46cc20c17ea15f5c9f5610ab6942073" title=" " alt="" coords="819,851,972,892"/>
+<area shape="poly" id="edge26_Node000022_Node000023" title=" " alt="" coords="712,872,806,872,801,874,713,877"/>
+<area shape="rect" id="Node000024" href="$group__mynn__sfc_gaa556db3881e63c9fc578aafd1071e248.html#gaa556db3881e63c9fc578aafd1071e248" title=" " alt="" coords="819,940,972,981"/>
+<area shape="poly" id="edge28_Node000022_Node000024" title=" " alt="" coords="711,894,752,906,828,934,822,935,750,911,712,899"/>
+<area shape="poly" id="edge27_Node000023_Node000023" title=" " alt="" coords="847,850,844,841,852,832,870,826,896,825,923,827,942,835,936,836,922,832,895,830,871,832,855,837,850,842,852,852"/>
+<area shape="poly" id="edge29_Node000024_Node000024" title=" " alt="" coords="847,939,844,930,852,921,870,916,896,914,923,916,942,925,936,925,922,921,895,919,871,921,855,926,850,932,852,941"/>
+<area shape="poly" id="edge31_Node000025_Node000025" title=" " alt="" coords="587,943,585,934,593,925,610,920,636,918,664,920,682,929,677,929,662,925,636,923,611,925,596,930,590,936,592,945"/>
+<area shape="rect" id="Node000026" href="$group__mynn__sfc_gaaefd04628906b35b8ba54bbf62e6a78f.html#gaaefd04628906b35b8ba54bbf62e6a78f" title=" " alt="" coords="817,1030,974,1070"/>
+<area shape="poly" id="edge32_Node000025_Node000026" title=" " alt="" coords="712,983,752,996,828,1024,822,1024,750,1001,712,988"/>
+<area shape="rect" id="Node000027" href="$group__mynn__sfc_ga12649bf97aa4974c23a7723c418907e0.html#ga12649bf97aa4974c23a7723c418907e0" title=" " alt="" coords="817,1119,974,1160"/>
+<area shape="poly" id="edge34_Node000025_Node000027" title=" " alt="" coords="714,976,753,996,771,1017,779,1038,786,1059,801,1080,839,1111,834,1111,797,1084,782,1061,774,1040,767,1020,750,1000,714,981"/>
+<area shape="poly" id="edge33_Node000026_Node000026" title=" " alt="" coords="847,1028,844,1020,852,1011,870,1005,896,1003,923,1006,942,1014,936,1014,922,1011,895,1008,871,1010,855,1015,850,1021,852,1030"/>
+<area shape="poly" id="edge35_Node000027_Node000027" title=" " alt="" coords="847,1117,844,1109,852,1100,870,1094,896,1093,923,1095,942,1104,936,1103,922,1100,895,1098,871,1100,855,1105,850,1110,852,1120"/>
+<area shape="poly" id="edge37_Node000028_Node000028" title=" " alt="" coords="587,1032,585,1024,593,1015,610,1009,636,1007,664,1010,682,1018,677,1018,662,1015,636,1012,611,1014,596,1019,590,1025,592,1034"/>
+<area shape="rect" id="Node000029" href="$group__mynn__sfc_gace0216359bf098fd5cc7fa7cb8b3b716.html#gace0216359bf098fd5cc7fa7cb8b3b716" title=" " alt="" coords="817,1208,974,1249"/>
+<area shape="poly" id="edge38_Node000028_Node000029" title=" " alt="" coords="714,1065,753,1085,771,1106,779,1127,786,1148,801,1170,839,1201,834,1200,797,1173,782,1150,774,1129,767,1109,750,1090,714,1070"/>
+<area shape="rect" id="Node000030" href="$group__mynn__sfc_ga8e88a4eb2ee98eb538da06f42215e8b7.html#ga8e88a4eb2ee98eb538da06f42215e8b7" title=" " alt="" coords="817,1298,974,1338"/>
+<area shape="poly" id="edge40_Node000028_Node000030" title=" " alt="" coords="714,1062,736,1072,753,1086,770,1107,778,1129,781,1172,782,1214,788,1236,801,1259,816,1274,834,1290,829,1289,812,1278,797,1262,783,1238,777,1215,776,1172,773,1130,765,1110,749,1089,733,1077,714,1068"/>
+<area shape="poly" id="edge39_Node000029_Node000029" title=" " alt="" coords="847,1206,844,1198,852,1189,870,1184,896,1182,923,1184,942,1193,936,1193,922,1189,895,1187,871,1189,855,1194,850,1200,852,1209"/>
+<area shape="poly" id="edge41_Node000030_Node000030" title=" " alt="" coords="847,1296,844,1288,852,1279,870,1273,896,1271,923,1274,942,1283,936,1282,922,1279,895,1276,871,1278,855,1283,850,1289,852,1299"/>
+</map>

@@ -1,0 +1,82 @@
+<map id="sflx::gfssflx" name="sflx::gfssflx">
+<area shape="rect" id="Node000001" title="This is the entity of GFS Noah LSM model of physics subroutines. It is a soil/veg/snowpack land&#45;surfa..." alt="" coords="5,380,95,406"/>
+<area shape="rect" id="Node000002" href="$group___noah_m_p___l_s_m_ga9d5adb20aca5b72a7e126136088e20d1.html#ga9d5adb20aca5b72a7e126136088e20d1" title="surface albedos. also fluxes (per unit incoming direct and diffuse radiation) reflected,..." alt="" coords="284,104,344,130"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="50,379,57,338,72,280,99,219,118,190,141,165,170,145,204,131,271,118,267,121,205,136,173,150,144,170,122,194,104,222,77,282,62,339,55,380"/>
+<area shape="rect" id="Node000008" href="$group___noah___l_s_m_ga18a0f02e4a1a32b6cde35cbe67b09908.html#ga18a0f02e4a1a32b6cde35cbe67b09908" title="This subroutine calculates albedo including snow effect (0 &#45;&gt; 1)." alt="" coords="157,79,212,104"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="50,379,58,334,75,268,102,193,119,156,141,122,151,112,149,117,145,125,124,159,106,195,80,269,64,335,56,380"/>
+<area shape="rect" id="Node000009" href="$group___noah___l_s_m_gaa292bfa0bd38e58ab9389cb38e4d09c0.html#gaa292bfa0bd38e58ab9389cb38e4d09c0" title="This subroutine calculates canopy resistance which depends on incoming solar radiation,..." alt="" coords="154,180,214,206"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="53,379,83,304,108,258,141,215,145,213,143,218,145,219,113,261,87,306,58,380"/>
+<area shape="rect" id="Node000010" href="$group___noah___l_s_m_ga028fc448a3afe77726222a337008ffa4.html#ga028fc448a3afe77726222a337008ffa4" title="This subroutine calculates snow termal conductivity." alt="" coords="155,229,214,255"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="58,378,92,330,141,272,154,263,151,267,145,276,96,333,62,381"/>
+<area shape="rect" id="Node000011" href="$group___noah___l_s_m_ga92994e4737ecfd692a6704778558c9c2.html#ga92994e4737ecfd692a6704778558c9c2" title="This subroutine calculates soil moisture and heat flux values and update soil moisture content and so..." alt="" coords="156,331,212,356"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="86,377,144,357,140,361,89,381"/>
+<area shape="rect" id="Node000021" href="$group___noah___l_s_m_ga8bc3154096e6364c5fcddf884c003bef.html#ga8bc3154096e6364c5fcddf884c003bef" title="This subroutine calculates thermal diffusivity and conductivity of the soil for a given point and tim..." alt="" coords="561,311,618,336"/>
+<area shape="poly" id="edge43_Node000001_Node000021" title=" " alt="" coords="60,378,94,345,116,328,142,316,196,300,253,290,310,286,366,287,468,297,548,312,543,314,468,302,366,292,310,292,253,296,197,305,144,321,119,333,97,349,64,381"/>
+<area shape="rect" id="Node000030" href="$group___noah___l_s_m_ga25b90f8a8049eb17cc6cb6a3fecf3fdc.html#ga25b90f8a8049eb17cc6cb6a3fecf3fdc" title="This subroutine calculates potential evaporation for the current point. various partial sums/products..." alt="" coords="151,429,218,455"/>
+<area shape="poly" id="edge32_Node000001_Node000030" title=" " alt="" coords="87,404,138,423,134,426,88,409"/>
+<area shape="rect" id="Node000031" href="$group___noah___l_s_m_ga1c19b4bae5de2a391c019b6778a58dad.html#ga1c19b4bae5de2a391c019b6778a58dad" title="This subroutine internally sets default values or optionally read&#45;in via namelist i/o,..." alt="" coords="154,479,215,504"/>
+<area shape="poly" id="edge33_Node000001_Node000031" title=" " alt="" coords="66,404,144,465,149,470,144,471,141,470,66,409"/>
+<area shape="rect" id="Node000032" href="$group___noah___l_s_m_gafdc2dc9815673befca7228be47616e41.html#gafdc2dc9815673befca7228be47616e41" title="This subroutine calculates surface layer exchange coefficients via iterative process(see Chen et al...." alt="" coords="158,528,211,554"/>
+<area shape="poly" id="edge34_Node000001_Node000032" title=" " alt="" coords="59,403,94,456,118,487,145,515,147,518,142,519,141,519,114,490,90,459,59,409"/>
+<area shape="rect" id="Node000033" href="$group___noah___l_s_m_gafca324f1a0f2bcca12116291bfc8ad68.html#gafca324f1a0f2bcca12116291bfc8ad68" title="This subroutine calculates snow fraction (0&#45;&gt;1)." alt="" coords="156,577,213,603"/>
+<area shape="poly" id="edge35_Node000001_Node000033" title=" " alt="" coords="56,403,88,478,113,523,145,564,147,568,141,568,141,568,108,526,83,480,55,409"/>
+<area shape="rect" id="Node000034" href="$group___noah___l_s_m_gad65a889bf3f431ade2a312674671ab41.html#gad65a889bf3f431ade2a312674671ab41" title="This subroutine calculates soil moisture and heat flux values and update soil moisture content and so..." alt="" coords="153,380,216,406"/>
+<area shape="poly" id="edge36_Node000001_Node000034" title=" " alt="" coords="94,391,139,391,135,395,97,395"/>
+<area shape="rect" id="Node000036" href="$group___noah___l_s_m_gab816dbe84c4db91178251b08553c6d02.html#gab816dbe84c4db91178251b08553c6d02" title="This subroutine calculates snow depth and densitity to account for the new snowfall...." alt="" coords="143,627,226,652"/>
+<area shape="poly" id="edge41_Node000001_Node000036" title=" " alt="" coords="54,403,65,444,82,499,108,559,125,588,145,614,146,617,141,616,141,617,121,591,103,561,77,501,60,446,54,409"/>
+<area shape="rect" id="Node000037" href="$group___noah___l_s_m_ga95d889f436d70014fe640fa1b2420545.html#ga95d889f436d70014fe640fa1b2420545" title="This subroutine calculates total roughness length over snow." alt="" coords="151,676,218,702"/>
+<area shape="poly" id="edge42_Node000001_Node000037" title=" " alt="" coords="53,404,62,453,77,520,104,595,122,630,145,663,146,666,141,665,141,666,118,633,99,597,72,521,57,453,52,409"/>
+<area shape="rect" id="Node000003" href="$group___noah_m_p___l_s_m_ga497b40d27709666f17da3e555f8628a1.html#ga497b40d27709666f17da3e555f8628a1" title="ground surface albedo" alt="" coords="417,104,495,130"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="343,114,404,115,400,118,346,119"/>
+<area shape="rect" id="Node000004" href="$group___noah_m_p___l_s_m_ga748c587c5dc0a38a1793042e92952d43.html#ga748c587c5dc0a38a1793042e92952d43" title=" " alt="" coords="416,153,496,179"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="344,124,405,147,400,149,345,130"/>
+<area shape="rect" id="Node000005" href="$group___noah_m_p___l_s_m_ga238debe3053962b0b33a5e846e333701.html#ga238debe3053962b0b33a5e846e333701" title="bats snow surface albedo" alt="" coords="405,203,507,228"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="328,128,363,158,404,189,411,195,406,196,401,194,359,162,329,133"/>
+<area shape="rect" id="Node000006" href="$group___noah_m_p___l_s_m_ga2ea2346edd6f426f30dcc99085def5cf.html#ga2ea2346edd6f426f30dcc99085def5cf" title="class snow surface albedo" alt="" coords="402,5,510,31"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="327,102,359,72,401,40,410,37,406,41,404,44,363,76,331,105"/>
+<area shape="rect" id="Node000007" href="$group___noah_m_p___l_s_m_gaa737a61978bde4dc6363e11263999769.html#gaa737a61978bde4dc6363e11263999769" title="use two&#45;stream approximation of Dickinson (1983) adv geophysics 25: 305&#45;353 and sellers (1985) int j ..." alt="" coords="415,55,497,80"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="343,104,405,84,401,88,346,109"/>
+<area shape="poly" id="edge8_Node000008_Node000002" title=" " alt="" coords="212,94,271,107,267,110,214,99"/>
+<area shape="rect" id="Node000012" href="$group___noah___l_s_m_ga4af741ecc120ddb0d7282f78df4136a5.html#ga4af741ecc120ddb0d7282f78df4136a5" title="This subroutine calculates soil moisture flux. The soil moisture content (smc &#45; a per unit volume mea..." alt="" coords="286,467,342,492"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="212,354,228,366,245,389,253,410,260,431,276,454,278,457,272,457,272,457,256,434,248,412,240,391,224,369,213,360"/>
+<area shape="rect" id="Node000015" href="$group___noah___l_s_m_ga977daabf4ff68b28fc5ccd8796d815cd.html#ga977daabf4ff68b28fc5ccd8796d815cd" title="This subroutine updates the temperature state of the soil column based on the thermal diffusion equat..." alt="" coords="290,368,339,394"/>
+<area shape="poly" id="edge15_Node000011_Node000015" title=" " alt="" coords="212,349,277,368,272,371,213,354"/>
+<area shape="poly" id="edge31_Node000011_Node000021" title=" " alt="" coords="212,340,547,323,544,328,213,345"/>
+<area shape="rect" id="Node000026" href="$group___noah___l_s_m_gafa3e5637e56746e2539ef2567836defa.html#gafa3e5637e56746e2539ef2567836defa" title="This subroutine calculates soil moisture flux. The soil moisture content (smc &#45; a per unit vulume mea..." alt="" coords="288,417,341,443"/>
+<area shape="poly" id="edge26_Node000011_Node000026" title=" " alt="" coords="209,354,228,365,276,404,280,408,275,409,272,408,224,370,210,360"/>
+<area shape="rect" id="Node000013" href="$group___noah___l_s_m_gabf8ee2c002871d95bc356e2058f49a92.html#gabf8ee2c002871d95bc356e2058f49a92" title="This subrtouine calculates direct soil evaporation." alt="" coords="428,608,484,634"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="342,490,356,502,373,527,380,550,387,572,404,595,417,606,411,605,400,599,383,575,375,552,368,529,352,505,341,496"/>
+<area shape="rect" id="Node000014" href="$group___noah___l_s_m_ga4bf7fbbf861a5c232da14ca6b74cdd4f.html#ga4bf7fbbf861a5c232da14ca6b74cdd4f" title="This subroutine calculates transpiration for the veg class." alt="" coords="427,657,485,683"/>
+<area shape="poly" id="edge14_Node000012_Node000014" title=" " alt="" coords="343,490,356,502,369,521,376,540,380,576,384,610,391,627,404,644,416,656,411,655,400,648,387,629,379,611,375,576,370,542,364,524,352,505,342,495"/>
+<area shape="rect" id="Node000016" href="$group___noah___l_s_m_gabb602c2b09396e2f94c9556259f5bae4.html#gabb602c2b09396e2f94c9556259f5bae4" title="This subroutine calculates the right hand side of the time tendency term of the soil thermal diffusio..." alt="" coords="437,411,475,436"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="339,385,424,413,419,414,339,391"/>
+<area shape="rect" id="Node000023" href="$group___noah___l_s_m_ga32e89df3740f968f500900125ae9633d.html#ga32e89df3740f968f500900125ae9633d" title="This subroutine calculates the right hand side of the time tendency term of the soil thermal diffusio..." alt="" coords="429,361,483,387"/>
+<area shape="poly" id="edge23_Node000015_Node000023" title=" " alt="" coords="338,377,416,375,412,377,340,382"/>
+<area shape="rect" id="Node000024" href="$group___noah___l_s_m_gacb79bab20ee25c57918575949c15de73.html#gacb79bab20ee25c57918575949c15de73" title="This subroutine calculates/updates the soil temperature field." alt="" coords="429,460,483,486"/>
+<area shape="poly" id="edge24_Node000015_Node000024" title=" " alt="" coords="338,391,356,403,380,425,404,447,418,456,413,457,401,451,376,429,353,407,339,397"/>
+<area shape="rect" id="Node000017" href="$group___noah___l_s_m_ga1b241897d00ec3d66eabe9e959d0ce04.html#ga1b241897d00ec3d66eabe9e959d0ce04" title="This subroutine calculates sink/source term of the termal diffusion equation." alt="" coords="560,460,620,486"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="476,428,548,456,543,457,476,433"/>
+<area shape="rect" id="Node000020" href="$group___noah___l_s_m_ga8e248a6da8d1fd3c2e64b76f3bfbea50.html#ga8e248a6da8d1fd3c2e64b76f3bfbea50" title="This subroutine calculates temperature on the boundary of the layer by interpolation of the middle la..." alt="" coords="567,361,613,387"/>
+<area shape="poly" id="edge20_Node000016_Node000020" title=" " alt="" coords="474,414,554,387,550,389,477,419"/>
+<area shape="poly" id="edge21_Node000016_Node000021" title=" " alt="" coords="474,415,508,397,533,373,556,347,558,348,562,345,560,351,537,377,511,402,477,419"/>
+<area shape="rect" id="Node000022" href="$group___noah___l_s_m_gae50411efeb11ddeb8a0c53010745a95c.html#gae50411efeb11ddeb8a0c53010745a95c" title="This subroutine calculates soil layer average temperature (tavg) in freezing/thawing layer using up,..." alt="" coords="558,411,622,436"/>
+<area shape="poly" id="edge22_Node000016_Node000022" title=" " alt="" coords="475,421,545,423,540,424,476,426"/>
+<area shape="rect" id="Node000018" href="$group___noah___l_s_m_ga7c0e713811400259a984b2153834e70c.html#ga7c0e713811400259a984b2153834e70c" title="This subroutine calculates amount of supercooled liquid soil water content if temperature is below 27..." alt="" coords="670,460,720,486"/>
+<area shape="poly" id="edge18_Node000017_Node000018" title=" " alt="" coords="620,470,657,472,652,473,621,475"/>
+<area shape="rect" id="Node000019" href="$group___noah_m_p___l_s_m_gace27cd3a7b4e23955e39e33bd344baae.html#gace27cd3a7b4e23955e39e33bd344baae" title="check surface energy balance and water balance." alt="" coords="768,460,816,486"/>
+<area shape="poly" id="edge19_Node000018_Node000019" title=" " alt="" coords="720,470,756,472,750,473,721,475"/>
+<area shape="rect" id="Node000025" href="$group___noah___l_s_m_ga3d7dabe1147278de865aa4691d5b2de0.html#ga3d7dabe1147278de865aa4691d5b2de0" title="This subroutine inverts (solve) the tri&#45;diagonal matrix problem." alt="" coords="561,509,618,535"/>
+<area shape="poly" id="edge25_Node000024_Node000025" title=" " alt="" coords="483,480,549,506,544,507,483,485"/>
+<area shape="rect" id="Node000027" href="$group___noah___l_s_m_gaf59c85cce3b10eaa0ffeb366de9d5304.html#gaf59c85cce3b10eaa0ffeb366de9d5304" title="This subroutine calculates the right hand side of the time tendency term of the soil water diffusion ..." alt="" coords="437,559,475,584"/>
+<area shape="poly" id="edge27_Node000026_Node000027" title=" " alt="" coords="341,441,356,452,373,478,380,501,387,523,404,546,425,561,420,560,400,549,383,525,375,502,368,480,352,456,341,446"/>
+<area shape="rect" id="Node000029" href="$group___noah___l_s_m_ga22b00b15c1b261126ec2d15719cb3aa4.html#ga22b00b15c1b261126ec2d15719cb3aa4" title="This subroutine calculates/updates soil moisture content values and canopy moisture content values." alt="" coords="429,509,483,535"/>
+<area shape="poly" id="edge29_Node000026_Node000029" title=" " alt="" coords="339,441,356,452,380,475,404,496,418,506,413,506,401,500,376,479,353,456,339,446"/>
+<area shape="rect" id="Node000028" href="$group___noah___l_s_m_gabfc5ae94c847aa3351345e0e924302a1.html#gabfc5ae94c847aa3351345e0e924302a1" title="This subroutine calculates soil water diffusivity and soil hydraulic conductivity." alt="" coords="558,559,622,584"/>
+<area shape="poly" id="edge28_Node000027_Node000028" title=" " alt="" coords="475,569,545,571,540,572,476,574"/>
+<area shape="poly" id="edge30_Node000029_Node000025" title=" " alt="" coords="483,520,548,522,543,523,484,525"/>
+<area shape="poly" id="edge37_Node000034_Node000012" title=" " alt="" coords="209,404,228,415,276,453,280,458,275,458,272,458,224,419,210,409"/>
+<area shape="poly" id="edge38_Node000034_Node000015" title=" " alt="" coords="215,388,276,383,272,386,218,392"/>
+<area shape="poly" id="edge39_Node000034_Node000026" title=" " alt="" coords="216,399,275,417,270,419,217,404"/>
+<area shape="rect" id="Node000035" href="$group___noah___l_s_m_gab5149f309f4e291435f75dd63d4a97ac.html#gab5149f309f4e291435f75dd63d4a97ac" title="This subroutine calculates compaction of a snowpack under conditions of increasing snow density,..." alt="" coords="274,516,354,542"/>
+<area shape="poly" id="edge40_Node000034_Node000035" title=" " alt="" coords="213,404,228,415,245,438,253,460,260,481,276,503,278,506,272,506,272,507,256,483,248,462,240,441,224,419,213,409"/>
+</map>

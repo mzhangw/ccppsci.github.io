@@ -1,0 +1,33 @@
+<map id="module_sf_ruclsm::sfctmp" name="module_sf_ruclsm::sfctmp">
+<area shape="rect" id="Node000001" title="This subroutine solves energy and moisture budgets." alt="" coords="5,117,181,143"/>
+<area shape="rect" id="Node000002" href="$group__lsm__ruc__group_ga272369b99aa473b1f4faed9fd3fe17fe.html#ga272369b99aa473b1f4faed9fd3fe17fe" title="This subroutine is called for sea ice without accumulated snow on its surface. it solves heat diffusi..." alt="" coords="242,5,402,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,115,227,60,281,36,277,40,230,65,122,119"/>
+<area shape="rect" id="Node000004" href="$group__lsm__ruc__group_ga59cfce62a9e7a8c642e767ea7548b7c9.html#ga59cfce62a9e7a8c642e767ea7548b7c9" title="This subroutine is called for sea ice with accumulated snow on its surface. It solves energy budget o..." alt="" coords="463,44,667,70"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="180,114,464,70,462,75,181,119"/>
+<area shape="rect" id="Node000006" href="$group__lsm__ruc__group_gaecd085e0caf317dfb807e576fd426dec.html#gaecd085e0caf317dfb807e576fd426dec" title="This subroutine is called for snow covered areas of land. It solves energy and moisture budgets on th..." alt="" coords="229,192,415,218"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="127,141,230,178,254,187,248,188,228,183,127,146"/>
+<area shape="rect" id="Node000011" href="$group__lsm__ruc__group_gaec10146a1f142cfc8ec2126fa1d54702.html#gaec10146a1f142cfc8ec2126fa1d54702" title="This subroutine calculates energy and moisture budget for vegetated surfaces without snow,..." alt="" coords="244,143,400,168"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="181,137,231,144,226,146,182,142"/>
+<area shape="rect" id="Node000003" href="$group__lsm__ruc__group_ga03c426be3516bfb046dfd57c1b89dbbe.html#ga03c426be3516bfb046dfd57c1b89dbbe" title="This subroutine finds the solution of energy budget at the surface from the pre&#45;computed table of sat..." alt="" coords="715,69,878,95"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="401,11,528,12,598,18,668,29,714,43,758,62,753,62,713,48,667,34,598,23,527,17,403,16"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="667,65,703,71,697,72,668,71"/>
+<area shape="rect" id="Node000005" href="$group__lsm__ruc__group_ga0892c4c726f23c4e4c8317efd197c208.html#ga0892c4c726f23c4e4c8317efd197c208" title="This function computes water vapor mixing ratio at saturation from the precomputed table and a given ..." alt="" coords="718,204,875,230"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="644,68,669,79,704,103,735,133,781,192,776,191,731,137,700,108,666,83,644,73"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="758,203,751,195,755,186,771,179,797,177,825,180,841,190,835,189,823,185,796,183,772,185,759,189,756,195,763,205"/>
+<area shape="rect" id="Node000007" href="$group__lsm__ruc__group_ga204e4de9df89836cdda1dca1ee66d86c.html#ga204e4de9df89836cdda1dca1ee66d86c" title="This subroutine solves energy bugdget equation and heat diffusion equation to obtain snow and soil te..." alt="" coords="468,291,663,316"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="345,216,398,246,464,277,485,286,480,286,462,282,396,251,344,221"/>
+<area shape="rect" id="Node000008" href="$group__lsm__ruc__group_ga278c9faad6ab598b60a3bf8c562e5a8a.html#ga278c9faad6ab598b60a3bf8c562e5a8a" title="This subroutine solves moisture budget and computes soil moisture and surface and sub&#45;surface runoffs..." alt="" coords="472,143,659,168"/>
+<area shape="poly" id="edge11_Node000006_Node000008" title=" " alt="" coords="388,189,486,171,481,173,390,194"/>
+<area shape="rect" id="Node000009" href="$group__lsm__ruc__group_ga53ef8a1d870ab8dab2cc31f456c6b3a5.html#ga53ef8a1d870ab8dab2cc31f456c6b3a5" title="This subroutine computes thermal diffusivity, and diffusional and hydraulic condeuctivities in soil." alt="" coords="475,192,655,218"/>
+<area shape="poly" id="edge12_Node000006_Node000009" title=" " alt="" coords="415,202,462,204,457,205,416,207"/>
+<area shape="rect" id="Node000010" href="$group__lsm__ruc__group_ga360e53dc48f6b38b3536375605199e96.html#ga360e53dc48f6b38b3536375605199e96" title="This subroutine solves the transpiration function (EQs. 18,19 in Smirnova et al.(1997) smirnova_1997)..." alt="" coords="481,241,649,267"/>
+<area shape="poly" id="edge13_Node000006_Node000010" title=" " alt="" coords="389,216,486,237,481,238,389,221"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="650,288,666,278,686,252,693,227,699,198,713,166,740,132,767,107,771,104,744,136,718,169,704,200,698,228,691,255,669,281,652,293"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="632,287,666,277,714,257,756,238,761,237,717,262,668,282,633,293"/>
+<area shape="poly" id="edge15_Node000011_Node000008" title=" " alt="" coords="400,153,459,155,453,156,400,158"/>
+<area shape="poly" id="edge16_Node000011_Node000009" title=" " alt="" coords="389,166,486,188,481,189,389,172"/>
+<area shape="poly" id="edge19_Node000011_Node000010" title=" " alt="" coords="392,166,416,177,432,190,441,203,450,216,464,228,475,235,470,235,462,232,446,220,437,206,428,194,414,182,392,172"/>
+<area shape="rect" id="Node000012" href="$group__lsm__ruc__group_gafc7d78906732947d1ac00ca46d7e8147.html#gafc7d78906732947d1ac00ca46d7e8147" title="This subroutine solves energy budget equation and heat diffusion equation." alt="" coords="473,93,657,119"/>
+<area shape="poly" id="edge17_Node000011_Node000012" title=" " alt="" coords="388,139,486,122,481,124,390,145"/>
+<area shape="poly" id="edge18_Node000012_Node000003" title=" " alt="" coords="657,94,702,92,697,93,658,99"/>
+</map>

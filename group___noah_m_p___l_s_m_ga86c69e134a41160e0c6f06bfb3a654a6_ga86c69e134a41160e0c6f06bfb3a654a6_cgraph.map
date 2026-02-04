@@ -1,0 +1,79 @@
+<map id="noahmp_glacier_routines::noahmp_glacier" name="noahmp_glacier_routines::noahmp_glacier">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,434,171,474"/>
+<area shape="rect" id="Node000002" href="$group___noah_m_p___l_s_m_ga9d5adb20aca5b72a7e126136088e20d1.html#ga9d5adb20aca5b72a7e126136088e20d1" title="surface albedos. also fluxes (per unit incoming direct and diffuse radiation) reflected,..." alt="" coords="272,129,331,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,432,283,165,282,171,106,434"/>
+<area shape="rect" id="Node000008" href="$group___noah_m_p___l_s_m_ga17573a155ef5f06ca4f81e8a35b8f22e.html#ga17573a155ef5f06ca4f81e8a35b8f22e" title="re&#45;process atmospheric forcing" alt="" coords="219,368,384,409"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="155,431,220,412,216,416,158,435"/>
+<area shape="rect" id="Node000009" href="$group___noah_m_p___l_s_m_ga93dd9aedd32004c8cf2c88c222073c6a.html#ga93dd9aedd32004c8cf2c88c222073c6a" title="Compute energy budget (momentum &amp; energy fluxes and phase changes)." alt="" coords="219,434,384,474"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="169,452,205,453,201,456,172,456"/>
+<area shape="rect" id="Node000030" href="$group___noah_m_p___l_s_m_ga66e01db7fffd36858b38bc8a61de48db.html#ga66e01db7fffd36858b38bc8a61de48db" title=" " alt="" coords="219,499,384,540"/>
+<area shape="poly" id="edge29_Node000001_Node000030" title=" " alt="" coords="156,473,220,493,216,495,158,478"/>
+<area shape="rect" id="Node000031" href="$group___noah_m_p___l_s_m_ga7f8fc6fe269c4c0666edaf50859bfbce.html#ga7f8fc6fe269c4c0666edaf50859bfbce" title=" " alt="" coords="219,658,384,698"/>
+<area shape="poly" id="edge30_Node000001_Node000031" title=" " alt="" coords="109,472,273,646,268,648,108,477"/>
+<area shape="rect" id="Node000003" href="$group___noah_m_p___l_s_m_ga497b40d27709666f17da3e555f8628a1.html#ga497b40d27709666f17da3e555f8628a1" title="ground surface albedo" alt="" coords="476,55,553,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="329,128,431,89,463,81,459,84,433,94,333,132"/>
+<area shape="rect" id="Node000004" href="$group___noah_m_p___l_s_m_ga748c587c5dc0a38a1793042e92952d43.html#ga748c587c5dc0a38a1793042e92952d43" title=" " alt="" coords="474,104,555,130"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="330,136,461,122,457,125,333,141"/>
+<area shape="rect" id="Node000005" href="$group___noah_m_p___l_s_m_ga238debe3053962b0b33a5e846e333701.html#ga238debe3053962b0b33a5e846e333701" title="bats snow surface albedo" alt="" coords="464,153,565,179"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="330,143,451,157,446,160,333,148"/>
+<area shape="rect" id="Node000006" href="$group___noah_m_p___l_s_m_ga2ea2346edd6f426f30dcc99085def5cf.html#ga2ea2346edd6f426f30dcc99085def5cf" title="class snow surface albedo" alt="" coords="461,203,568,228"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="330,151,433,189,454,197,449,199,431,194,332,156"/>
+<area shape="rect" id="Node000007" href="$group___noah_m_p___l_s_m_gaa737a61978bde4dc6363e11263999769.html#gaa737a61978bde4dc6363e11263999769" title="use two&#45;stream approximation of Dickinson (1983) adv geophysics 25: 305&#45;353 and sellers (1985) int j ..." alt="" coords="474,5,556,31"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="314,127,363,84,396,61,431,40,461,29,457,33,433,45,399,65,367,89,318,130"/>
+<area shape="rect" id="Node000010" href="$group___noah_m_p___l_s_m_gaf512c10513f75c077220936b2ca74c42.html#gaf512c10513f75c077220936b2ca74c42" title="use newton&#45;raphson iteration to solve ground (tg) temperature that balances the surface energy budget..." alt="" coords="432,356,597,397"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="358,431,444,401,440,405,361,435"/>
+<area shape="rect" id="Node000019" href="$group___noah_m_p___l_s_m_ga827b1816e6e9afd09680b5d7fa3b010e.html#ga827b1816e6e9afd09680b5d7fa3b010e" title=" " alt="" coords="432,434,597,474"/>
+<area shape="poly" id="edge18_Node000009_Node000019" title=" " alt="" coords="383,452,419,453,414,455,385,457"/>
+<area shape="rect" id="Node000020" href="$group___noah_m_p___l_s_m_ga7ad0f73530d119a7f827a4aaa8a9b393.html#ga7ad0f73530d119a7f827a4aaa8a9b393" title="Compute solar radiation: absorbed &amp; reflected by the ground." alt="" coords="432,523,597,564"/>
+<area shape="poly" id="edge19_Node000009_Node000020" title=" " alt="" coords="353,472,385,485,454,516,449,517,383,490,355,478"/>
+<area shape="rect" id="Node000024" href="$group___noah_m_p___l_s_m_ga2282179d290ca1b1610198040782accb.html#ga2282179d290ca1b1610198040782accb" title="calculate thermal properties of soil, snow, lake, and frozen soil." alt="" coords="432,624,597,665"/>
+<area shape="poly" id="edge23_Node000009_Node000024" title=" " alt="" coords="366,472,386,486,404,508,412,529,420,550,434,574,475,615,469,615,430,577,415,552,407,531,399,510,382,489,366,478"/>
+<area shape="rect" id="Node000026" href="$group___noah_m_p___l_s_m_ga476f265b4772bd2ad7825e02a29e32cd.html#ga476f265b4772bd2ad7825e02a29e32cd" title=" " alt="" coords="432,252,597,293"/>
+<area shape="poly" id="edge25_Node000009_Node000026" title=" " alt="" coords="364,431,382,419,399,401,407,383,416,365,430,343,476,301,473,305,434,347,420,367,412,386,403,404,386,423,367,435"/>
+<area shape="rect" id="Node000011" href="$group___noah_m_p___l_s_m_ga198a78cba7dcb5d138ee9f2896b932ff.html#ga198a78cba7dcb5d138ee9f2896b932ff" title=" " alt="" coords="645,284,811,325"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="576,354,653,329,649,332,578,358"/>
+<area shape="rect" id="Node000012" href="$group___noah_m_p___l_s_m_ga3233db40fc83f01063964817c22944ac.html#ga3233db40fc83f01063964817c22944ac" title="compute surface drag coefficient cm for momentum and ch for heat" alt="" coords="645,350,811,390"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="596,372,632,372,627,374,598,377"/>
+<area shape="rect" id="Node000013" href="$group___noah_m_p___l_s_m_ga4a88258da12057ced7c9dc5760b53d13.html#ga4a88258da12057ced7c9dc5760b53d13" title=" " alt="" coords="698,415,758,440"/>
+<area shape="poly" id="edge12_Node000010_Node000013" title=" " alt="" coords="597,394,685,416,680,418,598,399"/>
+<area shape="rect" id="Node000014" href="$group__mynn__sfc_gab8e348eef161b16bada8841a900501c2.html#gab8e348eef161b16bada8841a900501c2" title="this is taken from andreas (2002; j. of hydromet) and andreas et al. (2005; blm)." alt="" coords="890,415,992,440"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="758,425,877,427,872,428,759,430"/>
+<area shape="rect" id="Node000015" href="$group___noah_m_p___l_s_m_ga88dbf6bdf1a8097e27b06ddfce89516c.html#ga88dbf6bdf1a8097e27b06ddfce89516c" title="data. the formula for land uses a constant ratio (z_0/7.4) taken from garratt (1992)." alt="" coords="895,464,988,490"/>
+<area shape="poly" id="edge14_Node000013_Node000015" title=" " alt="" coords="758,432,882,462,877,463,759,437"/>
+<area shape="rect" id="Node000016" href="$group__mynn__sfc_ga7bbe8445bfcae5adad4fed82a0ecbaee.html#ga7bbe8445bfcae5adad4fed82a0ecbaee" title="this subroutine returns a more robust z/l that best matches the z/l from hogstrom (1996) for unstable..." alt="" coords="896,513,986,539"/>
+<area shape="poly" id="edge15_Node000013_Node000016" title=" " alt="" coords="758,430,786,438,812,451,827,463,837,476,846,488,860,500,884,513,879,513,857,504,842,492,832,479,824,467,809,455,784,443,759,436"/>
+<area shape="rect" id="Node000017" href="$group__mynn__sfc_ga25595438cdc181cd5e5e05aa45486a69.html#ga25595438cdc181cd5e5e05aa45486a69" title="this is a modified version of yang et al (2002 qjrms, 2008 jamc) and chen et al (2010,..." alt="" coords="899,316,984,342"/>
+<area shape="poly" id="edge16_Node000013_Node000017" title=" " alt="" coords="758,420,784,412,809,400,824,388,832,376,842,363,857,351,887,340,882,342,860,355,846,367,837,379,827,392,812,404,786,417,760,424"/>
+<area shape="rect" id="Node000018" href="$group___noah_m_p___l_s_m_gaa1453a4f904aa171ea91510f464824b3.html#gaa1453a4f904aa171ea91510f464824b3" title=" " alt="" coords="879,365,1004,391"/>
+<area shape="poly" id="edge17_Node000013_Node000018" title=" " alt="" coords="758,418,870,394,865,396,760,423"/>
+<area shape="rect" id="Node000021" href="$group___noah_m_p___l_s_m_gac231e8b379ab2704f527cafe9a6a92f4.html#gac231e8b379ab2704f527cafe9a6a92f4" title=" " alt="" coords="645,464,811,505"/>
+<area shape="poly" id="edge20_Node000020_Node000021" title=" " alt="" coords="590,520,639,509,634,511,592,525"/>
+<area shape="rect" id="Node000022" href="$group___noah_m_p___l_s_m_ga613d1d7c1ed2ae1eef0bef9a893801be.html#ga613d1d7c1ed2ae1eef0bef9a893801be" title=" " alt="" coords="645,530,811,570"/>
+<area shape="poly" id="edge21_Node000020_Node000022" title=" " alt="" coords="597,544,632,546,627,548,598,549"/>
+<area shape="rect" id="Node000023" href="$group___noah_m_p___l_s_m_gabfb2c60fe82d420428209f17e65ddf02.html#gabfb2c60fe82d420428209f17e65ddf02" title=" " alt="" coords="645,595,811,636"/>
+<area shape="poly" id="edge22_Node000020_Node000023" title=" " alt="" coords="577,562,654,589,648,590,577,567"/>
+<area shape="rect" id="Node000025" href="$group___noah_m_p___l_s_m_ga87a53ef88356626801e6ff98ce939011.html#ga87a53ef88356626801e6ff98ce939011" title="snow bulk density, volumetric capacity, and thermal conductivity" alt="" coords="645,660,811,701"/>
+<area shape="poly" id="edge24_Node000024_Node000025" title=" " alt="" coords="597,656,632,664,627,665,598,661"/>
+<area shape="rect" id="Node000027" href="$group___noah_m_p___l_s_m_ga3d809b60b84d8ec6f0641d32edac467f.html#ga3d809b60b84d8ec6f0641d32edac467f" title=" " alt="" coords="645,154,811,194"/>
+<area shape="poly" id="edge26_Node000026_Node000027" title=" " alt="" coords="572,250,596,239,620,222,644,205,660,200,656,203,647,210,623,226,599,243,576,254"/>
+<area shape="rect" id="Node000028" href="$group___noah_m_p___l_s_m_gad0ad01a8e6079c118f406348fc829ba8.html#gad0ad01a8e6079c118f406348fc829ba8" title=" " alt="" coords="645,219,811,260"/>
+<area shape="poly" id="edge27_Node000026_Node000028" title=" " alt="" coords="596,258,632,254,627,256,599,262"/>
+<area shape="rect" id="Node000029" href="$group___noah_m_p___l_s_m_ga368ca6e0c1bef7000a6325c1c382421b.html#ga368ca6e0c1bef7000a6325c1c382421b" title=" " alt="" coords="859,219,1024,260"/>
+<area shape="poly" id="edge28_Node000028_Node000029" title=" " alt="" coords="810,237,845,239,841,240,812,242"/>
+<area shape="rect" id="Node000032" href="$group___noah_m_p___l_s_m_ga7e56aa2916d87208019c88446904b04b.html#ga7e56aa2916d87208019c88446904b04b" title=" " alt="" coords="432,811,597,852"/>
+<area shape="poly" id="edge31_Node000031_Node000032" title=" " alt="" coords="332,697,475,801,470,802,331,702"/>
+<area shape="rect" id="Node000033" href="$group___noah_m_p___l_s_m_ga70ce0369bd8ba21d6ab56fa001a20be8.html#ga70ce0369bd8ba21d6ab56fa001a20be8" title=" " alt="" coords="859,906,1024,946"/>
+<area shape="poly" id="edge32_Node000032_Node000033" title=" " alt="" coords="530,850,551,877,577,906,609,935,646,956,674,965,703,970,763,971,820,962,869,952,874,951,821,967,763,976,703,975,673,970,644,961,606,939,573,910,547,880,528,855"/>
+<area shape="rect" id="Node000035" href="$group___noah_m_p___l_s_m_ga5c2db6763c56bf372eef6bdc07ede3cc.html#ga5c2db6763c56bf372eef6bdc07ede3cc" title=" " alt="" coords="645,726,811,766"/>
+<area shape="poly" id="edge34_Node000032_Node000035" title=" " alt="" coords="567,808,659,774,664,772,568,813"/>
+<area shape="rect" id="Node000036" href="$group___noah_m_p___l_s_m_ga7d14a54053fc9c70ea7705754d594a92.html#ga7d14a54053fc9c70ea7705754d594a92" title=" " alt="" coords="859,811,1024,852"/>
+<area shape="poly" id="edge35_Node000032_Node000036" title=" " alt="" coords="597,827,645,826,811,826,846,829,840,830,811,831,645,831,598,832"/>
+<area shape="rect" id="Node000037" href="$group___noah_m_p___l_s_m_ga8017d043aecaf401ec7e591c3c558161.html#ga8017d043aecaf401ec7e591c3c558161" title=" " alt="" coords="645,840,811,881"/>
+<area shape="poly" id="edge37_Node000032_Node000037" title=" " alt="" coords="597,840,632,847,627,847,598,846"/>
+<area shape="rect" id="Node000038" href="$group___noah_m_p___l_s_m_ga3b426a088b2f2e94145bc4cea265cc61.html#ga3b426a088b2f2e94145bc4cea265cc61" title=" " alt="" coords="645,906,811,946"/>
+<area shape="poly" id="edge38_Node000032_Node000038" title=" " alt="" coords="559,850,646,890,663,900,658,899,644,895,558,855"/>
+<area shape="rect" id="Node000034" href="$group___noah_m_p___l_s_m_ga2725fe77ae7f78845a85c7c379e3ed2e.html#ga2725fe77ae7f78845a85c7c379e3ed2e" title=" " alt="" coords="1072,844,1237,885"/>
+<area shape="poly" id="edge33_Node000033_Node000034" title=" " alt="" coords="1014,903,1064,890,1070,890,1015,908"/>
+<area shape="poly" id="edge36_Node000036_Node000034" title=" " alt="" coords="1024,842,1059,850,1054,849,1024,847"/>
+<area shape="poly" id="edge39_Node000038_Node000033" title=" " alt="" coords="811,924,846,926,840,926,811,929"/>
+</map>

@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: GFS gwdps Module</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('group__gfs__gwdps.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">GFS gwdps Module </div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>This subroutine includes orographic gravity wave drag and mountain blocking.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions/Subroutines</h2></td></tr>
+<tr class="memitem:gaa2f6ec199fd6694718300d1a4ee081e5" id="r_gaa2f6ec199fd6694718300d1a4ee081e5"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__gfs__gwdps_gaa2f6ec199fd6694718300d1a4ee081e5.html#gaa2f6ec199fd6694718300d1a4ee081e5">gwdps::gwdps_run</a> (im, km, a, b, c, u1, v1, t1, q1, kpbl, prsi, del, prsl, prslk, phii, phil, deltim, kdt, hprime, oc, oa4, clx4, theta, sigma, gamma, elvmax, dusfc, dvsfc, dtaux2d_ms, dtauy2d_ms, dtaux2d_bl, dtauy2d_bl, dusfc_ms, dvsfc_ms, dusfc_bl, dvsfc_bl, g, cp, rd, rv, imx, nmtvr, cdmbgwd, me, lprnt, ipr, rdxzb, ldiag_ugwp, errmsg, errflg)</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The time tendencies of zonal and meridional wind are altered to include the effect of mountain induced gravity wave drag from subgrid scale orography including convective breaking, shear breaking and the presence of critical levels.</p>
+<h1 class="doxsection"><a class="anchor" id="arg_table_gwdps_run"></a>
+Argument Table</h1>
+<h1 class="doxsection"><a class="anchor" id="gen_gwdps"></a>
+GFS Orographic GWD Scheme General Algorithm</h1>
+<ol type="1">
+<li>Calculate subgrid mountain blocking</li>
+<li>Calculate orographic wave drag</li>
+</ol>
+<p>The NWP model gravity wave drag (GWD) scheme in the GFS has two main components: how the surface stress is computed, and then how that stress is distributed over a vertical column where it may interact with the models momentum. Each of these depends on the large scale environmental atmospheric state and assumptions about the sub-grid scale processes. In Alpert GWD (1987) based on linear, two-dimensional non-rotating, stably stratified flow over a mountain ridge, sub-grid scale gravity wave motions are assumed which propagate away from the mountain. Described in Alpert (1987), the flux measured over a "low level" vertically averaged layer, in the atmosphere defines a base level flux. "Low level" was taken to be the first 1/3 of the troposphere in the 1987 implementation. This choice was meant to encompass a thick low layer for vertical averages of the environmental (large scale) flow quantities. The vertical momentum flux or gravity wave stress in a grid box due to a single mountain is given as in Pierrehumbert(1986) <a class="el" href="citelist.html#CITEREF_pierrehumbert_1986">[165]</a> :    </p><p class="formulaDsp">
+\[     \tau =  \frac {\rho \: U^{3}\: G(F_{r})} {\Delta X \ 
+ N } 
+\]
+</p>
+<p> where \( \Delta X \) is a grid increment, N is the Brunt Viasala frequency    </p><p class="formulaDsp">
+\[      N(\sigma) = \frac{-g \: \sigma \:
+      \frac{\partial\Theta}{\partial\sigma}}{\Theta \:R \:T} 
+\]
+</p>
+<p> The environmental variables are calculated from a mass weighted vertical average over a base layer. \(G(F_{r})\) is a monotonically increasing function of Froude number :   </p><p class="formulaDsp">
+\[      F_{r} = \frac{N h^{&#39;}}{U} 
+\]
+</p>
+<p> where \(U\) is the wind speed calculated as a mass weighted vertical average in the base layer, and \(h^{&#39;}\), is the vertical displacement caused by the orography variance. An effective mountain length for the gravity wave processes:   </p><p class="formulaDsp">
+\[      l^{*} =  \frac{\Delta X}{m} 
+\]
+</p>
+<p> where \(m\) is the number of mountains in a grid box, can then be defined to obtain the form of the base level stress    </p><p class="formulaDsp">
+\[      \tau =  \frac {\rho \: U^{3} \: G(F_{r})} {N \ 
+l^{*}} 
+\]
+</p>
+<p> giving the stress induced from the surface in a model grid box. Pierrehumbert(1986) <a class="el" href="citelist.html#CITEREF_pierrehumbert_1986">[165]</a> gives the form for the function \(G(F_{r})\) as   </p><p class="formulaDsp">
+\[      G(F_{r}) = \bar{G}\frac{F^{2}_{r}}{F^{2}_{r}\: + \:a^{2}} 
+\]
+</p>
+<p> Where \( \bar{G}  \) is an order unity non-dimensional saturation flux set to 1 and \(a\) is a function of the mountain aspect ratio also set to 1 in the 1987 implementation of the GFS GWD. Typical values of U=10m/s, N=0.01 1/s, l*=100km, and a=1, gives a flux of 1 Pascal and if this flux is made to go to zero linearly with height then the decelerations would be about 10/m/s/day which is consistent with observations in PH.</p>
+<p>In Kim, Moorthi, Alpert's (1998, 2001) GWD currently in GFS operations, the GWD scheme has the same physical basis as in Alpert (1987) with the addition of enhancement factors for the amplitude, G, and mountain shape details in G(Fr) to account for effects from the mountain blocking. A factor, E m', is an enhancement factor on the stress in the Alpert '87 scheme. The E ranges from no enhancement to an upper limit of 3, E=E(OA)[1-3], and is a function of OA, the Orographic Asymmetry defined in Kim and Arakawa (1995) <a class="el" href="citelist.html#CITEREF_kim_and_arakawa_1995">[108]</a> as Orographic Asymmetry (OA):       </p><p class="formulaDsp">
+\[      OA=\frac{ \bar{x} \ 
+ - \ 
+
+      \sum\limits_{j=1}^{N_{b}} x_{j} \ 
+ n_{j} }{\sigma_{x}} 
+\]
+</p>
+<p> where \(N_{b}\) is the total number of bottom blocks in the mountain barrier, \( \sigma_{x} \) is the standard deviation of the horizontal distance defined by       </p><p class="formulaDsp">
+\[      \sigma_{x} = \sqrt{ \frac{\sum\limits_{j=1}^{N_{b}}
+     \ 
+ (x_{j} \ 
+ - \ 
+ \bar{x} )^2}{N_{x}} } 
+\]
+</p>
+<p> where \(N_{x}\) is the number of grid intervals for the large scale domain being considered. So the term, E(OA)m'/ \( \Delta X \) in Kim's scheme represents a multiplier on G shown in Alpert's eq (1), where m' is the number of mountains in a sub-grid scale box. Kim increased the complexity of m' making it a function of the fractional area of the sub-grid mountain and the asymmetry and convexity statistics which are found from running a gravity wave model for a large number of cases:      </p><p class="formulaDsp">
+\[      m^{&#39;} = C_{m} \Delta X \left[  \frac{1 \ 
+ + \ 
+
+      \sum\limits_{x} L_{h} }{\Delta X}  \right]^{OA+1} 
+\]
+</p>
+<p> Where, according to Kim, \( \sum \frac{L_{h}}{\Delta X} \) is the fractional area covered by the subgrid-scale orography higher than a critical height \( h_{c} = Fr_{c} U_{0}/N_{0} \) , over the "low level" vertically averaged layer, for a grid box with the interval \( \Delta X \). Each \( L_{n}\) is the width of a segment of orography intersection at the critical height:    </p><p class="formulaDsp">
+\[     Fr_{0} = \frac{N_{0} \ 
+ h^{&#39;}}{U_{0}} 
+\]
+</p>
+     <p class="formulaDsp">
+\[     G^{&#39;}(OC,Fr_{0}) = \frac{Fr_{0}^{2}}{Fr_{0}^{2} \ 
+ + \ 
+ a^{2}} 
+\]
+</p>
+   <p class="formulaDsp">
+\[     a^{2} = \frac{C_{G}}{OC} 
+\]
+</p>
+     <p class="formulaDsp">
+\[      E(OA, Fr_{0}) = (OA \ 
+ + \ 
+ 2)^{\delta} 
+\]
+</p>
+<p> and      </p><p class="formulaDsp">
+\[     \delta \ 
+ = \ 
+ \frac{C_{E} \ 
+ Fr_{0}}{Fr_{c}}  
+\]
+</p>
+<p><br  />
+ where \( Fr_{c} \) is as in Alpert.</p>
+<p>This represents a closed scheme, somewhat empirical adjustments to the original scheme to calculate the surface stress.</p>
+<p>Momentum is deposited by the sub-grid scale gravity waves break due to the presence of convective mixing assumed to occur when the minimum Richardson number:</p>
+<p>Orographic Convexity (OC) =        </p><p class="formulaDsp">
+\[     OC=\frac{ \sum\limits_{j=1}^{N_{x}}
+      \ 
+ (h_{j} \ 
+ - \ 
+ \bar{h})^4 }{N_{x} \ 
+\sigma_{h}^4} 
+\]
+</p>
+<p><br  />
+ and where       </p><p class="formulaDsp">
+\[      \sigma_{h} = \sqrt{ \frac{\sum\limits_{j=1}^{N_{x}}
+      \ 
+ (h_{j} \ 
+ - \ 
+ \bar{h} )^2}{N_{x}} } 
+\]
+</p>
+<p> This represents a closed scheme, somewhat empirical adjustments to the original scheme to calculate the surface stress.</p>
+<p>Momentum is deposited by the sub-grid scale gravity waves break due to the presence of convective mixing assumed to occur when the minimum Richardson number:       </p><p class="formulaDsp">
+\[      Ri_{m} = \frac{Ri(1 \ 
+ - \ 
+ Fr)}{(1 \ 
+ + \ 
+ \sqrt{Ri}Fr)^2} 
+\]
+</p>
+<p> Is less than 1/4 Or if critical layers are encountered in a layer the the momentum flux will vanish. The critical layer is defined when the base layer wind becomes perpendicular to the environmental wind. Otherwise, wave breaking occurs at a level where the amplification of the wave causes the local Froude number or similarly a truncated (first term of the) Scorer parameter, to be reduced below a critical value by the saturation hypothesis (Lindzen). This is done through eq 1 which can be written as   </p><p class="formulaDsp">
+\[     \tau = \rho U N k h^{&#39;2} 
+\]
+</p>
+<p> For small Froude number this is discretized in the vertical so at each level the stress is reduced by ratio of the Froude or truncated Scorer parameter, \( \frac{U^{2}}{N^{2}} = \frac{N \tau_{l-1}}{\rho U^{3} k} \) , where the stress is from the layer below beginning with that found near the surface. The respective change in momentum is applied in that layer building up from below.</p>
+<p>An amplitude factor is part of the calibration of this scheme which is a function of the model resolution and the vertical diffusion. This is because the vertical diffusion and the GWD account encompass similar physical processes. Thus, one needs to run the model over and over for various amplitude factors for GWD and vertical diffusion.</p>
+<p>In addition, there is also mountain blocking from lift and frictional forces. Improved integration between how the GWD is calculated and the mountain blocking of wind flow around sub-grid scale orography is underway at NCEP. The GFS already has convectively forced GWD an independent process.</p>
+<h1 class="doxsection"><a class="anchor" id="det_gwdps"></a>
+GFS Orographic GWD Scheme Detailed Algorithm</h1>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

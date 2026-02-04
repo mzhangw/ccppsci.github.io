@@ -1,0 +1,916 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: satmedmfvdifq::satmedmfvdifq_run</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('group__module__satmedmfvdifq_gad2fc02f170f716e67a18faaa8587d441.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="contents">
+<a id="gad2fc02f170f716e67a18faaa8587d441" name="gad2fc02f170f716e67a18faaa8587d441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2fc02f170f716e67a18faaa8587d441">&#9670;&#160;</a></span>satmedmfvdifq_run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">subroutine satmedmfvdifq::satmedmfvdifq_run </td>
+          <td>(</td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>im</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>km</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>ntrac</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>ntcw</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>ntrw</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>ntiw</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>ntke</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>grav</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>pi</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>rd</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>cp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>rv</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>hvap</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>hfus</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>fv</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>eps</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>epsm1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>def_1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>def_2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>def_3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">logical, intent(in)</td>          <td class="paramname"><span class="paramname"><em>sa3dtke</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>dku3d_h</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>dku3d_e</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>dv</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>du</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>tdt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:,:), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>rtg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>u1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>v1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>t1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>q1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>usfco</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>vsfco</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">logical, intent(in)</td>          <td class="paramname"><span class="paramname"><em>use_oceanuv</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>swh</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>hlw</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>xmu</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>garea</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>zvfun</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>sigmaf</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>psk</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>rbsoil</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>zorl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>u10m</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>v10m</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>fm</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>fh</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>tsea</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>heat</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>evap</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>stress</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>spd1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, dimension(:), intent(out)</td>          <td class="paramname"><span class="paramname"><em>kpbl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>prsi</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>del</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>prsl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>prslk</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>phii</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>phil</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>delt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">logical, intent(in)</td>          <td class="paramname"><span class="paramname"><em>tte_edmf</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">logical, intent(in)</td>          <td class="paramname"><span class="paramname"><em>dspheat</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(out)</td>          <td class="paramname"><span class="paramname"><em>dusfc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(out)</td>          <td class="paramname"><span class="paramname"><em>dvsfc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(out)</td>          <td class="paramname"><span class="paramname"><em>dtsfc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(out)</td>          <td class="paramname"><span class="paramname"><em>dqsfc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(out)</td>          <td class="paramname"><span class="paramname"><em>hpbl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:), intent(out)</td>          <td class="paramname"><span class="paramname"><em>dkt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:), intent(out)</td>          <td class="paramname"><span class="paramname"><em>dku</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>tkeh</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>kinver</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>xkzm_m</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>xkzm_h</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>xkzm_s</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>dspfac</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>bl_upfr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>bl_dnfr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>rlmx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>elmx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>sfc_rlm</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>tc_pbl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>use_lpt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">logical, intent(in)</td>          <td class="paramname"><span class="paramname"><em>do_canopy</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">logical, intent(in)</td>          <td class="paramname"><span class="paramname"><em>cplaqm</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in), optional</td>          <td class="paramname"><span class="paramname"><em>claie</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in), optional</td>          <td class="paramname"><span class="paramname"><em>cfch</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in), optional</td>          <td class="paramname"><span class="paramname"><em>cfrt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in), optional</td>          <td class="paramname"><span class="paramname"><em>cclu</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:), intent(in), optional</td>          <td class="paramname"><span class="paramname"><em>cpopu</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>ntqv</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(kind=<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(:,:,:), intent(inout), optional</td>          <td class="paramname"><span class="paramname"><em>dtend</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>dtidx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>index_of_temperature</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>index_of_x_wind</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>index_of_y_wind</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>index_of_process_pbl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">logical, intent(in)</td>          <td class="paramname"><span class="paramname"><em>gen_tend</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">logical, intent(in)</td>          <td class="paramname"><span class="paramname"><em>ldiag3d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">character(len=*), intent(out)</td>          <td class="paramname"><span class="paramname"><em>errmsg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(out)</td>          <td class="paramname"><span class="paramname"><em>errflg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h1 class="doxsection"><a class="anchor" id="arg_table_satmedmfvdifq_run"></a>
+Argument Table</h1>
+<h1 class="doxsection"><a class="anchor" id="gen_satmedmfvdifq"></a>
+GFS satmedmfvdifq General Algorithm</h1>
+<p><a class="el" href="#gad2fc02f170f716e67a18faaa8587d441">satmedmfvdifq_run()</a> computes subgrid vertical turbulence mixing using the scale-aware TKE-based moist eddy-diffusion mass-flux (EDMF) parameterization of Han and Bretherton (2019) <a class="el" href="citelist.html#CITEREF_han_2019">[76]</a> .</p><ol type="1">
+<li>The local turbulent mixing is represented by an eddy-diffusivity scheme which is a function of a prognostic TKE.</li>
+<li>For the convective boundary layer, nonlocal transport by large eddies (<a class="el" href="mfpbltq_8f_source.html">mfpbltq.f</a>), is represented using a mass flux approach (Siebesma et al.(2007) <a class="el" href="citelist.html#CITEREF_siebesma_2007">[181]</a> ).</li>
+<li>A mass-flux approach is also used to represent the stratocumulus-top-induced turbulence (<a class="el" href="mfscuq_8f_source.html">mfscuq.f</a>). </li>
+</ol>
+<h1 class="doxsection"><a class="anchor" id="detail_satmedmfvidfq"></a>
+GFS satmedmfvdifq Detailed Algorithm</h1>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
+Compute preliminary variables from input arguments</h2>
+<ul>
+<li>Compute physical height of the layer centers and interfaces from the geopotential height (<code class="param">zi</code> and <code class="param">zl</code>)</li>
+</ul>
+<ul>
+<li>Compute horizontal grid size (<code class="param">gdx</code>)</li>
+</ul>
+<ul>
+<li>Initialize tke value at vertical layer centers and interfaces from tracer (<code class="param">tke</code> and <code class="param">tkeh</code>)</li>
+</ul>
+<ul>
+<li>Compute reciprocal of \( \Delta z \) (rdzt)</li>
+</ul>
+<ul>
+<li>Compute reciprocal of pressure (tx1, tx2)</li>
+</ul>
+<ul>
+<li>Compute minimum turbulent mixing length (rlmnz)</li>
+</ul>
+<ul>
+<li>Compute background vertical diffusivities for scalars and momentum (xkzo and xkzmo)</li>
+</ul>
+<ul>
+<li>set background diffusivities with xkzm_h &amp; xkzm_m for gdx &gt;= xkgdx and as a function of horizontal grid size for gdx &lt; xkgdx <br  />
+ xkzm_hx = xkzm_h * (gdx / xkgdx) <br  />
+ xkzm_mx = xkzm_m * (gdx / xkgdx)</li>
+</ul>
+<ul>
+<li>Some output variables and logical flags are initialized</li>
+</ul>
+<ul>
+<li>Compute a function for green vegetation fraction and surface roughness. Entrainment rate in updraft is a function of vegetation fraction and surface roughness length</li>
+</ul>
+<ul>
+<li>Compute \(\theta\)(theta), and \(q_l\)(qlx), \(\theta_e\)(thetae), \(\theta_v\)(thvx), \(\theta_{l,v}\) (thlvx) including ice water</li>
+</ul>
+<ul>
+<li>Compute an empirical cloud fraction based on Xu and Randall (1996) <a class="el" href="citelist.html#CITEREF_xu_and_randall_1996">[202]</a></li>
+</ul>
+<ul>
+<li>Compute buoyancy modified by clouds</li>
+</ul>
+<ul>
+<li>Initialize diffusion coefficients to 0 and calculate the total radiative heating rate (dku, dkt, radx)</li>
+</ul>
+<ul>
+<li>Compute stable/unstable PBL flag (pblflg) based on the total surface energy flux (<em>false</em> if the total surface energy flux is into the surface)</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
+Calculate the PBL height</h2>
+<p>The calculation of the boundary layer height follows Troen and Mahrt (1986) <a class="el" href="citelist.html#CITEREF_troen_and_mahrt_1986">[195]</a> section 3. The approach is to find the level in the column where a modified bulk Richardson number exceeds a critical value.</p><ul>
+<li>Compute critical bulk Richardson number ( \(Rb_{cr}\)) (crb)</li>
+<li>For the unstable PBL, crb is a constant (0.25)</li>
+<li>For the stable boundary layer (SBL), \(Rb_{cr}\) varies with the surface Rossby number, \(R_{0}\), as given by Vickers and Mahrt (2004) <a class="el" href="citelist.html#CITEREF_vickers_2004">[197]</a>   <p class="formulaDsp">
+\[        Rb_{cr}=0.16(10^{-7}R_{0})^{-0.18}
+\]
+</p>
+   <p class="formulaDsp">
+\[        R_{0}=\frac{U_{10}}{f_{0}z_{0}}
+\]
+</p>
+ where \(U_{10}\) is the wind speed at 10m above the ground surface, \(f_0\) the Coriolis parameter, and \(z_{0}\) the surface roughness length. To avoid too much variation, we restrict \(Rb_{cr}\) to vary within the range of 0.15~0.35</li>
+</ul>
+<ul>
+<li>Compute \(\frac{\Delta t}{\Delta z}\) , \(u_*\)</li>
+</ul>
+<ul>
+<li>Compute buoyancy \(\frac{\partial \theta_v}{\partial z}\) (bf) and the wind shear squared (shr2)</li>
+</ul>
+<ul>
+<li>Given the thermal's properties and the critical Richardson number, a loop is executed to find the first level above the surface (kpblx) where the modified Richardson number is greater than the critical Richardson number, using equation 10a from Troen and Mahrt (1996) <a class="el" href="citelist.html#CITEREF_troen_and_mahrt_1986">[195]</a> (also equation 8 from Hong and Pan (1996) <a class="el" href="citelist.html#CITEREF_hong_and_pan_1996">[95]</a>):</li>
+</ul>
+<ul>
+<li>Once the level is found, some linear interpolation is performed to find the exact height of the boundary layer top (where \(R_{i} &gt; Rb_{cr}\)) and the PBL height (hpbl and kpbl) and the PBL top index are saved.</li>
+</ul>
+<ul>
+<li>Compute mean tke within pbl for TKE-EDMF</li>
+</ul>
+<ul>
+<li>Compute wind shear term as a sink term for updraft and downdraft velocity</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md23"></a>
+Compute Monin-Obukhov similarity parameters</h2>
+<ul>
+<li>Calculate the Monin-Obukhov nondimensional stability paramter, commonly referred to as \(\zeta\) using the following equation from Businger et al.(1971) <a class="el" href="citelist.html#CITEREF_businger_et_al_1971">[28]</a> (eqn 28):   <p class="formulaDsp">
+\[       \zeta = Ri_{sfc}\frac{F_m^2}{F_h} = \frac{z}{L}
+\]
+</p>
+ where \(F_m\) and \(F_h\) are surface Monin-Obukhov stability functions calculated in <a class="el" href="sfc__diff_8f_source.html">sfc_diff.f</a> and \(L\) is the Obukhov length.</li>
+</ul>
+<ul>
+<li>Calculate the nondimensional gradients of momentum and temperature ( \(\phi_m\) (phim) and \(\phi_h\)(phih)) are calculated using eqns 5 and 6 from Hong and Pan (1996) <a class="el" href="citelist.html#CITEREF_hong_and_pan_1996">[95]</a> depending on the surface layer stability:<ul>
+<li>For the unstable and neutral conditions:    <p class="formulaDsp">
+\[        \phi_m=(1-16\frac{0.1h}{L})^{-1/4}
+        \phi_h=(1-16\frac{0.1h}{L})^{-1/2}
+\]
+</p>
+</li>
+<li>For the stable regime   <p class="formulaDsp">
+\[        \phi_m=\phi_t=(1+5\frac{0.1h}{L})
+\]
+</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>The \(z/L\) (zol) is used as the stability criterion for the PBL.Currently, strong unstable (convective) PBL for \(z/L &lt; -0.02\) and weakly and moderately unstable PBL for \(0&gt;z/L&gt;-0.02\)</li>
+<li>Compute the velocity scale \(w_s\) (wscale) (eqn 22 of Han et al. 2019). It is represented by the value scaled at the top of the surface layer:   <p class="formulaDsp">
+\[      w_s=(u_*^3+7\alpha\kappa w_*^3)^{1/3}
+\]
+</p>
+ where \(u_*\) (ustar) is the surface friction velocity, \(\alpha\) is the ratio of the surface layer height to the PBL height (specified as sfcfrac =0.1), \(\kappa =0.4\) is the von Karman constant, and \(w_*\) is the convective velocity scale defined as eqn23 of Han et al.(2019):   <p class="formulaDsp">
+\[      w_{*}=[(g/T)\overline{(w&#39;\theta_v^{&#39;})}_0h]^{1/3}
+\]
+</p>
+</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md24"></a>
+The counter-gradient terms for temperature and humidity are calculated.</h2>
+<ul>
+<li>Equation 4 of Hong and Pan (1996) <a class="el" href="citelist.html#CITEREF_hong_and_pan_1996">[95]</a> and are used to calculate the "scaled virtual temperature excess near the surface" (equation 9 in Hong and Pan (1996) <a class="el" href="citelist.html#CITEREF_hong_and_pan_1996">[95]</a>) for use in the mass-flux algorithm.</li>
+</ul>
+<ul>
+<li>Compute mean tke within pbl for TTE-EDMF</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md25"></a>
+Determine whether stratocumulus layers exist and compute quantities</h2>
+<ul>
+<li>Starting at the PBL top and going downward, if the level is less than 2.5 km and \(q_l\geq q_{lcr}\) then set kcld = k (find the cloud top index in the PBL. If no cloud water above the threshold is hound, <em>scuflg</em> is set to F.</li>
+</ul>
+<ul>
+<li>Starting at the PBL top and going downward, if the level is less than the cloud top, find the level of the minimum radiative heating rate wihin the cloud. If the level of the minimum is the lowest model level or the minimum radiative heating rate is positive, then set scuflg to F.</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md26"></a>
+Compute components for mass flux mixing by large thermals</h2>
+<ul>
+<li>If the PBL is convective, the updraft properties are initialized to be the same as the state variables.</li>
+</ul>
+<ul>
+<li>Call <a class="el" href="group__module__satmedmfvdifq_ga15bba20685ffc8340f58dce1d887fdb6.html#ga15bba20685ffc8340f58dce1d887fdb6" title="This subroutine computes mass flux and updraft parcel properties for thermals driven by surface heati...">mfpbltq()</a>, which is an EDMF parameterization (Siebesma et al.(2007) <a class="el" href="citelist.html#CITEREF_siebesma_2007">[181]</a>) to take into account nonlocal transport by large eddies. For details of the mfpbltq subroutine, step into its documentation ::mfpbltq</li>
+</ul>
+<ul>
+<li>Call <a class="el" href="group__module__satmedmfvdifq_ga860b6176c81a0b7b5a8dd27b6aff850c.html#ga860b6176c81a0b7b5a8dd27b6aff850c" title="This subroutine computes mass flux and downdraft parcel properties for stratocumulus-top-driven turbu...">mfscuq()</a>, which is a new mass-flux parameterization for stratocumulus-top-induced turbulence mixing. For details of the mfscuq subroutine, step into its documentation ::mfscuq</li>
+</ul>
+<ul>
+<li>unify mass fluxes with Cu</li>
+</ul>
+<ul>
+<li>taper off MF in high-wind conditions</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md27"></a>
+Compute Prandtl number \(P_r\) (prn) and exchange coefficient varying with height</h2>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md28"></a>
+Compute an asymtotic mixing length</h2>
+<ul>
+<li>Following Bougeault and Lacarrere(1989), the characteristic length scale ( \(l_2\)) (eqn 10 in Han et al.(2019) <a class="el" href="citelist.html#CITEREF_han_2019">[76]</a>) is given by:   <p class="formulaDsp">
+\[       l_2=min(l_{up},l_{down})
+\]
+</p>
+ and dissipation length scale \(l_d\) is given by:   <p class="formulaDsp">
+\[       l_d=(l_{up}l_{down})^{1/2}
+\]
+</p>
+ where \(l_{up}\) and \(l_{down}\) are the distances that a parcel having an initial TKE can travel upward and downward before being stopped by buoyancy effects.</li>
+</ul>
+<ul>
+<li>Compute the surface layer length scale ( \(l_1\)) following Nakanishi (2001) <a class="el" href="citelist.html#CITEREF_nakanish_2001">[145]</a> (eqn 9 of Han et al.(2019) <a class="el" href="citelist.html#CITEREF_han_2019">[76]</a>)</li>
+</ul>
+<ul>
+<li>If sfc_rlm=1, use zk for elm within surface layer</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md29"></a>
+Compute eddy diffusivities</h2>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md30"></a>
+Compute TKE.</h2>
+<ul>
+<li>Compute a minimum TKE deduced from background diffusivity for momentum.</li>
+</ul>
+<ul>
+<li>Compute buoyancy and shear productions of TKE or TTE</li>
+</ul>
+<ul>
+<li>First predict te due to te production &amp; dissipation(diss)</li>
+</ul>
+<ul>
+<li>Compute updraft &amp; downdraft properties for TKE or TTE</li>
+</ul>
+<ul>
+<li>Compute tridiagonal matrix elements for TKE or TTE</li>
+</ul>
+<ul>
+<li>Call <a class="el" href="group__module__satmedmfvdifq_ga5f820ea7a901b9154fc66428d371c02c.html#ga5f820ea7a901b9154fc66428d371c02c" title="This subroutine solves tridiagonal problem for TKE.">tridit()</a> to solve tridiagonal problem for TKE</li>
+</ul>
+<ul>
+<li>Recover the tendency of TKE or TTE</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md31"></a>
+Compute tridiagonal matrix elements for heat and moisture</h2>
+<ul>
+<li>Call <a class="el" href="group__module__satmedmfvdifq_ga9031977c1d186acb458ef87523aaff5b.html#ga9031977c1d186acb458ef87523aaff5b" title="Routine to solve the tridiagonal system to calculate u- and v-momentum at ; part of two-part process ...">tridin()</a> to solve tridiagonal problem for heat and moisture</li>
+</ul>
+<ul>
+<li>Recover the tendencies of heat and moisture</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md32"></a>
+Add TKE dissipative heating to temperature tendency</h2>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md33"></a>
+Compute tridiagonal matrix elements for momentum</h2>
+<ul>
+<li>Call <a class="el" href="group__module__satmedmfvdifq_gafeb82aad16f009ddfae09ae940c52f7e.html#gafeb82aad16f009ddfae09ae940c52f7e" title="This subroutine ..">tridi2()</a> to solve tridiagonal problem for momentum</li>
+</ul>
+<ul>
+<li>Recover the tendencies of momentum</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md34"></a>
+Save PBL height for diagnostic purpose</h2>
+
+<p class="definition">Definition at line <a class="el" href="satmedmfvdifq_8_f_source.html#l00089">89</a> of file <a class="el" href="satmedmfvdifq_8_f_source.html">satmedmfvdifq.F</a>.</p>
+
+<p class="reference">References <a class="el" href="mfpbltq_8f_source.html#l00017">mfpbltq_mod::mfpbltq()</a>, <a class="el" href="mfscuq_8f_source.html#l00015">mfscuq_mod::mfscuq()</a>, <a class="el" href="tridi_8f_source.html#l00053">tridi_mod::tridi2()</a>, <a class="el" href="tridi_8f_source.html#l00098">tridi_mod::tridin()</a>, and <a class="el" href="tridi_8f_source.html#l00167">tridi_mod::tridit()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group__module__satmedmfvdifq_gad2fc02f170f716e67a18faaa8587d441_gad2fc02f170f716e67a18faaa8587d441_cgraph.svg" width="432" height="234"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespacesatmedmfvdifq.html">satmedmfvdifq</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

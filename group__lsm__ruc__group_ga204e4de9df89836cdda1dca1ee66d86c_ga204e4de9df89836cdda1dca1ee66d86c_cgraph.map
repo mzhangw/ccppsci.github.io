@@ -1,0 +1,8 @@
+<map id="module_sf_ruclsm::snowtemp" name="module_sf_ruclsm::snowtemp">
+<area shape="rect" id="Node000001" title="This subroutine solves energy bugdget equation and heat diffusion equation to obtain snow and soil te..." alt="" coords="5,55,201,80"/>
+<area shape="rect" id="Node000002" href="$group__lsm__ruc__group_ga0892c4c726f23c4e4c8317efd197c208.html#ga0892c4c726f23c4e4c8317efd197c208" title="This function computes water vapor mixing ratio at saturation from the precomputed table and a given ..." alt="" coords="252,29,408,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,54,239,52,233,53,201,59"/>
+<area shape="rect" id="Node000003" href="$group__lsm__ruc__group_ga03c426be3516bfb046dfd57c1b89dbbe.html#ga03c426be3516bfb046dfd57c1b89dbbe" title="This subroutine finds the solution of energy budget at the surface from the pre&#45;computed table of sat..." alt="" coords="249,79,411,104"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="201,75,236,81,230,81,201,80"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="292,28,285,21,289,11,305,5,330,3,358,5,373,15,368,14,356,10,330,8,306,10,293,15,290,20,297,30"/>
+</map>

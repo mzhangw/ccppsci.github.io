@@ -1,0 +1,44 @@
+<map id="module_radiation_clouds::radiation_clouds_prop" name="module_radiation_clouds::radiation_clouds_prop">
+<area shape="rect" id="Node000001" title="Subroutine radiation_clouds_prop computes cloud related quantities for different cloud microphysics s..." alt="" coords="5,235,170,275"/>
+<area shape="rect" id="Node000002" href="$group__module__radiation__clouds_ga60bbaf4450625fd7c91d1d2c750f37af.html#ga60bbaf4450625fd7c91d1d2c750f37af" title="This subroutine computes high, mid, low, total, and boundary cloud fractions and cloud top/bottom lay..." alt="" coords="224,5,388,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,233,112,196,139,149,173,100,216,57,226,52,223,56,219,61,177,103,143,152,117,198,100,235"/>
+<area shape="rect" id="Node000003" href="$group__module__radiation__clouds_ga9f1d337794ba446156ed48d61fefb76d.html#ga9f1d337794ba446156ed48d61fefb76d" title="This subroutine computes cloud related quantities using Ferrier&#45;Aligo cloud microphysics scheme." alt="" coords="224,71,388,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="102,233,150,178,181,148,216,122,229,117,225,121,219,127,185,153,154,182,107,236"/>
+<area shape="rect" id="Node000006" href="$group__module__radiation__clouds_ga71d94b4a5abebc762e0590cc632c1b85.html#ga71d94b4a5abebc762e0590cc632c1b85" title="This subroutine computes cloud related quantities using GFDL Lin MP prognostic cloud microphysics sch..." alt="" coords="224,267,388,307"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="169,264,211,272,206,274,171,270"/>
+<area shape="rect" id="Node000007" href="$group__module__radiation__clouds_ga0f8f599f3b125b66e0784e053208ae8f.html#ga0f8f599f3b125b66e0784e053208ae8f" title="This subroutine added by G. Thompson specifically to account for explicit (microphysics&#45;produced) clo..." alt="" coords="224,332,388,373"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="128,273,219,317,237,325,231,326,217,321,128,279"/>
+<area shape="rect" id="Node000015" href="$group__module__radiation__clouds_ga21b5982de59b5f60a24abe33946f40d0.html#ga21b5982de59b5f60a24abe33946f40d0" title="This subroutine is used by Thompson/WSM6/NSSL cloud microphysics (EMC)." alt="" coords="218,201,395,242"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="169,240,205,236,200,239,171,245"/>
+<area shape="rect" id="Node000017" href="$group__module__radiation__clouds_gac51e562082d901e15a3fb3a4dc7c7aad.html#gac51e562082d901e15a3fb3a4dc7c7aad" title="This subroutine computes cloud related quantities using zhao/moorthi&#39;s prognostic cloud microphysics ..." alt="" coords="224,136,388,177"/>
+<area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="126,232,217,187,236,181,232,184,219,192,129,236"/>
+<area shape="rect" id="Node000018" href="$group__module__radiation__clouds_ga65efc917e61be764d81f3b550111f8fb.html#ga65efc917e61be764d81f3b550111f8fb" title="This subroutine computes cloud related quantities using zhao/moorthi&#39;s prognostic cloud microphysics ..." alt="" coords="224,397,388,438"/>
+<area shape="poly" id="edge22_Node000001_Node000018" title=" " alt="" coords="105,273,154,327,185,356,219,382,230,390,225,390,216,387,182,360,150,331,104,278"/>
+<area shape="rect" id="Node000019" href="$group__module__radiation__clouds_gaca12447bedda24f61315dc19c5634997.html#gaca12447bedda24f61315dc19c5634997" title="This subroutine computes cloud related quantities using for unified cloud microphysics scheme." alt="" coords="224,463,388,503"/>
+<area shape="poly" id="edge23_Node000001_Node000019" title=" " alt="" coords="98,273,117,311,143,358,178,406,219,448,227,455,222,454,216,452,173,409,139,360,112,314,97,278"/>
+<area shape="rect" id="Node000004" href="$group__module__radiation__clouds_gadaa9a2fee11ea7c86ecd2cb3e0d0f74c.html#gadaa9a2fee11ea7c86ecd2cb3e0d0f74c" title=" " alt="" coords="443,71,627,111"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="388,89,430,90,425,92,390,93"/>
+<area shape="rect" id="Node000005" href="$group__module__radiation__clouds_ga129e187852f814d10ade63be99965415.html#ga129e187852f814d10ade63be99965415" title="This subroutine computes the Xu&#45;Randall cloud fraction scheme." alt="" coords="450,136,620,177"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="379,109,449,130,444,132,380,114"/>
+<area shape="rect" id="Node000008" href="$group__module__radiation__clouds_gae11bdd130c90bee7cff8741ec4504bce.html#gae11bdd130c90bee7cff8741ec4504bce" title="Cloud fraction scheme by G. Thompson (NCAR&#45;RAL), not intended for combining with any cumulus or shall..." alt="" coords="453,332,617,373"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="388,350,440,352,435,353,389,355"/>
+<area shape="rect" id="Node000009" href="$group__module__radiation__clouds_gab93b09ad19ec692f8efe39d050618efa.html#gab93b09ad19ec692f8efe39d050618efa" title="Do not alter any grid&#45;explicitly resolved hydrometeors, rather only the supposed amounts due to the c..." alt="" coords="675,221,840,262"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="570,329,674,273,686,270,691,268,677,277,572,334"/>
+<area shape="rect" id="Node000010" href="$group__module__radiation__clouds_gaec7e19fe843ee220394496a5b4d2ceb1.html#gaec7e19fe843ee220394496a5b4d2ceb1" title="From cloud fraction array, find clouds of multi&#45;level depth and compute a reasonable value of LWP or ..." alt="" coords="675,287,840,327"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="617,333,663,326,658,327,618,338"/>
+<area shape="rect" id="Node000013" href="$group__aathompson_ga878bec15133532309ba3036cd2739510.html#ga878bec15133532309ba3036cd2739510" title="THIS FUNCTION CALCULATES THE ICE SATURATION VAPOR MIXING RATIO AS A FUNCTION OF TEMPERATURE AND PRESS..." alt="" coords="681,376,834,417"/>
+<area shape="poly" id="edge12_Node000008_Node000013" title=" " alt="" coords="618,366,668,378,663,378,618,371"/>
+<area shape="rect" id="Node000014" href="$group__aathompson_ga9617073eff52abf98dd295c8cd83ef24.html#ga9617073eff52abf98dd295c8cd83ef24" title="THIS FUNCTION CALCULATES THE LIQUID SATURATION VAPOR MIXING RATIO AS A FUNCTION OF TEMPERATURE AND PR..." alt="" coords="681,465,834,506"/>
+<area shape="poly" id="edge14_Node000008_Node000014" title=" " alt="" coords="572,371,712,457,706,457,570,376"/>
+<area shape="rect" id="Node000011" href="$group__module__radiation__clouds_ga8f57a217926f989ce3137a0011976f91.html#ga8f57a217926f989ce3137a0011976f91" title=" " alt="" coords="888,255,1052,295"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="839,292,875,289,870,290,840,297"/>
+<area shape="rect" id="Node000012" href="$group__module__radiation__clouds_ga4e4b598c8fc3fa1252be8d3b149ac5f0.html#ga4e4b598c8fc3fa1252be8d3b149ac5f0" title=" " alt="" coords="888,320,1052,361"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="840,317,875,325,870,325,840,323"/>
+<area shape="poly" id="edge13_Node000013_Node000013" title=" " alt="" coords="718,374,715,366,722,357,736,351,758,349,781,352,796,361,790,360,779,357,757,355,737,357,725,361,721,367,722,377"/>
+<area shape="poly" id="edge15_Node000014_Node000014" title=" " alt="" coords="718,463,715,455,722,446,736,441,758,439,781,441,796,450,790,449,779,446,757,444,737,446,725,451,721,456,722,466"/>
+<area shape="poly" id="edge18_Node000015_Node000005" title=" " alt="" coords="379,198,449,180,445,183,381,203"/>
+<area shape="rect" id="Node000016" href="$group__module__radiation__clouds_ga5b1ca159be8718cc359845b4a62da2c9.html#ga5b1ca159be8718cc359845b4a62da2c9" title=" " alt="" coords="443,201,627,242"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="394,219,430,221,425,223,396,224"/>
+<area shape="poly" id="edge20_Node000017_Node000004" title=" " alt="" coords="379,133,449,115,445,118,381,138"/>
+<area shape="poly" id="edge21_Node000017_Node000005" title=" " alt="" coords="388,154,437,155,432,157,390,159"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="set_soilveg_ruc_mod::set_soilveg_ruc" name="set_soilveg_ruc_mod::set_soilveg_ruc">
+<area shape="rect" id="Node000001" title="This subroutine specifies vegetation and soil parameters for a given soil and land&#45;use classification..." alt="" coords="199,5,343,46"/>
+<area shape="rect" id="Node000002" href="$namespacelsm__ruc_afb3d4b42b9d1aa59ac800de8fd8e4d77.html#afb3d4b42b9d1aa59ac800de8fd8e4d77" title="This subroutine calls set_soilveg_ruc() to specify vegetation and soil parameters for a given soil an..." alt="" coords="5,13,151,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,26,151,28,151,23,186,25"/>
+</map>

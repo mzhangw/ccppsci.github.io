@@ -1,0 +1,7 @@
+<map id="module_sf_mynn::gfs_z0_wat" name="module_sf_mynn::gfs_z0_wat">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,152,64"/>
+<area shape="rect" id="Node000002" href="$group__mynn__sfc_gaeb3eb0de61ef2d256cf8b8c53cd99d79.html#gaeb3eb0de61ef2d256cf8b8c53cd99d79" title="add fitted z0,zt curves for hurricane application (used in HWRF/HMON) Weiguo Wang,..." alt="" coords="200,5,392,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,32,187,31,182,32,152,38"/>
+<area shape="rect" id="Node000003" href="$group__mynn__sfc_ga784c4ee38a178b60dc3b77cb975d01fc.html#ga784c4ee38a178b60dc3b77cb975d01fc" title="Calculate areodynamical roughness over water with input 10&#45;m wind For low&#45;to&#45;moderate winds,..." alt="" coords="200,55,392,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,49,187,55,182,55,152,54"/>
+</map>

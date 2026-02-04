@@ -1,0 +1,12 @@
+<map id="module_mp_thompson::rsif" name="module_mp_thompson::rsif">
+<area shape="rect" id="Node000001" title="THIS FUNCTION CALCULATES THE ICE SATURATION VAPOR MIXING RATIO AS A FUNCTION OF TEMPERATURE AND PRESS..." alt="" coords="642,39,795,79"/>
+<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="750,23,739,20,718,17,699,19,687,24,683,30,684,40,680,36,677,29,684,20,698,14,719,12,741,14,756,23"/>
+<area shape="rect" id="Node000002" href="$group__module__radiation__clouds_gae11bdd130c90bee7cff8741ec4504bce.html#gae11bdd130c90bee7cff8741ec4504bce" title="Cloud fraction scheme by G. Thompson (NCAR&#45;RAL), not intended for combining with any cumulus or shall..." alt="" coords="430,5,594,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="624,44,595,42,595,36,630,44"/>
+<area shape="rect" id="Node000005" href="$group__aathompson_gab35ac4001561513747f53afcf6c9ac3b.html#gab35ac4001561513747f53afcf6c9ac3b" title="This subroutine computes the moisture tendencies of water vapor, cloud droplets, rain,..." alt="" coords="436,71,588,111"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="630,73,589,82,588,77,624,73"/>
+<area shape="rect" id="Node000003" href="$group__module__radiation__clouds_ga0f8f599f3b125b66e0784e053208ae8f.html#ga0f8f599f3b125b66e0784e053208ae8f" title="This subroutine added by G. Thompson specifically to account for explicit (microphysics&#45;produced) clo..." alt="" coords="218,5,382,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="412,26,383,28,382,23,417,25"/>
+<area shape="rect" id="Node000004" href="$group__module__radiation__clouds_gade0c4ffb0276ff706253a39568a88a67.html#gade0c4ffb0276ff706253a39568a88a67" title="Subroutine radiation_clouds_prop computes cloud related quantities for different cloud microphysics s..." alt="" coords="5,5,170,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="200,26,171,28,170,23,205,25"/>
+</map>

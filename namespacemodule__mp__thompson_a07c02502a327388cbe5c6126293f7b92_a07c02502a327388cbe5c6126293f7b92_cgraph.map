@@ -1,0 +1,9 @@
+<map id="module_mp_thompson::thompson_init" name="module_mp_thompson::thompson_init">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,71,158,111"/>
+<area shape="rect" id="Node000002" href="$group__aathompson_gac5a7433b5bd00387f9fd1e9aa9356dc4.html#gac5a7433b5bd00387f9fd1e9aa9356dc4" title="Integrate rain size distribution from zero to D&#45;star to compute the number of drops smaller than D&#45;st..." alt="" coords="206,5,358,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,68,205,50,201,53,147,73"/>
+<area shape="rect" id="Node000003" href="$group__aathompson_gaafc69c30a2dad10d06a05f1b7239926c.html#gaafc69c30a2dad10d06a05f1b7239926c" title="Variable collision efficiency for rain collecting cloud water using method of Beard and Grover,..." alt="" coords="206,71,358,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,88,193,90,188,92,159,94"/>
+<area shape="rect" id="Node000004" href="$group__aathompson_gab74dffc6baa178d41426700bfd1a08c6.html#gab74dffc6baa178d41426700bfd1a08c6" title="Variable collision efficiency for snow collecting cloud water using method of Wang and Ji,..." alt="" coords="206,136,358,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="146,109,205,130,200,131,146,115"/>
+</map>

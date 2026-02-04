@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: mo_rrtmg_sw_cloud_optics::extliq2</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('namespacemo__rrtmg__sw__cloud__optics_a20a9ced58c7e9d9a1651c19624958387.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="contents">
+<a id="a20a9ced58c7e9d9a1651c19624958387" name="a20a9ced58c7e9d9a1651c19624958387"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20a9ced58c7e9d9a1651c19624958387">&#9670;&#160;</a></span>extliq2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">real(kind_phys), dimension(58,<a class="el" href="namespacemo__rrtmg__sw__cloud__optics_a6ac1d86fb263a9b0a57ae6d1d2600c53.html#a6ac1d86fb263a9b0a57ae6d1d2600c53">nbandssw_rrtmg</a>), parameter mo_rrtmg_sw_cloud_optics::extliq2 = reshape(source= (/ 9.004493E-01, 6.366723E-01, 4.542354E-01, 3.468253E-01, 2.816431E-01, 2.383415E-01, 2.070854E-01, 1.831854E-01, 1.642115E-01, 1.487539E-01, 1.359169E-01, 1.250900E-01, 1.158354E-01, 1.078400E-01, 1.008646E-01, 9.472307E-02, 8.928000E-02, 8.442308E-02, 8.005924E-02, 7.612231E-02, 7.255153E-02, 6.929539E-02, 6.631769E-02, 6.358153E-02, 6.106231E-02, 5.873077E-02, 5.656924E-02, 5.455769E-02, 5.267846E-02, 5.091923E-02, 4.926692E-02, 4.771154E-02, 4.623923E-02, 4.484385E-02, 4.351539E-02, 4.224615E-02, 4.103385E-02, 3.986538E-02, 3.874077E-02, 3.765462E-02, 3.660077E-02, 3.557384E-02, 3.457615E-02, 3.360308E-02, 3.265000E-02, 3.171770E-02, 3.080538E-02, 2.990846E-02, 2.903000E-02, 2.816461E-02, 2.731539E-02, 2.648231E-02, 2.566308E-02, 2.485923E-02, 2.407000E-02, 2.329615E-02, 2.253769E-02, 2.179615E-02, 6.741200e-01, 5.390739e-01, 4.198767e-01, 3.332553e-01, 2.735633e-01, 2.317727e-01, 2.012760e-01, 1.780400e-01, 1.596927e-01, 1.447980e-01, 1.324480e-01, 1.220347e-01, 1.131327e-01, 1.054313e-01, 9.870534e-02, 9.278200e-02, 8.752599e-02, 8.282933e-02, 7.860600e-02, 7.479133e-02, 7.132800e-02, 6.816733e-02, 6.527401e-02, 6.261266e-02, 6.015934e-02, 5.788867e-02, 5.578134e-02, 5.381667e-02, 5.198133e-02, 5.026067e-02, 4.864466e-02, 4.712267e-02, 4.568066e-02, 4.431200e-02, 4.300867e-02, 4.176600e-02, 4.057400e-02, 3.942534e-02, 3.832066e-02, 3.725068e-02, 3.621400e-02, 3.520533e-02, 3.422333e-02, 3.326400e-02, 3.232467e-02, 3.140535e-02, 3.050400e-02, 2.962000e-02, 2.875267e-02, 2.789800e-02, 2.705934e-02, 2.623667e-02, 2.542667e-02, 2.463200e-02, 2.385267e-02, 2.308667e-02, 2.233667e-02, 2.160067e-02, 9.250861e-01, 6.245692e-01, 4.347038e-01, 3.320208e-01, 2.714869e-01, 2.309516e-01, 2.012592e-01, 1.783315e-01, 1.600369e-01, 1.451000e-01, 1.326838e-01, 1.222069e-01, 1.132554e-01, 1.055146e-01, 9.876000e-02, 9.281386e-02, 8.754000e-02, 8.283078e-02, 7.860077e-02, 7.477769e-02, 7.130847e-02, 6.814461e-02, 6.524615e-02, 6.258462e-02, 6.012847e-02, 5.785462e-02, 5.574231e-02, 5.378000e-02, 5.194461e-02, 5.022462e-02, 4.860846e-02, 4.708462e-02, 4.564154e-02, 4.427462e-02, 4.297231e-02, 4.172769e-02, 4.053693e-02, 3.939000e-02, 3.828462e-02, 3.721692e-02, 3.618000e-02, 3.517077e-02, 3.418923e-02, 3.323077e-02, 3.229154e-02, 3.137154e-02, 3.047154e-02, 2.959077e-02, 2.872308e-02, 2.786846e-02, 2.703077e-02, 2.620923e-02, 2.540077e-02, 2.460615e-02, 2.382693e-02, 2.306231e-02, 2.231231e-02, 2.157923e-02, 9.298960e-01, 5.776460e-01, 4.083450e-01, 3.211160e-01, 2.666390e-01, 2.281990e-01, 1.993250e-01, 1.768080e-01, 1.587810e-01, 1.440390e-01, 1.317720e-01, 1.214150e-01, 1.125540e-01, 1.048890e-01, 9.819600e-02, 9.230201e-02, 8.706900e-02, 8.239698e-02, 7.819500e-02, 7.439899e-02, 7.095300e-02, 6.780700e-02, 6.492900e-02, 6.228600e-02, 5.984600e-02, 5.758599e-02, 5.549099e-02, 5.353801e-02, 5.171400e-02, 5.000500e-02, 4.840000e-02, 4.688500e-02, 4.545100e-02, 4.409300e-02, 4.279700e-02, 4.156100e-02, 4.037700e-02, 3.923800e-02, 3.813800e-02, 3.707600e-02, 3.604500e-02, 3.504300e-02, 3.406500e-02, 3.310800e-02, 3.217700e-02, 3.126600e-02, 3.036800e-02, 2.948900e-02, 2.862400e-02, 2.777500e-02, 2.694200e-02, 2.612300e-02, 2.531700e-02, 2.452800e-02, 2.375100e-02, 2.299100e-02, 2.224300e-02, 2.151201e-02, 8.780964e-01, 5.407031e-01, 3.961100e-01, 3.166645e-01, 2.640455e-01, 2.261070e-01, 1.974820e-01, 1.751775e-01, 1.573415e-01, 1.427725e-01, 1.306535e-01, 1.204195e-01, 1.116650e-01, 1.040915e-01, 9.747550e-02, 9.164800e-02, 8.647649e-02, 8.185501e-02, 7.770200e-02, 7.394749e-02, 7.053800e-02, 6.742700e-02, 6.457999e-02, 6.196149e-02, 5.954450e-02, 5.730650e-02, 5.522949e-02, 5.329450e-02, 5.148500e-02, 4.979000e-02, 4.819600e-02, 4.669301e-02, 4.527050e-02, 4.391899e-02, 4.263500e-02, 4.140500e-02, 4.022850e-02, 3.909500e-02, 3.800199e-02, 3.694600e-02, 3.592000e-02, 3.492250e-02, 3.395050e-02, 3.300150e-02, 3.207250e-02, 3.116250e-02, 3.027100e-02, 2.939500e-02, 2.853500e-02, 2.768900e-02, 2.686000e-02, 2.604350e-02, 2.524150e-02, 2.445350e-02, 2.368049e-02, 2.292150e-02, 2.217800e-02, 2.144800e-02, 7.937480e-01, 5.123036e-01, 3.858181e-01, 3.099622e-01, 2.586829e-01, 2.217587e-01, 1.939755e-01, 1.723397e-01, 1.550258e-01, 1.408600e-01, 1.290545e-01, 1.190661e-01, 1.105039e-01, 1.030848e-01, 9.659387e-02, 9.086775e-02, 8.577807e-02, 8.122452e-02, 7.712711e-02, 7.342193e-02, 7.005387e-02, 6.697840e-02, 6.416000e-02, 6.156903e-02, 5.917484e-02, 5.695807e-02, 5.489968e-02, 5.298097e-02, 5.118806e-02, 4.950645e-02, 4.792710e-02, 4.643581e-02, 4.502484e-02, 4.368547e-02, 4.241001e-02, 4.118936e-02, 4.002193e-02, 3.889711e-02, 3.781322e-02, 3.676387e-02, 3.574549e-02, 3.475548e-02, 3.379033e-02, 3.284678e-02, 3.192420e-02, 3.102032e-02, 3.013484e-02, 2.926258e-02, 2.840839e-02, 2.756742e-02, 2.674258e-02, 2.593064e-02, 2.513258e-02, 2.435000e-02, 2.358064e-02, 2.282581e-02, 2.208548e-02, 2.135936e-02, 7.533129e-01, 5.033129e-01, 3.811271e-01, 3.062757e-01, 2.558729e-01, 2.196828e-01, 1.924372e-01, 1.711714e-01, 1.541086e-01, 1.401114e-01, 1.284257e-01, 1.185200e-01, 1.100243e-01, 1.026529e-01, 9.620142e-02, 9.050714e-02, 8.544428e-02, 8.091714e-02, 7.684000e-02, 7.315429e-02, 6.980143e-02, 6.673999e-02, 6.394000e-02, 6.136000e-02, 5.897715e-02, 5.677000e-02, 5.472285e-02, 5.281286e-02, 5.102858e-02, 4.935429e-02, 4.778000e-02, 4.629714e-02, 4.489142e-02, 4.355857e-02, 4.228715e-02, 4.107285e-02, 3.990857e-02, 3.879000e-02, 3.770999e-02, 3.666429e-02, 3.565000e-02, 3.466286e-02, 3.370143e-02, 3.276143e-02, 3.184143e-02, 3.094000e-02, 3.005714e-02, 2.919000e-02, 2.833714e-02, 2.750000e-02, 2.667714e-02, 2.586714e-02, 2.507143e-02, 2.429143e-02, 2.352428e-02, 2.277143e-02, 2.203429e-02, 2.130857e-02, 7.079894e-01, 4.878198e-01, 3.719852e-01, 3.001873e-01, 2.514795e-01, 2.163013e-01, 1.897100e-01, 1.689033e-01, 1.521793e-01, 1.384449e-01, 1.269666e-01, 1.172326e-01, 1.088745e-01, 1.016224e-01, 9.527085e-02, 8.966240e-02, 8.467543e-02, 8.021144e-02, 7.619344e-02, 7.255676e-02, 6.924996e-02, 6.623030e-02, 6.346261e-02, 6.091499e-02, 5.856325e-02, 5.638385e-02, 5.435930e-02, 5.247156e-02, 5.070699e-02, 4.905230e-02, 4.749499e-02, 4.602611e-02, 4.463581e-02, 4.331543e-02, 4.205647e-02, 4.085241e-02, 3.969978e-02, 3.859033e-02, 3.751877e-02, 3.648168e-02, 3.547468e-02, 3.449553e-02, 3.354072e-02, 3.260732e-02, 3.169438e-02, 3.079969e-02, 2.992146e-02, 2.905875e-02, 2.821201e-02, 2.737873e-02, 2.656052e-02, 2.575586e-02, 2.496511e-02, 2.418783e-02, 2.342500e-02, 2.267646e-02, 2.194177e-02, 2.122146e-02, 6.850164e-01, 4.762468e-01, 3.642001e-01, 2.946012e-01, 2.472001e-01, 2.128588e-01, 1.868537e-01, 1.664893e-01, 1.501142e-01, 1.366620e-01, 1.254147e-01, 1.158721e-01, 1.076732e-01, 1.005530e-01, 9.431306e-02, 8.879891e-02, 8.389232e-02, 7.949714e-02, 7.553857e-02, 7.195474e-02, 6.869413e-02, 6.571444e-02, 6.298286e-02, 6.046779e-02, 5.814474e-02, 5.599141e-02, 5.399114e-02, 5.212443e-02, 5.037870e-02, 4.874321e-02, 4.720219e-02, 4.574813e-02, 4.437160e-02, 4.306460e-02, 4.181810e-02, 4.062603e-02, 3.948252e-02, 3.838256e-02, 3.732049e-02, 3.629192e-02, 3.529301e-02, 3.432190e-02, 3.337412e-02, 3.244842e-02, 3.154175e-02, 3.065253e-02, 2.978063e-02, 2.892367e-02, 2.808221e-02, 2.725478e-02, 2.644174e-02, 2.564175e-02, 2.485508e-02, 2.408303e-02, 2.332365e-02, 2.257890e-02, 2.184824e-02, 2.113224e-02, 6.673017e-01, 4.664520e-01, 3.579398e-01, 2.902234e-01, 2.439904e-01, 2.104149e-01, 1.849277e-01, 1.649234e-01, 1.488087e-01, 1.355515e-01, 1.244562e-01, 1.150329e-01, 1.069321e-01, 9.989310e-02, 9.372070e-02, 8.826450e-02, 8.340622e-02, 7.905378e-02, 7.513109e-02, 7.157859e-02, 6.834588e-02, 6.539114e-02, 6.268150e-02, 6.018621e-02, 5.788098e-02, 5.574351e-02, 5.375699e-02, 5.190412e-02, 5.017099e-02, 4.854497e-02, 4.701490e-02, 4.557030e-02, 4.420249e-02, 4.290304e-02, 4.166427e-02, 4.047820e-02, 3.934232e-02, 3.824778e-02, 3.719236e-02, 3.616931e-02, 3.517597e-02, 3.420856e-02, 3.326566e-02, 3.234346e-02, 3.144122e-02, 3.055684e-02, 2.968798e-02, 2.883519e-02, 2.799635e-02, 2.717228e-02, 2.636182e-02, 2.556424e-02, 2.478114e-02, 2.401086e-02, 2.325657e-02, 2.251506e-02, 2.178594e-02, 2.107301e-02, 6.552414e-01, 4.599454e-01, 3.538626e-01, 2.873547e-01, 2.418033e-01, 2.086660e-01, 1.834885e-01, 1.637142e-01, 1.477767e-01, 1.346583e-01, 1.236734e-01, 1.143412e-01, 1.063148e-01, 9.933905e-02, 9.322026e-02, 8.780979e-02, 8.299230e-02, 7.867554e-02, 7.478450e-02, 7.126053e-02, 6.805276e-02, 6.512143e-02, 6.243211e-02, 5.995541e-02, 5.766712e-02, 5.554484e-02, 5.357246e-02, 5.173222e-02, 5.001069e-02, 4.839505e-02, 4.687471e-02, 4.543861e-02, 4.407857e-02, 4.278577e-02, 4.155331e-02, 4.037322e-02, 3.924302e-02, 3.815376e-02, 3.710172e-02, 3.608296e-02, 3.509330e-02, 3.412980e-02, 3.319009e-02, 3.227106e-02, 3.137157e-02, 3.048950e-02, 2.962365e-02, 2.877297e-02, 2.793726e-02, 2.711500e-02, 2.630666e-02, 2.551206e-02, 2.473052e-02, 2.396287e-02, 2.320861e-02, 2.246810e-02, 2.174162e-02, 2.102927e-02, 6.430901e-01, 4.532134e-01, 3.496132e-01, 2.844655e-01, 2.397347e-01, 2.071236e-01, 1.822976e-01, 1.627640e-01, 1.469961e-01, 1.340006e-01, 1.231069e-01, 1.138441e-01, 1.058706e-01, 9.893678e-02, 9.285166e-02, 8.746871e-02, 8.267411e-02, 7.837656e-02, 7.450257e-02, 7.099318e-02, 6.779929e-02, 6.487987e-02, 6.220168e-02, 5.973530e-02, 5.745636e-02, 5.534344e-02, 5.337986e-02, 5.154797e-02, 4.983404e-02, 4.822582e-02, 4.671228e-02, 4.528321e-02, 4.392997e-02, 4.264325e-02, 4.141647e-02, 4.024259e-02, 3.911767e-02, 3.803309e-02, 3.698782e-02, 3.597140e-02, 3.498774e-02, 3.402852e-02, 3.309340e-02, 3.217818e-02, 3.128292e-02, 3.040486e-02, 2.954230e-02, 2.869545e-02, 2.786261e-02, 2.704372e-02, 2.623813e-02, 2.544668e-02, 2.466788e-02, 2.390313e-02, 2.315136e-02, 2.241391e-02, 2.168921e-02, 2.097903e-02, 6.367074e-01, 4.495768e-01, 3.471263e-01, 2.826149e-01, 2.382868e-01, 2.059640e-01, 1.813562e-01, 1.619881e-01, 1.463436e-01, 1.334402e-01, 1.226166e-01, 1.134096e-01, 1.054829e-01, 9.858838e-02, 9.253790e-02, 8.718582e-02, 8.241830e-02, 7.814482e-02, 7.429212e-02, 7.080165e-02, 6.762385e-02, 6.471838e-02, 6.205388e-02, 5.959726e-02, 5.732871e-02, 5.522402e-02, 5.326793e-02, 5.144230e-02, 4.973440e-02, 4.813188e-02, 4.662283e-02, 4.519798e-02, 4.384833e-02, 4.256541e-02, 4.134253e-02, 4.017136e-02, 3.904911e-02, 3.796779e-02, 3.692364e-02, 3.591182e-02, 3.492930e-02, 3.397230e-02, 3.303920e-02, 3.212572e-02, 3.123278e-02, 3.035519e-02, 2.949493e-02, 2.864985e-02, 2.781840e-02, 2.700197e-02, 2.619682e-02, 2.540674e-02, 2.462966e-02, 2.386613e-02, 2.311602e-02, 2.237846e-02, 2.165660e-02, 2.094756e-02, 4.298416e-01, 4.391639e-01, 3.975030e-01, 3.443028e-01, 2.957345e-01, 2.556461e-01, 2.234755e-01, 1.976636e-01, 1.767428e-01, 1.595611e-01, 1.452636e-01, 1.332156e-01, 1.229481e-01, 1.141059e-01, 1.064208e-01, 9.968527e-02, 9.373833e-02, 8.845221e-02, 8.372112e-02, 7.946667e-02, 7.561807e-02, 7.212029e-02, 6.893166e-02, 6.600944e-02, 6.332277e-02, 6.084277e-02, 5.854721e-02, 5.641361e-02, 5.442639e-02, 5.256750e-02, 5.082499e-02, 4.918556e-02, 4.763694e-02, 4.617222e-02, 4.477861e-02, 4.344861e-02, 4.217999e-02, 4.096111e-02, 3.978638e-02, 3.865361e-02, 3.755473e-02, 3.649028e-02, 3.545361e-02, 3.444361e-02, 3.345666e-02, 3.249167e-02, 3.154722e-02, 3.062083e-02, 2.971250e-02, 2.882083e-02, 2.794611e-02, 2.708778e-02, 2.624500e-02, 2.541750e-02, 2.460528e-02, 2.381194e-02, 2.303250e-02, 2.226833e-02/), shape = (/58,nBandsSW_RRTMG/))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rrtmg__sw__cloud__optics_8_f90_source.html#l00207">207</a> of file <a class="el" href="rrtmg__sw__cloud__optics_8_f90_source.html">rrtmg_sw_cloud_optics.F90</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespacemo__rrtmg__sw__cloud__optics.html">mo_rrtmg_sw_cloud_optics</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

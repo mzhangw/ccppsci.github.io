@@ -1,0 +1,19 @@
+<map id="noahmp_glacier_routines::glacier_flux" name="noahmp_glacier_routines::glacier_flux">
+<area shape="rect" id="Node000001" title="use newton&#45;raphson iteration to solve ground (tg) temperature that balances the surface energy budget..." alt="" coords="5,71,171,111"/>
+<area shape="rect" id="Node000002" href="$group___noah_m_p___l_s_m_ga198a78cba7dcb5d138ee9f2896b932ff.html#ga198a78cba7dcb5d138ee9f2896b932ff" title=" " alt="" coords="219,5,384,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,68,220,49,216,53,158,72"/>
+<area shape="rect" id="Node000003" href="$group___noah_m_p___l_s_m_ga3233db40fc83f01063964817c22944ac.html#ga3233db40fc83f01063964817c22944ac" title="compute surface drag coefficient cm for momentum and ch for heat" alt="" coords="219,71,384,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,88,205,90,201,92,172,94"/>
+<area shape="rect" id="Node000004" href="$group___noah_m_p___l_s_m_ga4a88258da12057ced7c9dc5760b53d13.html#ga4a88258da12057ced7c9dc5760b53d13" title=" " alt="" coords="271,136,332,161"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="166,109,259,135,254,138,166,115"/>
+<area shape="rect" id="Node000005" href="$group__mynn__sfc_gab8e348eef161b16bada8841a900501c2.html#gab8e348eef161b16bada8841a900501c2" title="this is taken from andreas (2002; j. of hydromet) and andreas et al. (2005; blm)." alt="" coords="443,37,545,62"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="331,140,357,133,383,121,397,109,406,97,415,84,430,72,436,71,441,68,434,76,419,88,410,100,401,113,385,125,359,138,333,145"/>
+<area shape="rect" id="Node000006" href="$group___noah_m_p___l_s_m_ga88dbf6bdf1a8097e27b06ddfce89516c.html#ga88dbf6bdf1a8097e27b06ddfce89516c" title="data. the formula for land uses a constant ratio (z_0/7.4) taken from garratt (1992)." alt="" coords="448,86,541,112"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="331,138,435,114,429,116,333,143"/>
+<area shape="rect" id="Node000007" href="$group__mynn__sfc_ga7bbe8445bfcae5adad4fed82a0ecbaee.html#ga7bbe8445bfcae5adad4fed82a0ecbaee" title="this subroutine returns a more robust z/l that best matches the z/l from hogstrom (1996) for unstable..." alt="" coords="449,136,539,161"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="332,146,436,148,431,149,332,151"/>
+<area shape="rect" id="Node000008" href="$group__mynn__sfc_ga25595438cdc181cd5e5e05aa45486a69.html#ga25595438cdc181cd5e5e05aa45486a69" title="this is a modified version of yang et al (2002 qjrms, 2008 jamc) and chen et al (2010,..." alt="" coords="452,185,536,210"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="332,153,439,183,434,184,332,159"/>
+<area shape="rect" id="Node000009" href="$group___noah_m_p___l_s_m_gaa1453a4f904aa171ea91510f464824b3.html#gaa1453a4f904aa171ea91510f464824b3" title=" " alt="" coords="432,234,556,260"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="324,159,374,189,433,221,445,228,440,227,431,225,371,193,323,164"/>
+</map>

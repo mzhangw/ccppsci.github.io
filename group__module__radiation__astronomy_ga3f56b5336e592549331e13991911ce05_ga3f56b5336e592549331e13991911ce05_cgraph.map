@@ -1,0 +1,7 @@
+<map id="module_radiation_astronomy::sol_update" name="module_radiation_astronomy::sol_update">
+<area shape="rect" id="Node000001" title="This subroutine computes solar parameters at forecast time." alt="" coords="5,39,193,79"/>
+<area shape="rect" id="Node000002" href="$group__module__radiation__astronomy_gaee29441c2e62c44728b10915a148cccf.html#gaee29441c2e62c44728b10915a148cccf" title="This subroutine prints out forecast date, time, and astronomy quantities." alt="" coords="241,5,428,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,43,228,40,223,42,194,48"/>
+<area shape="rect" id="Node000003" href="$group__module__radiation__astronomy_gabea86aabd5183af686bf728817b5ebe3.html#gabea86aabd5183af686bf728817b5ebe3" title="This subroutine computes radius vector, declination and right ascension of sun, and equation of time." alt="" coords="241,71,428,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,69,228,76,223,76,193,74"/>
+</map>

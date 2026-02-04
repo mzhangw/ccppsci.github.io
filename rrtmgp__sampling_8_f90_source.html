@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: /Users/man.zhang/github_doxygen/ccpp-physics/physics/Radiation/RRTMGP/rrtmgp_sampling.F90 Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('rrtmgp__sampling_8_f90_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">rrtmgp_sampling.F90</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">!&gt;\file rrtmgp_sampling.F90</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">!! This code is part of RRTM for GCM Applications - Parallel (RRTMGP)</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">!</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">! Contacts: Robert Pincus and Eli Mlawer</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">! email:  rrtmgp@aer.com</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">!</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">! Copyright 2015-2019,  Atmospheric and Environmental Research and</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">! Regents of the University of Colorado.  All right reserved.</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">!</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">! Use and duplication is permitted under the terms of the</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">!    BSD 3-clause license, see http://opensource.org/licenses/BSD-3-Clause</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">! -------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">!</span><span class="comment"></span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">!&gt; This module provides a simple implementation of sampling for the</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">!!   Monte Carlo Independent Pixel Approximation (McICA, doi:10.1029/2002jd003322)</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">! Cloud optical properties, defined by band and assumed homogenous within each cell (column/layer),</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">!   are randomly sampled to preserve the mean cloud fraction and one of several possible overlap assumptions</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">! Users supply random numbers with order ngpt,nlay,ncol</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">!   These are only accessed if cloud_fraction(icol,ilay) &gt; 0 so many values don&#39;t need to be filled in</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">!</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">! Adapted by Dustin Swales on 8/11/2020 for use in UFS (NOAA-PSL/CU-CIRES)</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">!</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">! -------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="namespacerrtmgp__sampling.html">   24</a></span><span class="keyword">module</span> <a class="code hl_namespace" href="namespacerrtmgp__sampling.html">rrtmgp_sampling</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordtype">use </span>mo_rte_kind,      <span class="keywordtype">only</span>: wp, wl</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keywordtype">use </span>mo_optical_props, <span class="keywordtype">only</span>: ty_optical_props_arry, &amp;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                              ty_optical_props_1scl, &amp;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                              ty_optical_props_2str, &amp;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                              ty_optical_props_nstr</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordtype">implicit none</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keywordtype">private</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keywordtype">public</span> :: draw_samples, sampled_mask</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">contains</span><span class="comment"></span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">!&gt; Apply a T/F sampled cloud mask to cloud optical properties defined by band to produce</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">!!  McICA-sampled cloud optical properties</span></div>
+<div class="foldopen" id="foldopen00036" data-start="" data-end="">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="namespacerrtmgp__sampling_a8c2678bfb65f326231cb4ba4671fdb73.html#a8c2678bfb65f326231cb4ba4671fdb73">   36</a></span>  <span class="keyword">function </span>draw_samples(cloud_mask,do_twostream,clouds,clouds_sampled) <span class="keyword">result</span>(error_msg)</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">! Inputs</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">logical</span>, <span class="keywordtype">dimension(:,:,:)</span>,      <span class="keywordtype">intent(in   )</span> :: cloud_mask     <span class="comment">! Dimensions ncol,nlay,ngpt</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">logical</span>,                        <span class="keywordtype">intent(in   )</span> :: do_twostream   <span class="comment">! Do two-stream?</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">class</span>(ty_optical_props_arry),   <span class="keywordtype">intent(in   )</span> :: clouds         <span class="comment">! Defined by band</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">! Outputs</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">class</span>(ty_optical_props_arry),   <span class="keywordtype">intent(inout)</span> :: clouds_sampled <span class="comment">! Defined by g-point</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">character(len=128)</span>                            :: error_msg</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="comment">! Local variables</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">integer</span> :: ncol,nlay,nbnd,ngpt</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">integer</span> :: imom</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    error_msg = <span class="stringliteral">&quot;&quot;</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">! Array extents</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    ncol = clouds%get_ncol()</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    nlay = clouds%get_nlay()</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    nbnd = clouds%get_nband()</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    ngpt = clouds_sampled%get_ngpt()</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">! Optical depth assignment works for 1scl, 2str (also nstr)</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">call </span>apply_cloud_mask(ncol,nlay,nbnd,ngpt,clouds_sampled%get_band_lims_gpoint(),cloud_mask,clouds%tau,clouds_sampled%tau)</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">!</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">! For 2-stream</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">!</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">select type</span>(clouds)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keywordflow">    type is</span> (ty_optical_props_2str)</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      <span class="keywordflow">select type</span>(clouds_sampled)</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keywordflow">      type is</span> (ty_optical_props_2str)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>         <span class="keywordflow">if</span> (do_twostream) <span class="keywordflow">then</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keyword">call </span>apply_cloud_mask(ncol,nlay,nbnd,ngpt,clouds_sampled%get_band_lims_gpoint(),cloud_mask,clouds%ssa,clouds_sampled%ssa)</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keyword">call </span>apply_cloud_mask(ncol,nlay,nbnd,ngpt,clouds_sampled%get_band_lims_gpoint(),cloud_mask,clouds%g,  clouds_sampled%g  )</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keywordflow">         endif</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keywordflow">      class default</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>          error_msg = <span class="stringliteral">&quot;draw_samples: by-band and sampled cloud properties need to be the same variable type&quot;</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keywordflow">      end select</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keywordflow">    end select</span></div>
+</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keyword">end function </span>draw_samples</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"></span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">!&gt; Generate a McICA-sampled cloud mask</span></div>
+<div class="foldopen" id="foldopen00078" data-start="" data-end="">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="namespacerrtmgp__sampling_a3b2ae5254f43ada8b31e1cc12b3644e8.html#a3b2ae5254f43ada8b31e1cc12b3644e8">   78</a></span>  <span class="keyword">subroutine </span>sampled_mask(randoms, cloud_frac, cloud_mask, overlap_param, randoms2)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="comment">! Inputs</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(:,:,:)</span>,  <span class="keywordtype">intent(in )</span>           :: randoms       <span class="comment">! ngpt,nlay,ncol</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(:,:)</span>,    <span class="keywordtype">intent(in )</span>           :: cloud_frac    <span class="comment">! ncol,nlay</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="comment">! Outputs</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordtype">logical</span>,  <span class="keywordtype">dimension(:,:,:)</span>,  <span class="keywordtype">intent(out)</span>           :: cloud_mask    <span class="comment">! ncol,nlay,ngpt</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="comment">! Inputs (optional)</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(:,:)</span>,    <span class="keywordtype">intent(in )</span>, <span class="keywordtype">optional</span> :: overlap_param <span class="comment">! ncol,nlay-1</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(:,:,:)</span>,  <span class="keywordtype">intent(in )</span>, <span class="keywordtype">optional</span> :: randoms2      <span class="comment">! ngpt,nlay,ncol</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="comment">! Local variables</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">integer</span>                              :: ncol, nlay, ngpt, icol, ilay, igpt</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">integer</span>                              :: cloud_lay_fst, cloud_lay_lst</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keywordtype">    real</span>(wp)                             :: rho</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(size(randoms,1))</span> :: local_rands</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordtype">logical</span>,  <span class="keywordtype">dimension(size(randoms,2))</span> :: cloud_mask_layer</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordtype">logical</span>                              :: l_use_overlap_param = .false.</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">logical</span>                              :: l_use_second_rng = .false.</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordtype">character(len=128)</span>                   :: error_msg</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="comment">! Array dimensions</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    ncol = <span class="keyword">size</span>(randoms, 3)</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    nlay = <span class="keyword">size</span>(randoms, 2)</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    ngpt = <span class="keyword">size</span>(randoms, 1)</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="comment">! Using cloud-overlap parameter (alpha)?</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordflow">if</span> (<span class="keyword">present</span>(overlap_param)) l_use_overlap_param = .true.</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="comment">! Using a second RNG?</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordflow">if</span> (<span class="keyword">present</span>(randoms2)) l_use_second_rng = .true.</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="comment">! Construct the cloud mask for each column</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordflow">do</span> icol = 1, ncol</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>       cloud_mask_layer(1:nlay) = cloud_frac(icol,1:nlay) &gt; 0._wp</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>       <span class="keywordflow">if</span>(.not. any(cloud_mask_layer)) <span class="keywordflow">then</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>          cloud_mask(icol,1:nlay,1:ngpt) = .false.</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>          cycle</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="keywordflow">       end if</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>       cloud_lay_fst = findloc(cloud_mask_layer, .true., dim=1)</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>       cloud_lay_lst = findloc(cloud_mask_layer, .true., dim=1, back = .true.)</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>       cloud_mask(icol,1:cloud_lay_fst,1:ngpt) = .false.</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>       </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>       ilay = cloud_lay_fst</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>       local_rands(1:ngpt) = randoms(1:ngpt,cloud_lay_fst,icol)</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>       cloud_mask(icol,ilay,1:ngpt) = local_rands(1:ngpt) &gt; (1._wp - cloud_frac(icol,ilay))</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>       <span class="keywordflow">do</span> ilay = cloud_lay_fst+1, cloud_lay_lst</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>          <span class="comment">! ################################################################################</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>          <span class="comment">! Max-random overlap</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>          <span class="comment">!   new  random deviates if the adjacent layer isn&#39;t cloudy</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>          <span class="comment">!   same random deviates if the adjacent layer is    cloudy</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>          <span class="comment">! ################################################################################</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>          <span class="keywordflow">if</span> (.not. l_use_overlap_param) <span class="keywordflow">then</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>             <span class="keywordflow">if</span>(cloud_mask_layer(ilay)) <span class="keywordflow">then</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                <span class="keywordflow">if</span>(.not. cloud_mask_layer(ilay-1)) local_rands(1:ngpt) = randoms(1:ngpt,ilay,icol)</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                cloud_mask(icol,ilay,1:ngpt) = local_rands(1:ngpt) &gt; (1._wp - cloud_frac(icol,ilay))</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>             <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                cloud_mask(icol,ilay,1:ngpt) = .false.</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="keywordflow">             end if</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="keywordflow">          end if</span>   <span class="comment">! END COND: Maximum-random overlap</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>          <span class="comment">! ################################################################################</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>          <span class="comment">! Exponential-random overlap</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>          <span class="comment">!   new  random deviates if the adjacent layer isn&#39;t cloudy</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>          <span class="comment">!   correlated  deviates if the adjacent layer is    cloudy</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>          <span class="comment">! ################################################################################</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>          <span class="keywordflow">if</span> (l_use_overlap_param) <span class="keywordflow">then</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>             <span class="keywordflow">if</span>(cloud_mask_layer(ilay)) <span class="keywordflow">then</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                <span class="keywordflow">if</span>(cloud_mask_layer(ilay-1)) <span class="keywordflow">then</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                   <span class="comment">! Create random deviates correlated between this layer and the previous layer</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                   <span class="comment">!    (have to remove mean value before enforcing correlation).</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                   rho = overlap_param(icol,ilay-1)</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                   local_rands(1:ngpt) =  rho*(local_rands(1:ngpt)      -0.5_wp) + &amp;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                        sqrt(1._wp-rho*rho)*(randoms(1:ngpt,ilay,icol)-0.5_wp) + 0.5_wp</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                   local_rands(1:ngpt) = randoms(1:ngpt,ilay,icol)</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="keywordflow">                end if</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                cloud_mask(icol,ilay,1:ngpt) = local_rands(1:ngpt) &gt; (1._wp - cloud_frac(icol,ilay))</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="keywordflow">             endif</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="keywordflow">          endif</span>   <span class="comment">! END COND: Exponential/Exponential-random overlap</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>          <span class="comment">! ################################################################################</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>          <span class="comment">! Exponential-decorrelation overlap</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>          <span class="comment">!   new  random deviates if the adjacent layer isn&#39;t cloudy</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>          <span class="comment">!   correlated  deviates if the adjacent layer is    cloudy and decorrelation-length</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>          <span class="comment">! ################################################################################        </span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>          <span class="keywordflow">if</span> (l_use_overlap_param .and. l_use_second_rng) <span class="keywordflow">then</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>             <span class="keywordflow">where</span>(randoms2(1:ngpt,ilay,icol) .le. overlap_param(icol,ilay-1))</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                cloud_mask(icol,ilay,1:ngpt) = randoms(1:ngpt,ilay-1,icol) &gt; (1._wp - cloud_frac(icol,ilay))</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>             <span class="keywordflow">elsewhere</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                cloud_mask(icol,ilay,1:ngpt) = randoms(1:ngpt,ilay,icol)   &gt; (1._wp - cloud_frac(icol,ilay))</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="keywordflow">             end where</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="keywordflow">          endif</span>     <span class="comment">! END COND: Exponential decorrelation-length</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="keywordflow">       end do</span>    <span class="comment">! END LOOP: Layers</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>       </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>       <span class="comment">! Set cloud-mask in layer below clouds to false      </span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>       cloud_mask(icol,cloud_lay_lst+1:nlay, 1:ngpt) = .false.</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="keywordflow">    end do</span>      <span class="comment">! END LOOP: Columns</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    </div>
+</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  <span class="keyword">end subroutine </span>sampled_mask</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment"></span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">!&gt; Apply a true/false cloud mask to a homogeneous field</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">!!   This could be a kernel</span></div>
+<div class="foldopen" id="foldopen00180" data-start="" data-end="">
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="namespacerrtmgp__sampling_a9fe6b4010f034c72e700e49395b1939d.html#a9fe6b4010f034c72e700e49395b1939d">  180</a></span>  <span class="keyword">subroutine </span>apply_cloud_mask(ncol,nlay,nbnd,ngpt,band_lims_gpt,cloud_mask,input_field,sampled_field)</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keywordtype">integer</span>,                                <span class="keywordtype">intent(in )</span> :: ncol,nlay,nbnd,ngpt</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="keywordtype">integer</span>,     <span class="keywordtype">dimension(2,nbnd)</span>,         <span class="keywordtype">intent(in )</span> :: band_lims_gpt</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keywordtype">logical</span>,     <span class="keywordtype">dimension(ncol,nlay,ngpt)</span>, <span class="keywordtype">intent(in )</span> :: cloud_mask</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="keywordtype">    real</span>(wp),    <span class="keywordtype">dimension(ncol,nlay,nbnd)</span>, <span class="keywordtype">intent(in )</span> :: input_field</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="keywordtype">    real</span>(wp),    <span class="keywordtype">dimension(ncol,nlay,ngpt)</span>, <span class="keywordtype">intent(out)</span> :: sampled_field</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordtype">integer</span> :: icol,ilay,ibnd,igpt</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="keywordflow">do</span> ibnd = 1, nbnd</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>      <span class="keywordflow">do</span> igpt = band_lims_gpt(1,ibnd), band_lims_gpt(2,ibnd)</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <span class="keywordflow">do</span> ilay = 1, nlay</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>          sampled_field(1:ncol,ilay,igpt) = merge(input_field(1:ncol,ilay,ibnd), 0._wp, cloud_mask(1:ncol,ilay,igpt))</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="keywordflow">        end do</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="keywordflow">      end do</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="keywordflow">    end do</span></div>
+</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  <span class="keyword">end subroutine </span>apply_cloud_mask</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="keyword">end module </span><a class="code hl_namespace" href="namespacerrtmgp__sampling.html">rrtmgp_sampling</a></div>
+<div class="ttc" id="anamespacerrtmgp__sampling_html"><div class="ttname"><a href="namespacerrtmgp__sampling.html">rrtmgp_sampling</a></div><div class="ttdoc">This module provides a simple implementation of sampling for the Monte Carlo Independent Pixel Approx...</div><div class="ttdef"><b>Definition</b> <a href="#l00024">rrtmgp_sampling.F90:24</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_63285dcbbb29a47fa1de6d56a1594fda.html">Radiation</a></li><li class="navelem"><a href="dir_9f35c23b3d705bff0f1e10f4a444795e.html">RRTMGP</a></li><li class="navelem"><b>rrtmgp_sampling.F90</b></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

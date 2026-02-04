@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: GFS RRTMG-LW Main Module</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('group__module__radlw__main.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">GFS RRTMG-LW Main Module </div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>This module includes NCEP's modifications of the RRTMG-LW radiation code from AER.The RRTMG-LW package includes three files:  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+Modules</h2></td></tr>
+<tr class="memitem:module_5Fradlw_5Favplank" id="r_module_5Fradlw_5Favplank"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__radlw__avplank.html">module_radlw_avplank</a></td></tr>
+<tr class="memdesc:namespacemodule__radlw__avplank"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module contains plank flux data. <br /></td></tr>
+<tr class="memitem:module_5Fradlw_5Fref" id="r_module_5Fradlw_5Fref"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__radlw__ref.html">module_radlw_ref</a></td></tr>
+<tr class="memdesc:namespacemodule__radlw__ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module contains reference temperature and pressure. <br /></td></tr>
+<tr class="memitem:module_5Fradlw_5Fcldprlw" id="r_module_5Fradlw_5Fcldprlw"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__radlw__cldprlw.html">module_radlw_cldprlw</a></td></tr>
+<tr class="memdesc:namespacemodule__radlw__cldprlw"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module contains cloud property coefficients. <br /></td></tr>
+<tr class="memitem:module_5Fradlw_5Fkgb01" id="r_module_5Fradlw_5Fkgb01"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__radlw__kgb01.html">module_radlw_kgb01</a></td></tr>
+<tr class="memdesc:namespacemodule__radlw__kgb01"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module sets up absorption coefficients for band 01: 10-350 cm-1 (low - h2o; high - h2o). <br /></td></tr>
+<tr class="memitem:module_5Fradlw_5Fkgb02" id="r_module_5Fradlw_5Fkgb02"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__radlw__kgb02.html">module_radlw_kgb02</a></td></tr>
+<tr class="memdesc:namespacemodule__radlw__kgb02"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module sets up absorption coefficients for band 02: 350-500 cm-1 (low - h2o; high - h2o). <br /></td></tr>
+<tr class="memitem:module_5Fradlw_5Fkgb03" id="r_module_5Fradlw_5Fkgb03"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__radlw__kgb03.html">module_radlw_kgb03</a></td></tr>
+<tr class="memdesc:namespacemodule__radlw__kgb03"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module sets up absorption coefficients for band 03: 500-630 cm-1 (low - h2o, co2; high - h2o, co2). <br /></td></tr>
+<tr class="memitem:module_5Fradlw_5Fkgb04" id="r_module_5Fradlw_5Fkgb04"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__radlw__kgb04.html">module_radlw_kgb04</a></td></tr>
+<tr class="memdesc:namespacemodule__radlw__kgb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module sets up absorption coefficients for band 04: 630-700 cm-1 (low - h2o, co2; high - co2, o3). <br /></td></tr>
+<tr class="memitem:module_5Fradlw_5Fkgb05" id="r_module_5Fradlw_5Fkgb05"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__radlw__kgb05.html">module_radlw_kgb05</a></td></tr>
+<tr class="memdesc:namespacemodule__radlw__kgb05"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module sets up absorption coefficients for band 05: 700-820 cm-1 (low - h2o, co2; high - co2, o3). <br /></td></tr>
+<tr class="memitem:module_5Fradlw_5Fkgb06" id="r_module_5Fradlw_5Fkgb06"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__radlw__kgb06.html">module_radlw_kgb06</a></td></tr>
+<tr class="memdesc:namespacemodule__radlw__kgb06"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module sets up absorption coefficients for band 06: 820-980 cm-1 (low - h2o; high - /). <br /></td></tr>
+<tr class="memitem:module_5Fradlw_5Fkgb07" id="r_module_5Fradlw_5Fkgb07"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__radlw__kgb07.html">module_radlw_kgb07</a></td></tr>
+<tr class="memdesc:namespacemodule__radlw__kgb07"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module sets up absorption coefficients for band 07: 980-1080 cm-1 (low - h2o, o3; high - o3). <br /></td></tr>
+<tr class="memitem:module_5Fradlw_5Fkgb08" id="r_module_5Fradlw_5Fkgb08"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__radlw__kgb08.html">module_radlw_kgb08</a></td></tr>
+<tr class="memdesc:namespacemodule__radlw__kgb08"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module sets up absorption coefficients for band 08: 1080-1180 cm-1 (low - h2o; high - o3). <br /></td></tr>
+<tr class="memitem:module_5Fradlw_5Fkgb09" id="r_module_5Fradlw_5Fkgb09"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__radlw__kgb09.html">module_radlw_kgb09</a></td></tr>
+<tr class="memdesc:namespacemodule__radlw__kgb09"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module sets up absorption coefficients for band 09: 1180-1390 cm-1 (low - h2o, ch4; high - ch4). <br /></td></tr>
+<tr class="memitem:module_5Fradlw_5Fkgb10" id="r_module_5Fradlw_5Fkgb10"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__radlw__kgb10.html">module_radlw_kgb10</a></td></tr>
+<tr class="memdesc:namespacemodule__radlw__kgb10"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module sets up absorption coefficients for band 10: 1390-1480 cm-1 (low - h2o; high - h2o). <br /></td></tr>
+<tr class="memitem:module_5Fradlw_5Fkgb11" id="r_module_5Fradlw_5Fkgb11"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__radlw__kgb11.html">module_radlw_kgb11</a></td></tr>
+<tr class="memdesc:namespacemodule__radlw__kgb11"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module sets up absorption coefficients for band 11: 1480-1800 cm-1 (low - h2o; high - h2o). <br /></td></tr>
+<tr class="memitem:module_5Fradlw_5Fkgb12" id="r_module_5Fradlw_5Fkgb12"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__radlw__kgb12.html">module_radlw_kgb12</a></td></tr>
+<tr class="memdesc:namespacemodule__radlw__kgb12"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module sets up absorption coefficients for band 12: 1800-2080 cm-1 (low - h2o, co2; high - /). <br /></td></tr>
+<tr class="memitem:module_5Fradlw_5Fkgb13" id="r_module_5Fradlw_5Fkgb13"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__radlw__kgb13.html">module_radlw_kgb13</a></td></tr>
+<tr class="memdesc:namespacemodule__radlw__kgb13"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module sets up absorption coefficients for band 13: 2080-2250 cm-1 (low - h2o, n2o; high - /). <br /></td></tr>
+<tr class="memitem:module_5Fradlw_5Fkgb14" id="r_module_5Fradlw_5Fkgb14"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__radlw__kgb14.html">module_radlw_kgb14</a></td></tr>
+<tr class="memdesc:namespacemodule__radlw__kgb14"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module sets up absorption coefficients for band 14: 2250-2380 cm-1 (low - co2; high - co2). <br /></td></tr>
+<tr class="memitem:module_5Fradlw_5Fkgb15" id="r_module_5Fradlw_5Fkgb15"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__radlw__kgb15.html">module_radlw_kgb15</a></td></tr>
+<tr class="memdesc:namespacemodule__radlw__kgb15"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module sets up absorption coefficients for band 15: 2380-2600 cm-1 (low - n2o, co2; high - /). <br /></td></tr>
+<tr class="memitem:module_5Fradlw_5Fkgb16" id="r_module_5Fradlw_5Fkgb16"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__radlw__kgb16.html">module_radlw_kgb16</a></td></tr>
+<tr class="memdesc:namespacemodule__radlw__kgb16"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module sets up absorption coefficients for band 16: 2600-3000 cm-1 (low - h2o, ch4; high - /). <br /></td></tr>
+<tr class="memitem:module_5Fradlw_5Fparameters" id="r_module_5Fradlw_5Fparameters"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__radlw__parameters.html">module_radlw_parameters</a></td></tr>
+<tr class="memdesc:namespacemodule__radlw__parameters"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module contains LW band parameters set up. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions/Subroutines</h2></td></tr>
+<tr class="memitem:gaeb3fc1ab18633529cb7c6446e2cc2df9" id="r_gaeb3fc1ab18633529cb7c6446e2cc2df9"><td class="memItemLeft">subroutine, public&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_gaeb3fc1ab18633529cb7c6446e2cc2df9.html#gaeb3fc1ab18633529cb7c6446e2cc2df9">rrtmg_lw::rrtmg_lw_run</a> (plyr, plvl, tlyr, tlvl, qlyr, olyr, gasvmr_co2, gasvmr_n2o, gasvmr_ch4, gasvmr_o2, gasvmr_co, gasvmr_cfc11, gasvmr_cfc12, gasvmr_cfc22, gasvmr_ccl4, icseed, aeraod, aerssa, sfemis, sfgtmp, dzlyr, delpin, de_lgth, alpha, npts, nlay, nlp1, lprnt, cld_cf, lslwr, top_at_1, iovr, iovr_rand, iovr_maxrand, iovr_max, iovr_dcorr, iovr_exp, iovr_exprand, inc_minor_gas, ilwcliq, ilwcice, isubclw, hlwc, topflx, sfcflx, cldtau, hlw0, hlwb, flxprf, cld_lwp, cld_ref_liq, cld_iwp, cld_ref_ice, cld_rwp, cld_ref_rain, cld_swp, cld_ref_snow, cld_od, errmsg, errflg)</td></tr>
+<tr class="memitem:ga379498533128ca884f9d029ef02e1f25" id="r_ga379498533128ca884f9d029ef02e1f25"><td class="memItemLeft">subroutine, public&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga379498533128ca884f9d029ef02e1f25.html#ga379498533128ca884f9d029ef02e1f25">rrtmg_lw::rlwinit</a> (me, rad_hr_units, inc_minor_gas, ilwcliq, isubclw, iovr, iovr_rand, iovr_maxrand, iovr_max, iovr_dcorr, iovr_exp, iovr_exprand, errflg, errmsg)</td></tr>
+<tr class="memdesc:ga379498533128ca884f9d029ef02e1f25"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine performs calculations necessary for the initialization of the longwave model, which includes non-varying model variables, conversion factors, and look-up tables.  <br /></td></tr>
+<tr class="memitem:ga188f960ab677a1015cf5d08a73f8d065" id="r_ga188f960ab677a1015cf5d08a73f8d065"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga188f960ab677a1015cf5d08a73f8d065.html#ga188f960ab677a1015cf5d08a73f8d065">rrtmg_lw::cldprop</a> (cfrac, cliqp, reliq, cicep, reice, cdat1, cdat2, cdat3, cdat4, nlay, nlp1, ipseed, dz, de_lgth, iovr, alpha, ilwcliq, ilwcice, isubclw, cldfmc, taucld)</td></tr>
+<tr class="memdesc:ga188f960ab677a1015cf5d08a73f8d065"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine computes the cloud optical depth(s) for each cloudy layer and g-point interval.  <br /></td></tr>
+<tr class="memitem:gab60cf43f655ddfaec2df63444c6b899c" id="r_gab60cf43f655ddfaec2df63444c6b899c"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_gab60cf43f655ddfaec2df63444c6b899c.html#gab60cf43f655ddfaec2df63444c6b899c">rrtmg_lw::mcica_subcol</a> (cldf, nlay, ipseed, dz, de_lgth, alpha, iovr, lcloudy)</td></tr>
+<tr class="memdesc:gab60cf43f655ddfaec2df63444c6b899c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This suroutine computes sub-colum cloud profile flag array.  <br /></td></tr>
+<tr class="memitem:ga555eb0bcd1a400265c458cd97ba972de" id="r_ga555eb0bcd1a400265c458cd97ba972de"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga555eb0bcd1a400265c458cd97ba972de.html#ga555eb0bcd1a400265c458cd97ba972de">rrtmg_lw::setcoef</a> (pavel, tavel, tz, stemp, h2ovmr, colamt, coldry, colbrd, nlay, nlp1, laytrop, pklay, pklev, jp, jt, jt1, rfrate, fac00, fac01, fac10, fac11, selffac, selffrac, indself, forfac, forfrac, indfor, minorfrac, scaleminor, scaleminorn2, indminor)</td></tr>
+<tr class="memdesc:ga555eb0bcd1a400265c458cd97ba972de"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine computes various coefficients needed in radiative transfer calculations.  <br /></td></tr>
+<tr class="memitem:ga5b2017b2dfab616e103d102f2e05ec32" id="r_ga5b2017b2dfab616e103d102f2e05ec32"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga5b2017b2dfab616e103d102f2e05ec32.html#ga5b2017b2dfab616e103d102f2e05ec32">rrtmg_lw::rtrn</a> (semiss, delp, cldfrc, taucld, tautot, pklay, pklev, fracs, secdif, nlay, nlp1, totuflux, totdflux, htr, totuclfl, totdclfl, htrcl, htrb)</td></tr>
+<tr class="memdesc:ga5b2017b2dfab616e103d102f2e05ec32"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine computes the upward/downward radiative fluxes, and heating rates for both clear or cloudy atmosphere. Clouds assumed as randomly overlaping in a vertical column.  <br /></td></tr>
+<tr class="memitem:ga07da933ac2e2f41461ac0d2a03d5e206" id="r_ga07da933ac2e2f41461ac0d2a03d5e206"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga07da933ac2e2f41461ac0d2a03d5e206.html#ga07da933ac2e2f41461ac0d2a03d5e206">rrtmg_lw::rtrnmr</a> (semiss, delp, cldfrc, taucld, tautot, pklay, pklev, fracs, secdif, nlay, nlp1, totuflux, totdflux, htr, totuclfl, totdclfl, htrcl, htrb)</td></tr>
+<tr class="memdesc:ga07da933ac2e2f41461ac0d2a03d5e206"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine computes the upward/downward radiative fluxes, and heating rates for both clear or cloudy atmosphere. Clouds are assumed as in maximum-randomly overlaping in a vertical column.  <br /></td></tr>
+<tr class="memitem:ga3faed55d3d5b73b8cb75bba1b85d292b" id="r_ga3faed55d3d5b73b8cb75bba1b85d292b"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga3faed55d3d5b73b8cb75bba1b85d292b.html#ga3faed55d3d5b73b8cb75bba1b85d292b">rrtmg_lw::rtrnmc</a> (semiss, delp, cldfmc, taucld, tautot, pklay, pklev, fracs, secdif, nlay, nlp1, totuflux, totdflux, htr, totuclfl, totdclfl, htrcl, htrb)</td></tr>
+<tr class="memdesc:ga3faed55d3d5b73b8cb75bba1b85d292b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine computes the upward/downward radiative fluxes, and heating rates for both clear or cloudy atmosphere.Clouds are treated with the mcica stochastic approach.  <br /></td></tr>
+<tr class="memitem:ga7a5cbc99583212a0bd0d5f7b87ab1769" id="r_ga7a5cbc99583212a0bd0d5f7b87ab1769"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga7a5cbc99583212a0bd0d5f7b87ab1769.html#ga7a5cbc99583212a0bd0d5f7b87ab1769">rrtmg_lw::taumol</a> (laytrop, pavel, coldry, colamt, colbrd, wx, tauaer, rfrate, fac00, fac01, fac10, fac11, jp, jt, jt1, selffac, selffrac, indself, forfac, forfrac, indfor, minorfrac, scaleminor, scaleminorn2, indminor, nlay, fracs, tautot)</td></tr>
+<tr class="memdesc:ga7a5cbc99583212a0bd0d5f7b87ab1769"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine contains optical depths developed for the rapid radiative transfer model.  <br /></td></tr>
+<tr class="memitem:ga001d1bcd17533f7f920f859ff9a4e60f" id="r_ga001d1bcd17533f7f920f859ff9a4e60f"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga001d1bcd17533f7f920f859ff9a4e60f.html#ga001d1bcd17533f7f920f859ff9a4e60f">taugb01</a></td></tr>
+<tr class="memdesc:ga001d1bcd17533f7f920f859ff9a4e60f"><td class="mdescLeft">&#160;</td><td class="mdescRight">band 1: 10-350 cm-1 (low key - h2o; low minor - n2); (high key - h2o; high minor - n2)  <br /></td></tr>
+<tr class="memitem:ga926415cb51870dda9a90883e01a2ee38" id="r_ga926415cb51870dda9a90883e01a2ee38"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga926415cb51870dda9a90883e01a2ee38.html#ga926415cb51870dda9a90883e01a2ee38">taugb02</a></td></tr>
+<tr class="memdesc:ga926415cb51870dda9a90883e01a2ee38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Band 2: 350-500 cm-1 (low key - h2o; high key - h2o).  <br /></td></tr>
+<tr class="memitem:ga45e39b507d1fc031c80d9c7f06905d4a" id="r_ga45e39b507d1fc031c80d9c7f06905d4a"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga45e39b507d1fc031c80d9c7f06905d4a.html#ga45e39b507d1fc031c80d9c7f06905d4a">taugb03</a></td></tr>
+<tr class="memdesc:ga45e39b507d1fc031c80d9c7f06905d4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Band 3: 500-630 cm-1 (low key - h2o,co2; low minor - n2o); (high key - h2o,co2; high minor - n2o).  <br /></td></tr>
+<tr class="memitem:gae69174bcf1a87dc7a5baffac69797d07" id="r_gae69174bcf1a87dc7a5baffac69797d07"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_gae69174bcf1a87dc7a5baffac69797d07.html#gae69174bcf1a87dc7a5baffac69797d07">taugb04</a></td></tr>
+<tr class="memdesc:gae69174bcf1a87dc7a5baffac69797d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Band 4: 630-700 cm-1 (low key - h2o,co2; high key - o3,co2).  <br /></td></tr>
+<tr class="memitem:ga92653ffcd20ff247a00eaf3339cba6df" id="r_ga92653ffcd20ff247a00eaf3339cba6df"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga92653ffcd20ff247a00eaf3339cba6df.html#ga92653ffcd20ff247a00eaf3339cba6df">taugb05</a></td></tr>
+<tr class="memdesc:ga92653ffcd20ff247a00eaf3339cba6df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Band 5: 700-820 cm-1 (low key - h2o,co2; low minor - o3, ccl4) (high key - o3,co2).  <br /></td></tr>
+<tr class="memitem:ga7190d415614aa35deefacff1041d4719" id="r_ga7190d415614aa35deefacff1041d4719"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga7190d415614aa35deefacff1041d4719.html#ga7190d415614aa35deefacff1041d4719">taugb06</a></td></tr>
+<tr class="memdesc:ga7190d415614aa35deefacff1041d4719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Band 6: 820-980 cm-1 (low key - h2o; low minor - co2) (high key - none; high minor - cfc11, cfc12).  <br /></td></tr>
+<tr class="memitem:ga2208d86ae0712a0ca426bbe96de825bc" id="r_ga2208d86ae0712a0ca426bbe96de825bc"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga2208d86ae0712a0ca426bbe96de825bc.html#ga2208d86ae0712a0ca426bbe96de825bc">taugb07</a></td></tr>
+<tr class="memdesc:ga2208d86ae0712a0ca426bbe96de825bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Band 7: 980-1080 cm-1 (low key - h2o,o3; low minor - co2) (high key - o3; high minor - co2).  <br /></td></tr>
+<tr class="memitem:ga1447d5bda5b521d27171e61881684183" id="r_ga1447d5bda5b521d27171e61881684183"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga1447d5bda5b521d27171e61881684183.html#ga1447d5bda5b521d27171e61881684183">taugb08</a></td></tr>
+<tr class="memdesc:ga1447d5bda5b521d27171e61881684183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Band 8: 1080-1180 cm-1 (low key - h2o; low minor - co2,o3,n2o) (high key - o3; high minor - co2, n2o).  <br /></td></tr>
+<tr class="memitem:ga889abbaaa2d421c0c3dc820e2004414d" id="r_ga889abbaaa2d421c0c3dc820e2004414d"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga889abbaaa2d421c0c3dc820e2004414d.html#ga889abbaaa2d421c0c3dc820e2004414d">taugb09</a></td></tr>
+<tr class="memdesc:ga889abbaaa2d421c0c3dc820e2004414d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Band 9: 1180-1390 cm-1 (low key - h2o,ch4; low minor - n2o) (high key - ch4; high minor - n2o).  <br /></td></tr>
+<tr class="memitem:ga74c1cb8390daff1e5ce5e863c50b7873" id="r_ga74c1cb8390daff1e5ce5e863c50b7873"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga74c1cb8390daff1e5ce5e863c50b7873.html#ga74c1cb8390daff1e5ce5e863c50b7873">taugb10</a></td></tr>
+<tr class="memdesc:ga74c1cb8390daff1e5ce5e863c50b7873"><td class="mdescLeft">&#160;</td><td class="mdescRight">Band 10: 1390-1480 cm-1 (low key - h2o; high key - h2o).  <br /></td></tr>
+<tr class="memitem:ga573fd5b3580d6bbf5bfa2f01ee547034" id="r_ga573fd5b3580d6bbf5bfa2f01ee547034"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga573fd5b3580d6bbf5bfa2f01ee547034.html#ga573fd5b3580d6bbf5bfa2f01ee547034">taugb11</a></td></tr>
+<tr class="memdesc:ga573fd5b3580d6bbf5bfa2f01ee547034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Band 11: 1480-1800 cm-1 (low - h2o; low minor - o2) (high key - h2o; high minor - o2).  <br /></td></tr>
+<tr class="memitem:gae56eaa9e3b897ca235d4d6b271cc1e47" id="r_gae56eaa9e3b897ca235d4d6b271cc1e47"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_gae56eaa9e3b897ca235d4d6b271cc1e47.html#gae56eaa9e3b897ca235d4d6b271cc1e47">taugb12</a></td></tr>
+<tr class="memdesc:gae56eaa9e3b897ca235d4d6b271cc1e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Band 12: 1800-2080 cm-1 (low - h2o,co2; high - nothing).  <br /></td></tr>
+<tr class="memitem:ga2ac7254d2dcff516e8e44b8b679302c0" id="r_ga2ac7254d2dcff516e8e44b8b679302c0"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga2ac7254d2dcff516e8e44b8b679302c0.html#ga2ac7254d2dcff516e8e44b8b679302c0">taugb13</a></td></tr>
+<tr class="memdesc:ga2ac7254d2dcff516e8e44b8b679302c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Band 13: 2080-2250 cm-1 (low key-h2o,n2o; high minor-o3 minor).  <br /></td></tr>
+<tr class="memitem:ga26140cbe1a3d6119b56cf5c2d539670e" id="r_ga26140cbe1a3d6119b56cf5c2d539670e"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga26140cbe1a3d6119b56cf5c2d539670e.html#ga26140cbe1a3d6119b56cf5c2d539670e">taugb14</a></td></tr>
+<tr class="memdesc:ga26140cbe1a3d6119b56cf5c2d539670e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Band 14: 2250-2380 cm-1 (low - co2; high - co2).  <br /></td></tr>
+<tr class="memitem:ga93b5c0ae0525697ffffb6228581a301c" id="r_ga93b5c0ae0525697ffffb6228581a301c"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga93b5c0ae0525697ffffb6228581a301c.html#ga93b5c0ae0525697ffffb6228581a301c">taugb15</a></td></tr>
+<tr class="memdesc:ga93b5c0ae0525697ffffb6228581a301c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Band 15: 2380-2600 cm-1 (low - n2o,co2; low minor - n2) (high - nothing).  <br /></td></tr>
+<tr class="memitem:ga942ce0031745cd1b3b4ebc3915970554" id="r_ga942ce0031745cd1b3b4ebc3915970554"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga942ce0031745cd1b3b4ebc3915970554.html#ga942ce0031745cd1b3b4ebc3915970554">taugb16</a></td></tr>
+<tr class="memdesc:ga942ce0031745cd1b3b4ebc3915970554"><td class="mdescLeft">&#160;</td><td class="mdescRight">Band 16: 2600-3250 cm-1 (low key- h2o,ch4; high key - ch4).  <br /></td></tr>
+<tr class="memitem:ga76498a454ab718f2d83c666c2bd4591c" id="r_ga76498a454ab718f2d83c666c2bd4591c"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__module__radlw__main_ga76498a454ab718f2d83c666c2bd4591c.html#ga76498a454ab718f2d83c666c2bd4591c">rrtmg_lw::cldprmc</a> (nlayers, inflag, iceflag, liqflag, cldfmc, ciwpmc, clwpmc, cswpmc, reicmc, relqmc, resnmc, ncbands, taucmc, errmsg, errflg)</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><ul>
+<li><a class="el" href="radlw__param_8f_source.html">radlw_param.f</a>, which contains:<ul>
+<li><a class="el" href="namespacemodule__radlw__parameters.html" title="This module contains LW band parameters set up.">module_radlw_parameters</a>: band parameters set up</li>
+</ul>
+</li>
+<li><a class="el" href="radlw__datatb_8f_source.html">radlw_datatb.f</a>, which contains modules:<ul>
+<li><a class="el" href="namespacemodule__radlw__avplank.html" title="This module contains plank flux data.">module_radlw_avplank</a>: plank flux data</li>
+<li><a class="el" href="namespacemodule__radlw__ref.html" title="This module contains reference temperature and pressure.">module_radlw_ref</a>: reference temperature and pressure</li>
+<li><a class="el" href="namespacemodule__radlw__cldprlw.html" title="This module contains cloud property coefficients.">module_radlw_cldprlw</a>: cloud property coefficients</li>
+<li>module_radlw_kgbnn: absorption coeffients for 16 bands, where nn = 01-16</li>
+</ul>
+</li>
+<li>radlw_main.f, which contains:<ul>
+<li><a class="el" href="group__module__radlw__main_gaeb3fc1ab18633529cb7c6446e2cc2df9.html#gaeb3fc1ab18633529cb7c6446e2cc2df9">rrtmg_lw_run()</a>: the main LW radiation routine</li>
+<li><a class="el" href="group__module__radlw__main_ga379498533128ca884f9d029ef02e1f25.html#ga379498533128ca884f9d029ef02e1f25" title="This subroutine performs calculations necessary for the initialization of the longwave model,...">rlwinit()</a>: the initialization routine</li>
+</ul>
+</li>
+</ul>
+<dl class="section version"><dt>Version</dt><dd>NCEP LW v5.1 Nov 2012 -RRTMG-LW v4.82</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>2002-2007, Atmospheric &amp; Environmental Research, Inc. (AER). This software may be used, copied, or redistributed as long as it is not sold and this copyright notice is reproduced on each copy made. This model is provided as is without any express or implied warranties. (<a href="http://www.rtweb.aer.com/">http://www.rtweb.aer.com/</a>) </dd></dl>
+<h1 class="doxsection"><a class="anchor" id="arg_table_rrtmg_lw_run"></a>
+Argument Table</h1>
+<h1 class="doxsection"><a class="anchor" id="gen_lwrad"></a>
+RRTMG Longwave Radiation Scheme General Algorithm</h1>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

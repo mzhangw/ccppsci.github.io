@@ -1,0 +1,31 @@
+<map id="snow_age" name="snow_age">
+<area shape="rect" id="Node000001" title=" " alt="" coords="880,319,960,344"/>
+<area shape="rect" id="Node000002" href="$group___noah_m_p___l_s_m_ga9d5adb20aca5b72a7e126136088e20d1.html#ga9d5adb20aca5b72a7e126136088e20d1" title="surface albedos. also fluxes (per unit incoming direct and diffuse radiation) reflected,..." alt="" coords="773,187,832,212"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="895,306,814,215,816,211,900,307"/>
+<area shape="rect" id="Node000009" href="$group___noah_m_p___l_s_m_ga0e44f72a92d8830344fecdb9fb65e6fb.html#ga0e44f72a92d8830344fecdb9fb65e6fb" title="This subroutine is the main CCPP entry point for the NoahMP LSM." alt="" coords="5,347,116,372"/>
+<area shape="poly" id="edge16_Node000001_Node000009" title=" " alt="" coords="888,352,841,381,781,407,714,428,679,435,643,437,465,437,313,437,246,430,163,411,119,395,83,376,84,370,121,390,164,406,247,425,313,432,465,432,643,432,678,429,712,423,779,402,838,376,883,353"/>
+<area shape="rect" id="Node000003" href="$group___noah___l_s_m_ga18a0f02e4a1a32b6cde35cbe67b09908.html#ga18a0f02e4a1a32b6cde35cbe67b09908" title="This subroutine calculates albedo including snow effect (0 &#45;&gt; 1)." alt="" coords="614,5,670,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="791,171,767,112,747,80,723,52,697,36,670,26,670,21,699,31,726,48,752,77,771,110,796,173"/>
+<area shape="rect" id="Node000004" href="$group___noah___l_s_m_ga36e98f3ac91f839b816fd167eab30901.html#ga36e98f3ac91f839b816fd167eab30901" title="This is the entity of GFS Noah LSM model of physics subroutines. It is a soil/veg/snowpack land&#45;surfa..." alt="" coords="422,56,511,82"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="786,173,761,136,743,118,723,103,670,81,613,70,558,66,512,67,511,62,558,61,614,65,671,76,726,99,747,114,765,133,791,174"/>
+<area shape="rect" id="Node000005" href="$group___noah___l_s_m_ga5d624f72a0da3ffcdf7a01fb9862e0e8.html#ga5d624f72a0da3ffcdf7a01fb9862e0e8" title=" " alt="" coords="186,81,352,107"/>
+<area shape="poly" id="edge7_Node000002_Node000005" title=" " alt="" coords="773,176,750,161,724,147,654,130,556,117,353,101,352,96,556,112,655,125,726,142,753,157,778,177"/>
+<area shape="rect" id="Node000006" href="$namespaceclm__lake_a45370a45ff94cf5dc347a180920eb69a.html#a45370a45ff94cf5dc347a180920eb69a" title=" " alt="" coords="563,157,721,183"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="755,192,716,186,716,181,760,191"/>
+<area shape="rect" id="Node000007" href="$group___noah_m_p___l_s_m_ga86c69e134a41160e0c6f06bfb3a654a6.html#ga86c69e134a41160e0c6f06bfb3a654a6" title=" " alt="" coords="559,207,725,248"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="755,208,726,216,724,210,760,207"/>
+<area shape="rect" id="Node000008" href="$group___noah_m_p___l_s_m_gab480f7969dad27ce9e00e559f82c464e.html#gab480f7969dad27ce9e00e559f82c464e" title=" " alt="" coords="221,272,316,298"/>
+<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="781,222,755,246,726,262,671,279,614,291,500,302,396,300,317,294,316,288,396,295,499,296,613,286,669,274,724,257,752,241,776,224"/>
+<area shape="rect" id="Node000010" href="$group___noah_m_p___l_s_m_gaaa3073947247829ad606eea763d888f8.html#gaaa3073947247829ad606eea763d888f8" title="Calculate solar radiation: absorbed &amp; reflected by the ground and canopy." alt="" coords="607,323,677,348"/>
+<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="790,224,763,267,726,306,703,320,678,329,677,324,701,315,723,301,759,264,785,227"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="597,32,513,58,511,54,602,29"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="404,78,354,86,352,81,409,75"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="204,298,165,311,123,329,86,348,84,344,120,325,163,306,208,295"/>
+<area shape="rect" id="Node000011" href="$group___noah_m_p___l_s_m_ga2698d46b5582d11d0d6fc78d49dd796c.html#ga2698d46b5582d11d0d6fc78d49dd796c" title="We use different approaches to deal with subgrid features of radiation transfer and turbulent transfe..." alt="" coords="436,323,497,348"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="589,336,498,338,497,333,594,335"/>
+<area shape="poly" id="edge13_Node000011_Node000008" title=" " alt="" coords="419,322,373,311,317,298,317,292,375,306,424,322"/>
+<area shape="rect" id="Node000012" href="$group___s_a_m_fdeep_ga5e834dec0932a16a98b7d90fd69a9c70.html#ga5e834dec0932a16a98b7d90fd69a9c70" title=" " alt="" coords="164,321,374,347"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="419,336,375,338,374,332,424,335"/>
+<area shape="rect" id="Node000013" href="$group___s_a_m_f__shal_gaf2534c328553470068a75a9aa56b7d56.html#gaf2534c328553470068a75a9aa56b7d56" title=" " alt="" coords="168,371,370,396"/>
+<area shape="poly" id="edge15_Node000011_Node000013" title=" " alt="" coords="424,347,375,362,330,373,329,367,373,357,419,348"/>
+</map>

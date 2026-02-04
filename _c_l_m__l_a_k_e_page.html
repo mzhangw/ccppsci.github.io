@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: Community Land Model (CLM) Lake Model</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_c_l_m__l_a_k_e_page.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Community Land Model (CLM) Lake Model </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1 class="doxsection"><a class="anchor" id="des_clmlake"></a>
+Description</h1>
+<p>The Community Land Model (CLM) lake model is a multi-level one-dimensional lake model that has been implemented within the operational 3-km HRRR and 13-km RAP for small lakes (Benjamin et al. (2022) <a class="el" href="citelist.html#CITEREF_gmd-15-6659-2022">[21]</a>). This implementation is from the Community Land Model version 4.5 (Oleson et al. (2013) <a class="el" href="citelist.html#CITEREF_oleson2013">[155]</a>). Subin et al. (2012) <a class="el" href="citelist.html#CITEREF_subin_2012">[191]</a> describe the 1-d CLM lake model as applied within the Community Earth System Model (CESM) as a component of the overall CESM CLM (Lawrence et al. (2019) <a class="el" href="citelist.html#CITEREF_lawrence_2019">[115]</a>). Gu et al. (2015) <a class="el" href="citelist.html#CITEREF_gu2015">[74]</a> describe the introduction of the CLM lake model into the WRF model and inital experiments using its 1-d solution for both lakes Superior (average depth of 147 m) and Erie (average depth of 19 m).</p>
+<p>The atmospheric inputs into the model are temperature, water vapor, horizontal wind components from the lowest atmospheric level and shortwave and longwave radiative fluxes. The CLM lake model then provides latent heat and sensible heat fluxes back to the atmosphere. It also computes 2-m temperature/moisture, skin temperature, lake temperature, ice fraction, ice thickness, snow water equivalent and snow depth. The CLM lake model divides the vertical lake profile into 10 layers driven by wind-driven eddies. The thickness of the top layer is fixed to 10-cm and the rest of the lake depth is divided evenly into the other 9 layers. Energy transfer (heat and kinetic energy) occurs between lake layers via eddy and molecular diffusion as a function of the vertical temperature gradient. The CLM lake model also uses a 10-layer soil model beneath the lake, a multi-layer ice formation model and up to 5-layer snow-on-ice model. Multiple layers in lake model have the potential to better represent vertical mixing processes in the lake.</p>
+<p>Testing of the CLM lake model within RAP/HRRR applications showed computational efficiency of the model with no change of even 0.1% in run time. The lake/snow variables have to be continuously transfered within the CLM lake model from one forecast to another, constrained by the atmospheric data assimilation. The lake-cycling initialization in RAP/HRRR has been effective overall, owing to accurate hourly estimates of near-surface temperature, moisture and winds, and shortwave and longwave estimates provided to the 1-d CLM lake model every time step (Benjamin et al. (2022) <a class="el" href="citelist.html#CITEREF_gmd-15-6659-2022">[21]</a>). Cycling techniques showed improvements over initializing lake temperatures from the SST analysis, which is problematic for small water bodies. The improvements are particularly eminent during transition periods between cold and warm seasons, and in the regions with anomalous weather conditions. The CLM lake model has the potential to improve surface prediction in the vicinity of small lakes.</p>
+<p>The CLM lake model requires bathymetry for the lake points in the model domain. Grid points are assigned as lake points when the fraction of lake coverage in the grid cell exceeds 50% and when this point is disconnected from oceans. The lake water mask is therefore binary, set to either 1 or 0. This binary approach for models with higher horizontal resolution &mdash; for example, 3-km resolution in in the UFS SRW App &mdash; is capable of capturing the effect of lakes on regional heat and moisture fluxes.</p>
+<p>Lake depths for the RRFS lake configuration (Fig.1) are assigned from a global dataset provided by Kourzeneva et al.(2012) <a class="el" href="citelist.html#CITEREF_kourzeneva_2012">[112]</a>, this dataset is referred to as GLOBv3 bathymetry in the UFS_UTL.</p>
+<div class="image">
+<img src="https://user-images.githubusercontent.com/12705538/250180794-76af93a2-a7ba-4e9a-9478-5657198862b8.png" alt="" width="600"/>
+<div class="caption">
+Figure 1: Lake depths for lakes in the 3-km RRFS domain.</div></div>
+<p>To cold-start the CLM lake model in regional configurations of the UFS:</p>
+<ul>
+<li>Use the CLM option in the input.nml <br  />
+ - lkm = 1 <br  />
+ - iopt_lake = 2</li>
+<li>Lake temperature is initialized from interpolation between SST at the surface and \(-4^oC\) at 50-m depth <br  />
+ - A special case is for the Great Salt Lake, the temperature is limited with +/- 3 K from the bi-weekly climatology</li>
+<li>Temperature for soil under the lake is initialized from bottom lake temperature at the top to the substrate soil temperature at the bottom of soil layer</li>
+<li>Lake ice at the top level is initialized from the GFS ice concentration</li>
+</ul>
+<p>The differences of surface variables from the experimental RRFS 6-h forecast with/without CLM lake model are shown in Figure 2 for 2-m temperature and in Figure 3 for 2-m dewpoint. </p><div class="image">
+<img src="https://user-images.githubusercontent.com/12705538/250180790-63159300-33f6-4b34-9e9c-b65885213c30.png" alt="" width="600"/>
+<div class="caption">
+Figure 2: Differences of 2-m temperature between the RRFS coupled to the CLM model and the RRFS without CLM.</div></div>
+ <div class="image">
+<img src="https://user-images.githubusercontent.com/12705538/250180787-8fc9a820-5f80-4f06-b50a-88b2d20ebc53.png" alt="" width="600"/>
+<div class="caption">
+Figure 3: Differences of 2-m dew point between the RRFS coupled to the CLM model and the RRFS without CLM.</div></div>
+<h1 class="doxsection"><a class="anchor" id="intra_clmlake"></a>
+Intraphysics Communication</h1>
+<ul>
+<li><a class="el" href="namespaceclm__lake_a45370a45ff94cf5dc347a180920eb69a.html#arg_table_clm_lake_run" title="Argument Table">Argument Table</a> </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

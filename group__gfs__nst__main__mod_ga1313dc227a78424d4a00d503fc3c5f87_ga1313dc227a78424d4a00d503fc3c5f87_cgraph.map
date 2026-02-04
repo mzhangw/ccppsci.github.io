@@ -1,0 +1,7 @@
+<map id="nst_module::dtm_1p_zwa" name="nst_module::dtm_1p_zwa">
+<area shape="rect" id="Node000001" title="This subroutine applies xz adjustment." alt="" coords="5,31,176,56"/>
+<area shape="rect" id="Node000002" href="$group__gfs__nst__main__mod_ga2f383e6c00657a19972148586f2de19a.html#ga2f383e6c00657a19972148586f2de19a" title="This subroutine calculates the diurnal warming amount at the top layer with thickness of delz." alt="" coords="236,5,378,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,31,223,28,218,29,176,36"/>
+<area shape="rect" id="Node000003" href="$group__gfs__nst__main__mod_gaab8624dab20cc66f7f2ea228c9729d81.html#gaab8624dab20cc66f7f2ea228c9729d81" title="This subroutine resets the value of xt,xs,xu,xv,xz." alt="" coords="224,55,391,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,50,211,56,205,57,176,56"/>
+</map>

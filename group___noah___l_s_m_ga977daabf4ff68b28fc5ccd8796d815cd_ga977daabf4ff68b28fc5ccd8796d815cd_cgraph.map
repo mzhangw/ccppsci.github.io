@@ -1,0 +1,23 @@
+<map id="shflx" name="shflx">
+<area shape="rect" id="Node000001" title="This subroutine updates the temperature state of the soil column based on the thermal diffusion equat..." alt="" coords="5,153,55,179"/>
+<area shape="rect" id="Node000002" href="$group___noah___l_s_m_gabb602c2b09396e2f94c9556259f5bae4.html#gabb602c2b09396e2f94c9556259f5bae4" title="This subroutine calculates the right hand side of the time tendency term of the soil thermal diffusio..." alt="" coords="110,104,149,130"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,152,98,131,94,135,57,156"/>
+<area shape="rect" id="Node000009" href="$group___noah___l_s_m_ga32e89df3740f968f500900125ae9633d.html#ga32e89df3740f968f500900125ae9633d" title="This subroutine calculates the right hand side of the time tendency term of the soil thermal diffusio..." alt="" coords="103,153,156,179"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="55,164,89,165,85,168,56,169"/>
+<area shape="rect" id="Node000010" href="$group___noah___l_s_m_gacb79bab20ee25c57918575949c15de73.html#gacb79bab20ee25c57918575949c15de73" title="This subroutine calculates/updates the soil temperature field." alt="" coords="103,203,156,228"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="56,176,91,194,86,197,55,181"/>
+<area shape="rect" id="Node000003" href="$group___noah___l_s_m_ga1b241897d00ec3d66eabe9e959d0ce04.html#ga1b241897d00ec3d66eabe9e959d0ce04" title="This subroutine calculates sink/source term of the termal diffusion equation." alt="" coords="206,5,266,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="141,102,202,40,207,39,203,43,206,44,144,106"/>
+<area shape="rect" id="Node000006" href="$group___noah___l_s_m_ga8e248a6da8d1fd3c2e64b76f3bfbea50.html#ga8e248a6da8d1fd3c2e64b76f3bfbea50" title="This subroutine calculates temperature on the boundary of the layer by interpolation of the middle la..." alt="" coords="213,55,259,80"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="147,106,201,83,197,86,150,111"/>
+<area shape="rect" id="Node000007" href="$group___noah___l_s_m_ga8bc3154096e6364c5fcddf884c003bef.html#ga8bc3154096e6364c5fcddf884c003bef" title="This subroutine calculates thermal diffusivity and conductivity of the soil for a given point and tim..." alt="" coords="208,104,265,130"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="148,114,194,116,190,118,149,119"/>
+<area shape="rect" id="Node000008" href="$group___noah___l_s_m_gae50411efeb11ddeb8a0c53010745a95c.html#gae50411efeb11ddeb8a0c53010745a95c" title="This subroutine calculates soil layer average temperature (tavg) in freezing/thawing layer using up,..." alt="" coords="204,153,268,179"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="149,123,196,146,190,147,149,128"/>
+<area shape="rect" id="Node000004" href="$group___noah___l_s_m_ga7c0e713811400259a984b2153834e70c.html#ga7c0e713811400259a984b2153834e70c" title="This subroutine calculates amount of supercooled liquid soil water content if temperature is below 27..." alt="" coords="316,5,367,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="266,16,303,17,298,19,267,21"/>
+<area shape="rect" id="Node000005" href="$group___noah_m_p___l_s_m_gace27cd3a7b4e23955e39e33bd344baae.html#gace27cd3a7b4e23955e39e33bd344baae" title="check surface energy balance and water balance." alt="" coords="415,5,462,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="366,16,402,17,397,19,368,21"/>
+<area shape="rect" id="Node000011" href="$group___noah___l_s_m_ga3d7dabe1147278de865aa4691d5b2de0.html#ga3d7dabe1147278de865aa4691d5b2de0" title="This subroutine inverts (solve) the tri&#45;diagonal matrix problem." alt="" coords="208,203,265,228"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="156,213,195,215,189,216,156,218"/>
+</map>

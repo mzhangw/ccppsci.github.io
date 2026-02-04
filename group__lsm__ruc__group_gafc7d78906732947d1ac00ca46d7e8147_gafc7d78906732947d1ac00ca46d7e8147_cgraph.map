@@ -1,0 +1,5 @@
+<map id="module_sf_ruclsm::soiltemp" name="module_sf_ruclsm::soiltemp">
+<area shape="rect" id="Node000001" title="This subroutine solves energy budget equation and heat diffusion equation." alt="" coords="5,5,190,31"/>
+<area shape="rect" id="Node000002" href="$group__lsm__ruc__group_ga03c426be3516bfb046dfd57c1b89dbbe.html#ga03c426be3516bfb046dfd57c1b89dbbe" title="This subroutine finds the solution of energy budget at the surface from the pre&#45;computed table of sat..." alt="" coords="238,5,400,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,16,225,18,219,18,190,21"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="module_mp_nssl_2mom::gamma_dpr" name="module_mp_nssl_2mom::gamma_dpr">
+<area shape="rect" id="Node000001" title="Douple&#45;precision complete gamma function (single precision input)." alt="" coords="415,29,577,70"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="529,13,518,10,496,8,476,10,464,15,460,20,461,30,457,27,454,19,461,10,475,5,496,3,519,5,534,14"/>
+<area shape="rect" id="Node000002" href="$group__mod__nsslmp_gaa9669dfecb88fa29ceefb152f3a24b9e.html#gaa9669dfecb88fa29ceefb152f3a24b9e" title="NSSL MP setup routine (sets local options and array indices)." alt="" coords="205,29,367,70"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="397,50,368,52,368,47,402,50"/>
+<area shape="rect" id="Node000003" href="$group__nsslmp_ga5b91dc9cad0a4fb77651aeeaacc40854.html#ga5b91dc9cad0a4fb77651aeeaacc40854" title="This subroutine is a wrapper around the nssl_2mom_init()." alt="" coords="5,37,157,62"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="186,50,157,52,157,47,191,49"/>
+</map>

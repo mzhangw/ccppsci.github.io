@@ -1,0 +1,560 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: module_mp_thompson::mp_thompson</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('group__aathompson_gab35ac4001561513747f53afcf6c9ac3b.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="contents">
+<a id="gab35ac4001561513747f53afcf6c9ac3b" name="gab35ac4001561513747f53afcf6c9ac3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab35ac4001561513747f53afcf6c9ac3b">&#9670;&#160;</a></span>mp_thompson()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">subroutine module_mp_thompson::mp_thompson </td>
+          <td>(</td>
+          <td class="paramtype">real(wp), dimension(kts:kte), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>qv1d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(wp), dimension(kts:kte), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>qc1d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(wp), dimension(kts:kte), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>qi1d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(wp), dimension(kts:kte), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>qr1d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(wp), dimension(kts:kte), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>qs1d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(wp), dimension(kts:kte), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>qg1d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(wp), dimension(kts:kte), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>ni1d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(wp), dimension(kts:kte), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>nr1d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(wp), dimension(kts:kte), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>nc1d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(wp), dimension(kts:kte), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>nwfa1d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(wp), dimension(kts:kte), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>nifa1d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(wp), dimension(kts:kte), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>t1d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(wp), dimension(kts:kte), intent(in)</td>          <td class="paramname"><span class="paramname"><em>p1d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(wp), dimension(kts:kte), intent(in)</td>          <td class="paramname"><span class="paramname"><em>w1d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(wp), dimension(kts:kte), intent(in)</td>          <td class="paramname"><span class="paramname"><em>dzq</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>lsml</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(wp), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>pptrain</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(wp), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>pptsnow</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(wp), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>pptgraul</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(wp), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>pptice</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>if</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>wrf_chem</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h1 class="doxsection"><a class="anchor" id="gen_mp_thompson"></a>
+mp_thompson General Algorithm</h1>
+<ul>
+<li>Initialize Source/sink terms. First 2 chars: "pr" represents source/sink of mass while "pn" represents source/sink of number. Next char is one of "v" for water vapor, "r" for rain, "i" for cloud ice, "w" for cloud water, "s" for snow, and "g" for graupel. Next chars represent processes: "de" for sublimation/deposition, "ev" for evaporation, "fz" for freezing, "ml" for melting, "au" for autoconversion, "nu" for ice nucleation, "hm" for Hallet/Mossop secondary ice production, and "c" for collection followed by the character for the species being collected. ALL of these terms are positive (except for deposition/sublimation terms which can switch signs based on super/subsaturation) and are treated as negatives where necessary in the tendency equations.</li>
+</ul>
+<ul>
+<li>Put column of data into local arrays.</li>
+</ul>
+<ul>
+<li>Derive various thermodynamic variables frequently used. Saturation vapor pressure (mixing ratio) over liquid/ice comes from Flatau et al. 1992; enthalpy (latent heat) of vaporization from Bohren &amp; Albrecht 1998; others from Pruppacher &amp; Klett 1978.</li>
+</ul>
+<ul>
+<li>If no existing hydrometeor species and no chance to initiate ice or condense cloud water, just exit quickly!</li>
+</ul>
+<ul>
+<li>Calculate y-intercept, slope, and useful moments for snow.</li>
+</ul>
+<ul>
+<li>All other moments based on reference, 2nd moment. If bm_s.ne.2, then we must compute actual 2nd moment and use as reference.</li>
+</ul>
+<ul>
+<li>Calculate 0th moment. Represents snow number concentration.</li>
+</ul>
+<ul>
+<li>Calculate 1st moment. Useful for depositional growth and melting.</li>
+</ul>
+<ul>
+<li>Calculate bm_s+1 (th) moment. Useful for diameter calcs.</li>
+</ul>
+<ul>
+<li>Calculate bv_s+2 (th) moment. Useful for riming.</li>
+</ul>
+<ul>
+<li>Calculate 1+(bv_s+1)/2 (th) moment. Useful for depositional growth.</li>
+</ul>
+<ul>
+<li>Calculate y-intercept, slope values for graupel.</li>
+</ul>
+<ul>
+<li>Calculate y-intercept, slope values for rain.</li>
+</ul>
+<ul>
+<li>Compute warm-rain process terms (except evap done later).</li>
+</ul>
+<ul>
+<li>Rain self-collection follows Seifert, 1994 and drop break-up follows Verlinde and Cotton, 1993. Updated after Saleeby et al 2022. RAIN2M</li>
+</ul>
+<ul>
+<li>Autoconversion follows Berry &amp; Reinhardt (1974) with characteristic diameters correctly computed from gamma distrib of cloud droplets.</li>
+</ul>
+<ul>
+<li>Rain collecting cloud water. In CE, assume Dc&lt;&lt;Dr and vtc=~0.</li>
+</ul>
+<ul>
+<li>Rain collecting aerosols, wet scavenging.</li>
+</ul>
+<ul>
+<li>Compute all frozen hydrometeor species' process terms.</li>
+</ul>
+<ul>
+<li>Temperature lookup table indexes.</li>
+</ul>
+<ul>
+<li>Cloud water lookup table index.</li>
+</ul>
+<ul>
+<li>Cloud droplet number lookup table index.</li>
+</ul>
+<ul>
+<li>Cloud ice lookup table indexes.</li>
+</ul>
+<ul>
+<li>Rain lookup table indexes.</li>
+</ul>
+<ul>
+<li>Snow lookup table index.</li>
+</ul>
+<ul>
+<li>Graupel lookup table index.</li>
+</ul>
+<ul>
+<li>Deposition/sublimation prefactor (from Srivastava &amp; Coen 1992).</li>
+</ul>
+<ul>
+<li>Snow collecting cloud water. In CE, assume Dc&lt;&lt;Ds and vtc=~0.</li>
+</ul>
+<ul>
+<li>Graupel collecting cloud water. In CE, assume Dc&lt;&lt;Dg and vtc=~0.</li>
+</ul>
+<ul>
+<li>Snow and graupel collecting aerosols, wet scavenging.</li>
+</ul>
+<ul>
+<li>Rain collecting snow. Cannot assume Wisner (1972) approximation or Mizuno (1990) approach so we solve the CE explicitly and store results in lookup table.</li>
+</ul>
+<ul>
+<li>Rain collecting graupel. Cannot assume Wisner (1972) approximation or Mizuno (1990) approach so we solve the CE explicitly and store results in lookup table.</li>
+</ul>
+<ul>
+<li>Put in explicit drop break-up due to collisions.</li>
+</ul>
+<ul>
+<li>Deposition/sublimation of snow/graupel follows Srivastava &amp; Coen (1992)</li>
+</ul>
+<ul>
+<li>A portion of rimed snow converts to graupel but some remains snow. Interp from 15 to 95% as riming factor increases from 5.0 to 30.0 0.028 came from (.75-.15)/(30.-5.). This remains ad-hoc and should be revisited.</li>
+</ul>
+<ul>
+<li>Next IF block handles only those processes below 0C.</li>
+</ul>
+<ul>
+<li>Freezing of supercooled water (rain or cloud) is influenced by dust but still using Bigg 1953 with a temperature adjustment of a few degrees depending on dust concentration. A default value by way of idx_IN is 1.0 per Liter of air is used when dustyIce flag is false. Next, a combination of deposition/condensation freezing using DeMott et al (2010) dust nucleation when water saturated or Phillips et al (2008) when below water saturation; else, without dustyIce flag, use the previous Cooper (1986) temperature-dependent value. Lastly, allow homogeneous freezing of deliquesced aerosols following Koop et al. (2001, Nature). Implemented by T. Eidhammer and G. Thompson 2012Dec18</li>
+</ul>
+<ul>
+<li>Ice nuclei lookup table index.</li>
+</ul>
+<ul>
+<li>Freezing of water drops into graupel/cloud ice (Bigg 1953).</li>
+</ul>
+<ul>
+<li>Deposition nucleation of dust/mineral from DeMott et al (2010) we may need to relax the temperature and ssati constraints.</li>
+</ul>
+<ul>
+<li>Freezing of aqueous aerosols based on Koop et al (2001, Nature)</li>
+</ul>
+<ul>
+<li>Deposition/sublimation of cloud ice (Srivastava &amp; Coen 1992).</li>
+</ul>
+<ul>
+<li>Some cloud ice needs to move into the snow category. Use lookup table that resulted from explicit bin representation of distrib.</li>
+</ul>
+<ul>
+<li>Snow collecting cloud ice. In CE, assume Di&lt;&lt;Ds and vti=~0.</li>
+</ul>
+<ul>
+<li>Rain collecting cloud ice. In CE, assume Di&lt;&lt;Dr and vti=~0.</li>
+</ul>
+<ul>
+<li>Ice multiplication from rime-splinters (Hallet &amp; Mossop 1974).</li>
+</ul>
+<ul>
+<li>Melt snow and graupel and enhance from collisions with liquid. We also need to sublimate snow and graupel if subsaturated.</li>
+</ul>
+<ul>
+<li>This change will be required if users run adaptive time step that results in delta-t that is generally too long to allow cloud water collection by snow/graupel above melting temperature. Credit to Bjorn-Egil Nygaard for discovering.</li>
+</ul>
+<ul>
+<li>Ensure we do not deplete more hydrometeor species than exists.</li>
+</ul>
+<ul>
+<li>If ice supersaturated, ensure sum of depos growth terms does not deplete more vapor than possibly exists. If subsaturated, limit sum of sublimation terms such that vapor does not reproduce ice supersat again.</li>
+</ul>
+<ul>
+<li>Cloud water conservation.</li>
+</ul>
+<ul>
+<li>Cloud ice conservation.</li>
+</ul>
+<ul>
+<li>Rain conservation.</li>
+</ul>
+<ul>
+<li>Snow conservation.</li>
+</ul>
+<ul>
+<li>Graupel conservation.</li>
+</ul>
+<ul>
+<li>Re-enforce proper mass conservation for subsequent elements in case any of the above terms were altered. Thanks P. Blossey. 2009Sep28</li>
+</ul>
+<ul>
+<li>Calculate tendencies of all species but constrain the number of ice to reasonable values.</li>
+</ul>
+<ul>
+<li>Aerosol number tendency</li>
+</ul>
+<ul>
+<li>Water vapor tendency</li>
+</ul>
+<ul>
+<li>Cloud water tendency</li>
+</ul>
+<ul>
+<li>Cloud water number tendency</li>
+</ul>
+<ul>
+<li>Cloud water mass/number balance; keep mass-wt mean size between 1 and 50 microns. Also no more than Nt_c_max drops total.</li>
+</ul>
+<ul>
+<li>Cloud ice mixing ratio tendency</li>
+</ul>
+<ul>
+<li>Cloud ice number tendency.</li>
+</ul>
+<ul>
+<li>Cloud ice mass/number balance; keep mass-wt mean size between 5 and 300 microns. Also no more than 500 xtals per liter.</li>
+</ul>
+<ul>
+<li>Rain tendency</li>
+</ul>
+<ul>
+<li>Rain number tendency</li>
+</ul>
+<ul>
+<li>Rain mass/number balance; keep median volume diameter between 37 microns (D0r*0.75) and 2.5 mm.</li>
+</ul>
+<ul>
+<li>Snow tendency</li>
+</ul>
+<ul>
+<li>Graupel tendency</li>
+</ul>
+<ul>
+<li>Temperature tendency</li>
+</ul>
+<ul>
+<li>Update variables for TAU+1 before condensation &amp; sedimention.</li>
+</ul>
+<ul>
+<li>With tendency-updated mixing ratios, recalculate snow moments and intercepts/slopes of graupel and rain.</li>
+</ul>
+<ul>
+<li>All other moments based on reference, 2nd moment. If bm_s.ne.2, then we must compute actual 2nd moment and use as reference.</li>
+</ul>
+<ul>
+<li>Calculate bm_s+1 (th) moment. Useful for diameter calcs.</li>
+</ul>
+<ul>
+<li>Calculate bm_s+bv_s (th) moment. Useful for sedimentation.</li>
+</ul>
+<ul>
+<li>Calculate y-intercept, slope values for graupel.</li>
+</ul>
+<ul>
+<li>Calculate y-intercept, slope values for rain.</li>
+</ul>
+<ul>
+<li>Cloud water condensation and evaporation. Nucleate cloud droplets using explicit CCN aerosols with hygroscopicity like sulfates using parcel model lookup table results provided by T. Eidhammer. Evap drops using calculation of max drop size capable of evaporating in single timestep and explicit number of drops smaller than Dc_star from lookup table.</li>
+</ul>
+<ul>
+<li>Cloud water lookup table index.</li>
+</ul>
+<ul>
+<li>If still subsaturated, allow rain to evaporate, following Srivastava &amp; Coen (1992).</li>
+</ul>
+<ul>
+<li>Rapidly eliminate near zero values when low humidity (&lt;95%)</li>
+</ul>
+<ul>
+<li>Reduce the rain evaporation in same places as melting graupel occurs. Rationale: falling and simultaneous melting graupel in subsaturated regions will not melt as fast because particle temperature stays at 0C. Also not much shedding of the water from the graupel so likely that the water-coated graupel evaporating much slower than if the water was immediately shed off.</li>
+</ul>
+<ul>
+<li>Find max terminal fallspeed (distribution mass-weighted mean velocity) and use it to determine if we need to split the timestep (var nstep&gt;1). Either way, only bother to do sedimentation below 1st level that contains any sedimenting particles (k=ksed1 on down). New in v3.0+ is computing separate for rain, ice, snow, and graupel species thus making code faster with credit to J. Schmidt.</li>
+</ul>
+<ul>
+<li>Sedimentation of mixing ratio is the integral of v(D)*m(D)*N(D)*dD, whereas neglect m(D) term for number concentration. Therefore, cloud ice has proper differential sedimentation.</li>
+</ul>
+<ul>
+<li>Instantly melt any cloud ice into cloud water if above 0C and instantly freeze any cloud water found below HGFR.</li>
+</ul>
+<ul>
+<li>All tendencies computed, apply and pass back final values to parent.</li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="_thompson_2module__mp__thompson_8_f90_source.html#l01880">1880</a> of file <a class="el" href="_thompson_2module__mp__thompson_8_f90_source.html">module_mp_thompson.F90</a>.</p>
+
+<p class="reference">References <a class="el" href="_thompson_2module__mp__thompson_8_f90_source.html#l05341">activ_ncloud()</a>, <a class="el" href="_thompson_2module__mp__thompson_8_f90_source.html#l05142">eff_aero()</a>, <a class="el" href="_thompson_2module__mp__thompson_8_f90_source.html#l06459">graupel_psd_parameters()</a>, <a class="el" href="_thompson_2module__mp__thompson_8_f90_source.html#l05631">icedemott()</a>, <a class="el" href="_thompson_2module__mp__thompson_8_f90_source.html#l05705">icekoop()</a>, <a class="el" href="_thompson_2module__mp__thompson_8_f90_source.html#l05601">rsif()</a>, and <a class="el" href="_thompson_2module__mp__thompson_8_f90_source.html#l05566">rslf()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group__aathompson_gab35ac4001561513747f53afcf6c9ac3b_gab35ac4001561513747f53afcf6c9ac3b_cgraph.svg" width="383" height="588"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespacemodule__mp__thompson.html">module_mp_thompson</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

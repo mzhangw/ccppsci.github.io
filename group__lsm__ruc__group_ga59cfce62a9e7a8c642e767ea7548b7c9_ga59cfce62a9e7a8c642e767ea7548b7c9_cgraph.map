@@ -1,0 +1,8 @@
+<map id="module_sf_ruclsm::snowseaice" name="module_sf_ruclsm::snowseaice">
+<area shape="rect" id="Node000001" title="This subroutine is called for sea ice with accumulated snow on its surface. It solves energy budget o..." alt="" coords="5,55,210,80"/>
+<area shape="rect" id="Node000002" href="$group__lsm__ruc__group_ga0892c4c726f23c4e4c8317efd197c208.html#ga0892c4c726f23c4e4c8317efd197c208" title="This function computes water vapor mixing ratio at saturation from the precomputed table and a given ..." alt="" coords="261,29,417,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,54,248,52,242,53,210,59"/>
+<area shape="rect" id="Node000003" href="$group__lsm__ruc__group_ga03c426be3516bfb046dfd57c1b89dbbe.html#ga03c426be3516bfb046dfd57c1b89dbbe" title="This subroutine finds the solution of energy budget at the surface from the pre&#45;computed table of sat..." alt="" coords="258,79,420,104"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="210,75,245,81,240,82,210,81"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="300,28,293,21,297,11,313,5,339,3,367,5,383,15,378,14,366,10,339,8,314,10,301,15,298,20,305,30"/>
+</map>
