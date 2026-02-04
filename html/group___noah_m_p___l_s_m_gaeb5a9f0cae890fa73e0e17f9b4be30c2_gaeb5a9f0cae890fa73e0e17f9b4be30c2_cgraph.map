@@ -1,0 +1,25 @@
+<map id="bare_flux" name="bare_flux">
+<area shape="rect" id="Node000001" title="use newton&#45;raphson iteration to solve ground (tg) temperature that balances the surface energy budget..." alt="" coords="5,129,80,155"/>
+<area shape="rect" id="Node000002" href="$group___noah_m_p___l_s_m_gaecaebf370302a4553aafbf34e22f68c7.html#gaecaebf370302a4553aafbf34e22f68c7" title="use polynomials to calculate saturation vapor pressure and derivative with respect to temperature: ov..." alt="" coords="144,5,190,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,127,82,86,126,40,132,37,129,42,129,44,86,90,55,130"/>
+<area shape="rect" id="Node000003" href="$group___noah_m_p___l_s_m_ga4e76a9ee20e3ff7f36f761ffdc781690.html#ga4e76a9ee20e3ff7f36f761ffdc781690" title="compute surface drag coefficient cm for momentum and ch for heat." alt="" coords="137,55,197,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="64,127,132,87,129,91,67,131"/>
+<area shape="rect" id="Node000004" href="$group___noah_m_p___l_s_m_ga8a86a91a2b7884f8fcd1d32a0edc405e.html#ga8a86a91a2b7884f8fcd1d32a0edc405e" title="calculate surface layer exchange coefficients via iteractive process (Chen et al. 1997,..." alt="" coords="137,104,197,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="78,132,123,124,119,128,81,137"/>
+<area shape="rect" id="Node000005" href="$group___noah_m_p___l_s_m_ga5894e4162657666340f3bd83f4b6263d.html#ga5894e4162657666340f3bd83f4b6263d" title="compute surface drag coefficient cm for momentum and ch for heat." alt="" coords="137,153,197,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="79,147,123,156,119,159,80,152"/>
+<area shape="rect" id="Node000006" href="$group___noah_m_p___l_s_m_ga4a88258da12057ced7c9dc5760b53d13.html#ga4a88258da12057ced7c9dc5760b53d13" title=" " alt="" coords="137,203,197,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="66,153,133,193,128,196,66,158"/>
+<area shape="rect" id="Node000012" href="$group___noah_m_p___l_s_m_gae2fa81a8d36349faf818400ee46c6357.html#gae2fa81a8d36349faf818400ee46c6357" title=" " alt="" coords="128,252,206,278"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="53,153,86,194,129,239,132,243,127,242,126,243,82,197,53,158"/>
+<area shape="rect" id="Node000007" href="$group__mynn__sfc_gab8e348eef161b16bada8841a900501c2.html#gab8e348eef161b16bada8841a900501c2" title="this is taken from andreas (2002; j. of hydromet) and andreas et al. (2005; blm)." alt="" coords="265,104,367,130"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="190,200,204,190,227,164,237,151,252,139,263,135,258,138,256,143,241,155,231,167,208,193,193,204"/>
+<area shape="rect" id="Node000008" href="$group___noah_m_p___l_s_m_ga88dbf6bdf1a8097e27b06ddfce89516c.html#ga88dbf6bdf1a8097e27b06ddfce89516c" title="data. the formula for land uses a constant ratio (z_0/7.4) taken from garratt (1992)." alt="" coords="270,153,363,179"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="196,203,263,183,258,186,199,208"/>
+<area shape="rect" id="Node000009" href="$group__mynn__sfc_ga7bbe8445bfcae5adad4fed82a0ecbaee.html#ga7bbe8445bfcae5adad4fed82a0ecbaee" title="this subroutine returns a more robust z/l that best matches the z/l from hogstrom (1996) for unstable..." alt="" coords="271,203,361,228"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="197,213,258,215,253,216,198,218"/>
+<area shape="rect" id="Node000010" href="$group__mynn__sfc_ga25595438cdc181cd5e5e05aa45486a69.html#ga25595438cdc181cd5e5e05aa45486a69" title="this is a modified version of yang et al (2002 qjrms, 2008 jamc) and chen et al (2010,..." alt="" coords="274,252,358,278"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="198,223,263,246,258,247,197,228"/>
+<area shape="rect" id="Node000011" href="$group___noah_m_p___l_s_m_gaa1453a4f904aa171ea91510f464824b3.html#gaa1453a4f904aa171ea91510f464824b3" title=" " alt="" coords="254,301,378,327"/>
+<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="192,226,208,238,231,264,241,276,256,288,263,295,258,294,252,292,237,280,227,267,204,241,191,231"/>
+</map>

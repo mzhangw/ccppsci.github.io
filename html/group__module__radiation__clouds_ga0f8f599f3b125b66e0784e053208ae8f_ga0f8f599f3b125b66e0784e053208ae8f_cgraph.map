@@ -1,0 +1,19 @@
+<map id="module_radiation_clouds::progcld_thompson" name="module_radiation_clouds::progcld_thompson">
+<area shape="rect" id="Node000001" title="This subroutine added by G. Thompson specifically to account for explicit (microphysics&#45;produced) clo..." alt="" coords="5,116,170,157"/>
+<area shape="rect" id="Node000002" href="$group__module__radiation__clouds_gae11bdd130c90bee7cff8741ec4504bce.html#gae11bdd130c90bee7cff8741ec4504bce" title="Cloud fraction scheme by G. Thompson (NCAR&#45;RAL), not intended for combining with any cumulus or shall..." alt="" coords="218,116,382,157"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,134,205,135,200,137,171,139"/>
+<area shape="rect" id="Node000003" href="$group__module__radiation__clouds_gab93b09ad19ec692f8efe39d050618efa.html#gab93b09ad19ec692f8efe39d050618efa" title="Do not alter any grid&#45;explicitly resolved hydrometeors, rather only the supposed amounts due to the c..." alt="" coords="430,5,594,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="331,113,429,57,446,51,441,54,431,61,334,118"/>
+<area shape="rect" id="Node000004" href="$group__module__radiation__clouds_gaec7e19fe843ee220394496a5b4d2ceb1.html#gaec7e19fe843ee220394496a5b4d2ceb1" title="From cloud fraction array, find clouds of multi&#45;level depth and compute a reasonable value of LWP or ..." alt="" coords="430,71,594,111"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="381,116,417,111,412,113,383,121"/>
+<area shape="rect" id="Node000007" href="$group__aathompson_ga878bec15133532309ba3036cd2739510.html#ga878bec15133532309ba3036cd2739510" title="THIS FUNCTION CALCULATES THE ICE SATURATION VAPOR MIXING RATIO AS A FUNCTION OF TEMPERATURE AND PRESS..." alt="" coords="436,160,588,201"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="382,151,423,161,418,162,382,156"/>
+<area shape="rect" id="Node000008" href="$group__aathompson_ga9617073eff52abf98dd295c8cd83ef24.html#ga9617073eff52abf98dd295c8cd83ef24" title="THIS FUNCTION CALCULATES THE LIQUID SATURATION VAPOR MIXING RATIO AS A FUNCTION OF TEMPERATURE AND PR..." alt="" coords="436,249,588,290"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="335,155,468,240,463,241,333,160"/>
+<area shape="rect" id="Node000005" href="$group__module__radiation__clouds_ga8f57a217926f989ce3137a0011976f91.html#ga8f57a217926f989ce3137a0011976f91" title=" " alt="" coords="642,39,807,79"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="594,76,629,73,624,74,595,81"/>
+<area shape="rect" id="Node000006" href="$group__module__radiation__clouds_ga4e4b598c8fc3fa1252be8d3b149ac5f0.html#ga4e4b598c8fc3fa1252be8d3b149ac5f0" title=" " alt="" coords="642,104,807,145"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="594,101,630,109,624,109,595,107"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="472,158,470,150,477,141,491,135,512,133,535,136,550,145,545,144,534,141,512,139,492,141,480,145,475,151,477,161"/>
+<area shape="poly" id="edge9_Node000008_Node000008" title=" " alt="" coords="472,247,470,239,477,230,491,225,512,223,535,225,550,234,545,233,534,230,512,228,492,230,480,235,475,240,477,250"/>
+</map>

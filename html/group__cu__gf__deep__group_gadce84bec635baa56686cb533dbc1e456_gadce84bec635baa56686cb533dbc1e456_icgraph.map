@@ -1,0 +1,10 @@
+<map id="cu_gf_deep::cup_minimi" name="cu_gf_deep::cup_minimi">
+<area shape="rect" id="Node000001" title="Calculates the level at which the minimum value in an array occurs." alt="" coords="422,31,584,56"/>
+<area shape="rect" id="Node000002" href="$group__cu__gf__deep__group_ga6fb15c7cf491936bd0b501eb4a7c3147.html#ga6fb15c7cf491936bd0b501eb4a7c3147" title="Driver for the deep or congestus GF routine." alt="" coords="186,5,374,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="404,33,374,32,375,26,409,33"/>
+<area shape="rect" id="Node000004" href="$group__cu__gf__sh__group_gac3f853aacccfdee63bf9a5e64611683f.html#gac3f853aacccfdee63bf9a5e64611683f" title=" " alt="" coords="200,55,360,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="409,54,361,62,360,56,404,54"/>
+<area shape="rect" id="Node000003" href="$group__cu__gf__group_ga5d2242a3e3ed78e40c6b81ee2538801b.html#ga5d2242a3e3ed78e40c6b81ee2538801b" title="This is the Grell&#45;Freitas convection scheme driver module." alt="" coords="5,23,138,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="168,32,139,38,138,33,173,31"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="182,57,138,54,138,48,187,56"/>
+</map>

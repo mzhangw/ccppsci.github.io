@@ -1,0 +1,9 @@
+<map id="noahmp_glacier_routines::radiation_glacier" name="noahmp_glacier_routines::radiation_glacier">
+<area shape="rect" id="Node000001" title="Compute solar radiation: absorbed &amp; reflected by the ground." alt="" coords="5,71,171,111"/>
+<area shape="rect" id="Node000002" href="$group___noah_m_p___l_s_m_gac231e8b379ab2704f527cafe9a6a92f4.html#gac231e8b379ab2704f527cafe9a6a92f4" title=" " alt="" coords="219,5,384,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,68,220,50,216,53,158,73"/>
+<area shape="rect" id="Node000003" href="$group___noah_m_p___l_s_m_ga613d1d7c1ed2ae1eef0bef9a893801be.html#ga613d1d7c1ed2ae1eef0bef9a893801be" title=" " alt="" coords="219,71,384,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,88,206,90,200,92,171,94"/>
+<area shape="rect" id="Node000004" href="$group___noah_m_p___l_s_m_gabfb2c60fe82d420428209f17e65ddf02.html#gabfb2c60fe82d420428209f17e65ddf02" title=" " alt="" coords="219,136,384,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="157,109,220,130,215,131,156,115"/>
+</map>

@@ -1,0 +1,557 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: module_gfdlmp_param Module Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('namespacemodule__gfdlmp__param.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">module_gfdlmp_param Module Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions/Subroutines</h2></td></tr>
+<tr class="memitem:a3a3d729a2b2278c0f9fde363f409fc8b" id="r_a3a3d729a2b2278c0f9fde363f409fc8b"><td class="memItemLeft">subroutine, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a3a3d729a2b2278c0f9fde363f409fc8b.html#a3a3d729a2b2278c0f9fde363f409fc8b">read_gfdlmp_nml</a> (errmsg, errflg, unit, input_nml_file, fn_nml, version, iostat)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a79dabbc7d0fd3b3dd892c0c1246e054a" id="r_a79dabbc7d0fd3b3dd892c0c1246e054a"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a79dabbc7d0fd3b3dd892c0c1246e054a.html#a79dabbc7d0fd3b3dd892c0c1246e054a">tau_g2r</a> = 600.</td></tr>
+<tr class="memdesc:a79dabbc7d0fd3b3dd892c0c1246e054a"><td class="mdescLeft">&#160;</td><td class="mdescRight">graupel melting to rain time scale (s)  <br /></td></tr>
+<tr class="memitem:ad80b461f8eefdaaa07acb886c567913b" id="r_ad80b461f8eefdaaa07acb886c567913b"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ad80b461f8eefdaaa07acb886c567913b.html#ad80b461f8eefdaaa07acb886c567913b">tau_g2v</a> = 900.</td></tr>
+<tr class="memdesc:ad80b461f8eefdaaa07acb886c567913b"><td class="mdescLeft">&#160;</td><td class="mdescRight">graupel sublimation time scale (s)  <br /></td></tr>
+<tr class="memitem:a873f06aa4e0b8345d694257748fb73d0" id="r_a873f06aa4e0b8345d694257748fb73d0"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a873f06aa4e0b8345d694257748fb73d0.html#a873f06aa4e0b8345d694257748fb73d0">tau_v2g</a> = 21600.</td></tr>
+<tr class="memdesc:a873f06aa4e0b8345d694257748fb73d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">graupel deposition &ndash; make it a slow process time scale (s)  <br /></td></tr>
+<tr class="memitem:a4c33f7de35cdd310bce1f18d2c04552a" id="r_a4c33f7de35cdd310bce1f18d2c04552a"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a4c33f7de35cdd310bce1f18d2c04552a.html#a4c33f7de35cdd310bce1f18d2c04552a">qc_crt</a> = 5.0e-8</td></tr>
+<tr class="memdesc:a4c33f7de35cdd310bce1f18d2c04552a"><td class="mdescLeft">&#160;</td><td class="mdescRight">mini condensate mixing ratio to allow partial cloudiness  <br /></td></tr>
+<tr class="memitem:ad9d9f8c6a9871c6275ceaed3b002049b" id="r_ad9d9f8c6a9871c6275ceaed3b002049b"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ad9d9f8c6a9871c6275ceaed3b002049b.html#ad9d9f8c6a9871c6275ceaed3b002049b">qr0_crt</a> = 1.0e-4</td></tr>
+<tr class="memdesc:ad9d9f8c6a9871c6275ceaed3b002049b"><td class="mdescLeft">&#160;</td><td class="mdescRight">rain to snow or graupel/hail threshold lfo used * mixing ratio * = 1.e-4 (hail in lfo)  <br /></td></tr>
+<tr class="memitem:a06cc310ab99837dae69890db9a77158f" id="r_a06cc310ab99837dae69890db9a77158f"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a06cc310ab99837dae69890db9a77158f.html#a06cc310ab99837dae69890db9a77158f">c_piacr</a> = 5.0</td></tr>
+<tr class="memdesc:a06cc310ab99837dae69890db9a77158f"><td class="mdescLeft">&#160;</td><td class="mdescRight">accretion: rain to ice:  <br /></td></tr>
+<tr class="memitem:a075768577ab6adc567e0894b98cd284d" id="r_a075768577ab6adc567e0894b98cd284d"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a075768577ab6adc567e0894b98cd284d.html#a075768577ab6adc567e0894b98cd284d">c_cracw</a> = 0.9</td></tr>
+<tr class="memdesc:a075768577ab6adc567e0894b98cd284d"><td class="mdescLeft">&#160;</td><td class="mdescRight">rain accretion efficiency  <br /></td></tr>
+<tr class="memitem:ac566cacd723ca588a04faadc5ae33cd9" id="r_ac566cacd723ca588a04faadc5ae33cd9"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ac566cacd723ca588a04faadc5ae33cd9.html#ac566cacd723ca588a04faadc5ae33cd9">alin</a> = 842.0</td></tr>
+<tr class="memdesc:ac566cacd723ca588a04faadc5ae33cd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">"a" in lin1983  <br /></td></tr>
+<tr class="memitem:aaf86af0efd8d1122b1ec75609b18cb89" id="r_aaf86af0efd8d1122b1ec75609b18cb89"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_aaf86af0efd8d1122b1ec75609b18cb89.html#aaf86af0efd8d1122b1ec75609b18cb89">clin</a> = 4.8</td></tr>
+<tr class="memdesc:aaf86af0efd8d1122b1ec75609b18cb89"><td class="mdescLeft">&#160;</td><td class="mdescRight">"c" in lin 1983, 4.8 &ndash; &gt; 6. (to ehance ql &ndash; &gt; qs)  <br /></td></tr>
+<tr class="memitem:a2181c3b9148c2d8ed27ed228285b3671" id="r_a2181c3b9148c2d8ed27ed228285b3671"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a2181c3b9148c2d8ed27ed228285b3671.html#a2181c3b9148c2d8ed27ed228285b3671">fast_sat_adj</a> = .false.</td></tr>
+<tr class="memdesc:a2181c3b9148c2d8ed27ed228285b3671"><td class="mdescLeft">&#160;</td><td class="mdescRight">has fast saturation adjustments  <br /></td></tr>
+<tr class="memitem:a3c5ad7e4644bab953d68b3d53b0f4cca" id="r_a3c5ad7e4644bab953d68b3d53b0f4cca"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a3c5ad7e4644bab953d68b3d53b0f4cca.html#a3c5ad7e4644bab953d68b3d53b0f4cca">use_ccn</a> = .false.</td></tr>
+<tr class="memdesc:a3c5ad7e4644bab953d68b3d53b0f4cca"><td class="mdescLeft">&#160;</td><td class="mdescRight">must be true when prog_ccn is false  <br /></td></tr>
+<tr class="memitem:aff98c1155cb8fd99185dab98f3567127" id="r_aff98c1155cb8fd99185dab98f3567127"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_aff98c1155cb8fd99185dab98f3567127.html#aff98c1155cb8fd99185dab98f3567127">use_ppm</a> = .false.</td></tr>
+<tr class="memdesc:aff98c1155cb8fd99185dab98f3567127"><td class="mdescLeft">&#160;</td><td class="mdescRight">use ppm fall scheme  <br /></td></tr>
+<tr class="memitem:ab0b12ec2f7642e48af391589d35239f5" id="r_ab0b12ec2f7642e48af391589d35239f5"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ab0b12ec2f7642e48af391589d35239f5.html#ab0b12ec2f7642e48af391589d35239f5">mono_prof</a> = .true.</td></tr>
+<tr class="memdesc:ab0b12ec2f7642e48af391589d35239f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform terminal fall with mono ppm scheme  <br /></td></tr>
+<tr class="memitem:aab05eb946dd74e8cb8c26034d49c6f86" id="r_aab05eb946dd74e8cb8c26034d49c6f86"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_aab05eb946dd74e8cb8c26034d49c6f86.html#aab05eb946dd74e8cb8c26034d49c6f86">mp_print</a> = .false.</td></tr>
+<tr class="memdesc:aab05eb946dd74e8cb8c26034d49c6f86"><td class="mdescLeft">&#160;</td><td class="mdescRight">cloud microphysics debugging printout  <br /></td></tr>
+<tr class="memitem:a012f84fdd18d674ecf8761da5fa0a8b9" id="r_a012f84fdd18d674ecf8761da5fa0a8b9"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a012f84fdd18d674ecf8761da5fa0a8b9.html#a012f84fdd18d674ecf8761da5fa0a8b9">de_ice</a> = .false.</td></tr>
+<tr class="memdesc:a012f84fdd18d674ecf8761da5fa0a8b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">to prevent excessive build - up of cloud ice from external sources  <br /></td></tr>
+<tr class="memitem:ab60e2f38066b5aef284e36dc7fb0d83a" id="r_ab60e2f38066b5aef284e36dc7fb0d83a"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ab60e2f38066b5aef284e36dc7fb0d83a.html#ab60e2f38066b5aef284e36dc7fb0d83a">sedi_transport</a> = .true.</td></tr>
+<tr class="memdesc:ab60e2f38066b5aef284e36dc7fb0d83a"><td class="mdescLeft">&#160;</td><td class="mdescRight">transport of momentum in sedimentation  <br /></td></tr>
+<tr class="memitem:a2440ff7b73ff6a4e3cb25040796f0e1c" id="r_a2440ff7b73ff6a4e3cb25040796f0e1c"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a2440ff7b73ff6a4e3cb25040796f0e1c.html#a2440ff7b73ff6a4e3cb25040796f0e1c">cld_min</a> = 0.05</td></tr>
+<tr class="memdesc:a2440ff7b73ff6a4e3cb25040796f0e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) minimum cloud fraction  <br /></td></tr>
+<tr class="memitem:a6a54121cffc7372947f40e65df7641d9" id="r_a6a54121cffc7372947f40e65df7641d9"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a6a54121cffc7372947f40e65df7641d9.html#a6a54121cffc7372947f40e65df7641d9">t_min</a> = 178.</td></tr>
+<tr class="memdesc:a6a54121cffc7372947f40e65df7641d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) min temp to freeze - dry all water vapor  <br /></td></tr>
+<tr class="memitem:ab1121f3b108857849f023b9595d5868f" id="r_ab1121f3b108857849f023b9595d5868f"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ab1121f3b108857849f023b9595d5868f.html#ab1121f3b108857849f023b9595d5868f">t_sub</a> = 184.</td></tr>
+<tr class="memdesc:ab1121f3b108857849f023b9595d5868f"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) min temp for sublimation of cloud ice  <br /></td></tr>
+<tr class="memitem:aa8b1a79080b4667a83d23048a231f327" id="r_aa8b1a79080b4667a83d23048a231f327"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_aa8b1a79080b4667a83d23048a231f327.html#aa8b1a79080b4667a83d23048a231f327">mp_time</a> = 150.</td></tr>
+<tr class="memdesc:aa8b1a79080b4667a83d23048a231f327"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) maximum micro - physics time step (sec)  <br /></td></tr>
+<tr class="memitem:adbb5effafb64c11d37ece88f58405056" id="r_adbb5effafb64c11d37ece88f58405056"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_adbb5effafb64c11d37ece88f58405056.html#adbb5effafb64c11d37ece88f58405056">rh_inc</a> = 0.25</td></tr>
+<tr class="memdesc:adbb5effafb64c11d37ece88f58405056"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) rh increment for complete evaporation of cloud water and cloud ice  <br /></td></tr>
+<tr class="memitem:a1682c6246894d998dac55a30ae8c0299" id="r_a1682c6246894d998dac55a30ae8c0299"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a1682c6246894d998dac55a30ae8c0299.html#a1682c6246894d998dac55a30ae8c0299">rh_inr</a> = 0.25</td></tr>
+<tr class="memdesc:a1682c6246894d998dac55a30ae8c0299"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) rh increment for minimum evaporation of rain  <br /></td></tr>
+<tr class="memitem:a5e1acbc3289a1fa8739150dc398fd40c" id="r_a5e1acbc3289a1fa8739150dc398fd40c"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a5e1acbc3289a1fa8739150dc398fd40c.html#a5e1acbc3289a1fa8739150dc398fd40c">rh_ins</a> = 0.25</td></tr>
+<tr class="memdesc:a5e1acbc3289a1fa8739150dc398fd40c"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) rh increment for sublimation of snow  <br /></td></tr>
+<tr class="memitem:aa01e22741b512ddce48b73ba264617a8" id="r_aa01e22741b512ddce48b73ba264617a8"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_aa01e22741b512ddce48b73ba264617a8.html#aa01e22741b512ddce48b73ba264617a8">tau_r2g</a> = 900.</td></tr>
+<tr class="memdesc:aa01e22741b512ddce48b73ba264617a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) rain freezing during fast_sat time scale (s)  <br /></td></tr>
+<tr class="memitem:ae76025fb35842da6c78f4d06b6e79146" id="r_ae76025fb35842da6c78f4d06b6e79146"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ae76025fb35842da6c78f4d06b6e79146.html#ae76025fb35842da6c78f4d06b6e79146">tau_smlt</a> = 900.</td></tr>
+<tr class="memdesc:ae76025fb35842da6c78f4d06b6e79146"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) snow melting time scale (s)  <br /></td></tr>
+<tr class="memitem:acc3a4505fb883b77a257b972cccab414" id="r_acc3a4505fb883b77a257b972cccab414"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_acc3a4505fb883b77a257b972cccab414.html#acc3a4505fb883b77a257b972cccab414">tau_i2s</a> = 1000.</td></tr>
+<tr class="memdesc:acc3a4505fb883b77a257b972cccab414"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) cloud ice to snow auto-conversion time scale (s)  <br /></td></tr>
+<tr class="memitem:ad68666fa8e07768c42afbb1e9597b13d" id="r_ad68666fa8e07768c42afbb1e9597b13d"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ad68666fa8e07768c42afbb1e9597b13d.html#ad68666fa8e07768c42afbb1e9597b13d">tau_l2r</a> = 900.</td></tr>
+<tr class="memdesc:ad68666fa8e07768c42afbb1e9597b13d"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) cloud water to rain auto-conversion time scale (s)  <br /></td></tr>
+<tr class="memitem:acc472ab3e9c14dc8bcc99397a0a51a0d" id="r_acc472ab3e9c14dc8bcc99397a0a51a0d"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_acc472ab3e9c14dc8bcc99397a0a51a0d.html#acc472ab3e9c14dc8bcc99397a0a51a0d">tau_v2l</a> = 150.</td></tr>
+<tr class="memdesc:acc472ab3e9c14dc8bcc99397a0a51a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) water vapor to cloud water (condensation) time scale (s)  <br /></td></tr>
+<tr class="memitem:ade57e2a8f0240e3714857bbeb27f4b69" id="r_ade57e2a8f0240e3714857bbeb27f4b69"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ade57e2a8f0240e3714857bbeb27f4b69.html#ade57e2a8f0240e3714857bbeb27f4b69">tau_l2v</a> = 300.</td></tr>
+<tr class="memdesc:ade57e2a8f0240e3714857bbeb27f4b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) cloud water to water vapor (evaporation) time scale (s)  <br /></td></tr>
+<tr class="memitem:a89f582f3fe8c9c1c86a61a20f99d04c1" id="r_a89f582f3fe8c9c1c86a61a20f99d04c1"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a89f582f3fe8c9c1c86a61a20f99d04c1.html#a89f582f3fe8c9c1c86a61a20f99d04c1">dw_land</a> = 0.20</td></tr>
+<tr class="memdesc:a89f582f3fe8c9c1c86a61a20f99d04c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) value for subgrid deviation / variability over land  <br /></td></tr>
+<tr class="memitem:a8d3cda230071211e2d64142c22faf9a9" id="r_a8d3cda230071211e2d64142c22faf9a9"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a8d3cda230071211e2d64142c22faf9a9.html#a8d3cda230071211e2d64142c22faf9a9">dw_ocean</a> = 0.10</td></tr>
+<tr class="memdesc:a8d3cda230071211e2d64142c22faf9a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) base value for ocean  <br /></td></tr>
+<tr class="memitem:a565be26ddd231a7430e738f75ec04723" id="r_a565be26ddd231a7430e738f75ec04723"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a565be26ddd231a7430e738f75ec04723.html#a565be26ddd231a7430e738f75ec04723">ccn_o</a> = 90.</td></tr>
+<tr class="memdesc:a565be26ddd231a7430e738f75ec04723"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) ccn over ocean (cm^ - 3)  <br /></td></tr>
+<tr class="memitem:a4f82b66fa84e343d474054ba8d3a2121" id="r_a4f82b66fa84e343d474054ba8d3a2121"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a4f82b66fa84e343d474054ba8d3a2121.html#a4f82b66fa84e343d474054ba8d3a2121">ccn_l</a> = 270.</td></tr>
+<tr class="memdesc:a4f82b66fa84e343d474054ba8d3a2121"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) ccn over land (cm^ - 3)  <br /></td></tr>
+<tr class="memitem:a293aa1c7030c65a0cbea0d04d5a4c15d" id="r_a293aa1c7030c65a0cbea0d04d5a4c15d"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a293aa1c7030c65a0cbea0d04d5a4c15d.html#a293aa1c7030c65a0cbea0d04d5a4c15d">sat_adj0</a> = 0.90</td></tr>
+<tr class="memdesc:a293aa1c7030c65a0cbea0d04d5a4c15d"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) adjustment factor (0: no, 1: full) during fast_sat_adj  <br /></td></tr>
+<tr class="memitem:a0ae525dcef4b22185d8a13cf3148573e" id="r_a0ae525dcef4b22185d8a13cf3148573e"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a0ae525dcef4b22185d8a13cf3148573e.html#a0ae525dcef4b22185d8a13cf3148573e">qi_lim</a> = 1.</td></tr>
+<tr class="memdesc:a0ae525dcef4b22185d8a13cf3148573e"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) cloud ice limiter (0: no, 1: full, &gt;1: extra) to prevent large ice build up  <br /></td></tr>
+<tr class="memitem:ae79f3f748380a6b468521dcf121fba4c" id="r_ae79f3f748380a6b468521dcf121fba4c"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ae79f3f748380a6b468521dcf121fba4c.html#ae79f3f748380a6b468521dcf121fba4c">ql_mlt</a> = 2.0e-3</td></tr>
+<tr class="memdesc:ae79f3f748380a6b468521dcf121fba4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) max value of cloud water allowed from melted cloud ice  <br /></td></tr>
+<tr class="memitem:a10ccd16556d666e2ae2226cda87dc1f7" id="r_a10ccd16556d666e2ae2226cda87dc1f7"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a10ccd16556d666e2ae2226cda87dc1f7.html#a10ccd16556d666e2ae2226cda87dc1f7">qs_mlt</a> = 1.0e-6</td></tr>
+<tr class="memdesc:a10ccd16556d666e2ae2226cda87dc1f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) max cloud water due to snow melt  <br /></td></tr>
+<tr class="memitem:a40a705ff8fd1e732a4fe5ad138bdab3c" id="r_a40a705ff8fd1e732a4fe5ad138bdab3c"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a40a705ff8fd1e732a4fe5ad138bdab3c.html#a40a705ff8fd1e732a4fe5ad138bdab3c">ql_gen</a> = 1.0e-3</td></tr>
+<tr class="memdesc:a40a705ff8fd1e732a4fe5ad138bdab3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) max cloud water generation during remapping step if fast_sat_adj = .t.  <br /></td></tr>
+<tr class="memitem:affb2eac1cd77d7dd9c989c8eb057ac83" id="r_affb2eac1cd77d7dd9c989c8eb057ac83"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_affb2eac1cd77d7dd9c989c8eb057ac83.html#affb2eac1cd77d7dd9c989c8eb057ac83">qi_gen</a> = 1.82e-6</td></tr>
+<tr class="memdesc:affb2eac1cd77d7dd9c989c8eb057ac83"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) max cloud ice generation during remapping step (V1 ONLY. Computed internally in V3)  <br /></td></tr>
+<tr class="memitem:afc468dae354a20356adffec025deb044" id="r_afc468dae354a20356adffec025deb044"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_afc468dae354a20356adffec025deb044.html#afc468dae354a20356adffec025deb044">ql0_max</a> = 2.0e-3</td></tr>
+<tr class="memdesc:afc468dae354a20356adffec025deb044"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) max cloud water value (auto converted to rain)  <br /></td></tr>
+<tr class="memitem:a3f301b6c3953be454917776a4a67a99f" id="r_a3f301b6c3953be454917776a4a67a99f"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a3f301b6c3953be454917776a4a67a99f.html#a3f301b6c3953be454917776a4a67a99f">qi0_max</a> = 1.0e-4</td></tr>
+<tr class="memdesc:a3f301b6c3953be454917776a4a67a99f"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) max cloud ice value (by other sources)  <br /></td></tr>
+<tr class="memitem:a8ecb408b695ccc8e8f21df777a1c932b" id="r_a8ecb408b695ccc8e8f21df777a1c932b"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a8ecb408b695ccc8e8f21df777a1c932b.html#a8ecb408b695ccc8e8f21df777a1c932b">qi0_crt</a> = 1.0e-4</td></tr>
+<tr class="memdesc:a8ecb408b695ccc8e8f21df777a1c932b"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) cloud ice to snow autoconversion threshold (was 1.e-4); qi0_crt is highly dependent on horizontal resolution  <br /></td></tr>
+<tr class="memitem:ad95c311fc3ce79bb27267955dbb1524f" id="r_ad95c311fc3ce79bb27267955dbb1524f"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ad95c311fc3ce79bb27267955dbb1524f.html#ad95c311fc3ce79bb27267955dbb1524f">qs0_crt</a> = 1.0e-3</td></tr>
+<tr class="memdesc:ad95c311fc3ce79bb27267955dbb1524f"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) snow to graupel density threshold (0.6e-3 in purdue lin scheme)  <br /></td></tr>
+<tr class="memitem:aa3a6b105098bbd3746e51a7bba0821bc" id="r_aa3a6b105098bbd3746e51a7bba0821bc"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_aa3a6b105098bbd3746e51a7bba0821bc.html#aa3a6b105098bbd3746e51a7bba0821bc">c_paut</a> = 0.55</td></tr>
+<tr class="memdesc:aa3a6b105098bbd3746e51a7bba0821bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) autoconversion cloud water to rain (use 0.5 to reduce autoconversion)  <br /></td></tr>
+<tr class="memitem:a8598a87ff50c91eb722e863a0ee9543c" id="r_a8598a87ff50c91eb722e863a0ee9543c"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a8598a87ff50c91eb722e863a0ee9543c.html#a8598a87ff50c91eb722e863a0ee9543c">vi_fac</a> = 1.</td></tr>
+<tr class="memdesc:a8598a87ff50c91eb722e863a0ee9543c"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) if const_vi: 1 / 3  <br /></td></tr>
+<tr class="memitem:adfdc19beff8266a8ec88bf35d001587b" id="r_adfdc19beff8266a8ec88bf35d001587b"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_adfdc19beff8266a8ec88bf35d001587b.html#adfdc19beff8266a8ec88bf35d001587b">vs_fac</a> = 1.</td></tr>
+<tr class="memdesc:adfdc19beff8266a8ec88bf35d001587b"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) if const_vs: 1.  <br /></td></tr>
+<tr class="memitem:a881817d2e0b2dbe14ccf1791d0a1308a" id="r_a881817d2e0b2dbe14ccf1791d0a1308a"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a881817d2e0b2dbe14ccf1791d0a1308a.html#a881817d2e0b2dbe14ccf1791d0a1308a">vg_fac</a> = 1.</td></tr>
+<tr class="memdesc:a881817d2e0b2dbe14ccf1791d0a1308a"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) if const_vg: 2.  <br /></td></tr>
+<tr class="memitem:a0709af613ee59cfe4726118e1d58de08" id="r_a0709af613ee59cfe4726118e1d58de08"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a0709af613ee59cfe4726118e1d58de08.html#a0709af613ee59cfe4726118e1d58de08">vr_fac</a> = 1.</td></tr>
+<tr class="memdesc:a0709af613ee59cfe4726118e1d58de08"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) if const_vr: 4.  <br /></td></tr>
+<tr class="memitem:a88d2485da6ba604e050fb66081449937" id="r_a88d2485da6ba604e050fb66081449937"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a88d2485da6ba604e050fb66081449937.html#a88d2485da6ba604e050fb66081449937">vr_max</a> = 12.</td></tr>
+<tr class="memdesc:a88d2485da6ba604e050fb66081449937"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) max fall speed for rain  <br /></td></tr>
+<tr class="memitem:a5f2a1ab4f2de1f3956eb432fea5b1ae7" id="r_a5f2a1ab4f2de1f3956eb432fea5b1ae7"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a5f2a1ab4f2de1f3956eb432fea5b1ae7.html#a5f2a1ab4f2de1f3956eb432fea5b1ae7">rewmin</a> = 5.0</td></tr>
+<tr class="memdesc:a5f2a1ab4f2de1f3956eb432fea5b1ae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) minimum effective radii (liquid)  <br /></td></tr>
+<tr class="memitem:a6db8451dfcebdbe58b68c2a4ac2d8714" id="r_a6db8451dfcebdbe58b68c2a4ac2d8714"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a6db8451dfcebdbe58b68c2a4ac2d8714.html#a6db8451dfcebdbe58b68c2a4ac2d8714">reimin</a> = 10.0</td></tr>
+<tr class="memdesc:a6db8451dfcebdbe58b68c2a4ac2d8714"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) minimum effective radii (ice)  <br /></td></tr>
+<tr class="memitem:a9c6d589936767eadce1180a282b6a607" id="r_a9c6d589936767eadce1180a282b6a607"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a9c6d589936767eadce1180a282b6a607.html#a9c6d589936767eadce1180a282b6a607">reimax</a> = 150.0</td></tr>
+<tr class="memdesc:a9c6d589936767eadce1180a282b6a607"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) maximum effective radii (ice)  <br /></td></tr>
+<tr class="memitem:a31715d16f788492a1a30c556ba0be0a9" id="r_a31715d16f788492a1a30c556ba0be0a9"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a31715d16f788492a1a30c556ba0be0a9.html#a31715d16f788492a1a30c556ba0be0a9">rermax</a> = 10000.0</td></tr>
+<tr class="memdesc:a31715d16f788492a1a30c556ba0be0a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) maximum effective radii (rain)  <br /></td></tr>
+<tr class="memitem:a8d0779dc762959d526461b44524cfbea" id="r_a8d0779dc762959d526461b44524cfbea"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a8d0779dc762959d526461b44524cfbea.html#a8d0779dc762959d526461b44524cfbea">resmin</a> = 150.0</td></tr>
+<tr class="memdesc:a8d0779dc762959d526461b44524cfbea"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) minimum effective radii (snow)  <br /></td></tr>
+<tr class="memitem:a4c903bb89e796e22cfc0b2f6d88a2c98" id="r_a4c903bb89e796e22cfc0b2f6d88a2c98"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a4c903bb89e796e22cfc0b2f6d88a2c98.html#a4c903bb89e796e22cfc0b2f6d88a2c98">resmax</a> = 10000.0</td></tr>
+<tr class="memdesc:a4c903bb89e796e22cfc0b2f6d88a2c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) maximum effective radii (snow)  <br /></td></tr>
+<tr class="memitem:a72488d2b37f21b19cce453f59a4cfffc" id="r_a72488d2b37f21b19cce453f59a4cfffc"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a72488d2b37f21b19cce453f59a4cfffc.html#a72488d2b37f21b19cce453f59a4cfffc">regmax</a> = 10000.0</td></tr>
+<tr class="memdesc:a72488d2b37f21b19cce453f59a4cfffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) maximum effective radii (graupel)  <br /></td></tr>
+<tr class="memitem:a0ded79622bbc4ec77275093125f8a696" id="r_a0ded79622bbc4ec77275093125f8a696"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a0ded79622bbc4ec77275093125f8a696.html#a0ded79622bbc4ec77275093125f8a696">const_vi</a> = .false.</td></tr>
+<tr class="memdesc:a0ded79622bbc4ec77275093125f8a696"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) if .t. the constants are specified by v * _fac  <br /></td></tr>
+<tr class="memitem:a1cd2044fd4989718e45ebbf1ce933402" id="r_a1cd2044fd4989718e45ebbf1ce933402"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a1cd2044fd4989718e45ebbf1ce933402.html#a1cd2044fd4989718e45ebbf1ce933402">const_vs</a> = .false.</td></tr>
+<tr class="memdesc:a1cd2044fd4989718e45ebbf1ce933402"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) if .t. the constants are specified by v * _fac  <br /></td></tr>
+<tr class="memitem:ae879466c5217a84c2d935d03c3d7e0df" id="r_ae879466c5217a84c2d935d03c3d7e0df"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ae879466c5217a84c2d935d03c3d7e0df.html#ae879466c5217a84c2d935d03c3d7e0df">const_vg</a> = .false.</td></tr>
+<tr class="memdesc:ae879466c5217a84c2d935d03c3d7e0df"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) if .t. the constants are specified by v * _fac  <br /></td></tr>
+<tr class="memitem:af9d276ccfdf0269783cc393c2b8aed45" id="r_af9d276ccfdf0269783cc393c2b8aed45"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_af9d276ccfdf0269783cc393c2b8aed45.html#af9d276ccfdf0269783cc393c2b8aed45">const_vr</a> = .false.</td></tr>
+<tr class="memdesc:af9d276ccfdf0269783cc393c2b8aed45"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) if .t. the constants are specified by v * _fac  <br /></td></tr>
+<tr class="memitem:aa01fbcdecb2eb30c3269a00d16566b47" id="r_aa01fbcdecb2eb30c3269a00d16566b47"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_aa01fbcdecb2eb30c3269a00d16566b47.html#aa01fbcdecb2eb30c3269a00d16566b47">z_slope_liq</a> = .true.</td></tr>
+<tr class="memdesc:aa01fbcdecb2eb30c3269a00d16566b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) use linear mono slope for autocconversions  <br /></td></tr>
+<tr class="memitem:a7c58e4420a8bc820c857d6914f720aaa" id="r_a7c58e4420a8bc820c857d6914f720aaa"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a7c58e4420a8bc820c857d6914f720aaa.html#a7c58e4420a8bc820c857d6914f720aaa">do_hail</a> = .false.</td></tr>
+<tr class="memdesc:a7c58e4420a8bc820c857d6914f720aaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) use hail parameters instead of graupel  <br /></td></tr>
+<tr class="memitem:abd46dc44f0c240fe1400b4300205802f" id="r_abd46dc44f0c240fe1400b4300205802f"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_abd46dc44f0c240fe1400b4300205802f.html#abd46dc44f0c240fe1400b4300205802f">do_qa</a> = .true.</td></tr>
+<tr class="memdesc:abd46dc44f0c240fe1400b4300205802f"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) do inline cloud fraction  <br /></td></tr>
+<tr class="memitem:a16f6d4cb4cfbe22bbbec1979a2c8229b" id="r_a16f6d4cb4cfbe22bbbec1979a2c8229b"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a16f6d4cb4cfbe22bbbec1979a2c8229b.html#a16f6d4cb4cfbe22bbbec1979a2c8229b">rad_snow</a> = .true.</td></tr>
+<tr class="memdesc:a16f6d4cb4cfbe22bbbec1979a2c8229b"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) consider snow in cloud fraciton calculation  <br /></td></tr>
+<tr class="memitem:a6a4968eb2e5e2fbedaa39903421db827" id="r_a6a4968eb2e5e2fbedaa39903421db827"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a6a4968eb2e5e2fbedaa39903421db827.html#a6a4968eb2e5e2fbedaa39903421db827">rad_graupel</a> = .true.</td></tr>
+<tr class="memdesc:a6a4968eb2e5e2fbedaa39903421db827"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) consider graupel in cloud fraction calculation  <br /></td></tr>
+<tr class="memitem:aa7ff22cfd86b0f9ceeea815848880bc8" id="r_aa7ff22cfd86b0f9ceeea815848880bc8"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_aa7ff22cfd86b0f9ceeea815848880bc8.html#aa7ff22cfd86b0f9ceeea815848880bc8">rad_rain</a> = .true.</td></tr>
+<tr class="memdesc:aa7ff22cfd86b0f9ceeea815848880bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) consider rain in cloud fraction calculation  <br /></td></tr>
+<tr class="memitem:a60d37939e03d99fa06c8cb070751a35d" id="r_a60d37939e03d99fa06c8cb070751a35d"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a60d37939e03d99fa06c8cb070751a35d.html#a60d37939e03d99fa06c8cb070751a35d">do_sedi_heat</a> = .true.</td></tr>
+<tr class="memdesc:a60d37939e03d99fa06c8cb070751a35d"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) transport of heat in sedimentation  <br /></td></tr>
+<tr class="memitem:a42032a021905dce9c4d4db9ced0d0f73" id="r_a42032a021905dce9c4d4db9ced0d0f73"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a42032a021905dce9c4d4db9ced0d0f73.html#a42032a021905dce9c4d4db9ced0d0f73">prog_ccn</a> = .false.</td></tr>
+<tr class="memdesc:a42032a021905dce9c4d4db9ced0d0f73"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) do prognostic ccn (yi ming's method)  <br /></td></tr>
+<tr class="memitem:a4de673c98069384eebbb7cc77897f1af" id="r_a4de673c98069384eebbb7cc77897f1af"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a4de673c98069384eebbb7cc77897f1af.html#a4de673c98069384eebbb7cc77897f1af">tintqs</a> = .false.</td></tr>
+<tr class="memdesc:a4de673c98069384eebbb7cc77897f1af"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3)  <br /></td></tr>
+<tr class="memitem:a64e9d3153131a09f69f1737cbde3c2ad" id="r_a64e9d3153131a09f69f1737cbde3c2ad"><td class="memItemLeft">integer, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a64e9d3153131a09f69f1737cbde3c2ad.html#a64e9d3153131a09f69f1737cbde3c2ad">icloud_f</a> = 0</td></tr>
+<tr class="memdesc:a64e9d3153131a09f69f1737cbde3c2ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) GFDL cloud scheme 0: subgrid variability based scheme 1: same as 0, but for old fvgfs implementation 2: binary cloud scheme 3: extension of 0  <br /></td></tr>
+<tr class="memitem:a2f2bbcfd04c09f1cd20d0f5a3ce4e4c9" id="r_a2f2bbcfd04c09f1cd20d0f5a3ce4e4c9"><td class="memItemLeft">integer, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a2f2bbcfd04c09f1cd20d0f5a3ce4e4c9.html#a2f2bbcfd04c09f1cd20d0f5a3ce4e4c9">irain_f</a> = 0</td></tr>
+<tr class="memdesc:a2f2bbcfd04c09f1cd20d0f5a3ce4e4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">(v1/v3) cloud water to rain auto conversion scheme 0: subgrid variability based scheme 1: no subgrid varaibility  <br /></td></tr>
+<tr class="memitem:aa08823c2d5e179e4aeedf95b98ccbd1a" id="r_aa08823c2d5e179e4aeedf95b98ccbd1a"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_aa08823c2d5e179e4aeedf95b98ccbd1a.html#aa08823c2d5e179e4aeedf95b98ccbd1a">tice</a> = 273.16</td></tr>
+<tr class="memdesc:aa08823c2d5e179e4aeedf95b98ccbd1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">freezing temperature (K): ref: GFDL, GFS (DJS: V3=273.15)  <br /></td></tr>
+<tr class="memitem:a01b1281936585d2b56bfd89d2a1b6b99" id="r_a01b1281936585d2b56bfd89d2a1b6b99"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a01b1281936585d2b56bfd89d2a1b6b99.html#a01b1281936585d2b56bfd89d2a1b6b99">tau_imlt</a> = 600.</td></tr>
+<tr class="memdesc:a01b1281936585d2b56bfd89d2a1b6b99"><td class="mdescLeft">&#160;</td><td class="mdescRight">cloud ice melting time scale (s) (DJS: V3=1200.)  <br /></td></tr>
+<tr class="memitem:ac95bafd19546677684ca325d10c1f6b2" id="r_ac95bafd19546677684ca325d10c1f6b2"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ac95bafd19546677684ca325d10c1f6b2.html#ac95bafd19546677684ca325d10c1f6b2">rthresh</a> = 10.0e-6</td></tr>
+<tr class="memdesc:ac95bafd19546677684ca325d10c1f6b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">critical cloud drop radius (micro m) (DJS: v3=20.0e-6)  <br /></td></tr>
+<tr class="memitem:ac54a9717650c9e0fd88304025b99167d" id="r_ac54a9717650c9e0fd88304025b99167d"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ac54a9717650c9e0fd88304025b99167d.html#ac54a9717650c9e0fd88304025b99167d">c_psaci</a> = 0.02</td></tr>
+<tr class="memdesc:ac54a9717650c9e0fd88304025b99167d"><td class="mdescLeft">&#160;</td><td class="mdescRight">accretion: cloud ice to snow (was 0.1 in zetac) (DJS: v3=0.05)  <br /></td></tr>
+<tr class="memitem:a543496ca430d0d25d1ffe28527327986" id="r_a543496ca430d0d25d1ffe28527327986"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a543496ca430d0d25d1ffe28527327986.html#a543496ca430d0d25d1ffe28527327986">c_pgacs</a> = 2.0e-3</td></tr>
+<tr class="memdesc:a543496ca430d0d25d1ffe28527327986"><td class="mdescLeft">&#160;</td><td class="mdescRight">snow to graupel "accretion" eff. (was 0.1 in zetac) (DJS: v3=0.01)  <br /></td></tr>
+<tr class="memitem:a3b84674d0f2a406a7d4a4ef7a73057ee" id="r_a3b84674d0f2a406a7d4a4ef7a73057ee"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a3b84674d0f2a406a7d4a4ef7a73057ee.html#a3b84674d0f2a406a7d4a4ef7a73057ee">vi_max</a> = 0.5</td></tr>
+<tr class="memdesc:a3b84674d0f2a406a7d4a4ef7a73057ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">max fall speed for ice (DJS: v3=1.0)  <br /></td></tr>
+<tr class="memitem:a5ac247319c7a0309ef85a3fbbd563431" id="r_a5ac247319c7a0309ef85a3fbbd563431"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a5ac247319c7a0309ef85a3fbbd563431.html#a5ac247319c7a0309ef85a3fbbd563431">vs_max</a> = 5.0</td></tr>
+<tr class="memdesc:a5ac247319c7a0309ef85a3fbbd563431"><td class="mdescLeft">&#160;</td><td class="mdescRight">max fall speed for snow (DJS: v3=2.0)  <br /></td></tr>
+<tr class="memitem:ab00e1a9e8ff63e1550e97687685cd810" id="r_ab00e1a9e8ff63e1550e97687685cd810"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ab00e1a9e8ff63e1550e97687685cd810.html#ab00e1a9e8ff63e1550e97687685cd810">vg_max</a> = 8.0</td></tr>
+<tr class="memdesc:ab00e1a9e8ff63e1550e97687685cd810"><td class="mdescLeft">&#160;</td><td class="mdescRight">max fall speed for graupel (DJS: v3=12.0)  <br /></td></tr>
+<tr class="memitem:aaca0837bdd4cc84cd8501c407c0bc739" id="r_aaca0837bdd4cc84cd8501c407c0bc739"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_aaca0837bdd4cc84cd8501c407c0bc739.html#aaca0837bdd4cc84cd8501c407c0bc739">rewmax</a> = 10.0</td></tr>
+<tr class="memdesc:aaca0837bdd4cc84cd8501c407c0bc739"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum effective radii (liquid) (DJS: v3=15.0)  <br /></td></tr>
+<tr class="memitem:adc3df3bce6b6adbe7fdcc6b112b1713a" id="r_adc3df3bce6b6adbe7fdcc6b112b1713a"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_adc3df3bce6b6adbe7fdcc6b112b1713a.html#adc3df3bce6b6adbe7fdcc6b112b1713a">rermin</a> = 10.0</td></tr>
+<tr class="memdesc:adc3df3bce6b6adbe7fdcc6b112b1713a"><td class="mdescLeft">&#160;</td><td class="mdescRight">minimum effective radii (rain) (DJS: v3=15.0)  <br /></td></tr>
+<tr class="memitem:a8eeec078e7622652f933dfb8824b7aec" id="r_a8eeec078e7622652f933dfb8824b7aec"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a8eeec078e7622652f933dfb8824b7aec.html#a8eeec078e7622652f933dfb8824b7aec">regmin</a> = 300.0</td></tr>
+<tr class="memdesc:a8eeec078e7622652f933dfb8824b7aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">minimum effective radii (graupel) (DJS: v3=150.0)  <br /></td></tr>
+<tr class="memitem:ad6bd46293c28c8c9014d5220125632ec" id="r_ad6bd46293c28c8c9014d5220125632ec"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ad6bd46293c28c8c9014d5220125632ec.html#ad6bd46293c28c8c9014d5220125632ec">z_slope_ice</a> = .false.</td></tr>
+<tr class="memdesc:ad6bd46293c28c8c9014d5220125632ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">use linear mono slope for autocconversions (DJS: v3=.true.)  <br /></td></tr>
+<tr class="memitem:a42b180a63ee2b41f82b322cb10f72ec7" id="r_a42b180a63ee2b41f82b322cb10f72ec7"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a42b180a63ee2b41f82b322cb10f72ec7.html#a42b180a63ee2b41f82b322cb10f72ec7">do_sedi_w</a> = .false.</td></tr>
+<tr class="memdesc:a42b180a63ee2b41f82b322cb10f72ec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">transport of vertical motion in sedimentation (DJS: v3=.true.)  <br /></td></tr>
+<tr class="memitem:a95db4c9092842464a94c5f54d79f7b3e" id="r_a95db4c9092842464a94c5f54d79f7b3e"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a95db4c9092842464a94c5f54d79f7b3e.html#a95db4c9092842464a94c5f54d79f7b3e">fix_negative</a> = .false.</td></tr>
+<tr class="memdesc:a95db4c9092842464a94c5f54d79f7b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">fix negative water species (DJS: v3=.true.)  <br /></td></tr>
+<tr class="memitem:a620048825583aeb8f61066ebddd83b22" id="r_a620048825583aeb8f61066ebddd83b22"><td class="memItemLeft">integer, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a620048825583aeb8f61066ebddd83b22.html#a620048825583aeb8f61066ebddd83b22">reiflag</a> = 1</td></tr>
+<tr class="memdesc:a620048825583aeb8f61066ebddd83b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">cloud ice effective radius scheme (DJS: v3=5) 1: Heymsfield and Mcfarquhar (1996) 2: Donner et al. (1997) 3: Fu (2007) 4: Kristjansson et al. (2000) 5: Wyser (1998) 6: Sun and Rikus (1999), Sun (2001) 7: effective radius  <br /></td></tr>
+<tr class="memitem:a37d1b3c60cb3d00cd576c52ba79d7783" id="r_a37d1b3c60cb3d00cd576c52ba79d7783"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a37d1b3c60cb3d00cd576c52ba79d7783.html#a37d1b3c60cb3d00cd576c52ba79d7783">const_vw</a> = .false.</td></tr>
+<tr class="memdesc:a37d1b3c60cb3d00cd576c52ba79d7783"><td class="mdescLeft">&#160;</td><td class="mdescRight">if .ture., the constants are specified by v * _fac  <br /></td></tr>
+<tr class="memitem:af30d1d308047998781c182060266b1ba" id="r_af30d1d308047998781c182060266b1ba"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_af30d1d308047998781c182060266b1ba.html#af30d1d308047998781c182060266b1ba">do_sedi_uv</a> = .true.</td></tr>
+<tr class="memdesc:af30d1d308047998781c182060266b1ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">transport of horizontal momentum in sedimentation  <br /></td></tr>
+<tr class="memitem:abfcf21ade972eef0298fc9e88e67d9c4" id="r_abfcf21ade972eef0298fc9e88e67d9c4"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_abfcf21ade972eef0298fc9e88e67d9c4.html#abfcf21ade972eef0298fc9e88e67d9c4">do_sedi_melt</a> = .true.</td></tr>
+<tr class="memdesc:abfcf21ade972eef0298fc9e88e67d9c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">melt cloud ice, snow, and graupel during sedimentation  <br /></td></tr>
+<tr class="memitem:ab540b7cfdac06b6c6590de84831966d9" id="r_ab540b7cfdac06b6c6590de84831966d9"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ab540b7cfdac06b6c6590de84831966d9.html#ab540b7cfdac06b6c6590de84831966d9">liq_ice_combine</a> = .false.</td></tr>
+<tr class="memdesc:ab540b7cfdac06b6c6590de84831966d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">combine all liquid water, combine all solid water  <br /></td></tr>
+<tr class="memitem:a904e7f6bde2efe2bd5e8038ad3731d56" id="r_a904e7f6bde2efe2bd5e8038ad3731d56"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a904e7f6bde2efe2bd5e8038ad3731d56.html#a904e7f6bde2efe2bd5e8038ad3731d56">snow_grauple_combine</a> = .true.</td></tr>
+<tr class="memdesc:a904e7f6bde2efe2bd5e8038ad3731d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">combine snow and graupel  <br /></td></tr>
+<tr class="memitem:a7f6ba355fbec8fa26342e01e8140e4d8" id="r_a7f6ba355fbec8fa26342e01e8140e4d8"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a7f6ba355fbec8fa26342e01e8140e4d8.html#a7f6ba355fbec8fa26342e01e8140e4d8">use_rhc_cevap</a> = .false.</td></tr>
+<tr class="memdesc:a7f6ba355fbec8fa26342e01e8140e4d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">cap of rh for cloud water evaporation  <br /></td></tr>
+<tr class="memitem:a8b81487ca4a67b1843b7df45a0bdb9e8" id="r_a8b81487ca4a67b1843b7df45a0bdb9e8"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a8b81487ca4a67b1843b7df45a0bdb9e8.html#a8b81487ca4a67b1843b7df45a0bdb9e8">use_rhc_revap</a> = .false.</td></tr>
+<tr class="memdesc:a8b81487ca4a67b1843b7df45a0bdb9e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">cap of rh for rain evaporation  <br /></td></tr>
+<tr class="memitem:a935584071d1f8a6b06fd73b280abeb80" id="r_a935584071d1f8a6b06fd73b280abeb80"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a935584071d1f8a6b06fd73b280abeb80.html#a935584071d1f8a6b06fd73b280abeb80">do_cld_adj</a> = .false.</td></tr>
+<tr class="memdesc:a935584071d1f8a6b06fd73b280abeb80"><td class="mdescLeft">&#160;</td><td class="mdescRight">do cloud fraction adjustment  <br /></td></tr>
+<tr class="memitem:a663cf824c0f32b6b58a7c18619d410ae" id="r_a663cf824c0f32b6b58a7c18619d410ae"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a663cf824c0f32b6b58a7c18619d410ae.html#a663cf824c0f32b6b58a7c18619d410ae">do_evap_timescale</a> = .true.</td></tr>
+<tr class="memdesc:a663cf824c0f32b6b58a7c18619d410ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">whether to apply a timescale to evaporation  <br /></td></tr>
+<tr class="memitem:ab61c891b7049900da63a8074ae8bc7cd" id="r_ab61c891b7049900da63a8074ae8bc7cd"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ab61c891b7049900da63a8074ae8bc7cd.html#ab61c891b7049900da63a8074ae8bc7cd">do_cond_timescale</a> = .false.</td></tr>
+<tr class="memdesc:ab61c891b7049900da63a8074ae8bc7cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">whether to apply a timescale to condensation  <br /></td></tr>
+<tr class="memitem:a1594fbd11f211d8bd40262d20655127a" id="r_a1594fbd11f211d8bd40262d20655127a"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a1594fbd11f211d8bd40262d20655127a.html#a1594fbd11f211d8bd40262d20655127a">consv_checker</a> = .false.</td></tr>
+<tr class="memdesc:a1594fbd11f211d8bd40262d20655127a"><td class="mdescLeft">&#160;</td><td class="mdescRight">turn on energy and water conservation checker  <br /></td></tr>
+<tr class="memitem:ab5fb92c510b04b762baad50d0ae1e8c3" id="r_ab5fb92c510b04b762baad50d0ae1e8c3"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ab5fb92c510b04b762baad50d0ae1e8c3.html#ab5fb92c510b04b762baad50d0ae1e8c3">do_warm_rain_mp</a> = .false.</td></tr>
+<tr class="memdesc:ab5fb92c510b04b762baad50d0ae1e8c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">do warm rain cloud microphysics only  <br /></td></tr>
+<tr class="memitem:a464e9e40dabf4abc16071c40720e9675" id="r_a464e9e40dabf4abc16071c40720e9675"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a464e9e40dabf4abc16071c40720e9675.html#a464e9e40dabf4abc16071c40720e9675">do_wbf</a> = .false.</td></tr>
+<tr class="memdesc:a464e9e40dabf4abc16071c40720e9675"><td class="mdescLeft">&#160;</td><td class="mdescRight">do Wegener Bergeron Findeisen process  <br /></td></tr>
+<tr class="memitem:a975710e0cceade8cd78022d240e407ef" id="r_a975710e0cceade8cd78022d240e407ef"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a975710e0cceade8cd78022d240e407ef.html#a975710e0cceade8cd78022d240e407ef">do_psd_water_fall</a> = .false.</td></tr>
+<tr class="memdesc:a975710e0cceade8cd78022d240e407ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate cloud water terminal velocity based on PSD  <br /></td></tr>
+<tr class="memitem:a0d031a15f0c54dcc9f185e4ffd03da0a" id="r_a0d031a15f0c54dcc9f185e4ffd03da0a"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a0d031a15f0c54dcc9f185e4ffd03da0a.html#a0d031a15f0c54dcc9f185e4ffd03da0a">do_psd_ice_fall</a> = .false.</td></tr>
+<tr class="memdesc:a0d031a15f0c54dcc9f185e4ffd03da0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate cloud ice terminal velocity based on PSD  <br /></td></tr>
+<tr class="memitem:a6f8c1e1163bcc444fbd0e59dfceaaa25" id="r_a6f8c1e1163bcc444fbd0e59dfceaaa25"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a6f8c1e1163bcc444fbd0e59dfceaaa25.html#a6f8c1e1163bcc444fbd0e59dfceaaa25">do_psd_water_num</a> = .false.</td></tr>
+<tr class="memdesc:a6f8c1e1163bcc444fbd0e59dfceaaa25"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate cloud water number concentration based on PSD  <br /></td></tr>
+<tr class="memitem:a9ed59729ab9bab1780366a5576b30bfb" id="r_a9ed59729ab9bab1780366a5576b30bfb"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a9ed59729ab9bab1780366a5576b30bfb.html#a9ed59729ab9bab1780366a5576b30bfb">do_psd_ice_num</a> = .false.</td></tr>
+<tr class="memdesc:a9ed59729ab9bab1780366a5576b30bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate cloud ice number concentration based on PSD  <br /></td></tr>
+<tr class="memitem:a064730edb62a304109adc3bddb74dd19" id="r_a064730edb62a304109adc3bddb74dd19"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a064730edb62a304109adc3bddb74dd19.html#a064730edb62a304109adc3bddb74dd19">do_new_acc_water</a> = .false.</td></tr>
+<tr class="memdesc:a064730edb62a304109adc3bddb74dd19"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform the new accretion for cloud water  <br /></td></tr>
+<tr class="memitem:aa88a785b4db9a0322a1fff9043aa1bff" id="r_aa88a785b4db9a0322a1fff9043aa1bff"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_aa88a785b4db9a0322a1fff9043aa1bff.html#aa88a785b4db9a0322a1fff9043aa1bff">do_new_acc_ice</a> = .false.</td></tr>
+<tr class="memdesc:aa88a785b4db9a0322a1fff9043aa1bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform the new accretion for cloud ice  <br /></td></tr>
+<tr class="memitem:a069347920e8b4e06beb74fc9e344ddd2" id="r_a069347920e8b4e06beb74fc9e344ddd2"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a069347920e8b4e06beb74fc9e344ddd2.html#a069347920e8b4e06beb74fc9e344ddd2">cp_heating</a> = .false.</td></tr>
+<tr class="memdesc:a069347920e8b4e06beb74fc9e344ddd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">update temperature based on constant pressure  <br /></td></tr>
+<tr class="memitem:a893f70a7dfd1181dd6a6de9b94ca79b2" id="r_a893f70a7dfd1181dd6a6de9b94ca79b2"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a893f70a7dfd1181dd6a6de9b94ca79b2.html#a893f70a7dfd1181dd6a6de9b94ca79b2">delay_cond_evap</a> = .false.</td></tr>
+<tr class="memdesc:a893f70a7dfd1181dd6a6de9b94ca79b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">do condensation evaporation only at the last time step  <br /></td></tr>
+<tr class="memitem:af5318a5f6d2df624ec84ef0e76c6f008" id="r_af5318a5f6d2df624ec84ef0e76c6f008"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_af5318a5f6d2df624ec84ef0e76c6f008.html#af5318a5f6d2df624ec84ef0e76c6f008">do_subgrid_proc</a> = .true.</td></tr>
+<tr class="memdesc:af5318a5f6d2df624ec84ef0e76c6f008"><td class="mdescLeft">&#160;</td><td class="mdescRight">do temperature sentive high vertical resolution processes  <br /></td></tr>
+<tr class="memitem:a491004a8c7db2708a0823bb0d88d56c8" id="r_a491004a8c7db2708a0823bb0d88d56c8"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a491004a8c7db2708a0823bb0d88d56c8.html#a491004a8c7db2708a0823bb0d88d56c8">fast_fr_mlt</a> = .true.</td></tr>
+<tr class="memdesc:a491004a8c7db2708a0823bb0d88d56c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">do freezing and melting in fast microphysics  <br /></td></tr>
+<tr class="memitem:a9723662b7cae507534d7e8f646f5adcb" id="r_a9723662b7cae507534d7e8f646f5adcb"><td class="memItemLeft">logical, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a9723662b7cae507534d7e8f646f5adcb.html#a9723662b7cae507534d7e8f646f5adcb">fast_dep_sub</a> = .true.</td></tr>
+<tr class="memdesc:a9723662b7cae507534d7e8f646f5adcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">do deposition and sublimation in fast microphysics  <br /></td></tr>
+<tr class="memitem:ab13ed2dff0721f1690240301b4fcafd3" id="r_ab13ed2dff0721f1690240301b4fcafd3"><td class="memItemLeft">integer, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ab13ed2dff0721f1690240301b4fcafd3.html#ab13ed2dff0721f1690240301b4fcafd3">ntimes</a> = 1</td></tr>
+<tr class="memdesc:ab13ed2dff0721f1690240301b4fcafd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">cloud microphysics sub cycles  <br /></td></tr>
+<tr class="memitem:aa65df6abce70a7da67fa37cd45dfefde" id="r_aa65df6abce70a7da67fa37cd45dfefde"><td class="memItemLeft">integer, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_aa65df6abce70a7da67fa37cd45dfefde.html#aa65df6abce70a7da67fa37cd45dfefde">nconds</a> = 1</td></tr>
+<tr class="memdesc:aa65df6abce70a7da67fa37cd45dfefde"><td class="mdescLeft">&#160;</td><td class="mdescRight">condensation sub cycles  <br /></td></tr>
+<tr class="memitem:aa16f4a349af6b072c64ebdb8fdb2f11a" id="r_aa16f4a349af6b072c64ebdb8fdb2f11a"><td class="memItemLeft">integer, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_aa16f4a349af6b072c64ebdb8fdb2f11a.html#aa16f4a349af6b072c64ebdb8fdb2f11a">inflag</a> = 1</td></tr>
+<tr class="memdesc:aa16f4a349af6b072c64ebdb8fdb2f11a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ice nucleation scheme 1: Hong et al. (2004) 2: Meyers et al. (1992) 3: Meyers et al. (1992) 4: Cooper (1986) 5: Fletcher (1962)  <br /></td></tr>
+<tr class="memitem:a4c76e0ce6dd94a2551fe9041d7de1f81" id="r_a4c76e0ce6dd94a2551fe9041d7de1f81"><td class="memItemLeft">integer, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a4c76e0ce6dd94a2551fe9041d7de1f81.html#a4c76e0ce6dd94a2551fe9041d7de1f81">igflag</a> = 3</td></tr>
+<tr class="memdesc:a4c76e0ce6dd94a2551fe9041d7de1f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">ice generation scheme 1: WSM6 2: WSM6 with 0 at 0 C 3: WSM6 with 0 at 0 C and fixed value at - 10 C 4: combination of 1 and 3  <br /></td></tr>
+<tr class="memitem:adeb008ed2705120d14eff957a0c03f45" id="r_adeb008ed2705120d14eff957a0c03f45"><td class="memItemLeft">integer, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_adeb008ed2705120d14eff957a0c03f45.html#adeb008ed2705120d14eff957a0c03f45">ifflag</a> = 1</td></tr>
+<tr class="memdesc:adeb008ed2705120d14eff957a0c03f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">ice fall scheme 1: Deng and Mace (2008) 2: Heymsfield and Donner (1990)  <br /></td></tr>
+<tr class="memitem:a94253c9dfde2dc1cbd8af78d9a87ae39" id="r_a94253c9dfde2dc1cbd8af78d9a87ae39"><td class="memItemLeft">integer, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a94253c9dfde2dc1cbd8af78d9a87ae39.html#a94253c9dfde2dc1cbd8af78d9a87ae39">rewflag</a> = 1</td></tr>
+<tr class="memdesc:a94253c9dfde2dc1cbd8af78d9a87ae39"><td class="mdescLeft">&#160;</td><td class="mdescRight">cloud water effective radius scheme 1: Martin et al. (1994) 2: Martin et al. (1994), GFDL revision 3: Kiehl et al. (1994) 4: effective radius  <br /></td></tr>
+<tr class="memitem:a67061f8028c1981f72a83e3f3580000a" id="r_a67061f8028c1981f72a83e3f3580000a"><td class="memItemLeft">integer, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a67061f8028c1981f72a83e3f3580000a.html#a67061f8028c1981f72a83e3f3580000a">rerflag</a> = 1</td></tr>
+<tr class="memdesc:a67061f8028c1981f72a83e3f3580000a"><td class="mdescLeft">&#160;</td><td class="mdescRight">rain effective radius scheme 1: effective radius  <br /></td></tr>
+<tr class="memitem:a3a5b1c346c44dfe3e42262aa57e71cbb" id="r_a3a5b1c346c44dfe3e42262aa57e71cbb"><td class="memItemLeft">integer, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a3a5b1c346c44dfe3e42262aa57e71cbb.html#a3a5b1c346c44dfe3e42262aa57e71cbb">resflag</a> = 1</td></tr>
+<tr class="memdesc:a3a5b1c346c44dfe3e42262aa57e71cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">snow effective radius scheme 1: effective radius  <br /></td></tr>
+<tr class="memitem:a023dfe67568aae5e6ebdb85ea14ffd49" id="r_a023dfe67568aae5e6ebdb85ea14ffd49"><td class="memItemLeft">integer, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a023dfe67568aae5e6ebdb85ea14ffd49.html#a023dfe67568aae5e6ebdb85ea14ffd49">regflag</a> = 1</td></tr>
+<tr class="memdesc:a023dfe67568aae5e6ebdb85ea14ffd49"><td class="mdescLeft">&#160;</td><td class="mdescRight">graupel effective radius scheme 1: effective radius  <br /></td></tr>
+<tr class="memitem:af16c58087442736b5268311c74f10494" id="r_af16c58087442736b5268311c74f10494"><td class="memItemLeft">integer, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_af16c58087442736b5268311c74f10494.html#af16c58087442736b5268311c74f10494">radr_flag</a> = 1</td></tr>
+<tr class="memdesc:af16c58087442736b5268311c74f10494"><td class="mdescLeft">&#160;</td><td class="mdescRight">radar reflectivity for rain 1: Mark Stoelinga (2005) 2: Smith et al. (1975), Tong and Xue (2005) 3: Marshall-Palmer formula (<a href="https://en.wikipedia.org/wiki/DBZ_(meteorology)">https://en.wikipedia.org/wiki/DBZ_(meteorology)</a>)  <br /></td></tr>
+<tr class="memitem:a1ba7b92545e8ef8f1b7c0788867abd8f" id="r_a1ba7b92545e8ef8f1b7c0788867abd8f"><td class="memItemLeft">integer, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a1ba7b92545e8ef8f1b7c0788867abd8f.html#a1ba7b92545e8ef8f1b7c0788867abd8f">rads_flag</a> = 1</td></tr>
+<tr class="memdesc:a1ba7b92545e8ef8f1b7c0788867abd8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">radar reflectivity for snow 1: Mark Stoelinga (2005) 2: Smith et al. (1975), Tong and Xue (2005) 3: Marshall-Palmer formula (<a href="https://en.wikipedia.org/wiki/DBZ_(meteorology)">https://en.wikipedia.org/wiki/DBZ_(meteorology)</a>)  <br /></td></tr>
+<tr class="memitem:a451c4a7c11390dd1a756105444e12ec4" id="r_a451c4a7c11390dd1a756105444e12ec4"><td class="memItemLeft">integer, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a451c4a7c11390dd1a756105444e12ec4.html#a451c4a7c11390dd1a756105444e12ec4">radg_flag</a> = 1</td></tr>
+<tr class="memdesc:a451c4a7c11390dd1a756105444e12ec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">radar reflectivity for graupel 1: Mark Stoelinga (2005) 2: Smith et al. (1975), Tong and Xue (2005) 3: Marshall-Palmer formula (<a href="https://en.wikipedia.org/wiki/DBZ_(meteorology)">https://en.wikipedia.org/wiki/DBZ_(meteorology)</a>)  <br /></td></tr>
+<tr class="memitem:a600ffc15a9519bdeb6760c1fe2cea076" id="r_a600ffc15a9519bdeb6760c1fe2cea076"><td class="memItemLeft">integer, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a600ffc15a9519bdeb6760c1fe2cea076.html#a600ffc15a9519bdeb6760c1fe2cea076">sedflag</a> = 1</td></tr>
+<tr class="memdesc:a600ffc15a9519bdeb6760c1fe2cea076"><td class="mdescLeft">&#160;</td><td class="mdescRight">sedimentation scheme 1: implicit scheme 2: explicit scheme 3: lagrangian scheme 4: combined implicit and lagrangian scheme  <br /></td></tr>
+<tr class="memitem:aa0c4ee0213d81f084d4ac71f9e7825e1" id="r_aa0c4ee0213d81f084d4ac71f9e7825e1"><td class="memItemLeft">integer, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_aa0c4ee0213d81f084d4ac71f9e7825e1.html#aa0c4ee0213d81f084d4ac71f9e7825e1">vdiffflag</a> = 1</td></tr>
+<tr class="memdesc:aa0c4ee0213d81f084d4ac71f9e7825e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">wind difference scheme in accretion 1: Wisner et al. (1972) 2: Mizuno (1990) 3: Murakami (1990)  <br /></td></tr>
+<tr class="memitem:a9e0d1f42fa224904a7966f9d3c985c6f" id="r_a9e0d1f42fa224904a7966f9d3c985c6f"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a9e0d1f42fa224904a7966f9d3c985c6f.html#a9e0d1f42fa224904a7966f9d3c985c6f">c_psacw</a> = 1.0</td></tr>
+<tr class="memdesc:a9e0d1f42fa224904a7966f9d3c985c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">cloud water to snow accretion efficiency  <br /></td></tr>
+<tr class="memitem:a5addbd038aaae607a498c71c3d2d3290" id="r_a5addbd038aaae607a498c71c3d2d3290"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a5addbd038aaae607a498c71c3d2d3290.html#a5addbd038aaae607a498c71c3d2d3290">c_pracw</a> = 0.8</td></tr>
+<tr class="memdesc:a5addbd038aaae607a498c71c3d2d3290"><td class="mdescLeft">&#160;</td><td class="mdescRight">cloud water to rain accretion efficiency  <br /></td></tr>
+<tr class="memitem:acaa88fabd9838bce398884ffd4d26b68" id="r_acaa88fabd9838bce398884ffd4d26b68"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_acaa88fabd9838bce398884ffd4d26b68.html#acaa88fabd9838bce398884ffd4d26b68">c_praci</a> = 1.0</td></tr>
+<tr class="memdesc:acaa88fabd9838bce398884ffd4d26b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">cloud ice to rain accretion efficiency  <br /></td></tr>
+<tr class="memitem:a310720b43ab4ce055e9053b5d615a533" id="r_a310720b43ab4ce055e9053b5d615a533"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a310720b43ab4ce055e9053b5d615a533.html#a310720b43ab4ce055e9053b5d615a533">c_pgacw</a> = 1.0</td></tr>
+<tr class="memdesc:a310720b43ab4ce055e9053b5d615a533"><td class="mdescLeft">&#160;</td><td class="mdescRight">cloud water to graupel accretion efficiency  <br /></td></tr>
+<tr class="memitem:a0ceee167f0af88c9cdb9d638c7a950a0" id="r_a0ceee167f0af88c9cdb9d638c7a950a0"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a0ceee167f0af88c9cdb9d638c7a950a0.html#a0ceee167f0af88c9cdb9d638c7a950a0">c_pgaci</a> = 0.05</td></tr>
+<tr class="memdesc:a0ceee167f0af88c9cdb9d638c7a950a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">cloud ice to graupel accretion efficiency (was 0.1 in ZETAC)  <br /></td></tr>
+<tr class="memitem:a87530149b39bd07508b789f59b9f0dd6" id="r_a87530149b39bd07508b789f59b9f0dd6"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a87530149b39bd07508b789f59b9f0dd6.html#a87530149b39bd07508b789f59b9f0dd6">c_pracs</a> = 1.0</td></tr>
+<tr class="memdesc:a87530149b39bd07508b789f59b9f0dd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">snow to rain accretion efficiency  <br /></td></tr>
+<tr class="memitem:a1c5dea897de3f6f8631f6cb73b18557a" id="r_a1c5dea897de3f6f8631f6cb73b18557a"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a1c5dea897de3f6f8631f6cb73b18557a.html#a1c5dea897de3f6f8631f6cb73b18557a">c_psacr</a> = 1.0</td></tr>
+<tr class="memdesc:a1c5dea897de3f6f8631f6cb73b18557a"><td class="mdescLeft">&#160;</td><td class="mdescRight">rain to snow accretion efficiency  <br /></td></tr>
+<tr class="memitem:ae2226c240e6f4f361839dbba445e1fca" id="r_ae2226c240e6f4f361839dbba445e1fca"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ae2226c240e6f4f361839dbba445e1fca.html#ae2226c240e6f4f361839dbba445e1fca">c_pgacr</a> = 1.0</td></tr>
+<tr class="memdesc:ae2226c240e6f4f361839dbba445e1fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">rain to graupel accretion efficiency  <br /></td></tr>
+<tr class="memitem:a740b8ff3c23f45258eed8d52b177223f" id="r_a740b8ff3c23f45258eed8d52b177223f"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a740b8ff3c23f45258eed8d52b177223f.html#a740b8ff3c23f45258eed8d52b177223f">alinw</a> = 3.e7</td></tr>
+<tr class="memdesc:a740b8ff3c23f45258eed8d52b177223f"><td class="mdescLeft">&#160;</td><td class="mdescRight">"a" in Lin et al. (1983) for cloud water (Ikawa and Saito 1990)  <br /></td></tr>
+<tr class="memitem:a90703579e4b2f628d94730e972808df0" id="r_a90703579e4b2f628d94730e972808df0"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a90703579e4b2f628d94730e972808df0.html#a90703579e4b2f628d94730e972808df0">alini</a> = 7.e2</td></tr>
+<tr class="memdesc:a90703579e4b2f628d94730e972808df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">"a" in Lin et al. (1983) for cloud ice (Ikawa and Saita 1990)  <br /></td></tr>
+<tr class="memitem:af42e7e1ec0e33a1fe46c75a812928457" id="r_af42e7e1ec0e33a1fe46c75a812928457"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_af42e7e1ec0e33a1fe46c75a812928457.html#af42e7e1ec0e33a1fe46c75a812928457">alinr</a> = 842.0</td></tr>
+<tr class="memdesc:af42e7e1ec0e33a1fe46c75a812928457"><td class="mdescLeft">&#160;</td><td class="mdescRight">"a" in Lin et al. (1983) for rain (Liu and Orville 1969)  <br /></td></tr>
+<tr class="memitem:a245f1d13b0d7fdd2b9acd9268c7fdbe3" id="r_a245f1d13b0d7fdd2b9acd9268c7fdbe3"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a245f1d13b0d7fdd2b9acd9268c7fdbe3.html#a245f1d13b0d7fdd2b9acd9268c7fdbe3">alins</a> = 4.8</td></tr>
+<tr class="memdesc:a245f1d13b0d7fdd2b9acd9268c7fdbe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">"a" in Lin et al. (1983) for snow (straka 2009)  <br /></td></tr>
+<tr class="memitem:afb921b8e79b989c61607b1395b0e5dbd" id="r_afb921b8e79b989c61607b1395b0e5dbd"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_afb921b8e79b989c61607b1395b0e5dbd.html#afb921b8e79b989c61607b1395b0e5dbd">aling</a> = 1.0</td></tr>
+<tr class="memdesc:afb921b8e79b989c61607b1395b0e5dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">"a" in Lin et al. (1983), similar to a, but for graupel (Pruppacher and Klett 2010)  <br /></td></tr>
+<tr class="memitem:a9d7a41b6b39d4897d2b23de82936e49b" id="r_a9d7a41b6b39d4897d2b23de82936e49b"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a9d7a41b6b39d4897d2b23de82936e49b.html#a9d7a41b6b39d4897d2b23de82936e49b">alinh</a> = 1.0</td></tr>
+<tr class="memdesc:a9d7a41b6b39d4897d2b23de82936e49b"><td class="mdescLeft">&#160;</td><td class="mdescRight">"a" in Lin et al. (1983), similar to a, but for hail (Pruppacher and Klett 2010)  <br /></td></tr>
+<tr class="memitem:a5e96669cf0bb9aa25b349d205d2e66a3" id="r_a5e96669cf0bb9aa25b349d205d2e66a3"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a5e96669cf0bb9aa25b349d205d2e66a3.html#a5e96669cf0bb9aa25b349d205d2e66a3">blinw</a> = 2.0</td></tr>
+<tr class="memdesc:a5e96669cf0bb9aa25b349d205d2e66a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">"b" in Lin et al. (1983) for cloud water (Ikawa and Saito 1990)  <br /></td></tr>
+<tr class="memitem:aa63d27bb2978ee3fe0e6701e484f2a3a" id="r_aa63d27bb2978ee3fe0e6701e484f2a3a"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_aa63d27bb2978ee3fe0e6701e484f2a3a.html#aa63d27bb2978ee3fe0e6701e484f2a3a">blini</a> = 1.0</td></tr>
+<tr class="memdesc:aa63d27bb2978ee3fe0e6701e484f2a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">"b" in Lin et al. (1983) for cloud ice (Ikawa and Saita 1990)  <br /></td></tr>
+<tr class="memitem:a3dba5f407ec9d44e3e51a4b5086f5ff1" id="r_a3dba5f407ec9d44e3e51a4b5086f5ff1"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a3dba5f407ec9d44e3e51a4b5086f5ff1.html#a3dba5f407ec9d44e3e51a4b5086f5ff1">blinr</a> = 0.8</td></tr>
+<tr class="memdesc:a3dba5f407ec9d44e3e51a4b5086f5ff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">"b" in Lin et al. (1983) for rain (Liu and Orville 1969)  <br /></td></tr>
+<tr class="memitem:a0d661177daae42c282add71a02a7319d" id="r_a0d661177daae42c282add71a02a7319d"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a0d661177daae42c282add71a02a7319d.html#a0d661177daae42c282add71a02a7319d">blins</a> = 0.25</td></tr>
+<tr class="memdesc:a0d661177daae42c282add71a02a7319d"><td class="mdescLeft">&#160;</td><td class="mdescRight">"b" in Lin et al. (1983) for snow (straka 2009)  <br /></td></tr>
+<tr class="memitem:a4d29e945db516f860e8d0d71fc72b176" id="r_a4d29e945db516f860e8d0d71fc72b176"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a4d29e945db516f860e8d0d71fc72b176.html#a4d29e945db516f860e8d0d71fc72b176">bling</a> = 0.5</td></tr>
+<tr class="memdesc:a4d29e945db516f860e8d0d71fc72b176"><td class="mdescLeft">&#160;</td><td class="mdescRight">"b" in Lin et al. (1983), similar to b, but for graupel (Pruppacher and Klett 2010)  <br /></td></tr>
+<tr class="memitem:a6dadb08ab0f9f69e164084739d09f0c9" id="r_a6dadb08ab0f9f69e164084739d09f0c9"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a6dadb08ab0f9f69e164084739d09f0c9.html#a6dadb08ab0f9f69e164084739d09f0c9">blinh</a> = 0.5</td></tr>
+<tr class="memdesc:a6dadb08ab0f9f69e164084739d09f0c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">"b" in Lin et al. (1983), similar to b, but for hail (Pruppacher and Klett 2010)  <br /></td></tr>
+<tr class="memitem:a849c390332191d1b920ffe6e7138c97d" id="r_a849c390332191d1b920ffe6e7138c97d"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a849c390332191d1b920ffe6e7138c97d.html#a849c390332191d1b920ffe6e7138c97d">vw_fac</a> = 1.0</td></tr>
+<tr class="memitem:add3b5070057d790a056a1d9c6d9ec832" id="r_add3b5070057d790a056a1d9c6d9ec832"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_add3b5070057d790a056a1d9c6d9ec832.html#add3b5070057d790a056a1d9c6d9ec832">vw_max</a> = 0.01</td></tr>
+<tr class="memdesc:add3b5070057d790a056a1d9c6d9ec832"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum fall speed for cloud water (m/s)  <br /></td></tr>
+<tr class="memitem:a686bb57c71999c233f38596878ad4cdf" id="r_a686bb57c71999c233f38596878ad4cdf"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a686bb57c71999c233f38596878ad4cdf.html#a686bb57c71999c233f38596878ad4cdf">tice_mlt</a> = 273.16</td></tr>
+<tr class="memdesc:a686bb57c71999c233f38596878ad4cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">can set ice melting temperature to 268 based on observation (Kay et al. 2016) (K)  <br /></td></tr>
+<tr class="memitem:abecb95e56135370b56b827119956add2" id="r_abecb95e56135370b56b827119956add2"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_abecb95e56135370b56b827119956add2.html#abecb95e56135370b56b827119956add2">tau_gmlt</a> = 600.0</td></tr>
+<tr class="memdesc:abecb95e56135370b56b827119956add2"><td class="mdescLeft">&#160;</td><td class="mdescRight">graupel melting time scale (s)  <br /></td></tr>
+<tr class="memitem:abe85feab4f082d4149c7c855d8f2335e" id="r_abe85feab4f082d4149c7c855d8f2335e"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_abe85feab4f082d4149c7c855d8f2335e.html#abe85feab4f082d4149c7c855d8f2335e">tau_wbf</a> = 300.0</td></tr>
+<tr class="memdesc:abe85feab4f082d4149c7c855d8f2335e"><td class="mdescLeft">&#160;</td><td class="mdescRight">graupel melting time scale (s)  <br /></td></tr>
+<tr class="memitem:a402531d37463802b9e51a6fc83dfaac5" id="r_a402531d37463802b9e51a6fc83dfaac5"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a402531d37463802b9e51a6fc83dfaac5.html#a402531d37463802b9e51a6fc83dfaac5">tau_revp</a> = 0.0</td></tr>
+<tr class="memdesc:a402531d37463802b9e51a6fc83dfaac5"><td class="mdescLeft">&#160;</td><td class="mdescRight">rain evaporation time scale (s)  <br /></td></tr>
+<tr class="memitem:a7369bc2fe30a2f072ec84211e7126554" id="r_a7369bc2fe30a2f072ec84211e7126554"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a7369bc2fe30a2f072ec84211e7126554.html#a7369bc2fe30a2f072ec84211e7126554">is_fac</a> = 0.2</td></tr>
+<tr class="memdesc:a7369bc2fe30a2f072ec84211e7126554"><td class="mdescLeft">&#160;</td><td class="mdescRight">cloud ice sublimation temperature factor  <br /></td></tr>
+<tr class="memitem:acf95d28ad742dbfa6d162f20070e5a40" id="r_acf95d28ad742dbfa6d162f20070e5a40"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_acf95d28ad742dbfa6d162f20070e5a40.html#acf95d28ad742dbfa6d162f20070e5a40">ss_fac</a> = 0.2</td></tr>
+<tr class="memdesc:acf95d28ad742dbfa6d162f20070e5a40"><td class="mdescLeft">&#160;</td><td class="mdescRight">snow sublimation temperature factor  <br /></td></tr>
+<tr class="memitem:a31f7d70be093545c27574446a8f25997" id="r_a31f7d70be093545c27574446a8f25997"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a31f7d70be093545c27574446a8f25997.html#a31f7d70be093545c27574446a8f25997">gs_fac</a> = 0.2</td></tr>
+<tr class="memdesc:a31f7d70be093545c27574446a8f25997"><td class="mdescLeft">&#160;</td><td class="mdescRight">graupel sublimation temperature factor  <br /></td></tr>
+<tr class="memitem:a958f7fd93216ccecdc2ca02445aee5d4" id="r_a958f7fd93216ccecdc2ca02445aee5d4"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a958f7fd93216ccecdc2ca02445aee5d4.html#a958f7fd93216ccecdc2ca02445aee5d4">rh_fac_evap</a> = 10.0</td></tr>
+<tr class="memdesc:a958f7fd93216ccecdc2ca02445aee5d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">cloud water evaporation relative humidity factor  <br /></td></tr>
+<tr class="memitem:a13f80c39e4e06230f345da93468db7bd" id="r_a13f80c39e4e06230f345da93468db7bd"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a13f80c39e4e06230f345da93468db7bd.html#a13f80c39e4e06230f345da93468db7bd">rh_fac_cond</a> = 10.0</td></tr>
+<tr class="memdesc:a13f80c39e4e06230f345da93468db7bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">cloud water condensation relative humidity factor  <br /></td></tr>
+<tr class="memitem:a2ff3c5d07a5b6387455efc10b16d1753" id="r_a2ff3c5d07a5b6387455efc10b16d1753"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a2ff3c5d07a5b6387455efc10b16d1753.html#a2ff3c5d07a5b6387455efc10b16d1753">sed_fac</a> = 1.0</td></tr>
+<tr class="memdesc:a2ff3c5d07a5b6387455efc10b16d1753"><td class="mdescLeft">&#160;</td><td class="mdescRight">coefficient for sedimentation fall, scale from 1.0 (implicit) to 0.0 (lagrangian)  <br /></td></tr>
+<tr class="memitem:a8521113a0ea99a92ae6d2a01ac1162a2" id="r_a8521113a0ea99a92ae6d2a01ac1162a2"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a8521113a0ea99a92ae6d2a01ac1162a2.html#a8521113a0ea99a92ae6d2a01ac1162a2">xr_a</a> = 0.25</td></tr>
+<tr class="memdesc:a8521113a0ea99a92ae6d2a01ac1162a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">p value in Xu and Randall (1996)  <br /></td></tr>
+<tr class="memitem:a61dd4a163f744b12e4c0f832e91e3b37" id="r_a61dd4a163f744b12e4c0f832e91e3b37"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a61dd4a163f744b12e4c0f832e91e3b37.html#a61dd4a163f744b12e4c0f832e91e3b37">xr_b</a> = 100.0</td></tr>
+<tr class="memdesc:a61dd4a163f744b12e4c0f832e91e3b37"><td class="mdescLeft">&#160;</td><td class="mdescRight">alpha_0 value in Xu and Randall (1996)  <br /></td></tr>
+<tr class="memitem:ae540d2c92b432873a0ab8f1069508a36" id="r_ae540d2c92b432873a0ab8f1069508a36"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ae540d2c92b432873a0ab8f1069508a36.html#ae540d2c92b432873a0ab8f1069508a36">xr_c</a> = 0.49</td></tr>
+<tr class="memdesc:ae540d2c92b432873a0ab8f1069508a36"><td class="mdescLeft">&#160;</td><td class="mdescRight">gamma value in Xu and Randall (1996)  <br /></td></tr>
+<tr class="memitem:af2ad0a9988ea1240ed55d3f82caa24f3" id="r_af2ad0a9988ea1240ed55d3f82caa24f3"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_af2ad0a9988ea1240ed55d3f82caa24f3.html#af2ad0a9988ea1240ed55d3f82caa24f3">te_err</a> = 1.e-5</td></tr>
+<tr class="memdesc:af2ad0a9988ea1240ed55d3f82caa24f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">64bit: 1.e-14, 32bit: 1.e-7; turn off to save computer time  <br /></td></tr>
+<tr class="memitem:a6218753e030c19920320f15242b4ffa7" id="r_a6218753e030c19920320f15242b4ffa7"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a6218753e030c19920320f15242b4ffa7.html#a6218753e030c19920320f15242b4ffa7">tw_err</a> = 1.e-8</td></tr>
+<tr class="memdesc:a6218753e030c19920320f15242b4ffa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">64bit: 1.e-14, 32bit: 1.e-7; turn off to save computer time  <br /></td></tr>
+<tr class="memitem:a42ab0fa1190f599ed32501805996ad71" id="r_a42ab0fa1190f599ed32501805996ad71"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a42ab0fa1190f599ed32501805996ad71.html#a42ab0fa1190f599ed32501805996ad71">rh_thres</a> = 0.75</td></tr>
+<tr class="memdesc:a42ab0fa1190f599ed32501805996ad71"><td class="mdescLeft">&#160;</td><td class="mdescRight">minimum relative humidity for cloud fraction  <br /></td></tr>
+<tr class="memitem:ae5bb8518db49ebf842e875489b411027" id="r_ae5bb8518db49ebf842e875489b411027"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ae5bb8518db49ebf842e875489b411027.html#ae5bb8518db49ebf842e875489b411027">rhc_cevap</a> = 0.85</td></tr>
+<tr class="memdesc:ae5bb8518db49ebf842e875489b411027"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum relative humidity for cloud water evaporation  <br /></td></tr>
+<tr class="memitem:a3324843ca9941c809dfc1f1cbf051839" id="r_a3324843ca9941c809dfc1f1cbf051839"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a3324843ca9941c809dfc1f1cbf051839.html#a3324843ca9941c809dfc1f1cbf051839">rhc_revap</a> = 0.85</td></tr>
+<tr class="memdesc:a3324843ca9941c809dfc1f1cbf051839"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum relative humidity for rain evaporation  <br /></td></tr>
+<tr class="memitem:a6c0e2773cad0c9263e09e66873186f92" id="r_a6c0e2773cad0c9263e09e66873186f92"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a6c0e2773cad0c9263e09e66873186f92.html#a6c0e2773cad0c9263e09e66873186f92">f_dq_p</a> = 1.0</td></tr>
+<tr class="memdesc:a6c0e2773cad0c9263e09e66873186f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">cloud fraction adjustment for supersaturation  <br /></td></tr>
+<tr class="memitem:ae39ce21618a407042c41260047289997" id="r_ae39ce21618a407042c41260047289997"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ae39ce21618a407042c41260047289997.html#ae39ce21618a407042c41260047289997">f_dq_m</a> = 1.0</td></tr>
+<tr class="memdesc:ae39ce21618a407042c41260047289997"><td class="mdescLeft">&#160;</td><td class="mdescRight">cloud fraction adjustment for undersaturation  <br /></td></tr>
+<tr class="memitem:a60c1903dd405a155aee55cf46d15424f" id="r_a60c1903dd405a155aee55cf46d15424f"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a60c1903dd405a155aee55cf46d15424f.html#a60c1903dd405a155aee55cf46d15424f">fi2s_fac</a> = 1.0</td></tr>
+<tr class="memdesc:a60c1903dd405a155aee55cf46d15424f"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum sink of cloud ice to form snow: 0-1  <br /></td></tr>
+<tr class="memitem:a07ed61c1047d1f9102596b9773322806" id="r_a07ed61c1047d1f9102596b9773322806"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a07ed61c1047d1f9102596b9773322806.html#a07ed61c1047d1f9102596b9773322806">fi2g_fac</a> = 1.0</td></tr>
+<tr class="memdesc:a07ed61c1047d1f9102596b9773322806"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum sink of cloud ice to form graupel: 0-1  <br /></td></tr>
+<tr class="memitem:ad83cc40233c925a0b0d3dbda6ba308ee" id="r_ad83cc40233c925a0b0d3dbda6ba308ee"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ad83cc40233c925a0b0d3dbda6ba308ee.html#ad83cc40233c925a0b0d3dbda6ba308ee">fs2g_fac</a> = 1.0</td></tr>
+<tr class="memdesc:ad83cc40233c925a0b0d3dbda6ba308ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum sink of snow to form graupel: 0-1  <br /></td></tr>
+<tr class="memitem:a9fb471386f76cb38c97e956cbf88b7d1" id="r_a9fb471386f76cb38c97e956cbf88b7d1"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a9fb471386f76cb38c97e956cbf88b7d1.html#a9fb471386f76cb38c97e956cbf88b7d1">n0w_sig</a> = 1.1</td></tr>
+<tr class="memdesc:a9fb471386f76cb38c97e956cbf88b7d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">intercept parameter (significand) of cloud water (Lin et al. 1983) (1/m^4) (Martin et al. 1994)  <br /></td></tr>
+<tr class="memitem:a7012ec901d1cf24675235ca443c530ae" id="r_a7012ec901d1cf24675235ca443c530ae"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a7012ec901d1cf24675235ca443c530ae.html#a7012ec901d1cf24675235ca443c530ae">n0i_sig</a> = 1.3</td></tr>
+<tr class="memdesc:a7012ec901d1cf24675235ca443c530ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">intercept parameter (significand) of cloud ice (Lin et al. 1983) (1/m^4) (McFarquhar et al. 2015)  <br /></td></tr>
+<tr class="memitem:a82121af8e76a5f9900776658a196b807" id="r_a82121af8e76a5f9900776658a196b807"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a82121af8e76a5f9900776658a196b807.html#a82121af8e76a5f9900776658a196b807">n0r_sig</a> = 8.0</td></tr>
+<tr class="memdesc:a82121af8e76a5f9900776658a196b807"><td class="mdescLeft">&#160;</td><td class="mdescRight">intercept parameter (significand) of rain (Lin et al. 1983) (1/m^4) (Marshall and Palmer 1948)  <br /></td></tr>
+<tr class="memitem:af3413aa45b14596a22ae24dde802041f" id="r_af3413aa45b14596a22ae24dde802041f"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_af3413aa45b14596a22ae24dde802041f.html#af3413aa45b14596a22ae24dde802041f">n0s_sig</a> = 3.0</td></tr>
+<tr class="memdesc:af3413aa45b14596a22ae24dde802041f"><td class="mdescLeft">&#160;</td><td class="mdescRight">intercept parameter (significand) of snow (Lin et al. 1983) (1/m^4) (Gunn and Marshall 1958)  <br /></td></tr>
+<tr class="memitem:ad790d405d86e26468f2d04e95b8a0322" id="r_ad790d405d86e26468f2d04e95b8a0322"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ad790d405d86e26468f2d04e95b8a0322.html#ad790d405d86e26468f2d04e95b8a0322">n0g_sig</a> = 4.0</td></tr>
+<tr class="memdesc:ad790d405d86e26468f2d04e95b8a0322"><td class="mdescLeft">&#160;</td><td class="mdescRight">intercept parameter (significand) of graupel (Rutledge and Hobbs 1984) (1/m^4) (Houze et al. 1979)  <br /></td></tr>
+<tr class="memitem:ab30a37932190333a1f146aca6f4da95e" id="r_ab30a37932190333a1f146aca6f4da95e"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ab30a37932190333a1f146aca6f4da95e.html#ab30a37932190333a1f146aca6f4da95e">n0h_sig</a> = 4.0</td></tr>
+<tr class="memdesc:ab30a37932190333a1f146aca6f4da95e"><td class="mdescLeft">&#160;</td><td class="mdescRight">intercept parameter (significand) of hail (Lin et al. 1983) (1/m^4) (Federer and Waldvogel 1975)  <br /></td></tr>
+<tr class="memitem:a60dd2723dbbd70bba434803a4b40c6a4" id="r_a60dd2723dbbd70bba434803a4b40c6a4"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a60dd2723dbbd70bba434803a4b40c6a4.html#a60dd2723dbbd70bba434803a4b40c6a4">n0w_exp</a> = 41</td></tr>
+<tr class="memdesc:a60dd2723dbbd70bba434803a4b40c6a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">intercept parameter (exponent) of cloud water (Lin et al. 1983) (1/m^4) (Martin et al. 1994)  <br /></td></tr>
+<tr class="memitem:a3524023f06a191173b16042dc1d3f103" id="r_a3524023f06a191173b16042dc1d3f103"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a3524023f06a191173b16042dc1d3f103.html#a3524023f06a191173b16042dc1d3f103">n0i_exp</a> = 18</td></tr>
+<tr class="memdesc:a3524023f06a191173b16042dc1d3f103"><td class="mdescLeft">&#160;</td><td class="mdescRight">intercept parameter (exponent) of cloud ice (Lin et al. 1983) (1/m^4) (McFarquhar et al. 2015)  <br /></td></tr>
+<tr class="memitem:ad7dc6203b58a01270d0999bd9f07fcfa" id="r_ad7dc6203b58a01270d0999bd9f07fcfa"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ad7dc6203b58a01270d0999bd9f07fcfa.html#ad7dc6203b58a01270d0999bd9f07fcfa">n0r_exp</a> = 6</td></tr>
+<tr class="memdesc:ad7dc6203b58a01270d0999bd9f07fcfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">intercept parameter (exponent) of rain (Lin et al. 1983) (1/m^4) (Marshall and Palmer 1948)  <br /></td></tr>
+<tr class="memitem:a31486ce6136029b024d86a5a0ed704a8" id="r_a31486ce6136029b024d86a5a0ed704a8"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a31486ce6136029b024d86a5a0ed704a8.html#a31486ce6136029b024d86a5a0ed704a8">n0s_exp</a> = 6</td></tr>
+<tr class="memdesc:a31486ce6136029b024d86a5a0ed704a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">intercept parameter (exponent) of snow (Lin et al. 1983) (1/m^4) (Gunn and Marshall 1958)  <br /></td></tr>
+<tr class="memitem:afa58d01ceb50fb5ef298e0c0f1c8a5b0" id="r_afa58d01ceb50fb5ef298e0c0f1c8a5b0"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_afa58d01ceb50fb5ef298e0c0f1c8a5b0.html#afa58d01ceb50fb5ef298e0c0f1c8a5b0">n0g_exp</a> = 6</td></tr>
+<tr class="memdesc:afa58d01ceb50fb5ef298e0c0f1c8a5b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">intercept parameter (exponent) of graupel (Rutledge and Hobbs 1984) (1/m^4) (Houze et al. 1979)  <br /></td></tr>
+<tr class="memitem:a404664b7e5d02581b31accd031c4f8dd" id="r_a404664b7e5d02581b31accd031c4f8dd"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a404664b7e5d02581b31accd031c4f8dd.html#a404664b7e5d02581b31accd031c4f8dd">n0h_exp</a> = 4</td></tr>
+<tr class="memdesc:a404664b7e5d02581b31accd031c4f8dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">intercept parameter (exponent) of hail (Lin et al. 1983) (1/m^4) (Federer and Waldvogel 1975)  <br /></td></tr>
+<tr class="memitem:aa8b739da104376980647ba3a9874f17a" id="r_aa8b739da104376980647ba3a9874f17a"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_aa8b739da104376980647ba3a9874f17a.html#aa8b739da104376980647ba3a9874f17a">muw</a> = 6.0</td></tr>
+<tr class="memdesc:aa8b739da104376980647ba3a9874f17a"><td class="mdescLeft">&#160;</td><td class="mdescRight">shape parameter of cloud water in Gamma distribution (Martin et al. 1994)  <br /></td></tr>
+<tr class="memitem:ad603761c56dc2509c88160161ff21cd1" id="r_ad603761c56dc2509c88160161ff21cd1"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ad603761c56dc2509c88160161ff21cd1.html#ad603761c56dc2509c88160161ff21cd1">mui</a> = 3.35</td></tr>
+<tr class="memdesc:ad603761c56dc2509c88160161ff21cd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">shape parameter of cloud ice in Gamma distribution (McFarquhar et al. 2015)  <br /></td></tr>
+<tr class="memitem:a587f715d8a0e94c25a1f89c3415ef7a7" id="r_a587f715d8a0e94c25a1f89c3415ef7a7"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a587f715d8a0e94c25a1f89c3415ef7a7.html#a587f715d8a0e94c25a1f89c3415ef7a7">mur</a> = 1.0</td></tr>
+<tr class="memdesc:a587f715d8a0e94c25a1f89c3415ef7a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">shape parameter of rain in Gamma distribution (Marshall and Palmer 1948)  <br /></td></tr>
+<tr class="memitem:a2da7d6f9060169d079f595bdf9692f7c" id="r_a2da7d6f9060169d079f595bdf9692f7c"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a2da7d6f9060169d079f595bdf9692f7c.html#a2da7d6f9060169d079f595bdf9692f7c">mus</a> = 1.0</td></tr>
+<tr class="memdesc:a2da7d6f9060169d079f595bdf9692f7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">shape parameter of snow in Gamma distribution (Gunn and Marshall 1958)  <br /></td></tr>
+<tr class="memitem:a1d35dfb1163de450d1f7e2384ddb6349" id="r_a1d35dfb1163de450d1f7e2384ddb6349"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a1d35dfb1163de450d1f7e2384ddb6349.html#a1d35dfb1163de450d1f7e2384ddb6349">mug</a> = 1.0</td></tr>
+<tr class="memdesc:a1d35dfb1163de450d1f7e2384ddb6349"><td class="mdescLeft">&#160;</td><td class="mdescRight">shape parameter of graupel in Gamma distribution (Houze et al. 1979)  <br /></td></tr>
+<tr class="memitem:a4c4bc5f1c18d4ec7c90322567536cebf" id="r_a4c4bc5f1c18d4ec7c90322567536cebf"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a4c4bc5f1c18d4ec7c90322567536cebf.html#a4c4bc5f1c18d4ec7c90322567536cebf">muh</a> = 1.0</td></tr>
+<tr class="memdesc:a4c4bc5f1c18d4ec7c90322567536cebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">shape parameter of hail in Gamma distribution (Federer and Waldvogel 1975)  <br /></td></tr>
+<tr class="memitem:ae34e8526bacd7bea56b7163609d0ddb0" id="r_ae34e8526bacd7bea56b7163609d0ddb0"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_ae34e8526bacd7bea56b7163609d0ddb0.html#ae34e8526bacd7bea56b7163609d0ddb0">beta</a> = 1.22</td></tr>
+<tr class="memdesc:ae34e8526bacd7bea56b7163609d0ddb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">defined in Heymsfield and Mcfarquhar (1996)  <br /></td></tr>
+<tr class="memitem:a98130a8b38dc0d9a38ac1fff82242a5b" id="r_a98130a8b38dc0d9a38ac1fff82242a5b"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a98130a8b38dc0d9a38ac1fff82242a5b.html#a98130a8b38dc0d9a38ac1fff82242a5b">rewfac</a> = 1.0</td></tr>
+<tr class="memdesc:a98130a8b38dc0d9a38ac1fff82242a5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">this is a tuning parameter to compromise the inconsistency between GFDL MP's PSD and cloud water radiative property's PSD assumption. after the cloud water radiative property's PSD is rebuilt, this parameter should be 1.0.  <br /></td></tr>
+<tr class="memitem:a61ee64b6ed878a20a0e8d3f2a37296a3" id="r_a61ee64b6ed878a20a0e8d3f2a37296a3"><td class="memItemLeft">real(kind_phys), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__gfdlmp__param_a61ee64b6ed878a20a0e8d3f2a37296a3.html#a61ee64b6ed878a20a0e8d3f2a37296a3">reifac</a> = 1.0</td></tr>
+<tr class="memdesc:a61ee64b6ed878a20a0e8d3f2a37296a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">this is a tuning parameter to compromise the inconsistency between GFDL MP's PSD and cloud ice radiative property's PSD assumption. after the cloud ice radiative property's PSD is rebuilt, this parameter should be 1.0.  <br /></td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespacemodule__gfdlmp__param.html">module_gfdlmp_param</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

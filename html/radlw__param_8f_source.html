@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: /Users/man.zhang/github_doxygen/ccpp-physics/physics/Radiation/RRTMG/radlw_param.f Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('radlw__param_8f_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">radlw_param.f</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">!&gt;  \file radlw_param.f</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">!!  This file contains LW band parameters setup.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">!!!!!  ==============================================================  !!!!!</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">!!!!!             lw-rrtm3 radiation package description               !!!!!</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">!!!!!  ==============================================================  !!!!!</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">!                                                                          !</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">!   this package includes ncep&#39;s modifications of the rrtm-lw radiation    !</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">!   code from aer inc.                                                     !</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">!                                                                          !</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">!    the rrtm3 package includes these parts:                               !</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">!                                                                          !</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">!       &#39;radlw_rrtm3_param.f&#39;                                              !</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">!       &#39;radlw_rrtm3_datatb.f&#39;                                             !</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">!       &#39;radlw_rrtm3_main.f&#39;                                               !</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">!                                                                          !</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">!    the &#39;radlw_rrtm3_param.f&#39; contains:                                   !</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">!                                                                          !</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">!       &#39;module_radlw_parameters&#39;  -- band parameters set up               !</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">!                                                                          !</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">!    the &#39;radlw_rrtm3_datatb.f&#39; contains:                                  !</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">!                                                                          !</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">!       &#39;module_radlw_avplank&#39;     -- plank flux data                      !</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">!       &#39;module_radlw_ref&#39;         -- reference temperature and pressure   !</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">!       &#39;module_radlw_cldprlw&#39;     -- cloud property coefficients          !</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">!       &#39;module_radlw_kgbnn&#39;       -- absorption coeffients for 16         !</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">!                                     bands, where nn = 01-16              !</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">!                                                                          !</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">!    the &#39;radlw_rrtm3_main.f&#39; contains:                                    !</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">!                                                                          !</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">!       &#39;rrtmg_lw&#39;        -- main lw radiation transfer                    !</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">!                                                                          !</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">!    in the main module &#39;rrtmg_lw&#39; there are only two                      !</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">!    externally callable subroutines:                                      !</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">!                                                                          !</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">!       &#39;lwrad&#39;     -- main rrtm3 lw radiation routine                     !</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">!       &#39;rlwinit&#39;   -- to initialize rrtm3 lw radiation                    !</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">!                                                                          !</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">!    all the lw radiation subprograms become contained subprograms         !</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">!    in module &#39;module_radlw_rrtm&#39; and many of them are not directly       !</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">!    accessable from places outside the module.                            !</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">!                                                                          !</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">!    compilation sequence is:                                              !</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">!                                                                          !</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">!       &#39;radlw_rrtm3_param.f&#39;                                              !</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">!       &#39;radlw_rrtm3_datatb.f&#39;                                             !</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">!       &#39;radlw_rrtm3_main.f&#39;                                               !</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">!                                                                          !</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">!    and all should be put in front of routines that use lw modules        !</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">!                                                                          !</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">!    ncep modifications history log:                                       !</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">!                                                                          !</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">!       see list in program &quot;radlw_rrtm3_main.f&quot;                           !</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">!                                                                          !</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">!!!!!  ==============================================================  !!!!!</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">!!!!!                         end descriptions                         !!!!!</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">!!!!!  ==============================================================  !!!!!</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"></span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">!&gt;\ingroup module_radlw_main</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">!&gt; This module contains LW band parameters set up.</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="namespacemodule__radlw__parameters.html">   61</a></span>      <span class="keyword">module</span> <a class="code hl_namespace" href="namespacemodule__radlw__parameters.html">module_radlw_parameters</a>     <span class="comment">!</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">!........................................!</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"></span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">!&gt; \section arg_table_module_radlw_parameters Argument table</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">!! \htmlinclude module_radlw_parameters.html</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">!!</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      <span class="keywordtype">use </span><a class="code hl_namespace" href="namespacemachine.html">machine</a>,               <span class="keywordtype">only</span> : kind_phys</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      <span class="keywordtype">implicit none</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">!</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      <span class="keywordtype">public</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">!</span><span class="comment"></span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">!&gt; derived type for LW fluxes at top of atmosphere</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">!! \section arg_table_topflw_type Argument Table</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">!! \htmlinclude topflw_type.html</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">!!</span></div>
+<div class="foldopen" id="foldopen00078" data-start="" data-end="">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="structmodule__radlw__parameters_1_1topflw__type.html">   78</a></span>      <span class="keyword">type</span> <a class="code hl_struct" href="structmodule__radlw__parameters_1_1topflw__type.html">topflw_type</a>                      <span class="comment">!&lt; define type construct for radiation fluxes at toa</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="structmodule__radlw__parameters_1_1topflw__type_a19ff2669a279a1db869766c0e3d88981.html#a19ff2669a279a1db869766c0e3d88981">   79</a></span><span class="keywordtype">        real</span> (kind=kind_phys) :: upfxc      <span class="comment">!&lt; total sky upward flux at toa</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="structmodule__radlw__parameters_1_1topflw__type_a7080fda1f732474077aeb302b57351cb.html#a7080fda1f732474077aeb302b57351cb">   80</a></span><span class="keywordtype">        real</span> (kind=kind_phys) :: upfx0      <span class="comment">!&lt; clear sky upward flux at toa</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      <span class="keyword">end type </span><a class="code hl_struct" href="structmodule__radlw__parameters_1_1topflw__type.html">topflw_type</a></div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">!</span><span class="comment"></span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">!&gt; derived type for LW fluxes at surface</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">!! \section arg_table_sfcflw_type Argument Table</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">!! \htmlinclude sfcflw_type.html</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">!!</span></div>
+<div class="foldopen" id="foldopen00087" data-start="" data-end="">
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="structmodule__radlw__parameters_1_1sfcflw__type.html">   87</a></span>      <span class="keyword">type</span> <a class="code hl_struct" href="structmodule__radlw__parameters_1_1sfcflw__type.html">sfcflw_type</a>                      <span class="comment">!&lt; define type construct for radiation fluxes at surface</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="structmodule__radlw__parameters_1_1sfcflw__type_ab281301c9fad950c86a379cdec0963aa.html#ab281301c9fad950c86a379cdec0963aa">   88</a></span><span class="keywordtype">        real</span> (kind=kind_phys) :: upfxc      <span class="comment">!&lt; total sky upward flux at sfc</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="structmodule__radlw__parameters_1_1sfcflw__type_ab186f43f5f87043de996c1fa6f59dc6e.html#ab186f43f5f87043de996c1fa6f59dc6e">   89</a></span><span class="keywordtype">        real</span> (kind=kind_phys) :: upfx0      <span class="comment">!&lt; clear sky upward flux at sfc</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="structmodule__radlw__parameters_1_1sfcflw__type_ae65c0014042ceffec4293e4d300f9cb8.html#ae65c0014042ceffec4293e4d300f9cb8">   90</a></span><span class="keywordtype">        real</span> (kind=kind_phys) :: dnfxc      <span class="comment">!&lt; total sky downward flux at sfc</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="structmodule__radlw__parameters_1_1sfcflw__type_adac8d084ff59310f6c6f4fdff1a0e5e6.html#adac8d084ff59310f6c6f4fdff1a0e5e6">   91</a></span><span class="keywordtype">        real</span> (kind=kind_phys) :: dnfx0      <span class="comment">!&lt; clear sky downward flux at sfc</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      <span class="keyword">end type </span><a class="code hl_struct" href="structmodule__radlw__parameters_1_1sfcflw__type.html">sfcflw_type</a></div>
+</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">!</span></div>
+<div class="foldopen" id="foldopen00094" data-start="" data-end="">
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="structmodule__radlw__parameters_1_1proflw__type.html">   94</a></span>      <span class="keyword">type</span> <a class="code hl_struct" href="structmodule__radlw__parameters_1_1proflw__type.html">proflw_type</a>                      <span class="comment">!&lt; define type construct for optional radiation flux profiles</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="structmodule__radlw__parameters_1_1proflw__type_aefd4bfa2053b7e88173ac73ca219a9b2.html#aefd4bfa2053b7e88173ac73ca219a9b2">   95</a></span><span class="keywordtype">        real</span> (kind=kind_phys) :: upfxc      <span class="comment">!&lt; level up flux for total sky</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="structmodule__radlw__parameters_1_1proflw__type_a5f7ae4abe7912e8dbe371b577ba91945.html#a5f7ae4abe7912e8dbe371b577ba91945">   96</a></span><span class="keywordtype">        real</span> (kind=kind_phys) :: dnfxc      <span class="comment">!&lt; level down flux for total sky</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="structmodule__radlw__parameters_1_1proflw__type_a90ec3938bb024acfd6f78d597890e78a.html#a90ec3938bb024acfd6f78d597890e78a">   97</a></span><span class="keywordtype">        real</span> (kind=kind_phys) :: upfx0      <span class="comment">!&lt; level up for clear sky</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="structmodule__radlw__parameters_1_1proflw__type_a4804a215b761165846e87428b3f3c12c.html#a4804a215b761165846e87428b3f3c12c">   98</a></span><span class="keywordtype">        real</span> (kind=kind_phys) :: dnfx0      <span class="comment">!&lt; level down flux for clear sky</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      <span class="keyword">end type </span><a class="code hl_struct" href="structmodule__radlw__parameters_1_1proflw__type.html">proflw_type</a></div>
+</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">!</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">! Parameter constants for LW band structures</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="namespacemodule__radlw__parameters_a48e11b992a80595d71c92f7c9bfbe19c.html#a48e11b992a80595d71c92f7c9bfbe19c">  102</a></span>      <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: nbands = 16<span class="comment">     !&lt; number of total spectral bands</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="namespacemodule__radlw__parameters_a05fe17fe932ce62a3ae2c6c564584321.html#a05fe17fe932ce62a3ae2c6c564584321">  103</a></span>      <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: ngptlw = 140<span class="comment">    !&lt; number of total g-points   </span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="namespacemodule__radlw__parameters_a61ae33b9db5bac9962f72e2a0db3c0e4.html#a61ae33b9db5bac9962f72e2a0db3c0e4">  104</a></span>      <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: ntbl   = 10000<span class="comment">  !&lt; lookup table dimension </span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="namespacemodule__radlw__parameters_a01330b4ad09907f2db51cb516ed21033.html#a01330b4ad09907f2db51cb516ed21033">  105</a></span>      <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: maxgas = 7<span class="comment">      !&lt; maximum number of absorbing gases</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="namespacemodule__radlw__parameters_a5817221936731c6ee6443da6a64e934e.html#a5817221936731c6ee6443da6a64e934e">  106</a></span>      <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: maxxsec= 4<span class="comment">      !&lt; number of halocarbon gases</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="namespacemodule__radlw__parameters_a86288e4bbe3d6962505488790ff42bfa.html#a86288e4bbe3d6962505488790ff42bfa">  107</a></span>      <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: nrates = 6<span class="comment">      !&lt; number of ref rates of binary species   </span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="namespacemodule__radlw__parameters_a7ade2de4de94ec6e7a0e97321143e2e6.html#a7ade2de4de94ec6e7a0e97321143e2e6">  108</a></span>      <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: nplnk  = 181<span class="comment">    !&lt; dimension for plank function table</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="namespacemodule__radlw__parameters_a39a115a97296886b2e6e37b220e942c7.html#a39a115a97296886b2e6e37b220e942c7">  110</a></span>      <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: nbdlw  = nbands</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment"></span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">!&gt; Number of g-point in each band</span></div>
+<div class="foldopen" id="foldopen00113" data-start="" data-end="">
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="namespacemodule__radlw__parameters_a54dc7913677d754af2b7ece9732b1280.html#a54dc7913677d754af2b7ece9732b1280">  113</a></span>      <span class="keywordtype">integer</span>  :: ng01, ng02, ng03, ng04, ng05, ng06, ng07, ng08,       &amp;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>     &amp;            NG09, NG10, NG11, NG12, NG13, NG14, NG15, NG16</div>
+</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>      <span class="keywordtype">parameter</span> (ng01=10, ng02=12, ng03=16, ng04=14, ng05=16, ng06=08,  &amp;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>     &amp;           ng07=12, ng08=08, ng09=12, ng10=06, ng11=08, ng12=08,  &amp;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>     &amp;           ng13=04, ng14=02, ng15=02, ng16=02)</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment"></span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">!&gt; Begining index of each band</span></div>
+<div class="foldopen" id="foldopen00120" data-start="" data-end="">
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="namespacemodule__radlw__parameters_a0f82508bbb4039ebbc3fcb68e8e4e699.html#a0f82508bbb4039ebbc3fcb68e8e4e699">  120</a></span>      <span class="keywordtype">integer</span>  :: ns01, ns02, ns03, ns04, ns05, ns06, ns07, ns08,       &amp;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>     &amp;            NS09, NS10, NS11, NS12, NS13, NS14, NS15, NS16</div>
+</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>      <span class="keywordtype">parameter</span> (ns01=00, ns02=10, ns03=22, ns04=38, ns05=52, ns06=68,  &amp;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>     &amp;           ns07=76, ns08=88, ns09=96, ns10=108, ns11=114,         &amp;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>     &amp;           ns12=122, ns13=130, ns14=134, ns15=136, ns16=138)</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment"></span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">!&gt; band indices for each g-point</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="namespacemodule__radlw__parameters_a2c571bd14c9b7982a7968976858c7547.html#a2c571bd14c9b7982a7968976858c7547">  127</a></span>      <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(NGPTLW)</span> :: ngb</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>      <span class="keyword">data</span> ngb(:) / 10*1, 12*2, 16*3, 14*4, 16*5,  8*6, 12*7,  8*8,     &amp; <span class="comment">! band  1- 8</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>     &amp;              12*9, 6*10, 8*11, 8*12, 4*13, 2*14, 2*15, 2*16 /      <span class="comment">! band  9-16</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment"></span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">!&gt; Band spectrum structures (wavenumber is 1/cm)</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="namespacemodule__radlw__parameters_a3a7370a94889d0cbaf6057404830d978.html#a3a7370a94889d0cbaf6057404830d978">  132</a></span><span class="keywordtype">      real</span> (kind=kind_phys) :: wvnlw1(nbands), wvnlw2(nbands)</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>      <span class="keyword">data</span> wvnlw1  /                                                    &amp;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>     &amp;         10.,  350.,  500.,  630.,  700.,  820.,  980., 1080.,    &amp;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>     &amp;       1180., 1390., 1480., 1800., 2080., 2250., 2380., 2600. /</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>      <span class="keyword">data</span> wvnlw2  /                                                    &amp;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>     &amp;        350.,  500.,  630.,  700.,  820.,  980., 1080., 1180.,    &amp;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>     &amp;       1390., 1480., 1800., 2080., 2250., 2380., 2600., 3250. /</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="namespacemodule__radlw__parameters_a6ad1dff8ffc039d03c5cf3059344308e.html#a6ad1dff8ffc039d03c5cf3059344308e">  140</a></span><span class="keywordtype">      real</span> (kind=kind_phys) :: delwave(nbands)</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>      <span class="keyword">data</span> delwave / 340., 150., 130.,  70., 120., 160., 100., 100.,    &amp;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>     &amp;               210.,  90., 320., 280., 170., 130., 220., 650. /</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">!........................................!</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>      <span class="keyword">end module </span><a class="code hl_namespace" href="namespacemodule__radlw__parameters.html">module_radlw_parameters</a> <span class="comment">!</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">!========================================!</span></div>
+<div class="ttc" id="anamespacemachine_html"><div class="ttname"><a href="namespacemachine.html">machine</a></div><div class="ttdef"><b>Definition</b> <a href="machine_8_f90_source.html#l00001">machine.F90:1</a></div></div>
+<div class="ttc" id="anamespacemodule__radlw__parameters_html"><div class="ttname"><a href="namespacemodule__radlw__parameters.html">module_radlw_parameters</a></div><div class="ttdoc">This module contains LW band parameters set up.</div><div class="ttdef"><b>Definition</b> <a href="#l00061">radlw_param.f:61</a></div></div>
+<div class="ttc" id="astructmodule__radlw__parameters_1_1proflw__type_html"><div class="ttname"><a href="structmodule__radlw__parameters_1_1proflw__type.html">module_radlw_parameters::proflw_type</a></div><div class="ttdoc">define type construct for optional radiation flux profiles</div><div class="ttdef"><b>Definition</b> <a href="#l00094">radlw_param.f:94</a></div></div>
+<div class="ttc" id="astructmodule__radlw__parameters_1_1sfcflw__type_html"><div class="ttname"><a href="structmodule__radlw__parameters_1_1sfcflw__type.html">module_radlw_parameters::sfcflw_type</a></div><div class="ttdoc">derived type for LW fluxes at surface</div><div class="ttdef"><b>Definition</b> <a href="#l00087">radlw_param.f:87</a></div></div>
+<div class="ttc" id="astructmodule__radlw__parameters_1_1topflw__type_html"><div class="ttname"><a href="structmodule__radlw__parameters_1_1topflw__type.html">module_radlw_parameters::topflw_type</a></div><div class="ttdoc">derived type for LW fluxes at top of atmosphere</div><div class="ttdef"><b>Definition</b> <a href="#l00078">radlw_param.f:78</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_63285dcbbb29a47fa1de6d56a1594fda.html">Radiation</a></li><li class="navelem"><a href="dir_7244f4a589fa3b182f97ffdf33a5a444.html">RRTMG</a></li><li class="navelem"><b>radlw_param.f</b></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

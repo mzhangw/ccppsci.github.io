@@ -1,0 +1,21 @@
+<map id="sstep" name="sstep">
+<area shape="rect" id="Node000001" title="calculate/update soil moisture content values." alt="" coords="645,186,698,212"/>
+<area shape="rect" id="Node000002" href="$group___noah_m_p___l_s_m_gadca44347d78a09297195f41298a47f8d.html#gadca44347d78a09297195f41298a47f8d" title="calculate surface runoff and soil moisture." alt="" coords="523,186,597,212"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="626,199,597,202,597,196,632,199"/>
+<area shape="rect" id="Node000003" href="$group___noah_m_p___l_s_m_ga2e84840f3ed90005f066340b388c03d6.html#ga2e84840f3ed90005f066340b388c03d6" title="compute water budgets (water storages, et components, and runoff)" alt="" coords="422,186,475,212"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="505,199,476,202,475,196,511,199"/>
+<area shape="rect" id="Node000004" href="$namespacegfdl__cloud__microphys__v3__mod_abff24ebeedbc1d30f155bfdf0b5b223d.html#abff24ebeedbc1d30f155bfdf0b5b223d" title=" " alt="" coords="195,5,343,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="437,171,414,115,396,85,372,60,343,43,343,37,376,56,400,82,419,112,443,172"/>
+<area shape="rect" id="Node000005" href="$namespacegfdl__cloud__microphys__v3__mod_a230685a7af97f93f58eec3bf7a7040ba.html#a230685a7af97f93f58eec3bf7a7040ba" title=" " alt="" coords="165,70,373,126"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="421,176,373,140,352,129,352,123,375,135,426,176"/>
+<area shape="rect" id="Node000006" href="$namespacegfdl__cloud__microphys__v3__mod_a371473ee4ccb0ae7f6d47141012b4af5.html#a371473ee4ccb0ae7f6d47141012b4af5" title=" " alt="" coords="195,149,342,190"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="404,193,343,184,343,179,409,192"/>
+<area shape="rect" id="Node000007" href="$group___noah_m_p___l_s_m_gab480f7969dad27ce9e00e559f82c464e.html#gab480f7969dad27ce9e00e559f82c464e" title=" " alt="" coords="221,214,316,240"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="404,206,318,222,316,217,409,205"/>
+<area shape="rect" id="Node000009" href="$group___s_a_m_fdeep_ga5e834dec0932a16a98b7d90fd69a9c70.html#ga5e834dec0932a16a98b7d90fd69a9c70" title=" " alt="" coords="164,264,374,289"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="424,221,375,255,345,266,344,260,373,250,419,223"/>
+<area shape="rect" id="Node000010" href="$group___s_a_m_f__shal_gaf2534c328553470068a75a9aa56b7d56.html#gaf2534c328553470068a75a9aa56b7d56" title=" " alt="" coords="168,313,370,338"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="437,225,413,267,396,287,375,304,354,315,353,310,373,299,392,283,408,264,433,227"/>
+<area shape="rect" id="Node000008" href="$group___noah_m_p___l_s_m_ga0e44f72a92d8830344fecdb9fb65e6fb.html#ga0e44f72a92d8830344fecdb9fb65e6fb" title="This subroutine is the main CCPP entry point for the NoahMP LSM." alt="" coords="5,214,116,240"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="204,229,117,230,116,224,208,225"/>
+</map>

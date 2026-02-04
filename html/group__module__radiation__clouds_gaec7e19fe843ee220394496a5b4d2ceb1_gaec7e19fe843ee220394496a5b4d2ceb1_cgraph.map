@@ -1,0 +1,7 @@
+<map id="module_radiation_clouds::find_cloudlayers" name="module_radiation_clouds::find_cloudlayers">
+<area shape="rect" id="Node000001" title="From cloud fraction array, find clouds of multi&#45;level depth and compute a reasonable value of LWP or ..." alt="" coords="5,39,170,79"/>
+<area shape="rect" id="Node000002" href="$group__module__radiation__clouds_ga8f57a217926f989ce3137a0011976f91.html#ga8f57a217926f989ce3137a0011976f91" title=" " alt="" coords="218,5,382,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,44,205,40,200,42,171,49"/>
+<area shape="rect" id="Node000003" href="$group__module__radiation__clouds_ga4e4b598c8fc3fa1252be8d3b149ac5f0.html#ga4e4b598c8fc3fa1252be8d3b149ac5f0" title=" " alt="" coords="218,71,382,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,69,205,76,200,77,170,74"/>
+</map>

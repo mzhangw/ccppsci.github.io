@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: Physics Update Summary</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('ccppv7_phy.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Physics Update Summary </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>This page provides an overview of the major updates in CCPP Physics v7.0.0.</p>
+<p><b>General</b> <b>Changes:</b> </p><ul>
+<li>New supported suites: GFS_v17_p8_ugwpv1, GFS_v16_RRTMGP, and HRRR_gf suites</li>
+<li>New <a class="el" href="_c_l_m__l_a_k_e_page.html" title="Community Land Model (CLM) Lake Model">Community Land Model (CLM) Lake Model</a> in HRRR_gf suite</li>
+<li>New <a class="el" href="ugwpv1_gsldrag.html" title="Unified Gravity Wave Physics (GWP) Scheme - Version 1">Unified Gravity Wave Physics (GWP) Scheme - Version 1</a> in GFS_v17_p8_ugwpv1 suite combines the <a class="el" href="_g_f_s_drag_suite.html" title="Orographic Drag Scheme">Orographic Drag Scheme</a> with the version 1 UGWP non-stationary gravity wave drag (NGW) scheme of Yudin et al. (2020)<a class="el" href="citelist.html#CITEREF_yudin_et_al_2020">[210]</a></li>
+<li>New <a class="el" href="_g_f_s__r_r_t_m_g_p_page.html" title="RTE+RRTMGP Shortwave/Longwave Radiation Scheme">RTE+RRTMGP Shortwave/Longwave Radiation Scheme</a> (Pincus et al. 2019 <a class="el" href="citelist.html#CITEREF_pincus_et_al_2019">[166]</a>) in GFS_v16_RRTMGP suite</li>
+</ul>
+<p>Suites GFS_v17_p8, HRRR, RRFS_v1beta, and RAP, which were supported with CCPP v6.0.0, have been phased out.</p>
+<p><b>GFS</b> <b>Scale-aware</b> <b>SAS</b> <b>Cumulus</b> <b>Schemes:</b> </p>
+<p>The updates between GFSv16 and GFSv17 are carefully outlined in Bengtsson and Han (2024)(submitted to <em class="arg">Weather</em> <em class="arg">and</em> <em class="arg">Forecasting</em>). The main updates include:</p><ul>
+<li>Implementation of a positive definition mass-flux scheme and a method for removing the negative tracers (Han et al. 2022 <a class="el" href="citelist.html#CITEREF_han_et_al_2022">[82]</a>)</li>
+<li>Introduction of a new closure based on a prognostic evolution of the convective updraft area fraction in both shallow and deep convection (Bengtsson et al. 2022 <a class="el" href="citelist.html#CITEREF_bengtsson_2022">[16]</a>)</li>
+<li>Introduction of 3D effects of cold-pool dynamics and stochastic initiation using self-organizing cellular automata stochastic convective organization scheme (not supported in SCM; Bengtsson et al. 2021 <a class="el" href="citelist.html#CITEREF_bengtsson_et_al_2021">[15]</a>)</li>
+<li>Introduction of environmental wind shear effect and subgrid TKE dependence in convection, to seek improvements in hurricane forecast prediction (Han et al. 2024 <a class="el" href="citelist.html#CITEREF_han_2024">[83]</a>)</li>
+<li>Introduction of stricter convective initiation criteria to allow for more CAPE to build up to address a low CAPE bias in GFSv16 (Han et al. 2021 <a class="el" href="citelist.html#CITEREF_han_2021">[81]</a>)</li>
+<li>Reduction of convective rain evaporation rate to address a systematic cold bias near the surface in GFSv16 (Han et al. 2021 <a class="el" href="citelist.html#CITEREF_han_2021">[81]</a>)</li>
+</ul>
+<p><b>Grell-Freitas</b> <b>Scale</b> <b>and</b> <b>Aerosol</b> <b>Aware</b> <b>Convection</b> <b>Scheme:</b> </p><ul>
+<li>Update for aerosol-awareness (experimental and not supported)</li>
+<li>Scale-awareness turned off when explicit microphysics is not active anywhere in the column</li>
+<li>Convection is completely suppressed at grid points where the MYNN PBL sheme produces shallow convection</li>
+<li>Radar reflectivity considers mass flux PDF as well as whether scale-awareness is turned on at the gird point in equation</li>
+</ul>
+<p><b>GFS</b> <b>Scale-aware</b> <b>TKE-EDMF</b> <b>PBL</b> <b>Scheme:</b> </p><ul>
+<li>Implementation of a parameterization for environmental wind shear effect in the GFS TKE-EDMF PBL and cumulus schemes to reduce the negative hurricane intensity biases.</li>
+<li>Entrainment rates are enhanced proportionally to the sub-cloud or PBL mean TKE (turbulent kinetic energy) when TKE is larger than a threshold value</li>
+<li>Increased entrainment rate as a function of vegetation fraction and surface roughness length to enhance the underestimated CAPE forecasts in the GFS</li>
+</ul>
+<dl class="section see"><dt>See also</dt><dd>Han et al.(2024) <a class="el" href="citelist.html#CITEREF_han_2024">[83]</a></dd></dl>
+<p><b>MYNN-EDMF</b> <b>PBL</b> <b>Scheme:</b> </p><ul>
+<li>Small increase of buoyancy length scale in convective environment</li>
+<li>Patch for ensuring non-zero cloud fractions for all grid cells where cloud mixing ratio is greater than 1e-6 or ice mixing ratio is greater than 1e-9</li>
+</ul>
+<p><b>Subgrid-scale</b> (<b>SGS</b>) <b>Clouds</b> <b>Scheme:</b> </p><ul>
+<li>Bug fix for cloud condensate input into RRTMG radiation</li>
+<li>New code section for use with SAS cumulus scheme</li>
+<li>Cloud fraction now computed as a mix between the area-dependent form and the modified Chaboureau and Bechtold (2005) <a class="el" href="citelist.html#CITEREF_chaboureau_2005">[30]</a> form</li>
+<li>Adjusted limit for the boundary flux functions</li>
+</ul>
+<p><b>Thompson</b> <b>Cloud</b> <b>Microphysics</b> <b>Scheme:</b> </p><ul>
+<li>Ice generation supersaturation requirement reduced from 0.25 to 0.15 to generate more ice at the upper levels and reduce the outgoing longwave radiation bias</li>
+<li>Cloud number concentration divided into two parts (over land and others). Number concentration over ocean reduced to a smaller number (50/L) from its previous default (100/L). Both changes were made to increase the downward shortwave radiative flux and reduce the negative bias off coastal regions including the Southeast Pacific</li>
+<li>Small fixes to the minimum size of snow and collision constants</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>The above improvements were tested with the non-aerosol option (in GFS_v17_p8_ugwpv1 suite), so results with the aerosol-aware Thompson (in HRRR_gf suite) may vary.</dd></dl>
+<p><b>NSSL</b> <b>Cloud</b> <b>Microphysics</b> <b>Scheme:</b> </p><ul>
+<li>Updated with 3-moment option</li>
+</ul>
+<p><b>Radiation</b> </p><ul>
+<li>Coupling of GOCART aerosols with radiation (iaer=2011)</li>
+<li>Convective cloud water (liquid water + ice water) added to the calculations of cloud water path and ice water path for radiation cloud properties</li>
+</ul>
+<p><b>NoahMP</b> <b>Land</b> <b>Surface</b> <b>Model:</b> </p><ul>
+<li>Option for using the unified frozen precipitation fraction in NoahMP</li>
+<li>Diagnostic 2-meter temperature and humidity now based on vegetation and bare-ground tiles (new namelist option <em class="arg">iopt_diag</em>)</li>
+<li>Bug fixes for GFS-based thermal roughness length scheme</li>
+<li>New soil color dataset introduced to improve soil albedo to reduce the large warm bias found in the Sahel desert</li>
+<li>Wet leaf contribution factor is included</li>
+<li>Leaf-area index now depends on momentum roughness length</li>
+</ul>
+<p><b>RUC</b> <b>Land</b> <b>Surface</b> <b>Model:</b> </p><ul>
+<li>Initialization of land and ice emissivity and albedo with consideration of partial snow cover</li>
+<li>Initialization of water vapor mixing ratio over land ice</li>
+<li>Initialization of fractions of soil and vegetation types in a grid cell</li>
+<li>Changes in the computation of a flag for sea ice: set to true only if <em class="arg">flag_ice=</em>.false. (atmosphere uncoupled from the sea ice model)</li>
+<li>Separate variable for sea ice, for example: <em class="arg">snowfallac</em> is replaced with <em class="arg">snowfallac_ice</em> </li>
+<li>Solar angle dependence of albedo for snow-free land</li>
+<li>Stochastic physics perturbations (SPP) introduced for emissivity, albedo and vegetation fraction</li>
+<li>Coefficient in soil resistance formulation (Sakaguchi and Zeng, 2009 <a class="el" href="citelist.html#CITEREF_sakaguchi_and_zeng_2009">[176]</a>) raised from 0.7 to 1.0 to increase soil resistance to evaporation</li>
+<li>Computation of snow cover fraction and snow thermal conductivity updated</li>
+</ul>
+<p><b>MYNN</b> <b>Surface-layer</b> <b>Scheme</b> </p><ul>
+<li>Reintroduce friction velocity averaging over water to reduce noise in 10-m winds in the hurricane regime</li>
+</ul>
+<p><b>Unified</b> <b>Gravity</b> <b>Wave</b> <b>Physics</b> <b>Scheme:</b> </p><ul>
+<li>Replacement of the resolution-dependent effective grid spacing (cdmbgwd) with a constant (=6dx)</li>
+<li>Removal of the planetary boundary layer height in determining the reference level</li>
+<li>Weakening of the momentum stress over land ice to reduce the negative wind biases</li>
+<li>Introduction of a launching level to avoid the underestimation of the blocked stress</li>
+<li>Introduction of damped breaking to prevent the wind reversal in the lower troposphere</li>
+<li>Suppression of gravity wave breaking in the upper atmosphere (over 7.5 hPa) to avoid numerical instability</li>
+<li>Revision in sub-grid orography data considering the mathematical definition of moments </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: noahmp_glacier_routines Module Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('namespacenoahmp__glacier__routines.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">noahmp_glacier_routines Module Reference<div class="ingroups"><a class="el" href="group___noah_m_p___l_s_m.html">NoahMP LSM Model</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>This module contains NoahMP glacier routines.  
+</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions/Subroutines</h2></td></tr>
+<tr class="memitem:ga86c69e134a41160e0c6f06bfb3a654a6" id="r_ga86c69e134a41160e0c6f06bfb3a654a6"><td class="memItemLeft">subroutine, public&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga86c69e134a41160e0c6f06bfb3a654a6.html#ga86c69e134a41160e0c6f06bfb3a654a6">noahmp_glacier</a> ( iloc,jloc,cosz,nsnow,nsoil,dt, sfctmp,sfcprs,uu,vv,q2,soldn, prcp,lwdn,tbot,zlvl,ficeold,zsoil, thsfc_loc,prslkix,prsik1x,prslk1x, psfc,pblhx,iz0tlnd,itime, sigmaf1,garea1,psi_opt, ep_1,ep_2,epsm1,cp, qsnow,sneqvo,albold,cm,ch,isnow, sneqv,smc,zsnso,snowh,snice,snliq, tg,stc,sh2o,tauss,qsfc, fsa,fsr,fira,fsh,fgev,ssoil, trad,edir,runsrf,runsub,sag,<a class="el" href="group___noah_m_p___l_s_m_ga9d5adb20aca5b72a7e126136088e20d1.html#ga9d5adb20aca5b72a7e126136088e20d1">albedo</a>, qsnbot,ponding,ponding1,ponding2,t2m, q2e,z0h_total, ifdef ccpp</td></tr>
+<tr class="memitem:ga17573a155ef5f06ca4f81e8a35b8f22e" id="r_ga17573a155ef5f06ca4f81e8a35b8f22e"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga17573a155ef5f06ca4f81e8a35b8f22e.html#ga17573a155ef5f06ca4f81e8a35b8f22e">atm_glacier</a> (ep_2, epsm1, sfcprs, sfctmp, q2, soldn, cosz, thair, qair, eair, rhoair, solad, solai, swdown)</td></tr>
+<tr class="memdesc:ga17573a155ef5f06ca4f81e8a35b8f22e"><td class="mdescLeft">&#160;</td><td class="mdescRight">re-process atmospheric forcing  <br /></td></tr>
+<tr class="memitem:ga93dd9aedd32004c8cf2c88c222073c6a" id="r_ga93dd9aedd32004c8cf2c88c222073c6a"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga93dd9aedd32004c8cf2c88c222073c6a.html#ga93dd9aedd32004c8cf2c88c222073c6a">energy_glacier</a> (nsnow,nsoil,isnow,dt,qsnow,rhoair, eair,sfcprs,qair,sfctmp,lwdn,uu, vv,solad,solai,cosz,zref, tbot,zbot,zsnso,dzsnso,sigmaf1,garea1, thsfc_loc,prslkix,prsik1x,prslk1x, psfc,pblhx,iz0tlnd,itime,psi_opt, ep_1, ep_2, epsm1, cp, tg,stc,snowh,sneqv,sneqvo,sh2o, smc,snice,snliq,albold,cm,ch, ifdef ccpp</td></tr>
+<tr class="memdesc:ga93dd9aedd32004c8cf2c88c222073c6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute energy budget (momentum &amp; energy fluxes and phase changes).  <br /></td></tr>
+<tr class="memitem:ga2282179d290ca1b1610198040782accb" id="r_ga2282179d290ca1b1610198040782accb"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga2282179d290ca1b1610198040782accb.html#ga2282179d290ca1b1610198040782accb">thermoprop_glacier</a> (nsoil, nsnow, isnow, dzsnso, dt, snowh, snice, snliq, df, hcpct, snicev, snliqv, epore, fact)</td></tr>
+<tr class="memdesc:ga2282179d290ca1b1610198040782accb"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate thermal properties of soil, snow, lake, and frozen soil.  <br /></td></tr>
+<tr class="memitem:ga87a53ef88356626801e6ff98ce939011" id="r_ga87a53ef88356626801e6ff98ce939011"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga87a53ef88356626801e6ff98ce939011.html#ga87a53ef88356626801e6ff98ce939011">csnow_glacier</a> (isnow, nsnow, nsoil, snice, snliq, dzsnso, tksno, cvsno, snicev, snliqv, epore)</td></tr>
+<tr class="memdesc:ga87a53ef88356626801e6ff98ce939011"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
+ snow bulk density, volumetric capacity, and thermal conductivity  <br /></td></tr>
+<tr class="memitem:ga7ad0f73530d119a7f827a4aaa8a9b393" id="r_ga7ad0f73530d119a7f827a4aaa8a9b393"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga7ad0f73530d119a7f827a4aaa8a9b393.html#ga7ad0f73530d119a7f827a4aaa8a9b393">radiation_glacier</a> (dt, tg, sneqvo, sneqv, cosz, qsnow, solad, solai, albold, tauss, sag, fsr, fsa, albsnd, albsni)</td></tr>
+<tr class="memdesc:ga7ad0f73530d119a7f827a4aaa8a9b393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute solar radiation: absorbed &amp; reflected by the ground.  <br /></td></tr>
+<tr class="memitem:gac231e8b379ab2704f527cafe9a6a92f4" id="r_gac231e8b379ab2704f527cafe9a6a92f4"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_gac231e8b379ab2704f527cafe9a6a92f4.html#gac231e8b379ab2704f527cafe9a6a92f4">snow_age_glacier</a> (dt, tg, sneqvo, sneqv, tauss, fage)</td></tr>
+<tr class="memitem:ga613d1d7c1ed2ae1eef0bef9a893801be" id="r_ga613d1d7c1ed2ae1eef0bef9a893801be"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga613d1d7c1ed2ae1eef0bef9a893801be.html#ga613d1d7c1ed2ae1eef0bef9a893801be">snowalb_bats_glacier</a> (nband, cosz, fage, albsnd, albsni)</td></tr>
+<tr class="memitem:gabfb2c60fe82d420428209f17e65ddf02" id="r_gabfb2c60fe82d420428209f17e65ddf02"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_gabfb2c60fe82d420428209f17e65ddf02.html#gabfb2c60fe82d420428209f17e65ddf02">snowalb_class_glacier</a> (nband, qsnow, dt, alb, albold, albsnd, albsni)</td></tr>
+<tr class="memitem:gaf512c10513f75c077220936b2ca74c42" id="r_gaf512c10513f75c077220936b2ca74c42"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_gaf512c10513f75c077220936b2ca74c42.html#gaf512c10513f75c077220936b2ca74c42">glacier_flux</a> (nsoil,nsnow,emg,isnow,df,dzsnso,z0m, zlvl,zpd,qair,sfctmp,rhoair,sfcprs, ur,gamma,rsurf,lwdn,rhsur,smc, eair,stc,sag,snowh,lathea,sh2o, thsfc_loc,prslkix,prsik1x,prslk1x, psfc,pblhx,iz0tlnd,itime,uu,vv, sigmaf1,garea1,psi_opt,ep_1, ep_2, epsm1, cp, ifdef ccpp</td></tr>
+<tr class="memdesc:gaf512c10513f75c077220936b2ca74c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">use newton-raphson iteration to solve ground (tg) temperature that balances the surface energy budgets for glacier.  <br /></td></tr>
+<tr class="memitem:ga198a78cba7dcb5d138ee9f2896b932ff" id="r_ga198a78cba7dcb5d138ee9f2896b932ff"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga198a78cba7dcb5d138ee9f2896b932ff.html#ga198a78cba7dcb5d138ee9f2896b932ff">esat</a> (t, esw, esi, desw, desi)</td></tr>
+<tr class="memitem:ga3233db40fc83f01063964817c22944ac" id="r_ga3233db40fc83f01063964817c22944ac"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga3233db40fc83f01063964817c22944ac.html#ga3233db40fc83f01063964817c22944ac">sfcdif1_glacier</a> (iter,zlvl,zpd,z0h,z0m, qair,sfctmp,h,rhoair,mpe,ur, ifdef ccpp</td></tr>
+<tr class="memdesc:ga3233db40fc83f01063964817c22944ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute surface drag coefficient cm for momentum and ch for heat  <br /></td></tr>
+<tr class="memitem:ga476f265b4772bd2ad7825e02a29e32cd" id="r_ga476f265b4772bd2ad7825e02a29e32cd"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga476f265b4772bd2ad7825e02a29e32cd.html#ga476f265b4772bd2ad7825e02a29e32cd">tsnosoi_glacier</a> (nsoil, nsnow, isnow, dt, tbot, ssoil, snowh, zbot, zsnso, df, hcpct, stc)</td></tr>
+<tr class="memitem:ga3d809b60b84d8ec6f0641d32edac467f" id="r_ga3d809b60b84d8ec6f0641d32edac467f"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga3d809b60b84d8ec6f0641d32edac467f.html#ga3d809b60b84d8ec6f0641d32edac467f">hrt_glacier</a> (nsnow, nsoil, isnow, zsnso, stc, tbot, zbot, df, hcpct, ssoil, phi, ai, bi, ci, rhsts, botflx)</td></tr>
+<tr class="memitem:gad0ad01a8e6079c118f406348fc829ba8" id="r_gad0ad01a8e6079c118f406348fc829ba8"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_gad0ad01a8e6079c118f406348fc829ba8.html#gad0ad01a8e6079c118f406348fc829ba8">hstep_glacier</a> (nsnow, nsoil, isnow, dt, ai, bi, ci, rhsts, stc)</td></tr>
+<tr class="memitem:ga368ca6e0c1bef7000a6325c1c382421b" id="r_ga368ca6e0c1bef7000a6325c1c382421b"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga368ca6e0c1bef7000a6325c1c382421b.html#ga368ca6e0c1bef7000a6325c1c382421b">rosr12_glacier</a> (p, a, b, c, d, delta, ntop, nsoil, nsnow)</td></tr>
+<tr class="memitem:ga827b1816e6e9afd09680b5d7fa3b010e" id="r_ga827b1816e6e9afd09680b5d7fa3b010e"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga827b1816e6e9afd09680b5d7fa3b010e.html#ga827b1816e6e9afd09680b5d7fa3b010e">phasechange_glacier</a> (nsnow, nsoil, isnow, dt, fact, dzsnso, stc, snice, snliq, sneqv, snowh, smc, sh2o, qmelt, imelt, ponding)</td></tr>
+<tr class="memitem:ga7f8fc6fe269c4c0666edaf50859bfbce" id="r_ga7f8fc6fe269c4c0666edaf50859bfbce"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga7f8fc6fe269c4c0666edaf50859bfbce.html#ga7f8fc6fe269c4c0666edaf50859bfbce">water_glacier</a> (nsnow, nsoil, imelt, dt, prcp, sfctmp, qvap, qdew, ficeold, zsoil, isnow, snowh, sneqv, snice, snliq, stc, dzsnso, sh2o, sice, ponding, zsnso, fsh, runsrf, runsub, qsnow, ponding1, ponding2, qsnbot, fpice, esnow)</td></tr>
+<tr class="memitem:ga7e56aa2916d87208019c88446904b04b" id="r_ga7e56aa2916d87208019c88446904b04b"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga7e56aa2916d87208019c88446904b04b.html#ga7e56aa2916d87208019c88446904b04b">snowwater_glacier</a> (nsnow, nsoil, imelt, dt, sfctmp, snowhin, qsnow, qsnfro, qsnsub, qrain, ficeold, zsoil, isnow, snowh, sneqv, snice, snliq, sh2o, sice, stc, dzsnso, zsnso, fsh, qsnbot, snoflow, ponding1, ponding2)</td></tr>
+<tr class="memitem:ga8017d043aecaf401ec7e591c3c558161" id="r_ga8017d043aecaf401ec7e591c3c558161"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga8017d043aecaf401ec7e591c3c558161.html#ga8017d043aecaf401ec7e591c3c558161">snowfall_glacier</a> (nsoil, nsnow, dt, qsnow, snowhin, sfctmp, isnow, snowh, dzsnso, stc, snice, snliq, sneqv)</td></tr>
+<tr class="memitem:ga5c2db6763c56bf372eef6bdc07ede3cc" id="r_ga5c2db6763c56bf372eef6bdc07ede3cc"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga5c2db6763c56bf372eef6bdc07ede3cc.html#ga5c2db6763c56bf372eef6bdc07ede3cc">compact_glacier</a> (nsnow, nsoil, dt, stc, snice, snliq, imelt, ficeold, isnow, dzsnso)</td></tr>
+<tr class="memitem:ga70ce0369bd8ba21d6ab56fa001a20be8" id="r_ga70ce0369bd8ba21d6ab56fa001a20be8"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga70ce0369bd8ba21d6ab56fa001a20be8.html#ga70ce0369bd8ba21d6ab56fa001a20be8">combine_glacier</a> (nsnow, nsoil, isnow, sh2o, stc, snice, snliq, dzsnso, sice, snowh, sneqv, ponding1, ponding2)</td></tr>
+<tr class="memitem:ga2725fe77ae7f78845a85c7c379e3ed2e" id="r_ga2725fe77ae7f78845a85c7c379e3ed2e"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga2725fe77ae7f78845a85c7c379e3ed2e.html#ga2725fe77ae7f78845a85c7c379e3ed2e">combo_glacier</a> (dz, wliq, wice, t, dz2, wliq2, wice2, t2)</td></tr>
+<tr class="memitem:ga7d14a54053fc9c70ea7705754d594a92" id="r_ga7d14a54053fc9c70ea7705754d594a92"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga7d14a54053fc9c70ea7705754d594a92.html#ga7d14a54053fc9c70ea7705754d594a92">divide_glacier</a> (nsnow, nsoil, isnow, stc, snice, snliq, dzsnso)</td></tr>
+<tr class="memitem:ga3b426a088b2f2e94145bc4cea265cc61" id="r_ga3b426a088b2f2e94145bc4cea265cc61"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga3b426a088b2f2e94145bc4cea265cc61.html#ga3b426a088b2f2e94145bc4cea265cc61">snowh2o_glacier</a> (nsnow, nsoil, dt, qsnfro, qsnsub, qrain, isnow, dzsnso, snowh, sneqv, snice, snliq, sh2o, sice, stc, ponding1, ponding2, fsh, qsnbot)</td></tr>
+<tr class="memitem:ga66e01db7fffd36858b38bc8a61de48db" id="r_ga66e01db7fffd36858b38bc8a61de48db"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_ga66e01db7fffd36858b38bc8a61de48db.html#ga66e01db7fffd36858b38bc8a61de48db">error_glacier</a> (iloc,jloc,swdown,fsa,fsr,fira, fsh,fgev,ssoil,sag,prcp,edir, ifdef ccpp</td></tr>
+<tr class="memitem:gaf81644009a5fffc426875308d6f3f609" id="r_gaf81644009a5fffc426875308d6f3f609"><td class="memItemLeft">subroutine, public&#160;</td><td class="memItemRight"><a class="el" href="group___noah_m_p___l_s_m_gaf81644009a5fffc426875308d6f3f609.html#gaf81644009a5fffc426875308d6f3f609">noahmp_options_glacier</a> (iopt_alb, iopt_snf, iopt_tbot, iopt_stc, iopt_gla, iopt_sfc, iopt_trs)</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespacenoahmp__glacier__routines.html">noahmp_glacier_routines</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: /Users/man.zhang/github_doxygen/ccpp-physics/physics/GWD/cires_ugwp_module.F90 Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('cires__ugwp__module_8_f90_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">cires_ugwp_module.F90</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">!&gt;\file cires_ugwp_module.F90</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">!!</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"></span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">!&gt;This module contains the UGWPv0 driver</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module.html">    5</a></span><span class="keyword">module</span>  <a class="code hl_namespace" href="namespacecires__ugwpv0__module.html">cires_ugwpv0_module</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">!</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">!   driver is called after pbl &amp; before chem-parameterizations</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">!</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">implicit none</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_aad97997df4568c325b914d80ac19619c.html#aad97997df4568c325b914d80ac19619c">   12</a></span>    <span class="keywordtype">logical</span>            :: module_is_initialized</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a141ae9f0ea2258e457c4f7c1e26dad94.html#a141ae9f0ea2258e457c4f7c1e26dad94">   14</a></span>    <span class="keywordtype">logical</span>            :: do_physb_gwsrcs = .false.        <span class="comment">!&lt; control for physics-based GW-sources</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a295ce07ebb417b374eba33b01871cc09.html#a295ce07ebb417b374eba33b01871cc09">   15</a></span>    <span class="keywordtype">logical</span>            :: do_rfdamp       = .false.        <span class="comment">!&lt; control for Rayleigh friction inside ugwp_driver</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a2126eba93cb610122a714932f5898b21.html#a2126eba93cb610122a714932f5898b21">   17</a></span><span class="keywordtype">    real</span>, <span class="keywordtype">parameter</span>    :: arad=6370.e3</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_ae4e873876c842f6d348a8e66a90038f9.html#ae4e873876c842f6d348a8e66a90038f9">   18</a></span><span class="keywordtype">    real</span>, <span class="keywordtype">parameter</span>    :: pi = atan(1.0)</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_ae45cf498e5be09f3d57f11c75f28df91.html#ae45cf498e5be09f3d57f11c75f28df91">   19</a></span><span class="keywordtype">    real</span>, <span class="keywordtype">parameter</span>    :: pi2 = 2.*pi</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a5b9f211a3e34b611bc31450f53e8f255.html#a5b9f211a3e34b611bc31450f53e8f255">   20</a></span><span class="keywordtype">    real</span>, <span class="keywordtype">parameter</span>    :: hps   = 7000.</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_ab2879e4a84135c8a1ac99083ffa97ee1.html#ab2879e4a84135c8a1ac99083ffa97ee1">   21</a></span><span class="keywordtype">    real</span>, <span class="keywordtype">parameter</span>    :: hpskm = hps/1000.</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">!</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a92b3ebbe6ad4537483083f9dc128a80d.html#a92b3ebbe6ad4537483083f9dc128a80d">   23</a></span><span class="keywordtype">    real</span>               :: kxw = 6.28e-3/100.               <span class="comment">!&lt; single horizontal wavenumber of ugwp schemes</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a4d005a3a4f1fdf5d46741173100031d7.html#a4d005a3a4f1fdf5d46741173100031d7">   24</a></span><span class="keywordtype">    real</span>, <span class="keywordtype">parameter</span>    :: ricrit = 0.25</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a83ced8b1a6e56ee453c9476bfe3cfe7e.html#a83ced8b1a6e56ee453c9476bfe3cfe7e">   25</a></span><span class="keywordtype">    real</span>, <span class="keywordtype">parameter</span>    :: frcrit = 0.50</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a06a2d1d4dc93ac4ca2cccb622a98d099.html#a06a2d1d4dc93ac4ca2cccb622a98d099">   26</a></span><span class="keywordtype">    real</span>, <span class="keywordtype">parameter</span>    :: linsat = 1.00</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a4154599c4b1cc9ad5d414ed80948a34b.html#a4154599c4b1cc9ad5d414ed80948a34b">   27</a></span><span class="keywordtype">    real</span>, <span class="keywordtype">parameter</span>    :: linsat2 = linsat*linsat</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">!</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a621fe5f43f0af34d727c335092b7cc9b.html#a621fe5f43f0af34d727c335092b7cc9b">   30</a></span>    <span class="keywordtype">integer</span>               :: knob_ugwp_solver=1<span class="comment">            !&lt; 1, 2, 3, 4 - (linsat, ifs_2010, ad_gfdl, dsp_dis)</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_aa27b30507a19bf1033b1cea3f9432d49.html#aa27b30507a19bf1033b1cea3f9432d49">   31</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(4)</span> :: knob_ugwp_source<span class="comment">              !&lt; [1,1,1,0]  - (oro, fronts, conv, imbf-owp]</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_aa438c43e552b7835cf21537387f0323b.html#aa438c43e552b7835cf21537387f0323b">   32</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(4)</span> :: knob_ugwp_wvspec<span class="comment">              !&lt;  number of waves for- (oro, fronts, conv, imbf-owp]</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a3c997eba04787c7f9baad77f8718282a.html#a3c997eba04787c7f9baad77f8718282a">   33</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(4)</span> :: knob_ugwp_azdir<span class="comment">               !&lt;   number of wave azimuths for- (oro, fronts, conv, imbf-owp]</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a9b861a83290dd7777a21452db9f05afe.html#a9b861a83290dd7777a21452db9f05afe">   34</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">dimension(4)</span> :: knob_ugwp_stoch<span class="comment">               !&lt;  1 - deterministic ; 0 - stochastic</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a280f0af74307cdf51c2e17ecc634e4f3.html#a280f0af74307cdf51c2e17ecc634e4f3">   35</a></span><span class="keywordtype">    real</span>,    <span class="keywordtype">dimension(4)</span> :: knob_ugwp_effac<span class="comment">               !&lt;  efficiency factors for- (oro, fronts, conv, imbf-owp]</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_aa9ff8fa454bb0aaaaaae8cea68b7b072.html#aa9ff8fa454bb0aaaaaae8cea68b7b072">   37</a></span>    <span class="keywordtype">integer</span>               :: knob_ugwp_doaxyz=1<span class="comment">            !&lt; 1 -gwdrag</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_ae7d5f7af1ca439aeee30fc0cd86ef0fd.html#ae7d5f7af1ca439aeee30fc0cd86ef0fd">   38</a></span>    <span class="keywordtype">integer</span>               :: knob_ugwp_doheat=1<span class="comment">            !&lt; 1 -gwheat</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_ab039af3bcfa6849dcc82b796b151cab0.html#ab039af3bcfa6849dcc82b796b151cab0">   39</a></span>    <span class="keywordtype">integer</span>               :: knob_ugwp_dokdis=0<span class="comment">            !&lt; 1 -gwmixing</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a8338a53ce0f05b90a16bd98d1580cfc2.html#a8338a53ce0f05b90a16bd98d1580cfc2">   40</a></span>    <span class="keywordtype">integer</span>               :: knob_ugwp_ndx4lh = 2<span class="comment">          !&lt; n-number  of  &quot;unresolved&quot; &quot;n*dx&quot; for lh_gw</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">!</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a6c43bfcca766499e34eaf6e0bdcbb10b.html#a6c43bfcca766499e34eaf6e0bdcbb10b">   42</a></span>    <span class="keywordtype">integer</span>  :: ugwp_azdir</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a0b03979f9812656a5aee17bc0cdb2b3a.html#a0b03979f9812656a5aee17bc0cdb2b3a">   43</a></span>    <span class="keywordtype">integer</span>  :: ugwp_stoch</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a928a67017ba1e0dc7d9fed60b1ca802f.html#a928a67017ba1e0dc7d9fed60b1ca802f">   45</a></span>    <span class="keywordtype">integer</span>  :: ugwp_src</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a4e0ab60bfad1d53a0997d4fc406358df.html#a4e0ab60bfad1d53a0997d4fc406358df">   46</a></span>    <span class="keywordtype">integer</span>  :: ugwp_nws</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a9d2e445a93703af1241f2fe3b1d1ee2b.html#a9d2e445a93703af1241f2fe3b1d1ee2b">   47</a></span><span class="keywordtype">    real</span>     :: ugwp_effac</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">!</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">data</span> knob_ugwp_source / 1,0, 1, 0 /                    <span class="comment">!&lt;  oro-conv-fjet-okw-taub_lat:      1-active 0-off</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">data</span> knob_ugwp_wvspec /1,32,32,32/                     <span class="comment">!&lt;  number of waves for- (oro, fronts, conv, imbf-owp, taulat]</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">data</span> knob_ugwp_azdir  /2, 4, 4,4/                      <span class="comment">!&lt;  number of wave azimuths for- (oro, fronts, conv, imbf-okwp]</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">data</span> knob_ugwp_stoch  /0, 0, 0,0/                      <span class="comment">!&lt;  0 - deterministic ; 1 - stochastic, non-activated option</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">data</span> knob_ugwp_effac  /1.,1.,1.,1./                    <span class="comment">!&lt;  efficiency factors for- (oro, fronts, conv, imbf-owp]</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a1870660335981196552f12b9f55af978.html#a1870660335981196552f12b9f55af978">   55</a></span>    <span class="keywordtype">integer</span>  :: knob_ugwp_version = 0<span class="comment">                      !&lt;  version control had sense under IPD in CCPP=&gt; to SUITES</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_aa4445b2906228861bd74c2b055c99529.html#aa4445b2906228861bd74c2b055c99529">   56</a></span>    <span class="keywordtype">integer</span>  :: launch_level = 55</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">!</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    namelist /cires_ugwp_nml/ knob_ugwp_solver, knob_ugwp_source,knob_ugwp_wvspec, knob_ugwp_azdir,  &amp;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            knob_ugwp_stoch,  knob_ugwp_effac,knob_ugwp_doaxyz,  knob_ugwp_doheat, knob_ugwp_dokdis, &amp;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            knob_ugwp_ndx4lh, knob_ugwp_version, launch_level</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">!&amp;cires_ugwp_nml</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">! knob_ugwp_solver=2</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">! knob_ugwp_source=1,1,1,0</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">! knob_ugwp_wvspec=1,32,32,32</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">! knob_ugwp_azdir =2, 4, 4,4</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">! knob_ugwp_stoch =0, 0, 0,0</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">! knob_ugwp_effac=1, 1, 1,1</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">! knob_ugwp_doaxyz=1</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">! knob_ugwp_doheat=1</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">! knob_ugwp_dokdis=0</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">! knob_ugwp_ndx4lh=4</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">!/</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">!</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">! allocatable arrays, initilized during &quot;cires_ugwp_init&quot; &amp;</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">!                     released   during &quot;cires_ugwp_finalize&quot;</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">!</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a01a7b6f565a3d069fef5d695f4055b2f.html#a01a7b6f565a3d069fef5d695f4055b2f">   78</a></span><span class="keywordtype">   real</span>, <span class="keywordtype">allocatable</span> :: kvg(:), ktg(:), krad(:), kion(:)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_ae8807038ac10ec550d8b1361cecca26e.html#ae8807038ac10ec550d8b1361cecca26e">   79</a></span><span class="keywordtype">   real</span>, <span class="keywordtype">allocatable</span> :: zkm(:), pmb(:)</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a5bc0c4778d94e91d12a3a83bf60f046c.html#a5bc0c4778d94e91d12a3a83bf60f046c">   80</a></span><span class="keywordtype">   real</span>, <span class="keywordtype">allocatable</span> :: rfdis(:), rfdist(:)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_aff86f58d1be850b552c0f98c0c9a37dd.html#aff86f58d1be850b552c0f98c0c9a37dd">   81</a></span>   <span class="keywordtype">integer</span>           :: levs_rf</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a352bd38deabb1c57450ac77da90ac0d7.html#a352bd38deabb1c57450ac77da90ac0d7">   82</a></span><span class="keywordtype">   real</span>              :: pa_rf, tau_rf</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">!</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">! limiters</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">!</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_aa727495f4ad619148994746e0388117f.html#aa727495f4ad619148994746e0388117f">   86</a></span><span class="keywordtype">   real</span>, <span class="keywordtype">parameter</span> ::  max_kdis = 400.              <span class="comment">! 400 m2/s</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a63dae18c9348bb35c87967e80add77b4.html#a63dae18c9348bb35c87967e80add77b4">   87</a></span><span class="keywordtype">   real</span>, <span class="keywordtype">parameter</span> ::  max_axyz = 400.e-5           <span class="comment">! 400 m/s/day</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a230931790f5a3a3ecb36351cf6df2532.html#a230931790f5a3a3ecb36351cf6df2532">   88</a></span><span class="keywordtype">   real</span>, <span class="keywordtype">parameter</span> ::  max_eps =  max_kdis*4.e-7    <span class="comment">! ~16   K/day</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">!</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">!======================================================================</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a4d64f256ba019bb5bc7626f9b0685a68.html#a4d64f256ba019bb5bc7626f9b0685a68">   91</a></span><span class="keywordtype">   real</span>, <span class="keywordtype">parameter</span> :: f_coriol=1                    <span class="comment">! Coriolis effects</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_aaa42928349305462e10a86e0ca470f41.html#aaa42928349305462e10a86e0ca470f41">   92</a></span><span class="keywordtype">   real</span>, <span class="keywordtype">parameter</span> :: f_nonhyd=1                    <span class="comment">! Nonhydrostatic waves</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a34bf94f822e16a4c40c99d0741cc488c.html#a34bf94f822e16a4c40c99d0741cc488c">   93</a></span><span class="keywordtype">   real</span>, <span class="keywordtype">parameter</span> :: f_kds   =0                    <span class="comment">! Eddy mixing due to GW-unstable below</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a10b1f256771364bb3de8eb59aaca4883.html#a10b1f256771364bb3de8eb59aaca4883">   94</a></span><span class="keywordtype">   real</span>, <span class="keywordtype">parameter</span> :: ipr_ktgw =1./3., ipr_spgw=ipr_ktgw </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a8b6d3eaa40dc13a50999f849b546428f.html#a8b6d3eaa40dc13a50999f849b546428f">   95</a></span><span class="keywordtype">   real</span>, <span class="keywordtype">parameter</span> :: ipr_turb =1./3., ipr_mol =1.95</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a4b53b0edaf082dbf0d5e30b7b5bdf8f5.html#a4b53b0edaf082dbf0d5e30b7b5bdf8f5">   96</a></span><span class="keywordtype">   real</span>, <span class="keywordtype">parameter</span> :: rhp1=1./hps, rhp2=0.5*rhp1, rhp4 = rhp2*rhp2</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_aab38b1bedde8613e6245c25b1b9f5273.html#aab38b1bedde8613e6245c25b1b9f5273">   97</a></span><span class="keywordtype">   real</span>, <span class="keywordtype">parameter</span> :: khp =  0.287*rhp1             <span class="comment">! R/Cp/Hp</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_aca023de23a77dfe243232c484c2c523f.html#aca023de23a77dfe243232c484c2c523f">   98</a></span><span class="keywordtype">   real</span>, <span class="keywordtype">parameter</span> :: cd_ulim = 1.0                 <span class="comment">! critical level precision or Lz ~ 0 ~dz of model</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>   <span class="keyword">contains</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">!</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">! -----------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">!</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">! init  of cires_ugwp   (_init)  called from GFS_driver.F90</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">!</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">! -----------------------------------------------------------------------</span><span class="comment"></span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">!&gt;This subroutine initializes CIRES UGWP </span></div>
+<div class="foldopen" id="foldopen00108" data-start="" data-end="">
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a17e61dab5a6ce65b81c074db72340191.html#a17e61dab5a6ce65b81c074db72340191">  108</a></span>   <span class="keyword">subroutine </span>cires_ugwpv0_mod_init (me, master, nlunit, input_nml_file, logunit, &amp;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>              fn_nml, lonr, latr, levs, ak, bk, pref, dtp, cdmvgwd, cgwf,    &amp;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>              pa_rf_in, tau_rf_in)</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordtype">use  </span><a class="code hl_namespace" href="namespaceugwpv0__oro__init.html">ugwpv0_oro_init</a>,     <span class="keywordtype">only</span> :  init_oro_gws_v0</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordtype">use  </span><a class="code hl_namespace" href="namespaceugwpv0__wmsdis__init.html">ugwpv0_wmsdis_init</a>,  <span class="keywordtype">only</span> :  initsolv_wmsdis_v0, ilaunch</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordtype">use  </span><a class="code hl_namespace" href="namespaceugwpv0__lsatdis__init.html">ugwpv0_lsatdis_init</a>, <span class="keywordtype">only</span> :  initsolv_lsatdis_v0</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordtype">implicit none</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordtype">integer</span>,              <span class="keywordtype">intent (in)</span> :: me</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordtype">integer</span>,              <span class="keywordtype">intent (in)</span> :: master</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordtype">integer</span>,              <span class="keywordtype">intent (in)</span> :: nlunit</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keywordtype">character (len = *)</span>,  <span class="keywordtype">intent (in)</span> :: input_nml_file(:)</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordtype">integer</span>,              <span class="keywordtype">intent (in)</span> :: logunit</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordtype">character(len=64)</span>,    <span class="keywordtype">intent (in)</span> :: fn_nml</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordtype">integer</span>,              <span class="keywordtype">intent (in)</span> :: lonr</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordtype">integer</span>,              <span class="keywordtype">intent (in)</span> :: levs</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keywordtype">integer</span>,              <span class="keywordtype">intent (in)</span> :: latr</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="keywordtype">    real</span>,                 <span class="keywordtype">intent (in)</span> :: ak(levs+1), bk(levs+1), pref</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="keywordtype">    real</span>,                 <span class="keywordtype">intent (in)</span> :: dtp</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="keywordtype">    real</span>,                 <span class="keywordtype">intent (in)</span> :: cdmvgwd(2), cgwf(2)             <span class="comment">! &quot;scaling&quot; controls for &quot;old&quot; GFS-GW schemes</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="keywordtype">    real</span>,                 <span class="keywordtype">intent (in)</span> :: pa_rf_in, tau_rf_in</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordtype">integer</span> :: ios</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordtype">logical</span> :: exists</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="keywordtype">    real</span>    :: dxsg</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordtype">integer</span> :: k</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="preprocessor">#ifdef INTERNAL_FILE_NML</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="preprocessor"></span>    <span class="keyword">read</span> (input_nml_file, nml = cires_ugwp_nml)</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="preprocessor"></span>    <span class="keywordflow">if</span> (me == master) print *, trim(fn_nml), <span class="stringliteral">&#39; GW-namelist file &#39;</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keyword">inquire</span> (file =trim(fn_nml) , exist = exists)</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keywordflow">if</span> (.not. exists) <span class="keywordflow">then</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>       <span class="keywordflow">if</span> (me == master) &amp;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <span class="keyword">write</span> (6, *) <span class="stringliteral">&#39;separate ugwp :: namelist file: &#39;</span>, trim(fn_nml), <span class="stringliteral">&#39; does not exist&#39;</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="keyword">open</span> (unit = nlunit, file = trim(fn_nml), action = <span class="stringliteral">&#39;read&#39;</span>, status = <span class="stringliteral">&#39;old&#39;</span>, iostat = ios)</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="keywordflow">    endif</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    rewind(nlunit)</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="keyword">read</span>   (nlunit, nml = cires_ugwp_nml)</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keyword">close</span>  (nlunit)</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="preprocessor"></span>    </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">!</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    ilaunch = launch_level</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    pa_rf   = pa_rf_in</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    tau_rf  = tau_rf_in</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">! write version number and namelist to log file</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordflow">if</span> (me == master) <span class="keywordflow">then</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="keyword">write</span> (logunit, *) <span class="stringliteral">&quot; ================================================================== &quot;</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <span class="keyword">write</span> (logunit, *) <span class="stringliteral">&quot;cires_ugwp_cires&quot;</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keyword">write</span> (logunit, nml = cires_ugwp_nml)</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="keywordflow">    endif</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">!</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">! effective kxw - resolution-aware</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">!</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    dxsg =  pi2*arad/float(lonr) * knob_ugwp_ndx4lh</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">!</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="keyword">allocate</span>( kvg(levs+1),   ktg(levs+1)  )</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="keyword">allocate</span>( krad(levs+1),  kion(levs+1) )        </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="keyword">allocate</span>( zkm(levs),   pmb(levs) )</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keyword">allocate</span>( rfdis(levs), rfdist(levs) )</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">!</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment">! ak -pa  bk-dimensionless  from surf =&gt; tol_lid_pressure =0</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">!</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="keywordflow">do</span> k=1, levs</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>       pmb(k) = 1.e0*(ak(k) + pref*bk(k))    <span class="comment">! Pa -unit  Pref = 1.e5</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>       zkm(k) = -hpskm*alog(pmb(k)/pref)</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="keywordflow">    enddo</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment">!</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">! Part-1 :init_global_gwdis</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment">!</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="keyword">call </span>init_global_gwdis_v0(levs, zkm, pmb, kvg, ktg, krad, kion)</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">!</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment">! Part-2 :init_SOURCES_gws -- only orowaves, but ugwp-v0 is based on gwdps.f of EMC</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment">!</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment">!    </span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">! call init-solver for &quot;stationary&quot; multi-wave spectra and sub-grid oro</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">!</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keyword">call </span>init_oro_gws_v0( knob_ugwp_wvspec(1), knob_ugwp_azdir(1),    &amp;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>         knob_ugwp_stoch(1), knob_ugwp_effac(1), lonr, kxw, cdmvgwd )</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">!</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">! call init-sources for &quot;non-sationary&quot; multi-wave spectra</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">!</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    do_physb_gwsrcs=.true.</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">!======================</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">! Part-3 :init_SOLVERS</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">! =====================</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">!</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">! call init-solvers for &quot;broad&quot; non-stationary multi-wave spectra</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">!</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="keywordflow">if</span>   (knob_ugwp_solver==1) <span class="keywordflow">then</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">!</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>      <span class="keyword">call </span>initsolv_lsatdis_v0(me, master, knob_ugwp_wvspec(2), knob_ugwp_azdir(2), &amp;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>                            knob_ugwp_stoch(2), knob_ugwp_effac(2), do_physb_gwsrcs, kxw )</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="keywordflow">    endif</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>     <span class="keywordflow">if</span>   (knob_ugwp_solver==2) <span class="keywordflow">then</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>       <span class="keyword">call </span>initsolv_wmsdis_v0(me, master, knob_ugwp_wvspec(2), knob_ugwp_azdir(2), &amp;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>                            knob_ugwp_stoch(2), knob_ugwp_effac(2), do_physb_gwsrcs, kxw)</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="keywordflow">     endif</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment">!======================</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    module_is_initialized = .true.</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    <span class="keyword">end subroutine </span>cires_ugwpv0_mod_init</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment">!      </span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="comment">! -----------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment">! finalize  of cires_ugwp   (_finalize)</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="comment">! -----------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment"></span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="comment">!&gt; This subroutine deallocate sources/spectra and some diagnostics.</span></div>
+<div class="foldopen" id="foldopen00229" data-start="" data-end="">
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="namespacecires__ugwpv0__module_a34c762e00214228b9e2e1de06555112d.html#a34c762e00214228b9e2e1de06555112d">  229</a></span>  <span class="keyword">subroutine </span>cires_ugwpv0_mod_finalize</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="comment">!</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment">! deallocate sources/spectra &amp; some diagnostics need to find where &quot;deaalocate them&quot;</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment">! before &quot;end&quot; of the FV3GFS</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment">!</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keywordtype">implicit none</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment">!</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="comment">!   deallocate arrays employed in V0</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="comment">!</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="keyword">deallocate</span>( kvg,   ktg  )</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="keyword">deallocate</span>( krad,  kion )</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="keyword">deallocate</span>( zkm,   pmb  )</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="keyword">deallocate</span>( rfdis, rfdist)</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>   <span class="keyword">end subroutine </span>cires_ugwpv0_mod_finalize</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="comment">!</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> <span class="keyword">end module </span><a class="code hl_namespace" href="namespacecires__ugwpv0__module.html">cires_ugwpv0_module</a></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
+<div class="ttc" id="anamespacecires__ugwpv0__module_html"><div class="ttname"><a href="namespacecires__ugwpv0__module.html">cires_ugwpv0_module</a></div><div class="ttdoc">This module contains the UGWPv0 driver.</div><div class="ttdef"><b>Definition</b> <a href="#l00005">cires_ugwp_module.F90:5</a></div></div>
+<div class="ttc" id="anamespaceugwpv0__lsatdis__init_html"><div class="ttname"><a href="namespaceugwpv0__lsatdis__init.html">ugwpv0_lsatdis_init</a></div><div class="ttdoc">This module contains initialization of wave solvers for UGWP v0.</div><div class="ttdef"><b>Definition</b> <a href="cires__ugwp__initialize_8_f90_source.html#l00230">cires_ugwp_initialize.F90:230</a></div></div>
+<div class="ttc" id="anamespaceugwpv0__oro__init_html"><div class="ttname"><a href="namespaceugwpv0__oro__init.html">ugwpv0_oro_init</a></div><div class="ttdoc">This module contains orographic wave source schemes for UGWP v0.</div><div class="ttdef"><b>Definition</b> <a href="cires__ugwp__initialize_8_f90_source.html#l00099">cires_ugwp_initialize.F90:99</a></div></div>
+<div class="ttc" id="anamespaceugwpv0__wmsdis__init_html"><div class="ttname"><a href="namespaceugwpv0__wmsdis__init.html">ugwpv0_wmsdis_init</a></div><div class="ttdoc">This module contains init-solvers for &quot;broad&quot; non-stationary multi-wave spectra.</div><div class="ttdef"><b>Definition</b> <a href="cires__ugwp__initialize_8_f90_source.html#l00276">cires_ugwp_initialize.F90:276</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_04295376714a1e8908c2299dbbe55309.html">GWD</a></li><li class="navelem"><b>cires_ugwp_module.F90</b></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

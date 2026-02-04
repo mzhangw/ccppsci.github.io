@@ -1,0 +1,7 @@
+<map id="rrtmg_sw::mcica_subcol" name="rrtmg_sw::mcica_subcol">
+<area shape="rect" id="Node000001" title="This subroutine computes the sub&#45;colum cloud profile flag array." alt="" coords="389,5,552,31"/>
+<area shape="rect" id="Node000002" href="$group__module__radsw__main_ga336d1ab636b4392dcb907d0d780e8487.html#ga336d1ab636b4392dcb907d0d780e8487" title="This subroutine computes the cloud optical properties for each cloudy layer and g&#45;point interval." alt="" coords="216,5,341,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="370,18,341,21,341,16,376,18"/>
+<area shape="rect" id="Node000003" href="$group__module__radsw__main_ga98a04fd11b2af93cfa87e4cb8d02f2a0.html#ga98a04fd11b2af93cfa87e4cb8d02f2a0" title=" " alt="" coords="5,5,168,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="197,18,168,21,168,16,203,18"/>
+</map>

@@ -1,0 +1,27 @@
+<map id="yang_2008" name="yang_2008">
+<area shape="rect" id="Node000001" title="this is a modified version of yang et al (2002 qjrms, 2008 jamc) and chen et al (2010,..." alt="" coords="957,129,1041,155"/>
+<area shape="rect" id="Node000002" href="$group___noah_m_p___l_s_m_ga4a88258da12057ced7c9dc5760b53d13.html#ga4a88258da12057ced7c9dc5760b53d13" title=" " alt="" coords="849,129,909,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="939,142,910,145,909,140,944,142"/>
+<area shape="rect" id="Node000003" href="$group___noah_m_p___l_s_m_gaeb5a9f0cae890fa73e0e17f9b4be30c2.html#gaeb5a9f0cae890fa73e0e17f9b4be30c2" title="use newton&#45;raphson iteration to solve ground (tg) temperature that balances the surface energy budget..." alt="" coords="681,55,755,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="846,120,800,94,756,78,756,73,802,89,851,120"/>
+<area shape="rect" id="Node000006" href="$group___noah_m_p___l_s_m_ga0e44f72a92d8830344fecdb9fb65e6fb.html#ga0e44f72a92d8830344fecdb9fb65e6fb" title="This subroutine is the main CCPP entry point for the NoahMP LSM." alt="" coords="5,80,116,106"/>
+<area shape="poly" id="edge11_Node000002_Node000006" title=" " alt="" coords="830,149,716,165,549,175,454,176,357,172,258,162,163,145,118,129,82,109,82,104,120,124,164,140,259,157,357,167,454,171,549,170,715,160,836,149"/>
+<area shape="rect" id="Node000009" href="$group___noah_m_p___l_s_m_gaf512c10513f75c077220936b2ca74c42.html#gaf512c10513f75c077220936b2ca74c42" title="use newton&#45;raphson iteration to solve ground (tg) temperature that balances the surface energy budget..." alt="" coords="635,204,801,245"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="845,162,802,189,766,207,764,201,799,184,840,164"/>
+<area shape="rect" id="Node000012" href="$group___noah_m_p___l_s_m_gadf2b2287685bf9c610afdb949c1c6cdb.html#gadf2b2287685bf9c610afdb949c1c6cdb" title="use newton&#45;raphson iteration to solve for vegetation (tv) and ground (tg) temperatures that balance t..." alt="" coords="679,104,757,130"/>
+<area shape="poly" id="edge12_Node000002_Node000012" title=" " alt="" coords="831,135,757,126,757,120,836,135"/>
+<area shape="rect" id="Node000004" href="$group___noah_m_p___l_s_m_ga2698d46b5582d11d0d6fc78d49dd796c.html#ga2698d46b5582d11d0d6fc78d49dd796c" title="We use different approaches to deal with subgrid features of radiation transfer and turbulent transfe..." alt="" coords="474,55,535,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="663,68,535,70,535,65,668,67"/>
+<area shape="rect" id="Node000005" href="$group___noah_m_p___l_s_m_gab480f7969dad27ce9e00e559f82c464e.html#gab480f7969dad27ce9e00e559f82c464e" title=" " alt="" coords="221,5,316,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="457,59,317,31,317,25,462,57"/>
+<area shape="rect" id="Node000007" href="$group___s_a_m_fdeep_ga5e834dec0932a16a98b7d90fd69a9c70.html#ga5e834dec0932a16a98b7d90fd69a9c70" title=" " alt="" coords="164,55,374,80"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="457,68,375,70,374,65,462,67"/>
+<area shape="rect" id="Node000008" href="$group___s_a_m_f__shal_gaf2534c328553470068a75a9aa56b7d56.html#gaf2534c328553470068a75a9aa56b7d56" title=" " alt="" coords="168,104,370,130"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="457,78,335,106,333,101,462,76"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="204,32,165,45,123,63,87,81,83,77,120,58,163,40,208,28"/>
+<area shape="rect" id="Node000010" href="$group___noah_m_p___l_s_m_ga93dd9aedd32004c8cf2c88c222073c6a.html#ga93dd9aedd32004c8cf2c88c222073c6a" title="Compute energy budget (momentum &amp; energy fluxes and phase changes)." alt="" coords="422,204,587,245"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="617,225,588,227,588,222,623,225"/>
+<area shape="rect" id="Node000011" href="$group___noah_m_p___l_s_m_ga86c69e134a41160e0c6f06bfb3a654a6.html#ga86c69e134a41160e0c6f06bfb3a654a6" title=" " alt="" coords="186,204,352,245"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="404,225,352,227,352,222,409,225"/>
+<area shape="poly" id="edge13_Node000012_Node000004" title=" " alt="" coords="662,105,535,77,535,72,667,104"/>
+</map>

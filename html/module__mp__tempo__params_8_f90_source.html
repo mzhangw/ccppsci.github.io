@@ -1,0 +1,788 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: /Users/man.zhang/github_doxygen/ccpp-physics/physics/MP/TEMPO/TEMPO/module_mp_tempo_params.F90 Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('module__mp__tempo__params_8_f90_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">module_mp_tempo_params.F90</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">! Parameters file for TEMPO Microphysics</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">!=================================================================================================================</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params.html">    3</a></span><span class="keyword">module</span> <a class="code hl_namespace" href="namespacemodule__mp__tempo__params.html">module_mp_tempo_params</a></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#if defined(mpas)</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor"></span>    <span class="keywordtype">use </span>mpas_kind_types, <span class="keywordtype">only</span>: wp =&gt; rkind, sp =&gt; r4kind, dp =&gt; r8kind</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#elif defined(standalone)</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor"></span>    <span class="keywordtype">use </span><a class="code hl_namespace" href="namespacemachine.html">machine</a>, <span class="keywordtype">only</span>: wp =&gt; kind_phys, sp =&gt; kind_sngl_prec, dp =&gt; kind_dbl_prec</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor"></span>    <span class="keywordtype">use </span><a class="code hl_namespace" href="namespacemachine.html">machine</a>, <span class="keywordtype">only</span>: wp =&gt; kind_phys, sp =&gt; kind_sngl_prec, dp =&gt; kind_dbl_prec</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define ccpp_default 1</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor"></span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#if defined(ccpp_default) &amp;&amp; defined(MPI)</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor"></span>    <span class="keywordtype">use </span>mpi_f08</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor"></span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#undef OLD_MPTBLS</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor"></span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">implicit none</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">!=================================================================================================================</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">! Parameters needed first by tempo_init()</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#if defined(OLD_MPTBLS)</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a27f2e2a423d05c972b3906bc8cf30f0d.html#a27f2e2a423d05c972b3906bc8cf30f0d">   26</a></span><span class="preprocessor"></span>    <span class="keywordtype">logical</span>, <span class="keywordtype">parameter</span> :: original_thompson = .true.</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor"></span>    <span class="keywordtype">logical</span>, <span class="keywordtype">parameter</span> :: original_thompson = .false.</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor"></span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">! #########################################################################################</span><span class="comment"></span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">!&gt; \section arg_table_ty_tempo_cfg Argument Table</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">!! \htmlinclude ty_tempo_cfg.html</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">!!</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">! #########################################################################################</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">! Derived data type for configuration flags.</span></div>
+<div class="foldopen" id="foldopen00037" data-start="" data-end="">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structmodule__mp__tempo__params_1_1ty__tempo__cfg.html">   37</a></span>    <span class="keyword">type</span> <a class="code hl_struct" href="structmodule__mp__tempo__params_1_1ty__tempo__cfg.html">ty_tempo_cfg</a></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structmodule__mp__tempo__params_1_1ty__tempo__cfg_a49906a1e64dc6956a075d8051656c83d.html#a49906a1e64dc6956a075d8051656c83d">   38</a></span>        <span class="keywordtype">logical</span> :: aerosol_aware</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="structmodule__mp__tempo__params_1_1ty__tempo__cfg_a742a18446db05858b139e281e1438ceb.html#a742a18446db05858b139e281e1438ceb">   39</a></span>        <span class="keywordtype">logical</span> :: hail_aware</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">end type </span><a class="code hl_struct" href="structmodule__mp__tempo__params_1_1ty__tempo__cfg.html">ty_tempo_cfg</a></div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aad26a5202ebbdbe38422eb7a3e33a3c5.html#aad26a5202ebbdbe38422eb7a3e33a3c5">   42</a></span>    <span class="keywordtype">type</span>(<a class="code hl_struct" href="structmodule__mp__tempo__params_1_1ty__tempo__cfg.html">ty_tempo_cfg</a>) configs</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">! Constants that can be defined by the model ===========================</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">! Needed by tempo_init()</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a9e87805aca01d6f7afe91453ffb8555c.html#a9e87805aca01d6f7afe91453ffb8555c">   46</a></span><span class="keywordtype">    real</span>(wp)            :: pi = 3.1415926536</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">! Enthalpy of sublimation, vaporization, and fusion at 0C.</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aad87c99f71f457de379162afd3012438.html#aad87c99f71f457de379162afd3012438">   49</a></span><span class="keywordtype">    real</span>(wp)            :: lsub = 2.834e6</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aa94e3132654caee76194bac333b9919f.html#aa94e3132654caee76194bac333b9919f">   50</a></span><span class="keywordtype">    real</span>(wp)            :: lvap0 = 2.5e6</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_afb61ca9be9f70a6afa115e8476e25e6d.html#afb61ca9be9f70a6afa115e8476e25e6d">   51</a></span><span class="keywordtype">    real</span>(wp)            :: lfus <span class="comment">!(set in mp_tempo_params_init)</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a8fb253fd02402b82db187493d418f50d.html#a8fb253fd02402b82db187493d418f50d">   52</a></span><span class="keywordtype">    real</span>(wp)            :: olfus <span class="comment">!(set in mp_tempo_params_init)</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">! Needed by the driver</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">! Water vapor and air gas constants at constant pressure</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aad1e4f331bad11fb126a6e6a950de6fb.html#aad1e4f331bad11fb126a6e6a950de6fb">   56</a></span><span class="keywordtype">    real</span>(wp)            :: rv = 461.5</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a47a8104b8c66473689cdde9c1524fa11.html#a47a8104b8c66473689cdde9c1524fa11">   57</a></span><span class="keywordtype">    real</span>(wp)            :: orv <span class="comment">!(set in mp_tempo_params_init)</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a6658580805608402e75154d0ed672447.html#a6658580805608402e75154d0ed672447">   58</a></span><span class="keywordtype">    real</span>(wp)            :: r = 287.04</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ada7a809aab41158a075bec77af8850f1.html#ada7a809aab41158a075bec77af8850f1">   59</a></span><span class="keywordtype">    real</span>(wp)            :: roverrv = 0.622</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a5e991b18599ab92c2d9668db8e5a8444.html#a5e991b18599ab92c2d9668db8e5a8444">   60</a></span><span class="keywordtype">    real</span>(wp)            :: cp2 = 1004.0 <span class="comment">! AAJ change to Cp2</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">! ======================================================================</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">! Minimum microphys values</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="comment">! R1 value, 1.e-12, cannot be set lower because of numerical</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">! problems with Paul Field&#39;s moments and should not be set larger</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="comment">! because of truncation problems in snow/ice growth.</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a78f39bc421e2f58a3ab49498335f1b5f.html#a78f39bc421e2f58a3ab49498335f1b5f">   67</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: r1 = 1.e-12</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a7b3f7b9fa2b31089ffa1816232295da1.html#a7b3f7b9fa2b31089ffa1816232295da1">   68</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: r2 = 1.e-6</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a3eb4551c1e268e04c2508d2fc0bb64a0.html#a3eb4551c1e268e04c2508d2fc0bb64a0">   69</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: eps = 1.e-15</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">!    logical :: is_aerosol_aware = .true.</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a5264eda63d0dd498d6217dd8e64e7ca5.html#a5264eda63d0dd498d6217dd8e64e7ca5">   72</a></span>    <span class="keywordtype">logical</span> :: merra2_aerosol_aware = .false.</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a34dd94bd9ae519e27bff3bf2f411f5cc.html#a34dd94bd9ae519e27bff3bf2f411f5cc">   73</a></span>    <span class="keywordtype">logical</span> :: sedi_semi = .false.</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="comment">! Hail-aware microphysics options</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ad846831d8f42c4310136bac5047075b2.html#ad846831d8f42c4310136bac5047075b2">   76</a></span>    <span class="keywordtype">logical</span>, <span class="keywordtype">parameter</span> :: build_hail_aware_table = .true.</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a72fc17a0bf36c8209c55fd43f5d6f7bd.html#a72fc17a0bf36c8209c55fd43f5d6f7bd">   77</a></span>    <span class="keywordtype">logical</span> :: using_hail_aware_table = .false.</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a6e1a467ca3e24923ebb80b9b3e3a2a93.html#a6e1a467ca3e24923ebb80b9b3e3a2a93">   78</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: nrhg = 9</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aa601562bcd608a182d4e771689b2c82f.html#aa601562bcd608a182d4e771689b2c82f">   79</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: nrhg1 = 1</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_abf5a826a45b179c8f716defcf250c216.html#abf5a826a45b179c8f716defcf250c216">   80</a></span>    <span class="keywordtype">integer</span> :: dimnrhg</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a50541350b0f2ba1184f4ef79439cc7d5.html#a50541350b0f2ba1184f4ef79439cc7d5">   81</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: idx_bg1 = 6 <span class="comment">! =&gt; corresponds to graupel density of 500 kg m^-3 from rho_g array</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="comment">! Densities of rain, graupel, and cloud ice.</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a69bf3464e245f2aeed9f0af4dc7ec3a0.html#a69bf3464e245f2aeed9f0af4dc7ec3a0">   84</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: rho_w2 = 1000.0 <span class="comment">! Change to rho_w2 to solve MPAS same var name conflict</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a6be0d011fcbebc35e6fb5ea5c0cb9906.html#a6be0d011fcbebc35e6fb5ea5c0cb9906">   85</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: rho_i = 890.0</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ae5ddb5d131f018296d2ce56bcef0814f.html#ae5ddb5d131f018296d2ce56bcef0814f">   86</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(NRHG)</span>, <span class="keywordtype">parameter</span> :: rho_g = (/50., 100., 200., 300., 400., 500., 600., 700., 800./)</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="comment">! Cloud droplet distribution dispersion parameters</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aab7dbb4de3e101f693e6ebe24fe2394a.html#aab7dbb4de3e101f693e6ebe24fe2394a">   89</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: nu_c_max = 15</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a477f7a94c53c554cb839e383641bbfe4.html#a477f7a94c53c554cb839e383641bbfe4">   90</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: nu_c_min = 2</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_acaf18be64e24d679cb0443c6ef6e8835.html#acaf18be64e24d679cb0443c6ef6e8835">   91</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: nu_c_scale = 1000.e6</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="comment">! Generalized gamma distributions for rain, graupel and cloud ice.</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="comment">! N(D) = N_0 * D**mu * exp(-lamda*D);  mu=0 is exponential.</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_adff015b58637a54d9857ce87d88ffb91.html#adff015b58637a54d9857ce87d88ffb91">   95</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: mu_r = 0.0</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a797e9fee36628c5eb15b6679cd98a73d.html#a797e9fee36628c5eb15b6679cd98a73d">   96</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: mu_s = 0.6357</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aa0c44839bb9863bbb24d9e1bf9b0a450.html#aa0c44839bb9863bbb24d9e1bf9b0a450">   97</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: mu_g = 0.0</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a6b3d7c07be72ecfae6a142560e5da3e9.html#a6b3d7c07be72ecfae6a142560e5da3e9">   98</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: mu_i = 0.0</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="comment">! Mass power law relations:  mass = am*D**bm</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="comment">! Snow from Field et al. (2005), others assume spherical form.</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a2ea7243388a0d079270ade3005b82224.html#a2ea7243388a0d079270ade3005b82224">  102</a></span><span class="keywordtype">    real</span>(wp)            :: am_r <span class="comment">! = PI * rho_w2 / 6.0 (set in mp_tempo_params_init)</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_af47836ddb9a20de90be0fe2f0d2fa764.html#af47836ddb9a20de90be0fe2f0d2fa764">  103</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: bm_r = 3.0</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aec4dfe9cf8c977fca1b76c7121244d37.html#aec4dfe9cf8c977fca1b76c7121244d37">  104</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: am_s = 0.069</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_af405de4cbd052f3dc7c12aa9c83d1314.html#af405de4cbd052f3dc7c12aa9c83d1314">  105</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: bm_s = 2.0</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aad067dcadb39f186aed9156e0deb43a6.html#aad067dcadb39f186aed9156e0deb43a6">  106</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension (NRHG)</span> :: am_g  <span class="comment">!(set in mp_tempo_params_init)</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a2e9777fa223d4984c7552a8296c35563.html#a2e9777fa223d4984c7552a8296c35563">  107</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: bm_g = 3.0</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a827a36aec68b0e6689d5bc77f4848221.html#a827a36aec68b0e6689d5bc77f4848221">  108</a></span><span class="keywordtype">    real</span>(wp)            :: am_i <span class="comment">! = PI * rho_i / 6.0 (set in mp_tempo_params_init)</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aabdbecc0d1cfc9881f31b4e3c755971d.html#aabdbecc0d1cfc9881f31b4e3c755971d">  109</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: bm_i = 3.0</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="comment">! Fallspeed power laws relations:  v = (av*D**bv)*exp(-fv*D)</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="comment">! Rain from Ferrier (1994), ice, snow, and graupel from</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="comment">! Thompson et al (2008). Coefficient fv is zero for graupel/ice.</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_afafbcc479030d1ec2a7ac1cf6008c2a8.html#afafbcc479030d1ec2a7ac1cf6008c2a8">  114</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: av_r = 4854.0</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_abbef3d09f5ddded469e7f45b08dda444.html#abbef3d09f5ddded469e7f45b08dda444">  115</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: bv_r = 1.0</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_afacb0ca45b28f77bc95bfe91e75264ec.html#afacb0ca45b28f77bc95bfe91e75264ec">  116</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: av_s = 40.0</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a4410c318762c48018346c5b27ce323fd.html#a4410c318762c48018346c5b27ce323fd">  117</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: bv_s = 0.55</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a1ac00ab33ce4fe636a1c031a0113904c.html#a1ac00ab33ce4fe636a1c031a0113904c">  118</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: fv_s = 100.0</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a1c48d7e3e773ab91f8c0b21f82a64cc2.html#a1c48d7e3e773ab91f8c0b21f82a64cc2">  119</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: av_g_old = 442.0</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a55b009693e4e95d3c685ae2cc72b45f3.html#a55b009693e4e95d3c685ae2cc72b45f3">  120</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: bv_g_old = 0.89</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="comment">! Variable graupel density av_g and bv_g values</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="comment">! Computed from A. Heymsfield: Best - Reynolds relationship</span></div>
+<div class="foldopen" id="foldopen00124" data-start="" data-end="">
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a5e9ae1deb7a4316cd457993d82867417.html#a5e9ae1deb7a4316cd457993d82867417">  124</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(NRHG)</span> :: av_g = (/45.9173813, 67.0867386, 98.0158463, 122.353378, &amp;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        143.204224, 161.794724, 178.762115, 194.488785, 209.225876/)</div>
+</div>
+<div class="foldopen" id="foldopen00126" data-start="" data-end="">
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a73a1a8504cdb6e24961873447da0c172.html#a73a1a8504cdb6e24961873447da0c172">  126</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(NRHG)</span> :: bv_g = (/0.640961647, 0.640961647, 0.640961647, 0.640961647, &amp;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        0.640961647, 0.640961647, 0.640961647, 0.640961647, 0.640961647/)</div>
+</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="comment">! Capacitance of sphere and plates/aggregates: D**3, D**2</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a2db32bfd3d817f86283d6611b4881958.html#a2db32bfd3d817f86283d6611b4881958">  130</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: c_cube = 0.5</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a320baf1369eb3668d206784d4c01db55.html#a320baf1369eb3668d206784d4c01db55">  131</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: c_sqrd = 0.15</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="comment">! Schmidt number</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a7ba3e0acac74ee9e7de44bcefb6668a7.html#a7ba3e0acac74ee9e7de44bcefb6668a7">  134</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: sc = 0.632</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ab907cc05bef93b02d5748f97265c33b0.html#ab907cc05bef93b02d5748f97265c33b0">  135</a></span><span class="keywordtype">    real</span>(wp) :: sc3</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="comment">! Fall speed coefficients for ice and cloud droplets</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a71510c5b7c098bc4e23bea595296d0db.html#a71510c5b7c098bc4e23bea595296d0db">  138</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: bv_i = 1.0</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aa72d5033e99c2577024d1abd5cee374c.html#aa72d5033e99c2577024d1abd5cee374c">  139</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: bv_c = 2.0</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="comment">! Ice initiates with this mass (kg), corresponding diameter calc.</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="comment">! Min diameters and mass of cloud, rain, snow, and graupel (m, kg).</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a62bd2f93e7d18985cd6b5f65d78073bf.html#a62bd2f93e7d18985cd6b5f65d78073bf">  144</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: xm0i = 1.e-12</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a8180fba4cc4c2f434c89ec2cca83d874.html#a8180fba4cc4c2f434c89ec2cca83d874">  145</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: d0c = 1.e-6</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_abfc1a8a2e9fbf9632eb0a73db2842fd4.html#abfc1a8a2e9fbf9632eb0a73db2842fd4">  146</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: d0r = 50.e-6</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aa47c71a64a2668c39d8e341cacccbb00.html#aa47c71a64a2668c39d8e341cacccbb00">  147</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: d0s = 300.e-6</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a44d5644bd2fdd0c5b368d7b4f9721671.html#a44d5644bd2fdd0c5b368d7b4f9721671">  148</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: d0g = 350.e-6</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ab665ab702e69a26d3a5a293b1f8d4622.html#ab665ab702e69a26d3a5a293b1f8d4622">  149</a></span><span class="keywordtype">    real</span>(wp) :: d0i, xm0s, xm0g</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="comment">! Lookup table dimensions</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_acbca4ea0c823cda2f452206c25bae5f0.html#acbca4ea0c823cda2f452206c25bae5f0">  152</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: nbins = 100</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ab831b25e63fa90ff9731dacf3b9eb66f.html#ab831b25e63fa90ff9731dacf3b9eb66f">  153</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: nbc = nbins</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a300bdaf7c824ceded05c30989cc19c03.html#a300bdaf7c824ceded05c30989cc19c03">  154</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: nbr = nbins</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a8ea7c91f34d649abe75d0954834ba8f1.html#a8ea7c91f34d649abe75d0954834ba8f1">  155</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: nbs = nbins</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_afbfbea35e1df31d39fb913b3a1eca720.html#afbfbea35e1df31d39fb913b3a1eca720">  157</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: nbi = nbins</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a70d4bf014a3df56df9ae191f6d498355.html#a70d4bf014a3df56df9ae191f6d498355">  158</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: nbg = nbins</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_adca0a612fa2a9ae731ba9d6db967901f.html#adca0a612fa2a9ae731ba9d6db967901f">  159</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: ntb_i = 64</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_af3bca7aa7f2f8f39cdd9909097ffaa8a.html#af3bca7aa7f2f8f39cdd9909097ffaa8a">  160</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: ntb_i1 = 55</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_afb153a51b35a3fe6340fee8bfc108af9.html#afb153a51b35a3fe6340fee8bfc108af9">  161</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: ntb_c = 37</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a8f5021a816f9ff3793c689944ed7f188.html#a8f5021a816f9ff3793c689944ed7f188">  162</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: ntb_t = 9</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a5601f10b4c937cbd6350b38f90946dde.html#a5601f10b4c937cbd6350b38f90946dde">  163</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: ntb_g1 = 37</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="preprocessor">#if defined(ccpp_default) &amp;&amp; defined(OLD_MPTBLS)</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ae058f2ae6e35ee03819684604594903c.html#ae058f2ae6e35ee03819684604594903c">  166</a></span><span class="preprocessor"></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: ntb_s = 28</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a5c7fd4b7160439ad41ae48898017f118.html#a5c7fd4b7160439ad41ae48898017f118">  167</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: ntb_g = 28</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="preprocessor"></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: ntb_s = 37</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: ntb_g = 37</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_abb5dedf835be98575596407cb43d647f.html#abb5dedf835be98575596407cb43d647f">  172</a></span><span class="preprocessor"></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: ntb_r = 37</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a58c57465cb8fafb76d78b528412890b2.html#a58c57465cb8fafb76d78b528412890b2">  173</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: ntb_r1 = 37</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a6d1108101d4b4e7ed1708038bd378be3.html#a6d1108101d4b4e7ed1708038bd378be3">  174</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: ntb_t1 = 45</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a8f47278e3424c3e6fdde44b32eae0ffc.html#a8f47278e3424c3e6fdde44b32eae0ffc">  175</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: ntb_in = 55</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aa1932aabca140ec99c7ab32e485ca458.html#aa1932aabca140ec99c7ab32e485ca458">  176</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: ntb_arc = 7</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a7227b21782816521ed26dd8bfde3f3c4.html#a7227b21782816521ed26dd8bfde3f3c4">  177</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: ntb_arw = 9</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aed8d1e3aac3619186c4b6d3a32e3c3ab.html#aed8d1e3aac3619186c4b6d3a32e3c3ab">  178</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: ntb_art = 7</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a024f0b244500c9fdea28c0ef1b1466ba.html#a024f0b244500c9fdea28c0ef1b1466ba">  179</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: ntb_arr = 5</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a284d83f3e9ffef03527b81479c80f6b9.html#a284d83f3e9ffef03527b81479c80f6b9">  180</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: ntb_ark = 4</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a5fb2dbb04cbb4f7ffce401f331095a71.html#a5fb2dbb04cbb4f7ffce401f331095a71">  182</a></span>    <span class="keywordtype">integer</span> :: nic1, nic2, nii2, nii3, nir2, nir3, nis2, nig2, nig3, niin2</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="comment">!     real(dp), dimension(nbins+1) :: xDx</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aa91d22351864df28ffd8a22eacc6ce8e.html#aa91d22351864df28ffd8a22eacc6ce8e">  185</a></span><span class="keywordtype">    real</span>(dp), <span class="keywordtype">dimension(nbc)</span> :: dc, dtc</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a023e1f03324c073119025bb6dfbe399b.html#a023e1f03324c073119025bb6dfbe399b">  186</a></span><span class="keywordtype">    real</span>(dp), <span class="keywordtype">dimension(nbi)</span> :: di, dti</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a8f276c814c2bc6f016fec9032961c28b.html#a8f276c814c2bc6f016fec9032961c28b">  187</a></span><span class="keywordtype">    real</span>(dp), <span class="keywordtype">dimension(nbr)</span> :: dr, dtr</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_abdb28f0b597a564eb4264a1574290248.html#abdb28f0b597a564eb4264a1574290248">  188</a></span><span class="keywordtype">    real</span>(dp), <span class="keywordtype">dimension(nbs)</span> :: ds, dts</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ae142d721ff6b953155dd2da4c64cde0a.html#ae142d721ff6b953155dd2da4c64cde0a">  189</a></span><span class="keywordtype">    real</span>(dp), <span class="keywordtype">dimension(nbg)</span> :: dg, dtg</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a36042e1d990a02ee8cc56d233c992691.html#a36042e1d990a02ee8cc56d233c992691">  190</a></span><span class="keywordtype">    real</span>(dp), <span class="keywordtype">dimension(nbc)</span> :: t_nc</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="comment">! Lookup tables for cloud water content (kg/m**3).</span></div>
+<div class="foldopen" id="foldopen00193" data-start="" data-end="">
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a89a1398a220094c3a214238fa07faeb8.html#a89a1398a220094c3a214238fa07faeb8">  193</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(ntb_c)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        r_c = (/1.e-6,2.e-6,3.e-6,4.e-6,5.e-6,6.e-6,7.e-6,8.e-6,9.e-6, &amp;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        1.e-5,2.e-5,3.e-5,4.e-5,5.e-5,6.e-5,7.e-5,8.e-5,9.e-5, &amp;</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        1.e-4,2.e-4,3.e-4,4.e-4,5.e-4,6.e-4,7.e-4,8.e-4,9.e-4, &amp;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        1.e-3,2.e-3,3.e-3,4.e-3,5.e-3,6.e-3,7.e-3,8.e-3,9.e-3, &amp;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        1.e-2/)</div>
+</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="comment">! Lookup tables for cloud ice content (kg/m**3).</span></div>
+<div class="foldopen" id="foldopen00201" data-start="" data-end="">
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_af8906ecf6daf2debe05d1e1ae59e3de0.html#af8906ecf6daf2debe05d1e1ae59e3de0">  201</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(ntb_i)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        r_i = (/1.e-10,2.e-10,3.e-10,4.e-10, &amp;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        5.e-10,6.e-10,7.e-10,8.e-10,9.e-10, &amp;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        1.e-9,2.e-9,3.e-9,4.e-9,5.e-9,6.e-9,7.e-9,8.e-9,9.e-9, &amp;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        1.e-8,2.e-8,3.e-8,4.e-8,5.e-8,6.e-8,7.e-8,8.e-8,9.e-8, &amp;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        1.e-7,2.e-7,3.e-7,4.e-7,5.e-7,6.e-7,7.e-7,8.e-7,9.e-7, &amp;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        1.e-6,2.e-6,3.e-6,4.e-6,5.e-6,6.e-6,7.e-6,8.e-6,9.e-6, &amp;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        1.e-5,2.e-5,3.e-5,4.e-5,5.e-5,6.e-5,7.e-5,8.e-5,9.e-5, &amp;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        1.e-4,2.e-4,3.e-4,4.e-4,5.e-4,6.e-4,7.e-4,8.e-4,9.e-4, &amp;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        1.e-3/)</div>
+</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <span class="comment">! Lookup tables for rain content (kg/m**3).</span></div>
+<div class="foldopen" id="foldopen00213" data-start="" data-end="">
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ae91d438e1f237437897f8196861b7492.html#ae91d438e1f237437897f8196861b7492">  213</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(ntb_r)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        r_r = (/1.e-6,2.e-6,3.e-6,4.e-6,5.e-6,6.e-6,7.e-6,8.e-6,9.e-6, &amp;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        1.e-5,2.e-5,3.e-5,4.e-5,5.e-5,6.e-5,7.e-5,8.e-5,9.e-5, &amp;</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        1.e-4,2.e-4,3.e-4,4.e-4,5.e-4,6.e-4,7.e-4,8.e-4,9.e-4, &amp;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        1.e-3,2.e-3,3.e-3,4.e-3,5.e-3,6.e-3,7.e-3,8.e-3,9.e-3, &amp;</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        1.e-2/)</div>
+</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="comment">! Lookup tables for graupel y-intercept parameter (/m**4).</span></div>
+<div class="foldopen" id="foldopen00221" data-start="" data-end="">
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ae5ac9528ac70fc65dcda2f01b81b32e8.html#ae5ac9528ac70fc65dcda2f01b81b32e8">  221</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(ntb_g1)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        n0g_exp = (/1.e2,2.e2,3.e2,4.e2,5.e2,6.e2,7.e2,8.e2,9.e2, &amp;</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        1.e3,2.e3,3.e3,4.e3,5.e3,6.e3,7.e3,8.e3,9.e3, &amp;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        1.e4,2.e4,3.e4,4.e4,5.e4,6.e4,7.e4,8.e4,9.e4, &amp;</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        1.e5,2.e5,3.e5,4.e5,5.e5,6.e5,7.e5,8.e5,9.e5, &amp;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        1.e6/)</div>
+</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="preprocessor">#if defined(ccpp_default) &amp;&amp; defined(OLD_MPTBLS)</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="preprocessor"></span>    <span class="comment">! Lookup tables for graupel content (kg/m**3).</span></div>
+<div class="foldopen" id="foldopen00230" data-start="" data-end="">
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ac779964d132d921f8bc2174992279183.html#ac779964d132d921f8bc2174992279183">  230</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(ntb_g)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        r_g = (/1.e-5,2.e-5,3.e-5,4.e-5,5.e-5,6.e-5,7.e-5,8.e-5,9.e-5, &amp;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        1.e-4,2.e-4,3.e-4,4.e-4,5.e-4,6.e-4,7.e-4,8.e-4,9.e-4, &amp;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        1.e-3,2.e-3,3.e-3,4.e-3,5.e-3,6.e-3,7.e-3,8.e-3,9.e-3, &amp;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        1.e-2/)</div>
+</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="comment">! Lookup tables for snow content (kg/m**3).</span></div>
+<div class="foldopen" id="foldopen00237" data-start="" data-end="">
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ad4de4a0c75f32280cf7a7f2aa9498a0c.html#ad4de4a0c75f32280cf7a7f2aa9498a0c">  237</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(ntb_s)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        r_s = (/1.e-5,2.e-5,3.e-5,4.e-5,5.e-5,6.e-5,7.e-5,8.e-5,9.e-5, &amp;</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        1.e-4,2.e-4,3.e-4,4.e-4,5.e-4,6.e-4,7.e-4,8.e-4,9.e-4, &amp;</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        1.e-3,2.e-3,3.e-3,4.e-3,5.e-3,6.e-3,7.e-3,8.e-3,9.e-3, &amp;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        1.e-2/)</div>
+</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="preprocessor"></span>    <span class="comment">! Lookup tables for graupel content (kg/m**3).</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(ntb_g)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        r_g = (/1.e-6,2.e-6,3.e-6,4.e-6,5.e-6,6.e-6,7.e-6,8.e-6,9.e-6, &amp;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        1.e-5,2.e-5,3.e-5,4.e-5,5.e-5,6.e-5,7.e-5,8.e-5,9.e-5, &amp;</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        1.e-4,2.e-4,3.e-4,4.e-4,5.e-4,6.e-4,7.e-4,8.e-4,9.e-4, &amp;</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        1.e-3,2.e-3,3.e-3,4.e-3,5.e-3,6.e-3,7.e-3,8.e-3,9.e-3, &amp;</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        1.e-2/)</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <span class="comment">! Lookup tables for snow content (kg/m**3).</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(ntb_s)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        r_s = (/1.e-6,2.e-6,3.e-6,4.e-6,5.e-6,6.e-6,7.e-6,8.e-6,9.e-6, &amp;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        1.e-5,2.e-5,3.e-5,4.e-5,5.e-5,6.e-5,7.e-5,8.e-5,9.e-5, &amp;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        1.e-4,2.e-4,3.e-4,4.e-4,5.e-4,6.e-4,7.e-4,8.e-4,9.e-4, &amp;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        1.e-3,2.e-3,3.e-3,4.e-3,5.e-3,6.e-3,7.e-3,8.e-3,9.e-3, &amp;</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        1.e-2/)</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="preprocessor"></span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    <span class="comment">! Lookup tables for rain y-intercept parameter (/m**4).</span></div>
+<div class="foldopen" id="foldopen00261" data-start="" data-end="">
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a59d75f4d066738ddf4b33a7d03be0faf.html#a59d75f4d066738ddf4b33a7d03be0faf">  261</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(ntb_r1)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        n0r_exp = (/1.e6,2.e6,3.e6,4.e6,5.e6,6.e6,7.e6,8.e6,9.e6, &amp;</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        1.e7,2.e7,3.e7,4.e7,5.e7,6.e7,7.e7,8.e7,9.e7, &amp;</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        1.e8,2.e8,3.e8,4.e8,5.e8,6.e8,7.e8,8.e8,9.e8, &amp;</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        1.e9,2.e9,3.e9,4.e9,5.e9,6.e9,7.e9,8.e9,9.e9, &amp;</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        1.e10/)</div>
+</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    <span class="comment">! Lookup tables for ice number concentration (/m**3).</span></div>
+<div class="foldopen" id="foldopen00269" data-start="" data-end="">
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a9f59c4676a3163a23ca99adf7b412f88.html#a9f59c4676a3163a23ca99adf7b412f88">  269</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(ntb_i1)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        nt_i = (/1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0, &amp;</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        1.e1,2.e1,3.e1,4.e1,5.e1,6.e1,7.e1,8.e1,9.e1, &amp;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        1.e2,2.e2,3.e2,4.e2,5.e2,6.e2,7.e2,8.e2,9.e2, &amp;</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        1.e3,2.e3,3.e3,4.e3,5.e3,6.e3,7.e3,8.e3,9.e3, &amp;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        1.e4,2.e4,3.e4,4.e4,5.e4,6.e4,7.e4,8.e4,9.e4, &amp;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        1.e5,2.e5,3.e5,4.e5,5.e5,6.e5,7.e5,8.e5,9.e5, &amp;</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        1.e6/)</div>
+</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="comment">! Lookup tables for IN concentration (/m**3) from 0.001 to 1000/Liter.</span></div>
+<div class="foldopen" id="foldopen00279" data-start="" data-end="">
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ac41b7c42f739bde6773cbe90a10c3469.html#ac41b7c42f739bde6773cbe90a10c3469">  279</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(ntb_IN)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        nt_in = (/1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0, &amp;</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        1.e1,2.e1,3.e1,4.e1,5.e1,6.e1,7.e1,8.e1,9.e1, &amp;</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        1.e2,2.e2,3.e2,4.e2,5.e2,6.e2,7.e2,8.e2,9.e2, &amp;</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        1.e3,2.e3,3.e3,4.e3,5.e3,6.e3,7.e3,8.e3,9.e3, &amp;</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        1.e4,2.e4,3.e4,4.e4,5.e4,6.e4,7.e4,8.e4,9.e4, &amp;</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        1.e5,2.e5,3.e5,4.e5,5.e5,6.e5,7.e5,8.e5,9.e5, &amp;</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        1.e6/)</div>
+</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    <span class="comment">! Lookup tables for various accretion/collection terms.</span></div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    <span class="comment">! ntb_x refers to the number of elements for rain, snow, graupel,</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    <span class="comment">! and temperature array indices.  Variables beginning with t-p/c/m/n</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="comment">! represent lookup tables.  Save compile-time memory by making</span></div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    <span class="comment">! allocatable (2009Jun12, J. Michalakes).</span></div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a412489c665f259be88617c9dae594d20.html#a412489c665f259be88617c9dae594d20">  293</a></span><span class="keywordtype">    real</span>(dp), <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:,:,:)</span> :: tcg_racg, tmr_racg, tcr_gacr, tnr_racg, tnr_gacr</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a667ca103ef720cb272bb9f011fdcd0f4.html#a667ca103ef720cb272bb9f011fdcd0f4">  294</a></span><span class="keywordtype">    real</span>(dp), <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:,:)</span> :: tcs_racs1, tmr_racs1, tcs_racs2, tmr_racs2, &amp;</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        tcr_sacr1, tms_sacr1, tcr_sacr2, tms_sacr2, tnr_racs1, tnr_racs2, tnr_sacr1, tnr_sacr2</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a5159df962d296a2c94d6a98d68f116e5.html#a5159df962d296a2c94d6a98d68f116e5">  296</a></span><span class="keywordtype">    real</span>(dp), <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:,:)</span> :: tpi_qcfz, tni_qcfz</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ae7a8342f1514cbd8ab80c75c0146feae.html#ae7a8342f1514cbd8ab80c75c0146feae">  297</a></span><span class="keywordtype">    real</span>(dp), <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:,:)</span> :: tpi_qrfz, tpg_qrfz, tni_qrfz, tnr_qrfz</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ad6ab5e2eaa5f9de3e7057ed314826034.html#ad6ab5e2eaa5f9de3e7057ed314826034">  298</a></span><span class="keywordtype">    real</span>(dp), <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: tps_iaus, tni_iaus, tpi_ide</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a13faefc97d01b32f4f166cdd00d77050.html#a13faefc97d01b32f4f166cdd00d77050">  299</a></span><span class="keywordtype">    real</span>(dp), <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:)</span> :: t_efrw, t_efsw</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ab73012e9271b8cc8683066172d29d71a.html#ab73012e9271b8cc8683066172d29d71a">  300</a></span><span class="keywordtype">    real</span>(dp), <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:)</span> :: tnr_rev, tpc_wev, tnc_wev</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aa3cfb51ea7abeea2c7d7f70d5e44e79a.html#aa3cfb51ea7abeea2c7d7f70d5e44e79a">  301</a></span><span class="keywordtype">    real</span>(sp), <span class="keywordtype">allocatable</span>, <span class="keywordtype">dimension(:,:,:,:,:)</span> :: tnccn_act</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    <span class="comment">! Variables holding a bunch of exponents and gamma values (cloud water,</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="comment">! cloud ice, rain, snow, then graupel).</span></div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aa017437a201565f9e10f5379cdc5b39e.html#aa017437a201565f9e10f5379cdc5b39e">  305</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(5,15)</span> :: cce, ccg</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_af487e4b6af4617af64c26ba3ad38a375.html#af487e4b6af4617af64c26ba3ad38a375">  306</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(15)</span> ::  ocg1, ocg2</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aac735d1c4fae02eeeff61af9f613fdd1.html#aac735d1c4fae02eeeff61af9f613fdd1">  307</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(7)</span> :: cie, cig</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ae29d98a5ed627b9292e97e4b0d4db6c9.html#ae29d98a5ed627b9292e97e4b0d4db6c9">  308</a></span><span class="keywordtype">    real</span>(wp) :: oig1, oig2, obmi</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aa2ed90ed344b95aa8e405aeabc52c565.html#aa2ed90ed344b95aa8e405aeabc52c565">  309</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(13)</span> :: cre, crg</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a775b8c7cacbbbd4d0d3db7f53f8eebfb.html#a775b8c7cacbbbd4d0d3db7f53f8eebfb">  310</a></span><span class="keywordtype">    real</span>(wp) :: ore1, org1, org2, org3, obmr</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a91f1a590f3e29cf5bfe617e029f84cfa.html#a91f1a590f3e29cf5bfe617e029f84cfa">  311</a></span><span class="keywordtype">    real</span>(wp) :: oams, obms, ocms</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a1a5475b070f0aede12971323e513f530.html#a1a5475b070f0aede12971323e513f530">  312</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(12,NRHG)</span> :: cge, cgg</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a99ff770929045da0c7059c803e462beb.html#a99ff770929045da0c7059c803e462beb">  313</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(NRHG)</span> :: oamg, ocmg</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="preprocessor">#if defined(ccpp_default) &amp;&amp; defined(OLD_MPTBLS)</span></div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ae9838c8ba666562c60ec5c1fd1b71b20.html#ae9838c8ba666562c60ec5c1fd1b71b20">  315</a></span><span class="preprocessor"></span><span class="keywordtype">    real</span>, <span class="keywordtype">dimension(18)</span> :: cse, csg</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="preprocessor"></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(17)</span> :: cse, csg</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a0025274aed7bb4942b1e76ecfed0b733.html#a0025274aed7bb4942b1e76ecfed0b733">  319</a></span><span class="preprocessor"></span><span class="keywordtype">    real</span>(wp) :: oge1, ogg1, ogg2, ogg3, obmg</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    <span class="comment">! Declaration of precomputed constants in various rate eqns.</span></div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a9d081924d417a9c656c71b03cbd14baf.html#a9d081924d417a9c656c71b03cbd14baf">  322</a></span><span class="keywordtype">    real</span>(wp) :: t1_qr_qc, t1_qr_qi, t2_qr_qi, t1_qs_qc, t1_qs_qi</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ac8a8884a22fe0736276270b70cd21b63.html#ac8a8884a22fe0736276270b70cd21b63">  323</a></span><span class="keywordtype">    real</span>(wp) :: t1_qr_ev, t2_qr_ev, t1_qg_qc, t2_qg_sd, t2_qg_me</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a1eebf2373984f5570f2206f037d3d8db.html#a1eebf2373984f5570f2206f037d3d8db">  324</a></span><span class="keywordtype">    real</span>(wp) :: t1_qs_sd, t2_qs_sd, t1_qs_me, t2_qs_me, t1_qg_sd, t1_qg_me</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <span class="comment">!=================================================================================================================</span></div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    <span class="comment">! Parameters needed by the microphysics driver</span></div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    <span class="comment">! Prescribed number of cloud droplets.  Set according to known data or</span></div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <span class="comment">! roughly 100 per cc (100.e6 m^-3) for Maritime cases and</span></div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    <span class="comment">! 300 per cc (300.e6 m^-3) for Continental.  Gamma shape parameter,</span></div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <span class="comment">! mu_c, calculated based on Nt_c is important in autoconversion</span></div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <span class="comment">! scheme.  In 2-moment cloud water, Nt_c represents a maximum of</span></div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    <span class="comment">! droplet concentration and nu_c is also variable depending on local</span></div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    <span class="comment">! droplet number concentration.</span></div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a1abc5716254e1a39a20e42534c31286f.html#a1abc5716254e1a39a20e42534c31286f">  336</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: nt_c_o = 50.e6</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_af0d2bfcab67eb4a10904d0707bd7d99f.html#af0d2bfcab67eb4a10904d0707bd7d99f">  337</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: nt_c_l = 100.e6</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_af56bce025dd23981861456d5f2f1551e.html#af56bce025dd23981861456d5f2f1551e">  338</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: nt_c_max = 1999.e6</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a6b536a2652e263e2106656e45944ff98.html#a6b536a2652e263e2106656e45944ff98">  339</a></span><span class="keywordtype">    real</span>(wp) :: nt_c, mu_c</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_af7614f693ab414224965c79383c4b922.html#af7614f693ab414224965c79383c4b922">  340</a></span><span class="keywordtype">    real</span>(wp) ::  mu_c_o, mu_c_l</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aebb841347552c85fd3637826512e8927.html#aebb841347552c85fd3637826512e8927">  342</a></span><span class="keywordtype">    real</span>(wp) :: min_qv = 1.e-10</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span><span class="preprocessor">#if defined(ccpp_default)</span></div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a434011a3ffeef5b62e1253d42646a774.html#a434011a3ffeef5b62e1253d42646a774">  344</a></span><span class="preprocessor"></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: demott_nuc_ssati = 0.15 <span class="comment">! 0.15 for CCPP</span></div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="preprocessor"></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: demott_nuc_ssati = 0.25</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span><span class="preprocessor"></span>    <span class="comment">! Declaration of constants for assumed CCN/IN aerosols when none in</span></div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    <span class="comment">! the input data.  Look inside the init routine for modifications</span></div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    <span class="comment">! due to surface land-sea points or vegetation characteristics.</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a04763b3caa82f25561be913763e2ed0b.html#a04763b3caa82f25561be913763e2ed0b">  351</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: nwfa_default = 11.1e6</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a3fdca018248dab14daffde00f0517e1b.html#a3fdca018248dab14daffde00f0517e1b">  352</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: nain1 = 0.5e6</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a8bd53ab4a4fe732e628df14e758c6bf1.html#a8bd53ab4a4fe732e628df14e758c6bf1">  353</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: nifa_default = nain1*0.01</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ac679b307ae2a0e9a5664076b7c319e7d.html#ac679b307ae2a0e9a5664076b7c319e7d">  354</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: aero_max = 9999.e6</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a3a3306415a46b047945aaeae1ed22411.html#a3a3306415a46b047945aaeae1ed22411">  355</a></span><span class="keywordtype">    real</span>(dp), <span class="keywordtype">parameter</span> :: max_ni = 4999.e3</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a38676ca3c8ecf612f000090c5c1c0831.html#a38676ca3c8ecf612f000090c5c1c0831">  356</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: icenuc_max = 1000.e3</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    </div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aaba1fd729b611893ef5d4796a3e158eb.html#aaba1fd729b611893ef5d4796a3e158eb">  358</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: rime_threshold = 5.0 <span class="comment">! For MPAS</span></div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a3ab70f9f747ab49c4b8809c447034d8c.html#a3ab70f9f747ab49c4b8809c447034d8c">  359</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: rime_conversion = 0.75 <span class="comment">! For MPAS</span></div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> </div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a40135a0b0cce9cd666acf47832dad661.html#a40135a0b0cce9cd666acf47832dad661">  361</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: fv_r = 195.0</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a479dcebacb85bc5f4cfcd50cbe95d6cf.html#a479dcebacb85bc5f4cfcd50cbe95d6cf">  362</a></span><span class="keywordtype">    real</span>(wp) :: rho_s2 = 100.0 <span class="comment">! AAJ change to rho_s2 to solve MPAS same var name conflict</span></div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_add98f8fac788ab810580e0d3b3a757eb.html#add98f8fac788ab810580e0d3b3a757eb">  363</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: av_c = 0.316946e8</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span> </div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aaaa614d0e6b28299a42594624d482ca7.html#aaaa614d0e6b28299a42594624d482ca7">  365</a></span>    <span class="keywordtype">logical</span>, <span class="keywordtype">parameter</span> :: iiwarm = .false.</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a78fc397ae2dc563260718b7596b3d7cb.html#a78fc397ae2dc563260718b7596b3d7cb">  366</a></span>    <span class="keywordtype">logical</span>, <span class="keywordtype">parameter</span> :: dustyice = .true.</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ace23b7cf7b21b1021163954e5472daf7.html#ace23b7cf7b21b1021163954e5472daf7">  367</a></span>    <span class="keywordtype">logical</span>, <span class="keywordtype">parameter</span> :: homogice = .true.</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a41068773ec93fb756f922e20d1c6de4b.html#a41068773ec93fb756f922e20d1c6de4b">  369</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: ifdry = 0</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aaa8f8da67f6d467a0d22497d25c57f57.html#aaa8f8da67f6d467a0d22497d25c57f57">  370</a></span><span class="keywordtype">    real</span>(wp)           :: t_0 = 273.15</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span> </div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_acbc6a0ec4abe3b7ab5d1933e842fdad9.html#acbc6a0ec4abe3b7ab5d1933e842fdad9">  372</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: nain0 = 1.5e6</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a5060faf30b0b5e357468aef3852ae361.html#a5060faf30b0b5e357468aef3852ae361">  373</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: naccn0 = 300.0e6</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ac729d7a83262e0756bc19a6dd24dad7e.html#ac729d7a83262e0756bc19a6dd24dad7e">  374</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: naccn1 = 50.0e6</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span> </div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    <span class="comment">! Sum of two gamma distrib for snow (Field et al. 2005).</span></div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    <span class="comment">! N(D) = M2**4/M3**3 * [Kap0*exp(-M2*Lam0*D/M3)</span></div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    <span class="comment">!      + Kap1*(M2/M3)**mu_s * D**mu_s * exp(-M2*Lam1*D/M3)]</span></div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    <span class="comment">! M2 and M3 are the (bm_s)th and (bm_s+1)th moments respectively</span></div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>    <span class="comment">! calculated as function of ice water content and temperature.</span></div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a2b130c4e16aa63288341984ed4b91f3c.html#a2b130c4e16aa63288341984ed4b91f3c">  381</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: kap0 = 490.6</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a51b585bfd1f42a643e0ef5d1b323e94c.html#a51b585bfd1f42a643e0ef5d1b323e94c">  382</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: kap1 = 17.46</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a70e4226b3dcf9492d77bebce2cc49910.html#a70e4226b3dcf9492d77bebce2cc49910">  383</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: lam0 = 20.78</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a9b6fc8ca8fbeb0a6fc43ab27a75223e1.html#a9b6fc8ca8fbeb0a6fc43ab27a75223e1">  384</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: lam1 = 3.29</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span> </div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>    <span class="comment">! Y-intercept parameter for graupel is not constant and depends on</span></div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    <span class="comment">! mixing ratio.  Also, when mu_g is non-zero, these become equiv</span></div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    <span class="comment">! y-intercept for an exponential distrib and proper values are</span></div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    <span class="comment">! computed based on same mixing ratio and total number concentration.</span></div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a3a2be52ba1e388b8e2a7302037030307.html#a3a2be52ba1e388b8e2a7302037030307">  390</a></span><span class="keywordtype">    real</span>(dp), <span class="keywordtype">parameter</span> :: gonv_min = 1.e2</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_acd4b28795cebaafca0619e07b8d4c83f.html#acd4b28795cebaafca0619e07b8d4c83f">  391</a></span><span class="keywordtype">    real</span>(dp), <span class="keywordtype">parameter</span> :: gonv_max = 1.e6</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span> </div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aff10e4022e9904e049357f8e79d38176.html#aff10e4022e9904e049357f8e79d38176">  393</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: a_coeff = 0.47244157</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a6417710696b2ec754935d9c74d410dbc.html#a6417710696b2ec754935d9c74d410dbc">  394</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: b_coeff = 0.54698726</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span> </div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span><span class="preprocessor">#if defined(ccpp_default)</span></div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a43cf0778d1e3ec7ffd31772ac98f12ac.html#a43cf0778d1e3ec7ffd31772ac98f12ac">  397</a></span><span class="preprocessor"></span><span class="keywordtype">    real</span>(wp) :: av_i</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span><span class="preprocessor"></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: av_i = 1493.9</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span><span class="preprocessor"></span> </div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>    <span class="comment">! Collection efficiencies.  Rain/snow/graupel collection of cloud</span></div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    <span class="comment">! droplets use variables (Ef_rw, Ef_sw, Ef_gw respectively) and</span></div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    <span class="comment">! get computed elsewhere because they are dependent on stokes</span></div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    <span class="comment">! number.</span></div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ad1a5cc053445bbda61f5202c680201f7.html#ad1a5cc053445bbda61f5202c680201f7">  406</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: ef_si = 0.05</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ad97ae1317ee22eaddab3e278a9119905.html#ad97ae1317ee22eaddab3e278a9119905">  407</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: ef_rs = 0.95</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a19ad2f9c59757c3008027b28668f8585.html#a19ad2f9c59757c3008027b28668f8585">  408</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: ef_rg = 0.75</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a5ff6cd809ac513ddd100c2b094ade591.html#a5ff6cd809ac513ddd100c2b094ade591">  409</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: ef_ri = 0.95</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span> </div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span> </div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span> </div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>    <span class="comment">! Constants in Cooper curve relation for cloud ice number.</span></div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a0ded0d6bcc3d774c326f6f9a98df39d5.html#a0ded0d6bcc3d774c326f6f9a98df39d5">  414</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: tno = 5.0</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ae47bc85e9f7e391e4769b605f09cdaa8.html#ae47bc85e9f7e391e4769b605f09cdaa8">  415</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: ato = 0.304</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span> </div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>    <span class="comment">! Rho_not used in fallspeed relations (rho_not/rho)**.5 adjustment.</span></div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a008307b26b63fda554a708fbe358b92f.html#a008307b26b63fda554a708fbe358b92f">  418</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: rho_not = 101325.0 / (287.05*298.0)</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span> </div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>    <span class="comment">! Homogeneous freezing temperature</span></div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a956fd299c98859cd7e1324d6db05700d.html#a956fd299c98859cd7e1324d6db05700d">  421</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: hgfr = 235.16</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span> </div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span> </div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_af9d267cee564c334ca1b0e30b1e7a08a.html#af9d267cee564c334ca1b0e30b1e7a08a">  424</a></span><span class="keywordtype">    real</span>(wp)            :: r_uni = 8.314                           <span class="comment">! J (mol K)-1</span></div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span> </div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a3611bafda2e5bfd4138104fa58cac759.html#a3611bafda2e5bfd4138104fa58cac759">  426</a></span><span class="keywordtype">    real</span>(dp)            :: k_b = 1.38065e-23                <span class="comment">! Boltzmann constant [J/K]</span></div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ae9099c2c394689d4d2438d3c9b77c4d8.html#ae9099c2c394689d4d2438d3c9b77c4d8">  427</a></span><span class="keywordtype">    real</span>(dp)            :: m_w = 18.01528e-3                <span class="comment">! molecular mass of water [kg/mol]</span></div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a766512579755ff8293e7254a03fe332a.html#a766512579755ff8293e7254a03fe332a">  428</a></span><span class="keywordtype">    real</span>(dp)            :: m_a = 28.96e-3                   <span class="comment">! molecular mass of air [kg/mol]</span></div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a95c7b476be0a6268ba3d0a137d954e15.html#a95c7b476be0a6268ba3d0a137d954e15">  429</a></span><span class="keywordtype">    real</span>(dp)            :: n_avo = 6.022e23                 <span class="comment">! Avogadro number [1/mol]</span></div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ac156a4fdceea516a2a5778eb1c00c815.html#ac156a4fdceea516a2a5778eb1c00c815">  430</a></span><span class="keywordtype">    real</span>(dp)            :: ma_w                             <span class="comment">! mass of water molecule [kg] (= M_w / N_avo, set in mp_tempo_params_init)</span></div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_af1c463013fe3c48df8fbb69152bd2272.html#af1c463013fe3c48df8fbb69152bd2272">  431</a></span><span class="keywordtype">    real</span>(wp)            :: ar_volume                        <span class="comment">! assume radius of 0.025 micrometer, 2.5e-6 cm (= 4.0 / 3.0 * PI * (2.5e-6)**3, set in mp_tempo_params_init)</span></div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span> </div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span> </div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>    <span class="comment">! Aerosol table parameter: Number of available aerosols, vertical</span></div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>    <span class="comment">! velocity, temperature, aerosol mean radius, and hygroscopicity.</span></div>
+<div class="foldopen" id="foldopen00436" data-start="" data-end="">
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a1f382ecd1094c37e70c885435b26d698.html#a1f382ecd1094c37e70c885435b26d698">  436</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(ntb_arc)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>        ta_na = (/10.0, 31.6, 100.0, 316.0, 1000.0, 3160.0, 10000.0/)</div>
+</div>
+<div class="foldopen" id="foldopen00438" data-start="" data-end="">
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a01a26651788337c700d00537192bebdc.html#a01a26651788337c700d00537192bebdc">  438</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(ntb_arw)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>        ta_ww = (/0.01, 0.0316, 0.1, 0.316, 1.0, 3.16, 10.0, 31.6, 100.0/)</div>
+</div>
+<div class="foldopen" id="foldopen00440" data-start="" data-end="">
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a1fc2dd75b1d4af3968263671962dc38a.html#a1fc2dd75b1d4af3968263671962dc38a">  440</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(ntb_art)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>        ta_tk = (/243.15, 253.15, 263.15, 273.15, 283.15, 293.15, 303.15/)</div>
+</div>
+<div class="foldopen" id="foldopen00442" data-start="" data-end="">
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ae9c1becc5bbd29b93a575e601288b4c4.html#ae9c1becc5bbd29b93a575e601288b4c4">  442</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(ntb_arr)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>        ta_ra = (/0.01, 0.02, 0.04, 0.08, 0.16/)</div>
+</div>
+<div class="foldopen" id="foldopen00444" data-start="" data-end="">
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_af5b4060cf32371e75e5d39e8366ca33b.html#af5b4060cf32371e75e5d39e8366ca33b">  444</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(ntb_ark)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>        ta_ka = (/0.2, 0.4, 0.6, 0.8/)</div>
+</div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span> </div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>    <span class="comment">! For snow moments conversions (from Field et al. 2005)</span></div>
+<div class="foldopen" id="foldopen00448" data-start="" data-end="">
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a67f733e2a7fd2aa5ec987a5ac47e5ec8.html#a67f733e2a7fd2aa5ec987a5ac47e5ec8">  448</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(10)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>        sa = (/ 5.065339, -0.062659, -3.032362, 0.029469, -0.000285, &amp;</div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>        0.31255, 0.000204, 0.003199, 0.0, -0.015952/)</div>
+</div>
+<div class="foldopen" id="foldopen00451" data-start="" data-end="">
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ab2d9b912637c6ad9e8c9e9d7025f90d9.html#ab2d9b912637c6ad9e8c9e9d7025f90d9">  451</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(10)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>        sb = (/ 0.476221, -0.015896, 0.165977, 0.007468, -0.000141, &amp;</div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>        0.060366, 0.000079, 0.000594, 0.0, -0.003577/)</div>
+</div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span> </div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>    <span class="comment">! Temperatures (5 C interval 0 to -40) used in lookup tables.</span></div>
+<div class="foldopen" id="foldopen00456" data-start="" data-end="">
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a162309ef55fd8b241f6473c4964a70aa.html#a162309ef55fd8b241f6473c4964a70aa">  456</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(ntb_t)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>        tc = (/-0.01, -5., -10., -15., -20., -25., -30., -35., -40./)</div>
+</div>
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span> </div>
+<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span><span class="preprocessor">#if defined(ccpp_default)</span></div>
+<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span><span class="preprocessor"></span>    <span class="comment">! To permit possible creation of new lookup tables as variables expand/change,</span></div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>    <span class="comment">! specify a name of external file(s) including version number for pre-computed</span></div>
+<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>    <span class="comment">! Thompson tables.</span></div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a5cd7914f8a0d6e5e944266cb016aa3e3.html#a5cd7914f8a0d6e5e944266cb016aa3e3">  463</a></span>    <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">parameter</span> :: thomp_table_file = <span class="stringliteral">&#39;thompson_tables_precomp_v2.sl&#39;</span></div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a396b1e6a51bae3579cb67759c977a9c5.html#a396b1e6a51bae3579cb67759c977a9c5">  464</a></span>    <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">parameter</span> :: qr_acr_qg_file = <span class="stringliteral">&#39;MP_TEMPO_QRacrQG.dat&#39;</span></div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a0379ce77c08f67ba100b2b16113d7e5a.html#a0379ce77c08f67ba100b2b16113d7e5a">  465</a></span>    <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">parameter</span> :: qr_acr_qg_hailaware_file = <span class="stringliteral">&#39;MP_TEMPO_HAILAWARE_QRacrQG.dat&#39;</span></div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aa760b9dd4f3241915dfadb8c2d06b8be.html#aa760b9dd4f3241915dfadb8c2d06b8be">  466</a></span>    <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">parameter</span> :: qr_acr_qs_file = <span class="stringliteral">&#39;MP_TEMPO_QRacrQS.dat&#39;</span></div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aafb15520a8da18f6f35f16c0d8f76598.html#aafb15520a8da18f6f35f16c0d8f76598">  467</a></span>    <span class="keywordtype">character(len=*)</span>, <span class="keywordtype">parameter</span> :: freeze_h2o_file = <span class="stringliteral">&#39;MP_TEMPO_freezeH2O.dat&#39;</span></div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span> </div>
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>    <span class="comment">! Min and max radiative effective radius of cloud water, cloud ice, and snow;</span></div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>    <span class="comment">! performed by subroutine calc_effectRad. On purpose, these should stay PUBLIC.</span></div>
+<div class="line"><a id="l00471" name="l00471"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a6eb9d50a6d033a0ca166712209fd1d29.html#a6eb9d50a6d033a0ca166712209fd1d29">  471</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: re_qc_min = 2.50e-6               <span class="comment">! 2.5 microns</span></div>
+<div class="line"><a id="l00472" name="l00472"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a97264ae852da248d113258269cefd5b3.html#a97264ae852da248d113258269cefd5b3">  472</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: re_qc_max = 50.0e-6               <span class="comment">! 50 microns</span></div>
+<div class="line"><a id="l00473" name="l00473"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ab1fa985be29a3acf581581a27dbe4632.html#ab1fa985be29a3acf581581a27dbe4632">  473</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: re_qi_min = 2.50e-6               <span class="comment">! 2.5 microns</span></div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a948909d063d1550f19f1bcf3964ec770.html#a948909d063d1550f19f1bcf3964ec770">  474</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: re_qi_max = 125.0e-6              <span class="comment">! 125 microns</span></div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aafc327fcb23b3e55e6e40ce2615083a1.html#aafc327fcb23b3e55e6e40ce2615083a1">  475</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: re_qs_min = 5.00e-6               <span class="comment">! 5 microns</span></div>
+<div class="line"><a id="l00476" name="l00476"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a30ebb89839f091ca08035e456253bdb8.html#a30ebb89839f091ca08035e456253bdb8">  476</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">parameter</span> :: re_qs_max = 999.0e-6              <span class="comment">! 999 microns (1 mm)</span></div>
+<div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span> </div>
+<div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span>    <span class="comment">! MPI communicator</span></div>
+<div class="line"><a id="l00479" name="l00479"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aab1b1f756fb58756640584b47e994869.html#aab1b1f756fb58756640584b47e994869">  479</a></span>    <span class="keywordtype">type</span>(mpi_comm) :: mpi_communicator</div>
+<div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span> </div>
+<div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span>    <span class="comment">! Write tables with master MPI task after computing them in tempo_init</span></div>
+<div class="line"><a id="l00482" name="l00482"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a058dd8e4d881d2651b8d36e8b136b3c2.html#a058dd8e4d881d2651b8d36e8b136b3c2">  482</a></span>    <span class="keywordtype">logical</span> :: thompson_table_writer</div>
+<div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span><span class="preprocessor"></span> </div>
+<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>    <span class="comment">! ML data</span></div>
+<div class="line"><a id="l00486" name="l00486"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_aa9ec5e2fb3a25e813cdca9ffb37428c4.html#aa9ec5e2fb3a25e813cdca9ffb37428c4">  486</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: nc_ml_input = 7</div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a6841f607364e66e0f332f25fde8a4771.html#a6841f607364e66e0f332f25fde8a4771">  487</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: nc_ml_nodes = 24</div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a65612bb47874d84b7af6876abe6982d2.html#a65612bb47874d84b7af6876abe6982d2">  488</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: nc_ml_output = 1</div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span> </div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a91a6dd628f7077c0551946dd64fac55d.html#a91a6dd628f7077c0551946dd64fac55d">  490</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: nr_ml_input = 7</div>
+<div class="line"><a id="l00491" name="l00491"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ad2d44fb8d784cecfe3fcc642f6e6482e.html#ad2d44fb8d784cecfe3fcc642f6e6482e">  491</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: nr_ml_nodes = 24</div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a82652e57272c369ecddb88af5ff8740a.html#a82652e57272c369ecddb88af5ff8740a">  492</a></span>    <span class="keywordtype">integer</span>, <span class="keywordtype">parameter</span> :: nr_ml_output = 1</div>
+<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span> </div>
+<div class="foldopen" id="foldopen00494" data-start="" data-end="">
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a85622cef5feb25a9767f19850ccfb766.html#a85622cef5feb25a9767f19850ccfb766">  494</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(nc_ml_input)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>         nc_ml_trans_mean = (/0.000184549468444656, 2.82753321185558e-05, &amp;</div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>         2.28805854616895e-07, 6.58700882098648e-05, 84142.0407488623, &amp;</div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>         275.273903970569, 0.104461576672394/)</div>
+</div>
+<div class="foldopen" id="foldopen00498" data-start="" data-end="">
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a4dd11f346b671a8900657e8213b77d27.html#a4dd11f346b671a8900657e8213b77d27">  498</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(nc_ml_input)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>         nc_ml_trans_var = (/5.05620015304623e-08, 1.45515502768552e-08, &amp;</div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>         1.94012756342739e-11, 4.30246362061344e-08, 140316880.172549, &amp;</div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>         71.5124250320993, 0.265261175700759/)</div>
+</div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span> </div>
+<div class="foldopen" id="foldopen00503" data-start="" data-end="">
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a0bf9ca9058f3f9aa0f7144d115dae64d.html#a0bf9ca9058f3f9aa0f7144d115dae64d">  503</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(nc_ml_input * nc_ml_nodes)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>         nc_ml_w00 = (/2.224199, -1.393835e-32, 2.528453, -0.2449199, 2.625664, 0.107049, &amp;</div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>         2.239675, -0.441944, 0.5798664, -3.495472, -0.09473098, 1.767392, &amp;</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>         -0.722639, -0.6872597, 0.7640355, 0.2941241, 1.413414e-32, -4.027426, &amp;</div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>         -0.0885509, -0.1930209, 2.027927, 2.729985, 3.869902, -0.7086006, &amp;</div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>         0.3556898, -1.545999e-32, 0.002439348, 0.07797334, 0.3065982, 0.1250733, &amp;</div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>         -0.003919218, 0.02658273, 0.04677797, 0.001224378, -0.0450751, 0.54966, &amp;</div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>         -0.09625612, -0.06435507, -0.06188935, 0.6316406, 1.438075e-32, 0.001260835, &amp;</div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>         -0.6693181, -0.0726619, 0.313943, 0.08460538, 0.4238361, -0.1105529, &amp;</div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>         -0.02594946, -1.571175e-32, 0.02000831, 0.0254104, 0.1613512, -0.1140745, &amp;</div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>         0.07543574, 0.06550872, -0.00693186, -0.02249624, -0.1207949, 0.087761, &amp;</div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>         0.003812449, -0.002278045, 0.0314725, 0.0824788, -1.607022e-32, -1.805405, &amp;</div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>         0.1899621, -0.07471617, 0.1923102, 0.3078783, 0.1380734, -0.9808061, &amp;</div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>         0.07569794, -1.458374e-32, 0.2184116, 0.09525398, -0.009037461, -1.004012, &amp;</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>         -0.4529723, -0.03389523, -0.5127279, 0.001164416, -0.3503374, -0.5206463, &amp;</div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>         -0.6791449, -3.765049, -0.1630133, 0.2867654, -1.423354e-32, -0.000892627, &amp;</div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>         -0.2104853, -0.9603029, 0.003026641, -0.02990868, 0.006338483, -0.1191584, &amp;</div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>         0.01307624, 1.314499e-32, -0.1628825, -0.08426163, 0.01635959, 0.0214172, &amp;</div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>         0.05406244, -0.07126028, 0.3039913, 0.005295561, -0.3454399, -0.005133086, &amp;</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>         0.0850361, 0.03916358, -0.07233618, -0.6070899, 1.435512e-32, -0.003379478, &amp;</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>         0.2966512, -0.1559436, 0.09629949, -0.0112761, -0.09785055, -0.02918944, &amp;</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>         -3.064122, 1.534848e-32, -0.0893663, 0.07659288, -1.701944, 0.9777426, &amp;</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>         0.794859, 0.07797011, 1.247827, -0.01696694, 0.0106477, 1.002509, &amp;</div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>         1.440111, 0.3025449, -0.7814463, -0.3589398, 1.450329e-32, 0.006022078, &amp;</div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>         -0.75178, -0.04612495, -2.27526, 0.2128798, -1.837864, 0.1171825, &amp;</div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>         0.05044287, 1.60034e-32, -0.0266461, 1.557734, 0.06955704, -0.01070863, &amp;</div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>         -0.05760999, 1.493531, -0.08257127, -0.0246272, -0.7703797, -0.04289152, &amp;</div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>         -0.1313693, 0.02611825, 0.5722927, 0.2976797, -1.465193e-32, 0.006705693, &amp;</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>         -0.1825065, 0.09151408, 0.001714205, -0.0241104, -0.03077858, 0.119318/)</div>
+</div>
+<div class="foldopen" id="foldopen00532" data-start="" data-end="">
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a66b8035afb1848806313dfad9309a807.html#a66b8035afb1848806313dfad9309a807">  532</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(nc_ml_nodes)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>         nc_ml_w01 = (/2.05212,-1.614832e-05,1.0335,-0.7872604,1.696272,0.8682101,-1.100169, &amp;</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>         0.5193954,-0.5440724,-23.27656,0.4010488,1.077693,-1.816235,8.917124,0.4402028, &amp;</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>         -0.2852043,-0.01313276,-70.52726,0.3490098,0.4163963,-1.772994,1.331957,-2.861476,0.7307689/)</div>
+</div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span> </div>
+<div class="foldopen" id="foldopen00537" data-start="" data-end="">
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_af431f7a19be11b2173b2718569deb2c3.html#af431f7a19be11b2173b2718569deb2c3">  537</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(nc_ml_nodes)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>         nc_ml_b00 = (/1.411423, -0.009188521, 2.194735, -0.1570402, 2.083004, -0.02242614, &amp;</div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>         1.345345, 0.3308931, -0.2128314, -2.824152, 0.06516771, 1.614252, &amp;</div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>         -1.168782, -1.600044, 2.485356, -0.02002283, -0.6876131, -3.362524, &amp;</div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>         1.999535, -0.1876818, 0.8209553, 2.305562, 2.347924, -0.2078552/)</div>
+</div>
+<div class="foldopen" id="foldopen00542" data-start="" data-end="">
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_ab285230af47c78c5dcf76981f5db1cba.html#ab285230af47c78c5dcf76981f5db1cba">  542</a></span><span class="keywordtype">    real</span>(wp), <span class="keywordtype">dimension(nc_ml_output)</span>, <span class="keywordtype">parameter</span> :: &amp;</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>         nc_ml_b01 = (/1.966172/)</div>
+</div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span> </div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>  <span class="keyword">contains</span></div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>    </div>
+<div class="foldopen" id="foldopen00547" data-start="" data-end="">
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno"><a class="line" href="namespacemodule__mp__tempo__params_a1b230a851a291e970f35b0d070734796.html#a1b230a851a291e970f35b0d070734796">  547</a></span>    <span class="keyword">subroutine </span>mp_tempo_params_init()</div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>      <span class="comment">! Any variables defined in the module that are not constants/parameters are set here; if any of the values are overwritten (i.e. by a host model),</span></div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>      <span class="comment">! then they must be reinitialized once the new values from the host are used</span></div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>      lfus = lsub - lvap0</div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>      olfus = 1./lfus</div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>      </div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>      orv = 1.0 / rv</div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>      </div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>      am_r = pi * rho_w2 / 6.0</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>      </div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>      am_g = (/pi*rho_g(1)/6.0, &amp;</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>          pi*rho_g(2)/6.0, &amp;</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>          pi*rho_g(3)/6.0, &amp;</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>          pi*rho_g(4)/6.0, &amp;</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>          pi*rho_g(5)/6.0, &amp;</div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>          pi*rho_g(6)/6.0, &amp;</div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>          pi*rho_g(7)/6.0, &amp;</div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>          pi*rho_g(8)/6.0, &amp;</div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>          pi*rho_g(9)/6.0/)</div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>      </div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>      am_i = pi * rho_i / 6.0</div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>      </div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>      ma_w = m_w / n_avo</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>      </div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>      ar_volume = 4.0 / 3.0 * pi * (2.5e-6)**3</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>      </div>
+</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>    <span class="keyword">end subroutine </span>mp_tempo_params_init</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    </div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span><span class="keyword">end module </span><a class="code hl_namespace" href="namespacemodule__mp__tempo__params.html">module_mp_tempo_params</a></div>
+<div class="ttc" id="anamespacemachine_html"><div class="ttname"><a href="namespacemachine.html">machine</a></div><div class="ttdef"><b>Definition</b> <a href="machine_8_f90_source.html#l00001">machine.F90:1</a></div></div>
+<div class="ttc" id="anamespacemodule__mp__tempo__params_html"><div class="ttname"><a href="namespacemodule__mp__tempo__params.html">module_mp_tempo_params</a></div><div class="ttdef"><b>Definition</b> <a href="#l00003">module_mp_tempo_params.F90:3</a></div></div>
+<div class="ttc" id="astructmodule__mp__tempo__params_1_1ty__tempo__cfg_html"><div class="ttname"><a href="structmodule__mp__tempo__params_1_1ty__tempo__cfg.html">module_mp_tempo_params::ty_tempo_cfg</a></div><div class="ttdef"><b>Definition</b> <a href="#l00037">module_mp_tempo_params.F90:37</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_9608f138d2f1042cdcca92dcefa47e96.html">MP</a></li><li class="navelem"><a href="dir_b96eb54e7dfda9f8da0308374b5586ae.html">TEMPO</a></li><li class="navelem"><a href="dir_5d4c8c144431b4adbc7e5df897e65aa0.html">TEMPO</a></li><li class="navelem"><b>module_mp_tempo_params.F90</b></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

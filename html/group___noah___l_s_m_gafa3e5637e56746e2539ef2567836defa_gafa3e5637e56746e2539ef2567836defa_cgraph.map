@@ -1,0 +1,11 @@
+<map id="smflx" name="smflx">
+<area shape="rect" id="Node000001" title="This subroutine calculates soil moisture flux. The soil moisture content (smc &#45; a per unit vulume mea..." alt="" coords="5,31,59,56"/>
+<area shape="rect" id="Node000002" href="$group___noah___l_s_m_gaf59c85cce3b10eaa0ffeb366de9d5304.html#gaf59c85cce3b10eaa0ffeb366de9d5304" title="This subroutine calculates the right hand side of the time tendency term of the soil water diffusion ..." alt="" coords="114,5,153,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,34,101,25,97,28,60,39"/>
+<area shape="rect" id="Node000004" href="$group___noah___l_s_m_ga22b00b15c1b261126ec2d15719cb3aa4.html#ga22b00b15c1b261126ec2d15719cb3aa4" title="This subroutine calculates/updates soil moisture content values and canopy moisture content values." alt="" coords="107,55,160,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="59,47,94,57,89,59,59,52"/>
+<area shape="rect" id="Node000003" href="$group___noah___l_s_m_gabfc5ae94c847aa3351345e0e924302a1.html#gabfc5ae94c847aa3351345e0e924302a1" title="This subroutine calculates soil water diffusivity and soil hydraulic conductivity." alt="" coords="208,5,271,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="152,16,195,17,190,19,153,21"/>
+<area shape="rect" id="Node000005" href="$group___noah___l_s_m_ga3d7dabe1147278de865aa4691d5b2de0.html#ga3d7dabe1147278de865aa4691d5b2de0" title="This subroutine inverts (solve) the tri&#45;diagonal matrix problem." alt="" coords="211,55,268,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="160,65,198,67,193,68,160,70"/>
+</map>

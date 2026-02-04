@@ -1,0 +1,7 @@
+<map id="module_radiation_clouds::cal_cldfra3" name="module_radiation_clouds::cal_cldfra3">
+<area shape="rect" id="Node000001" title="Cloud fraction scheme by G. Thompson (NCAR&#45;RAL), not intended for combining with any cumulus or shall..." alt="" coords="430,5,594,46"/>
+<area shape="rect" id="Node000002" href="$group__module__radiation__clouds_ga0f8f599f3b125b66e0784e053208ae8f.html#ga0f8f599f3b125b66e0784e053208ae8f" title="This subroutine added by G. Thompson specifically to account for explicit (microphysics&#45;produced) clo..." alt="" coords="218,5,382,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="412,26,382,28,382,23,417,26"/>
+<area shape="rect" id="Node000003" href="$group__module__radiation__clouds_gade0c4ffb0276ff706253a39568a88a67.html#gade0c4ffb0276ff706253a39568a88a67" title="Subroutine radiation_clouds_prop computes cloud related quantities for different cloud microphysics s..." alt="" coords="5,5,170,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="200,26,170,28,170,23,205,25"/>
+</map>

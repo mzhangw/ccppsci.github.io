@@ -1,0 +1,546 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: clm_lake::shallakehydrology</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('namespaceclm__lake_a8880c2394213f41e2e8303f2fa89ed61.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="contents">
+<a id="a8880c2394213f41e2e8303f2fa89ed61" name="a8880c2394213f41e2e8303f2fa89ed61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8880c2394213f41e2e8303f2fa89ed61">&#9670;&#160;</a></span>shallakehydrology()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">subroutine clm_lake::shallakehydrology </td>
+          <td>(</td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1,<a class="el" href="namespaceclm__lake_ad9f8eacbce8bb6a43583325fa13fba19.html#ad9f8eacbce8bb6a43583325fa13fba19">nlevlake</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>dz_lake</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(in)</td>          <td class="paramname"><span class="paramname"><em>forc_rain</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(in)</td>          <td class="paramname"><span class="paramname"><em>forc_snow</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>begwb</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(in)</td>          <td class="paramname"><span class="paramname"><em>qflx_evap_tot</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(in)</td>          <td class="paramname"><span class="paramname"><em>forc_t</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">logical, dimension(1), intent(in)</td>          <td class="paramname"><span class="paramname"><em>do_capsnow</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(in)</td>          <td class="paramname"><span class="paramname"><em>t_grnd</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(in)</td>          <td class="paramname"><span class="paramname"><em>qflx_evap_soi</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(in)</td>          <td class="paramname"><span class="paramname"><em>qflx_snomelt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, dimension(1,-<a class="el" href="namespaceclm__lake_a90adbd42f9d6589e3822d30fd2c34050.html#a90adbd42f9d6589e3822d30fd2c34050">nlevsnow</a>+1:<a class="el" href="namespaceclm__lake_ab6ea9bc6bd1db1f9ce986ada3c4b123d.html#ab6ea9bc6bd1db1f9ce986ada3c4b123d">nlevsoil</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>imelt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1,-<a class="el" href="namespaceclm__lake_a90adbd42f9d6589e3822d30fd2c34050.html#a90adbd42f9d6589e3822d30fd2c34050">nlevsnow</a>+1:<a class="el" href="namespaceclm__lake_ab6ea9bc6bd1db1f9ce986ada3c4b123d.html#ab6ea9bc6bd1db1f9ce986ada3c4b123d">nlevsoil</a>), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>frac_iceold</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1,-<a class="el" href="namespaceclm__lake_a90adbd42f9d6589e3822d30fd2c34050.html#a90adbd42f9d6589e3822d30fd2c34050">nlevsnow</a>+1:<a class="el" href="namespaceclm__lake_ab6ea9bc6bd1db1f9ce986ada3c4b123d.html#ab6ea9bc6bd1db1f9ce986ada3c4b123d">nlevsoil</a>), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>z</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1,-<a class="el" href="namespaceclm__lake_a90adbd42f9d6589e3822d30fd2c34050.html#a90adbd42f9d6589e3822d30fd2c34050">nlevsnow</a>+1:<a class="el" href="namespaceclm__lake_ab6ea9bc6bd1db1f9ce986ada3c4b123d.html#ab6ea9bc6bd1db1f9ce986ada3c4b123d">nlevsoil</a>), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>dz</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1,-<a class="el" href="namespaceclm__lake_a90adbd42f9d6589e3822d30fd2c34050.html#a90adbd42f9d6589e3822d30fd2c34050">nlevsnow</a>+0:<a class="el" href="namespaceclm__lake_ab6ea9bc6bd1db1f9ce986ada3c4b123d.html#ab6ea9bc6bd1db1f9ce986ada3c4b123d">nlevsoil</a>), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>zi</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, dimension(1), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>snl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>h2osno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>snowdp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1,<a class="el" href="namespaceclm__lake_ad9f8eacbce8bb6a43583325fa13fba19.html#ad9f8eacbce8bb6a43583325fa13fba19">nlevlake</a>), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>lake_icefrac</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1,<a class="el" href="namespaceclm__lake_ad9f8eacbce8bb6a43583325fa13fba19.html#ad9f8eacbce8bb6a43583325fa13fba19">nlevlake</a>), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>t_lake</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>endwb</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>snowage</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>snowice</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>snowliq</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>t_snow</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1,-<a class="el" href="namespaceclm__lake_a90adbd42f9d6589e3822d30fd2c34050.html#a90adbd42f9d6589e3822d30fd2c34050">nlevsnow</a>+1:<a class="el" href="namespaceclm__lake_ab6ea9bc6bd1db1f9ce986ada3c4b123d.html#ab6ea9bc6bd1db1f9ce986ada3c4b123d">nlevsoil</a>), intent(out)</td>          <td class="paramname"><span class="paramname"><em>t_soisno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1,-<a class="el" href="namespaceclm__lake_a90adbd42f9d6589e3822d30fd2c34050.html#a90adbd42f9d6589e3822d30fd2c34050">nlevsnow</a>+1:<a class="el" href="namespaceclm__lake_ab6ea9bc6bd1db1f9ce986ada3c4b123d.html#ab6ea9bc6bd1db1f9ce986ada3c4b123d">nlevsoil</a>), intent(out)</td>          <td class="paramname"><span class="paramname"><em>h2osoi_ice</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1,-<a class="el" href="namespaceclm__lake_a90adbd42f9d6589e3822d30fd2c34050.html#a90adbd42f9d6589e3822d30fd2c34050">nlevsnow</a>+1:<a class="el" href="namespaceclm__lake_ab6ea9bc6bd1db1f9ce986ada3c4b123d.html#ab6ea9bc6bd1db1f9ce986ada3c4b123d">nlevsoil</a>), intent(out)</td>          <td class="paramname"><span class="paramname"><em>h2osoi_liq</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1,-<a class="el" href="namespaceclm__lake_a90adbd42f9d6589e3822d30fd2c34050.html#a90adbd42f9d6589e3822d30fd2c34050">nlevsnow</a>+1:<a class="el" href="namespaceclm__lake_ab6ea9bc6bd1db1f9ce986ada3c4b123d.html#ab6ea9bc6bd1db1f9ce986ada3c4b123d">nlevsoil</a>), intent(out)</td>          <td class="paramname"><span class="paramname"><em>h2osoi_vol</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>qflx_drain</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>qflx_surf</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>qflx_infl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>qflx_qrgwl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>qcharge</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>qflx_prec_grnd</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>qflx_snowcap</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>qflx_snowcap_col</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>qflx_snow_grnd_pft</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>qflx_snow_grnd_col</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>qflx_rain_grnd</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>qflx_evap_tot_col</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>soilalpha</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>zwt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>fcov</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1,1:<a class="el" href="namespaceclm__lake_ab6ea9bc6bd1db1f9ce986ada3c4b123d.html#ab6ea9bc6bd1db1f9ce986ada3c4b123d">nlevsoil</a>), intent(out)</td>          <td class="paramname"><span class="paramname"><em>rootr_column</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>qflx_evap_grnd</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>qflx_sub_snow</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>qflx_dew_snow</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>qflx_dew_grnd</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1), intent(out)</td>          <td class="paramname"><span class="paramname"><em>qflx_rain_grnd_col</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1,<a class="el" href="namespaceclm__lake_ab6ea9bc6bd1db1f9ce986ada3c4b123d.html#ab6ea9bc6bd1db1f9ce986ada3c4b123d">nlevsoil</a>)</td>          <td class="paramname"><span class="paramname"><em>watsat</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1,<a class="el" href="namespaceclm__lake_ab6ea9bc6bd1db1f9ce986ada3c4b123d.html#ab6ea9bc6bd1db1f9ce986ada3c4b123d">nlevsoil</a>)</td>          <td class="paramname"><span class="paramname"><em>tksatu</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1,<a class="el" href="namespaceclm__lake_ab6ea9bc6bd1db1f9ce986ada3c4b123d.html#ab6ea9bc6bd1db1f9ce986ada3c4b123d">nlevsoil</a>)</td>          <td class="paramname"><span class="paramname"><em>tkmg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1,<a class="el" href="namespaceclm__lake_ab6ea9bc6bd1db1f9ce986ada3c4b123d.html#ab6ea9bc6bd1db1f9ce986ada3c4b123d">nlevsoil</a>)</td>          <td class="paramname"><span class="paramname"><em>tkdry</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), dimension(1,<a class="el" href="namespaceclm__lake_ab6ea9bc6bd1db1f9ce986ada3c4b123d.html#ab6ea9bc6bd1db1f9ce986ada3c4b123d">nlevsoil</a>)</td>          <td class="paramname"><span class="paramname"><em>csol</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(<a class="el" href="namespaceclm__lake_ae18904fc5c68d5a6973946a8a9972022.html#ae18904fc5c68d5a6973946a8a9972022">kind_lake</a>), intent(in)</td>          <td class="paramname"><span class="paramname"><em>dtime</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">character(*), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>errmsg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(inout)</td>          <td class="paramname"><span class="paramname"><em>errflg</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>If snow layers are present over an unfrozen lake, and the top layer of the lake is capable of absorbing the latent heat without going below freezing, the snow-water is runoff and the latent heat is subtracted from the lake. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">watsat</td><td>volumetric soil water at saturation (porosity) </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">tksatu</td><td>thermal conductivity, saturated soil [W/m-K] </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">tkmg</td><td>thermal conductivity, soil minerals [W/m-K] </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">tkdry</td><td>thermal conductivity, dry soil (W/m/Kelvin) </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">csol</td><td>heat capacity, soil solids (J/m**3/Kelvin) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dtime</td><td>timestep </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dz_lake</td><td>layer thickness for lake (m) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">forc_rain</td><td>rain rate [mm/s] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">forc_snow</td><td>snow rate [mm/s] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">qflx_evap_tot</td><td>qflx_evap_soi + qflx_evap_veg + qflx_tran_veg </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">forc_t</td><td>atmospheric temperature (Kelvin) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">do_capsnow</td><td>true =&gt; do snow capping </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t_grnd</td><td>ground temperature (Kelvin) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">qflx_evap_soi</td><td>soil evaporation (mm H2O/s) (+ = to atm) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">qflx_snomelt</td><td>snow melt (mm H2O /s) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">imelt</td><td>flag for melting (=1), freezing (=2), Not=0 </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">begwb</td><td>water mass begining of the time step </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">z</td><td>layer depth (m) </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">dz</td><td>layer thickness depth (m) </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">zi</td><td>interface depth (m) </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">snl</td><td>number of snow layers </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">h2osno</td><td>snow water (mm H2O) </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">snowdp</td><td>snow height (m) </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">lake_icefrac</td><td>mass fraction of lake layer that is frozen </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">t_lake</td><td>lake temperature (Kelvin) </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">frac_iceold</td><td>fraction of ice relative to the tot water </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">endwb</td><td>water mass end of the time step </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">snowage</td><td>non dimensional snow age [-] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">snowice</td><td>average snow ice lens </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">snowliq</td><td>average snow liquid water </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">t_snow</td><td>vertically averaged snow temperature </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">t_soisno</td><td>snow temperature (Kelvin) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">h2osoi_ice</td><td>ice lens (kg/m2) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">h2osoi_liq</td><td>liquid water (kg/m2) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">h2osoi_vol</td><td>volumetric soil water (0&lt;=h2osoi_vol&lt;=watsat)[m3/m3] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">qflx_drain</td><td>sub-surface runoff (mm H2O /s) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">qflx_surf</td><td>surface runoff (mm H2O /s) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">qflx_infl</td><td>infiltration (mm H2O /s) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">qflx_qrgwl</td><td>qflx_surf at glaciers, wetlands, lakes </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">qcharge</td><td>aquifer recharge rate (mm/s) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">qflx_prec_grnd</td><td>water onto ground including canopy runoff [kg/(m2 s)] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">qflx_snowcap</td><td>excess precipitation due to snow capping (mm H2O /s) [+] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">qflx_snowcap_col</td><td>excess precipitation due to snow capping (mm H2O /s) [+] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">qflx_snow_grnd_pft</td><td>snow on ground after interception (mm H2O/s) [+] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">qflx_snow_grnd_col</td><td>snow on ground after interception (mm H2O/s) [+] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">qflx_rain_grnd</td><td>rain on ground after interception (mm H2O/s) [+] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">qflx_evap_tot_col</td><td>pft quantity averaged to the column (assuming one pft) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">soilalpha</td><td>factor that reduces ground saturated specific humidity (-) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">zwt</td><td>water table depth </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">fcov</td><td>fractional area with water table at surface </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rootr_column</td><td>effective fraction of roots in each soil layer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">qflx_evap_grnd</td><td>ground surface evaporation rate (mm H2O/s) [+] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">qflx_sub_snow</td><td>sublimation rate from snow pack (mm H2O /s) [+] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">qflx_dew_snow</td><td>surface dew added to snow pack (mm H2O /s) [+] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">qflx_dew_grnd</td><td>ground surface dew formation (mm H2O /s) [+] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">qflx_rain_grnd_col</td><td>rain on ground after interception (mm H2O/s) [+] </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="clm__lake_8f90_source.html#l03147">3147</a> of file <a class="el" href="clm__lake_8f90_source.html">clm_lake.f90</a>.</p>
+
+<p class="reference">References <a class="el" href="module__sf__noahmplsm_8_f90_source.html#l07407">snowwater()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespaceclm__lake_a8880c2394213f41e2e8303f2fa89ed61_a8880c2394213f41e2e8303f2fa89ed61_cgraph.svg" width="100%" height="458"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespaceclm__lake.html">clm_lake</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

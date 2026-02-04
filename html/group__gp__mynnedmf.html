@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: MYNN-EDMF PBL and Shallow Convection Module</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('group__gp__mynnedmf.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">MYNN-EDMF PBL and Shallow Convection Module </div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><br  />
+ This scheme (1) performs pre-mynnedmf work, (2) runs the mynnedmf, and (3) performs post-mynnedmf work  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+Modules</h2></td></tr>
+<tr class="memitem:bl_5Fmynn_5Fcommon" id="r_bl_5Fmynn_5Fcommon"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacebl__mynn__common.html">bl_mynn_common</a></td></tr>
+<tr class="memdesc:namespacebl__mynn__common"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module defines model-specific constants/parameters. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions/Subroutines</h2></td></tr>
+<tr class="memitem:ga3d26bde7e00169d4fc2be40b6d685ff5" id="r_ga3d26bde7e00169d4fc2be40b6d685ff5"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__gp__mynnedmf_ga3d26bde7e00169d4fc2be40b6d685ff5.html#ga3d26bde7e00169d4fc2be40b6d685ff5">module_bl_mynn::mym_level2</a> (kts, kte, dz, u, v, thl, thetav, qw, ql, vt, vq, dtl, dqw, dtv, gm, gh, sm, sh)</td></tr>
+<tr class="memdesc:ga3d26bde7e00169d4fc2be40b6d685ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates the level 2, non-dimensional wind shear \(G_M\) and vertical temperature gradient \(G_H\) as well as the level 2 stability funcitons \(S_h\) and \(S_m\).  <br /></td></tr>
+<tr class="memitem:ga31475b966d06e7a87123bc895999cbfd" id="r_ga31475b966d06e7a87123bc895999cbfd"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__gp__mynnedmf_ga31475b966d06e7a87123bc895999cbfd.html#ga31475b966d06e7a87123bc895999cbfd">module_bl_mynn::mym_length</a> (kts, kte, xland, dz, dx, zw, rmo, flt, fltv, flq, vt, vq, u1, v1, qke, dtv, el, zi, theta, qkw, psig_bl, cldfra_bl1d, bl_mynn_mixlength, edmf_w1, edmf_a1)</td></tr>
+<tr class="memdesc:ga31475b966d06e7a87123bc895999cbfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates the mixing lengths.  <br /></td></tr>
+<tr class="memitem:ga7ab8703f6f218bfb5d6ac1688f0be48c" id="r_ga7ab8703f6f218bfb5d6ac1688f0be48c"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__gp__mynnedmf_ga7ab8703f6f218bfb5d6ac1688f0be48c.html#ga7ab8703f6f218bfb5d6ac1688f0be48c">module_bl_mynn::boulac_length0</a> (k, kts, kte, zw, dz, qtke, theta, lb1, lb2)</td></tr>
+<tr class="memdesc:ga7ab8703f6f218bfb5d6ac1688f0be48c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine was taken from the BouLac scheme in WRF-ARW and modified for integration into the MYNN PBL scheme. WHILE loops were added to reduce the computational expense. This subroutine computes the length scales up and down and then computes the min, average of the up/down length scales, and also considers the distance to the surface.  <br /></td></tr>
+<tr class="memitem:gab2842ad87c88dcd589ebfb585862cd56" id="r_gab2842ad87c88dcd589ebfb585862cd56"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__gp__mynnedmf_gab2842ad87c88dcd589ebfb585862cd56.html#gab2842ad87c88dcd589ebfb585862cd56">module_bl_mynn::boulac_length</a> (kts, kte, zw, dz, qtke, theta, lb1, lb2)</td></tr>
+<tr class="memdesc:gab2842ad87c88dcd589ebfb585862cd56"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine was taken from the BouLac scheme in WRF-ARW and modified for integration into the MYNN PBL scheme. WHILE loops were added to reduce the computational expense. This subroutine computes the length scales up and down and then computes the min, average of the up/down length scales, and also considers the distance to the surface.  <br /></td></tr>
+<tr class="memitem:ga017b6066d332a8612fa00f2713db57fa" id="r_ga017b6066d332a8612fa00f2713db57fa"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__gp__mynnedmf_ga017b6066d332a8612fa00f2713db57fa.html#ga017b6066d332a8612fa00f2713db57fa">module_bl_mynn::mym_turbulence</a> (kts, kte, xland, closure, dz, dx, zw, u, v, thl, thetav, ql, qw, qke, tsq, qsq, cov, vt, vq, rmo, flt, fltv, flq, zi, theta, sh, sm, el, dfm, dfh, dfq, tcd, qcd, pdk, pdt, pdq, pdc, qwt1d, qshear1d, qbuoy1d, qdiss1d, tke_budget, psig_bl, psig_shcu, cldfra_bl1d, bl_mynn_mixlength, edmf_w1, edmf_a1, tkeprodtd, spp_pbl, rstoch_col)</td></tr>
+<tr class="memdesc:ga017b6066d332a8612fa00f2713db57fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates the vertical diffusivity coefficients and the production terms for the turbulent quantities.  <br /></td></tr>
+<tr class="memitem:gaf3104a808121c8c051204a21f55957cc" id="r_gaf3104a808121c8c051204a21f55957cc"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__gp__mynnedmf_gaf3104a808121c8c051204a21f55957cc.html#gaf3104a808121c8c051204a21f55957cc">module_bl_mynn::mym_predict</a> (kts, kte, closure, delt, dz, ust, flt, flq, pmz, phh, el, dfq, rho, pdk, pdt, pdq, pdc, qke, tsq, qsq, cov, s_aw, s_awqke, bl_mynn_edmf_tke, qwt1d, qdiss1d, tke_budget)</td></tr>
+<tr class="memdesc:gaf3104a808121c8c051204a21f55957cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine predicts the turbulent quantities at the next step.  <br /></td></tr>
+<tr class="memitem:ga72e450860b06f1c3b6c7a9bbb0c94ce7" id="r_ga72e450860b06f1c3b6c7a9bbb0c94ce7"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__gp__mynnedmf_ga72e450860b06f1c3b6c7a9bbb0c94ce7.html#ga72e450860b06f1c3b6c7a9bbb0c94ce7">module_bl_mynn::mym_condensation</a> (kts, kte, dx, dz, zw, xland, thl, qw, qv, qc, qi, qs, p, exner, tsq, qsq, cov, sh, el, bl_mynn_cloudpdf, qc_bl1d, qi_bl1d, cldfra_bl1d, pblh1, hfx1, vt, vq, th, sgm, rmo, spp_pbl, rstoch_col)</td></tr>
+<tr class="memdesc:ga72e450860b06f1c3b6c7a9bbb0c94ce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates the nonconvective component of the subgrid cloud fraction and mixing ratio as well as the functions used to calculate the buoyancy flux. Different cloud PDFs can be selected by use of the namelist parameter <code class="param">bl_mynn_cloudpdf</code> .  <br /></td></tr>
+<tr class="memitem:gabd440b7b99df6a4736c2118fd96e3fd1" id="r_gabd440b7b99df6a4736c2118fd96e3fd1"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__gp__mynnedmf_gabd440b7b99df6a4736c2118fd96e3fd1.html#gabd440b7b99df6a4736c2118fd96e3fd1">module_bl_mynn::mynn_tendencies</a> (kts, kte, i, delt, dz, rho, u, v, th, tk, qv, qc, qi, qs, qnc, qni, psfc, p, exner, thl, sqv, sqc, sqi, sqs, sqw, qnwfa, qnifa, qnbca, ozone, ust, flt, flq, flqv, flqc, wspd, uoce, voce, tsq, qsq, cov, tcd, qcd, dfm, dfh, dfq, du, dv, dth, dqv, dqc, dqi, dqs, dqnc, dqni, dqnwfa, dqnifa, dqnbca, dozone, diss_heat, s_aw, s_awthl, s_awqt, s_awqv, s_awqc, s_awu, s_awv, s_awqnc, s_awqni, s_awqnwfa, s_awqnifa, s_awqnbca, sd_aw, sd_awthl, sd_awqt, sd_awqv, sd_awqc, sd_awu, sd_awv, sub_thl, sub_sqv, sub_u, sub_v, det_thl, det_sqv, det_sqc, det_u, det_v, flag_qc, flag_qi, flag_qnc, flag_qni, flag_qs, flag_qnwfa, flag_qnifa, flag_qnbca, cldfra_bl1d, bl_mynn_cloudmix, bl_mynn_mixqt, bl_mynn_edmf, bl_mynn_edmf_mom, bl_mynn_mixscalars)</td></tr>
+<tr class="memdesc:gabd440b7b99df6a4736c2118fd96e3fd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine solves for tendencies of U, V, \(\theta\), qv, qc, and qi.  <br /></td></tr>
+<tr class="memitem:gaf8eee736ba0e92dd2fe1f97755b3b3fb" id="r_gaf8eee736ba0e92dd2fe1f97755b3b3fb"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__gp__mynnedmf_gaf8eee736ba0e92dd2fe1f97755b3b3fb.html#gaf8eee736ba0e92dd2fe1f97755b3b3fb">module_bl_mynn::retrieve_exchange_coeffs</a> (kts, kte, dfm, dfh, dz, k_m, k_h)</td></tr>
+<tr class="memitem:ga6be5a54d1ec6fae7132708446944b033" id="r_ga6be5a54d1ec6fae7132708446944b033"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__gp__mynnedmf_ga6be5a54d1ec6fae7132708446944b033.html#ga6be5a54d1ec6fae7132708446944b033">module_bl_mynn::tridiag</a> (n, a, b, c, d)</td></tr>
+<tr class="memitem:ga4fa1805b4144393074c41831e22f9cf4" id="r_ga4fa1805b4144393074c41831e22f9cf4"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__gp__mynnedmf_ga4fa1805b4144393074c41831e22f9cf4.html#ga4fa1805b4144393074c41831e22f9cf4">module_bl_mynn::tridiag2</a> (n, a, b, c, d, x)</td></tr>
+<tr class="memitem:gac856b0547012a1890f570cf884929e25" id="r_gac856b0547012a1890f570cf884929e25"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__gp__mynnedmf_gac856b0547012a1890f570cf884929e25.html#gac856b0547012a1890f570cf884929e25">module_bl_mynn::tridiag3</a> (kte, a, b, c, d, x)</td></tr>
+<tr class="memitem:ga1a32198222c028ebc56fe79f6872be53" id="r_ga1a32198222c028ebc56fe79f6872be53"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__gp__mynnedmf_ga1a32198222c028ebc56fe79f6872be53.html#ga1a32198222c028ebc56fe79f6872be53">module_bl_mynn::dmp_mf</a> (kts, kte, dt, zw, dz, p, rho, momentum_opt, tke_opt, scalar_opt, u, v, w, th, thl, thv, tk, qt, qv, qc, qke, qnc, qni, qnwfa, qnifa, qnbca, exner, vt, vq, sgm, ust, flt, fltv, flq, flqv, pblh, kpbl, dx, landsea, ts, edmf_a, edmf_w, edmf_qt, edmf_thl, edmf_ent, edmf_qc, s_aw, s_awthl, s_awqt, s_awqv, s_awqc, s_awu, s_awv, s_awqke, s_awqnc, s_awqni, s_awqnwfa, s_awqnifa, s_awqnbca, sub_thl, sub_sqv, sub_u, sub_v, det_thl, det_sqv, det_sqc, det_u, det_v, nchem, chem1, s_awchem, mix_chem, qc_bl1d, cldfra_bl1d, qc_bl1d_old, cldfra_bl1d_old, f_qc, f_qi, f_qnc, f_qni, f_qnwfa, f_qnifa, f_qnbca, psig_shcu, maxwidth, ktop, maxmf, ztop, spp_pbl, rstoch_col)</td></tr>
+<tr class="memdesc:ga1a32198222c028ebc56fe79f6872be53"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine is the Dynamic Multi-Plume (DMP) Mass-Flux Scheme.  <br /></td></tr>
+<tr class="memitem:ga8a29adb739751b21ffacddb8f24ac8ab" id="r_ga8a29adb739751b21ffacddb8f24ac8ab"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__gp__mynnedmf_ga8a29adb739751b21ffacddb8f24ac8ab.html#ga8a29adb739751b21ffacddb8f24ac8ab">module_bl_mynn::condensation_edmf</a> (qt, thl, p, zagl, thv, qc)</td></tr>
+<tr class="memdesc:ga8a29adb739751b21ffacddb8f24ac8ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine.  <br /></td></tr>
+<tr class="memitem:gae8047a4c3a14e775edc08c08caf43d80" id="r_gae8047a4c3a14e775edc08c08caf43d80"><td class="memItemLeft">real(kind_phys) function&#160;</td><td class="memItemRight"><a class="el" href="group__gp__mynnedmf_gae8047a4c3a14e775edc08c08caf43d80.html#gae8047a4c3a14e775edc08c08caf43d80">module_bl_mynn::esat_blend</a> (t)</td></tr>
+<tr class="memitem:ga41a4c80227342f73cd16d2ae814498d0" id="r_ga41a4c80227342f73cd16d2ae814498d0"><td class="memItemLeft">real(kind_phys) function&#160;</td><td class="memItemRight"><a class="el" href="group__gp__mynnedmf_ga41a4c80227342f73cd16d2ae814498d0.html#ga41a4c80227342f73cd16d2ae814498d0">module_bl_mynn::qsat_blend</a> (t, p)</td></tr>
+<tr class="memdesc:ga41a4c80227342f73cd16d2ae814498d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function extends function "esat" and returns a "blended" saturation mixing ratio. Tice currently set to 240 K, t0c = 273.15 K.  <br /></td></tr>
+<tr class="memitem:gaa969fd37a058f1244a944268798075e7" id="r_gaa969fd37a058f1244a944268798075e7"><td class="memItemLeft">real(kind_phys) function&#160;</td><td class="memItemRight"><a class="el" href="group__gp__mynnedmf_gaa969fd37a058f1244a944268798075e7.html#gaa969fd37a058f1244a944268798075e7">module_bl_mynn::xl_blend</a> (t)</td></tr>
+<tr class="memdesc:gaa969fd37a058f1244a944268798075e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function interpolates the latent heats of vaporization and sublimation into a single, temperature-dependent, "blended" value, following Chaboureau and Bechtold (2002) <a class="el" href="citelist.html#CITEREF_chaboureau_2002">[29]</a>, Appendix.  <br /></td></tr>
+<tr class="memitem:ga727e10ec7e7a73d34a7f50dadbda2b83" id="r_ga727e10ec7e7a73d34a7f50dadbda2b83"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__gp__mynnedmf_ga727e10ec7e7a73d34a7f50dadbda2b83.html#ga727e10ec7e7a73d34a7f50dadbda2b83">module_bl_mynn::mynn_bl_driver</a> (initflag, restart, cycling, delt, dz, dx, znt, u, v, w, th, sqv3d, sqc3d, sqi3d, sqs3d, qnc, qni, qnwfa, qnifa, qnbca, ozone, p, exner, rho, t3d, xland, ts, qsfc, ps, ust, ch, hfx, qfx, rmol, wspd, uoce, voce, qke, qke_adv, sh3d, sm3d, nchem, kdvel, ndvel, chem3d, vdep, smoke_dbg, frp, emis_ant_no, mix_chem, enh_mix, rrfs_sd, tsq, qsq, cov, rublten, rvblten, rthblten, rqvblten, rqcblten, rqiblten, rqncblten, rqniblten, rqsblten, rqnwfablten, rqnifablten, rqnbcablten, dozone, exch_h, exch_m, pblh, kpbl, el_pbl, dqke, qwt, qshear, qbuoy, qdiss, qc_bl, qi_bl, cldfra_bl, bl_mynn_tkeadvect, tke_budget, bl_mynn_cloudpdf, bl_mynn_mixlength, icloud_bl, closure, bl_mynn_edmf, bl_mynn_edmf_mom, bl_mynn_edmf_tke, bl_mynn_mixscalars, bl_mynn_output, bl_mynn_cloudmix, bl_mynn_mixqt, edmf_a, edmf_w, edmf_qt, edmf_thl, edmf_ent, edmf_qc, sub_thl3d, sub_sqv3d, det_thl3d, det_sqv3d, maxwidth, maxmf, ztop_plume, ktop_plume, spp_pbl, pattern_spp_pbl, rthraten, flag_qc, flag_qi, flag_qnc, flag_qni, flag_qs, flag_qnwfa, flag_qnifa, flag_qnbca, flag_ozone, ids, ide, jds, jde, kds, kde, ims, ime, jms, jme, kms, kme, its, ite, jts, jte, kts, kte)</td></tr>
+<tr class="memdesc:ga727e10ec7e7a73d34a7f50dadbda2b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine is the MYNN-EDNF PBL driver routine,which encompassed the majority of the subroutines that comprise the procedures that ultimately solve for tendencies of \(U, V, \theta, q_v, q_c, and q_i\).  <br /></td></tr>
+<tr class="memitem:ga97717283bfde857ef86fb46f37063824" id="r_ga97717283bfde857ef86fb46f37063824"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__gp__mynnedmf_ga97717283bfde857ef86fb46f37063824.html#ga97717283bfde857ef86fb46f37063824">module_bl_mynn::mym_initialize</a> (kts, kte, xland, dz, dx, zw, u, v, thl, qw, zi, theta, thetav, sh, sm, ust, rmo, el, qke, tsq, qsq, cov, psig_bl, cldfra_bl1d, bl_mynn_mixlength, edmf_w1, edmf_a1, initialize_qke, spp_pbl, rstoch_col)</td></tr>
+<tr class="memdesc:ga97717283bfde857ef86fb46f37063824"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine initializes the mixing length, TKE, \(\theta^{&#39;2}\), \(q^{&#39;2}\), and \(\theta^{&#39;}q^{&#39;}\).  <br /></td></tr>
+<tr class="memitem:ga0dc8b774b082b37c5f048db5f209ad12" id="r_ga0dc8b774b082b37c5f048db5f209ad12"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__gp__mynnedmf_ga0dc8b774b082b37c5f048db5f209ad12.html#ga0dc8b774b082b37c5f048db5f209ad12">module_bl_mynn::get_pblh</a> (kts, kte, zi, thetav1d, qke1d, zw1d, dz1d, landsea, kzi)</td></tr>
+<tr class="memdesc:ga0dc8b774b082b37c5f048db5f209ad12"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates hybrid diagnotic boundary-layer height (PBLH).  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><h1 class="doxsection"><a class="anchor" id="arg_table_mynnedmf_wrapper_run"></a>
+Argument Table</h1>
+ </div></div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

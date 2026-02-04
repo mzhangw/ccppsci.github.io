@@ -1,0 +1,5 @@
+<map id="module_radiation_clouds::progcld_thompson" name="module_radiation_clouds::progcld_thompson">
+<area shape="rect" id="Node000001" title="This subroutine added by G. Thompson specifically to account for explicit (microphysics&#45;produced) clo..." alt="" coords="218,5,382,46"/>
+<area shape="rect" id="Node000002" href="$group__module__radiation__clouds_gade0c4ffb0276ff706253a39568a88a67.html#gade0c4ffb0276ff706253a39568a88a67" title="Subroutine radiation_clouds_prop computes cloud related quantities for different cloud microphysics s..." alt="" coords="5,5,170,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,26,170,28,170,23,205,25"/>
+</map>

@@ -1,0 +1,535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: rrtmg_lw::rrtmg_lw_run</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('group__module__radlw__main_gaeb3fc1ab18633529cb7c6446e2cc2df9.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="contents">
+<a id="gaeb3fc1ab18633529cb7c6446e2cc2df9" name="gaeb3fc1ab18633529cb7c6446e2cc2df9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb3fc1ab18633529cb7c6446e2cc2df9">&#9670;&#160;</a></span>rrtmg_lw_run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">subroutine, public rrtmg_lw::rrtmg_lw_run </td>
+          <td>(</td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>plyr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>plvl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>tlyr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>tlvl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>qlyr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>olyr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>gasvmr_co2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>gasvmr_n2o</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>gasvmr_ch4</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>gasvmr_o2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>gasvmr_co</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>gasvmr_cfc11</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>gasvmr_cfc12</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>gasvmr_cfc22</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>gasvmr_ccl4</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, dimension(npts), intent(in)</td>          <td class="paramname"><span class="paramname"><em>icseed</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>aeraod</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>aerssa</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>sfemis</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>sfgtmp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>dzlyr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>delpin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>de_lgth</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(npts,nlay), intent(in)</td>          <td class="paramname"><span class="paramname"><em>alpha</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>npts</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>nlay</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>nlp1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">logical, intent(in)</td>          <td class="paramname"><span class="paramname"><em>lprnt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in)</td>          <td class="paramname"><span class="paramname"><em>cld_cf</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">logical, intent(in)</td>          <td class="paramname"><span class="paramname"><em>lslwr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">logical, intent(in)</td>          <td class="paramname"><span class="paramname"><em>top_at_1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>iovr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>iovr_rand</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>iovr_maxrand</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>iovr_max</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>iovr_dcorr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>iovr_exp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>iovr_exprand</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">logical, intent(in)</td>          <td class="paramname"><span class="paramname"><em>inc_minor_gas</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>ilwcliq</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>ilwcice</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(in)</td>          <td class="paramname"><span class="paramname"><em>isubclw</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>hlwc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">type (<a class="el" href="structmodule__radlw__parameters_1_1topflw__type.html">topflw_type</a>), dimension(:), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>topflx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">type (<a class="el" href="structmodule__radlw__parameters_1_1sfcflw__type.html">sfcflw_type</a>), dimension(:), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>sfcflx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(inout)</td>          <td class="paramname"><span class="paramname"><em>cldtau</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(inout), optional</td>          <td class="paramname"><span class="paramname"><em>hlw0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:,:), intent(inout), optional</td>          <td class="paramname"><span class="paramname"><em>hlwb</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">type (<a class="el" href="structmodule__radlw__parameters_1_1proflw__type.html">proflw_type</a>), dimension(:,:), intent(inout), optional</td>          <td class="paramname"><span class="paramname"><em>flxprf</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in), optional</td>          <td class="paramname"><span class="paramname"><em>cld_lwp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in), optional</td>          <td class="paramname"><span class="paramname"><em>cld_ref_liq</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in), optional</td>          <td class="paramname"><span class="paramname"><em>cld_iwp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in), optional</td>          <td class="paramname"><span class="paramname"><em>cld_ref_ice</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in), optional</td>          <td class="paramname"><span class="paramname"><em>cld_rwp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in), optional</td>          <td class="paramname"><span class="paramname"><em>cld_ref_rain</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in), optional</td>          <td class="paramname"><span class="paramname"><em>cld_swp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in), optional</td>          <td class="paramname"><span class="paramname"><em>cld_ref_snow</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real (kind=kind_phys), dimension(:,:), intent(in), optional</td>          <td class="paramname"><span class="paramname"><em>cld_od</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">character(len=*), intent(out)</td>          <td class="paramname"><span class="paramname"><em>errmsg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer, intent(out)</td>          <td class="paramname"><span class="paramname"><em>errflg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<ul>
+<li>Change random number seed value for each radiation invocation (isubclw =1 or 2).</li>
+</ul>
+<ul>
+<li>Read surface emissivity.</li>
+</ul>
+<ul>
+<li>Prepare atmospheric profile for use in rrtm.</li>
+</ul>
+<ul>
+<li>Set absorber amount for h2o, co2, and o3.</li>
+</ul>
+<ul>
+<li>Set up column amount for rare gases n2o,ch4,o2,co,ccl4,cf11,cf12, cf22, convert from volume mixing ratio to molec/cm2 based on coldry (scaled to 1.0e-20).</li>
+</ul>
+<ul>
+<li>Set aerosol optical properties.</li>
+</ul>
+<ul>
+<li>Read cloud optical properties.</li>
+</ul>
+<ul>
+<li>Compute precipitable water vapor for diffusivity angle adjustments.</li>
+</ul>
+<ul>
+<li>Compute column amount for broadening gases.</li>
+</ul>
+<ul>
+<li>Compute diffusivity angle adjustments.</li>
+</ul>
+<ul>
+<li>For cloudy atmosphere, call <a class="el" href="group__module__radlw__main_ga188f960ab677a1015cf5d08a73f8d065.html#ga188f960ab677a1015cf5d08a73f8d065" title="This subroutine computes the cloud optical depth(s) for each cloudy layer and g-point interval.">cldprop()</a> to set cloud optical properties.</li>
+</ul>
+<ul>
+<li>Calling <a class="el" href="group__module__radlw__main_ga555eb0bcd1a400265c458cd97ba972de.html#ga555eb0bcd1a400265c458cd97ba972de" title="This subroutine computes various coefficients needed in radiative transfer calculations.">setcoef()</a> to compute various coefficients needed in radiative transfer calculations.</li>
+</ul>
+<ul>
+<li>Call <a class="el" href="group__module__radlw__main_ga7a5cbc99583212a0bd0d5f7b87ab1769.html#ga7a5cbc99583212a0bd0d5f7b87ab1769" title="This subroutine contains optical depths developed for the rapid radiative transfer model.">taumol()</a> to calculte the gaseous optical depths and Plank fractions for each longwave spectral band.</li>
+</ul>
+<ul>
+<li>Call the radiative transfer routine based on cloud scheme selection. Compute the upward/downward radiative fluxes, and heating rates for both clear or cloudy atmosphere. <br  />
+ - call <a class="el" href="group__module__radlw__main_ga5b2017b2dfab616e103d102f2e05ec32.html#ga5b2017b2dfab616e103d102f2e05ec32" title="This subroutine computes the upward/downward radiative fluxes, and heating rates for both clear or cl...">rtrn()</a>: clouds are assumed as randomly overlaping in a vertical column <br  />
+ - call <a class="el" href="group__module__radlw__main_ga07da933ac2e2f41461ac0d2a03d5e206.html#ga07da933ac2e2f41461ac0d2a03d5e206" title="This subroutine computes the upward/downward radiative fluxes, and heating rates for both clear or cl...">rtrnmr()</a>: clouds are assumed as in maximum-randomly overlaping in a vertical column; <br  />
+ - call <a class="el" href="group__module__radlw__main_ga3faed55d3d5b73b8cb75bba1b85d292b.html#ga3faed55d3d5b73b8cb75bba1b85d292b" title="This subroutine computes the upward/downward radiative fluxes, and heating rates for both clear or cl...">rtrnmc()</a>: clouds are treated with the mcica stochastic approach.</li>
+</ul>
+<ul>
+<li>Save outputs.</li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="radlw__main_8_f90_source.html#l00419">419</a> of file <a class="el" href="radlw__main_8_f90_source.html">radlw_main.F90</a>.</p>
+
+<p class="reference">References <a class="el" href="radlw__main_8_f90_source.html#l01536">cldprop()</a>, <a class="el" href="radlw__main_8_f90_source.html#l02448">rtrn()</a>, <a class="el" href="radlw__main_8_f90_source.html#l03423">rtrnmc()</a>, <a class="el" href="radlw__main_8_f90_source.html#l02831">rtrnmr()</a>, <a class="el" href="radlw__main_8_f90_source.html#l02158">setcoef()</a>, and <a class="el" href="radlw__main_8_f90_source.html#l03842">taumol()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="group__module__radlw__main_gaeb3fc1ab18633529cb7c6446e2cc2df9_gaeb3fc1ab18633529cb7c6446e2cc2df9_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespacerrtmg__lw.html">rrtmg_lw</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

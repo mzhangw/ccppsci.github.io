@@ -1,0 +1,13 @@
+<map id="module_radiation_clouds::cloud_fraction_xurandall" name="module_radiation_clouds::cloud_fraction_xurandall">
+<area shape="rect" id="Node000001" title="This subroutine computes the Xu&#45;Randall cloud fraction scheme." alt="" coords="443,71,612,111"/>
+<area shape="rect" id="Node000002" href="$group__module__radiation__clouds_ga9f1d337794ba446156ed48d61fefb76d.html#ga9f1d337794ba446156ed48d61fefb76d" title="This subroutine computes cloud related quantities using Ferrier&#45;Aligo cloud microphysics scheme." alt="" coords="224,5,388,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="439,66,378,49,378,44,445,66"/>
+<area shape="rect" id="Node000004" href="$group__module__radiation__clouds_ga21b5982de59b5f60a24abe33946f40d0.html#ga21b5982de59b5f60a24abe33946f40d0" title="This subroutine is used by Thompson/WSM6/NSSL cloud microphysics (EMC)." alt="" coords="218,71,395,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="425,91,396,94,395,88,430,91"/>
+<area shape="rect" id="Node000005" href="$group__module__radiation__clouds_gac51e562082d901e15a3fb3a4dc7c7aad.html#gac51e562082d901e15a3fb3a4dc7c7aad" title="This subroutine computes cloud related quantities using zhao/moorthi&#39;s prognostic cloud microphysics ..." alt="" coords="224,136,388,177"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="445,116,379,138,377,133,439,117"/>
+<area shape="rect" id="Node000003" href="$group__module__radiation__clouds_gade0c4ffb0276ff706253a39568a88a67.html#gade0c4ffb0276ff706253a39568a88a67" title="Subroutine radiation_clouds_prop computes cloud related quantities for different cloud microphysics s..." alt="" coords="5,71,170,111"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="219,52,159,72,157,68,224,49"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="199,92,171,94,170,88,205,90"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="219,132,158,115,159,109,224,131"/>
+</map>

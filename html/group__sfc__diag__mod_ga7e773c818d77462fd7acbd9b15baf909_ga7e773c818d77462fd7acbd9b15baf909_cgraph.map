@@ -1,0 +1,25 @@
+<map id="sfc_diag::sfc_diag_run" name="sfc_diag::sfc_diag_run">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,153,158,179"/>
+<area shape="rect" id="Node000002" href="$group___noah___l_s_m_ga977daabf4ff68b28fc5ccd8796d815cd.html#ga977daabf4ff68b28fc5ccd8796d815cd" title="This subroutine updates the temperature state of the soil column based on the thermal diffusion equat..." alt="" coords="206,153,255,179"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,164,193,166,187,167,158,169"/>
+<area shape="rect" id="Node000003" href="$group___noah___l_s_m_gabb602c2b09396e2f94c9556259f5bae4.html#gabb602c2b09396e2f94c9556259f5bae4" title="This subroutine calculates the right hand side of the time tendency term of the soil thermal diffusio..." alt="" coords="310,104,349,130"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="255,152,294,134,299,132,257,156"/>
+<area shape="rect" id="Node000010" href="$group___noah___l_s_m_ga32e89df3740f968f500900125ae9633d.html#ga32e89df3740f968f500900125ae9633d" title="This subroutine calculates the right hand side of the time tendency term of the soil thermal diffusio..." alt="" coords="303,153,356,179"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="255,164,290,166,285,167,256,169"/>
+<area shape="rect" id="Node000011" href="$group___noah___l_s_m_gacb79bab20ee25c57918575949c15de73.html#gacb79bab20ee25c57918575949c15de73" title="This subroutine calculates/updates the soil temperature field." alt="" coords="303,203,356,228"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="256,176,292,196,286,195,255,181"/>
+<area shape="rect" id="Node000004" href="$group___noah___l_s_m_ga1b241897d00ec3d66eabe9e959d0ce04.html#ga1b241897d00ec3d66eabe9e959d0ce04" title="This subroutine calculates sink/source term of the termal diffusion equation." alt="" coords="406,5,467,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="341,101,403,40,403,43,408,40,406,44,345,106"/>
+<area shape="rect" id="Node000007" href="$group___noah___l_s_m_ga8e248a6da8d1fd3c2e64b76f3bfbea50.html#ga8e248a6da8d1fd3c2e64b76f3bfbea50" title="This subroutine calculates temperature on the boundary of the layer by interpolation of the middle la..." alt="" coords="413,55,460,80"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="348,106,397,85,402,83,350,111"/>
+<area shape="rect" id="Node000008" href="$group___noah___l_s_m_ga8bc3154096e6364c5fcddf884c003bef.html#ga8bc3154096e6364c5fcddf884c003bef" title="This subroutine calculates thermal diffusivity and conductivity of the soil for a given point and tim..." alt="" coords="408,104,465,130"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="349,114,395,116,390,117,349,119"/>
+<area shape="rect" id="Node000009" href="$group___noah___l_s_m_gae50411efeb11ddeb8a0c53010745a95c.html#gae50411efeb11ddeb8a0c53010745a95c" title="This subroutine calculates soil layer average temperature (tavg) in freezing/thawing layer using up,..." alt="" coords="404,153,469,179"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="350,123,396,146,391,146,349,128"/>
+<area shape="rect" id="Node000005" href="$group___noah___l_s_m_ga7c0e713811400259a984b2153834e70c.html#ga7c0e713811400259a984b2153834e70c" title="This subroutine calculates amount of supercooled liquid soil water content if temperature is below 27..." alt="" coords="517,5,567,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="466,16,504,18,498,19,467,21"/>
+<area shape="rect" id="Node000006" href="$group___noah_m_p___l_s_m_gace27cd3a7b4e23955e39e33bd344baae.html#gace27cd3a7b4e23955e39e33bd344baae" title="check surface energy balance and water balance." alt="" coords="615,5,662,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="567,16,602,18,597,19,568,21"/>
+<area shape="rect" id="Node000012" href="$group___noah___l_s_m_ga3d7dabe1147278de865aa4691d5b2de0.html#ga3d7dabe1147278de865aa4691d5b2de0" title="This subroutine inverts (solve) the tri&#45;diagonal matrix problem." alt="" coords="408,203,465,228"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="357,213,395,215,390,216,357,218"/>
+</map>

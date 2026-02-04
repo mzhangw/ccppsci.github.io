@@ -1,0 +1,7 @@
+<map id="module_sf_ruclsm::soilvegin" name="module_sf_ruclsm::soilvegin">
+<area shape="rect" id="Node000001" title="This subroutine computes effective land and soil parameters in the grid cell from the weighted contri..." alt="" coords="422,5,608,31"/>
+<area shape="rect" id="Node000002" href="$group__lsm__ruc__group_ga919051c947b9bd7272399d4b681ba2a8.html#ga919051c947b9bd7272399d4b681ba2a8" title="The RUN LSM model is described in Smirnova et al.(1997) smirnova_1997 and Smirnova et al...." alt="" coords="200,5,374,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="403,18,375,21,375,16,409,18"/>
+<area shape="rect" id="Node000003" href="$namespacelsm__ruc_affabfffd45a10349230af3cd4fc7cdeb.html#affabfffd45a10349230af3cd4fc7cdeb" title=" " alt="" coords="5,5,152,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="181,18,152,21,152,16,187,18"/>
+</map>

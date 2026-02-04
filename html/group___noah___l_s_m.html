@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: GFS Noah LSM Model</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('group___noah___l_s_m.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">GFS Noah LSM Model </div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>This is Noah LSM driver module, with the functionality of preparing variables to run Noah LSM <a class="el" href="group___noah___l_s_m_ga36e98f3ac91f839b816fd167eab30901.html#ga36e98f3ac91f839b816fd167eab30901" title="This is the entity of GFS Noah LSM model of physics subroutines. It is a soil/veg/snowpack land-surfa...">gfssflx()</a>, calling Noah LSM and post-processing variables for return to the parent model suite including unit conversion, as well as diagnotics calculation.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+Modules</h2></td></tr>
+<tr class="memitem:namelist_5Fsoilveg" id="r_namelist_5Fsoilveg"><td class="memItemLeft">module &#160;</td><td class="memItemRight"><a class="el" href="namespacenamelist__soilveg.html">namelist_soilveg</a></td></tr>
+<tr class="memdesc:namespacenamelist__soilveg"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module contains namelist options for Noah LSM. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions/Subroutines</h2></td></tr>
+<tr class="memitem:ga5d624f72a0da3ffcdf7a01fb9862e0e8" id="r_ga5d624f72a0da3ffcdf7a01fb9862e0e8"><td class="memItemLeft">subroutine, public&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_ga5d624f72a0da3ffcdf7a01fb9862e0e8.html#ga5d624f72a0da3ffcdf7a01fb9862e0e8">lsm_noah::lsm_noah_run</a> (im, km, grav, cp, hvap, rd, eps, epsm1, rvrdm1, ps, t1, q1, soiltyp, vegtype, sigmaf, sfcemis, dlwflx, dswsfc, delt, tg3, cm, ch, prsl1, prslki, zf, land, wind, slopetyp, shdmin, shdmax, snoalb, sfalb, flag_iter, flag_guess, lheatstrg, isot, ivegsrc, bexppert, xlaipert, vegfpert, pertvegf, albdvis_lnd, albdnir_lnd, albivis_lnd, albinir_lnd, adjvisbmd, adjnirbmd, adjvisdfd, adjnirdfd, rhonewsn1, exticeden, weasd, snwdph, tskin, tprcp, srflag, smc, stc, slc, canopy, trans, tsurf, zorl, sncovr1, qsurf, gflux, drain, evap, hflx, ep, runoff, cmm, chh, evbs, evcw, sbsno, snowc, stm, snohf, smcwlt2, smcref2, wet1, lai, rca, errmsg, errflg)</td></tr>
+<tr class="memitem:ga961eacb6f4b1b1b724401001b85c874d" id="r_ga961eacb6f4b1b1b724401001b85c874d"><td class="memItemLeft">subroutine, public&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_ga961eacb6f4b1b1b724401001b85c874d.html#ga961eacb6f4b1b1b724401001b85c874d">set_soilveg_mod::set_soilveg</a> (me, isot, ivet, nlunit, errmsg, errflg)</td></tr>
+<tr class="memdesc:ga961eacb6f4b1b1b724401001b85c874d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine initializes soil and vegetation.  <br /></td></tr>
+<tr class="memitem:ga36e98f3ac91f839b816fd167eab30901" id="r_ga36e98f3ac91f839b816fd167eab30901"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_ga36e98f3ac91f839b816fd167eab30901.html#ga36e98f3ac91f839b816fd167eab30901">sflx::gfssflx</a> (nsoil, couple, icein, ffrozp, dt, zlvl, sldpth, swdn, swnet, lwdn, sfcems, sfcprs, sfctmp, sfcspd, prcp, q2, q2sat, dqsdt2, th2, ivegsrc, vegtyp, soiltyp, slopetyp, shdmin, alb, snoalb, rhonewsn, exticeden, bexpp, xlaip, lheatstrg, tbot, cmc, t1, stc, smc, sh2o, sneqv, ch, cm, z0, nroot, shdfac, snowh, <a class="el" href="group___noah_m_p___l_s_m_ga9d5adb20aca5b72a7e126136088e20d1.html#ga9d5adb20aca5b72a7e126136088e20d1">albedo</a>, eta, sheat, ec, edir, et, ett, esnow, drip, dew, beta, etp, ssoil, flx1, flx2, flx3, runoff1, runoff2, runoff3, snomlt, sncovr, rc, pc, rsmin, xlai, rcs, rct, rcq, rcsoil, soilw, soilm, smcwlt, smcdry, smcref, smcmax, errmsg, errflg)</td></tr>
+<tr class="memdesc:ga36e98f3ac91f839b816fd167eab30901"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the entity of GFS Noah LSM model of physics subroutines. It is a soil/veg/snowpack land-surface model to update soil moisture, soil ice, soil temperature, skin temperature, snowpack water content, snowdepth, and all terms of the surface energy balance and surface water balance (excluding input atmospheric forcings of downward radiation and precipitation).  <br /></td></tr>
+<tr class="memitem:ga18a0f02e4a1a32b6cde35cbe67b09908" id="r_ga18a0f02e4a1a32b6cde35cbe67b09908"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_ga18a0f02e4a1a32b6cde35cbe67b09908.html#ga18a0f02e4a1a32b6cde35cbe67b09908">alcalc</a></td></tr>
+<tr class="memdesc:ga18a0f02e4a1a32b6cde35cbe67b09908"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates albedo including snow effect (0 -&gt; 1).  <br /></td></tr>
+<tr class="memitem:gaa292bfa0bd38e58ab9389cb38e4d09c0" id="r_gaa292bfa0bd38e58ab9389cb38e4d09c0"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_gaa292bfa0bd38e58ab9389cb38e4d09c0.html#gaa292bfa0bd38e58ab9389cb38e4d09c0">canres</a></td></tr>
+<tr class="memdesc:gaa292bfa0bd38e58ab9389cb38e4d09c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates canopy resistance which depends on incoming solar radiation, air temperature, atmospheric water vapor pressure deficit at the lowest model level, and soil moisture (preferably unfrozen soil moisture rather than total).  <br /></td></tr>
+<tr class="memitem:ga028fc448a3afe77726222a337008ffa4" id="r_ga028fc448a3afe77726222a337008ffa4"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_ga028fc448a3afe77726222a337008ffa4.html#ga028fc448a3afe77726222a337008ffa4">csnow</a></td></tr>
+<tr class="memdesc:ga028fc448a3afe77726222a337008ffa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates snow termal conductivity.  <br /></td></tr>
+<tr class="memitem:ga92994e4737ecfd692a6704778558c9c2" id="r_ga92994e4737ecfd692a6704778558c9c2"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_ga92994e4737ecfd692a6704778558c9c2.html#ga92994e4737ecfd692a6704778558c9c2">nopac</a></td></tr>
+<tr class="memdesc:ga92994e4737ecfd692a6704778558c9c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates soil moisture and heat flux values and update soil moisture content and soil heat content values for the case when no snow pack is present.  <br /></td></tr>
+<tr class="memitem:ga25b90f8a8049eb17cc6cb6a3fecf3fdc" id="r_ga25b90f8a8049eb17cc6cb6a3fecf3fdc"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_ga25b90f8a8049eb17cc6cb6a3fecf3fdc.html#ga25b90f8a8049eb17cc6cb6a3fecf3fdc">penman</a></td></tr>
+<tr class="memdesc:ga25b90f8a8049eb17cc6cb6a3fecf3fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates potential evaporation for the current point. various partial sums/products are also calculated and passed back to the calling routine for later use.  <br /></td></tr>
+<tr class="memitem:ga1c19b4bae5de2a391c019b6778a58dad" id="r_ga1c19b4bae5de2a391c019b6778a58dad"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_ga1c19b4bae5de2a391c019b6778a58dad.html#ga1c19b4bae5de2a391c019b6778a58dad">redprm</a> (errmsg, errflg)</td></tr>
+<tr class="memdesc:ga1c19b4bae5de2a391c019b6778a58dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine internally sets default values or optionally read-in via namelist i/o, all soil and vegetation parateters requied for the execusion of the Noah LSM.  <br /></td></tr>
+<tr class="memitem:gafdc2dc9815673befca7228be47616e41" id="r_gafdc2dc9815673befca7228be47616e41"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_gafdc2dc9815673befca7228be47616e41.html#gafdc2dc9815673befca7228be47616e41">sfcdif</a></td></tr>
+<tr class="memdesc:gafdc2dc9815673befca7228be47616e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates surface layer exchange coefficients via iterative process(see Chen et al.(1997) <a class="el" href="citelist.html#CITEREF_chen_et_al_1997">[35]</a>).  <br /></td></tr>
+<tr class="memitem:gafca324f1a0f2bcca12116291bfc8ad68" id="r_gafca324f1a0f2bcca12116291bfc8ad68"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_gafca324f1a0f2bcca12116291bfc8ad68.html#gafca324f1a0f2bcca12116291bfc8ad68">snfrac</a></td></tr>
+<tr class="memdesc:gafca324f1a0f2bcca12116291bfc8ad68"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates snow fraction (0-&gt;1).  <br /></td></tr>
+<tr class="memitem:gad65a889bf3f431ade2a312674671ab41" id="r_gad65a889bf3f431ade2a312674671ab41"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_gad65a889bf3f431ade2a312674671ab41.html#gad65a889bf3f431ade2a312674671ab41">snopac</a></td></tr>
+<tr class="memdesc:gad65a889bf3f431ade2a312674671ab41"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates soil moisture and heat flux values and update soil moisture content and soil heat content values for the case when a snow pack is present.  <br /></td></tr>
+<tr class="memitem:gab816dbe84c4db91178251b08553c6d02" id="r_gab816dbe84c4db91178251b08553c6d02"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_gab816dbe84c4db91178251b08553c6d02.html#gab816dbe84c4db91178251b08553c6d02">snow_new</a></td></tr>
+<tr class="memdesc:gab816dbe84c4db91178251b08553c6d02"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates snow depth and densitity to account for the new snowfall. new values of snow depth &amp; density returned.  <br /></td></tr>
+<tr class="memitem:ga95d889f436d70014fe640fa1b2420545" id="r_ga95d889f436d70014fe640fa1b2420545"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_ga95d889f436d70014fe640fa1b2420545.html#ga95d889f436d70014fe640fa1b2420545">snowz0</a></td></tr>
+<tr class="memdesc:ga95d889f436d70014fe640fa1b2420545"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates total roughness length over snow.  <br /></td></tr>
+<tr class="memitem:ga8bc3154096e6364c5fcddf884c003bef" id="r_ga8bc3154096e6364c5fcddf884c003bef"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_ga8bc3154096e6364c5fcddf884c003bef.html#ga8bc3154096e6364c5fcddf884c003bef">tdfcnd</a> (smc, qz, smcmax, sh2o, df)</td></tr>
+<tr class="memdesc:ga8bc3154096e6364c5fcddf884c003bef"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates thermal diffusivity and conductivity of the soil for a given point and time.  <br /></td></tr>
+<tr class="memitem:ga4af741ecc120ddb0d7282f78df4136a5" id="r_ga4af741ecc120ddb0d7282f78df4136a5"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_ga4af741ecc120ddb0d7282f78df4136a5.html#ga4af741ecc120ddb0d7282f78df4136a5">evapo</a> (nsoil, nroot, cmc, cmcmax, etp1, dt, zsoil, sh2o, smcmax, smcwlt, smcref, smcdry, pc, shdfac, cfactr, rtdis, fxexp, eta1, edir1, ec1, et1, ett1)</td></tr>
+<tr class="memdesc:ga4af741ecc120ddb0d7282f78df4136a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates soil moisture flux. The soil moisture content (smc - a per unit volume measurement) is a dependent variable that is updated with prognostic equations. The canopy moisture content (cmc) is also updated. Frozen ground version: new states added: sh2o, and frozen ground correction factor, frzfact and paramter slope.  <br /></td></tr>
+<tr class="memitem:ga977daabf4ff68b28fc5ccd8796d815cd" id="r_ga977daabf4ff68b28fc5ccd8796d815cd"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_ga977daabf4ff68b28fc5ccd8796d815cd.html#ga977daabf4ff68b28fc5ccd8796d815cd">shflx</a> (nsoil, smc, smcmax, dt, yy, zz1, zsoil, zbot, psisat, bexp, df1, ice, quartz, csoil, vegtyp, shdfac, lheatstrg, stc, t1, tbot, sh2o, ssoil)</td></tr>
+<tr class="memdesc:ga977daabf4ff68b28fc5ccd8796d815cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine updates the temperature state of the soil column based on the thermal diffusion equation and update the frozen soil moisture content based on the temperature.  <br /></td></tr>
+<tr class="memitem:gafa3e5637e56746e2539ef2567836defa" id="r_gafa3e5637e56746e2539ef2567836defa"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_gafa3e5637e56746e2539ef2567836defa.html#gafa3e5637e56746e2539ef2567836defa">smflx</a> (nsoil, dt, kdt, smcmax, smcwlt, cmcmax, prcp1, zsoil, slope, frzx, bexp, dksat, dwsat, shdfac, edir1, ec1, et1, cmc, sh2o, smc, runoff1, runoff2, runoff3, drip)</td></tr>
+<tr class="memdesc:gafa3e5637e56746e2539ef2567836defa"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates soil moisture flux. The soil moisture content (smc - a per unit vulume measurement) is a dependent variable that is updated with prognostic equations. The canopy moisture content (cmc) is also updated. Frozen ground version: new states added: sh2o and frozen ground correction factor, frzx and parameter slope.  <br /></td></tr>
+<tr class="memitem:gab5149f309f4e291435f75dd63d4a97ac" id="r_gab5149f309f4e291435f75dd63d4a97ac"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_gab5149f309f4e291435f75dd63d4a97ac.html#gab5149f309f4e291435f75dd63d4a97ac">snowpack</a> (esd, dtsec, tsnow, tsoil, snowh, sndens)</td></tr>
+<tr class="memdesc:gab5149f309f4e291435f75dd63d4a97ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates compaction of a snowpack under conditions of increasing snow density, as obtained from an approximate solution of E. Anderson's differential equation (3.29),NOAA technical report NWS 19, by Victor Koren, 03/25/95. subroutine will return new values of <em class="arg">snowh</em> and <em class="arg">sndens</em> .  <br /></td></tr>
+<tr class="memitem:gabf8ee2c002871d95bc356e2058f49a92" id="r_gabf8ee2c002871d95bc356e2058f49a92"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_gabf8ee2c002871d95bc356e2058f49a92.html#gabf8ee2c002871d95bc356e2058f49a92">devap</a> (etp1, smc, shdfac, smcmax, smcdry, fxexp, edir1)</td></tr>
+<tr class="memdesc:gabf8ee2c002871d95bc356e2058f49a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subrtouine calculates direct soil evaporation.  <br /></td></tr>
+<tr class="memitem:ga7c0e713811400259a984b2153834e70c" id="r_ga7c0e713811400259a984b2153834e70c"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_ga7c0e713811400259a984b2153834e70c.html#ga7c0e713811400259a984b2153834e70c">frh2o</a> (tkelv, smc, sh2o, smcmax, bexp, psis, liqwat)</td></tr>
+<tr class="memdesc:ga7c0e713811400259a984b2153834e70c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates amount of supercooled liquid soil water content if temperature is below 273.15K (t0). It requires Newton-type iteration to solve the nonlinear implicit equation given in eqn 17 of Koren et al.(1999) <a class="el" href="citelist.html#CITEREF_koren_et_al_1999">[110]</a>.  <br /></td></tr>
+<tr class="memitem:gabb602c2b09396e2f94c9556259f5bae4" id="r_gabb602c2b09396e2f94c9556259f5bae4"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_gabb602c2b09396e2f94c9556259f5bae4.html#gabb602c2b09396e2f94c9556259f5bae4">hrt</a> (nsoil, stc, smc, smcmax, zsoil, yy, zz1, tbot, zbot, psisat, dt, bexp, df1, quartz, csoil, vegtyp, shdfac, lheatstrg, sh2o, rhsts, ai, bi, ci)</td></tr>
+<tr class="memdesc:gabb602c2b09396e2f94c9556259f5bae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates the right hand side of the time tendency term of the soil thermal diffusion equation. Also to compute (prepare) the matrix coefficients for the tri-diagonal matrix of the implicit time scheme.  <br /></td></tr>
+<tr class="memitem:ga32e89df3740f968f500900125ae9633d" id="r_ga32e89df3740f968f500900125ae9633d"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_ga32e89df3740f968f500900125ae9633d.html#ga32e89df3740f968f500900125ae9633d">hrtice</a> (nsoil, stc, zsoil, yy, zz1, df1, ice, tbot, rhsts, ai, bi, ci)</td></tr>
+<tr class="memdesc:ga32e89df3740f968f500900125ae9633d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates the right hand side of the time tendency term of the soil thermal diffusion equation for sea-ice (ice = 1) or glacial-ice (ice).  <br /></td></tr>
+<tr class="memitem:gacb79bab20ee25c57918575949c15de73" id="r_gacb79bab20ee25c57918575949c15de73"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_gacb79bab20ee25c57918575949c15de73.html#gacb79bab20ee25c57918575949c15de73">hstep</a> (nsoil, stcin, dt, rhsts, ai, bi, ci, stcout)</td></tr>
+<tr class="memdesc:gacb79bab20ee25c57918575949c15de73"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates/updates the soil temperature field.  <br /></td></tr>
+<tr class="memitem:ga3d7dabe1147278de865aa4691d5b2de0" id="r_ga3d7dabe1147278de865aa4691d5b2de0"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_ga3d7dabe1147278de865aa4691d5b2de0.html#ga3d7dabe1147278de865aa4691d5b2de0">rosr12</a> (nsoil, a, b, d, c, p, delta)</td></tr>
+<tr class="memdesc:ga3d7dabe1147278de865aa4691d5b2de0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine inverts (solve) the tri-diagonal matrix problem.  <br /></td></tr>
+<tr class="memitem:ga1b241897d00ec3d66eabe9e959d0ce04" id="r_ga1b241897d00ec3d66eabe9e959d0ce04"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_ga1b241897d00ec3d66eabe9e959d0ce04.html#ga1b241897d00ec3d66eabe9e959d0ce04">snksrc</a> (nsoil, k, tavg, smc, smcmax, psisat, bexp, dt, qtot, zsoil, sh2o, tsrc)</td></tr>
+<tr class="memdesc:ga1b241897d00ec3d66eabe9e959d0ce04"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates sink/source term of the termal diffusion equation.  <br /></td></tr>
+<tr class="memitem:gaf59c85cce3b10eaa0ffeb366de9d5304" id="r_gaf59c85cce3b10eaa0ffeb366de9d5304"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_gaf59c85cce3b10eaa0ffeb366de9d5304.html#gaf59c85cce3b10eaa0ffeb366de9d5304">srt</a> (nsoil, edir, et, sh2o, sh2oa, pcpdrp, zsoil, dwsat, dksat, smcmax, bexp, dt, smcwlt, slope, kdt, frzx, sice, rhstt, runoff1, runoff2, ai, bi, ci)</td></tr>
+<tr class="memdesc:gaf59c85cce3b10eaa0ffeb366de9d5304"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates the right hand side of the time tendency term of the soil water diffusion equation. Also to compute (prepare) the matrix coefficients for the tri-diagonal matrix of the implicit time scheme.  <br /></td></tr>
+<tr class="memitem:ga22b00b15c1b261126ec2d15719cb3aa4" id="r_ga22b00b15c1b261126ec2d15719cb3aa4"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_ga22b00b15c1b261126ec2d15719cb3aa4.html#ga22b00b15c1b261126ec2d15719cb3aa4">sstep</a> (nsoil, sh2oin, rhsct, dt, smcmax, cmcmax, zsoil, sice, cmc, rhstt, ai, bi, ci, sh2oout, runoff3, smc)</td></tr>
+<tr class="memdesc:ga22b00b15c1b261126ec2d15719cb3aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates/updates soil moisture content values and canopy moisture content values.  <br /></td></tr>
+<tr class="memitem:ga8e248a6da8d1fd3c2e64b76f3bfbea50" id="r_ga8e248a6da8d1fd3c2e64b76f3bfbea50"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_ga8e248a6da8d1fd3c2e64b76f3bfbea50.html#ga8e248a6da8d1fd3c2e64b76f3bfbea50">tbnd</a> (tu, tb, zsoil, zbot, k, nsoil, tbnd1)</td></tr>
+<tr class="memdesc:ga8e248a6da8d1fd3c2e64b76f3bfbea50"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates temperature on the boundary of the layer by interpolation of the middle layer temperatures.  <br /></td></tr>
+<tr class="memitem:gae50411efeb11ddeb8a0c53010745a95c" id="r_gae50411efeb11ddeb8a0c53010745a95c"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_gae50411efeb11ddeb8a0c53010745a95c.html#gae50411efeb11ddeb8a0c53010745a95c">tmpavg</a> (tup, tm, tdn, zsoil, nsoil, k, tavg)</td></tr>
+<tr class="memdesc:gae50411efeb11ddeb8a0c53010745a95c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates soil layer average temperature (tavg) in freezing/thawing layer using up, down, and middle layer temperature (tup, tdn, tm), where tup is at top boundary of layer, tdn is at bottom boundary of layer. tm is layer prognostic state temperature.  <br /></td></tr>
+<tr class="memitem:ga4bf7fbbf861a5c232da14ca6b74cdd4f" id="r_ga4bf7fbbf861a5c232da14ca6b74cdd4f"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_ga4bf7fbbf861a5c232da14ca6b74cdd4f.html#ga4bf7fbbf861a5c232da14ca6b74cdd4f">transp</a> (nsoil, nroot, etp1, smc, smcwlt, smcref, cmc, cmcmax, zsoil, shdfac, pc, cfactr, rtdis, et1)</td></tr>
+<tr class="memdesc:ga4bf7fbbf861a5c232da14ca6b74cdd4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates transpiration for the veg class.  <br /></td></tr>
+<tr class="memitem:gabfc5ae94c847aa3351345e0e924302a1" id="r_gabfc5ae94c847aa3351345e0e924302a1"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group___noah___l_s_m_gabfc5ae94c847aa3351345e0e924302a1.html#gabfc5ae94c847aa3351345e0e924302a1">wdfcnd</a> (smc, smcmax, bexp, dksat, dwsat, sicemax, wdf, wcnd)</td></tr>
+<tr class="memdesc:gabfc5ae94c847aa3351345e0e924302a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates soil water diffusivity and soil hydraulic conductivity.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><h1 class="doxsection"><a class="anchor" id="arg_table_lsm_noah_run"></a>
+Argument Table</h1>
+<h1 class="doxsection"><a class="anchor" id="general_noah_drv"></a>
+Noah LSM General Algorithm</h1>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: module_sf_mynn Module Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('namespacemodule__sf__mynn.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">module_sf_mynn Module Reference<div class="ingroups"><a class="el" href="group__mynn__sfc.html">MYNN Surface Layer Module</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>This module contain routines to calculate stability parameters, kinematic siscosity in MYNN surface layer scheme.  
+</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions/Subroutines</h2></td></tr>
+<tr class="memitem:gac0ece656c5688dd834becc8babfad72c" id="r_gac0ece656c5688dd834becc8babfad72c"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_gac0ece656c5688dd834becc8babfad72c.html#gac0ece656c5688dd834becc8babfad72c">sfclay_mynn</a> (u3d, v3d, t3d, qv3d, p3d, dz8w, th3d, pi3d, qc3d, psfcpa, pblh, mavail, xland, dx, isfflx, isftcflx, lsm, <a class="el" href="namespacelsm__ruc.html">lsm_ruc</a>, compute_flux, compute_diag, iz0tlnd, psi_opt, sigmaf, vegtype, shdmax, ivegsrc, z0pert, ztpert, redrag, sfc_z0_type, itimestep, iter, flag_iter, flag_restart, wet, dry, icy, tskin_wat, tskin_lnd, tskin_ice, tsurf_wat, tsurf_lnd, tsurf_ice, qsfc_wat, qsfc_lnd, qsfc_ice, snowh_wat, snowh_lnd, snowh_ice, znt_wat, znt_lnd, znt_ice, ust_wat, ust_lnd, ust_ice, cm_wat, cm_lnd, cm_ice, ch_wat, ch_lnd, ch_ice, rb_wat, rb_lnd, rb_ice, stress_wat, stress_lnd, stress_ice, fm_wat, fm_lnd, fm_ice, fh_wat, fh_lnd, fh_ice, fm10_wat, fm10_lnd, fm10_ice, fh2_wat, fh2_lnd, fh2_ice, hflx_wat, hflx_lnd, hflx_ice, qflx_wat, qflx_lnd, qflx_ice, ch, chs, chs2, cqs2, cpm, znt, ustm, zol, mol, rmol, psim, psih, hflx, hfx, qflx, qfx, lh, flhc, flqc, qgh, qsfc, u10, v10, th2, t2, q2, gz1oz0, wspd, wstar, spp_sfc, pattern_spp_sfc, ids, ide, jds, jde, kds, kde, ims, ime, jms, jme, kms, kme, its, ite, jts, jte, kts, kte, errmsg, errflg)</td></tr>
+<tr class="memdesc:gac0ece656c5688dd834becc8babfad72c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine.  <br /></td></tr>
+<tr class="memitem:ga51403acc4b5f2876fedbb82b29a2dc2e" id="r_ga51403acc4b5f2876fedbb82b29a2dc2e"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga51403acc4b5f2876fedbb82b29a2dc2e.html#ga51403acc4b5f2876fedbb82b29a2dc2e">sfclay1d_mynn</a> (flag_iter, j, u1d, v1d, t1d, qv1d, p1d, dz8w1d, u1d2, v1d2, dz2w1d, psfcpa, pblh, mavail, xland, dx, isfflx, isftcflx, iz0tlnd, psi_opt, compute_flux, compute_diag, sigmaf, vegtype, shdmax, ivegsrc, z0pert, ztpert, redrag, sfc_z0_type, itimestep, iter, flag_restart, lsm, <a class="el" href="namespacelsm__ruc.html">lsm_ruc</a>, wet, dry, icy, tskin_wat, tskin_lnd, tskin_ice, tsurf_wat, tsurf_lnd, tsurf_ice, qsfc_wat, qsfc_lnd, qsfc_ice, snowh_wat, snowh_lnd, snowh_ice, znt_wat, znt_lnd, znt_ice, ust_wat, ust_lnd, ust_ice, cm_wat, cm_lnd, cm_ice, ch_wat, ch_lnd, ch_ice, rb_wat, rb_lnd, rb_ice, stress_wat, stress_lnd, stress_ice, psix_wat, psix_lnd, psix_ice, psit_wat, psit_lnd, psit_ice, psix10_wat, psix10_lnd, psix10_ice, psit2_wat, psit2_lnd, psit2_ice, hflx_wat, hflx_lnd, hflx_ice, qflx_wat, qflx_lnd, qflx_ice, ch, chs, chs2, cqs2, cpm, znt, ustm, zol, mol, rmol, psim, psih, hflx, hfx, qflx, qfx, lh, flhc, flqc, qgh, qsfc, u10, v10, th2, t2, q2, gz1oz0, wspd, wstar, qstar, spp_sfc, rstoch1d, ids, ide, jds, jde, kds, kde, ims, ime, jms, jme, kms, kme, its, ite, jts, jte, kts, kte, errmsg, errflg)</td></tr>
+<tr class="memdesc:ga51403acc4b5f2876fedbb82b29a2dc2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine calculates u*, z/L, and the exchange coefficients which are passed to subsequent scheme to calculate the fluxes. This scheme has options to calculate the fluxes and near-surface diagnostics, as was needed in WRF, but these are skipped for FV3.  <br /></td></tr>
+<tr class="memitem:gac8b632de4cd0fcd7e8dfa9a943edaec4" id="r_gac8b632de4cd0fcd7e8dfa9a943edaec4"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_gac8b632de4cd0fcd7e8dfa9a943edaec4.html#gac8b632de4cd0fcd7e8dfa9a943edaec4">zilitinkevich_1995</a> (z_0, zt, zq, restar, ustar, <a class="el" href="namespacemodule__sf__mynn_a1d0ae837ead46222b2aa6d6d4870a751.html#a1d0ae837ead46222b2aa6d6d4870a751">karman</a>, landsea, iz0tlnd2, spp_sfc, rstoch)</td></tr>
+<tr class="memdesc:gac8b632de4cd0fcd7e8dfa9a943edaec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine returns the thermal and moisture roughness lengths from Zilitinkevich (1995) and Zilitinkevich et al. (2001) over land and water, respectively.  <br /></td></tr>
+<tr class="memitem:ga6f58970b26a345173a4b938ce79986a1" id="r_ga6f58970b26a345173a4b938ce79986a1"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga6f58970b26a345173a4b938ce79986a1.html#ga6f58970b26a345173a4b938ce79986a1">davis_etal_2008</a> (z_0, ustar)</td></tr>
+<tr class="memitem:ga9ab0b939197c07ac6ef3cae7acee13a5" id="r_ga9ab0b939197c07ac6ef3cae7acee13a5"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga9ab0b939197c07ac6ef3cae7acee13a5.html#ga9ab0b939197c07ac6ef3cae7acee13a5">taylor_yelland_2001</a> (z_0, ustar, wsp10)</td></tr>
+<tr class="memdesc:ga9ab0b939197c07ac6ef3cae7acee13a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This formulation for roughness length was designed account for. wave steepness.  <br /></td></tr>
+<tr class="memitem:ga24752a5f2d97dbfa6653a4a2e09dd452" id="r_ga24752a5f2d97dbfa6653a4a2e09dd452"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga24752a5f2d97dbfa6653a4a2e09dd452.html#ga24752a5f2d97dbfa6653a4a2e09dd452">charnock_1955</a> (z_0, ustar, wsp10, visc, zu)</td></tr>
+<tr class="memdesc:ga24752a5f2d97dbfa6653a4a2e09dd452"><td class="mdescLeft">&#160;</td><td class="mdescRight">This version of Charnock's relation employs a varying Charnock parameter, similar to COARE3.0 [Fairall et al. (2003)]. The Charnock parameter CZC is varied from .011 to .018. between 10-m wsp = 10 and 18..  <br /></td></tr>
+<tr class="memitem:gae5186e30771524f661b8506fcc83f7a8" id="r_gae5186e30771524f661b8506fcc83f7a8"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_gae5186e30771524f661b8506fcc83f7a8.html#gae5186e30771524f661b8506fcc83f7a8">edson_etal_2013</a> (z_0, ustar, wsp10, visc, zu)</td></tr>
+<tr class="memdesc:gae5186e30771524f661b8506fcc83f7a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This version of Charnock's relation employs a varying Charnock parameter, taken from COARE 3.5 [Edson et al. (2001, JPO)]. The Charnock parameter CZC is varied from about .005 to .028 between 10-m wind speeds of 6 and 19 m/s.  <br /></td></tr>
+<tr class="memitem:gabcddba37d2f63570c5487a832d6d0808" id="r_gabcddba37d2f63570c5487a832d6d0808"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_gabcddba37d2f63570c5487a832d6d0808.html#gabcddba37d2f63570c5487a832d6d0808">garratt_1992</a> (zt, zq, z_0, ren, landsea)</td></tr>
+<tr class="memdesc:gabcddba37d2f63570c5487a832d6d0808"><td class="mdescLeft">&#160;</td><td class="mdescRight">This formulation for the thermal and moisture roughness lengths (Zt and Zq) relates them to Z0 via the roughness Reynolds number (Ren). This formula comes from Fairall et al. (2003). It is modified from the original Garratt-Brutsaert model to better fit the COARE/HEXMAX data. The formula for land uses a constant ratio (Z_0/7.4) taken from Garratt (1992).  <br /></td></tr>
+<tr class="memitem:gafae928cdee7c24f2ec11f10708193792" id="r_gafae928cdee7c24f2ec11f10708193792"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_gafae928cdee7c24f2ec11f10708193792.html#gafae928cdee7c24f2ec11f10708193792">fairall_etal_2003</a> (zt, zq, ren, ustar, visc, rstoch, spp_sfc)</td></tr>
+<tr class="memdesc:gafae928cdee7c24f2ec11f10708193792"><td class="mdescLeft">&#160;</td><td class="mdescRight">This formulation for thermal and moisture roughness length (Zt and Zq) as a function of the roughness Reynolds number (Ren) comes from the COARE3.0 formulation, empirically derived from COARE and HEXMAX data [Fairall et al. (2003)]. Edson et al. (2004; JGR) suspected that this relationship overestimated the scalar roughness lengths for low Reynolds number flows, so an optional smooth flow relationship, taken from Garratt (1992, p. 102), is available for flows with Ren &lt; 2.  <br /></td></tr>
+<tr class="memitem:ga4b9bb922e616c8c76bf1f117db9bdd4b" id="r_ga4b9bb922e616c8c76bf1f117db9bdd4b"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga4b9bb922e616c8c76bf1f117db9bdd4b.html#ga4b9bb922e616c8c76bf1f117db9bdd4b">fairall_etal_2014</a> (zt, zq, ren, ustar, visc, rstoch, spp_sfc)</td></tr>
+<tr class="memdesc:ga4b9bb922e616c8c76bf1f117db9bdd4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This formulation for thermal and moisture roughness length (Zt and Zq) as a function of the roughness Reynolds number (Ren) comes from the COARE 3.5/4.0 formulation, empirically derived from COARE and HEXMAX data The actual reference is unknown. This was passed along by Jim Edson (personal communication). This is for use over water only, preferably open ocean.  <br /></td></tr>
+<tr class="memitem:ga259ab52e1c191830559f851230ca17d9" id="r_ga259ab52e1c191830559f851230ca17d9"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga259ab52e1c191830559f851230ca17d9.html#ga259ab52e1c191830559f851230ca17d9">yang_2008</a> (z_0, zt, zq, ustar, tstar, qst, ren, visc)</td></tr>
+<tr class="memdesc:ga259ab52e1c191830559f851230ca17d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a modified version of Yang et al (2002 QJRMS, 2008 JAMC) and Chen et al (2010, J of Hydromet). Although it was originally designed for arid regions with bare soil, it is modified here to perform over a broader spectrum of vegetation.  <br /></td></tr>
+<tr class="memitem:ga8132bf9ce581779f82f4118e8a275013" id="r_ga8132bf9ce581779f82f4118e8a275013"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga8132bf9ce581779f82f4118e8a275013.html#ga8132bf9ce581779f82f4118e8a275013">gfs_z0_lnd</a> (z0max, shdmax, z1, vegtype, ivegsrc, z0pert)</td></tr>
+<tr class="memitem:gaf86498f1d153a9a81a209266b298268f" id="r_gaf86498f1d153a9a81a209266b298268f"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_gaf86498f1d153a9a81a209266b298268f.html#gaf86498f1d153a9a81a209266b298268f">gfs_zt_lnd</a> (ztmax, z0max, sigmaf, ztpert, ustar_lnd)</td></tr>
+<tr class="memitem:gaaa5898e1b7cca87a6682f85defb5c2e9" id="r_gaaa5898e1b7cca87a6682f85defb5c2e9"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_gaaa5898e1b7cca87a6682f85defb5c2e9.html#gaaa5898e1b7cca87a6682f85defb5c2e9">gfs_z0_wat</a> (z0rl_wat, ustar_wat, wspd, z1, sfc_z0_type, redrag)</td></tr>
+<tr class="memitem:ga16135fde36dbe926afe4a8883ded1d1d" id="r_ga16135fde36dbe926afe4a8883ded1d1d"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga16135fde36dbe926afe4a8883ded1d1d.html#ga16135fde36dbe926afe4a8883ded1d1d">gfs_zt_wat</a> (ztmax, z0rl_wat, restar, wspd, z1, sfc_z0_type, device_errmsg, device_errflg)</td></tr>
+<tr class="memitem:gaeb3eb0de61ef2d256cf8b8c53cd99d79" id="r_gaeb3eb0de61ef2d256cf8b8c53cd99d79"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_gaeb3eb0de61ef2d256cf8b8c53cd99d79.html#gaeb3eb0de61ef2d256cf8b8c53cd99d79">znot_m_v6</a> (uref, znotm)</td></tr>
+<tr class="memdesc:gaeb3eb0de61ef2d256cf8b8c53cd99d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">add fitted z0,zt curves for hurricane application (used in HWRF/HMON) Weiguo Wang, 2019-0425  <br /></td></tr>
+<tr class="memitem:ga88ef473ba576cf88e7848dc3734c11c8" id="r_ga88ef473ba576cf88e7848dc3734c11c8"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga88ef473ba576cf88e7848dc3734c11c8.html#ga88ef473ba576cf88e7848dc3734c11c8">znot_t_v6</a> (uref, znott)</td></tr>
+<tr class="memdesc:ga88ef473ba576cf88e7848dc3734c11c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate scalar roughness over water with input 10-m wind For low-to-moderate winds, try to match the Ck-U10 relationship from COARE algorithm For high winds, try to retain the Ck-U10 relationship of FY2015 HWRF.  <br /></td></tr>
+<tr class="memitem:ga784c4ee38a178b60dc3b77cb975d01fc" id="r_ga784c4ee38a178b60dc3b77cb975d01fc"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga784c4ee38a178b60dc3b77cb975d01fc.html#ga784c4ee38a178b60dc3b77cb975d01fc">znot_m_v7</a> (uref, znotm)</td></tr>
+<tr class="memdesc:ga784c4ee38a178b60dc3b77cb975d01fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate areodynamical roughness over water with input 10-m wind For low-to-moderate winds, try to match the Cd-U10 relationship from COARE V3.5 (Edson et al. 2013) For high winds, try to fit available observational data Comparing to znot_t_v6, slightly decrease Cd for higher wind speed.  <br /></td></tr>
+<tr class="memitem:ga13aa942a8049528849034aa65d68de58" id="r_ga13aa942a8049528849034aa65d68de58"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga13aa942a8049528849034aa65d68de58.html#ga13aa942a8049528849034aa65d68de58">znot_t_v7</a> (uref, znott)</td></tr>
+<tr class="memdesc:ga13aa942a8049528849034aa65d68de58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate scalar roughness over water with input 10-m wind For low-to-moderate winds, try to match the Ck-U10 relationship from COARE algorithm For high winds, try to retain the Ck-U10 relationship of FY2015 HWRF To be compatible with the slightly decreased Cd for higher wind speed.  <br /></td></tr>
+<tr class="memitem:ga4b25c539d21bd439596f5a9adba12a47" id="r_ga4b25c539d21bd439596f5a9adba12a47"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga4b25c539d21bd439596f5a9adba12a47.html#ga4b25c539d21bd439596f5a9adba12a47">andreas_2002</a> (z_0, bvisc, ustar, zt, zq)</td></tr>
+<tr class="memdesc:ga4b25c539d21bd439596f5a9adba12a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is taken from Andreas (2002; J. of Hydromet) and Andreas et al. (2005; BLM).  <br /></td></tr>
+<tr class="memitem:ga592e0a45fb40d993fb53ab2626485fac" id="r_ga592e0a45fb40d993fb53ab2626485fac"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga592e0a45fb40d993fb53ab2626485fac.html#ga592e0a45fb40d993fb53ab2626485fac">psi_hogstrom_1996</a> (psi_m, psi_h, zl, zt, z_0, za)</td></tr>
+<tr class="memdesc:ga592e0a45fb40d993fb53ab2626485fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine returns the stability functions based off of Hogstrom (1996).  <br /></td></tr>
+<tr class="memitem:gab461b4b5da8b9b70cecfa2b61337d55a" id="r_gab461b4b5da8b9b70cecfa2b61337d55a"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_gab461b4b5da8b9b70cecfa2b61337d55a.html#gab461b4b5da8b9b70cecfa2b61337d55a">psi_dyerhicks</a> (psi_m, psi_h, zl, zt, z_0, za)</td></tr>
+<tr class="memdesc:gab461b4b5da8b9b70cecfa2b61337d55a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine returns the stability functions based off of Hogstrom (1996), but with different constants compatible with Dyer and Hicks (1970/74?). This formulation is used for testing/development by Nakanishi (personal communication).  <br /></td></tr>
+<tr class="memitem:gac48f2f64b83281e8121736730c2a3de9" id="r_gac48f2f64b83281e8121736730c2a3de9"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_gac48f2f64b83281e8121736730c2a3de9.html#gac48f2f64b83281e8121736730c2a3de9">psi_beljaars_holtslag_1991</a> (psi_m, psi_h, zl)</td></tr>
+<tr class="memdesc:gac48f2f64b83281e8121736730c2a3de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine returns the stability functions based off of Beljaar and Holtslag 1991, which is an extension of Holtslag and Debruin 1989.  <br /></td></tr>
+<tr class="memitem:gabadc05400c570ac6e4a3f7e85ff7834d" id="r_gabadc05400c570ac6e4a3f7e85ff7834d"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_gabadc05400c570ac6e4a3f7e85ff7834d.html#gabadc05400c570ac6e4a3f7e85ff7834d">psi_zilitinkevich_esau_2007</a> (psi_m, psi_h, zl)</td></tr>
+<tr class="memdesc:gabadc05400c570ac6e4a3f7e85ff7834d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine returns the stability functions come from Zilitinkevich and Esau (2007, BM), which are formulatioed from the "generalized similarity theory" and tuned to the LES DATABASE64 to determine their dependence on z/L.  <br /></td></tr>
+<tr class="memitem:gacbd559c614b29c510321f2630d13cf7e" id="r_gacbd559c614b29c510321f2630d13cf7e"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_gacbd559c614b29c510321f2630d13cf7e.html#gacbd559c614b29c510321f2630d13cf7e">psi_businger_1971</a> (psi_m, psi_h, zl)</td></tr>
+<tr class="memdesc:gacbd559c614b29c510321f2630d13cf7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine returns the flux-profile relationships of Businger el al. 1971.  <br /></td></tr>
+<tr class="memitem:ga2888b14d99c08bdb5f6a7986ae1cd87e" id="r_ga2888b14d99c08bdb5f6a7986ae1cd87e"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga2888b14d99c08bdb5f6a7986ae1cd87e.html#ga2888b14d99c08bdb5f6a7986ae1cd87e">psi_suselj_sood_2010</a> (psi_m, psi_h, zl)</td></tr>
+<tr class="memdesc:ga2888b14d99c08bdb5f6a7986ae1cd87e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine returns flux-profile relatioships based off of Lobocki (1993), which is derived from the MY-level 2 model. Suselj and Sood (2010) applied the surface layer length scales from Nakanishi (2001) to get this new relationship. These functions are more agressive (larger magnitude) than most formulations. They showed improvement over water, but untested over land.  <br /></td></tr>
+<tr class="memitem:ga2cad3e190ea4940a9dfdb6952dc40676" id="r_ga2cad3e190ea4940a9dfdb6952dc40676"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga2cad3e190ea4940a9dfdb6952dc40676.html#ga2cad3e190ea4940a9dfdb6952dc40676">psi_cb2005</a> (psim1, psih1, zl, z0l)</td></tr>
+<tr class="memdesc:ga2cad3e190ea4940a9dfdb6952dc40676"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine returns the stability functions based off of Cheng and Brutseart (2005, BLM), for use in stable conditions only. The returned values are the combination of psi((za+zo)/L) - psi(z0/L).  <br /></td></tr>
+<tr class="memitem:ga313671969a16aee828efb31d353b213c" id="r_ga313671969a16aee828efb31d353b213c"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga313671969a16aee828efb31d353b213c.html#ga313671969a16aee828efb31d353b213c">li_etal_2010</a> (zl, rib, zaz0, z0zt)</td></tr>
+<tr class="memdesc:ga313671969a16aee828efb31d353b213c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This subroutine returns a more robust z/L that best matches the z/L from Hogstrom (1996) for unstable conditions and Beljaars and Holtslag (1991) for stable conditions.  <br /></td></tr>
+<tr class="memitem:ga7dc700e2a42a18333d87dcc7ccabfaff" id="r_ga7dc700e2a42a18333d87dcc7ccabfaff"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>) function&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga7dc700e2a42a18333d87dcc7ccabfaff.html#ga7dc700e2a42a18333d87dcc7ccabfaff">zolri</a> (ri, za, z0, zt, zol1, psi_opt)</td></tr>
+<tr class="memitem:a90fd8579b051a294a6626abe29d7b108" id="r_a90fd8579b051a294a6626abe29d7b108"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>) function&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_a90fd8579b051a294a6626abe29d7b108.html#a90fd8579b051a294a6626abe29d7b108">zolri2</a> (zol2, ri2, za, z0, zt, psi_opt)</td></tr>
+<tr class="memitem:ad99d17e1d30aa8eb9716e9519518eb9d" id="r_ad99d17e1d30aa8eb9716e9519518eb9d"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>) function&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_ad99d17e1d30aa8eb9716e9519518eb9d.html#ad99d17e1d30aa8eb9716e9519518eb9d">zolrib</a> (ri, za, z0, zt, logz0, logzt, zol1, psi_opt)</td></tr>
+<tr class="memitem:ga7d43076a92a7e664f30463dbfc1c6f4f" id="r_ga7d43076a92a7e664f30463dbfc1c6f4f"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga7d43076a92a7e664f30463dbfc1c6f4f.html#ga7d43076a92a7e664f30463dbfc1c6f4f">psi_init</a> (psi_opt, errmsg, errflg)</td></tr>
+<tr class="memitem:gaaefd04628906b35b8ba54bbf62e6a78f" id="r_gaaefd04628906b35b8ba54bbf62e6a78f"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>) function&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_gaaefd04628906b35b8ba54bbf62e6a78f.html#gaaefd04628906b35b8ba54bbf62e6a78f">psim_stable_full</a> (zolf)</td></tr>
+<tr class="memitem:ga214373cdd64d666866d4c818b57a47ec" id="r_ga214373cdd64d666866d4c818b57a47ec"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>) function&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga214373cdd64d666866d4c818b57a47ec.html#ga214373cdd64d666866d4c818b57a47ec">psih_stable_full</a> (zolf)</td></tr>
+<tr class="memitem:gace0216359bf098fd5cc7fa7cb8b3b716" id="r_gace0216359bf098fd5cc7fa7cb8b3b716"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>) function&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_gace0216359bf098fd5cc7fa7cb8b3b716.html#gace0216359bf098fd5cc7fa7cb8b3b716">psim_unstable_full</a> (zolf)</td></tr>
+<tr class="memitem:gae46cc20c17ea15f5c9f5610ab6942073" id="r_gae46cc20c17ea15f5c9f5610ab6942073"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>) function&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_gae46cc20c17ea15f5c9f5610ab6942073.html#gae46cc20c17ea15f5c9f5610ab6942073">psih_unstable_full</a> (zolf)</td></tr>
+<tr class="memitem:ga12649bf97aa4974c23a7723c418907e0" id="r_ga12649bf97aa4974c23a7723c418907e0"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>) function&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga12649bf97aa4974c23a7723c418907e0.html#ga12649bf97aa4974c23a7723c418907e0">psim_stable_full_gfs</a> (zolf)</td></tr>
+<tr class="memitem:ga2186e04d782df51218fbd03d31517fc8" id="r_ga2186e04d782df51218fbd03d31517fc8"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>) function&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga2186e04d782df51218fbd03d31517fc8.html#ga2186e04d782df51218fbd03d31517fc8">psih_stable_full_gfs</a> (zolf)</td></tr>
+<tr class="memitem:ga8e88a4eb2ee98eb538da06f42215e8b7" id="r_ga8e88a4eb2ee98eb538da06f42215e8b7"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>) function&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga8e88a4eb2ee98eb538da06f42215e8b7.html#ga8e88a4eb2ee98eb538da06f42215e8b7">psim_unstable_full_gfs</a> (zolf)</td></tr>
+<tr class="memitem:gaa556db3881e63c9fc578aafd1071e248" id="r_gaa556db3881e63c9fc578aafd1071e248"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>) function&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_gaa556db3881e63c9fc578aafd1071e248.html#gaa556db3881e63c9fc578aafd1071e248">psih_unstable_full_gfs</a> (zolf)</td></tr>
+<tr class="memitem:ga454633ed81c49d8e9468a102612e38d1" id="r_ga454633ed81c49d8e9468a102612e38d1"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>) function&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga454633ed81c49d8e9468a102612e38d1.html#ga454633ed81c49d8e9468a102612e38d1">psim_stable</a> (zolf, psi_opt)</td></tr>
+<tr class="memdesc:ga454633ed81c49d8e9468a102612e38d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">look-up table functions - or, if beyond -10 &lt; z/L &lt; 10, recalculate  <br /></td></tr>
+<tr class="memitem:ga2a33b37b24c6050511f00967992ece58" id="r_ga2a33b37b24c6050511f00967992ece58"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>) function&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga2a33b37b24c6050511f00967992ece58.html#ga2a33b37b24c6050511f00967992ece58">psih_stable</a> (zolf, psi_opt)</td></tr>
+<tr class="memitem:ga885118af5fa22eb8e00039c531ddd8db" id="r_ga885118af5fa22eb8e00039c531ddd8db"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>) function&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga885118af5fa22eb8e00039c531ddd8db.html#ga885118af5fa22eb8e00039c531ddd8db">psim_unstable</a> (zolf, psi_opt)</td></tr>
+<tr class="memitem:ga6e10bc7bd36fcdbf2b555f49396c9eec" id="r_ga6e10bc7bd36fcdbf2b555f49396c9eec"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>) function&#160;</td><td class="memItemRight"><a class="el" href="group__mynn__sfc_ga6e10bc7bd36fcdbf2b555f49396c9eec.html#ga6e10bc7bd36fcdbf2b555f49396c9eec">psih_unstable</a> (zolf, psi_opt)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aa8649eaea96dc08e1f109f2b2311a9e0" id="r_aa8649eaea96dc08e1f109f2b2311a9e0"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_aa8649eaea96dc08e1f109f2b2311a9e0.html#aa8649eaea96dc08e1f109f2b2311a9e0">ep3</a> = 1.-ep2</td></tr>
+<tr class="memitem:a3ee6962f568e3c415f33c75b99d8abdb" id="r_a3ee6962f568e3c415f33c75b99d8abdb"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_a3ee6962f568e3c415f33c75b99d8abdb.html#a3ee6962f568e3c415f33c75b99d8abdb">g_inv</a> = 1.0/grav</td></tr>
+<tr class="memitem:a5b945d58299b0ffeffa982334fe89fcb" id="r_a5b945d58299b0ffeffa982334fe89fcb"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_a5b945d58299b0ffeffa982334fe89fcb.html#a5b945d58299b0ffeffa982334fe89fcb">rvovrd</a> = Rv/Rd</td></tr>
+<tr class="memitem:a14396798a0c68b0aecb48cb47ddf1b18" id="r_a14396798a0c68b0aecb48cb47ddf1b18"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_a14396798a0c68b0aecb48cb47ddf1b18.html#a14396798a0c68b0aecb48cb47ddf1b18">wmin</a> = 0.1</td></tr>
+<tr class="memitem:a1d0ae837ead46222b2aa6d6d4870a751" id="r_a1d0ae837ead46222b2aa6d6d4870a751"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_a1d0ae837ead46222b2aa6d6d4870a751.html#a1d0ae837ead46222b2aa6d6d4870a751">karman</a> = 0.4</td></tr>
+<tr class="memitem:ac742f696dccb33eed7b99905e29cb196" id="r_ac742f696dccb33eed7b99905e29cb196"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_ac742f696dccb33eed7b99905e29cb196.html#ac742f696dccb33eed7b99905e29cb196">svp1</a> = 0.6112</td></tr>
+<tr class="memitem:aab4ff0126800d7e50fbf8fb9c80cff80" id="r_aab4ff0126800d7e50fbf8fb9c80cff80"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_aab4ff0126800d7e50fbf8fb9c80cff80.html#aab4ff0126800d7e50fbf8fb9c80cff80">svp2</a> = 17.67</td></tr>
+<tr class="memitem:a4d05be8dc30d7636e86848a9253e65e6" id="r_a4d05be8dc30d7636e86848a9253e65e6"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_a4d05be8dc30d7636e86848a9253e65e6.html#a4d05be8dc30d7636e86848a9253e65e6">svp3</a> = 29.65</td></tr>
+<tr class="memitem:a9440062905951865bb93180f3c5359f1" id="r_a9440062905951865bb93180f3c5359f1"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_a9440062905951865bb93180f3c5359f1.html#a9440062905951865bb93180f3c5359f1">svpt0</a> = 273.15</td></tr>
+<tr class="memitem:a035d4686ae68364144159d3eed2f9b8b" id="r_a035d4686ae68364144159d3eed2f9b8b"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_a035d4686ae68364144159d3eed2f9b8b.html#a035d4686ae68364144159d3eed2f9b8b">vconvc</a> = 1.25</td></tr>
+<tr class="memitem:a13325f9e585db7c01b73df85abdadf53" id="r_a13325f9e585db7c01b73df85abdadf53"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_a13325f9e585db7c01b73df85abdadf53.html#a13325f9e585db7c01b73df85abdadf53">onethird</a> = 1./3.</td></tr>
+<tr class="memitem:a2922b9db812f672929bcb9b97a6e9ea7" id="r_a2922b9db812f672929bcb9b97a6e9ea7"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_a2922b9db812f672929bcb9b97a6e9ea7.html#a2922b9db812f672929bcb9b97a6e9ea7">sqrt3</a> = 1.7320508075688773</td></tr>
+<tr class="memitem:acd5ecf25cc3e20456ef98c0a524a4694" id="r_acd5ecf25cc3e20456ef98c0a524a4694"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_acd5ecf25cc3e20456ef98c0a524a4694.html#acd5ecf25cc3e20456ef98c0a524a4694">atan1</a> = 0.785398163397</td></tr>
+<tr class="memitem:a8dc7fc59453a31184862090f822bcea5" id="r_a8dc7fc59453a31184862090f822bcea5"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_a8dc7fc59453a31184862090f822bcea5.html#a8dc7fc59453a31184862090f822bcea5">log01</a> = log(0.01)</td></tr>
+<tr class="memitem:a1bb766b6bde2c773ca65aadae6ab03db" id="r_a1bb766b6bde2c773ca65aadae6ab03db"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_a1bb766b6bde2c773ca65aadae6ab03db.html#a1bb766b6bde2c773ca65aadae6ab03db">log05</a> = log(0.05)</td></tr>
+<tr class="memitem:a005c186f9b377f38315851770175fea7" id="r_a005c186f9b377f38315851770175fea7"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_a005c186f9b377f38315851770175fea7.html#a005c186f9b377f38315851770175fea7">log07</a> = log(0.07)</td></tr>
+<tr class="memitem:a602a36916735e524e401165824b53131" id="r_a602a36916735e524e401165824b53131"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_a602a36916735e524e401165824b53131.html#a602a36916735e524e401165824b53131">snowz0</a> = 0.011</td></tr>
+<tr class="memitem:a45394c5fb84de6a3f7a426ef0b1cae7f" id="r_a45394c5fb84de6a3f7a426ef0b1cae7f"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_a45394c5fb84de6a3f7a426ef0b1cae7f.html#a45394c5fb84de6a3f7a426ef0b1cae7f">coare_opt</a> = 3.0</td></tr>
+<tr class="memitem:ae470dbf6946eb27a18c04700baa38aaf" id="r_ae470dbf6946eb27a18c04700baa38aaf"><td class="memItemLeft">integer, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_ae470dbf6946eb27a18c04700baa38aaf.html#ae470dbf6946eb27a18c04700baa38aaf">debug_code</a> = 0</td></tr>
+<tr class="memitem:ab4c0d9c6ef3138cb946c84429fc47da5" id="r_ab4c0d9c6ef3138cb946c84429fc47da5"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(0:1000), save&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_ab4c0d9c6ef3138cb946c84429fc47da5.html#ab4c0d9c6ef3138cb946c84429fc47da5">psim_stab</a></td></tr>
+<tr class="memitem:a6dcbda59cd87664510eb62f97edb761d" id="r_a6dcbda59cd87664510eb62f97edb761d"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(0:1000), save&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_a6dcbda59cd87664510eb62f97edb761d.html#a6dcbda59cd87664510eb62f97edb761d">psim_unstab</a></td></tr>
+<tr class="memitem:aa0d1d9db2a70c37613ea6470cc55ba0c" id="r_aa0d1d9db2a70c37613ea6470cc55ba0c"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(0:1000), save&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_aa0d1d9db2a70c37613ea6470cc55ba0c.html#aa0d1d9db2a70c37613ea6470cc55ba0c">psih_stab</a></td></tr>
+<tr class="memitem:abd1590f07af7978362c196dbd5526f57" id="r_abd1590f07af7978362c196dbd5526f57"><td class="memItemLeft">real(<a class="el" href="namespacemachine_a9c27597607a0f2377d61d10a6adfa3a4.html#a9c27597607a0f2377d61d10a6adfa3a4">kind_phys</a>), dimension(0:1000), save&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__sf__mynn_abd1590f07af7978362c196dbd5526f57.html#abd1590f07af7978362c196dbd5526f57">psih_unstab</a></td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespacemodule__sf__mynn.html">module_sf_mynn</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

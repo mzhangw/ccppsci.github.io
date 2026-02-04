@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: module_mp_radar Module Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('namespacemodule__mp__radar.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">module_mp_radar Module Reference<div class="ingroups"><a class="el" href="group__aathompson.html">Aerosol-Aware Thompson MP Module</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>This module is more library code whereas the individual microphysics schemes contains specific details needed for the final computation, so refer to location within each schemes calling the routine named rayleigh_soak_wetgraupel.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions/Subroutines</h2></td></tr>
+<tr class="memitem:a4f1bf9e4ac41e89bf38b069de17cd001" id="r_a4f1bf9e4ac41e89bf38b069de17cd001"><td class="memItemLeft">subroutine, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a4f1bf9e4ac41e89bf38b069de17cd001.html#a4f1bf9e4ac41e89bf38b069de17cd001">radar_init</a></td></tr>
+<tr class="memitem:a9cb19477d01a140d46bc1bf8a9e27123" id="r_a9cb19477d01a140d46bc1bf8a9e27123"><td class="memItemLeft">complex *16 function, private&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a9cb19477d01a140d46bc1bf8a9e27123.html#a9cb19477d01a140d46bc1bf8a9e27123">m_complex_water_ray</a> (lambda, t)</td></tr>
+<tr class="memdesc:a9cb19477d01a140d46bc1bf8a9e27123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complex refractive Index of Water as function of Temperature T [deg C] and radar wavelength lambda [m]; valid for lambda in [0.001,1.0] m; T in [-10.0,30.0] deg C after Ray (1972).  <br /></td></tr>
+<tr class="memitem:aa341e46fb3935803c641e6673923853e" id="r_aa341e46fb3935803c641e6673923853e"><td class="memItemLeft">complex *16 function, private&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_aa341e46fb3935803c641e6673923853e.html#aa341e46fb3935803c641e6673923853e">m_complex_ice_maetzler</a> (lambda, t)</td></tr>
+<tr class="memitem:aa1de914d36ee03f5406fc3062e96e99a" id="r_aa1de914d36ee03f5406fc3062e96e99a"><td class="memItemLeft">subroutine, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_aa1de914d36ee03f5406fc3062e96e99a.html#aa1de914d36ee03f5406fc3062e96e99a">rayleigh_soak_wetgraupel</a> (x_g, a_geo, b_geo, fmelt, meltratio_outside, m_w, m_i, lambda, c_back, mixingrule, matrix, inclusion, host, hostmatrix, hostinclusion)</td></tr>
+<tr class="memdesc:aa1de914d36ee03f5406fc3062e96e99a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ingroup thompson_radar  <br /></td></tr>
+<tr class="memitem:a06ba49afd2e3598a7054e8375bcd4964" id="r_a06ba49afd2e3598a7054e8375bcd4964"><td class="memItemLeft">complex *16 function, private&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a06ba49afd2e3598a7054e8375bcd4964.html#a06ba49afd2e3598a7054e8375bcd4964">get_m_mix_nested</a> (m_a, m_i, m_w, volair, volice, volwater, mixingrule, host, matrix, inclusion, hostmatrix, hostinclusion, cumulerror)</td></tr>
+<tr class="memitem:aa36a5488839ac44471a11805e3b1273b" id="r_aa36a5488839ac44471a11805e3b1273b"><td class="memItemLeft">complex *16 function, private&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_aa36a5488839ac44471a11805e3b1273b.html#aa36a5488839ac44471a11805e3b1273b">get_m_mix</a> (m_a, m_i, m_w, volair, volice, volwater, mixingrule, matrix, inclusion, <a class="el" href="group___noah_m_p___l_s_m_gace27cd3a7b4e23955e39e33bd344baae.html#gace27cd3a7b4e23955e39e33bd344baae">error</a>)</td></tr>
+<tr class="memitem:a7fae5da3abc7ce21ad5881aafd8cf797" id="r_a7fae5da3abc7ce21ad5881aafd8cf797"><td class="memItemLeft">complex *16 function, private&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a7fae5da3abc7ce21ad5881aafd8cf797.html#a7fae5da3abc7ce21ad5881aafd8cf797">m_complex_maxwellgarnett</a> (vol1, vol2, vol3, m1, m2, m3, inclusion, <a class="el" href="group___noah_m_p___l_s_m_gace27cd3a7b4e23955e39e33bd344baae.html#gace27cd3a7b4e23955e39e33bd344baae">error</a>)</td></tr>
+<tr class="memitem:a91f8245a7e31f6aba72f11fcf53b94e7" id="r_a91f8245a7e31f6aba72f11fcf53b94e7"><td class="memItemLeft">real function, private&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a91f8245a7e31f6aba72f11fcf53b94e7.html#a91f8245a7e31f6aba72f11fcf53b94e7">gammln</a> (xx)</td></tr>
+<tr class="memitem:a4ea89a8d43a7d40cef82f690b4b9bd8e" id="r_a4ea89a8d43a7d40cef82f690b4b9bd8e"><td class="memItemLeft">real function, private&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a4ea89a8d43a7d40cef82f690b4b9bd8e.html#a4ea89a8d43a7d40cef82f690b4b9bd8e">wgamma</a> (y)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a647c1756ce98da90ebfe2b306feb0ca3" id="r_a647c1756ce98da90ebfe2b306feb0ca3"><td class="memItemLeft">integer, parameter, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a647c1756ce98da90ebfe2b306feb0ca3.html#a647c1756ce98da90ebfe2b306feb0ca3">nrbins</a> = 50</td></tr>
+<tr class="memitem:a9d72c276ec972a460962bc4206005594" id="r_a9d72c276ec972a460962bc4206005594"><td class="memItemLeft">double precision, dimension(<a class="el" href="namespacemodule__mp__radar_a647c1756ce98da90ebfe2b306feb0ca3.html#a647c1756ce98da90ebfe2b306feb0ca3">nrbins</a>+1), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a9d72c276ec972a460962bc4206005594.html#a9d72c276ec972a460962bc4206005594">xxdx</a></td></tr>
+<tr class="memitem:a195ecb473c9e3fb2ce8d354650dfb341" id="r_a195ecb473c9e3fb2ce8d354650dfb341"><td class="memItemLeft">double precision, dimension(<a class="el" href="namespacemodule__mp__radar_a647c1756ce98da90ebfe2b306feb0ca3.html#a647c1756ce98da90ebfe2b306feb0ca3">nrbins</a>), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a195ecb473c9e3fb2ce8d354650dfb341.html#a195ecb473c9e3fb2ce8d354650dfb341">xxds</a></td></tr>
+<tr class="memitem:a28772be5683a62495ff3abfa7416a311" id="r_a28772be5683a62495ff3abfa7416a311"><td class="memItemLeft">double precision, dimension(<a class="el" href="namespacemodule__mp__radar_a647c1756ce98da90ebfe2b306feb0ca3.html#a647c1756ce98da90ebfe2b306feb0ca3">nrbins</a>), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a28772be5683a62495ff3abfa7416a311.html#a28772be5683a62495ff3abfa7416a311">xdts</a></td></tr>
+<tr class="memitem:adce6b296577e240fa24ab0b80296b849" id="r_adce6b296577e240fa24ab0b80296b849"><td class="memItemLeft">double precision, dimension(<a class="el" href="namespacemodule__mp__radar_a647c1756ce98da90ebfe2b306feb0ca3.html#a647c1756ce98da90ebfe2b306feb0ca3">nrbins</a>), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_adce6b296577e240fa24ab0b80296b849.html#adce6b296577e240fa24ab0b80296b849">xxdg</a></td></tr>
+<tr class="memitem:a44fb65bcbd064bc43f779f76c8e0b25f" id="r_a44fb65bcbd064bc43f779f76c8e0b25f"><td class="memItemLeft">double precision, dimension(<a class="el" href="namespacemodule__mp__radar_a647c1756ce98da90ebfe2b306feb0ca3.html#a647c1756ce98da90ebfe2b306feb0ca3">nrbins</a>), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a44fb65bcbd064bc43f779f76c8e0b25f.html#a44fb65bcbd064bc43f779f76c8e0b25f">xdtg</a></td></tr>
+<tr class="memitem:a2def7f93711fd8fd5729e2b7a6ebac22" id="r_a2def7f93711fd8fd5729e2b7a6ebac22"><td class="memItemLeft">double precision, parameter, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a2def7f93711fd8fd5729e2b7a6ebac22.html#a2def7f93711fd8fd5729e2b7a6ebac22">lamda_radar</a> = 0.10</td></tr>
+<tr class="memitem:a1a298151cafaaaa4b6c5f91891105261" id="r_a1a298151cafaaaa4b6c5f91891105261"><td class="memItemLeft">double precision, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a1a298151cafaaaa4b6c5f91891105261.html#a1a298151cafaaaa4b6c5f91891105261">k_w</a></td></tr>
+<tr class="memitem:afb2f229758840ccc5aeeacfec69c763c" id="r_afb2f229758840ccc5aeeacfec69c763c"><td class="memItemLeft">double precision, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_afb2f229758840ccc5aeeacfec69c763c.html#afb2f229758840ccc5aeeacfec69c763c">pi5</a></td></tr>
+<tr class="memitem:ad4252c8a95e4b26cf055b867a91cf09a" id="r_ad4252c8a95e4b26cf055b867a91cf09a"><td class="memItemLeft">double precision, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_ad4252c8a95e4b26cf055b867a91cf09a.html#ad4252c8a95e4b26cf055b867a91cf09a">lamda4</a></td></tr>
+<tr class="memitem:ae4fd282f0cbcf667982e740ed1bbf47e" id="r_ae4fd282f0cbcf667982e740ed1bbf47e"><td class="memItemLeft">complex *16, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_ae4fd282f0cbcf667982e740ed1bbf47e.html#ae4fd282f0cbcf667982e740ed1bbf47e">m_w_0</a></td></tr>
+<tr class="memitem:aa7a4b806544b1dbb3d60d46a99844b49" id="r_aa7a4b806544b1dbb3d60d46a99844b49"><td class="memItemLeft">complex *16, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_aa7a4b806544b1dbb3d60d46a99844b49.html#aa7a4b806544b1dbb3d60d46a99844b49">m_i_0</a></td></tr>
+<tr class="memitem:a8e60d5dfe8e3378cb52603461149c7d4" id="r_a8e60d5dfe8e3378cb52603461149c7d4"><td class="memItemLeft">double precision, dimension(<a class="el" href="namespacemodule__mp__radar_a647c1756ce98da90ebfe2b306feb0ca3.html#a647c1756ce98da90ebfe2b306feb0ca3">nrbins</a>+1), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a8e60d5dfe8e3378cb52603461149c7d4.html#a8e60d5dfe8e3378cb52603461149c7d4">simpson</a></td></tr>
+<tr class="memitem:ac640213ce97bcad5f0ccee3bc35c295e" id="r_ac640213ce97bcad5f0ccee3bc35c295e"><td class="memItemLeft">double precision, dimension(3), parameter, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_ac640213ce97bcad5f0ccee3bc35c295e.html#ac640213ce97bcad5f0ccee3bc35c295e">basis</a> = (/1.d0/3.d0, 4.d0/3.d0, 1.d0/3.d0/)</td></tr>
+<tr class="memitem:a25cafa173f949833ddb94f9e963d9645" id="r_a25cafa173f949833ddb94f9e963d9645"><td class="memItemLeft">real, dimension(4), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a25cafa173f949833ddb94f9e963d9645.html#a25cafa173f949833ddb94f9e963d9645">xcre</a></td></tr>
+<tr class="memitem:aeb969bb546631440366ea13755c0d48c" id="r_aeb969bb546631440366ea13755c0d48c"><td class="memItemLeft">real, dimension(4), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_aeb969bb546631440366ea13755c0d48c.html#aeb969bb546631440366ea13755c0d48c">xcse</a></td></tr>
+<tr class="memitem:a591db733c1c27b587f5a90fabedc0125" id="r_a591db733c1c27b587f5a90fabedc0125"><td class="memItemLeft">real, dimension(4), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a591db733c1c27b587f5a90fabedc0125.html#a591db733c1c27b587f5a90fabedc0125">xcge</a></td></tr>
+<tr class="memitem:afc44be8f64605347f236cf2b8fb764aa" id="r_afc44be8f64605347f236cf2b8fb764aa"><td class="memItemLeft">real, dimension(4), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_afc44be8f64605347f236cf2b8fb764aa.html#afc44be8f64605347f236cf2b8fb764aa">xcrg</a></td></tr>
+<tr class="memitem:a1cbf7e6c68dc618fa173a8400958a7be" id="r_a1cbf7e6c68dc618fa173a8400958a7be"><td class="memItemLeft">real, dimension(4), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a1cbf7e6c68dc618fa173a8400958a7be.html#a1cbf7e6c68dc618fa173a8400958a7be">xcsg</a></td></tr>
+<tr class="memitem:aa45a7b77b9e198fb50ba4234efe77af9" id="r_aa45a7b77b9e198fb50ba4234efe77af9"><td class="memItemLeft">real, dimension(4), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_aa45a7b77b9e198fb50ba4234efe77af9.html#aa45a7b77b9e198fb50ba4234efe77af9">xcgg</a></td></tr>
+<tr class="memitem:a3888056a8cf7ff900e1ba63f3714adad" id="r_a3888056a8cf7ff900e1ba63f3714adad"><td class="memItemLeft">real, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a3888056a8cf7ff900e1ba63f3714adad.html#a3888056a8cf7ff900e1ba63f3714adad">xam_r</a></td></tr>
+<tr class="memitem:a8c24a352ac176fa626b0208b959edce1" id="r_a8c24a352ac176fa626b0208b959edce1"><td class="memItemLeft">real, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a8c24a352ac176fa626b0208b959edce1.html#a8c24a352ac176fa626b0208b959edce1">xbm_r</a></td></tr>
+<tr class="memitem:ace9cd34309bbe19b1f414c2e71ec4e6f" id="r_ace9cd34309bbe19b1f414c2e71ec4e6f"><td class="memItemLeft">real, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_ace9cd34309bbe19b1f414c2e71ec4e6f.html#ace9cd34309bbe19b1f414c2e71ec4e6f">xmu_r</a></td></tr>
+<tr class="memitem:abf5716df2ddd2db892b1bc00a8408b55" id="r_abf5716df2ddd2db892b1bc00a8408b55"><td class="memItemLeft">real, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_abf5716df2ddd2db892b1bc00a8408b55.html#abf5716df2ddd2db892b1bc00a8408b55">xobmr</a></td></tr>
+<tr class="memitem:a49f986ae48c79b44081f15bd139afd87" id="r_a49f986ae48c79b44081f15bd139afd87"><td class="memItemLeft">real, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a49f986ae48c79b44081f15bd139afd87.html#a49f986ae48c79b44081f15bd139afd87">xam_s</a></td></tr>
+<tr class="memitem:a31c1be7b0f14b19937b516210eae631b" id="r_a31c1be7b0f14b19937b516210eae631b"><td class="memItemLeft">real, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a31c1be7b0f14b19937b516210eae631b.html#a31c1be7b0f14b19937b516210eae631b">xbm_s</a></td></tr>
+<tr class="memitem:ab6e7b662acafe06b0e1837045aafc7c9" id="r_ab6e7b662acafe06b0e1837045aafc7c9"><td class="memItemLeft">real, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_ab6e7b662acafe06b0e1837045aafc7c9.html#ab6e7b662acafe06b0e1837045aafc7c9">xmu_s</a></td></tr>
+<tr class="memitem:a5fa37aa52217cb69dd9f52cd45521d44" id="r_a5fa37aa52217cb69dd9f52cd45521d44"><td class="memItemLeft">real, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a5fa37aa52217cb69dd9f52cd45521d44.html#a5fa37aa52217cb69dd9f52cd45521d44">xoams</a></td></tr>
+<tr class="memitem:a1ce89d22c7610a46d19905a89daea2c4" id="r_a1ce89d22c7610a46d19905a89daea2c4"><td class="memItemLeft">real, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a1ce89d22c7610a46d19905a89daea2c4.html#a1ce89d22c7610a46d19905a89daea2c4">xobms</a></td></tr>
+<tr class="memitem:a7ac45115bef71d66740a777781eab4e3" id="r_a7ac45115bef71d66740a777781eab4e3"><td class="memItemLeft">real, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a7ac45115bef71d66740a777781eab4e3.html#a7ac45115bef71d66740a777781eab4e3">xocms</a></td></tr>
+<tr class="memitem:a90713504ac1d08fe968f03b3de1f9a07" id="r_a90713504ac1d08fe968f03b3de1f9a07"><td class="memItemLeft">real, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a90713504ac1d08fe968f03b3de1f9a07.html#a90713504ac1d08fe968f03b3de1f9a07">xam_g</a></td></tr>
+<tr class="memitem:ae2a538619667bb0b98bc53ce720b9fa3" id="r_ae2a538619667bb0b98bc53ce720b9fa3"><td class="memItemLeft">real, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_ae2a538619667bb0b98bc53ce720b9fa3.html#ae2a538619667bb0b98bc53ce720b9fa3">xbm_g</a></td></tr>
+<tr class="memitem:a40378710598ac64874cee93a78727b17" id="r_a40378710598ac64874cee93a78727b17"><td class="memItemLeft">real, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a40378710598ac64874cee93a78727b17.html#a40378710598ac64874cee93a78727b17">xmu_g</a></td></tr>
+<tr class="memitem:a044c3886d4b23d22c44134acae232804" id="r_a044c3886d4b23d22c44134acae232804"><td class="memItemLeft">real, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a044c3886d4b23d22c44134acae232804.html#a044c3886d4b23d22c44134acae232804">xoamg</a></td></tr>
+<tr class="memitem:a38f669be0239c64c0bc75cb803eae08b" id="r_a38f669be0239c64c0bc75cb803eae08b"><td class="memItemLeft">real, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a38f669be0239c64c0bc75cb803eae08b.html#a38f669be0239c64c0bc75cb803eae08b">xobmg</a></td></tr>
+<tr class="memitem:afd74e4b9a6bff82023eb7003a00fb183" id="r_afd74e4b9a6bff82023eb7003a00fb183"><td class="memItemLeft">real, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_afd74e4b9a6bff82023eb7003a00fb183.html#afd74e4b9a6bff82023eb7003a00fb183">xocmg</a></td></tr>
+<tr class="memitem:aa74ccab658afd88004403c7ff4ccd9d0" id="r_aa74ccab658afd88004403c7ff4ccd9d0"><td class="memItemLeft">real, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_aa74ccab658afd88004403c7ff4ccd9d0.html#aa74ccab658afd88004403c7ff4ccd9d0">xorg2</a></td></tr>
+<tr class="memitem:adf0c939200a678bc26c4c374482e7637" id="r_adf0c939200a678bc26c4c374482e7637"><td class="memItemLeft">real, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_adf0c939200a678bc26c4c374482e7637.html#adf0c939200a678bc26c4c374482e7637">xosg2</a></td></tr>
+<tr class="memitem:afbcf0af7d5d18a41e05b798a6a6b2fc6" id="r_afbcf0af7d5d18a41e05b798a6a6b2fc6"><td class="memItemLeft">real, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_afbcf0af7d5d18a41e05b798a6a6b2fc6.html#afbcf0af7d5d18a41e05b798a6a6b2fc6">xogg2</a></td></tr>
+<tr class="memitem:a0bc55a89f7a2536cb6a61a66c4201ff2" id="r_a0bc55a89f7a2536cb6a61a66c4201ff2"><td class="memItemLeft">integer, parameter, public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a0bc55a89f7a2536cb6a61a66c4201ff2.html#a0bc55a89f7a2536cb6a61a66c4201ff2">slen</a> = 20</td></tr>
+<tr class="memitem:a492f29708ee75212c08a693386f6d9c8" id="r_a492f29708ee75212c08a693386f6d9c8"><td class="memItemLeft">character(len=<a class="el" href="namespacemodule__mp__radar_a0bc55a89f7a2536cb6a61a66c4201ff2.html#a0bc55a89f7a2536cb6a61a66c4201ff2">slen</a>), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a492f29708ee75212c08a693386f6d9c8.html#a492f29708ee75212c08a693386f6d9c8">mixingrulestring_s</a></td></tr>
+<tr class="memitem:af1275498a3989e22bd06e4d920cc4acc" id="r_af1275498a3989e22bd06e4d920cc4acc"><td class="memItemLeft">character(len=<a class="el" href="namespacemodule__mp__radar_a0bc55a89f7a2536cb6a61a66c4201ff2.html#a0bc55a89f7a2536cb6a61a66c4201ff2">slen</a>), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_af1275498a3989e22bd06e4d920cc4acc.html#af1275498a3989e22bd06e4d920cc4acc">matrixstring_s</a></td></tr>
+<tr class="memitem:a3527bbda802f398c84a3be1c5a5f6ae2" id="r_a3527bbda802f398c84a3be1c5a5f6ae2"><td class="memItemLeft">character(len=<a class="el" href="namespacemodule__mp__radar_a0bc55a89f7a2536cb6a61a66c4201ff2.html#a0bc55a89f7a2536cb6a61a66c4201ff2">slen</a>), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a3527bbda802f398c84a3be1c5a5f6ae2.html#a3527bbda802f398c84a3be1c5a5f6ae2">inclusionstring_s</a></td></tr>
+<tr class="memitem:a17f9004069f5fdc4448f8324c7749b5e" id="r_a17f9004069f5fdc4448f8324c7749b5e"><td class="memItemLeft">character(len=<a class="el" href="namespacemodule__mp__radar_a0bc55a89f7a2536cb6a61a66c4201ff2.html#a0bc55a89f7a2536cb6a61a66c4201ff2">slen</a>), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a17f9004069f5fdc4448f8324c7749b5e.html#a17f9004069f5fdc4448f8324c7749b5e">hoststring_s</a></td></tr>
+<tr class="memitem:a74008992cbe325fd3c7995575cc2ee28" id="r_a74008992cbe325fd3c7995575cc2ee28"><td class="memItemLeft">character(len=<a class="el" href="namespacemodule__mp__radar_a0bc55a89f7a2536cb6a61a66c4201ff2.html#a0bc55a89f7a2536cb6a61a66c4201ff2">slen</a>), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a74008992cbe325fd3c7995575cc2ee28.html#a74008992cbe325fd3c7995575cc2ee28">hostmatrixstring_s</a></td></tr>
+<tr class="memitem:a80d6403199a0d6c8d5e813ae426afbeb" id="r_a80d6403199a0d6c8d5e813ae426afbeb"><td class="memItemLeft">character(len=<a class="el" href="namespacemodule__mp__radar_a0bc55a89f7a2536cb6a61a66c4201ff2.html#a0bc55a89f7a2536cb6a61a66c4201ff2">slen</a>), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a80d6403199a0d6c8d5e813ae426afbeb.html#a80d6403199a0d6c8d5e813ae426afbeb">hostinclusionstring_s</a></td></tr>
+<tr class="memitem:a1801213a99c7b4e61a8a94efa6ea2dd4" id="r_a1801213a99c7b4e61a8a94efa6ea2dd4"><td class="memItemLeft">character(len=<a class="el" href="namespacemodule__mp__radar_a0bc55a89f7a2536cb6a61a66c4201ff2.html#a0bc55a89f7a2536cb6a61a66c4201ff2">slen</a>), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a1801213a99c7b4e61a8a94efa6ea2dd4.html#a1801213a99c7b4e61a8a94efa6ea2dd4">mixingrulestring_g</a></td></tr>
+<tr class="memitem:a704b61e0c0e63ff21208c3bdccf30132" id="r_a704b61e0c0e63ff21208c3bdccf30132"><td class="memItemLeft">character(len=<a class="el" href="namespacemodule__mp__radar_a0bc55a89f7a2536cb6a61a66c4201ff2.html#a0bc55a89f7a2536cb6a61a66c4201ff2">slen</a>), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a704b61e0c0e63ff21208c3bdccf30132.html#a704b61e0c0e63ff21208c3bdccf30132">matrixstring_g</a></td></tr>
+<tr class="memitem:a7da989283fd76ba014615b31713f3351" id="r_a7da989283fd76ba014615b31713f3351"><td class="memItemLeft">character(len=<a class="el" href="namespacemodule__mp__radar_a0bc55a89f7a2536cb6a61a66c4201ff2.html#a0bc55a89f7a2536cb6a61a66c4201ff2">slen</a>), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a7da989283fd76ba014615b31713f3351.html#a7da989283fd76ba014615b31713f3351">inclusionstring_g</a></td></tr>
+<tr class="memitem:a2b4740415009b83ac3a609a1a3ad5810" id="r_a2b4740415009b83ac3a609a1a3ad5810"><td class="memItemLeft">character(len=<a class="el" href="namespacemodule__mp__radar_a0bc55a89f7a2536cb6a61a66c4201ff2.html#a0bc55a89f7a2536cb6a61a66c4201ff2">slen</a>), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a2b4740415009b83ac3a609a1a3ad5810.html#a2b4740415009b83ac3a609a1a3ad5810">hoststring_g</a></td></tr>
+<tr class="memitem:a8ea5bf5a7551ac65f177b0a6c46aef80" id="r_a8ea5bf5a7551ac65f177b0a6c46aef80"><td class="memItemLeft">character(len=<a class="el" href="namespacemodule__mp__radar_a0bc55a89f7a2536cb6a61a66c4201ff2.html#a0bc55a89f7a2536cb6a61a66c4201ff2">slen</a>), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a8ea5bf5a7551ac65f177b0a6c46aef80.html#a8ea5bf5a7551ac65f177b0a6c46aef80">hostmatrixstring_g</a></td></tr>
+<tr class="memitem:aeaa27a03333acb9fd21ce42125979b47" id="r_aeaa27a03333acb9fd21ce42125979b47"><td class="memItemLeft">character(len=<a class="el" href="namespacemodule__mp__radar_a0bc55a89f7a2536cb6a61a66c4201ff2.html#a0bc55a89f7a2536cb6a61a66c4201ff2">slen</a>), public&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_aeaa27a03333acb9fd21ce42125979b47.html#aeaa27a03333acb9fd21ce42125979b47">hostinclusionstring_g</a></td></tr>
+<tr class="memitem:ae6432a77b5815d3bca6319b407f83ba4" id="r_ae6432a77b5815d3bca6319b407f83ba4"><td class="memItemLeft">double precision, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_ae6432a77b5815d3bca6319b407f83ba4.html#ae6432a77b5815d3bca6319b407f83ba4">melt_outside_s</a> = 0.9d0</td></tr>
+<tr class="memdesc:ae6432a77b5815d3bca6319b407f83ba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Single melting snow/graupel particle 90% meltwater on external sfc.  <br /></td></tr>
+<tr class="memitem:a58dd94eef6f06c54302182df06e9dfb8" id="r_a58dd94eef6f06c54302182df06e9dfb8"><td class="memItemLeft">double precision, parameter&#160;</td><td class="memItemRight"><a class="el" href="namespacemodule__mp__radar_a58dd94eef6f06c54302182df06e9dfb8.html#a58dd94eef6f06c54302182df06e9dfb8">melt_outside_g</a> = 0.9d0</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The bulk of this code originated from Ulrich Blahak (Germany) and was adapted to WRF by G. Thompson. This version of code is only intended for use when Rayleigh scattering principles dominate and is not intended for wavelengths in which Mie scattering is a significant portion. Therefore, it is well-suited to use with 5 or 10 cm wavelength like USA NEXRAD radars. This code makes some rather simple assumptions about water coating on outside of frozen species (snow/graupel). Fraction of meltwater is simply the ratio of mixing ratio below melting level divided by mixing ratio at level just above highest T&gt;0C. Also, immediately 90% of the melted water exists on the ice's surface and 10% is embedded within ice. No water is "shed" at all in these assumptions. The code is quite slow because it does the reflectivity calculations based on 50 individual size bins of the distributions. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespacemodule__mp__radar.html">module_mp_radar</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

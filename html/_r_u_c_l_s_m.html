@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: RUC Land Surface Model</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_r_u_c_l_s_m.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">RUC Land Surface Model </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1 class="doxsection"><a class="anchor" id="ruclsm_descrip"></a>
+Description</h1>
+<p>The land surface model (LSM) was originally developed as part of the NOAA Rapid Update Cycle (RUC) model development effort; with ongoing modifications, it is now used as an option for the WRF community model. The RUC model and its WRF-based NOAA successor, the Rapid Refresh (RAP) and High-Resolution Rapid Refresh (HRRR), are hourly updated and have an emphasis on short-range, near-surface forecasts including aviation-impact variables and pre-convective environment. Therefore, coupling to this LSM (hereafter the RUC LSM) has been critical to provide more accurate lower boundary conditions.</p>
+<p>The RUC LSM became operational at the NOAA/National Centers for Environmental Prediction (NCEP) first, as part of the RUC from 1998–2012, and then as part of the RAP from 2012 through the present and as part of HRRR from 2014 through the present. The simple treatments of basic land surface processes in the RUC LSM (Smirnova et al. 2016 <a class="el" href="citelist.html#CITEREF_smirnova_2016">[186]</a> ) have proven to be physically robust and capable of realistically representing the evolution of soil moisture, soil temperature, and snow in cycled models. Extension of the RAP domain to encompass all of North America and adjacent high-latitude ocean areas necessitated further development of the RUC LSM for application in the tundra permafrost regions and over Arctic sea ice (Smirnova et al. 2000 <a class="el" href="citelist.html#CITEREF_smirnova_2000">[185]</a>). Other modifications include refinements in the snow model (snow "mosaic" approach, improvements in computation of snow cover fraction and snow thermal conductivity) and a more accurate specification of albedo, roughness length, and other surface properties. Some of these modifications in the RUC LSM are described and evaluated in Smirnova et al. 2016 <a class="el" href="citelist.html#CITEREF_smirnova_2016">[186]</a> .</p>
+<p>The parameterizations in the RUC LSM describe complicated atmosphere–land surface interactions (Fig.1) in an intentionally simplified fashion to avoid excessive sensitivity to multiple uncertain surface parameters. Nevertheless, the RUC LSM, when coupled with the hourly-assimilating atmospheric model, demonstrated over years of ongoing cycling (Benjamin et al. 2004a,b <a class="el" href="citelist.html#CITEREF_benjamin_2004a">[17]</a> <a class="el" href="citelist.html#CITEREF_benjamin_2004b">[18]</a> ; Berbery et al. 1999 <a class="el" href="citelist.html#CITEREF_berbery_1999">[22]</a>) that it can produce a realistic evolution of hydrologic and time-varying soil fields (i.e., soil moisture and temperature) that cannot be directly observed over large areas, as well as the evolution of snow cover on the ground surface. This result is possible only if the soil–vegetation–snow component of the coupled model, constrained only by atmospheric boundary conditions and the specification of surface characteristics, has sufficient skill to avoid long-term drift.</p>
+<p>International projects for intercomparison of land surface and snow parameterization schemes were essential in providing the testing environment and afforded an excellent opportunity to evaluate the RUC LSM with different land use and soil types and within a variety of climates. The RUC LSM was included in phase 2(d) of the Project for the Intercomparison of Land Surface Prediction Schemes [PILPS-2(d)], in which tested models performed 18-yr simulations of the land surface state for the Valdai site in Russia (Schlosser et al. 1997 <a class="el" href="citelist.html#CITEREF_schlosser_1997">[178]</a> ; Slater et al. 2001 <a class="el" href="citelist.html#CITEREF_slater_2001">[183]</a> ;  Luo et al. 2003 <a class="el" href="citelist.html#CITEREF_luo_2003">[130]</a> ). The RUC LSM was also tested during the Snow Models Intercomparison Project (SnowMIP, SnowMIP2, ESM-SnowMIP), with emphasis on snow parameterizations for both grassland and forest locations in different parts of the world (Etchevers et al. 2002, 2004 <a class="el" href="citelist.html#CITEREF_etchevers_2002">[201]</a> <a class="el" href="citelist.html#CITEREF_etchevers_2004">[56]</a>; Essery et al. 2009 <a class="el" href="citelist.html#CITEREF_essery_2009">[54]</a> ; Rutter et al. 2009 <a class="el" href="citelist.html#CITEREF_rutter_2009">[174]</a> , Krinner et al. 2018 <a class="el" href="citelist.html#CITEREF_krinner_2018">[113]</a> ). The analysis of RUC LSM performance over 10 reference sites in ESM-SnowMIP rated it 4th place among the 26 participating models. The results were published in Menard et al.(2021) <a class="el" href="citelist.html#CITEREF_menard_2021">[139]</a> and Essery et al. (2020) <a class="el" href="citelist.html#CITEREF_essery_et_al_2020">[55]</a>. RUC LSM received high rankings in ESM-SnowMIP experiement in terms of multi-year snow cover and surface temperature simulations for several sites located in different parts of the world (Fig.2, Menard et al.2021 <a class="el" href="citelist.html#CITEREF_menard_2021">[139]</a>).</p>
+<p>RUC LSM is used in several weather prediction models around the world (Austria, New Zealand, Switzerland, RAP/HRRR in US). Recent RUC LSM implementation in the 1km-resolution model over Europe revealed some issues in the snow-covered high terrain (Swiss Alps), and this led to some small modifications and adjustments to the snow model. These adjustments are available in the current CCPP public release.</p>
+<p>Coupling of the RUC LSM to physically-based stochastic snow model (He et al.(2021) <a class="el" href="citelist.html#CITEREF_he_et_al_2021">[175]</a>) is also available in the current public release.</p>
+<p>The sensitivity of surface fluxes and turbine-height winds to the RUC LSM parameters has been explored by Geng Xia, NREL to determine the uncertainty range for the selected parameters in the RUC LSM.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
+RUC LSM characteristics that differ from Noah LSM:</h2>
+<div class="image">
+<img src="ruc_lsm_veg_soil.png" alt="" width="900"/>
+<div class="caption">
+Figure 1: RUC LSM Vegetation and Soil Model (Courtesy of T.G. Smirnova) </div></div>
+ <div class="image">
+<img src="https://user-images.githubusercontent.com/12705538/250180784-d50a3d4c-93db-4d8d-b12d-2c0ca22da5c3.png" alt="" width="900"/>
+<div class="caption">
+Figure 2: Model ranking as a function of normalized root mean square error of snow water equivalent and surface temperature (Courtesy of C. Menard)</div></div>
+<ul>
+<li><b>Implicit</b> <b>solution</b> of energy and moisture budgets in the layer spanning the ground surface</li>
+<li><b>9</b> <b>soil</b> <b>levels</b> with high vertical resolution near surface RUC LSM has more levels in soil than <a class="el" href="_g_f_s__n_o_a_h.html" title="Noah Land Surface Model">Noah Land Surface Model</a> model with higher resolution near the interface with the atmosphere</li>
+<li><b>Prognostic</b> <b>soil</b> moisture variable ( \(\theta-\theta_r\)) The prognostic variables for soil moisture is volumetric soil moisture content minus residual value of soil moisture which is tied to soil particles and does not participate in moisture transport.</li>
+<li><b>Frozen</b> <b>soil</b> <b>physics</b> algorithm RUC LSM has a different approach to take into account freezing and thawing processes in soil.</li>
+<li>Treatment of <b>mixed</b> <b>phase</b> <b>precipitation</b> accounts for mixed phase precipitation provided by <a class="el" href="_t_h_o_m_p_s_o_n.html" title="Thompson Aerosol-Aware Cloud Microphysics Scheme">Thompson Aerosol-Aware Cloud Microphysics Scheme</a> used in RAP and HRRR.</li>
+<li>Simple treatment of <b>sea</b> <b>ice</b> which solves heat diffusion in sea ice and allows evolving snow cover on top of sea ice</li>
+<li>Sub-grid-scale <b>heterogeneity</b> of surface parameters in RUC LSM (Fig.3). With the certain level of confidence in the skill of the model, the next requirement is to provide land static fields and surface parameters with the best possible accuracy. RAP and HRRR use the same soil/vegetation calssifications as <a class="el" href="_g_f_s__n_o_a_h.html" title="Noah Land Surface Model">Noah Land Surface Model</a>. But in addition to specifying surface parameters for the dominant soil and land-use category in the grid box, RUC LSM has an option to take into account the sub-grid scale heterogeneity in the computation of such parameters as roughness length, emissivity, soil porosity, soil heat capacity and others. The difference in roughness between the mosaic and dominant category presented on Figure 3, is positive from contribution of the forests, which helped to reduce high biases of surface wind speeds in these regions. In cropland regions, roughness length also has a seasonal variability depending on the growing phase of the plants. This again helped to improve the wind forecasts during the warm season. Turning on sub-grid-scale heterogeneity option requries: <code class="param">mosaic_lu</code> = 1 and <code class="param">mosaic_soil</code> = 1 in the namelist, and fractions of soil and vegetation types in a grid cell. <div class="image">
+<img src="ruc_lsm_heterogeneity.png" alt="" width="900"/>
+<div class="caption">
+Figure 3: sub-grid scale heterogeneity of surface parameters in RUC LSM (Courtesy of T.G. Smirnova)</div></div>
+</li>
+<li>New: simple irrigation in the cropland area with <code class="param">mosaic_lu</code> = 1</li>
+<li>New: water/snow intercepted by canopy as function of vegetation fraction and leaf area index (LAI)</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
+RUC snow model characteristics:</h2>
+<p>Snow forms additional two layers on top of soil in RUC LSM</p><ul>
+<li><b>2-layer</b> <b>snow</b> model: when SWE &lt; 1.6 cm - snow layer is combined with top soil layer;</li>
+<li>Fractional snow cover (SWE &lt; 3 cm);</li>
+<li>Weighted average of snow-covered and snow-free areas to compute snow parameters (roughness, albedo);</li>
+<li>"Mosaic" approach for patchy snow (Fig.4):<ul>
+<li>Separate treatment of energy and moisture budgets for snow-covered and snow-free portions of the grid cell</li>
+<li>Aggregate solutions at the end of time step</li>
+<li>Outcome: reduced cold bias for areas with thin snow <div class="image">
+<img src="ruc_lsm_mosaic.png" alt="" width="900"/>
+<div class="caption">
+Figure 4: 'Mosaic' approach for patchy snow (Courtesy of T.G. Smirnova) </div></div>
+</li>
+<li>New: additional options to compute snow cover fraction (<code class="param">isncovr_opt</code> =2 and 3, Niu and Yang (2007) <a class="el" href="citelist.html#CITEREF_niu_2007">[151]</a>). These options allowed to reduce overprediction of number of grid cells fully covered with snow which further reduced cold-biases over snow. Figure 5 demonstrates that option 3 of snow cover fraction computation (<code class="param">isncovr_opt</code> = 3) in the UFS-based regional model matches better the satellite data for the test case on 6 February 2022.</li>
+</ul>
+</li>
+<li>New: added an option to use of a new formulation of snow thermal conductivity (<code class="param">isncond_opt</code> = 2, Sturm et al. (1997) <a class="el" href="citelist.html#CITEREF_sturm_1997">[190]</a>); <div class="image">
+<img src="https://user-images.githubusercontent.com/12705538/250180782-925303ec-7751-4d7e-be8f-b3f1323f35d4.png" alt="" width="900"/>
+<div class="caption">
+Figure 5: Snow cover fraction from MODIS (a,b), Regional UFS-based system (RRFS) original (c), and modified with isncover_opt=3 (d), 6 February 2022. (Courtesy of T.G. Smirnova)</div></div>
+</li>
+<li>Iterative snow melting algorithm;</li>
+<li>Density of snow on the ground - a function of compaction parameter and snow depth and temperature;</li>
+<li>Snow albedo - a function of temperature and snow fraction;</li>
+<li>Snow interception by canopy - a function of vegetation fraction and leaf area index (LAI);</li>
+<li>Density of falling snow/graupel/ice precipitation (Fig.6)<ul>
+<li>The density of falling snow/graupel/ice is computed inside RUC LSM using empirical temperature-dependent equations;</li>
+<li>Averaged density of frozen precipitation is defined from weighted contribution of each hydrometeor species:    <p class="formulaDsp">
+\[ \rho_{fr}=\rho_{sn}*\alpha_{sn}+\rho_{gr}*\alpha_{gr}+\rho_{ice}*\alpha_{ice}
+\]
+</p>
+ Where subscripts sn, gr, ice - snow, graupel and ice precipitation, respectively.</li>
+</ul>
+</li>
+<li>The depth of new snow is defined from its liquid equivalent and \(\rho_{fr}\) <div class="image">
+<img src="ruc_lsm_frozen_precip.png" alt="" width="900"/>
+<div class="caption">
+Figure 6: HRRR 23-h forecasts of snow accumulation, valid 08 UTC, 29 Dec 2015 (Courtesy of T.G. Smirnova)</div></div>
+</li>
+</ul>
+<p>Snow accumulation with variable density is provided as an additional product in the model guidance. Figure 6 shows one example of this product from the 23-h HRRR forecast for snowstorm on 29 Dec 2015. This product is in the middle panel. The panel on the left uses traditional 10:1 ratio, and the right panel is observed snow accumulation. We can see that the new product in the middle here has a better, further north location of maximum snow accumulation, and high amounts of snow in the product with 10:1 ratio are trimmed in central and southern Iowa where both observed and model precipitation had a high content of sleet. There is even larger improvement in the Chicago area, where observed and model precipitation were almost totally sleet.</p>
+<h1 class="doxsection"><a class="anchor" id="intra_ruclsm"></a>
+Intraphysics Communication</h1>
+<ul>
+<li><a class="el" href="group__lsm__ruc__group.html#arg_table_lsm_ruc_run" title="Argument Table">Argument Table</a></li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="gen_ruclsm"></a>
+General Algorithm</h1>
+<ul>
+<li><a class="el" href="group__lsm__ruc__group_ga919051c947b9bd7272399d4b681ba2a8.html#ga919051c947b9bd7272399d4b681ba2a8" title="The RUN LSM model is described in Smirnova et al.(1997) smirnova_1997 and Smirnova et al....">module_sf_ruclsm::lsmruc</a> </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

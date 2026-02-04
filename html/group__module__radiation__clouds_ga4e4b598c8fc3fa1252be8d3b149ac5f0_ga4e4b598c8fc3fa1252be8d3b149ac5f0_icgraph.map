@@ -1,0 +1,11 @@
+<map id="module_radiation_clouds::adjust_cloudice" name="module_radiation_clouds::adjust_cloudice">
+<area shape="rect" id="Node000001" title=" " alt="" coords="855,5,1019,46"/>
+<area shape="rect" id="Node000002" href="$group__module__radiation__clouds_gaec7e19fe843ee220394496a5b4d2ceb1.html#gaec7e19fe843ee220394496a5b4d2ceb1" title="From cloud fraction array, find clouds of multi&#45;level depth and compute a reasonable value of LWP or ..." alt="" coords="642,5,807,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="837,26,807,28,807,23,842,26"/>
+<area shape="rect" id="Node000003" href="$group__module__radiation__clouds_gae11bdd130c90bee7cff8741ec4504bce.html#gae11bdd130c90bee7cff8741ec4504bce" title="Cloud fraction scheme by G. Thompson (NCAR&#45;RAL), not intended for combining with any cumulus or shall..." alt="" coords="430,5,594,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="624,26,595,28,595,23,630,26"/>
+<area shape="rect" id="Node000004" href="$group__module__radiation__clouds_ga0f8f599f3b125b66e0784e053208ae8f.html#ga0f8f599f3b125b66e0784e053208ae8f" title="This subroutine added by G. Thompson specifically to account for explicit (microphysics&#45;produced) clo..." alt="" coords="218,5,382,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="412,26,382,28,382,23,417,26"/>
+<area shape="rect" id="Node000005" href="$group__module__radiation__clouds_gade0c4ffb0276ff706253a39568a88a67.html#gade0c4ffb0276ff706253a39568a88a67" title="Subroutine radiation_clouds_prop computes cloud related quantities for different cloud microphysics s..." alt="" coords="5,5,170,46"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="200,26,170,28,170,23,205,25"/>
+</map>

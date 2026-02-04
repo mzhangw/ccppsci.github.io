@@ -1,0 +1,17 @@
+<map id="module_radiation_clouds::cal_cldfra3" name="module_radiation_clouds::cal_cldfra3">
+<area shape="rect" id="Node000001" title="Cloud fraction scheme by G. Thompson (NCAR&#45;RAL), not intended for combining with any cumulus or shall..." alt="" coords="5,116,170,157"/>
+<area shape="rect" id="Node000002" href="$group__module__radiation__clouds_gab93b09ad19ec692f8efe39d050618efa.html#gab93b09ad19ec692f8efe39d050618efa" title="Do not alter any grid&#45;explicitly resolved hydrometeors, rather only the supposed amounts due to the c..." alt="" coords="218,5,382,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,113,216,57,233,51,229,54,219,61,122,118"/>
+<area shape="rect" id="Node000003" href="$group__module__radiation__clouds_gaec7e19fe843ee220394496a5b4d2ceb1.html#gaec7e19fe843ee220394496a5b4d2ceb1" title="From cloud fraction array, find clouds of multi&#45;level depth and compute a reasonable value of LWP or ..." alt="" coords="218,71,382,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="169,116,205,110,200,113,171,121"/>
+<area shape="rect" id="Node000006" href="$group__aathompson_ga878bec15133532309ba3036cd2739510.html#ga878bec15133532309ba3036cd2739510" title="THIS FUNCTION CALCULATES THE ICE SATURATION VAPOR MIXING RATIO AS A FUNCTION OF TEMPERATURE AND PRESS..." alt="" coords="224,160,376,201"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="170,151,211,161,206,162,170,156"/>
+<area shape="rect" id="Node000007" href="$group__aathompson_ga9617073eff52abf98dd295c8cd83ef24.html#ga9617073eff52abf98dd295c8cd83ef24" title="THIS FUNCTION CALCULATES THE LIQUID SATURATION VAPOR MIXING RATIO AS A FUNCTION OF TEMPERATURE AND PR..." alt="" coords="224,249,376,290"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="122,155,255,239,251,242,121,160"/>
+<area shape="rect" id="Node000004" href="$group__module__radiation__clouds_ga8f57a217926f989ce3137a0011976f91.html#ga8f57a217926f989ce3137a0011976f91" title=" " alt="" coords="430,39,594,79"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="381,76,417,73,412,75,383,81"/>
+<area shape="rect" id="Node000005" href="$group__module__radiation__clouds_ga4e4b598c8fc3fa1252be8d3b149ac5f0.html#ga4e4b598c8fc3fa1252be8d3b149ac5f0" title=" " alt="" coords="430,104,594,145"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="382,101,417,109,412,109,383,107"/>
+<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="260,158,258,150,264,141,278,135,300,133,323,136,338,144,333,144,321,141,300,139,280,141,267,145,263,151,265,160"/>
+<area shape="poly" id="edge8_Node000007_Node000007" title=" " alt="" coords="260,247,258,239,264,230,278,225,300,223,323,225,338,234,333,233,321,230,300,228,280,230,267,235,263,240,264,250"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="module_mp_thompson::gammp" name="module_mp_thompson::gammp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,158,70"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="41,28,39,19,46,10,60,5,82,3,105,5,120,13,115,14,103,10,81,8,61,10,49,15,44,20,46,29"/>
+<area shape="rect" id="Node000002" href="$group__aathompson_ga409e17891d433b3214f570828a824255.html#ga409e17891d433b3214f570828a824255" title="Returns the incomplete gamma function q(a,x) evaluated by its continued fraction representation as ga..." alt="" coords="206,8,384,33"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="158,37,193,34,188,35,159,42"/>
+<area shape="rect" id="Node000004" href="$group__aathompson_ga28690a3c274459f6eb11ab59d0ae5a44.html#ga28690a3c274459f6eb11ab59d0ae5a44" title="Returns the incomplete gamma function p(a,x) evaluated by its series representation as gamser." alt="" coords="219,57,371,98"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="158,57,206,65,201,66,158,62"/>
+<area shape="rect" id="Node000003" href="$group__aathompson_gad2946a6deeab8b049fcd554d930f35c9.html#gad2946a6deeab8b049fcd554d930f35c9" title="Returns the value ln(gamma(xx)) for xx &gt; 0." alt="" coords="432,29,584,70"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="384,30,419,37,414,37,384,35"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="468,27,466,19,472,10,487,5,508,3,531,5,547,14,541,13,530,10,508,8,488,10,476,15,471,20,473,30"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="371,65,414,62,419,61,372,70"/>
+</map>

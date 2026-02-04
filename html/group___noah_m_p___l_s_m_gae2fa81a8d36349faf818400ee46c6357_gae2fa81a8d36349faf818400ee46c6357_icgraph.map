@@ -1,0 +1,19 @@
+<map id="thermalz0" name="thermalz0">
+<area shape="rect" id="Node000001" title=" " alt="" coords="656,56,734,82"/>
+<area shape="rect" id="Node000002" href="$group___noah_m_p___l_s_m_gaeb5a9f0cae890fa73e0e17f9b4be30c2.html#gaeb5a9f0cae890fa73e0e17f9b4be30c2" title="use newton&#45;raphson iteration to solve ground (tg) temperature that balances the surface energy budget..." alt="" coords="532,5,606,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="644,49,603,34,603,29,650,50"/>
+<area shape="rect" id="Node000003" href="$group___noah_m_p___l_s_m_ga2698d46b5582d11d0d6fc78d49dd796c.html#ga2698d46b5582d11d0d6fc78d49dd796c" title="We use different approaches to deal with subgrid features of radiation transfer and turbulent transfe..." alt="" coords="422,56,482,82"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="638,69,483,71,483,66,643,69"/>
+<area shape="rect" id="Node000008" href="$group___noah_m_p___l_s_m_gadf2b2287685bf9c610afdb949c1c6cdb.html#gadf2b2287685bf9c610afdb949c1c6cdb" title="use newton&#45;raphson iteration to solve for vegetation (tv) and ground (tg) temperatures that balance t..." alt="" coords="530,107,608,132"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="650,87,604,109,602,104,644,89"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="526,37,484,58,482,53,521,38"/>
+<area shape="rect" id="Node000004" href="$group___noah_m_p___l_s_m_gab480f7969dad27ce9e00e559f82c464e.html#gab480f7969dad27ce9e00e559f82c464e" title=" " alt="" coords="221,7,316,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="404,54,373,46,317,32,317,27,375,41,410,54"/>
+<area shape="rect" id="Node000006" href="$group___s_a_m_fdeep_ga5e834dec0932a16a98b7d90fd69a9c70.html#ga5e834dec0932a16a98b7d90fd69a9c70" title=" " alt="" coords="164,56,374,82"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="404,69,375,71,374,66,409,69"/>
+<area shape="rect" id="Node000007" href="$group___s_a_m_f__shal_gaf2534c328553470068a75a9aa56b7d56.html#gaf2534c328553470068a75a9aa56b7d56" title=" " alt="" coords="168,105,370,131"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="410,84,375,97,333,107,332,102,373,92,404,85"/>
+<area shape="rect" id="Node000005" href="$group___noah_m_p___l_s_m_ga0e44f72a92d8830344fecdb9fb65e6fb.html#ga0e44f72a92d8830344fecdb9fb65e6fb" title="This subroutine is the main CCPP entry point for the NoahMP LSM." alt="" coords="5,7,116,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="204,21,117,22,116,17,208,18"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="521,100,482,84,483,79,527,100"/>
+</map>

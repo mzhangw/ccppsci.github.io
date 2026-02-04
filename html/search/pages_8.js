@@ -1,0 +1,18 @@
+var searchData=
+[
+  ['eddy_20diffusion_20mass_20flux_20edmf_20pbl_20and_20free_20atmospheric_20turbulence_20scheme_0',['GFS Scale-aware TKE-based Moist Eddy-Diffusion Mass-Flux (EDMF) PBL and Free Atmospheric Turbulence Scheme',['../_g_f_s__s_a_t_m_e_d_m_f_v_d_i_f_q.html',1,'allscheme_page']]],
+  ['eddy_20diffusivities_1',['Compute eddy diffusivities',['../group__module__satmedmfvdifq_gad2fc02f170f716e67a18faaa8587d441.html#autotoc_md29',1,'']]],
+  ['edmf_20boundary_20layer_20and_20shallow_20cloud_20scheme_2',['MYNN-EDMF Boundary Layer and Shallow Cloud Scheme',['../_m_y_n_n_e_d_m_f.html',1,'allscheme_page']]],
+  ['edmf_20mym_5finitialize_20general_20algorithm_3',['MYNN-EDMF mym_initialize General Algorithm',['../group__gp__mynnedmf_ga97717283bfde857ef86fb46f37063824.html#gen_mym_ini',1,'']]],
+  ['edmf_20mym_5flevel2_20general_20algorithm_4',['MYNN-EDMF mym_level2 General Algorithm',['../group__gp__mynnedmf_ga3d26bde7e00169d4fc2be40b6d685ff5.html#gen_mym_level2',1,'']]],
+  ['edmf_20pbl_20and_20free_20atmospheric_20turbulence_20scheme_5',['GFS Scale-aware TKE-based Moist Eddy-Diffusion Mass-Flux (EDMF) PBL and Free Atmospheric Turbulence Scheme',['../_g_f_s__s_a_t_m_e_d_m_f_v_d_i_f_q.html',1,'allscheme_page']]],
+  ['effect_20of_20the_20cumulus_6',['Using the updated temperature and moisture profiles that were modified by the convection on a short time-scale, recalculate the total cloud work function to determine the change in the cloud work function due to convection, or the stabilizing effect of the cumulus.',['../group___s_a_m_fdeep_ga5e834dec0932a16a98b7d90fd69a9c70.html#autotoc_md11',1,'']]],
+  ['effects_20on_20dynamics_7',['Precipitation and Cloud Effects on Dynamics',['../_g_f_d_l_cloud.html#autotoc_md1',1,'']]],
+  ['elements_20for_20heat_20and_20moisture_8',['Compute tridiagonal matrix elements for heat and moisture',['../group__module__satmedmfvdifq_gad2fc02f170f716e67a18faaa8587d441.html#autotoc_md31',1,'']]],
+  ['elements_20for_20momentum_9',['Compute tridiagonal matrix elements for momentum',['../group__module__satmedmfvdifq_gad2fc02f170f716e67a18faaa8587d441.html#autotoc_md33',1,'']]],
+  ['entraining_20detraining_20cloud_20model_20static_20control_10',['entraining detraining cloud model static control',['../group___s_a_m_fdeep_ga5e834dec0932a16a98b7d90fd69a9c70.html#autotoc_md10',1,'Perform calculations related to the downdraft of the entraining/detraining cloud model (&quot;static control&quot;).'],['../group___s_a_m_fdeep_ga5e834dec0932a16a98b7d90fd69a9c70.html#autotoc_md9',1,'Perform calculations related to the updraft of the entraining/detraining cloud model (&quot;static control&quot;).'],['../group___s_a_m_f__shal_gaf2534c328553470068a75a9aa56b7d56.html#autotoc_md15',1,'Perform calculations related to the updraft of the entraining/detraining cloud model (&quot;static control&quot;).']]],
+  ['entrainment_20rate_11',['Recalculate the PBL height and the parcel&apos;s entrainment rate.',['../namespacemfpbl__mod_acf5c6b2a10c75d969946ff7579af0395.html#autotoc_md19',1,'']]],
+  ['entrainment_20rate_20buoyancy_20and_20vertical_20velocity_12',['Determine an updraft parcel&apos;s entrainment rate, buoyancy, and vertical velocity.',['../namespacemfpbl__mod_acf5c6b2a10c75d969946ff7579af0395.html#autotoc_md18',1,'']]],
+  ['exchange_20coefficient_20varying_20with_20height_13',['Compute Prandtl number \\(P_r\\) (prn) and exchange coefficient varying with height',['../group__module__satmedmfvdifq_gad2fc02f170f716e67a18faaa8587d441.html#autotoc_md27',1,'']]],
+  ['exist_20and_20compute_20quantities_14',['Determine whether stratocumulus layers exist and compute quantities',['../group__module__satmedmfvdifq_gad2fc02f170f716e67a18faaa8587d441.html#autotoc_md25',1,'']]]
+];

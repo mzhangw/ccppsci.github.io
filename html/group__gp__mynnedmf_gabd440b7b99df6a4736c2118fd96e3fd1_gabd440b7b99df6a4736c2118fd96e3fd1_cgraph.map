@@ -1,0 +1,8 @@
+<map id="module_bl_mynn::mynn_tendencies" name="module_bl_mynn::mynn_tendencies">
+<area shape="rect" id="Node000001" title="This subroutine solves for tendencies of U, V, , qv, qc, and qi." alt="" coords="5,59,165,99"/>
+<area shape="rect" id="Node000002" href="$group__gp__mynnedmf_ga41a4c80227342f73cd16d2ae814498d0.html#ga41a4c80227342f73cd16d2ae814498d0" title="This function extends function &quot;esat&quot; and returns a &quot;blended&quot; saturation mixing ratio...." alt="" coords="221,29,374,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,65,208,62,203,63,166,71"/>
+<area shape="rect" id="Node000003" href="$group__gp__mynnedmf_ga4fa1805b4144393074c41831e22f9cf4.html#ga4fa1805b4144393074c41831e22f9cf4" title=" " alt="" coords="213,94,382,120"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="165,87,200,94,195,94,165,92"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="257,27,255,19,262,10,276,5,297,3,320,5,336,14,330,14,319,10,297,8,277,10,265,15,260,20,262,30"/>
+</map>

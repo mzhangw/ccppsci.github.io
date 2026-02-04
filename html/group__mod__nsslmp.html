@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: NSSL 2-moment microphysics modules</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('group__mod__nsslmp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NSSL 2-moment microphysics modules <div class="ingroups"><a class="el" href="group__nsslmp.html">NSSL MP Module</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>This module provides a 1/2/3-moment bulk microphysics scheme based on a combination of Straka and Mansell (2005, JAM) and Zeigler (1985, JAS) and modified/upgraded in in Mansell, Zeigler, and Bruning (2010, JAS). Two-moment adaptive sedimentation follows Mansell (2010, JAS), using parameter infall = 4.  
+<a href="#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for NSSL 2-moment microphysics modules:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="group__mod__nsslmp.svg" width="383" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions/Subroutines</h2></td></tr>
+<tr class="memitem:gac20b774649dab0a14de471e613049621" id="r_gac20b774649dab0a14de471e613049621"><td class="memItemLeft">real function, private&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_gac20b774649dab0a14de471e613049621.html#gac20b774649dab0a14de471e613049621">module_mp_nssl_2mom::fqvs</a> (t)</td></tr>
+<tr class="memdesc:gac20b774649dab0a14de471e613049621"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is for saturation vapor pressure with respect to liquid water.  <br /></td></tr>
+<tr class="memitem:ga4790969c2aa3ce692ba95809f122dd10" id="r_ga4790969c2aa3ce692ba95809f122dd10"><td class="memItemLeft">real function, private&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_ga4790969c2aa3ce692ba95809f122dd10.html#ga4790969c2aa3ce692ba95809f122dd10">module_mp_nssl_2mom::fqis</a> (t)</td></tr>
+<tr class="memdesc:ga4790969c2aa3ce692ba95809f122dd10"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is for saturation vapor pressure with respect to ice.  <br /></td></tr>
+<tr class="memitem:gad4f1554e9a7b8a8f0679dbb0ca2628ef" id="r_gad4f1554e9a7b8a8f0679dbb0ca2628ef"><td class="memItemLeft">subroutine, public&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_gad4f1554e9a7b8a8f0679dbb0ca2628ef.html#gad4f1554e9a7b8a8f0679dbb0ca2628ef">module_mp_nssl_2mom::nssl_2mom_init_const</a> (con_g, con_rd, con_cp, con_rv, con_t0c, con_cliq, con_csol, con_eps)</td></tr>
+<tr class="memdesc:gad4f1554e9a7b8a8f0679dbb0ca2628ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">NSSL MP subroutine to initialize physical constants provided by host model.  <br /></td></tr>
+<tr class="memitem:gaa9669dfecb88fa29ceefb152f3a24b9e" id="r_gaa9669dfecb88fa29ceefb152f3a24b9e"><td class="memItemLeft">subroutine, public&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_gaa9669dfecb88fa29ceefb152f3a24b9e.html#gaa9669dfecb88fa29ceefb152f3a24b9e">module_mp_nssl_2mom::nssl_2mom_init</a> (ims, ime, jms, jme, kms, kme, nssl_params, ipctmp, mixphase, ihvol, idoniconlytmp, namelist_filename, internal_nml, nssl_graupelfallfac, nssl_hailfallfac, nssl_ehw0, nssl_ehlw0, nssl_icdx, nssl_icdxhl, nssl_icefallfac, nssl_snowfallfac, nssl_cccn, nssl_ufccn, nssl_alphah, nssl_alphahl, nssl_alphar, nssl_density_on, nssl_hail_on, nssl_ccn_on, nssl_icecrystals_on, ccn_is_ccna, nssl_ccn_opt, errmsg, errflg, infileunit, myrank, mpiroot)</td></tr>
+<tr class="memdesc:gaa9669dfecb88fa29ceefb152f3a24b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">NSSL MP setup routine (sets local options and array indices).  <br /></td></tr>
+<tr class="memitem:gaf719f942556bb1676739cbdff304e714" id="r_gaf719f942556bb1676739cbdff304e714"><td class="memItemLeft">subroutine, public&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_gaf719f942556bb1676739cbdff304e714.html#gaf719f942556bb1676739cbdff304e714">module_mp_nssl_2mom::nssl_2mom_driver</a> (qv, qc, qr, qi, qs, qh, qhl, ccw, crw, cci, csw, chw, chl, cn, vhw, vhl, cna, cni, f_cn, f_cna, f_cina, f_qc, f_qr, f_qi, f_qs, f_qh, f_qhl, cn_nu, cn_co, cinp, f_cnnu, f_cnco, f_cinp, cna_co, cna_nu, f_cnaco, f_cnanu, cnuf, f_cnuf, cn_ac, f_cnac, zrw, zhw, zhl, f_zrw, f_zhw, f_zhl, f_vhw, f_vhl, qsw, qhw, qhlw, tt, th, pii, p, w, dn, dz, dtp, itimestep, is_theta_or_temp, ntmul, ntcnt, lastloop, rainnc, rainncv, dx, dy, axtra, snownc, snowncv, grplnc, grplncv, sr, hailnc, hailncv, hail_maxk1, hail_max2d, nwp_diagnostics, tkediss, re_cloud, re_ice, re_snow, re_rain, re_graup, re_hail, has_reqc, has_reqi, has_reqs, has_reqr, has_reqg, has_reqh, rainncw2, rainnci2, dbz, vzf, compdbz, rscghis_2d, rscghis_2dp, rscghis_2dn, scr, scw, sci, scs, sch, schl, sctot, elec_physics, induc, elecz, scion, sciona, f_scion, f_sciona, noninduc, noninducp, noninducn, ssat3d, ssati, nssl_ssat_output, pcc2, pre2, depsubr, mnucf2, melr2, ctr2, rim1_2, rim2_2, rim3_2, nctr2, nnuccd2, nnucf2, effc2, effr2, effi2, effs2, effg2, fc2, fr2, fi2, fs2, fg2, fnc2, fnr2, fni2, fns2, fng2, ipelectmp, isedonly_in, diagflag, ke_diag, errmsg, errflg, nssl_progn, wetscav_on, rainprod, evapprod, cu_used, qrcuten, qscuten, qicuten, qccuten, ids, ide, jds, jde, kds, kde, ims, ime, jms, jme, kms, kme, its, ite, jts, jte, kts, kte)</td></tr>
+<tr class="memdesc:gaf719f942556bb1676739cbdff304e714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Driver subroutine that copies state data to local 2D arrays for microphysics calls.  <br /></td></tr>
+<tr class="memitem:ga966c94b788d8e8958fff525003f48fd9" id="r_ga966c94b788d8e8958fff525003f48fd9"><td class="memItemLeft">real function, private&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_ga966c94b788d8e8958fff525003f48fd9.html#ga966c94b788d8e8958fff525003f48fd9">module_mp_nssl_2mom::gamma_sp</a> (xx)</td></tr>
+<tr class="memdesc:ga966c94b788d8e8958fff525003f48fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Single-precision complete gamma function.  <br /></td></tr>
+<tr class="memitem:ga4769e7fe84d08e5a07e8f9ea56914762" id="r_ga4769e7fe84d08e5a07e8f9ea56914762"><td class="memItemLeft">double precision function, private&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_ga4769e7fe84d08e5a07e8f9ea56914762.html#ga4769e7fe84d08e5a07e8f9ea56914762">module_mp_nssl_2mom::gamma_dpr</a> (x)</td></tr>
+<tr class="memdesc:ga4769e7fe84d08e5a07e8f9ea56914762"><td class="mdescLeft">&#160;</td><td class="mdescRight">Douple-precision complete gamma function (single precision input).  <br /></td></tr>
+<tr class="memitem:gafc90cf2417f6132ce54c2cf378dd2098" id="r_gafc90cf2417f6132ce54c2cf378dd2098"><td class="memItemLeft">real function, private&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_gafc90cf2417f6132ce54c2cf378dd2098.html#gafc90cf2417f6132ce54c2cf378dd2098">module_mp_nssl_2mom::gamxinf</a> (a1, x1)</td></tr>
+<tr class="memdesc:gafc90cf2417f6132ce54c2cf378dd2098"><td class="mdescLeft">&#160;</td><td class="mdescRight">single-precision incomplete gamma function (single precision args)  <br /></td></tr>
+<tr class="memitem:gaaf4043a7ae72d6c12e0326a9d3c16dd0" id="r_gaaf4043a7ae72d6c12e0326a9d3c16dd0"><td class="memItemLeft">double precision function, private&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_gaaf4043a7ae72d6c12e0326a9d3c16dd0.html#gaaf4043a7ae72d6c12e0326a9d3c16dd0">module_mp_nssl_2mom::gamxinfdp</a> (a1, x1)</td></tr>
+<tr class="memdesc:gaaf4043a7ae72d6c12e0326a9d3c16dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Double-precision incomplete gamma function (single precision args).  <br /></td></tr>
+<tr class="memitem:ga6d0f1fb5cc9fda3d99aa187d63368fe9" id="r_ga6d0f1fb5cc9fda3d99aa187d63368fe9"><td class="memItemLeft">real function&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_ga6d0f1fb5cc9fda3d99aa187d63368fe9.html#ga6d0f1fb5cc9fda3d99aa187d63368fe9">module_mp_nssl_2mom::gaminterp</a> (ratio, alp, luindex, ilh)</td></tr>
+<tr class="memdesc:ga6d0f1fb5cc9fda3d99aa187d63368fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to interpolate from a table of incomplete gamma function values.  <br /></td></tr>
+<tr class="memitem:gab0a066fab5da9d3bb15ed2a2722b47e6" id="r_gab0a066fab5da9d3bb15ed2a2722b47e6"><td class="memItemLeft">real function, private&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_gab0a066fab5da9d3bb15ed2a2722b47e6.html#gab0a066fab5da9d3bb15ed2a2722b47e6">module_mp_nssl_2mom::gaml02</a> (x)</td></tr>
+<tr class="memdesc:gab0a066fab5da9d3bb15ed2a2722b47e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function calculates Gamma(0.2,x)/Gamma[0.2] for 40 micro drops ( imurain == 3 ).  <br /></td></tr>
+<tr class="memitem:gac1cafe76bb3fb3c6188460773d4ad989" id="r_gac1cafe76bb3fb3c6188460773d4ad989"><td class="memItemLeft">real function, private&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_gac1cafe76bb3fb3c6188460773d4ad989.html#gac1cafe76bb3fb3c6188460773d4ad989">module_mp_nssl_2mom::gaml02d300</a> (x)</td></tr>
+<tr class="memdesc:gac1cafe76bb3fb3c6188460773d4ad989"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function calculates fraction of drops larger than 300 microns ( imurain == 3 ).  <br /></td></tr>
+<tr class="memitem:ga61f606380174ead05eccd18a0de55b54" id="r_ga61f606380174ead05eccd18a0de55b54"><td class="memItemLeft">real function, private&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_ga61f606380174ead05eccd18a0de55b54.html#ga61f606380174ead05eccd18a0de55b54">module_mp_nssl_2mom::gaml02d500</a> (x)</td></tr>
+<tr class="memdesc:ga61f606380174ead05eccd18a0de55b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function calculates Gamma(0.2,x)/Gamma[0.2] for 500 micro drops ( imurain == 3 ).  <br /></td></tr>
+<tr class="memitem:ga316422c2efdacd1dbdc0c1418350eaf6" id="r_ga316422c2efdacd1dbdc0c1418350eaf6"><td class="memItemLeft">double precision function, private&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_ga316422c2efdacd1dbdc0c1418350eaf6.html#ga316422c2efdacd1dbdc0c1418350eaf6">module_mp_nssl_2mom::gamma_dp</a> (xx)</td></tr>
+<tr class="memdesc:ga316422c2efdacd1dbdc0c1418350eaf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Douple-precision complete gamma function (double precision argument).  <br /></td></tr>
+<tr class="memitem:ga932daa96c5a2e2736b0cdc21e33d9509" id="r_ga932daa96c5a2e2736b0cdc21e33d9509"><td class="memItemLeft">subroutine, private&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_ga932daa96c5a2e2736b0cdc21e33d9509.html#ga932daa96c5a2e2736b0cdc21e33d9509">module_mp_nssl_2mom::gammadp</a> (x, ga)</td></tr>
+<tr class="memdesc:ga932daa96c5a2e2736b0cdc21e33d9509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Double-precision complete gamma function subroutine (used by beta function routine).  <br /></td></tr>
+<tr class="memitem:ga0dabeda97fcbc7690787bb712eb2c267" id="r_ga0dabeda97fcbc7690787bb712eb2c267"><td class="memItemLeft">real function, private&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_ga0dabeda97fcbc7690787bb712eb2c267.html#ga0dabeda97fcbc7690787bb712eb2c267">module_mp_nssl_2mom::delbk</a> (<a class="el" href="namespacemodule__mp__nssl__2mom_ae02e36fa27ccf311884f53fbf47b11b2.html#ae02e36fa27ccf311884f53fbf47b11b2">bb</a>, nu, mu, k)</td></tr>
+<tr class="memdesc:ga0dabeda97fcbc7690787bb712eb2c267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function calculates collection coefficients following Siefert (2006).  <br /></td></tr>
+<tr class="memitem:gacfb4b38156737aa351dcc8dd1a3492c5" id="r_gacfb4b38156737aa351dcc8dd1a3492c5"><td class="memItemLeft">real function, private&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_gacfb4b38156737aa351dcc8dd1a3492c5.html#gacfb4b38156737aa351dcc8dd1a3492c5">module_mp_nssl_2mom::delabk</a> (ba, <a class="el" href="namespacemodule__mp__nssl__2mom_ae02e36fa27ccf311884f53fbf47b11b2.html#ae02e36fa27ccf311884f53fbf47b11b2">bb</a>, nua, nub, mua, mub, k)</td></tr>
+<tr class="memdesc:gacfb4b38156737aa351dcc8dd1a3492c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function calculates collection coefficients following Siefert (2006).  <br /></td></tr>
+<tr class="memitem:ga8a2d9c6519ecf9858ad38a0c2f5844de" id="r_ga8a2d9c6519ecf9858ad38a0c2f5844de"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_ga8a2d9c6519ecf9858ad38a0c2f5844de.html#ga8a2d9c6519ecf9858ad38a0c2f5844de">module_mp_nssl_2mom::hailmaxd</a> (dtp, nx, ny, nz, an, <a class="el" href="namespacemodule__mp__nssl__2mom_aeb6985702c4432fae28a17d0b5544a6b.html#aeb6985702c4432fae28a17d0b5544a6b">na</a>, nor, norz, alpha2d, dn, hailmax1d, hailmaxk1, jslab)</td></tr>
+<tr class="memdesc:ga8a2d9c6519ecf9858ad38a0c2f5844de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hail max size subroutine.  <br /></td></tr>
+<tr class="memitem:gaa88ef817bac1d81c748fd32c9b9be6ea" id="r_gaa88ef817bac1d81c748fd32c9b9be6ea"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_gaa88ef817bac1d81c748fd32c9b9be6ea.html#gaa88ef817bac1d81c748fd32c9b9be6ea">module_mp_nssl_2mom::sediment1d</a> (dtp, nx, ny, nz, an, <a class="el" href="namespacemodule__mp__nssl__2mom_aeb6985702c4432fae28a17d0b5544a6b.html#aeb6985702c4432fae28a17d0b5544a6b">na</a>, nor, norz, xfall, dn, dz3d, dz3dinv, t0, t7, infdo, jslab, its, jts, timesed1, timesed2, timesed3, zmaxsed, timesetvt)</td></tr>
+<tr class="memdesc:gaa88ef817bac1d81c748fd32c9b9be6ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sedimentation driver subroutine. Calls fallout column by column.  <br /></td></tr>
+<tr class="memitem:gae621d5fefce44abf9ff804cb6d0c5913" id="r_gae621d5fefce44abf9ff804cb6d0c5913"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_gae621d5fefce44abf9ff804cb6d0c5913.html#gae621d5fefce44abf9ff804cb6d0c5913">module_mp_nssl_2mom::fallout1d</a> (nx, ny, nz, nor, <a class="el" href="namespacemodule__mp__nssl__2mom_aeb6985702c4432fae28a17d0b5544a6b.html#aeb6985702c4432fae28a17d0b5544a6b">na</a>, dtp, dtfrac, jgs, vt, a, db1, ia, id, xfall, dtz1, ixcol)</td></tr>
+<tr class="memdesc:gae621d5fefce44abf9ff804cb6d0c5913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column sedimentation fallout subroutine.  <br /></td></tr>
+<tr class="memitem:ga416d221e65719addcd9254cf20e3c0eb" id="r_ga416d221e65719addcd9254cf20e3c0eb"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_ga416d221e65719addcd9254cf20e3c0eb.html#ga416d221e65719addcd9254cf20e3c0eb">module_mp_nssl_2mom::calczgr1d</a> (nx, ny, nz, nor, <a class="el" href="namespacemodule__mp__nssl__2mom_aeb6985702c4432fae28a17d0b5544a6b.html#aeb6985702c4432fae28a17d0b5544a6b">na</a>, a, ixe, kze, z, db, jgs, <a class="el" href="namespacemodule__mp__nssl__2mom_a6f59e788f6634083973bbd5ff87f3f65.html#a6f59e788f6634083973bbd5ff87f3f65">ipconc</a>, alpha, l, <a class="el" href="namespacemodule__mp__nssl__2mom_ae135c09ecaa04c40177b3a8d59deb3c7.html#ae135c09ecaa04c40177b3a8d59deb3c7">ln</a>, qmin, <a class="el" href="namespacemodule__mp__nssl__2mom_a5e350792f109bd9c77a65f5b3d153046.html#a5e350792f109bd9c77a65f5b3d153046">xvmn</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_a16c2b29bf792ee5a1e1038ea960886c6.html#a16c2b29bf792ee5a1e1038ea960886c6">xvmx</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_ae77427ddf1c67c45a89ef8eff583dc33.html#ae77427ddf1c67c45a89ef8eff583dc33">lvol</a>, rho_qx, ixcol)</td></tr>
+<tr class="memdesc:ga416d221e65719addcd9254cf20e3c0eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates temporary reflectivity moment for adaptive size-sorting limiter.  <br /></td></tr>
+<tr class="memitem:ga0cb30e0249d14d780428d4d9bd829003" id="r_ga0cb30e0249d14d780428d4d9bd829003"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_ga0cb30e0249d14d780428d4d9bd829003.html#ga0cb30e0249d14d780428d4d9bd829003">module_mp_nssl_2mom::calcnfromz1d</a> (nx, ny, nz, nor, <a class="el" href="namespacemodule__mp__nssl__2mom_aeb6985702c4432fae28a17d0b5544a6b.html#aeb6985702c4432fae28a17d0b5544a6b">na</a>, a, t0, ixe, kze, z0, db, jgs, <a class="el" href="namespacemodule__mp__nssl__2mom_a6f59e788f6634083973bbd5ff87f3f65.html#a6f59e788f6634083973bbd5ff87f3f65">ipconc</a>, alpha, l, <a class="el" href="namespacemodule__mp__nssl__2mom_ae135c09ecaa04c40177b3a8d59deb3c7.html#ae135c09ecaa04c40177b3a8d59deb3c7">ln</a>, qmin, <a class="el" href="namespacemodule__mp__nssl__2mom_a5e350792f109bd9c77a65f5b3d153046.html#a5e350792f109bd9c77a65f5b3d153046">xvmn</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_a16c2b29bf792ee5a1e1038ea960886c6.html#a16c2b29bf792ee5a1e1038ea960886c6">xvmx</a>, t1, <a class="el" href="namespacemodule__mp__nssl__2mom_ae77427ddf1c67c45a89ef8eff583dc33.html#ae77427ddf1c67c45a89ef8eff583dc33">lvol</a>, rho_qx, <a class="el" href="namespacemodule__mp__nssl__2mom_aaeaed0175d5fc0dee21016e25eed1977.html#aaeaed0175d5fc0dee21016e25eed1977">infall</a>, ixcol)</td></tr>
+<tr class="memdesc:ga0cb30e0249d14d780428d4d9bd829003"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subroutine to correct number concentration to prevent reflectivity growth.  <br /></td></tr>
+<tr class="memitem:ga58002862f8b4adfd1329ee40abd421ba" id="r_ga58002862f8b4adfd1329ee40abd421ba"><td class="memItemLeft">subroutine, public&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_ga58002862f8b4adfd1329ee40abd421ba.html#ga58002862f8b4adfd1329ee40abd421ba">module_mp_nssl_2mom::calcnfromq</a> (nx, ny, nz, an, <a class="el" href="namespacemodule__mp__nssl__2mom_aeb6985702c4432fae28a17d0b5544a6b.html#aeb6985702c4432fae28a17d0b5544a6b">na</a>, nor, norz, dn, qcw, qci, qsw, qrw, qhw, qhl, ccw, cci, csw, crw, chw, chl, cccn, cccna, vhw, vhl, qv, spechum, invertccn_flag, cwmasin)</td></tr>
+<tr class="memdesc:ga58002862f8b4adfd1329ee40abd421ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subroutine to calculate number concentrations from initial state that has only mixing ratio.  <br /></td></tr>
+<tr class="memitem:ga0fea874028a2389ed8ccb75e4824077a" id="r_ga0fea874028a2389ed8ccb75e4824077a"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_ga0fea874028a2389ed8ccb75e4824077a.html#ga0fea874028a2389ed8ccb75e4824077a">module_mp_nssl_2mom::calcnfromcuten</a> (nx, ny, nz, an, anold, <a class="el" href="namespacemodule__mp__nssl__2mom_aeb6985702c4432fae28a17d0b5544a6b.html#aeb6985702c4432fae28a17d0b5544a6b">na</a>, nor, norz, dn)</td></tr>
+<tr class="memdesc:ga0fea874028a2389ed8ccb75e4824077a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subroutine to calculate number concentrations from convection parameterization rates that have only mixing ratio.  <br /></td></tr>
+<tr class="memitem:gadf6ddb9b5fc84c24f63ed57e17c2ca0d" id="r_gadf6ddb9b5fc84c24f63ed57e17c2ca0d"><td class="memItemLeft">subroutine, public&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_gadf6ddb9b5fc84c24f63ed57e17c2ca0d.html#gadf6ddb9b5fc84c24f63ed57e17c2ca0d">module_mp_nssl_2mom::calc_eff_radius</a> (nx, ny, nz, <a class="el" href="namespacemodule__mp__nssl__2mom_aeb6985702c4432fae28a17d0b5544a6b.html#aeb6985702c4432fae28a17d0b5544a6b">na</a>, jyslab, nor, norz, t1, t2, t3, t4, t5, t6, f_t4, f_t5, f_t6, qcw, qci, qsw, qrw, ccw, cci, csw, crw, an, dn)</td></tr>
+<tr class="memdesc:gadf6ddb9b5fc84c24f63ed57e17c2ca0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subroutine to calculate effective radii for use by radiation routines.  <br /></td></tr>
+<tr class="memitem:ga9508fcfd1b4336c24e0829c5398f250b" id="r_ga9508fcfd1b4336c24e0829c5398f250b"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_ga9508fcfd1b4336c24e0829c5398f250b.html#ga9508fcfd1b4336c24e0829c5398f250b">module_mp_nssl_2mom::qvexcess</a> (ngs, mgs, qwvp0, qv0, qcw1, pres, thetap0, theta0, qvex, pi0, <a class="el" href="namespacemodule__mp__nssl__2mom_a75232bb644648edefcae00dfcca3b107.html#a75232bb644648edefcae00dfcca3b107">tabqvs</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_af5e79e8b453e113b4dfab5c0f6c5134f.html#af5e79e8b453e113b4dfab5c0f6c5134f">nqsat</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_a55b2bad42bc8ac4179825143c9c692a9.html#a55b2bad42bc8ac4179825143c9c692a9">fqsat</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_a782374c86c0f216df962fd8bda6c8d73.html#a782374c86c0f216df962fd8bda6c8d73">cbw</a>, fcqv1, felvcp, ss1, pk, ngscnt)</td></tr>
+<tr class="memdesc:ga9508fcfd1b4336c24e0829c5398f250b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subroutine that returns the maximum possible condensation.  <br /></td></tr>
+<tr class="memitem:ga9df936b176c8bb5adfa0a7fee691e57c" id="r_ga9df936b176c8bb5adfa0a7fee691e57c"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_ga9df936b176c8bb5adfa0a7fee691e57c.html#ga9df936b176c8bb5adfa0a7fee691e57c">module_mp_nssl_2mom::setvtz</a> (ngscnt, qx, <a class="el" href="namespacemodule__mp__nssl__2mom_a7b7f8105f270ac735ba7d19416e4311a.html#a7b7f8105f270ac735ba7d19416e4311a">qxmin</a>, qxw, cx, rho0, rhovt, xdia, <a class="el" href="namespacemodule__mp__nssl__2mom_a3bd3037c839f0c02c191c2aebf78a076.html#a3bd3037c839f0c02c191c2aebf78a076">cno</a>, cnostmp, xmas, vtxbar, xdn, xvmn0, xvmx0, xv, <a class="el" href="namespacemodule__mp__nssl__2mom_a3cd0819ec44b60998a11578a76c4c652.html#a3cd0819ec44b60998a11578a76c4c652">cdx</a>, cdxgs, ipconc1, ndebug1, ngs, nz, igs, kgs, fadvisc, <a class="el" href="namespacemodule__mp__nssl__2mom_a1d1243b7115b6701dadac54fd12397e8.html#a1d1243b7115b6701dadac54fd12397e8">cwmasn</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_ab3ba4315e93c47ea68e3f80ada4ba4b2.html#ab3ba4315e93c47ea68e3f80ada4ba4b2">cwmasx</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_a66541a0b0f97cb1d64ca632b4cffe58f.html#a66541a0b0f97cb1d64ca632b4cffe58f">cwradn</a>, cnina, cimna, cimxa, itype1a, itype2a, temcg, infdo, alpha, axx, bxx, ildo)</td></tr>
+<tr class="memdesc:ga9df936b176c8bb5adfa0a7fee691e57c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mean hydrometeor size and fall speed calculations.  <br /></td></tr>
+<tr class="memitem:ga4ea70fd73f9b7e8dd2472e073f46ca5c" id="r_ga4ea70fd73f9b7e8dd2472e073f46ca5c"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_ga4ea70fd73f9b7e8dd2472e073f46ca5c.html#ga4ea70fd73f9b7e8dd2472e073f46ca5c">module_mp_nssl_2mom::ziegfall1d</a> (nx, ny, nz, nor, norz, <a class="el" href="namespacemodule__mp__nssl__2mom_aeb6985702c4432fae28a17d0b5544a6b.html#aeb6985702c4432fae28a17d0b5544a6b">na</a>, dtp, jgs, ixcol, xvt, rhovtzx, an, dn, ipconc0, t0, t7, <a class="el" href="namespacemodule__mp__nssl__2mom_a1d1243b7115b6701dadac54fd12397e8.html#a1d1243b7115b6701dadac54fd12397e8">cwmasn</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_ab3ba4315e93c47ea68e3f80ada4ba4b2.html#ab3ba4315e93c47ea68e3f80ada4ba4b2">cwmasx</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_a66541a0b0f97cb1d64ca632b4cffe58f.html#a66541a0b0f97cb1d64ca632b4cffe58f">cwradn</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_a7b7f8105f270ac735ba7d19416e4311a.html#a7b7f8105f270ac735ba7d19416e4311a">qxmin</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_a967f15b7105adaed35ae3bf28d05ef93.html#a967f15b7105adaed35ae3bf28d05ef93">xdnmx</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_a0fd9e58624c9667944eb4348351fa75c.html#a0fd9e58624c9667944eb4348351fa75c">xdnmn</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_a3cd0819ec44b60998a11578a76c4c652.html#a3cd0819ec44b60998a11578a76c4c652">cdx</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_a3bd3037c839f0c02c191c2aebf78a076.html#a3bd3037c839f0c02c191c2aebf78a076">cno</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_af0864830d2253a856dd1899659183761.html#af0864830d2253a856dd1899659183761">xdn0</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_a5e350792f109bd9c77a65f5b3d153046.html#a5e350792f109bd9c77a65f5b3d153046">xvmn</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_a16c2b29bf792ee5a1e1038ea960886c6.html#a16c2b29bf792ee5a1e1038ea960886c6">xvmx</a>, ngs, qx, qxw, cx, xv, vtxbar, xmas, xdn, xdia, vx, alpha, zx, igs, kgs, rho0, temcg, temg, rhovt, cwnc, cinc, fadvisc, cwdia, cipmas, cnina, cimas, cnostmp, infdo, ildo, timesetvt)</td></tr>
+<tr class="memdesc:ga4ea70fd73f9b7e8dd2472e073f46ca5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column-wise front end to setvtz for sedimentation.  <br /></td></tr>
+<tr class="memitem:ga028b696f0860f5c6e6d9d062f404faf0" id="r_ga028b696f0860f5c6e6d9d062f404faf0"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_ga028b696f0860f5c6e6d9d062f404faf0.html#ga028b696f0860f5c6e6d9d062f404faf0">module_mp_nssl_2mom::radardd02</a> (nx, ny, nz, nor, <a class="el" href="namespacemodule__mp__nssl__2mom_aeb6985702c4432fae28a17d0b5544a6b.html#aeb6985702c4432fae28a17d0b5544a6b">na</a>, an, temk, dbz, db, nzdbz, cnoh0t, hwdn1t, <a class="el" href="namespacemodule__mp__nssl__2mom_a6f59e788f6634083973bbd5ff87f3f65.html#a6f59e788f6634083973bbd5ff87f3f65">ipconc</a>, ke_diag, iunit)</td></tr>
+<tr class="memdesc:ga028b696f0860f5c6e6d9d062f404faf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Radar reflectivity calculation. Assumes ideal Rayleigh scattering.  <br /></td></tr>
+<tr class="memitem:ga54ee18da58b1936e2dc345bd29b80f12" id="r_ga54ee18da58b1936e2dc345bd29b80f12"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_ga54ee18da58b1936e2dc345bd29b80f12.html#ga54ee18da58b1936e2dc345bd29b80f12">module_mp_nssl_2mom::nucond</a> (nx, ny, nz, <a class="el" href="namespacemodule__mp__nssl__2mom_aeb6985702c4432fae28a17d0b5544a6b.html#aeb6985702c4432fae28a17d0b5544a6b">na</a>, jyslab, nor, norz, dtp, nxi, dz3d, t0, t9, an, dn, p2, pn, w, ngs, axtra, io_flag, ssfilt, t00, t77, flag_qndrop)</td></tr>
+<tr class="memdesc:ga54ee18da58b1936e2dc345bd29b80f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Droplet nucleation routine. Explicit condensation/evaporation. Tiny mixing ratio cleanup.  <br /></td></tr>
+<tr class="memitem:ga5c0f9300bf6b78c4b9d5390e53e45b67" id="r_ga5c0f9300bf6b78c4b9d5390e53e45b67"><td class="memItemLeft">subroutine&#160;</td><td class="memItemRight"><a class="el" href="group__mod__nsslmp_ga5c0f9300bf6b78c4b9d5390e53e45b67.html#ga5c0f9300bf6b78c4b9d5390e53e45b67">module_mp_nssl_2mom::nssl_2mom_gs</a> (nx, ny, nz, <a class="el" href="namespacemodule__mp__nssl__2mom_aeb6985702c4432fae28a17d0b5544a6b.html#aeb6985702c4432fae28a17d0b5544a6b">na</a>, jyslab, nor, norz, dtp, gz, t0, t1, t2, t3, t4, t5, t6, t7, t8, t9, an, dn, p2, pn, w, iunit, t00, t77, <a class="el" href="namespacemodule__mp__nssl__2mom_a0258e642a013c023fac96c90ad87e54f.html#a0258e642a013c023fac96c90ad87e54f">ventr</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_a387b7be247c0f608027dda40e25c3af8.html#a387b7be247c0f608027dda40e25c3af8">ventc</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_a1f606cb974d5046563529e295ecbf460.html#a1f606cb974d5046563529e295ecbf460">c1sw</a>, jgs, <a class="el" href="namespacemodule__mp__nssl__2mom_ad0011773551e6248e39faaca6a821c00.html#ad0011773551e6248e39faaca6a821c00">ido</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_a967f15b7105adaed35ae3bf28d05ef93.html#a967f15b7105adaed35ae3bf28d05ef93">xdnmx</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_a0fd9e58624c9667944eb4348351fa75c.html#a0fd9e58624c9667944eb4348351fa75c">xdnmn</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_a3cd0819ec44b60998a11578a76c4c652.html#a3cd0819ec44b60998a11578a76c4c652">cdx</a>, <a class="el" href="namespacemodule__mp__nssl__2mom_af0864830d2253a856dd1899659183761.html#af0864830d2253a856dd1899659183761">xdn0</a>, tmp3d, tkediss, thproc, numproc, dx1, dy1, ngs, timevtcalc, axtra, io_flag, has_wetscav, rainprod2d, evapprod2d, alpha2d, errmsg, errflg, elec, its, ids, ide, jds, jde)</td></tr>
+<tr class="memdesc:ga5c0f9300bf6b78c4b9d5390e53e45b67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main microphysical processes routine.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Added info on graupel density and soaking is in Mansell and Ziegler (2013, JAS)</p>
+<p>Average graupel and hail particle densities are predicted, which affects fall speed as well.</p>
+<p>Maintainer: Ted Mansell, National Severe Storms Laboratory <a href="#" onclick="location.href='mai'+'lto:'+'ted'+'.m'+'ans'+'el'+'l@n'+'oa'+'a.g'+'ov'; return false;">ted.m<span class="obfuscator">.nosp@m.</span>anse<span class="obfuscator">.nosp@m.</span>ll@no<span class="obfuscator">.nosp@m.</span>aa.g<span class="obfuscator">.nosp@m.</span>ov</a></p>
+<p>Microphysics References:</p>
+<p>Mansell, E. R., C. L. Ziegler, and E. C. Bruning, 2010: Simulated electrification of a small thunderstorm with two-moment bulk microphysics. J. Atmos. Sci., 67, 171-194, doi:10. 1175/2009JAS2965.1.</p>
+<p>Mansell, E. R. and C. L. Ziegler, 2013: Aerosol effects on simulated storm electrification and precipitation in a two-moment bulk microphysics model. J. Atmos. Sci., 70 (7), 2032-2050, doi:10.1175/JAS-D-12-0264.1.</p>
+<p>Ziegler, C. L., 1985: Retrieval of thermal and microphysical variables in observed convective storms. Part I: Model development and preliminary testing. J. Atmos. Sci., 42, 1487-1509.</p>
+<p>Sedimentation reference:</p>
+<p>Mansell, E. R., 2010: On sedimentation and advection in multimoment bulk microphysics. J. Atmos. Sci., 67, 3084-3094, doi:10.1175/2010JAS3341.1. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>

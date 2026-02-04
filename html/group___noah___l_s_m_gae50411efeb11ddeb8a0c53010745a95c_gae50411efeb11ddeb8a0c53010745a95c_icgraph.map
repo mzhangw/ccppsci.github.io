@@ -1,0 +1,18 @@
+<map id="tmpavg" name="tmpavg">
+<area shape="rect" id="Node000001" title="This subroutine calculates soil layer average temperature (tavg) in freezing/thawing layer using up,..." alt="" coords="741,55,805,80"/>
+<area shape="rect" id="Node000002" href="$group___noah___l_s_m_gabb602c2b09396e2f94c9556259f5bae4.html#gabb602c2b09396e2f94c9556259f5bae4" title="This subroutine calculates the right hand side of the time tendency term of the soil thermal diffusio..." alt="" coords="655,55,693,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="723,68,693,70,693,65,728,67"/>
+<area shape="rect" id="Node000003" href="$group___noah___l_s_m_ga977daabf4ff68b28fc5ccd8796d815cd.html#ga977daabf4ff68b28fc5ccd8796d815cd" title="This subroutine updates the temperature state of the soil column based on the thermal diffusion equat..." alt="" coords="557,55,607,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="636,68,607,70,607,65,642,67"/>
+<area shape="rect" id="Node000004" href="$group___noah___l_s_m_ga92994e4737ecfd692a6704778558c9c2.html#ga92994e4737ecfd692a6704778558c9c2" title="This subroutine calculates soil moisture and heat flux values and update soil moisture content and so..." alt="" coords="405,5,461,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="540,54,508,45,462,29,462,24,510,40,545,54"/>
+<area shape="rect" id="Node000007" href="$group__sfc__diag__mod_ga7e773c818d77462fd7acbd9b15baf909.html#ga7e773c818d77462fd7acbd9b15baf909" title=" " alt="" coords="357,55,509,80"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="539,68,510,70,510,65,545,67"/>
+<area shape="rect" id="Node000008" href="$group___noah___l_s_m_gad65a889bf3f431ade2a312674671ab41.html#gad65a889bf3f431ade2a312674671ab41" title="This subroutine calculates soil moisture and heat flux values and update soil moisture content and so..." alt="" coords="402,104,465,130"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="545,81,510,95,466,110,465,105,508,90,540,82"/>
+<area shape="rect" id="Node000005" href="$group___noah___l_s_m_ga36e98f3ac91f839b816fd167eab30901.html#ga36e98f3ac91f839b816fd167eab30901" title="This is the entity of GFS Noah LSM model of physics subroutines. It is a soil/veg/snowpack land&#45;surfa..." alt="" coords="220,55,309,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="393,30,310,57,309,52,387,31"/>
+<area shape="rect" id="Node000006" href="$group___noah___l_s_m_ga5d624f72a0da3ffcdf7a01fb9862e0e8.html#ga5d624f72a0da3ffcdf7a01fb9862e0e8" title=" " alt="" coords="5,55,172,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="202,68,173,70,172,65,207,67"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="384,103,309,83,310,78,389,103"/>
+</map>

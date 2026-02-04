@@ -1,0 +1,15 @@
+<map id="clm_lake::clm_lake_run" name="clm_lake::clm_lake_run">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,104,164,130"/>
+<area shape="rect" id="Node000002" href="$group___noah_m_p___l_s_m_ga9d5adb20aca5b72a7e126136088e20d1.html#ga9d5adb20aca5b72a7e126136088e20d1" title="surface albedos. also fluxes (per unit incoming direct and diffuse radiation) reflected,..." alt="" coords="212,104,271,130"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,114,198,116,193,118,165,119"/>
+<area shape="rect" id="Node000003" href="$group___noah_m_p___l_s_m_ga497b40d27709666f17da3e555f8628a1.html#ga497b40d27709666f17da3e555f8628a1" title="ground surface albedo" alt="" coords="334,5,411,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="252,102,280,72,317,40,322,40,327,37,321,44,283,76,255,106"/>
+<area shape="rect" id="Node000004" href="$group___noah_m_p___l_s_m_ga748c587c5dc0a38a1793042e92952d43.html#ga748c587c5dc0a38a1793042e92952d43" title=" " alt="" coords="332,55,413,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="270,103,325,85,320,87,272,108"/>
+<area shape="rect" id="Node000005" href="$group___noah_m_p___l_s_m_ga238debe3053962b0b33a5e846e333701.html#ga238debe3053962b0b33a5e846e333701" title="bats snow surface albedo" alt="" coords="322,104,423,130"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="271,114,309,116,304,117,272,119"/>
+<area shape="rect" id="Node000006" href="$group___noah_m_p___l_s_m_ga2ea2346edd6f426f30dcc99085def5cf.html#ga2ea2346edd6f426f30dcc99085def5cf" title="class snow surface albedo" alt="" coords="319,153,426,179"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="271,125,325,147,320,148,271,130"/>
+<area shape="rect" id="Node000007" href="$group___noah_m_p___l_s_m_gaa737a61978bde4dc6363e11263999769.html#gaa737a61978bde4dc6363e11263999769" title="use two&#45;stream approximation of Dickinson (1983) adv geophysics 25: 305&#45;353 and sellers (1985) int j ..." alt="" coords="332,203,414,228"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="254,127,283,158,321,189,327,196,322,195,317,194,280,162,253,132"/>
+</map>

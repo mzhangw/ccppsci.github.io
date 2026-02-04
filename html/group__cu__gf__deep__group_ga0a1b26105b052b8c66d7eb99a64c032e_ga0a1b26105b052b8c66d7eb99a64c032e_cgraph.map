@@ -1,0 +1,5 @@
+<map id="cu_gf_deep::cup_kbcon" name="cu_gf_deep::cup_kbcon">
+<area shape="rect" id="Node000001" title="Calculates the level of convective cloud base." alt="" coords="5,5,165,31"/>
+<area shape="rect" id="Node000002" href="$group__cu__gf__deep__group_ga1c93354ade8bedf132cb748238d59ff1.html#ga1c93354ade8bedf132cb748238d59ff1" title="Calculates the average value of a variable at the updraft originating level." alt="" coords="213,5,386,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,16,200,18,194,18,165,21"/>
+</map>

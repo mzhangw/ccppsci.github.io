@@ -1,0 +1,6 @@
+<map id="module_mp_thompson::gcf" name="module_mp_thompson::gcf">
+<area shape="rect" id="Node000001" title="Returns the incomplete gamma function q(a,x) evaluated by its continued fraction representation as ga..." alt="" coords="5,37,184,62"/>
+<area shape="rect" id="Node000002" href="$group__aathompson_gad2946a6deeab8b049fcd554d930f35c9.html#gad2946a6deeab8b049fcd554d930f35c9" title="Returns the value ln(gamma(xx)) for xx &gt; 0." alt="" coords="232,29,384,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,47,219,49,214,50,184,52"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="268,27,265,19,272,10,286,5,308,3,331,5,346,14,341,13,330,10,308,8,288,10,275,15,271,20,272,30"/>
+</map>

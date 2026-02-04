@@ -1,0 +1,17 @@
+<map id="cu_gf_deep::get_cloud_bc" name="cu_gf_deep::get_cloud_bc">
+<area shape="rect" id="Node000001" title="Calculates the average value of a variable at the updraft originating level." alt="" coords="629,61,803,87"/>
+<area shape="rect" id="Node000002" href="$group__cu__gf__deep__group_ga6fb15c7cf491936bd0b501eb4a7c3147.html#ga6fb15c7cf491936bd0b501eb4a7c3147" title="Driver for the deep or congestus GF routine." alt="" coords="186,36,374,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="678,53,633,33,581,15,510,8,439,13,375,24,323,38,321,33,373,19,439,8,510,3,582,10,635,28,683,54"/>
+<area shape="rect" id="Node000004" href="$group__cu__gf__sh__group_gac3f853aacccfdee63bf9a5e64611683f.html#gac3f853aacccfdee63bf9a5e64611683f" title=" " alt="" coords="200,89,360,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="678,94,632,116,582,130,516,137,449,135,387,128,335,118,336,113,388,123,449,130,515,132,581,125,630,111,673,95"/>
+<area shape="rect" id="Node000005" href="$group__cu__gf__deep__group_ga0a1b26105b052b8c66d7eb99a64c032e.html#ga0a1b26105b052b8c66d7eb99a64c032e" title="Calculates the level of convective cloud base." alt="" coords="422,89,581,115"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="617,87,582,94,582,89,611,88"/>
+<area shape="rect" id="Node000006" href="$group__cu__gf__deep__group_ga956dc9e34d290057e2cf6fb86ec7ea7b.html#ga956dc9e34d290057e2cf6fb86ec7ea7b" title="Calculates moisture properties of the updraft." alt="" coords="432,25,571,65"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="611,60,571,57,571,52,617,60"/>
+<area shape="rect" id="Node000003" href="$group__cu__gf__group_ga5d2242a3e3ed78e40c6b81ee2538801b.html#ga5d2242a3e3ed78e40c6b81ee2538801b" title="This is the Grell&#45;Freitas convection scheme driver module." alt="" coords="5,58,138,99"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="168,65,139,71,137,66,173,63"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="182,92,138,88,138,83,187,91"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="427,85,336,65,337,60,433,85"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="404,102,361,105,361,100,409,102"/>
+<area shape="poly" id="edge9_Node000006_Node000002" title=" " alt="" coords="414,47,375,50,374,44,420,46"/>
+</map>

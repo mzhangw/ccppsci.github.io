@@ -1,0 +1,1501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="CCPP SciDoc" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="CCPP Scientific Documentation" />
+<meta property="og:url" content="https://github.com/ufs-community/ccpp-physics" />
+<!-- END opengraph metadata -->
+<title>CCPP SciDoc v7.0.0: Supported Namelist Options</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-ccpp.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/ufs-community/ccpp-physics" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="60" height="60" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dtc_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CCPP SciDoc v7.0.0
+   &#160;<span id="projectnumber">v7.0.0</span>
+   </div>
+   <div id="projectbrief">Common Community Physics Package Developed at DTC</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_c_c_p_psuite_nml_desp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Supported Namelist Options </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>The UFS Atmosphere, the atmospheric component of the UFS Weather Model, access runtime configurations from file <code>input.nml</code>. This file contains various namelists records that control aspects of the I/O, dynamics, physics etc. Most physics-related options are in records <b>&amp;gfs_physics_nml</b>. Some schemes have their own namelist records as described below.</p>
+<ul>
+<li>Namelist <b>&amp;gfs_physics_nml</b> pertains to all of the suites used, but some of the variables are only relevant for specific parameterizations. Its variables are defined in file GFS_typedefs.F90 in the host model.</li>
+<li>Namelist <b>&amp;gfdl_cloud_microphysics_nml</b> is only relevant when the GFDL microphysics is used, and its variables are defined in <a class="el" href="gfdl__cloud__microphys__mod_8_f90_source.html">gfdl_cloud_microphys_mod.F90</a>.</li>
+<li>Namelist <b>&amp;cires_ugwp_nml</b> specifies options for the use of CIRES Unified Gravity Wave Physics Version 0.</li>
+</ul>
+<p>Both the SDF and the input.nml contain information about how to specify the physics suite. Some of this information is redundant, and the user must make sure they are compatible.The safest practice is to use the SDF and namelist provided for each suite, since those are supported configurations. Changes to the SDF must be accompanied by corresponding changes to the namelist. While there is not a one-to-one correspondence between the namelist and the SDF, the tables below show some variables in the namelist that must match the SDF.</p>
+<div class="full_width_table"> <a class="anchor" id="multi_row"></a>
+<table class="doxtable">
+<caption>NML Description</caption>
+<tr>
+<th>Option </th><th>CCPP scheme or interstitial </th><th>Description </th><th>Default Value </th></tr>
+<tr>
+<td colspan="4" align="center"><b>General</b> <b>options</b> </td></tr>
+<tr>
+<td>fhzero </td><td>gfs_phys_time_vary </td><td>hour between clearing of diagnostic buckets </td><td>0.0 </td></tr>
+<tr>
+<td>h2o_phys </td><td>h2ophys </td><td>flag for stratosphere h2o scheme </td><td>.false. </td></tr>
+<tr>
+<td>ldiag3d </td><td>see <em class="arg">GFS_typedefs.F90</em> </td><td>flag for 3D diagnostic fields </td><td>.false. </td></tr>
+<tr>
+<td>qdiag3d </td><td>see <em class="arg">GFS_typedefs.F90</em> </td><td>flag for 3D tracer diagnostic fields </td><td>.false. </td></tr>
+<tr>
+<td>lssav </td><td>see <em class="arg">GFS_typedefs.F90</em> </td><td>flag for storing diagnostics </td><td>.false. </td></tr>
+<tr>
+<td>oz_phys_2015 </td><td>ozphys_2015 </td><td>flag for new (2015) ozone physics </td><td>.false. </td></tr>
+<tr>
+<td>fhcyc </td><td>gfs_phys_time_vary </td><td>frequency for surface data cycling in hours </td><td>0.0 </td></tr>
+<tr>
+<td>use_ufo </td><td>gfs_phys_time_vary </td><td>flag for using unfiltered orography surface option </td><td>.false. </td></tr>
+<tr>
+<td>add_fire_heat_flux </td><td><a class="el" href="namespacelsm__ruc.html" title="This module contain the RUC land surface model driver.">lsm_ruc</a> </td><td>flag for fire heat flux </td><td>.false. </td></tr>
+<tr>
+<td>ncld </td><td>see <em class="arg">GFS_typedefs.F90</em> </td><td>number of hydrometeors </td><td>1 </td></tr>
+<tr>
+<td>do_mynnsfclay </td><td>see <em class="arg">GFS_typedefs.F90</em> </td><td>flag to activate MYNN-SFCLAY scheme </td><td>.false. </td></tr>
+<tr>
+<td>do_sppt </td><td>gfs_stochastics </td><td>flag for stochastic SPPT option </td><td>.false. </td></tr>
+<tr>
+<td>do_shum </td><td>gfs_stochastics </td><td>flag for stochastic SHUM option </td><td>.false. </td></tr>
+<tr>
+<td>do_skeb </td><td>gfs_stochastics </td><td>flag for stochastic SKEB option </td><td>.false. </td></tr>
+<tr>
+<td>do_sfcperts </td><td>gfs_rrtmg_pre </td><td>flag for stochastic surface perturbations option </td><td>.false. </td></tr>
+<tr>
+<td>imp_physics </td><td>choice of microphysics scheme </td><td>choice of microphysics scheme: <br  />
+ <ul>
+<li>
+6: WSMG microphysics scheme </li>
+<li>
+8: Thompson microphysics scheme </li>
+<li>
+10: Morrison-Gettelman microphysics scheme </li>
+<li>
+11: GFDL microphysics scheme </li>
+<li>
+15: Ferrier-Aligo microphysics scheme </li>
+<li>
+17: NSSL microphysics multimoment scheme </li>
+<li>
+18: NSSL microphysics scheme with predicted CCN (compatibility: 18 = 17 + nssl_ccn_on=.true.) </li>
+</ul>
+</td><td>99 </td></tr>
+<tr>
+<td colspan="4" align="center"><b>Parameters</b> <b>related</b> <b>to</b> <b>radiation</b> <b>scheme</b> <b>options</b> </td></tr>
+<tr>
+<td>pdfcld </td><td>gfs_rrtmg_pre </td><td>flag for PDF clouds </td><td>.false. </td></tr>
+<tr>
+<td>fhswr </td><td><a class="el" href="namespacerrtmg__sw.html" title="This module contains the CCPP-compliant NCEP&#39;s modifications of the rrtmg-sw radiation code from aer ...">rrtmg_sw</a> </td><td>frequency for shortwave radiation (secs) </td><td>3600. </td></tr>
+<tr>
+<td>fhlwr </td><td><a class="el" href="namespacerrtmg__lw.html" title="This module contains the CCPP-compliant NCEP&#39;s modifications of the rrtmg-lw radiation code from aer ...">rrtmg_lw</a> </td><td>frequency for longwave radiation (secs) </td><td>3600. </td></tr>
+<tr>
+<td>levr </td><td>gfs_rrtmg_setup </td><td>number of vertical levels for radiation calculations </td><td>-99 </td></tr>
+<tr>
+<td>nfxr </td><td>gfs_rrtmg_pre </td><td>second dimension of radiation input/output array fluxr </td><td>39+6 </td></tr>
+<tr>
+<td>iflip </td><td>gfs_rrtmg_setup </td><td>control flag for vertical index direction <br  />
+ <ul>
+<li>
+0: index from TOA to surface </li>
+<li>
+1: index from surface to TOA </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>icliq_sw </td><td><a class="el" href="namespacerrtmg__sw.html" title="This module contains the CCPP-compliant NCEP&#39;s modifications of the rrtmg-sw radiation code from aer ...">rrtmg_sw</a> </td><td>sw optical property for liquid clouds <br  />
+ <ul>
+<li>
+0: input cloud optical depth, ignoring iswcice setting </li>
+<li>
+1: cloud optical property scheme based on Hu and Stamnes (1993) <a class="el" href="citelist.html#CITEREF_hu_and_stamnes_1993">[99]</a> method </li>
+<li>
+2: cloud optical property scheme based on Hu and Stamnes (1993) <a class="el" href="citelist.html#CITEREF_hu_and_stamnes_1993">[99]</a> - updated </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>iovr </td><td><a class="el" href="namespacerrtmg__sw.html" title="This module contains the CCPP-compliant NCEP&#39;s modifications of the rrtmg-sw radiation code from aer ...">rrtmg_sw</a> </td><td>control flag for cloud overlap in SW &amp; LW radiation <br  />
+ <ul>
+<li>
+0: random overlapping clouds </li>
+<li>
+1: max/ran overlapping clouds </li>
+<li>
+2: maximum overlap clouds (mcica only) </li>
+<li>
+3: decorrelation-length overlap (mcica only) </li>
+<li>
+4: exponential overlapping method </li>
+<li>
+5: exponential-random overlapping method </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>ictm </td><td>gfs_rrtmg_setup </td><td>external data time/date control flag <br  />
+ <ul>
+<li>
+-2: same as 0, but superimpose seasonal cycle from climatology data set </li>
+<li>
+-1: use user provided external data for the forecast time, no extrapolation </li>
+<li>
+0: use data at initial condition time, if not available, use latest, no extrapolation </li>
+<li>
+1: use data at the forecast time, if not available, use latest and extrapolation </li>
+<li>
+yyyy0: use yyyy data for the forecast time, no further data extrapolation </li>
+<li>
+yyyy1: use yyyy data for the forecast. if needed, do extrapolation to match the fcst time </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>lcrick </td><td>gfs_rrtmg_setup </td><td>control flag for eliminating CRICK <br  />
+ <ul>
+<li>
+.true.: apply layer smoothing to eliminate CRICK </li>
+<li>
+.false.: do not apply layer smoothing </li>
+</ul>
+</td><td>.false. </td></tr>
+<tr>
+<td>lcnorm </td><td>gfs_rrtmg_setup </td><td>control flag for in-cloud condensate mixing ratio <br  />
+ <ul>
+<li>
+.true.: normalize cloud condensate </li>
+<li>
+.false.: not normalize cloud condensate </li>
+</ul>
+</td><td>.false. </td></tr>
+<tr>
+<td>ialb </td><td>gfs_rrtmg_setup </td><td>SW surface albedo control flag: <br  />
+ <ul>
+<li>
+0: use climatology albedo, based on sfc type </li>
+<li>
+1: use MODIS based albedo (RUC LSM) </li>
+<li>
+2: use LSM albedo (Noah MP lsm) </li>
+</ul>
+</td><td>0 </td></tr>
+<tr>
+<td>iems </td><td>gfs_rrtmg_setup </td><td>LW surface emissivity control flag (ab 2-digit integer) : <br  />
+ <ul>
+<li>
+a: =0 set surface air/ground t same for LW radiation </li>
+<li>
+=1 set surface air/ground t diff for LW radiation </li>
+<li>
+b: =0 use fixed surface emissivity = 1.0 (black-body) </li>
+<li>
+=1 use varying climatology surface emissivity (veg based) </li>
+<li>
+=2 future development (not yet) </li>
+</ul>
+</td><td>0 </td></tr>
+<tr>
+<td>iaer </td><td>gfs_rrtmg_setup </td><td>4-digit aerosol flag (dabc for aermdl, volcanic, LW, SW): <br  />
+ <ul>
+<li>
+d:tropospheric aerosol model scheme flag <br  />
+ =0 or none, opac-climatology aerosol scheme <br  />
+ =1 use NASA GOCART climatology aerosol scheme <br  />
+ =2 use NASA GOCART prognostic aerosol scheme <br  />
+ =5 opac-clim new spectral mapping </li>
+<li>
+a:=0 use background stratospheric aerosol <br  />
+ =1 include stratospheric volcanic aerosol </li>
+<li>
+b:=0 no tropospheric aerosol in LW radiation <br  />
+ =1 include tropospheric aerosol in LW </li>
+<li>
+c:=0 no tropospheric aerosol in SW radiation <br  />
+ =1 include tropospheric aerosol in SW </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>ico2 </td><td>gfs_rrtmg_setup </td><td>\(CO_2\) data source control flag:<br  />
+ <ul>
+<li>
+0: prescribed value (380 ppmv) </li>
+<li>
+1: yearly global averaged annual mean from observations </li>
+<li>
+2: monthly 15 degree horizontal resolution from observations </li>
+</ul>
+</td><td>0 </td></tr>
+<tr>
+<td>isubc_sw </td><td><a class="el" href="namespacerrtmg__sw.html" title="This module contains the CCPP-compliant NCEP&#39;s modifications of the rrtmg-sw radiation code from aer ...">rrtmg_sw</a> </td><td>subgrid cloud approximation control flag in SW radiation: <br  />
+ <ul>
+<li>
+0: no McICA approximation in SW radiation </li>
+<li>
+1: use McICA with prescribed permutation seeds (test mode) </li>
+<li>
+2: use McICA with randomly generated permutation seeds </li>
+</ul>
+</td><td>0 </td></tr>
+<tr>
+<td>isubc_lw </td><td><a class="el" href="namespacerrtmg__lw.html" title="This module contains the CCPP-compliant NCEP&#39;s modifications of the rrtmg-lw radiation code from aer ...">rrtmg_lw</a> </td><td>subgrid cloud approximation control flag in LW radiation: <br  />
+ <ul>
+<li>
+0: no McICA approximation in LW radiation </li>
+<li>
+1: use McICA with prescribed permutatition seeds (test mode) </li>
+<li>
+2: use McICA with randomly generated permutation seeds </li>
+</ul>
+</td><td>0 </td></tr>
+<tr>
+<td>iswmode </td><td>GFS_rrtmg_setup, radsw_main </td><td>SW control flag for scattering process approximation: <br  />
+ <ul>
+<li>
+1: two-stream delta-eddington (Joseph et al. 1976 <a class="el" href="citelist.html#CITEREF_joseph_1976">[106]</a>) </li>
+<li>
+2: two-stream PIFM (zdunowski et al. 1980 <a class="el" href="citelist.html#CITEREF_zdunkowski_et_al_1980">[211]</a>) </li>
+<li>
+3: discrete ordinates (Liou, 1973 <a class="el" href="citelist.html#CITEREF_liou_1973">[124]</a>) </li>
+</ul>
+</td><td>2 </td></tr>
+<tr>
+<td>isol </td><td>gfs_rrtmg_setup </td><td>solar constant scheme control flag: <br  />
+ <ul>
+<li>
+0: fixed value = 1366.0 \(W m^{-2}\) (old standard) </li>
+<li>
+10: fixed value = 1360.8 \(W m^{-2}\) (new standard) </li>
+<li>
+1: NOAA ABS-scale TSI table (yearly) with 11-yr cycle approximation </li>
+<li>
+2: NOAA TIM-scale TSI table (yearly) with 11-yr cycle approximation </li>
+<li>
+3: CMIP5 TIM-scale TSI table (yearly) with 11-yr cycle approximation </li>
+<li>
+4: CMIP5 TIM-scale TSI table (monthly) with 11-yr cycle approximation </li>
+</ul>
+</td><td>0 </td></tr>
+<tr>
+<td>lwhtr </td><td><a class="el" href="namespacerrtmg__lw.html" title="This module contains the CCPP-compliant NCEP&#39;s modifications of the rrtmg-lw radiation code from aer ...">rrtmg_lw</a> </td><td>flag for output of longwave heating rate </td><td>.true. </td></tr>
+<tr>
+<td>swhtr </td><td><a class="el" href="namespacerrtmg__sw.html" title="This module contains the CCPP-compliant NCEP&#39;s modifications of the rrtmg-sw radiation code from aer ...">rrtmg_sw</a> </td><td>flag for output of shortwave heating rate </td><td>.true. </td></tr>
+<tr>
+<td>nhfrad </td><td>gfs_time_vary_pre </td><td>number of timesteps for which to call radiation on physics timestep (coldstarts) </td><td>0 </td></tr>
+<tr>
+<td>idcor </td></tr>
+<tr>
+<td>dcorr_con </td></tr>
+<tr>
+<td colspan="4" align="center"><b>Parameters</b> <b>related</b> <b>to</b> <b>RRTMGP</b> <b>schemes</b> </td></tr>
+<tr>
+<td>do_RRTMGP </td><td>GFS_rrtmgp_setup </td><td>use RRTMGP </td><td>.false. </td></tr>
+<tr>
+<td>active_gases </td><td>GFS_rrtmgp_pre,<a class="el" href="namespacerrtmgp__lw__main.html" title="This module contains the RRTMGP-LW radiation scheme.">rrtmgp_lw_main</a>,<a class="el" href="namespacerrtmgp__lw__gas__optics.html" title="This module contains two routines: One to initialize the k-distribution data and functions needed to ...">rrtmgp_lw_gas_optics</a>,<a class="el" href="namespacerrtmgp__sw__main.html" title="This module contain the RRTMGP-SW radiation scheme.">rrtmgp_sw_main</a>,<a class="el" href="namespacerrtmgp__sw__gas__optics.html" title="This module contains a routine to initialize the k-distribution data used by the RRTMGP shortwave rad...">rrtmgp_sw_gas_optics</a> </td><td>character list of active gases used in RRTMGP </td><td>'' </td></tr>
+<tr>
+<td>nGases </td><td>GFS_rrtmgp_pre,<a class="el" href="namespacerrtmgp__lw__main.html" title="This module contains the RRTMGP-LW radiation scheme.">rrtmgp_lw_main</a>,<a class="el" href="namespacerrtmgp__sw__main.html" title="This module contain the RRTMGP-SW radiation scheme.">rrtmgp_sw_main</a> </td><td>number of active gases </td><td>0 </td></tr>
+<tr>
+<td>rrtmgp_root </td><td><a class="el" href="namespacerrtmgp__lw__cloud__optics.html" title="This module contains two routines: The first initializes data and functions needed to compute the lon...">rrtmgp_lw_cloud_optics</a>,<a class="el" href="namespacerrtmgp__lw__main.html" title="This module contains the RRTMGP-LW radiation scheme.">rrtmgp_lw_main</a>,<a class="el" href="namespacerrtmgp__sw__cloud__optics.html" title="This module contains the cloud optics properties calculation for RRTMGP-SW.">rrtmgp_sw_cloud_optics</a>,<a class="el" href="namespacerrtmgp__lw__gas__optics.html" title="This module contains two routines: One to initialize the k-distribution data and functions needed to ...">rrtmgp_lw_gas_optics</a>,<a class="el" href="namespacerrtmgp__sw__main.html" title="This module contain the RRTMGP-SW radiation scheme.">rrtmgp_sw_main</a> </td><td>directory of rte+rrtmgp source code </td><td>'' </td></tr>
+<tr>
+<td>lw_file_gas </td><td><a class="el" href="namespacerrtmgp__lw__main.html" title="This module contains the RRTMGP-LW radiation scheme.">rrtmgp_lw_main</a>,<a class="el" href="namespacerrtmgp__lw__gas__optics.html" title="This module contains two routines: One to initialize the k-distribution data and functions needed to ...">rrtmgp_lw_gas_optics</a> </td><td>RRTMGP K-distribution file, coefficients to compute optics for gaseous atmosphere </td><td>'' </td></tr>
+<tr>
+<td>lw_file_clouds </td><td><a class="el" href="namespacerrtmgp__lw__main.html" title="This module contains the RRTMGP-LW radiation scheme.">rrtmgp_lw_main</a>, <a class="el" href="namespacerrtmgp__lw__cloud__optics.html" title="This module contains two routines: The first initializes data and functions needed to compute the lon...">rrtmgp_lw_cloud_optics</a> </td><td>RRTMGP file containing coefficients used to compute clouds optical properties </td><td>'' </td></tr>
+<tr>
+<td>sw_file_gas </td><td><a class="el" href="namespacerrtmgp__sw__main.html" title="This module contain the RRTMGP-SW radiation scheme.">rrtmgp_sw_main</a>, <a class="el" href="namespacerrtmgp__sw__gas__optics.html" title="This module contains a routine to initialize the k-distribution data used by the RRTMGP shortwave rad...">rrtmgp_sw_gas_optics</a> </td><td>RRTMGP K-distribution file, coefficients to compute optics for gaseous atmosphere </td><td>'' </td></tr>
+<tr>
+<td>sw_file_clouds </td><td><a class="el" href="namespacerrtmgp__sw__main.html" title="This module contain the RRTMGP-SW radiation scheme.">rrtmgp_sw_main</a>, <a class="el" href="namespacerrtmgp__sw__cloud__optics.html" title="This module contains the cloud optics properties calculation for RRTMGP-SW.">rrtmgp_sw_cloud_optics</a> </td><td>RRTMGP file containing coefficents used to compute clouds optical properties </td><td>'' </td></tr>
+<tr>
+<td>rrtmgp_nBandsSW </td><td></td><td>number of RRTMGP SW bands </td><td>-999 </td></tr>
+<tr>
+<td>rrtmgp_nGptsSW </td><td></td><td>number of RRTMGP SW spectral points </td><td>-999 </td></tr>
+<tr>
+<td>rrtmgp_nBandsLW </td><td></td><td>number of RRTMGP LW bands </td><td>-999 </td></tr>
+<tr>
+<td>rrtmgp_nGptsLW </td><td></td><td>number of RRTMGP LW spectral points </td><td>-999 </td></tr>
+<tr>
+<td>iovr_convcld </td><td><a class="el" href="namespacerrtmgp__lw__main.html" title="This module contains the RRTMGP-LW radiation scheme.">rrtmgp_lw_main</a>,<a class="el" href="namespacerrtmgp__sw__main.html" title="This module contain the RRTMGP-SW radiation scheme.">rrtmgp_sw_main</a> </td><td>cloud-overlap assumption for convective cloud </td><td>1 </td></tr>
+<tr>
+<td>use_LW_jacobian </td><td>GFS_suite_interstitial_2, dcyc2t3,<a class="el" href="namespacerrtmgp__lw__main.html" title="This module contains the RRTMGP-LW radiation scheme.">rrtmgp_lw_main</a> </td><td>use Jacobian of LW to update LW radiation tendencies </td><td>.false. </td></tr>
+<tr>
+<td>damp_LW_fluxadj </td><td>dcyc2t3 </td><td>Damp LW Jacobian flux adjustment with height </td><td>.false. </td></tr>
+<tr>
+<td>lfnc_k </td><td>dcyc2t3 </td><td>depth of transition layer in logistic function for LW flux adjustment damping </td><td>-999 </td></tr>
+<tr>
+<td>lfnc_p0 </td><td>dcyc2t3 </td><td>transition pressure for LW flux adjustment damping </td><td>-999 </td></tr>
+<tr>
+<td>doGP_lwscat </td><td><a class="el" href="namespacerrtmgp__lw__main.html" title="This module contains the RRTMGP-LW radiation scheme.">rrtmgp_lw_main</a> </td><td>if true, include scattering in longwave cloud-optics, only compatible w/ GP cloud-optics </td><td>.false. </td></tr>
+<tr>
+<td>doGP_sgs_cnv </td><td><a class="el" href="namespacerrtmgp__lw__main.html" title="This module contains the RRTMGP-LW radiation scheme.">rrtmgp_lw_main</a>, <a class="el" href="namespacerrtmgp__sw__main.html" title="This module contain the RRTMGP-SW radiation scheme.">rrtmgp_sw_main</a> </td><td>if true, include SubGrdiScale convective cloud in RRTMGP </td></tr>
+<tr>
+<td>doGP_smearclds </td><td>GFS_rrtmgp_cloud_mp </td><td>if true, include implicit SubGridScale clouds in RRTMGP </td></tr>
+<tr>
+<td colspan="4" align="center"><b>Parameters</b> <b>related</b> <b>to</b> <b>cumulus</b> <b>schemes</b> </td></tr>
+<tr>
+<td>imfshalcnv </td><td>choice of shallow convective scheme </td><td>flag for mass flux shallow convective scheme:<br  />
+ <ul>
+<li>
+1:July 2010 version of mass-flux shallow convective scheme (operational as of 2016) </li>
+<li>
+2: scale- &amp; aerosol-aware mass-flux shallow convective scheme (2017) </li>
+<li>
+3: scale- &amp; aerosol-aware Grell-Freitas scheme </li>
+<li>
+4: new Tiedtke scheme (CAPS) </li>
+<li>
+0: modified Tiedtke's eddy-diffusion shallow convective scheme </li>
+<li>
+-1: no shallow convection used </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>imfdeepcnv </td><td>choice of deep convective scheme </td><td>flag for mass-flux deep convective scheme:<br  />
+ <ul>
+<li>
+-1: Chikira-Sugiyama deep convection (with <b>cscnv</b> = .T.) </li>
+<li>
+1: July 2010 version of SAS convective scheme (operational version as of 2016) </li>
+<li>
+2: scale- &amp; aerosol-aware mass-flux deep convective scheme (2017) </li>
+<li>
+3: scale- &amp; aerosol-aware Grell-Freitas scheme (GSD) </li>
+<li>
+4: new Tiedtke scheme (CAPS) </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>do_deep </td><td>see <em class="arg">GFS_typedefs.F90</em> </td><td>consistency check for deep convection </td><td>.true. </td></tr>
+<tr>
+<td>shal_cnv </td><td>gfs_suite_interstitial </td><td>flag for calling shallow convection </td><td>.false. </td></tr>
+<tr>
+<td>lmfshal </td><td>gfs_rrtmg_pre </td><td>flag for mass-flux shallow convection scheme in the cloud fraction calculation </td><td>shal_cnv .and. (imfshalcnv &gt; 0) </td></tr>
+<tr>
+<td>lmfdeep2 </td><td>gfs_rrtmg_pre </td><td>flag for mass-flux deep convection scheme in the cloud fraction calculation </td><td>imfdeepcnv == 2 .or. 3 .or.4 </td></tr>
+<tr>
+<td>random_clds </td><td>gfs_phys_time_vary </td><td>flag for whether clouds are random </td><td>.false. </td></tr>
+<tr>
+<td>trans_trac </td><td>gfs_suite_interstitial </td><td>flag for convective transport of tracers </td><td>.false. </td></tr>
+<tr>
+<td>cal_pre </td><td>gfs_phys_time_vary or gfs_MP_generic </td><td>flag for calling precipitation type algorithm </td><td>.false. </td></tr>
+<tr>
+<td>shcnvcw </td><td>samfshalcnv </td><td>flag for shallow convective cloud </td><td>.false. </td></tr>
+<tr>
+<td>progsigma </td><td>samfshalcnv, samfdeepcnv </td><td>flag for prognostic updraft area fraction closure in saSAS </td><td>.false. </td></tr>
+<tr>
+<td>betascu </td><td>samfshalcnv, samfdeepcnv, cu_c3_driver </td><td>tuning parameter for prognostic closure shallow clouds </td><td>8.0 </td></tr>
+<tr>
+<td>betamcu </td><td>samfshalcnv, samfdeepcnv, cu_c3_driver </td><td>tuning parameter for prognostic closure midlevel clouds </td><td>1.0 </td></tr>
+<tr>
+<td>betadcu </td><td>samfshalcnv, samfdeepcnv, cu_c3_driver </td><td>tuning parameter for prognostic closure deep clouds </td><td>2.0 </td></tr>
+<tr>
+<td colspan="4" align="center"><b>Parameters</b> <b>related</b> <b>to</b> <b>PBL</b> <b>scheme</b> <b>options</b> </td></tr>
+<tr>
+<td>do_mynnedmf </td><td><a class="el" href="namespacemynnedmf__wrapper.html" title="The following references best describe the code within Olson et al. (2019, NOAA Technical Memorandum)...">mynnedmf_wrapper</a> </td><td>flag to activate MYNN-EDMF scheme </td><td>.false. </td></tr>
+<tr>
+<td>dspheat </td><td><a class="el" href="namespacesatmedmfvdifq.html" title="satmedmfvdifq">satmedmfvdifq</a> </td><td>flag for using TKE dissipative heating to temperature tendency in hybrid EDMF and TKE-EDMF schemes </td><td>.false. </td></tr>
+<tr>
+<td>satmedmf </td><td><a class="el" href="namespacesatmedmfvdifq.html" title="satmedmfvdifq">satmedmfvdifq</a> </td><td>flag for calling scale-ware TKE-based EDMF PBL scheme </td><td>.false. </td></tr>
+<tr>
+<td>isatmedmf </td><td><a class="el" href="namespacesatmedmfvdifq.html" title="satmedmfvdifq">satmedmfvdifq</a> </td><td>flag for scale-aware TKE-based moist EDMF scheme <br  />
+ <ul>
+<li>
+0: initial version of satmedmf (Nov.2018) </li>
+<li>
+1: updated version of satmedmf (as of May 2019) </li>
+</ul>
+</td><td>0 </td></tr>
+<tr>
+<td>do_ysu </td><td>see <em class="arg">GFS_typedefs.F90</em> </td><td>flag for YSU PBL scheme </td><td>.false. </td></tr>
+<tr>
+<td>debug </td><td>see <em class="arg">GFS_typedefs.F90</em> </td><td>flag for debug printout </td><td>.false. </td></tr>
+<tr>
+<td>xkzm_h </td><td><a class="el" href="namespacesatmedmfvdifq.html" title="satmedmfvdifq">satmedmfvdifq</a> </td><td>background vertical diffusion for heat and q </td><td>1.0d0 </td></tr>
+<tr>
+<td>xkzm_m </td><td><a class="el" href="namespacesatmedmfvdifq.html" title="satmedmfvdifq">satmedmfvdifq</a> </td><td>background vertical diffusion for momentum </td><td>1.0d0 </td></tr>
+<tr>
+<td>xkzm_s </td><td><a class="el" href="namespacesatmedmfvdifq.html" title="satmedmfvdifq">satmedmfvdifq</a> </td><td>sigma threshold for background mom. diffusion </td><td>1.0d0 </td></tr>
+<tr>
+<td>dspfac </td><td><a class="el" href="namespacesatmedmfvdifq.html" title="satmedmfvdifq">satmedmfvdifq</a> </td><td>TKE dissipative heating factor </td><td>1.0 </td></tr>
+<tr>
+<td>bl_upfr </td><td><a class="el" href="namespacesatmedmfvdifq.html" title="satmedmfvdifq">satmedmfvdifq</a> </td><td>updraft fraction in boundary layer mass flux scheme </td><td>0.13 </td></tr>
+<tr>
+<td>bl_dnfr </td><td><a class="el" href="namespacesatmedmfvdifq.html" title="satmedmfvdifq">satmedmfvdifq</a> </td><td>downdraft fraction in boundary layer mass flux scheme </td><td>0.1 </td></tr>
+<tr>
+<td>rlmx </td><td><a class="el" href="namespacesatmedmfvdifq.html" title="satmedmfvdifq">satmedmfvdifq</a> </td><td>maximum allowed mixing length in boundary layer mass flux scheme </td><td>300. </td></tr>
+<tr>
+<td>elmx </td><td><a class="el" href="namespacesatmedmfvdifq.html" title="satmedmfvdifq">satmedmfvdifq</a> </td><td>maximum allowed dissipation mixing length in boundary layer mass flux scheme </td><td>300. </td></tr>
+<tr>
+<td>sfc_rlm </td><td><a class="el" href="namespacesatmedmfvdifq.html" title="satmedmfvdifq">satmedmfvdifq</a> </td><td>choice of near surface mixing lenghth in boundary layer mass flux scheme </td><td>0 </td></tr>
+<tr>
+<td>tc_pbl </td><td><a class="el" href="namespacesatmedmfvdifq.html" title="satmedmfvdifq">satmedmfvdifq</a> </td><td>control for TC applications in the PBL scheme </td><td>0 </td></tr>
+<tr>
+<td>bl_mynn_mixlength </td><td><a class="el" href="namespacemynnedmf__wrapper.html" title="The following references best describe the code within Olson et al. (2019, NOAA Technical Memorandum)...">mynnedmf_wrapper</a> </td><td>flag for different version of mixing length formulation <br  />
+ <ul>
+<li>
+0: Original form from Nakanishi and Niino (2009) <a class="el" href="citelist.html#CITEREF_nakanishi_2009">[148]</a> . NO scale-awareness is applied to the master mixing length, regardless of "scaleware" setting </li>
+<li>
+1: HRRR operational form 201609-201807. Designed to work without the mass-flux scheme. Uses BouLac mixing length in free atmosphere. </li>
+<li>
+2: HRRR operational form 201807-present. Designed to be compatible with mass-flux scheme activated (default) </li>
+</ul>
+</td><td>2 </td></tr>
+<tr>
+<td>bl_mynn_edmf </td><td><a class="el" href="namespacemynnedmf__wrapper.html" title="The following references best describe the code within Olson et al. (2019, NOAA Technical Memorandum)...">mynnedmf_wrapper</a> </td><td>flag to activate the mass-flux scheme <br  />
+ <ul>
+<li>
+0: deactivate mass-flux scheme </li>
+<li>
+1: activate dynamic multiplume mass-flux scheme </li>
+</ul>
+</td><td>0 </td></tr>
+<tr>
+<td>bl_mynn_edmf_mom </td><td><a class="el" href="namespacemynnedmf__wrapper.html" title="The following references best describe the code within Olson et al. (2019, NOAA Technical Memorandum)...">mynnedmf_wrapper</a> </td><td>flag to activate the transport of momentum <br  />
+ <ul>
+<li>
+0: deactivate momentum transport in mass-flux scheme </li>
+<li>
+1: activate momentum transport in dynamic multiplume mass-flux scheme. <code class="param">bl_mynn_edmf</code> must be set to 1 </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>bl_mynn_edmf_tke </td><td><a class="el" href="namespacemynnedmf__wrapper.html" title="The following references best describe the code within Olson et al. (2019, NOAA Technical Memorandum)...">mynnedmf_wrapper</a> </td><td>flag to activate the transport of TKE <br  />
+ <ul>
+<li>
+0: deactivate TKE transport in mass-flux scheme </li>
+<li>
+1: activate TKE transport in dynamic multiplume mass-flux scheme. <code class="param">bl_mynn_edmf</code> must be set to 1 </li>
+</ul>
+</td><td>0 </td></tr>
+<tr>
+<td>bl_mynn_tkeadvect </td><td><a class="el" href="namespacemynnedmf__wrapper.html" title="The following references best describe the code within Olson et al. (2019, NOAA Technical Memorandum)...">mynnedmf_wrapper</a> </td><td>activate computation of TKE advection (not yet in use for FV3) <br  />
+ <ul>
+<li>
+false: deactivate TKE advection </li>
+<li>
+true: activate TKE advection </li>
+</ul>
+</td><td>.false. </td></tr>
+<tr>
+<td>tke_budget </td><td><a class="el" href="namespacemynnedmf__wrapper.html" title="The following references best describe the code within Olson et al. (2019, NOAA Technical Memorandum)...">mynnedmf_wrapper</a> </td><td>flag to activating TKE budget </td><td>0 </td></tr>
+<tr>
+<td>bl_mynn_cloudpdf </td><td><a class="el" href="namespacemynnedmf__wrapper.html" title="The following references best describe the code within Olson et al. (2019, NOAA Technical Memorandum)...">mynnedmf_wrapper</a> </td><td>flag to determine which cloud PDF to use <br  />
+ <ul>
+<li>
+0: use Sommeria-Deardorff subgrid cloud PDF </li>
+<li>
+1: use Kuwano-Yoshida subgrid cloud PDF </li>
+<li>
+2: use modified Chaboureau-Bechtold subgrid cloud PDF </li>
+</ul>
+</td><td>2 </td></tr>
+<tr>
+<td>bl_mynn_edmf_cloudmix </td><td><a class="el" href="namespacemynnedmf__wrapper.html" title="The following references best describe the code within Olson et al. (2019, NOAA Technical Memorandum)...">mynnedmf_wrapper</a> </td><td>flag to activate mixing of cloud species <br  />
+ <ul>
+<li>
+0: deactivate the mixing of any water species mixing ratios </li>
+<li>
+1: activate the mixing of all water species mixing ratios </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>bl_mynn_mixqt </td><td><a class="el" href="namespacemynnedmf__wrapper.html" title="The following references best describe the code within Olson et al. (2019, NOAA Technical Memorandum)...">mynnedmf_wrapper</a> </td><td>flag to mix total water or individual species <br  />
+ <ul>
+<li>
+0: mix individual water species separately </li>
+<li>
+1: DO NOT USE </li>
+</ul>
+</td><td>0 </td></tr>
+<tr>
+<td>icloud_bl </td><td><a class="el" href="namespacemynnedmf__wrapper.html" title="The following references best describe the code within Olson et al. (2019, NOAA Technical Memorandum)...">mynnedmf_wrapper</a> </td><td>flag to coupling SGS clouds to radiation <br  />
+ <ul>
+<li>
+0: deactivate coupling subgrid clouds to radiation </li>
+<li>
+1: activate subgrid cloud coupling to radiation (highly suggested) </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>bl_mynn_closure </td><td><a class="el" href="namespacemynnedmf__wrapper.html" title="The following references best describe the code within Olson et al. (2019, NOAA Technical Memorandum)...">mynnedmf_wrapper</a> </td><td>flag to determine closure level of MYNN <br  />
+ <ul>
+<li>
+&lt;=2.5: only prognose tke </li>
+<li>
+2.5 &lt; and &lt; 3.0: prognose tke and q'2 </li>
+<li>
+&gt;= 3.0, prognose tke, q'2, T'2, and T'q' </li>
+</ul>
+</td><td>2.6 </td></tr>
+<tr>
+<td>conv_cf_opt </td><td>sgscloud_radpre </td><td>option for convection scheme cloud fraction computation.0: Chaboureau-Bechtold; 1: Xu-Randall </td><td>0 </td></tr>
+<tr>
+<td>gf_coldstart </td><td><a class="el" href="namespacecu__gf__driver.html" title="This module contains the scale-aware Grell-Freitas cumulus scheme driver.">cu_gf_driver</a> </td><td>flag for cold start GF </td><td>.false. </td></tr>
+<tr>
+<td>num_dfi_radar </td><td><a class="el" href="namespacecu__gf__driver.html" title="This module contains the scale-aware Grell-Freitas cumulus scheme driver.">cu_gf_driver</a> </td><td>number of timespans with radar-prescried temperature tendencies </td><td>0 </td></tr>
+<tr>
+<td>fh_dfi_radar </td><td><a class="el" href="namespacecu__gf__driver.html" title="This module contains the scale-aware Grell-Freitas cumulus scheme driver.">cu_gf_driver</a> </td><td>begin+end of timespans to receive radar-prescribed temperature tendencies </td><td>-2e10 </td></tr>
+<tr>
+<td>do_cap_suppress </td><td><a class="el" href="namespacecu__gf__driver.html" title="This module contains the scale-aware Grell-Freitas cumulus scheme driver.">cu_gf_driver</a> </td><td>enable convection suppression in GF scheme if fh_dfi_radar is specified </td><td>.true. </td></tr>
+<tr>
+<td>ix_dfi_radar </td><td><a class="el" href="namespacecu__gf__driver.html" title="This module contains the scale-aware Grell-Freitas cumulus scheme driver.">cu_gf_driver</a> </td><td>index within dfi_radar_tten of each timespan (-1 means "none") </td><td>-1 </td></tr>
+<tr>
+<td>dfi_radar_max_intervals </td><td><a class="el" href="namespacecu__gf__driver.html" title="This module contains the scale-aware Grell-Freitas cumulus scheme driver.">cu_gf_driver</a> </td><td>number of radar-derived temperature tendency and/or convection suppression intervals </td><td>4 </td></tr>
+<tr>
+<td colspan="4" align="center"><b>Parameters</b> <b>related</b> <b>to</b> <b>surface</b> <b>perturbation</b> <b>options</b> </td></tr>
+<tr>
+<td>nsfcpert </td><td>gfs_surface_generic_pre </td><td>number of weights for stochastic surface perturbation </td><td>0 </td></tr>
+<tr>
+<td>pertz0 </td><td>gfs_surface_generic_pre </td><td>magnitude of perturbation of momentum roughness length </td><td>-999. </td></tr>
+<tr>
+<td>pertzt </td><td>gfs_surface_generic_pre </td><td>magnitude of perturbation of heat to momentum roughness length ratio </td><td>-999. </td></tr>
+<tr>
+<td>pertshc </td><td>gfs_surface_generic_pre </td><td>magnitude of perturbation of soil hydraulic conductivity </td><td>-999. </td></tr>
+<tr>
+<td>pertlai </td><td>gfs_surface_generic_pre </td><td>magnitude of perturbation of leaf area index </td><td>-999. </td></tr>
+<tr>
+<td>pertalb </td><td>gfs_surface_generic_pre </td><td>magnitude of surface albedo perturbation </td><td>-999. </td></tr>
+<tr>
+<td>pertvegf </td><td>gfs_surface_generic_pre </td><td>magnitude of perturbation of vegetation fraction </td><td>-999. </td></tr>
+<tr>
+<td colspan="4" align="center"><b>Parameters</b> <b>related</b> <b>to</b> <b>Cellular</b> <b>Automata</b> <b>options</b> </td></tr>
+<tr>
+<td>do_ca </td><td><a class="el" href="namespacesamfdeepcnv.html" title="samfdeepcnv">samfdeepcnv</a>, gfs_stochastics </td><td>cellular automata main switch </td><td>.false. </td></tr>
+<tr>
+<td>ca_closure </td><td><a class="el" href="namespacesamfdeepcnv.html" title="samfdeepcnv">samfdeepcnv</a> </td><td>logical switch for CA on closure </td><td>.false </td></tr>
+<tr>
+<td>ca_entr </td><td><a class="el" href="namespacesamfdeepcnv.html" title="samfdeepcnv">samfdeepcnv</a> </td><td>logical swith for CA on entrainment </td><td>.false </td></tr>
+<tr>
+<td>ca_trigger </td><td><a class="el" href="namespacesamfdeepcnv.html" title="samfdeepcnv">samfdeepcnv</a> </td><td>logical switch for CA on trigger </td><td>.false. </td></tr>
+<tr>
+<td colspan="4" align="center"><b>Parameters</b> <b>related</b> <b>to</b> <b>microphysics</b> <b>scheme</b> <b>options</b> </td></tr>
+<tr>
+<td>lradar </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>flag for computing radar reflectivity in Thompson MP scheme </td><td>.false. </td></tr>
+<tr>
+<td>sedi_transport </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>flag for turning on horizontal momentum transport during sedimentation </td><td>.true. </td></tr>
+<tr>
+<td>do_sedi_w </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td><em class="arg"></em>.true. to turn on vertical motion transport during sedimentation. (not supported in GFS physics) </td><td>.false. </td></tr>
+<tr>
+<td>do_sedi_heat </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>flag for turning on horizontal heat transport during sedimentation </td><td>.true. </td></tr>
+<tr>
+<td>rad_snow </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>flag for considering snow in cloud fraction calculation </td><td>.true. </td></tr>
+<tr>
+<td>rad_graupel </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>flag for considering graupel in cloud fraction calculation </td><td>.true. </td></tr>
+<tr>
+<td>rad_rain </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>flag for considering rain in cloud fraction calculation </td><td>.true. </td></tr>
+<tr>
+<td>cld_min </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>minimum cloud fraction. If total cloud condensate exceeds 1.0e-6 kg/kg, cloud fraction cannot be less than <code class="param">cld_min</code> </td><td>0.05 </td></tr>
+<tr>
+<td>const_vi </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>flag for using constant cloud ice fall speed </td><td>.false. </td></tr>
+<tr>
+<td>const_vs </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>flag for using constant snow fall speed </td><td>.false. </td></tr>
+<tr>
+<td>const_vg </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>flag for using constant graupel fall speed </td><td>.false. </td></tr>
+<tr>
+<td>const_vr </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>flag for using constant rain fall speed </td><td>.false. </td></tr>
+<tr>
+<td>vi_fac </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>tunable factor for cloud ice fall or the constant cloud ice fall speed when <code class="param">const_vi</code> is .true. </td><td>1. </td></tr>
+<tr>
+<td>vr_fac </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>tunable factor for rain fall or the constant rain fall speed when <code class="param">const_vr</code> is .true. </td><td>1. </td></tr>
+<tr>
+<td>vs_fac </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>tunable factor for snow fall or the constant snow fall speed when <code class="param">const_vs</code> is .true. </td><td>1. </td></tr>
+<tr>
+<td>vg_fac </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>tunable factor for graupel fall or the constant graupel fall speed when <code class="param">const_vg</code> is .true. </td><td>1. </td></tr>
+<tr>
+<td>vi_max </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>maximum fall speed for cloud ice </td><td>0.5 </td></tr>
+<tr>
+<td>vs_max </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>maximum fall speed for snow </td><td>5.0 </td></tr>
+<tr>
+<td>vg_max </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>maximum fall speed for graupel </td><td>8.0 </td></tr>
+<tr>
+<td>vr_max </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>maximum fall speed for rain </td><td>12.0 </td></tr>
+<tr>
+<td>qi_lim </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>cloud ice limiter to prevent large ice built up in cloud ice freezing and deposition </td><td>1. </td></tr>
+<tr>
+<td>prog_ccn </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>flag for activating prognostic CCN (not supported in GFS Physics) </td><td>.false. </td></tr>
+<tr>
+<td>do_qa </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td><em class="arg"></em>.true. to activate inline cloud fraction diagnosis in fast saturation adjustment. <em class="arg"></em>.false. to activate inline cloud fraction diagnosis in major cloud microphysics </td><td>.true. </td></tr>
+<tr>
+<td>fast_sat_adj </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>flag for adjusting cloud water evaporation (cloud water -&gt; water vapor), cloud water freezing (cloud water -&gt; cloud ice), cloud ice deposition (water vapor -&gt; cloud ice) when fast saturation adjustment is activated (<b>do_sat_adj</b> = .true. in <b>fv_core_nml</b> block) </td><td>.true. </td></tr>
+<tr>
+<td>tau_l2v </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>time scale for evaporation of cloud water to water vapor. Increasing(decreasing) <code class="param">tau_l2v</code> can decrease(boost) deposition of cloud water to water vapor </td><td>300. </td></tr>
+<tr>
+<td>tau_v2l </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>time scale for condensation of water vapor to cloud water. Increasing(decreasing) <code class="param">tau_v2l</code> can decrease(boost) condensation of water vapor to cloud water </td><td>150. </td></tr>
+<tr>
+<td>tau_g2v </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>time scale for sublimation of graupel to water vapor. Increasing(decreasing) <code class="param">tau_g2v</code> can decrease(boost) sublimation of graupel to water vapor </td><td>900. </td></tr>
+<tr>
+<td>tau_g2r </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>time scale for graupel melting. Increasing(decreasing) <code class="param">tau_g2r</code> can decrease(boost) melting of graupel to rain (graupel-&gt; rain) </td><td>600. </td></tr>
+<tr>
+<td>tau_v2g </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>time scale for deposition of water vapor to graupel. Increasing(decreasing) <code class="param">tau_v2g</code> can decrease(boost) deposition of water vapor to graupel (water vapor -&gt; graupel) </td><td>21600. </td></tr>
+<tr>
+<td>tau_l2r </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>time scale for autoconversion of cloud water to rain. Increasing(decreasing) <code class="param">tau_l2r</code> can decrese(boost) autoconversion of cloud water to rain (cloud water -&gt; rain) </td><td>900. </td></tr>
+<tr>
+<td>tau_r2g </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>time scale for freezing of rain to graupel. Increasing(decreasing) <code class="param">tau_r2g</code> can decrease(boost) freezing of rain to graupel (rain-&gt;graupel) </td><td>900. </td></tr>
+<tr>
+<td>tau_i2s </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>time scale for autoconversion of cloud ice to snow. Increasing(decreasing) <code class="param">tau_i2s</code> can decrease(boost) autoconversion of cloud ice to snow (cloud ice -&gt; snow) </td><td>1000. </td></tr>
+<tr>
+<td>tau_imlt </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>time scale for cloud ice melting. Increasing(decreasing) <code class="param">tau_imlt</code> can decrease(boost) melting of cloud ice to cloud water or rain (cloud ice -&gt; cloud water or rain) </td><td>600. </td></tr>
+<tr>
+<td>tau_smlt </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>time scale for snow melting. Increasing(decreasing) <code class="param">tau_smlt</code> can decrease(boost) melting of snow to cloud water or rain (snow-&gt; cloud water or rain) </td><td>900. </td></tr>
+<tr>
+<td>rthresh </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>critical cloud water radius for autoconversion (cloud water -&gt; rain). Increasing(decreasing) of <code class="param">rthresh</code> makes the autoconversion harder(easier) </td><td>10.0e-6 </td></tr>
+<tr>
+<td>dw_land </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>base value for subgrid deviation/variability over land </td><td>0.20 </td></tr>
+<tr>
+<td>dw_ocean </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>base value for subgrid deviation/variability over ocean </td><td>0.10 </td></tr>
+<tr>
+<td>ql_gen </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>maximum value for cloud water generated from condensation of water vapor (water vapor-&gt; cloud water) </td><td>1.0e-3 </td></tr>
+<tr>
+<td>qi_gen </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>maximum value of cloud ice generated from deposition of water vapor (water vapor-&gt;cloud ice) or freezing(cloud water -&gt; cloud ice). Increasing(decreasing) <code class="param">qi_gen</code> can increas(decrease) cloud ice </td><td>1.82e-6 </td></tr>
+<tr>
+<td>ql_mlt </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>maximum value of cloud water allowed from melted cloud ice (cloud ice -&gt; cloud water or rain). Exceedance of which will become rain. Increasing(decreasing) <code class="param">ql_mlt</code> can increase(decrease) cloud water and decrease(increase) rain </td><td>2.0e-3 </td></tr>
+<tr>
+<td>qs_mlt </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>maximum value of cloud water allowed from melted snow (snow -&gt; cloud water or rain). Exceedance of which will become rain. Increasing(decreasing) <code class="param">qs_mlt</code> can increas(decrease) cloud water and decrease (increase) rain </td><td>1.0e-6 </td></tr>
+<tr>
+<td>ql0_max </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>threshold of cloud water to rain autoconversion (cloud water -&gt; rain). Increasing(decreasing) <code class="param">ql0_max</code> can increase(decrease) rain and decrease(increase) cloud water </td><td>2.0e-3 </td></tr>
+<tr>
+<td>qi0_max </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>maximum value of cloud ice generated from other sources like convection. Exceedance of which will become snow. Increasing(decreasing) <code class="param">qi0_max</code> can increase(decrease) cloud ice and decrease(increase) snow </td><td>1.0e-4 </td></tr>
+<tr>
+<td>qi0_crt </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>threshold of cloud ice to snow autoconversion (cloud ice -&gt; snow). Increasing(decreasing) <code class="param">qi0_crt</code> can increase(decrease) cloud ice and decrease(increase) snow </td><td>1.0e-4 </td></tr>
+<tr>
+<td>qs0_crt </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>threshold of snow to graupel autoconversion (snow -&gt; graupel). Increasing(decreasing) <code class="param">qs0_crt</code> can increase(decrease) snow and decrease(increase) graupel </td><td>1.0e-3 </td></tr>
+<tr>
+<td>qc_crt </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>minimum value of cloud condensate to allow partial cloudiness. Partial cloud can only exist when total cloud condensate exceeds <code class="param">qc_crt</code> </td><td>5.0e-8 </td></tr>
+<tr>
+<td>c_psaci </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>accretion efficiency of cloud ice to snow (cloud ice -&gt; snow). Increasing(decreasing) of <code class="param">c_psaci</code> can boost(decrease) the accretion of cloud ice to snow </td><td>0.02 </td></tr>
+<tr>
+<td>c_pgacs </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>accretion efficiency of snow to graupel (snow -&gt; graupel). Increasing(decreasing) of <code class="param">c_pgacs</code> can boost(decrease) the accretion of snow to graupel </td><td>2.0e-3 </td></tr>
+<tr>
+<td>reiflag </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>cloud ice effective radius schme <br  />
+ <ul>
+<li>
+1: Heymsfield and Mcfarquhar (1996) </li>
+<li>
+2: Wyser (1998) </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>rh_inc </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>relative humidity increment for complete evaporation of cloud water and cloud ice </td><td>0.25 </td></tr>
+<tr>
+<td>rh_inr </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>relative humidity increment for sublimation of snow </td><td>0.25 </td></tr>
+<tr>
+<td>rh_ins </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>relative humidity increment for minimum evaporation of rain </td><td>0.25 </td></tr>
+<tr>
+<td>rthresh </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>critical cloud water radius for autoconversion(cloud water-&gt;rain). Increasing(decreasing) of <code class="param">rthresh</code> makes the autoconversion harder(easier) </td><td>1.0e-5 </td></tr>
+<tr>
+<td>ccn_l </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>base CCN over land. Increasing(decreasing) <code class="param">ccn_l</code> can on the one hand boost(decrease) the autoconversion of cloud water to rain, on the other hand make the autoconversion harder(easier). The unit is \(cm^{-3}\) </td><td>270. </td></tr>
+<tr>
+<td>ccn_o </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>base CCN over ocean. Increasing(decreasing) <code class="param">ccn_o</code> can on the one hand boost(decrease) the autoconversion of cloud water to rain, on the other hand make the autoconversion harder(easier). The unit is \(cm^{-3}\) </td><td>90. </td></tr>
+<tr>
+<td>c_paut </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>autoconversion efficiency of cloud water to rain (cloud water -&gt; rain). Increasing(decreasing) of <code class="param">c_paut</code> can boost(decrease) the autoconversion of cloud water to rain </td><td>0.55 </td></tr>
+<tr>
+<td>c_cracw </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>accretion efficiency of cloud water to rain (cloud water -&gt; rain). Increasing(decreasing) of <code class="param">c_cracw</code> can boost(decrease) the accretion of cloud water to rain </td><td>0.9 </td></tr>
+<tr>
+<td>sat_adj0 </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>adjust factor for condensation of water vapor to cloud water (water vapor-&gt;cloud water) and deposition of water vapor to cloud ice </td><td>0.9 </td></tr>
+<tr>
+<td>use_ppm </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td><em>true</em> to use PPM fall scheme; <em>false</em> to use time-implicit monotonic fall scheme </td><td>.false. </td></tr>
+<tr>
+<td>use_ccn </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td><em>true</em> to compute prescribed CCN. It should be .true. when <code class="param">prog_ccn</code> = .false. </td><td>.false. </td></tr>
+<tr>
+<td>mono_prof </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td><em>true</em> to turn on terminal fall with monotonic PPM scheme. This is used together with <code class="param">use_ppm=</code>.true. </td><td>.true. </td></tr>
+<tr>
+<td>z_slope_liq </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td><em>true</em> to turn on vertically subgrid linear monotonic slope for autoconversion of cloud water to rain </td><td>.true. </td></tr>
+<tr>
+<td>z_slope_ice </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td><em>true</em> to turn on vertically subgrid linear monotonic slope for autoconversion of cloud ice to snow </td><td>.false. </td></tr>
+<tr>
+<td>de_ice </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td><em>true</em> to convert excessive cloud ice to snow to prevent ice over-built from other sources like convection scheme (not supported in GFS physics) </td><td>.false. </td></tr>
+<tr>
+<td>fix_negative </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td><em>true</em> to fix negative water species using nearby points </td><td>.false. </td></tr>
+<tr>
+<td>icloud_f </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>flag (0,1,or 2) for cloud fraction diagnostic scheme </td><td>0 </td></tr>
+<tr>
+<td>irain_f </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>flag (0 or 1) for cloud water autoconversion to rain scheme. 0: with subgrid variability; 1: no subgrid variability </td><td>0 </td></tr>
+<tr>
+<td>mp_time </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>time step of GFDL cloud microphysics (MP). If <code class="param">mp_time</code> isn't divisible by physics time step or is larger than physics time step, the actual MP time step becomes <code class="param">dt/NINT</code>[dt/MIN(dt,mp_time)] </td><td>150. </td></tr>
+<tr>
+<td>alin </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>parameter <em class="arg">a</em> in Lin et al.(1983). Constant in empirical formula for \(U_R\). Increasing(decreasing) <code class="param">alin</code> can boost(decrease) accretion of cloud water by rain and rain evaporation </td><td>842. </td></tr>
+<tr>
+<td>clin </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>parameter <em class="arg">c</em> in Lin et al.(1983). Constant in empirical formula for \(U_S\). Increasing(decreasing) <code class="param">clin</code> can boost(decrease) accretion of cloud water by snow, accretion of cloud ice by snow, snow sublimation and deposition, and snow melting </td><td>4.8 </td></tr>
+<tr>
+<td>t_min </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>temperature threshold for instant deposition. Deposit all water vapor to cloud ice when temperature is lower than <code class="param">t_min</code> </td><td>178. </td></tr>
+<tr>
+<td>t_sub </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td>temperature threshold for sublimation. Cloud ice, snow or graupel stops(starts) sublimation when temperature is lower(higher) then <code class="param">t_sub</code> </td><td>184. </td></tr>
+<tr>
+<td>mp_print </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a> </td><td><em class="arg"></em>.true. to turn on GFDL cloud microphysics debugging print out. (not supported in GFS physics) </td><td>.false. </td></tr>
+<tr>
+<td>ltaerosol </td><td><a class="el" href="namespacemp__thompson.html" title="This module contains the aerosol-aware Thompson microphysics scheme.">mp_thompson</a> </td><td>flag for using aerosol climotology in Thompson MP scheme </td><td>.false. </td></tr>
+<tr>
+<td>mraerosol </td><td><a class="el" href="namespacemynnedmf__wrapper.html" title="The following references best describe the code within Olson et al. (2019, NOAA Technical Memorandum)...">mynnedmf_wrapper</a>, GFS_rrtmg_pre,GFS_PBL_generic_post, GFS_rrtmgp_cloud_mp, GFS_PBL_generic_common, GFS_PBL_generic_pre </td><td>flag for merra2 aerosol aware </td><td>.false. </td></tr>
+<tr>
+<td>lradar </td><td><a class="el" href="namespacemp__thompson.html" title="This module contains the aerosol-aware Thompson microphysics scheme.">mp_thompson</a>,<a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a>,maximum_hourly_diagnostics </td><td>flag for radar reflectivity </td><td>.false. </td></tr>
+<tr>
+<td>nsfullradar_diag </td><td></td><td>seconds between resetting radar reflectivity calculation </td><td>.-999.0 </td></tr>
+<tr>
+<td>ttendlim </td><td><a class="el" href="namespacemp__thompson.html" title="This module contains the aerosol-aware Thompson microphysics scheme.">mp_thompson</a> </td><td>temperature tendency limiter per time step in K/s, set to &lt; 0 to deactivate </td><td>-999.0 </td></tr>
+<tr>
+<td>ext_diag_thompson </td><td><a class="el" href="namespacemp__thompson.html" title="This module contains the aerosol-aware Thompson microphysics scheme.">mp_thompson</a> </td><td>flag for extended diagnostic output from Thompson MP </td><td>.false. </td></tr>
+<tr>
+<td>thompson_ext_ndiag3d </td><td><a class="el" href="namespacemp__thompson.html" title="This module contains the aerosol-aware Thompson microphysics scheme.">mp_thompson</a> </td><td>number of 3d arrays for extended diagnostic output from Thompson MP </td><td>37 </td></tr>
+<tr>
+<td>dt_inner </td><td><a class="el" href="namespacemp__thompson.html" title="This module contains the aerosol-aware Thompson microphysics scheme.">mp_thompson</a> </td><td>time step for the inner loop in second </td><td>-999.0 </td></tr>
+<tr>
+<td>sedi_semi </td><td><a class="el" href="namespacemp__thompson.html" title="This module contains the aerosol-aware Thompson microphysics scheme.">mp_thompson</a> </td><td>flag for semi Lagrangian sedi of rain </td><td>.false. </td></tr>
+<tr>
+<td>decfl </td><td><a class="el" href="namespacemp__thompson.html" title="This module contains the aerosol-aware Thompson microphysics scheme.">mp_thompson</a> </td><td>deformed CFL factor </td><td>8 </td></tr>
+<tr>
+<td>effr_in </td><td><a class="el" href="namespacegfdl__cloud__microphys.html" title="This module contains the CCPP entry point for the column GFDL cloud microphysics ( Chen and Lin (2013...">gfdl_cloud_microphys</a>, <a class="el" href="namespacemp__thompson.html" title="This module contains the aerosol-aware Thompson microphysics scheme.">mp_thompson</a> </td><td>flag for using input cloud effective radii calculation </td><td>.false. </td></tr>
+<tr>
+<td>cnvcld </td><td>see <em class="arg">GFS_typedefs.F90</em> </td><td>flag for convective cloud </td><td>.false. </td></tr>
+<tr>
+<td>xr_cnvcld </td><td>GFS_rrtmg_pre </td><td>flag for including suspended convective clouds in Xu-Randall cloud fraction </td><td>.true. </td></tr>
+<tr>
+<td>lgfdlmprad </td><td>gfs_rrtmg_pre </td><td>flag for GFDL mp scheme and radiation consistency </td><td>.false. </td></tr>
+<tr>
+<td>nssl_cccn </td><td><a class="el" href="namespacemp__nssl.html" title="This module contains the front end to NSSL microphysics scheme.">mp_nssl</a> </td><td>CCN concentration (m^-3) </td><td>0.6e9 </td></tr>
+<tr>
+<td>nssl_alphah </td><td><a class="el" href="namespacemp__nssl.html" title="This module contains the front end to NSSL microphysics scheme.">mp_nssl</a> </td><td>graupel PSD shape parameter </td><td>0.0 </td></tr>
+<tr>
+<td>nssl_alphahl </td><td><a class="el" href="namespacemp__nssl.html" title="This module contains the front end to NSSL microphysics scheme.">mp_nssl</a> </td><td>hail PSD shape parameter </td><td>1.0 </td></tr>
+<tr>
+<td>nssl_alphar </td><td><a class="el" href="namespacemp__nssl.html" title="This module contains the front end to NSSL microphysics scheme.">mp_nssl</a> </td><td>PSD shape parameter for rain </td><td>0.0 </td></tr>
+<tr>
+<td>nssl_ehw0 </td><td><a class="el" href="namespacemp__nssl.html" title="This module contains the front end to NSSL microphysics scheme.">mp_nssl</a> </td><td>constant or max assumed graupel-droplet collection efficiency </td><td>0.9 </td></tr>
+<tr>
+<td>nssl_ehlw0 </td><td><a class="el" href="namespacemp__nssl.html" title="This module contains the front end to NSSL microphysics scheme.">mp_nssl</a> </td><td>constant or max assumed hail-droplet collection efficiency </td><td>0.9 </td></tr>
+<tr>
+<td>nssl_hail_on </td><td><a class="el" href="namespacemp__nssl.html" title="This module contains the front end to NSSL microphysics scheme.">mp_nssl</a> </td><td>NSSL flag to activate the hail category </td><td>.false. </td></tr>
+<tr>
+<td>nssl_3moment </td><td><a class="el" href="namespacemp__nssl.html" title="This module contains the front end to NSSL microphysics scheme.">mp_nssl</a> </td><td>NSSL flag to activate 3-moment for rain/graupel (and hail if activated)</td><td>.false. </td></tr>
+<tr>
+<td>ssl_ccn_on </td><td><a class="el" href="namespacemp__nssl.html" title="This module contains the front end to NSSL microphysics scheme.">mp_nssl</a> </td><td>NSSL flag to activate the CCN category </td><td>.true. </td></tr>
+<tr>
+<td>nssl_invertccn </td><td><a class="el" href="namespacemp__nssl.html" title="This module contains the front end to NSSL microphysics scheme.">mp_nssl</a> </td><td>NSSL flag to treat CCN as activated (.true.) or unactivated (.false.) </td><td>.true. </td></tr>
+<tr>
+<td colspan="4" align="center"><b>Parameters</b> <b>related</b> <b>to</b> <b>gravity</b> <b>drag</b> <b>scheme</b> <b>options</b> </td></tr>
+<tr>
+<td>knob_ugwp_version </td><td><a class="el" href="namespacecires__ugwp.html" title="This module contains the UGWP v0 scheme by Valery Yudin (University of Colorado, CIRES).">cires_ugwp</a> </td><td>parameter selects a version of the UGWP implementation in FV3GFS-127L <br  />
+ <ul>
+<li>
+0: default version delivered to EMC in Jan 2019 for implementation </li>
+<li>
+1: version of UGWP under development that plans to consider the physics-based sources of NGWs (<b>knob_ugwp_wvspec</b> [2:4]), options for stochastic and deterministic excitation of waves (<b>knob_ugwp_stoch</b>), and switches between different UGWP schemes (<b>knob_ugwp_solver</b>) </li>
+</ul>
+</td><td>0 </td></tr>
+<tr>
+<td>knob_ugwp_doaxyz </td><td><a class="el" href="namespacecires__ugwp.html" title="This module contains the UGWP v0 scheme by Valery Yudin (University of Colorado, CIRES).">cires_ugwp</a> </td><td>parameter controls application of the momentum deposition for NGW-schemes <br  />
+ <ul>
+<li>
+0: the momentum tendencies due to NGWs are calculated, but tendencies do not change the horizontal winds </li>
+<li>
+1: default value; it changes the horizontal momentum tendencies and horizontal winds </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>knob_ugwp_doheat </td><td><a class="el" href="namespacecires__ugwp.html" title="This module contains the UGWP v0 scheme by Valery Yudin (University of Colorado, CIRES).">cires_ugwp</a> </td><td>parameter controls application of the heat deposition for NGW-schemes <br  />
+ <ul>
+<li>
+0: the temperature tendencies due to NGWs are calculated but tendencies do not change the temperature state </li>
+<li>
+1: default value; it changes the temperature tendencies and kinetic temperature </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>knob_ugwp_dokdis </td><td><a class="el" href="namespacecires__ugwp.html" title="This module contains the UGWP v0 scheme by Valery Yudin (University of Colorado, CIRES).">cires_ugwp</a> </td><td>parameter controls application of the eddy diffusion due to instability of NGWs <br  />
+ <ul>
+<li>
+0: the eddy diffusion tendencies due to NGWs are calculated but tendencies do not change the model state vector </li>
+<li>
+1: it computes eddy diffusion coefficient due to instability of NGWs; in UGWP v0, eddy viscosity, heat conductivity and tracer diffusion are not activated </li>
+</ul>
+</td><td>0 </td></tr>
+<tr>
+<td>knob_ugwp_solver </td><td><a class="el" href="namespacecires__ugwp.html" title="This module contains the UGWP v0 scheme by Valery Yudin (University of Colorado, CIRES).">cires_ugwp</a> </td><td>parameter controls the selection of UGWP-solvers(wave propagation, dissipation and wave breaking) for NGWs <br  />
+ <ul>
+<li>
+1: represents the discrete multi-wave solver with background dissipation and linear wave saturation </li>
+<li>
+2: represents the spectral deterministic solver with background dissipation and spectral saturation </li>
+<li>
+3: represents the discrete multi-wave solver with the background dissipation, extension of Alexander sand Dunkerton (1999) </li>
+<li>
+4: represents the spectral solver with background dissipation, extension of Doppler Spread Theory of Hines (1997) </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>knob_ugwp_ndx4lh </td><td><a class="el" href="namespacecires__ugwp.html" title="This module contains the UGWP v0 scheme by Valery Yudin (University of Colorado, CIRES).">cires_ugwp</a> </td><td>parameter controls the selection of the horizontal wavenumber(wavelength) for NGW schemes <br  />
+ <ul>
+<li>
+1: selects the \(4xdx\) sub-grid wavelength, where dx is the horizontal resolution of the model configuration (C96-400km; C768-52km) </li>
+</ul>
+</td><td>2 </td></tr>
+<tr>
+<td>knob_ugwp_wvspec </td><td><a class="el" href="namespacecires__ugwp.html" title="This module contains the UGWP v0 scheme by Valery Yudin (University of Colorado, CIRES).">cires_ugwp</a> </td><td>four-dimensional array defines number of waves in each arimuthal propagation (as defined by knob_ugwp_azdir) for GWs excited due to the following four sources: <br  />
+ (1) sub-grid orography (<b>knob_ugwp_wvspec</b>[1]=1), <br  />
+ (2) convective (<b>knob_ugwp_wvspec</b>[2]=25), <br  />
+ (3) frontal (<b>knob_ugwp_wvspec</b>[3]=25) activity, <br  />
+ (4) <b>knob_ugwp_wvspec</b>[4] represents number of wave excited by dynamical imbalances that may mimic both convective and front-jet mechanisms of GW triggering. <br  />
+ In UGWP v0, first two elements of the array, <b>knob_ugwp_wvspec(1:2)</b>, control number of waves for stationary (OGW) and nonstationary waves (NGWs). </td><td>1,32,32,32 </td></tr>
+<tr>
+<td>knob_ugwp_azdir </td><td><a class="el" href="namespacecires__ugwp.html" title="This module contains the UGWP v0 scheme by Valery Yudin (University of Colorado, CIRES).">cires_ugwp</a> </td><td>four-dimensional array that defines number of azimuths for propagation of GWs triggered by four types of physics-based sources (orography, convection, front-jets, and dynamical imbalance). In UGWP v0, first two elements of the array, <b>knob_ugwp_azdir(1:2)</b>, control number of azimuths for OGW and NGWs respectively. </td><td>2,4,4,4 </td></tr>
+<tr>
+<td>knob_ugwp_stoch </td><td><a class="el" href="namespacecires__ugwp.html" title="This module contains the UGWP v0 scheme by Valery Yudin (University of Colorado, CIRES).">cires_ugwp</a> </td><td>four-dimensional array that control stochastic selection of GWs triggered by four types of physics-based sources. <br  />
+ Default values:0,0,0,0 - reflect determinstic selection of GW parameters without stochastic selection </td><td>0,0,0,0 </td></tr>
+<tr>
+<td>knob_ugwp_effac </td><td><a class="el" href="namespacecires__ugwp.html" title="This module contains the UGWP v0 scheme by Valery Yudin (University of Colorado, CIRES).">cires_ugwp</a> </td><td>four-dimensional array that control efficiency of GWs triggerd by four types of physics-based sources. <br  />
+ Default values: 1.,1.,1.,1. - reflect that calculated GW-tendencies will be applied for the model state. </td><td>1.,1.,1.,1. </td></tr>
+<tr>
+<td>knob_ugwp_tauamp </td><td><a class="el" href="namespaceugwpv1__gsldrag.html" title="This module introduces two gravity wave drag schemes: UGWPv1 and orographic drag scheme.">ugwpv1_gsldrag</a> </td><td>amplitude for GEOS-5/MERRA-2 </td><td>7.75e-3 </td></tr>
+<tr>
+<td>launch_level </td><td><a class="el" href="namespacecires__ugwp.html" title="This module contains the UGWP v0 scheme by Valery Yudin (University of Colorado, CIRES).">cires_ugwp</a> </td><td>parameter has been introduced by EMC during implementation. It defines the interface model level from the surface at which NGWs are launched. <br  />
+ Default value for FV3GFS-64L, launch_level=25 and for FV3GFS-128L, launch_level=52. </td><td>55 </td></tr>
+<tr>
+<td>ldiag_ugwp </td><td><a class="el" href="namespacecires__ugwp.html" title="This module contains the UGWP v0 scheme by Valery Yudin (University of Colorado, CIRES).">cires_ugwp</a> </td><td>flag for CIRES UGWP diagnostics </td><td>.false. </td></tr>
+<tr>
+<td>do_ugwp </td><td><a class="el" href="namespacecires__ugwp.html" title="This module contains the UGWP v0 scheme by Valery Yudin (University of Colorado, CIRES).">cires_ugwp</a> </td><td>flag for CIRES UGWP revised OGW <br  />
+ <ul>
+<li>
+.T.: revised gwdps_v0 </li>
+<li>
+.F.: GFS operational orographic gwdps </li>
+</ul>
+</td><td>.false.; The CIRES Unified Gravity Wave Physics (<a class="el" href="namespacecires__ugwp.html" title="This module contains the UGWP v0 scheme by Valery Yudin (University of Colorado, CIRES).">cires_ugwp</a>) scheme is used in GFSv15p2 and GFSv16beta SDFs with do_ugwp=F in the namelist. In this setting, the <a class="el" href="namespacecires__ugwp.html" title="This module contains the UGWP v0 scheme by Valery Yudin (University of Colorado, CIRES).">cires_ugwp</a> calls the operational GFS v15.2 orographic gravity wave drag (gwdps) scheme. When do_ugwp=.T., the <a class="el" href="namespacecires__ugwp.html" title="This module contains the UGWP v0 scheme by Valery Yudin (University of Colorado, CIRES).">cires_ugwp</a> scheme calls an experimental orographic gravity wave (gwdps_v0) </td></tr>
+<tr>
+<td>do_tofd </td><td><a class="el" href="namespacecires__ugwp.html" title="This module contains the UGWP v0 scheme by Valery Yudin (University of Colorado, CIRES).">cires_ugwp</a> </td><td>flag for turbulent orographic form drag </td><td>.false. </td></tr>
+<tr>
+<td>cnvgwd </td><td><a class="el" href="namespacecires__ugwp.html" title="This module contains the UGWP v0 scheme by Valery Yudin (University of Colorado, CIRES).">cires_ugwp</a> </td><td>flag for convective gravity wave drag scheme dependent on maxval(cdmbgwd(3:4) == 0.0) </td><td>.false. </td></tr>
+<tr>
+<td>cdmbgwd(4) </td><td><a class="el" href="namespacecires__ugwp.html" title="This module contains the UGWP v0 scheme by Valery Yudin (University of Colorado, CIRES).">cires_ugwp</a> </td><td>multiplication factors for mountain blocking(1), orographic gravity wave drag(2) <ul>
+<li>
+[1]: GWDPS mountain blocking </li>
+<li>
+[2]: GWDPS orographic gravity wave drag </li>
+<li>
+[3]: the modulation total momentum flux of NGWs by intensities of the total precipitation </li>
+<li>
+[4]: TKE for future tests and applications </li>
+</ul>
+</td><td>2.0,0.25,1.0,1.0 </td></tr>
+<tr>
+<td>nmtvr </td><td><a class="el" href="namespacecires__ugwp.html" title="This module contains the UGWP v0 scheme by Valery Yudin (University of Colorado, CIRES).">cires_ugwp</a> </td><td>number of topographic variables such as variance etc used in the GWD parameterization-10 more added if GSL orographic drag scheme is used </td><td>14 </td></tr>
+<tr>
+<td>cgwf </td><td><a class="el" href="namespacecires__ugwp.html" title="This module contains the UGWP v0 scheme by Valery Yudin (University of Colorado, CIRES).">cires_ugwp</a>, unified_ugwp </td><td>multiplication factor for convective GWD </td><td>0.5d0,0.05d0 </td></tr>
+<tr>
+<td>do_gwd </td><td>see <em class="arg">GFS_typedefs.F90</em> </td><td>flag for gravity wave drag </td><td>maxval(cdmbgwd) &gt; 0.0 </td></tr>
+<tr>
+<td>gwd_opt </td><td><a class="el" href="namespacedrag__suite.html" title="This module contains the orographic drag scheme.">drag_suite</a> </td><td>flag for GWD scheme <br  />
+ <ul>
+<li>
+1: original GFS GWD </li>
+<li>
+2: Unified UGWP GWD </li>
+<li>
+22: Unified UGWP GWD with extra output </li>
+<li>
+3: GSL drag suite </li>
+<li>
+33: GSL drag suite with extra output </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>do_ugwp_v0 </td><td>unified_ugwp </td><td>flag for version 0 UGWP GWD </td><td>.true. </td></tr>
+<tr>
+<td>do_ugwp_v0_orog_only </td><td>unified_ugwp </td><td>flag for version 0 UGWP GWD (orographic drag only) </td><td>.false. </td></tr>
+<tr>
+<td>do_ugwp_v0_nst_only </td><td>unified_ugwp </td><td>flag for version 0 UGWP GWD (non-stationary GWD only) </td><td>.false. </td></tr>
+<tr>
+<td>do_gsl_drag_ls_bl </td><td>unified_ugwp, <a class="el" href="namespacedrag__suite.html" title="This module contains the orographic drag scheme.">drag_suite</a> </td><td>flag for GSL drag (large-scale GWD and blocking only) </td><td>.false. </td></tr>
+<tr>
+<td>do_gsl_drag_ss </td><td>unified_ugwp, <a class="el" href="namespacedrag__suite.html" title="This module contains the orographic drag scheme.">drag_suite</a> </td><td>flag for GSL drag (small-scale GWD only) </td><td>.false. </td></tr>
+<tr>
+<td>do_gsl_drag_tofd </td><td>unified_ugwp, <a class="el" href="namespacedrag__suite.html" title="This module contains the orographic drag scheme.">drag_suite</a> </td><td>flag for GSL drag (turbulent orog form drag only) </td><td>.false. </td></tr>
+<tr>
+<td>do_gwd_opt_psl </td><td>unified_ugwp, <a class="el" href="namespaceugwpv1__gsldrag.html" title="This module introduces two gravity wave drag schemes: UGWPv1 and orographic drag scheme.">ugwpv1_gsldrag</a> </td><td>flag for PSL drag (mesoscale GWD and blocking only) </td><td>.false. </td></tr>
+<tr>
+<td>do_ugwp_v1 </td><td>GFS_physics_time_vary </td><td>flag for version 1 UGWP </td><td>.false. </td></tr>
+<tr>
+<td>do_ugwp_v1_orog_only </td><td><a class="el" href="namespaceugwpv1__gsldrag.html" title="This module introduces two gravity wave drag schemes: UGWPv1 and orographic drag scheme.">ugwpv1_gsldrag</a> </td><td>flag for version 1 UGWP (orographic drag only) </td><td>.false. </td></tr>
+<tr>
+<td>do_ugwp_v1_w_gsldrag </td><td><a class="el" href="namespaceugwpv1__gsldrag.html" title="This module introduces two gravity wave drag schemes: UGWPv1 and orographic drag scheme.">ugwpv1_gsldrag</a> </td><td>flag for version 1 UGWP (orographic drag only) </td><td>.false. </td></tr>
+<tr>
+<td>alpha_fd </td><td><a class="el" href="namespaceugwpv1__gsldrag.html" title="This module introduces two gravity wave drag schemes: UGWPv1 and orographic drag scheme.">ugwpv1_gsldrag</a>, <a class="el" href="namespacedrag__suite.html" title="This module contains the orographic drag scheme.">drag_suite</a>, unified_ugwp </td><td>alpha coefficient for turbulent orographic form drag </td><td>12.0 </td></tr>
+<tr>
+<td>psl_gwd_dx_factor </td><td><a class="el" href="namespaceugwpv1__gsldrag.html" title="This module introduces two gravity wave drag schemes: UGWPv1 and orographic drag scheme.">ugwpv1_gsldrag</a>, <a class="el" href="namespacedrag__suite.html" title="This module contains the orographic drag scheme.">drag_suite</a>, unified_ugwp </td><td>multiplication factors for grid spacing </td><td>6.0 </td></tr>
+<tr>
+<td colspan="4" align="center"><b>Parameters</b> <b>related</b> <b>to</b> <b>LSM</b> <b>options</b> </td></tr>
+<tr>
+<td>lsm </td><td>see <em class="arg">GFS_typedefs.F90</em> </td><td>flag for land surface model to use <br  />
+ <ul>
+<li>
+1: Noah LSM </li>
+<li>
+2: NoahMP LSM </li>
+<li>
+3: RUC LSM </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>lsoil </td><td><a class="el" href="namespacelsm__noah.html" title="This module contains the CCPP-compliant Noah land surface scheme driver.">lsm_noah</a> </td><td>number of soil layers </td><td>4 </td></tr>
+<tr>
+<td>lsoil_lsm </td><td>GFS_phys_time_vary.scm.F90 </td><td>number of soil layers internal to land surface model; -1 use lsoil </td><td>-1 </td></tr>
+<tr>
+<td>rdlai </td><td><a class="el" href="namespacelsm__ruc.html" title="This module contain the RUC land surface model driver.">lsm_ruc</a> </td><td>flag to read leaf area index from input files </td><td>.false. </td></tr>
+<tr>
+<td>ivegsrc </td><td><a class="el" href="namespacelsm__noah.html" title="This module contains the CCPP-compliant Noah land surface scheme driver.">lsm_noah</a>, <a class="el" href="namespacelsm__ruc.html" title="This module contain the RUC land surface model driver.">lsm_ruc</a>, noahmpdrv, <a class="el" href="namespacesfc__diff.html" title="This module contains the CCPP-compliant GFS surface layer scheme.">sfc_diff</a> </td><td>flag for vegetation type dataset choice: <br  />
+ <ul>
+<li>
+0: USGS </li>
+<li>
+1: IGBP(20 category): IGBP must be selected if NoahMP is used </li>
+<li>
+2: UMD (13 category) </li>
+<li>
+3: NLCD40 (40 category, NOAH WRFv4 only) </li>
+<li>
+4: USGS-RUC (28 category, NOAH WRFv4 only) </li>
+<li>
+5: MODIS-RUC (21 category, NOAH WRFv4 only) </li>
+</ul>
+</td><td>2 </td></tr>
+<tr>
+<td>isot </td><td><a class="el" href="namespacelsm__noah.html" title="This module contains the CCPP-compliant Noah land surface scheme driver.">lsm_noah</a>, <a class="el" href="namespacelsm__ruc.html" title="This module contain the RUC land surface model driver.">lsm_ruc</a>, noahmpdrv </td><td>flag for soil type dataset choice:<br  />
+ <ul>
+<li>
+0: Zobler soil type (9 category) </li>
+<li>
+1: STATSGO soil type (19 category): STATSGO must be selected if NoahMP is used </li>
+<li>
+2: STAS-RUC soil type (19 category, NOAH WRFv4 only </li>
+</ul>
+</td><td>0 </td></tr>
+<tr>
+<td>exticeden </td><td><a class="el" href="namespacelsm__noah.html" title="This module contains the CCPP-compliant Noah land surface scheme driver.">lsm_noah</a>,<a class="el" href="namespacelsm__ruc.html" title="This module contain the RUC land surface model driver.">lsm_ruc</a> </td><td>flag for calculating frozen precip ice density outside of the LSM </td><td>.false. </td></tr>
+<tr>
+<td>iopt_dveg </td><td>noahmpdrv </td><td>options for dynamic vegetation <br  />
+ <ul>
+<li>
+1: off (use table LAI; use FVEG = SHDFAC from input) </li>
+<li>
+2: on (together with <em class="arg">iopt_crs</em> = 1) </li>
+<li>
+3: off (use table LAI; calculate FVEG) </li>
+<li>
+4: off (use table LAI; use maximum vegetation fraction) </li>
+<li>
+5: on (use maximum vegetation fraction) </li>
+<li>
+6: on (use FVEG = SHDFAC from input) </li>
+<li>
+7: off (use input LAI; use FVEG = SHDFAC from input) </li>
+<li>
+8: off (use input LAI; calculate FVEG) </li>
+<li>
+9: off (use input LAI; use maximum vegetation fraction) </li>
+</ul>
+</td><td>4 </td></tr>
+<tr>
+<td>iopt_crs </td><td>noahmpdrv </td><td>options for canopy stomatal resistance <br  />
+ <ul>
+<li>
+1: Ball-Berry </li>
+<li>
+2: Jarvis </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>iopt_btr </td><td>noahmpdrv </td><td>options for soil moisture factor for stomatal resistance <br  />
+ <ul>
+<li>
+1: Noah (soil moisture) </li>
+<li>
+2: CLM (matric potential) </li>
+<li>
+3: SSIB (matric potential) </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>iopt_run </td><td>noahmpdrv </td><td>options for runoff and groundwater <br  />
+ <ul>
+<li>
+1: TOPMODEL with groundwater (Niu et al. 2007 <a class="el" href="citelist.html#CITEREF_niu_et_al_2007">[153]</a>) </li>
+<li>
+2: TOPMODEL with an equilibrium water table (Niu et al. 2005 <a class="el" href="citelist.html#CITEREF_niu_et_al_2005">[152]</a>) </li>
+<li>
+3: original surface and subsurface runoff (free drainage) </li>
+<li>
+4: bats surface and subsurface runoff (free drainage) </li>
+<li>
+5: Miguez-macho&amp;Fan groundwater scheme (Miguez-Macho et al. 2007 <a class="el" href="citelist.html#CITEREF_miguez_et_al_2007">[140]</a>; Fan et al. 2007 <a class="el" href="citelist.html#CITEREF_fan_et_al_2007">[58]</a>; needs further testing for public use) </li>
+</ul>
+</td><td>3 </td></tr>
+<tr>
+<td>iopt_sfc </td><td>noahmpdrv </td><td>options for surface layer drag coeff (CH&amp;CM) <br  />
+ <ul>
+<li>
+1: m-o </li>
+<li>
+2: original Noah (Chen et al. 1997 <a class="el" href="citelist.html#CITEREF_chen_et_al_1997">[35]</a>) </li>
+<li>
+4: MYNN surface layer scheme </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>iopt_frz </td><td>noahmpdrv </td><td>options for supercooled liquid water (or ice fraction) <br  />
+ <ul>
+<li>
+1: no interation (Niu and Yang (2006) <a class="el" href="citelist.html#CITEREF_niu_and_yang_2006">[150]</a> ) </li>
+<li>
+2: Koren's iteration </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>iopt_inf </td><td>noahmpdrv </td><td>options for frozen soil permeability <br  />
+ <ul>
+<li>
+1: linear effects, more permeable (Niu and Yang (2006) <a class="el" href="citelist.html#CITEREF_niu_and_yang_2006">[150]</a>) </li>
+<li>
+2: nonlinear effects, less permeable (old) </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>iopt_rad </td><td>noahmpdrv </td><td>options for radiation transfer <br  />
+ <ul>
+<li>
+1: modified two-stream (gap = f(solar angle, 3d structure ...)&lt;1-fveg) </li>
+<li>
+2: two-stream applied to grid-cell (gap = 0) </li>
+<li>
+3: two-stream applied to vegetated fraction (gap=1-FVEG) </li>
+</ul>
+</td><td>3 </td></tr>
+<tr>
+<td>iopt_alb </td><td>noahmpdrv </td><td>options for ground snow surface albedo <br  />
+ <ul>
+<li>
+1: BATS </li>
+<li>
+2: CLASS </li>
+</ul>
+</td><td>2 </td></tr>
+<tr>
+<td>iopt_snf </td><td>noahmpdrv </td><td>options for partitioning precipitation into rainfall and snowfall <br  />
+ <ul>
+<li>
+1: Jordan (1991) </li>
+<li>
+2: BATS: when sfctmp &lt; tfrz+2.2 </li>
+<li>
+3: sfctmp &lt; tfrz </li>
+<li>
+4: use WRF microphysics output </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>iopt_tbot </td><td>noahmpdrv </td><td>options for lower boundary condition of soil temperature <br  />
+ <ul>
+<li>
+1: zero heat flux from bottom (zbot and tbot not used) </li>
+<li>
+2: tbot at zbot (8m) read from a file (original Noah) </li>
+</ul>
+</td><td>2 </td></tr>
+<tr>
+<td>iopt_stc </td><td>noahmpdrv </td><td>options for snow/soil temperature time scheme (only layer 1) <br  />
+ <ul>
+<li>
+1: semi-implicit; flux top boundary condition </li>
+<li>
+2: full implicit (original Noah); temperature top boundary condition </li>
+<li>
+3: same as 1, but fsno for ts calculation (generally improve snow; v3.7) </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>iopt_trs </td><td>noahmpdrv </td><td>options for thermal roughness scheme:<br  />
+ <ul>
+<li>
+1: z0h=z0m </li>
+<li>
+2: canopy based czil </li>
+<li>
+3: ec </li>
+<li>
+4: kb inversed </li>
+</ul>
+</td><td>2 </td></tr>
+<tr>
+<td>iopt_diag </td><td>noampdrv </td><td>options for surface 2-m t/q diagnostic approach: <br  />
+ <ul>
+<li>
+1: external GFS <a class="el" href="namespacesfc__diag.html" title="This module contains the land surface diagnose calcualtion.">sfc_diag</a> </li>
+<li>
+2: original NoahMP 2-title </li>
+<li>
+3: NoahMP2-title + internal GFS <a class="el" href="namespacesfc__diag.html" title="This module contains the land surface diagnose calcualtion.">sfc_diag</a> </li>
+</ul>
+</td><td>2 </td></tr>
+<tr>
+<td>mosaic_lu </td><td><a class="el" href="namespacelsm__ruc.html" title="This module contain the RUC land surface model driver.">lsm_ruc</a> </td><td>control for use of fractional landuse in RUC land surface model <ul>
+<li>
+1: use of fractional landuse in RUC LSM </li>
+</ul>
+</td><td>0 </td></tr>
+<tr>
+<td>mosaic_soil </td><td><a class="el" href="namespacelsm__ruc.html" title="This module contain the RUC land surface model driver.">lsm_ruc</a> </td><td>control for use of fractional soil in RUC land surface model <ul>
+<li>
+1: use of fractional soil in RUC LSM </li>
+</ul>
+</td><td>0 </td></tr>
+<tr>
+<td>isncond_opt </td><td><a class="el" href="namespacelsm__ruc.html" title="This module contain the RUC land surface model driver.">lsm_ruc</a> </td><td>control for soil thermal conductivity option in RUC land surface model <ul>
+<li>
+1: constant </li>
+<li>
+2: Sturm et al.(1997) <a class="el" href="citelist.html#CITEREF_sturm_1997">[190]</a> </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td>isncovr_opt </td><td><a class="el" href="namespacelsm__ruc.html" title="This module contain the RUC land surface model driver.">lsm_ruc</a> </td><td>control for snow cover fraction option in RUC land surface model <ul>
+<li>
+1: original formulation using threshold snow depth to compute snow fraction </li>
+<li>
+2: Niu-Yang(2007) <a class="el" href="citelist.html#CITEREF_niu_2007">[151]</a> </li>
+<li>
+3: updated Niu-Yang similar to Noah MP </li>
+</ul>
+</td><td>1 </td></tr>
+<tr>
+<td colspan="4" align="center"><b>Parameters</b> <b>related</b> <b>to</b> <b>other</b> <b>surface</b> <b>scheme</b> <b>options</b> </td></tr>
+<tr>
+<td>lkm </td><td><a class="el" href="namespaceclm__lake.html" title="This module contains the CLM Lake model.">clm_lake</a> </td><td>0: no lake; 1: lake; 2: lake&amp;nsst </td><td>0 </td></tr>
+<tr>
+<td>iopt_lake </td><td><a class="el" href="namespaceclm__lake.html" title="This module contains the CLM Lake model.">clm_lake</a> </td><td>1: flake; 2: CLM lake </td><td>2 </td></tr>
+<tr>
+<td>lakedepth_threshold </td><td><a class="el" href="namespaceclm__lake.html" title="This module contains the CLM Lake model.">clm_lake</a> </td><td>lakedepth must be greater than this value to enable a lake model </td><td>1.0 </td></tr>
+<tr>
+<td>lakefrac_threshold </td><td><a class="el" href="namespaceclm__lake.html" title="This module contains the CLM Lake model.">clm_lake</a> </td><td>lakefrac must be greater than this value to enable a lake model </td><td>0.0 </td></tr>
+<tr>
+<td>use_lake2m </td><td><a class="el" href="namespaceclm__lake.html" title="This module contains the CLM Lake model.">clm_lake</a> </td><td>use 2m T&amp;Q from CLM lake model </td><td>.false. </td></tr>
+<tr>
+<td>clm_debug_print </td><td></td><td>enables prints in <a class="el" href="namespaceclm__lake.html" title="This module contains the CLM Lake model.">clm_lake</a> </td><td>.false. </td></tr>
+<tr>
+<td>clm_lake_debug </td><td></td><td>verbose debugging in <a class="el" href="namespaceclm__lake.html" title="This module contains the CLM Lake model.">clm_lake</a> </td><td>.false. </td></tr>
+<tr>
+<td>nstf_name(5) </td><td><a class="el" href="namespacesfc__nst.html" title="This module contains the CCPP-compliant GFS near-surface sea temperature scheme.">sfc_nst</a> </td><td>NSST related paramters:<br  />
+ <ul>
+<li>
+nstf_name(1): 0=NSST off, 1= NSST on but uncoupled, 2= NSST on and coupled </li>
+<li>
+nstf_name(2): 1=NSST spin up on, 0=NSST spin up off </li>
+<li>
+nstf_name(3): 1=NSST analysis on, 0=NSST analysis off </li>
+<li>
+nstf_name(4): zsea1 in mm </li>
+<li>
+nstf_name(5): zesa2 in mm </li>
+</ul>
+</td><td>/0,0,1,0,5/ </td></tr>
+<tr>
+<td>nst_anl </td><td>gfs_phys_time_vary </td><td>flag for NSST analysis in gcycle/sfcsub </td><td>.false. </td></tr>
+<tr>
+<td>frac_grid </td><td>GFS_suite_interstitial_2, GFS_radiation_surface,GFS_surface_composite_pre, GFS_surface_composite_post, GFS_phys_time_vary, <a class="el" href="namespacesfc__nst__post.html" title="This module contains code to be executed after the near-surface sea temperature scheme.">sfc_nst_post</a>, <a class="el" href="namespacelsm__ruc.html" title="This module contain the RUC land surface model driver.">lsm_ruc</a>, <a class="el" href="namespaceclm__lake.html" title="This module contains the CLM Lake model.">clm_lake</a> </td><td>flag for fractional grid </td><td>.false. </td></tr>
+<tr>
+<td>frac_ice </td><td><a class="el" href="namespaceclm__lake.html" title="This module contains the CLM Lake model.">clm_lake</a>, GFS_surface_composites_post </td><td>flag for lake fractional ice when fractional grid is not in use </td><td>.true. </td></tr>
+<tr>
+<td>min_lakeice </td><td>fractional grid </td><td>minimum lake ice value </td><td>0.15d0 </td></tr>
+<tr>
+<td>min_seaice </td><td>fractional grid </td><td>minimum sea ice value </td><td>1.0d-11 </td></tr>
+<tr>
+<td>min_lake_height </td><td>fractional grid </td><td>minimum lake height value </td><td>250.0 </td></tr>
+<tr>
+<td>sfc_z0_type </td><td><a class="el" href="namespacesfc__diff.html" title="This module contains the CCPP-compliant GFS surface layer scheme.">sfc_diff</a> </td><td>surface roughness options over ocean <br  />
+ <ul>
+<li>
+0: no change </li>
+<li>
+6: areodynamical roughness over water with input 10-m wind </li>
+<li>
+7: slightly decrease Cd for higher wind speed compared to 6 </li>
+<li>
+negative when cplwav2atm=.true. - i.e. two way wave coupling </li>
+</ul>
+</td><td>0 </td></tr>
+<tr>
+<td>use_oceanuv </td><td>satmedmfvdifq, <a class="el" href="namespacesfc__diff.html" title="This module contains the CCPP-compliant GFS surface layer scheme.">sfc_diff</a>, <a class="el" href="namespacesfc__diag.html" title="This module contains the land surface diagnose calcualtion.">sfc_diag</a>, <a class="el" href="namespacesfc__nst.html" title="This module contains the CCPP-compliant GFS near-surface sea temperature scheme.">sfc_nst</a>, <a class="el" href="namespacesfc__ocean.html" title="This module contains the CCPP-compliant GFS near-surface sea temperature scheme when the model is ini...">sfc_ocean</a> </td><td>flag for air-sea flux computation over water <br  />
+ <ul>
+<li>
+</li>
+</ul>
+</td><td>0 </td></tr>
+<tr>
+<td>redrag </td><td><a class="el" href="namespacesfc__diff.html" title="This module contains the CCPP-compliant GFS surface layer scheme.">sfc_diff</a> </td><td>flag for applying reduced drag coefficient for high wind over sea in GFS surface layer scheme </td><td>.false. </td></tr>
+<tr>
+<td>lheatstrg </td><td>gfs_surface_generic_post </td><td>flag for canopy heat storage parameterization </td><td>.false. </td></tr>
+<tr>
+<td>z0fac </td><td>gfs_surface_generic_post </td><td>surface roughness fraction factor </td><td>0.3 </td></tr>
+<tr>
+<td>e0fac </td><td>gfs_surface_generic_post </td><td>latent heat flux fraction factor relative to sensible heat flux,e.g., e0fac=0.5 indicates that canopy heat storage for latent heat flux is 50% of that for sensible heat flux </td><td>0.5 </td></tr>
+<tr>
+<td>isftcflx </td><td><a class="el" href="namespacemynnsfc__wrapper.html" title="This Model ontains all of the code related to running the MYNN surface layer scheme.">mynnsfc_wrapper</a> </td><td>flag for thermal roughness lengths over water in MYNN-SFCLAY <ul>
+<li>
+0: z0,zt, and zq from the COARE algorithm. </li>
+<li>
+1: z0 from Davis et al.(2008), zt&amp;zq from COARE 3.0/3.5 </li>
+<li>
+2: z0 from Davis et al.(2008), zt&amp;zq from Garratt (1992) </li>
+<li>
+3: z0 from Taylor and Yelland (2004), zt and zq from COARE 3.0/3.5 </li>
+<li>
+4: GFS -taken from <a class="el" href="sfc__diff_8f_source.html">sfc_diff.f</a>, for comparison/testing </li>
+</ul>
+</td><td>0 </td></tr>
+<tr>
+<td>iz0tlnd </td><td><a class="el" href="namespacemynnsfc__wrapper.html" title="This Model ontains all of the code related to running the MYNN surface layer scheme.">mynnsfc_wrapper</a> </td><td>flag for thermal roughness lengths over land in MYNN-SFCLAY <ul>
+<li>
+0: Zilitinkevich (1995) <a class="el" href="citelist.html#CITEREF_zilitinkevich_1995">[219]</a>; Czil now set to 0.095 </li>
+<li>
+1: Czil_new (modified according to Chen and Zhang (2009) <a class="el" href="citelist.html#CITEREF_chen_and_zhang_2009">[33]</a>) </li>
+<li>
+2: Modified Yang et al.(2002, 2008)<a class="el" href="citelist.html#CITEREF_yang_et_al_2002">[204]</a> <a class="el" href="citelist.html#CITEREF_yang_2008">[205]</a> - generalized for all landuse </li>
+<li>
+3: constant zt = z0/7.4 (original form; Garratt 1992) </li>
+<li>
+4: GFS - taken from <a class="el" href="sfc__diff_8f_source.html">sfc_diff.f</a>, for comparison/testing </li>
+</ul>
+</td><td>0 </td></tr>
+<tr>
+<td>sfclay_compute_flux </td><td><a class="el" href="namespacemynnsfc__wrapper.html" title="This Model ontains all of the code related to running the MYNN surface layer scheme.">mynnsfc_wrapper</a> </td><td>flag for computing surface scalar fluxes in MYNN-SFCLAY </td><td>.false. </td></tr>
+<tr>
+<td>sfclay_compute_diag </td><td><a class="el" href="namespacemynnsfc__wrapper.html" title="This Model ontains all of the code related to running the MYNN surface layer scheme.">mynnsfc_wrapper</a> </td><td>flag for computing surface diagnostics in MYNN-SFCLAY </td><td>.false. </td></tr>
+<tr>
+<td>thsfc_loc </td><td>GFS_surface_composites_post, <a class="el" href="namespacesfc__diff.html" title="This module contains the CCPP-compliant GFS surface layer scheme.">sfc_diff</a>, <a class="el" href="namespacesfc__diag.html" title="This module contains the land surface diagnose calcualtion.">sfc_diag</a>, <a class="el" href="namespacesfc__nst.html" title="This module contains the CCPP-compliant GFS near-surface sea temperature scheme.">sfc_nst</a>, noahmpdrv, <a class="el" href="namespacesfc__sice.html" title="This module contains the CCPP-compliant GFS sea ice scheme.">sfc_sice</a> </td><td>flag for local .vs. standard potential temperature </td><td>.true. </td></tr>
+<tr>
+<td>diag_flux </td><td><a class="el" href="namespacesfc__diag.html" title="This module contains the land surface diagnose calcualtion.">sfc_diag</a> </td><td>flag for flux method in 2-m diagnostics </td><td>.false. </td></tr>
+<tr>
+<td>diag_log </td><td><a class="el" href="namespacesfc__diag.html" title="This module contains the land surface diagnose calcualtion.">sfc_diag</a> </td><td>flag for log method in 2-m diagnostics (for stable conditions): <br  />
+ <ul>
+<li>
+.true.: use local (gridpoint) surface pressure to define potential temperature. This is the current GFS physics approach </li>
+<li>
+.false.: use reference pressure of 1000 hPa to define potential temperature. This is the alternative method proposed by GSL </li>
+</ul>
+</td><td>.false. </td></tr>
+<tr>
+<td>h0facu </td><td>GFS_surface_composites_post, GFS_surface_generic_post </td><td>canopy heat storage factor for sensible heat flux in unstable surface layer </td><td>0.25 </td></tr>
+<tr>
+<td>h0facs </td><td>GFS_surface_composites_post, GFS_surface_generic_post </td><td>canopy heat storage factor for sensible heat flux in stable surface layer </td><td>1.0 </td></tr>
+<tr>
+<td>fscav_aero </td><td>cs_conv,cs_conv_pre,samfshalcnv,samfdeepcnv, samfaerosols,<a class="el" href="namespacecu__gf__driver.html" title="This module contains the scale-aware Grell-Freitas cumulus scheme driver.">cu_gf_driver</a> </td><td>aerosol scavenging factors </td><td></td></tr>
+<tr>
+<td>lightning_threat </td><td>maximum_hourly_diagnostics </td><td>report lightning threat indices </td><td>.false. </td></tr>
+<tr>
+<td>do_ccpp_suite_sim </td><td>GFS_ccpp_suite_sim_pre, ccpp_suite_simulator </td><td>CCPP suite simulator </td><td>.false. </td></tr>
+<tr>
+<td>fh_dfi_radar </td><td>GFS_MP_generic_post, <a class="el" href="namespacecu__gf__driver.html" title="This module contains the scale-aware Grell-Freitas cumulus scheme driver.">cu_gf_driver</a>, cu_c3_driver </td><td>begin&amp;end of four timespans over which radar_tten is applied </td><td>-2e10 </td></tr>
+<tr>
+<td>radar_tten_limits(2) </td><td>GFS_MP_generic_post </td><td>radar_tten values outside this range (min,max) are discarded </td></tr>
+<tr>
+<td>do_cap_suppress </td><td><a class="el" href="namespacecu__gf__driver.html" title="This module contains the scale-aware Grell-Freitas cumulus scheme driver.">cu_gf_driver</a>, cu_c3_driver </td><td>set .true. to turn on convection suppression in Grell-Freitas scheme during limited intervals when fh_dfi_radar is enabled </td><td>.true. </td></tr>
+<tr>
+<td>kice </td><td><a class="el" href="namespacesfc__sice.html" title="This module contains the CCPP-compliant GFS sea ice scheme.">sfc_sice</a> </td><td>number of layers in ice </td><td>2 </td></tr>
+<tr>
+<td>lrefres </td><td></td><td>flag for radar reflectivity in restart file </td><td>.false. </td></tr>
+<tr>
+<td colspan="4" align="center"><b>Parameters</b> <b>related</b> <b>to</b> <b>SRW</b> <b>smoke</b> <b>and</b> <b>dust</b> <b>scheme</b> <b>options</b> </td></tr>
+<tr>
+<td>dust_drylimit_factor </td><td>rrfs_smoke_wrapper </td><td>factor for drylimit parameeterization in Fengsha </td><td>1.0 </td></tr>
+<tr>
+<td>dust_moist_correction </td><td>rrfs_smoke_wrapper </td><td>factor to tune volumetric soil moisture </td><td>1.0 </td></tr>
+<tr>
+<td>dust_moist_opt </td><td>rrfs_smoke_wrapper </td><td>dust moisture option 1:fecan 2:shao </td><td>1 </td></tr>
+<tr>
+<td>dust_alpha </td><td>rrfs_smoke_wrapper </td><td>alpha paramter for fengsha dust scheme </td><td>0. </td></tr>
+<tr>
+<td>dust_gamma </td><td>rrfs_smoke_wrapper </td><td>gamma parameter for fengsha dust scheme </td><td>0. </td></tr>
+<tr>
+<td>wetdep_ls_alpha </td><td>rrfs_smoke_wrapper </td><td>alpha parameter for wet deposition </td><td>1. </td></tr>
+<tr>
+<td>plume_alpha </td><td>rrfs_smoke_wrapper </td><td>alpha paramter for plumerise scheme </td><td>0. </td></tr>
+<tr>
+<td>ebb_dcycle </td><td>rrfs_smoke_wrapper </td><td>1: retro; 2: forcast of fire emission </td><td>1 </td></tr>
+<tr>
+<td>seas_opt </td><td>rrfs_smoke_wrapper </td><td>1: gocart </td><td>2 </td></tr>
+<tr>
+<td>dust_opt </td><td>rrfs_smoke_wrapper </td><td>1: gocart dust fengsha </td><td>1 </td></tr>
+<tr>
+<td>drydep_opt </td><td>rrfs_smoke_wrapper </td><td>1: dry deposition based on Emerson et al.(2020)); 2: based on coarsepm setting </td><td>1 </td></tr>
+<tr>
+<td>coarsepm_settling </td><td>rrfs_smoke_wrapper </td><td>coarse particulate matter option </td><td>1 </td></tr>
+<tr>
+<td>plume_wind_eff </td><td>rrfs_smoke_wrapper </td><td>wind effect plumerise option </td><td>1 </td></tr>
+<tr>
+<td>extended_sd_diags </td><td>rrfs_smoke_wrapper </td><td>flag for extended smoke dust diagnostics </td><td>.false. </td></tr>
+<tr>
+<td>wetdep_ls_opt </td><td>rrfs_smoke_wrapper </td><td>RRFS smoke large scale wet depostion option </td><td>1 </td></tr>
+<tr>
+<td>do_plumerise </td><td>rrfs_smoke_wrapper </td><td>RRFS smoke plumerise option </td><td>.false. </td></tr>
+<tr>
+<td>addsmoke_flag </td><td>rrfs_smoke_wrapper </td><td>RRFS smoke add smoke option </td><td>1 </td></tr>
+<tr>
+<td>plumerisefire_frq </td><td>rrfs_smoke_wrapper </td><td>RRFS smoke add smoke option </td><td>60 </td></tr>
+<tr>
+<td>n_dbg_lines </td><td>rrfs_smoke_wrapper </td><td>RRFS smoke add smoke option </td><td>3 </td></tr>
+<tr>
+<td>hwp_method </td><td>rrfs_smoke_wrapper </td><td>the method to calculate hourly wildfile potential </td><td>2 </td></tr>
+<tr>
+<td>add_fire_moist_flux </td><td>rrfs_smoke_wrapper </td><td>flag to add fire moisture flux </td><td>.false. </td></tr>
+<tr>
+<td>sc_factor </td><td>rrfs_smoke_wrapper </td><td>scale factor for wildfire emissions </td><td>1.0 </td></tr>
+<tr>
+<td>aero_ind_fdb </td><td>rrfs_smoke_wrapper </td><td>RRFS-sd wfa/ifa emission </td><td>.false. </td></tr>
+<tr>
+<td>aero_dir_fdb </td><td>rrfs_smoke_wrapper </td><td>RRFS-sd smoke/dust radiation feedback </td><td>.false. </td></tr>
+<tr>
+<td>rrfs_smoke_debug </td><td>rrfs_smoke_wrapper </td><td>RRFS-sd plumrise debug </td><td>.false </td></tr>
+<tr>
+<td>do_smoke_transport </td><td>rrfs_smoke_wrapper </td><td>RRFS-sd convective transport of smoke/dust </td><td>.true. </td></tr>
+<tr>
+<td>mix_chem </td><td>rrfs_smoke_wrapper </td><td>tracer mixing option by MYNNPBL </td><td>.false. </td></tr>
+<tr>
+<td>enh_mix </td><td>rrfs_smoke_wrapper </td><td>enhance vertical mixing option by MYNN PBL </td><td>.false. </td></tr>
+<tr>
+<td>smoke_dir_fdb_coef(7) </td><td>rrfs_smoke_wrapper </td><td>smoke&amp;dust direct feedback coefficents </td><td>(/ 0.33, 0.67, 0.02, 0.13, 0.85, 0.05, 0.95 /) </td></tr>
+<tr>
+<td>smoke_conv_vet_coef(3) </td><td>rrfs_smoke_wrapper </td><td>smoke&amp;dust convective wet removal coefficents </td><td>(/ 0.50, 0.50, 0.50 /) </td></tr>
+</table>
+</div> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- HTML footer for doxygen 1.9.1-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  $(function() {
+    toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+    toggleButton.title = "Toggle Light/Dark Mode"
+    $(document).ready(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+    // every resize will remove the button, which is why it has to be added again:
+    $(window).resize(function(){
+      document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+  })
+</script>
+</body>
+</html>
